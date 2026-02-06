@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import json
 import os
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,7 +46,7 @@ def wrap_base(title: str, content: str) -> str:
         {
             "title": title,
             "content": content,
-            "updated": datetime.now(UTC).date().isoformat(),
+            "updated": datetime.now(timezone.utc).date().isoformat(),
         },
     )
 
