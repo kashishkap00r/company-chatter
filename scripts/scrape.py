@@ -201,10 +201,6 @@ def _lookup_tokens(text: str) -> list[str]:
     return [token for token in normalized.split() if token and token not in MARKET_LOOKUP_STOPWORDS]
 
 
-def _lookup_fingerprint(text: str) -> str:
-    return "".join(_lookup_tokens(text))
-
-
 def _normalize_display_name(raw: object) -> str:
     if isinstance(raw, list):
         return " ".join([str(item).strip() for item in raw if str(item).strip()])
@@ -234,18 +230,81 @@ def _iter_zerodha_candidates(payload: object):
                 }
 
 
-def _candidate_match_score(company_name: str, company_id: str, candidate: dict[str, str]) -> int:
+def _common_prefix_len(left: str, right: str) -> int:
+    if not left or not right:
+        return 0
+    prefix = 0
+    for lch, rch in zip(left, right):
+        if lch != rch:
+            break
+        prefix += 1
+    return prefix
+
+
+def _candidate_match_features(company_name: str, company_id: str, candidate: dict[str, str]) -> dict[str, object]:
     company_tokens = _lookup_tokens(company_name)
     company_fp = "".join(company_tokens) or re.sub(r"[^a-z0-9]+", "", company_id.lower())
 
     display_tokens = _lookup_tokens(candidate["display_name"])
+    slug_tokens = _lookup_tokens(candidate.get("slug", ""))
     display_fp = "".join(display_tokens)
-    slug_fp = _lookup_fingerprint(candidate.get("slug", ""))
+    slug_fp = "".join(slug_tokens)
+
+    similarity_display = SequenceMatcher(None, company_fp, display_fp).ratio() if company_fp and display_fp else 0.0
+    similarity_slug = SequenceMatcher(None, company_fp, slug_fp).ratio() if company_fp and slug_fp else 0.0
+    token_overlap = len(set(company_tokens).intersection(set(display_tokens).union(slug_tokens)))
+
+    return {
+        "company_tokens": company_tokens,
+        "company_fp": company_fp,
+        "display_tokens": display_tokens,
+        "display_fp": display_fp,
+        "slug_fp": slug_fp,
+        "token_overlap": token_overlap,
+        "similarity_display": similarity_display,
+        "similarity_slug": similarity_slug,
+        "similarity": max(similarity_display, similarity_slug),
+        "prefix_len": max(_common_prefix_len(company_fp, display_fp), _common_prefix_len(company_fp, slug_fp)),
+        "exact_fp": bool(company_fp and (company_fp == display_fp or company_fp == slug_fp)),
+    }
+
+
+def _is_confident_market_match(features: dict[str, object]) -> bool:
+    company_tokens = features["company_tokens"]
+    company_token_count = len(company_tokens)
+    token_overlap = int(features["token_overlap"])
+    similarity = float(features["similarity"])
+    prefix_len = int(features["prefix_len"])
+    exact_fp = bool(features["exact_fp"])
+
+    if exact_fp:
+        return True
+    if token_overlap >= 1 and similarity >= 0.63:
+        return True
+    # Handles compressed naming variants like "L&T Mindtree" -> "LTIMindtree".
+    if company_token_count >= 2 and similarity >= 0.88 and prefix_len >= 2:
+        return True
+    # Single-token names must be very close to avoid bad matches (e.g. Netflix -> Nettlinx).
+    if company_token_count == 1 and similarity >= 0.95 and prefix_len >= 5:
+        return True
+    return False
+
+
+def _candidate_match_score(candidate: dict[str, str], features: dict[str, object]) -> int:
+    company_tokens = features["company_tokens"]
+    company_fp = str(features["company_fp"])
+    display_tokens = features["display_tokens"]
+    display_fp = str(features["display_fp"])
+    slug_fp = str(features["slug_fp"])
+    similarity_display = float(features["similarity_display"])
+    similarity_slug = float(features["similarity_slug"])
+    token_overlap = int(features["token_overlap"])
+    exact_fp = bool(features["exact_fp"])
 
     score = 0
-    if display_fp and display_fp == company_fp:
+    if exact_fp and display_fp == company_fp:
         score += 140
-    if slug_fp and slug_fp == company_fp:
+    if exact_fp and slug_fp == company_fp:
         score += 130
 
     if company_fp and display_fp and (display_fp.startswith(company_fp) or company_fp.startswith(display_fp)):
@@ -253,17 +312,14 @@ def _candidate_match_score(company_name: str, company_id: str, candidate: dict[s
     if company_fp and slug_fp and (slug_fp.startswith(company_fp) or company_fp.startswith(slug_fp)):
         score += 70
 
-    if company_fp and display_fp:
-        score += int(SequenceMatcher(None, company_fp, display_fp).ratio() * 120)
-    if company_fp and slug_fp:
-        score += int(SequenceMatcher(None, company_fp, slug_fp).ratio() * 90)
+    score += int(similarity_display * 120)
+    score += int(similarity_slug * 90)
 
     if company_tokens and display_tokens:
-        overlap = len(set(company_tokens).intersection(display_tokens))
-        score += overlap * 18
+        score += token_overlap * 18
         if company_tokens[0] == display_tokens[0]:
             score += 25
-        elif overlap == 0:
+        elif token_overlap == 0:
             score -= 20
 
     if candidate["exchange"] == "NSE":
@@ -317,13 +373,16 @@ def resolve_market_url_for_company(company: Company, search_cache: dict[str, obj
 
         payload = _fetch_market_search(query, search_cache)
         for candidate in _iter_zerodha_candidates(payload):
-            score = _candidate_match_score(company.name, company.id, candidate)
+            features = _candidate_match_features(company.name, company.id, candidate)
+            if not _is_confident_market_match(features):
+                continue
+            score = _candidate_match_score(candidate, features)
             candidate_url = f"{ZERODHA_STOCKS_BASE}/{candidate['exchange']}/{candidate['symbol']}/"
             if score > best_score:
                 best_score = score
                 best_url = candidate_url
 
-    if best_url and best_score >= 100 and _url_exists(best_url, url_cache):
+    if best_url and best_score >= 120 and _url_exists(best_url, url_cache):
         return best_url
     return None
 

@@ -137,7 +137,7 @@
   {
     "id": "bayer-ag",
     "name": "Bayer AG",
-    "url": "https://zerodha.com/markets/stocks/NSE/BAYERCROP/"
+    "url": null
   },
   {
     "id": "piaggio-group",
@@ -337,12 +337,12 @@
   {
     "id": "freightos",
     "name": "Freightos",
-    "url": "https://zerodha.com/markets/stocks/NSE/JETFREIGHT/"
+    "url": null
   },
   {
     "id": "sony",
     "name": "Sony",
-    "url": "https://zerodha.com/markets/stocks/NSE/SONAMLTD/"
+    "url": null
   },
   {
     "id": "daimler",
@@ -1157,12 +1157,12 @@
   {
     "id": "nike",
     "name": "Nike",
-    "url": "https://zerodha.com/markets/stocks/BSE/NIBE/"
+    "url": null
   },
   {
     "id": "netflix",
     "name": "Netflix",
-    "url": "https://zerodha.com/markets/stocks/BSE/NETTLINX/"
+    "url": null
   },
   {
     "id": "kotak-mahindra-bank-limited",
@@ -1192,7 +1192,7 @@
   {
     "id": "graviss-foods",
     "name": "Graviss Foods",
-    "url": "https://zerodha.com/markets/stocks/BSE/GRAVISSHO/"
+    "url": null
   },
   {
     "id": "avenue-supermarts-limited",
@@ -1467,7 +1467,7 @@
   {
     "id": "under-armour",
     "name": "Under Armour",
-    "url": "https://zerodha.com/markets/stocks/NSE/ARMOUR/"
+    "url": null
   },
   {
     "id": "saudi-aramco",
@@ -1482,7 +1482,7 @@
   {
     "id": "bmw",
     "name": "BMW",
-    "url": "https://zerodha.com/markets/stocks/BSE/BMWVENTLTD/"
+    "url": null
   },
   {
     "id": "l-t-mindtree",
@@ -1582,7 +1582,7 @@
   {
     "id": "meta",
     "name": "Meta",
-    "url": "https://zerodha.com/markets/stocks/BSE/METAINFO/"
+    "url": null
   },
   {
     "id": "icicibank",

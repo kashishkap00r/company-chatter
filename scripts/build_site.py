@@ -14,7 +14,6 @@ Outputs:
 
 from __future__ import annotations
 
-import hashlib
 import json
 import re
 import shutil
@@ -107,38 +106,6 @@ def _select_display_name(variants: list[dict]) -> str:
     return min(variants, key=rank)["name"]
 
 
-def _stable_hash(value: str) -> int:
-    digest = hashlib.sha1(value.encode("utf-8")).hexdigest()
-    return int(digest[:12], 16)
-
-
-def _floating_style(slug: str) -> str:
-    h = _stable_hash(f"floating:{slug}")
-    x = 4 + (h % 92)
-    y = 7 + ((h // 97) % 82)
-
-    if 36 <= x <= 64 and 24 <= y <= 74:
-        y = 7 + ((y + 27) % 82)
-
-    scale = 0.84 + ((h // 7919) % 48) / 100
-    opacity = 0.06 + ((h // 101) % 20) / 100
-    duration = 16 + ((h // 379) % 20)
-    delay = -((h // 193) % 24)
-    drift = ((h // 877) % 10) - 5
-    return (
-        f"--x:{x}%; --y:{y}%; --scale:{scale:.2f}; --opacity:{opacity:.2f}; "
-        f"--duration:{duration}s; --delay:{delay}s; --drift:{drift}px;"
-    )
-
-
-def _pick_floating_companies(company_records: list[dict], limit: int = 42) -> list[dict]:
-    if not company_records:
-        return []
-    pool = sorted(company_records, key=lambda c: (-c["quote_count"], c["name"].lower()))[:120]
-    ranked = sorted(pool, key=lambda c: _stable_hash(f"pick:{c['slug']}"))
-    return ranked[: min(limit, len(ranked))]
-
-
 def merge_company_variants(companies: list[dict], quotes: list[dict]) -> tuple[list[dict], list[dict]]:
     quote_count_by_company: dict[str, int] = {}
     for q in quotes:
@@ -214,21 +181,11 @@ def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[d
             }
         )
 
-    floating_links = []
-    for record in _pick_floating_companies(company_records):
-        floating_links.append(
-            (
-                f'<a class="floating-company" href="/company/{record["slug"]}/" '
-                f'style="{_floating_style(record["slug"])}">{html_escape(record["name"])}</a>'
-            )
-        )
-
     company_data_json = json.dumps(company_records, ensure_ascii=False).replace("</", "<\\/")
     visible_companies = len(company_records)
     content = render_template(
         "index.html",
         {
-            "floating_companies": "\n".join(floating_links),
             "company_data_json": company_data_json,
             "total_companies": str(visible_companies),
             "total_quotes": str(len(quotes)),

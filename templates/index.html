@@ -1,24 +1,19 @@
-<section class="home-stage">
-  <div class="floating-field" aria-hidden="true">
-    {{ floating_companies }}
+<section class="home-minimal">
+  <p class="eyebrow">Company Chatter</p>
+  <h2>Find a company. Read its story.</h2>
+  <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_editions }} editions</p>
+
+  <div class="search-shell">
+    <input
+      type="search"
+      id="companySearch"
+      placeholder="Search companies..."
+      autocomplete="off"
+    />
   </div>
 
-  <div class="search-stage">
-    <p class="eyebrow">Company Chatter</p>
-    <h2>Search once. Read the company story, edition by edition.</h2>
-    <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_editions }} editions</p>
-
-    <div class="search-shell">
-      <input
-        type="search"
-        id="companySearch"
-        placeholder="Search companies..."
-        autocomplete="off"
-      />
-    </div>
-    <p class="result-caption"><span id="resultCount">Top matches</span></p>
-    <div class="search-results" id="searchResults"></div>
-  </div>
+  <p class="result-caption" id="resultCount" hidden></p>
+  <div class="search-results" id="searchResults" hidden></div>
 </section>
 
 <script id="companyData" type="application/json">{{ company_data_json }}</script>
@@ -27,7 +22,6 @@
   const resultCount = document.getElementById('resultCount');
   const searchResults = document.getElementById('searchResults');
   const companyData = JSON.parse(document.getElementById('companyData').textContent || '[]');
-  const floatingLinks = Array.from(document.querySelectorAll('.floating-company'));
 
   function escapeHtml(value) {
     return value
@@ -38,7 +32,22 @@
       .replace(/'/g, '&#39;');
   }
 
+  function hideResults() {
+    resultCount.hidden = true;
+    searchResults.hidden = true;
+    searchResults.innerHTML = '';
+  }
+
   function renderResults(rows, query) {
+    if (!query) {
+      hideResults();
+      return;
+    }
+
+    resultCount.hidden = false;
+    searchResults.hidden = false;
+    resultCount.textContent = `${rows.length} matches`;
+
     if (!rows.length) {
       searchResults.innerHTML = '<p class="empty-state">No company found for this query.</p>';
       return;
@@ -55,36 +64,13 @@
         `
       )
       .join('');
-
-    resultCount.textContent = query ? `${rows.length} matches` : 'Top matches';
-  }
-
-  function topMatches() {
-    return [...companyData]
-      .sort((a, b) => (b.quote_count - a.quote_count) || a.name.localeCompare(b.name))
-      .slice(0, 10);
   }
 
   input.addEventListener('input', () => {
     const query = input.value.trim().toLowerCase();
-    if (!query) {
-      renderResults(topMatches(), '');
-      return;
-    }
     const matches = companyData.filter((row) => row.name.toLowerCase().includes(query));
     renderResults(matches, query);
   });
 
-  function fadeFloatingName() {
-    if (!floatingLinks.length) {
-      return;
-    }
-    const pick = floatingLinks[Math.floor(Math.random() * floatingLinks.length)];
-    pick.classList.add('is-fading');
-    window.setTimeout(() => pick.classList.remove('is-fading'), 1600);
-    window.setTimeout(fadeFloatingName, 1100 + Math.floor(Math.random() * 1800));
-  }
-
-  renderResults(topMatches(), '');
-  window.setTimeout(fadeFloatingName, 1200);
+  hideResults();
 </script>
