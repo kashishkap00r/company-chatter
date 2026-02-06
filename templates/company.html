@@ -1,0 +1,19 @@
+<section class="company-page">
+  <div>
+    <div class="hero-card">
+      <h2>{{ company_name }}</h2>
+      <p>{{ company_meta }}</p>
+      {{ company_link }}
+    </div>
+    <div class="timeline">
+      {{ quote_cards }}
+    </div>
+  </div>
+  <aside class="side-card">
+    <h3>Company Summary</h3>
+    <p>Total quotes: <strong>{{ quote_count }}</strong></p>
+    <p>First mention: <strong>{{ first_date }}</strong></p>
+    <p>Latest mention: <strong>{{ last_date }}</strong></p>
+    <div class="badge"><strong>{{ editions_count }}</strong> editions</div>
+  </aside>
+</section>

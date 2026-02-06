@@ -1,0 +1,37 @@
+<section class="hero">
+  <div class="hero-card">
+    <h2>All Company Highlights</h2>
+    <p>Every quote we have surfaced in The Chatter, organized by company and ordered by time.</p>
+  </div>
+  <div class="hero-card">
+    <h2>What you get</h2>
+    <p>Scan the most important comments without digging through full calls. Each quote links back to the source edition.</p>
+  </div>
+  <div class="hero-card">
+    <h2>MVP scope</h2>
+    <p>Quotes only for now. Decks and pitch visuals are coming later.</p>
+  </div>
+</section>
+
+<div class="search">
+  <strong>Search</strong>
+  <input type="search" placeholder="Search companies" id="companySearch" />
+</div>
+
+<div class="company-list" id="companyList">
+  {{ company_cards }}
+</div>
+
+<script>
+  const input = document.getElementById('companySearch');
+  const list = document.getElementById('companyList');
+  const items = Array.from(list.querySelectorAll('[data-name]'));
+
+  input.addEventListener('input', () => {
+    const value = input.value.trim().toLowerCase();
+    items.forEach((item) => {
+      const name = item.getAttribute('data-name');
+      item.style.display = name.includes(value) ? '' : 'none';
+    });
+  });
+</script>

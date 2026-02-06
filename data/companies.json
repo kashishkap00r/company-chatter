@@ -1,0 +1,1817 @@
+[
+  {
+    "id": "bse-limited",
+    "name": "BSE",
+    "url": "https://zerodha.com/markets/stocks/bse-limited/"
+  },
+  {
+    "id": "manappuram-finance-limited",
+    "name": "Manappuram Finance",
+    "url": "https://zerodha.com/markets/stocks/manappuram-finance-limited/"
+  },
+  {
+    "id": "multi-commodity-exchange-of-india-ltd",
+    "name": "Multi Commodity Exchange of India",
+    "url": "https://zerodha.com/markets/stocks/multi-commodity-exchange-of-india-ltd/"
+  },
+  {
+    "id": "central-depository-services-india-ltd",
+    "name": "Central Depository Services",
+    "url": "https://zerodha.com/markets/stocks/central-depository-services-india-ltd/"
+  },
+  {
+    "id": "one97-communications-ltd",
+    "name": "One 97 Communications",
+    "url": "https://zerodha.com/markets/stocks/one97-communications-ltd/"
+  },
+  {
+    "id": "cholamandalam-investment-and-finance-company-limited",
+    "name": "Cholamandalam Finance",
+    "url": "https://zerodha.com/markets/stocks/cholamandalam-investment-and-finance-company-limited/"
+  },
+  {
+    "id": "marico-limited",
+    "name": "Marico",
+    "url": "https://zerodha.com/markets/stocks/marico-limited/"
+  },
+  {
+    "id": "dabur-india-limited",
+    "name": "Dabur",
+    "url": "https://zerodha.com/markets/stocks/dabur-india-limited/"
+  },
+  {
+    "id": "britannia-industries-limited",
+    "name": "Britannia Industries",
+    "url": "https://zerodha.com/markets/stocks/britannia-industries-limited/"
+  },
+  {
+    "id": "parag-milk-foods-limited",
+    "name": "Parag Milk Foods",
+    "url": "https://zerodha.com/markets/stocks/parag-milk-foods-limited/"
+  },
+  {
+    "id": "swiggy-ltd",
+    "name": "Swiggy",
+    "url": "https://zerodha.com/markets/stocks/swiggy-ltd/"
+  },
+  {
+    "id": "relaxo-footwears-limited",
+    "name": "Relaxo Footwears",
+    "url": "https://zerodha.com/markets/stocks/relaxo-footwears-limited/"
+  },
+  {
+    "id": "bajaj-electricals-limited",
+    "name": "Bajaj Electricals",
+    "url": "https://zerodha.com/markets/stocks/bajaj-electricals-limited/"
+  },
+  {
+    "id": "jindal-stainless-limited",
+    "name": "Jindal Stainless",
+    "url": "https://zerodha.com/markets/stocks/jindal-stainless-limited/"
+  },
+  {
+    "id": "apl-apollo-tubes-limited",
+    "name": "APL Apollo Tubes",
+    "url": "https://zerodha.com/markets/stocks/apl-apollo-tubes-limited/"
+  },
+  {
+    "id": "asian-paints-limited",
+    "name": "Asian Paints",
+    "url": "https://zerodha.com/markets/stocks/asian-paints-limited/"
+  },
+  {
+    "id": "borosil-glass-works-ltd",
+    "name": "Borosil Renewables",
+    "url": "https://zerodha.com/markets/stocks/borosil-glass-works-ltd/"
+  },
+  {
+    "id": "dr-reddys-laboratories-limited",
+    "name": "Dr Reddy’s",
+    "url": "https://zerodha.com/markets/stocks/dr-reddys-laboratories-limited/"
+  },
+  {
+    "id": "ather-energy-ltd",
+    "name": "Ather Energy",
+    "url": "https://zerodha.com/markets/stocks/ather-energy-ltd/"
+  },
+  {
+    "id": "chalet-hotels",
+    "name": "Chalet Hotels",
+    "url": "https://zerodha.com/markets/stocks/chalet-hotels/"
+  },
+  {
+    "id": "sunteck-realty-limited",
+    "name": "Sunteck",
+    "url": "https://zerodha.com/markets/stocks/sunteck-realty-limited/"
+  },
+  {
+    "id": "pvr-ltd",
+    "name": "PVR INOX",
+    "url": "https://zerodha.com/markets/stocks/pvr-ltd/"
+  },
+  {
+    "id": "coromandel-international-limited",
+    "name": "Coromandel International",
+    "url": "https://zerodha.com/markets/stocks/coromandel-international-limited/"
+  },
+  {
+    "id": "solarium-green-energy-ltd",
+    "name": "Solarium Green Energy",
+    "url": "https://zerodha.com/markets/stocks/solarium-green-energy-ltd/"
+  },
+  {
+    "id": "fine-organic-industries-limited",
+    "name": "Fine Organic Industries",
+    "url": "https://zerodha.com/markets/stocks/fine-organic-industries-limited/"
+  },
+  {
+    "id": "happiest-minds-technologies-ltd",
+    "name": "Happiest Minds Technologies",
+    "url": "https://zerodha.com/markets/stocks/happiest-minds-technologies-ltd/"
+  },
+  {
+    "id": "birla-corporation-limited",
+    "name": "Birla Corporation",
+    "url": "https://zerodha.com/markets/stocks/birla-corporation-limited/"
+  },
+  {
+    "id": "bayer-ag",
+    "name": "Bayer AG",
+    "url": null
+  },
+  {
+    "id": "piaggio-group",
+    "name": "Piaggio Group",
+    "url": null
+  },
+  {
+    "id": "tata-consultancy-services-limited",
+    "name": "Tata Consultancy Services Limited",
+    "url": "https://zerodha.com/markets/stocks/tata-consultancy-services-limited/"
+  },
+  {
+    "id": "wipro-limited",
+    "name": "Wipro Limited",
+    "url": "https://zerodha.com/markets/stocks/wipro-limited/"
+  },
+  {
+    "id": "infosys-limited",
+    "name": "Infosys Limited",
+    "url": "https://zerodha.com/markets/stocks/infosys-limited/"
+  },
+  {
+    "id": "hcl-technologies-limited",
+    "name": "HCL Technologies Ltd",
+    "url": "https://zerodha.com/markets/stocks/hcl-technologies-limited/"
+  },
+  {
+    "id": "tata-motors-limited",
+    "name": "Tata Motors Limited",
+    "url": "https://zerodha.com/markets/stocks/tata-motors-limited/"
+  },
+  {
+    "id": "maruti-suzuki-india-limited",
+    "name": "Maruti Suzuki India Limited",
+    "url": "https://zerodha.com/markets/stocks/maruti-suzuki-india-limited/"
+  },
+  {
+    "id": "state-bank-of-india",
+    "name": "State Bank of India",
+    "url": "https://zerodha.com/markets/stocks/state-bank-of-india/"
+  },
+  {
+    "id": "icici-bank-limited",
+    "name": "ICICI Bank Limited",
+    "url": "https://zerodha.com/markets/stocks/icici-bank-limited/"
+  },
+  {
+    "id": "hdfc-bank-limited",
+    "name": "HDFC Bank Limited",
+    "url": "https://zerodha.com/markets/stocks/hdfc-bank-limited/"
+  },
+  {
+    "id": "bajaj-finserv-limited",
+    "name": "Bajaj Finserv Limited",
+    "url": "https://zerodha.com/markets/stocks/bajaj-finserv-limited/"
+  },
+  {
+    "id": "axis-bank-limited",
+    "name": "Axis Bank Limited",
+    "url": "https://zerodha.com/markets/stocks/axis-bank-limited/"
+  },
+  {
+    "id": "nuvama-wealth-management-ltd",
+    "name": "Nuvama Wealth",
+    "url": "https://zerodha.com/markets/stocks/nuvama-wealth-management-ltd/"
+  },
+  {
+    "id": "jsw-steel-limited",
+    "name": "JSW Steel Limited",
+    "url": "https://zerodha.com/markets/stocks/jsw-steel-limited/"
+  },
+  {
+    "id": "hindustan-unilever-limited",
+    "name": "Hindustan Unilever Limited",
+    "url": "https://zerodha.com/markets/stocks/hindustan-unilever-limited/"
+  },
+  {
+    "id": "power-grid-corporation-of-india-limited",
+    "name": "Power Grid Corporation of India Limited",
+    "url": "https://zerodha.com/markets/stocks/power-grid-corporation-of-india-limited/"
+  },
+  {
+    "id": "bharti-airtel-limited",
+    "name": "Bharti Airtel Limited",
+    "url": "https://zerodha.com/markets/stocks/bharti-airtel-limited/"
+  },
+  {
+    "id": "divis-laboratories-limited",
+    "name": "Divi's Laboratories Limited",
+    "url": "https://zerodha.com/markets/stocks/divis-laboratories-limited/"
+  },
+  {
+    "id": "ion-exchange-india-limited",
+    "name": "Ion Exchange",
+    "url": "https://zerodha.com/markets/stocks/ion-exchange-india-limited/"
+  },
+  {
+    "id": "akzo-nobel-india-limited",
+    "name": "Akzo Nobel India Limited",
+    "url": "https://zerodha.com/markets/stocks/akzo-nobel-india-limited/"
+  },
+  {
+    "id": "yatra-online-ltd",
+    "name": "Yatra Online",
+    "url": "https://zerodha.com/markets/stocks/yatra-online-ltd/"
+  },
+  {
+    "id": "stove-kraft-ltd",
+    "name": "Stove Kraft Ltd.",
+    "url": "https://zerodha.com/markets/stocks/stove-kraft-ltd/"
+  },
+  {
+    "id": "gensol-engineering-ltd",
+    "name": "Gensol Engineering Ltd",
+    "url": "https://zerodha.com/markets/stocks/gensol-engineering-ltd/"
+  },
+  {
+    "id": "nestle-india-limited",
+    "name": "Nestlé India Ltd",
+    "url": "https://zerodha.com/markets/stocks/nestle-india-limited/"
+  },
+  {
+    "id": "procter-gamble-hygiene-and-health-care-limited",
+    "name": "Procter & Gamble",
+    "url": "https://zerodha.com/markets/stocks/procter-gamble-hygiene-and-health-care-limited/"
+  },
+  {
+    "id": "dodla-dairy-ltd",
+    "name": "Dodla Dairy",
+    "url": "https://zerodha.com/markets/stocks/dodla-dairy-ltd/"
+  },
+  {
+    "id": "gopal-snacks-ltd",
+    "name": "Gopal Snacks",
+    "url": "https://zerodha.com/markets/stocks/gopal-snacks-ltd/"
+  },
+  {
+    "id": "mahindra-mahindra-limited",
+    "name": "Mahindra & Mahindra Ltd",
+    "url": "https://zerodha.com/markets/stocks/mahindra-mahindra-limited/"
+  },
+  {
+    "id": "talbros-automotive-components-limited",
+    "name": "Talbros Automotive Components",
+    "url": "https://zerodha.com/markets/stocks/talbros-automotive-components-limited/"
+  },
+  {
+    "id": "balkrishna-industries-limited",
+    "name": "Balkrishna Industries Limited",
+    "url": "https://zerodha.com/markets/stocks/balkrishna-industries-limited/"
+  },
+  {
+    "id": "thomas-cook-india-limited",
+    "name": "Thomas Cook",
+    "url": "https://zerodha.com/markets/stocks/thomas-cook-india-limited/"
+  },
+  {
+    "id": "aditya-birla-fashion-and-retail-limited",
+    "name": "Aditya Birla Fashion & Retail Ltd",
+    "url": "https://zerodha.com/markets/stocks/aditya-birla-fashion-and-retail-limited/"
+  },
+  {
+    "id": "metro-brands-ltd",
+    "name": "Metro Brands",
+    "url": "https://zerodha.com/markets/stocks/metro-brands-ltd/"
+  },
+  {
+    "id": "indigo-paints-ltd",
+    "name": "Indigo Paints",
+    "url": "https://zerodha.com/markets/stocks/indigo-paints-ltd/"
+  },
+  {
+    "id": "cms-info-systems-ltd",
+    "name": "CMS Info Systems",
+    "url": "https://zerodha.com/markets/stocks/cms-info-systems-ltd/"
+  },
+  {
+    "id": "schneider-electric-infrastructure-limited",
+    "name": "Schneider Electric Infrastructure",
+    "url": "https://zerodha.com/markets/stocks/schneider-electric-infrastructure-limited/"
+  },
+  {
+    "id": "mtar-technologies-ltd",
+    "name": "Mtar Technologies",
+    "url": "https://zerodha.com/markets/stocks/mtar-technologies-ltd/"
+  },
+  {
+    "id": "finolex-industries-limited",
+    "name": "Finolex Industries Ltd",
+    "url": "https://zerodha.com/markets/stocks/finolex-industries-limited/"
+  },
+  {
+    "id": "awfis-space-solutions-ltd",
+    "name": "Awfis Space Solutions",
+    "url": "https://zerodha.com/markets/stocks/awfis-space-solutions-ltd/"
+  },
+  {
+    "id": "freightos",
+    "name": "Freightos",
+    "url": null
+  },
+  {
+    "id": "sony",
+    "name": "Sony",
+    "url": null
+  },
+  {
+    "id": "daimler",
+    "name": "Daimler",
+    "url": null
+  },
+  {
+    "id": "edition-7",
+    "name": "Edition # 7",
+    "url": null
+  },
+  {
+    "id": "moldtek-packaging-limited",
+    "name": "Mold-Tek Packaging",
+    "url": "https://zerodha.com/markets/stocks/moldtek-packaging-limited/"
+  },
+  {
+    "id": "shree-pushkar-chemicals-fertilisers-limited",
+    "name": "Shree Pushkar Chemicals & Fertilisers",
+    "url": "https://zerodha.com/markets/stocks/shree-pushkar-chemicals-fertilisers-limited/"
+  },
+  {
+    "id": "pb-fintech-ltd",
+    "name": "PB Fintech",
+    "url": "https://zerodha.com/markets/stocks/pb-fintech-ltd/"
+  },
+  {
+    "id": "matrimonycom-limited",
+    "name": "Matrimony.com",
+    "url": "https://zerodha.com/markets/stocks/matrimonycom-limited/"
+  },
+  {
+    "id": "protean-e-gov-technologies-ltd",
+    "name": "Protean e-Gov Technologies",
+    "url": "https://zerodha.com/markets/stocks/protean-e-gov-technologies-ltd/"
+  },
+  {
+    "id": "bikaji-foods-international-ltd",
+    "name": "Bikaji Foods",
+    "url": "https://zerodha.com/markets/stocks/bikaji-foods-international-ltd/"
+  },
+  {
+    "id": "burger-king-india-ltd",
+    "name": "Restaurant Brands Asia",
+    "url": "https://zerodha.com/markets/stocks/burger-king-india-ltd/"
+  },
+  {
+    "id": "spencers-retail-ltd",
+    "name": "Spencer's Retail",
+    "url": "https://zerodha.com/markets/stocks/spencers-retail-ltd/"
+  },
+  {
+    "id": "arvind-fashions-ltd",
+    "name": "Arvind Fashions",
+    "url": "https://zerodha.com/markets/stocks/arvind-fashions-ltd/"
+  },
+  {
+    "id": "pfizer",
+    "name": "Pfizer",
+    "url": null
+  },
+  {
+    "id": "allied-blenders-and-distillers-ltd",
+    "name": "Allied Blenders and Distillers",
+    "url": "https://zerodha.com/markets/stocks/allied-blenders-and-distillers-ltd/"
+  },
+  {
+    "id": "saregama-india-limited",
+    "name": "Saregama",
+    "url": "https://zerodha.com/markets/stocks/saregama-india-limited/"
+  },
+  {
+    "id": "hindustan-aeronautics-limited",
+    "name": "HAL",
+    "url": "https://zerodha.com/markets/stocks/hindustan-aeronautics-limited/"
+  },
+  {
+    "id": "k-p-i-global-infrastructure-limited",
+    "name": "KPI Green Energy",
+    "url": "https://zerodha.com/markets/stocks/k-p-i-global-infrastructure-limited/"
+  },
+  {
+    "id": "premier-energies-ltd",
+    "name": "Premier Energies",
+    "url": "https://zerodha.com/markets/stocks/premier-energies-ltd/"
+  },
+  {
+    "id": "data-patterns-india-ltd",
+    "name": "Data Patterns",
+    "url": "https://zerodha.com/markets/stocks/data-patterns-india-ltd/"
+  },
+  {
+    "id": "dollar-industries-limited",
+    "name": "Dollar Industries",
+    "url": "https://zerodha.com/markets/stocks/dollar-industries-limited/"
+  },
+  {
+    "id": "cantabil-retail-india-limited",
+    "name": "Cantabil Retail India",
+    "url": "https://zerodha.com/markets/stocks/cantabil-retail-india-limited/"
+  },
+  {
+    "id": "adani-green-energy-limited",
+    "name": "Adani Green",
+    "url": "https://zerodha.com/markets/stocks/adani-green-energy-limited/"
+  },
+  {
+    "id": "waaree-energies-ltd",
+    "name": "Waaree Energies",
+    "url": "https://zerodha.com/markets/stocks/waaree-energies-ltd/"
+  },
+  {
+    "id": "tata-chemicals-limited",
+    "name": "Tata Chemicals",
+    "url": "https://zerodha.com/markets/stocks/tata-chemicals-limited/"
+  },
+  {
+    "id": "vedant-fashions-ltd",
+    "name": "Vedant Fashions| Mid Cap",
+    "url": "https://zerodha.com/markets/stocks/vedant-fashions-ltd/"
+  },
+  {
+    "id": "blue-star-limited",
+    "name": "Blue Star",
+    "url": "https://zerodha.com/markets/stocks/blue-star-limited/"
+  },
+  {
+    "id": "polycab-india-ltd",
+    "name": "Polycab",
+    "url": "https://zerodha.com/markets/stocks/polycab-india-ltd/"
+  },
+  {
+    "id": "crompton-greaves-limited",
+    "name": "CG Power",
+    "url": "https://zerodha.com/markets/stocks/crompton-greaves-limited/"
+  },
+  {
+    "id": "radico-khaitan-limited",
+    "name": "Radico Khaitan",
+    "url": "https://zerodha.com/markets/stocks/radico-khaitan-limited/"
+  },
+  {
+    "id": "united-breweries-limited",
+    "name": "United Breweries",
+    "url": "https://zerodha.com/markets/stocks/united-breweries-limited/"
+  },
+  {
+    "id": "bharat-forge-limited",
+    "name": "Bharat Forge",
+    "url": "https://zerodha.com/markets/stocks/bharat-forge-limited/"
+  },
+  {
+    "id": "united-spirits-limited",
+    "name": "United Spirits",
+    "url": "https://zerodha.com/markets/stocks/united-spirits-limited/"
+  },
+  {
+    "id": "titan-company-limited",
+    "name": "Titan Company Limited",
+    "url": "https://zerodha.com/markets/stocks/titan-company-limited/"
+  },
+  {
+    "id": "kalyan-jewellers-india-ltd",
+    "name": "Kalyan Jewellers India",
+    "url": "https://zerodha.com/markets/stocks/kalyan-jewellers-india-ltd/"
+  },
+  {
+    "id": "voltas-limited",
+    "name": "Voltas",
+    "url": "https://zerodha.com/markets/stocks/voltas-limited/"
+  },
+  {
+    "id": "hester-biosciences-ltd",
+    "name": "Hester Biosciences",
+    "url": "https://zerodha.com/markets/stocks/hester-biosciences-ltd/"
+  },
+  {
+    "id": "moongipa-securities-ltd",
+    "name": "SG Finserve",
+    "url": "https://zerodha.com/markets/stocks/moongipa-securities-ltd/"
+  },
+  {
+    "id": "union-bank-of-india",
+    "name": "Union Bank Of India",
+    "url": "https://zerodha.com/markets/stocks/union-bank-of-india/"
+  },
+  {
+    "id": "canara-bank",
+    "name": "Canara Bank",
+    "url": "https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/"
+  },
+  {
+    "id": "chambal-fertilizers-chemicals-limited",
+    "name": "Chambal Fertilizers and Chemicals",
+    "url": "https://zerodha.com/markets/stocks/chambal-fertilizers-chemicals-limited/"
+  },
+  {
+    "id": "dilip-buildcon-limited",
+    "name": "Dilip Buildcon",
+    "url": "https://zerodha.com/markets/stocks/dilip-buildcon-limited/"
+  },
+  {
+    "id": "muthoot-finance-limited",
+    "name": "Muthoot Microfin",
+    "url": "https://zerodha.com/markets/stocks/muthoot-finance-limited/"
+  },
+  {
+    "id": "aarti-industries-limited",
+    "name": "Aarti Industries",
+    "url": "https://zerodha.com/markets/stocks/aarti-industries-limited/"
+  },
+  {
+    "id": "escorts-limited",
+    "name": "Escorts Kubota",
+    "url": "https://zerodha.com/markets/stocks/escorts-limited/"
+  },
+  {
+    "id": "housing-and-urban-development-corporation",
+    "name": "Housing and Urban Development Corporation",
+    "url": "https://zerodha.com/markets/stocks/housing-and-urban-development-corporation/https://zerodha.com/markets/stocks/housing-and-urban-development-corporation/"
+  },
+  {
+    "id": "apcotex-industries-limited",
+    "name": "Apcotex Industries",
+    "url": "https://zerodha.com/markets/stocks/apcotex-industries-limited/"
+  },
+  {
+    "id": "zee-entertainment-enterprises-limited",
+    "name": "ZEE Entertainment",
+    "url": "https://zerodha.com/markets/stocks/zee-entertainment-enterprises-limited/"
+  },
+  {
+    "id": "wonderla-holidays-limited",
+    "name": "Wonderla Holidays",
+    "url": "https://zerodha.com/markets/stocks/wonderla-holidays-limited/"
+  },
+  {
+    "id": "symphony-limited",
+    "name": "Symphony",
+    "url": "https://zerodha.com/markets/stocks/symphony-limited/"
+  },
+  {
+    "id": "maersk",
+    "name": "Maersk",
+    "url": null
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "url": null
+  },
+  {
+    "id": "ferrari",
+    "name": "Ferrari",
+    "url": null
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "url": null
+  },
+  {
+    "id": "anheuser-busch-inbev-sa",
+    "name": "Anheuser-Busch Inbev SA",
+    "url": null
+  },
+  {
+    "id": "siemens-energy-ag",
+    "name": "Siemens Energy AG",
+    "url": null
+  },
+  {
+    "id": "novo-nordisk",
+    "name": "Novo Nordisk",
+    "url": null
+  },
+  {
+    "id": "hdfcbank",
+    "name": "HDFC Bank",
+    "url": "https://zerodha.com/markets/stocks/NSE/HDFCBANK/"
+  },
+  {
+    "id": "5paisa",
+    "name": "5paisa",
+    "url": "https://zerodha.com/markets/stocks/NSE/5PAISA/"
+  },
+  {
+    "id": "hdfclife",
+    "name": "HDFC Life Insurance",
+    "url": "https://zerodha.com/markets/stocks/NSE/HDFCLIFE/"
+  },
+  {
+    "id": "icicigi",
+    "name": "ICICI Lombard General Insurance",
+    "url": "https://zerodha.com/markets/stocks/NSE/ICICIGI/"
+  },
+  {
+    "id": "anandrathi",
+    "name": "Anand Rathi Wealth",
+    "url": "https://zerodha.com/markets/stocks/NSE/ANANDRATHI/"
+  },
+  {
+    "id": "tcs",
+    "name": "TATA Consultancy Services",
+    "url": "https://zerodha.com/markets/stocks/NSE/TCS/"
+  },
+  {
+    "id": "tataelxsi",
+    "name": "TATA Elxsi",
+    "url": "https://zerodha.com/markets/stocks/NSE/TATAELXSI/"
+  },
+  {
+    "id": "olaelec",
+    "name": "Ola Electric Mobility",
+    "url": "https://zerodha.com/markets/stocks/NSE/OLAELEC/"
+  },
+  {
+    "id": "belrise",
+    "name": "Belrise Industries",
+    "url": "https://zerodha.com/markets/stocks/NSE/BELRISE/"
+  },
+  {
+    "id": "elecon",
+    "name": "Elecon Engineering",
+    "url": "https://zerodha.com/markets/stocks/NSE/ELECON/"
+  },
+  {
+    "id": "arisinfra",
+    "name": "Arisinfra Solutions",
+    "url": "https://zerodha.com/markets/stocks/NSE/ARISINFRA/"
+  },
+  {
+    "id": "bansalwire",
+    "name": "Bansal Wire Industries",
+    "url": "https://zerodha.com/markets/stocks/NSE/BANSALWIRE/"
+  },
+  {
+    "id": "glenmark",
+    "name": "Glenmark Pharmaceuticals",
+    "url": "https://zerodha.com/markets/stocks/NSE/GLENMARK/"
+  },
+  {
+    "id": "lemontree",
+    "name": "Lemon Tree Hotels",
+    "url": "https://zerodha.com/markets/stocks/NSE/LEMONTREE/"
+  },
+  {
+    "id": "rallis",
+    "name": "Rallis India",
+    "url": "https://zerodha.com/markets/stocks/NSE/RALLIS/"
+  },
+  {
+    "id": "tejasnet",
+    "name": "Tejas Networks",
+    "url": "https://zerodha.com/markets/stocks/NSE/TEJASNET/"
+  },
+  {
+    "id": "awl",
+    "name": "AWL Agri Business",
+    "url": "https://zerodha.com/markets/stocks/NSE/AWL/"
+  },
+  {
+    "id": "gtpl",
+    "name": "GTPL Hathaway",
+    "url": "https://zerodha.com/markets/stocks/NSE/GTPL/"
+  },
+  {
+    "id": "the-federal-bank-limited",
+    "name": "Federal Bank Limited",
+    "url": "https://zerodha.com/markets/stocks/the-federal-bank-limited/"
+  },
+  {
+    "id": "brookfield-india-real-estate-trust-reit",
+    "name": "Brookfield India REIT",
+    "url": "https://zerodha.com/markets/stocks/brookfield-india-real-estate-trust-reit/"
+  },
+  {
+    "id": "lupin-limited",
+    "name": "Lupin Limited",
+    "url": "https://zerodha.com/markets/stocks/lupin-limited/"
+  },
+  {
+    "id": "cipla-limited",
+    "name": "Cipla Limited",
+    "url": "https://zerodha.com/markets/stocks/cipla-limited/"
+  },
+  {
+    "id": "wockhardt-limited",
+    "name": "Wockhardt",
+    "url": "https://zerodha.com/markets/stocks/wockhardt-limited/"
+  },
+  {
+    "id": "biocon-limited",
+    "name": "Biocon Limited",
+    "url": "https://zerodha.com/markets/stocks/biocon-limited/"
+  },
+  {
+    "id": "apollo-hospitals-enterprise-limited",
+    "name": "Apollo Hospitals",
+    "url": "https://zerodha.com/markets/stocks/apollo-hospitals-enterprise-limited/"
+  },
+  {
+    "id": "gujarat-fluorochemicals-ltd",
+    "name": "Gujarat Fluorochemicals Limited",
+    "url": "https://zerodha.com/markets/stocks/gujarat-fluorochemicals-ltd/"
+  },
+  {
+    "id": "pi-industries-limited",
+    "name": "PI Industries Limited",
+    "url": "https://zerodha.com/markets/stocks/pi-industries-limited/"
+  },
+  {
+    "id": "ntpc-limited",
+    "name": "NTPC Limited",
+    "url": "https://zerodha.com/markets/stocks/ntpc-limited/"
+  },
+  {
+    "id": "indraprastha-gas-limited",
+    "name": "Indraprastha Gas Limited",
+    "url": "https://zerodha.com/markets/stocks/indraprastha-gas-limited/"
+  },
+  {
+    "id": "adani-ports-and-special-economic-zone-limited",
+    "name": "Adani Ports and Special Economic Zone Limited",
+    "url": "https://zerodha.com/markets/stocks/adani-ports-and-special-economic-zone-limited/"
+  },
+  {
+    "id": "bel-limited",
+    "name": "Bharat Electronics Limited",
+    "url": "https://zerodha.com/markets/stocks/bel-limited/"
+  },
+  {
+    "id": "reliance-industries-limited",
+    "name": "Reliance Industries Limited",
+    "url": "https://zerodha.com/markets/stocks/reliance-industries-limited/"
+  },
+  {
+    "id": "avanti-feeds-limited",
+    "name": "Avanti Feeds",
+    "url": "https://zerodha.com/markets/stocks/avanti-feeds-limited/"
+  },
+  {
+    "id": "ifb-industries-limited",
+    "name": "IFB Industries",
+    "url": "https://zerodha.com/markets/stocks/ifb-industries-limited/"
+  },
+  {
+    "id": "vbl",
+    "name": "Varun Beverages",
+    "url": "https://zerodha.com/markets/stocks/NSE/VBL/"
+  },
+  {
+    "id": "emamiltd",
+    "name": "Emami Ltd",
+    "url": "https://zerodha.com/markets/stocks/NSE/EMAMILTD/"
+  },
+  {
+    "id": "britannia",
+    "name": "Britannia Industries",
+    "url": "https://zerodha.com/markets/stocks/NSE/BRITANNIA/"
+  },
+  {
+    "id": "dixon",
+    "name": "Dixon Technologies",
+    "url": "https://zerodha.com/markets/stocks/NSE/DIXON/"
+  },
+  {
+    "id": "motilalofs",
+    "name": "Motilal Oswal Financial Services",
+    "url": "https://zerodha.com/markets/stocks/NSE/MOTILALOFS/"
+  },
+  {
+    "id": "pnb",
+    "name": "Punjab National Bank",
+    "url": "https://zerodha.com/markets/stocks/NSE/PNB/"
+  },
+  {
+    "id": "adanigreen",
+    "name": "Adani Green",
+    "url": "https://zerodha.com/markets/stocks/NSE/ADANIGREEN/"
+  },
+  {
+    "id": "tatapower",
+    "name": "Tata Power",
+    "url": "https://zerodha.com/markets/stocks/NSE/TATAPOWER/"
+  },
+  {
+    "id": "godrejprop",
+    "name": "Godrej Properties",
+    "url": "https://zerodha.com/markets/stocks/NSE/GODREJPROP/"
+  },
+  {
+    "id": "lodha",
+    "name": "Lodha",
+    "url": "https://zerodha.com/markets/stocks/NSE/LODHA/"
+  },
+  {
+    "id": "prestige",
+    "name": "Prestige Estates Project",
+    "url": "https://zerodha.com/markets/stocks/NSE/PRESTIGE/"
+  },
+  {
+    "id": "jkcement",
+    "name": "JK Cements",
+    "url": "https://zerodha.com/markets/stocks/NSE/JKCEMENT/"
+  },
+  {
+    "id": "dalbharat",
+    "name": "Dalmia Bharat",
+    "url": "https://zerodha.com/markets/stocks/NSE/DALBHARAT/"
+  },
+  {
+    "id": "indigo",
+    "name": "Interglobe Aviation",
+    "url": "https://zerodha.com/markets/stocks/NSE/INDIGO/"
+  },
+  {
+    "id": "bajaj-auto",
+    "name": "Bajaj Auto",
+    "url": "https://zerodha.com/markets/stocks/NSE/BAJAJ-AUTO/"
+  },
+  {
+    "id": "bhartiartl",
+    "name": "Bharati Airtel",
+    "url": "https://zerodha.com/markets/stocks/BSE/BHARTIARTL/"
+  },
+  {
+    "id": "bharatforg",
+    "name": "Bharat Forge",
+    "url": "https://zerodha.com/markets/stocks/NSE/BHARATFORG/"
+  },
+  {
+    "id": "mankind",
+    "name": "Mankind Pharma",
+    "url": "https://zerodha.com/markets/stocks/NSE/MANKIND/"
+  },
+  {
+    "id": "tesla",
+    "name": "Tesla",
+    "url": "https://simplywall.st/en/stocks/us/automobiles/nasdaq-tsla/tesla"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "url": "https://simplywall.st/en/stocks/us/tech/nasdaq-aapl/apple"
+  },
+  {
+    "id": "fabclean",
+    "name": "Fabtech Technologies",
+    "url": "https://zerodha.com/markets/stocks/BSE/FABCLEAN/"
+  },
+  {
+    "id": "abb",
+    "name": "ABB India Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/ABB/"
+  },
+  {
+    "id": "pghh",
+    "name": "P&G Health",
+    "url": "https://zerodha.com/markets/stocks/NSE/PGHH/"
+  },
+  {
+    "id": "gillette",
+    "name": "Gillette",
+    "url": "https://zerodha.com/markets/stocks/NSE/GILLETTE/"
+  },
+  {
+    "id": "sfl",
+    "name": "Sheela Foam",
+    "url": "https://zerodha.com/markets/stocks/NSE/SFL/"
+  },
+  {
+    "id": "nykaa",
+    "name": "FSN E-Commerce Ventures Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/NYKAA/"
+  },
+  {
+    "id": "mdl",
+    "name": "Marvel Decor",
+    "url": "https://zerodha.com/markets/stocks/NSE/MDL/"
+  },
+  {
+    "id": "hindzinc",
+    "name": "Hindustan Zinc",
+    "url": "https://zerodha.com/markets/stocks/NSE/HINDZINC/"
+  },
+  {
+    "id": "recltd",
+    "name": "REC Ltd.",
+    "url": "https://zerodha.com/markets/stocks/NSE/RECLTD/"
+  },
+  {
+    "id": "jiofin",
+    "name": "Jio Financials",
+    "url": "https://zerodha.com/markets/stocks/NSE/JIOFIN/"
+  },
+  {
+    "id": "hdfcamc",
+    "name": "HDFC AMC",
+    "url": "https://zerodha.com/markets/stocks/NSE/HDFCAMC/"
+  },
+  {
+    "id": "nam-india",
+    "name": "Nippon Life AMC",
+    "url": "https://zerodha.com/markets/stocks/NSE/NAM-INDIA/"
+  },
+  {
+    "id": "crisil",
+    "name": "Crisil Ltd.",
+    "url": "https://zerodha.com/markets/stocks/NSE/CRISIL/"
+  },
+  {
+    "id": "tatamotors",
+    "name": "Tata Motors",
+    "url": "https://zerodha.com/markets/stocks/NSE/TATAMOTORS/"
+  },
+  {
+    "id": "eichermot",
+    "name": "Eicher Motors Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/EICHERMOT/"
+  },
+  {
+    "id": "upl",
+    "name": "UPL",
+    "url": "https://zerodha.com/markets/stocks/NSE/UPL/"
+  },
+  {
+    "id": "astral",
+    "name": "Astral Pipes",
+    "url": "https://zerodha.com/markets/stocks/NSE/ASTRAL/"
+  },
+  {
+    "id": "sunpharma",
+    "name": "Sun Pharma",
+    "url": "https://zerodha.com/markets/stocks/NSE/SUNPHARMA/"
+  },
+  {
+    "id": "adanient",
+    "name": "Adani Enterprises",
+    "url": "https://zerodha.com/markets/stocks/NSE/ADANIENT/"
+  },
+  {
+    "id": "idea",
+    "name": "Vodafone Idea",
+    "url": "https://zerodha.com/markets/stocks/NSE/IDEA/"
+  },
+  {
+    "id": "bhartihexa",
+    "name": "Bharti Hexacom",
+    "url": "https://zerodha.com/markets/stocks/NSE/BHARTIHEXA/"
+  },
+  {
+    "id": "naukri",
+    "name": "Info Edge",
+    "url": "https://zerodha.com/markets/stocks/NSE/NAUKRI/"
+  },
+  {
+    "id": "gail",
+    "name": "GAIL (India) Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/GAIL/"
+  },
+  {
+    "id": "ongc",
+    "name": "ONGC",
+    "url": "https://zerodha.com/markets/stocks/NSE/ONGC/"
+  },
+  {
+    "id": "crif-high-mark-on-overlending",
+    "name": "CRIF High Mark on Overlending",
+    "url": null
+  },
+  {
+    "id": "indigrid",
+    "name": "Indigrid",
+    "url": "https://zerodha.com/markets/stocks/NSE/INDIGRID/"
+  },
+  {
+    "id": "hal",
+    "name": "Hindustan Aeronautics Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/HAL/"
+  },
+  {
+    "id": "astramicro",
+    "name": "Astra Microwave Products",
+    "url": "https://zerodha.com/markets/stocks/NSE/ASTRAMICRO/"
+  },
+  {
+    "id": "balajitele",
+    "name": "Balaji Telefilms",
+    "url": "https://zerodha.com/markets/stocks/NSE/BALAJITELE/"
+  },
+  {
+    "id": "stylebaaza",
+    "name": "Style Bazaar",
+    "url": "https://zerodha.com/markets/stocks/NSE/STYLEBAAZA/"
+  },
+  {
+    "id": "thomascook",
+    "name": "Thomas Cook",
+    "url": "https://zerodha.com/markets/stocks/NSE/THOMASCOOK/"
+  },
+  {
+    "id": "jswinfra",
+    "name": "JSW Infrastructure",
+    "url": "https://zerodha.com/markets/stocks/NSE/JSWINFRA/"
+  },
+  {
+    "id": "signature",
+    "name": "Signature Global",
+    "url": "https://zerodha.com/markets/stocks/NSE/SIGNATURE/"
+  },
+  {
+    "id": "sanathan",
+    "name": "Sanathan Textiles",
+    "url": "https://zerodha.com/markets/stocks/NSE/SANATHAN/"
+  },
+  {
+    "id": "niitmts",
+    "name": "NIIT Learning Systems",
+    "url": "https://zerodha.com/markets/stocks/NSE/NIITMTS/"
+  },
+  {
+    "id": "labour-ministry-secretary-comments-on-elis-scheme",
+    "name": "Labour MInistry Secretary comments on ELIS Scheme",
+    "url": null
+  },
+  {
+    "id": "digitide-solutions",
+    "name": "Digitide Solutions",
+    "url": null
+  },
+  {
+    "id": "telecom-minister-on-trai-satellite-spectrum-auction",
+    "name": "Telecom Minister on TRAI Satellite Spectrum Auction",
+    "url": null
+  },
+  {
+    "id": "raymondlsl",
+    "name": "Raymond Lifestyle Ltd",
+    "url": "https://zerodha.com/markets/stocks/NSE/RAYMONDLSL/"
+  },
+  {
+    "id": "justdial",
+    "name": "Just Dial",
+    "url": "https://zerodha.com/markets/stocks/NSE/JUSTDIAL/"
+  },
+  {
+    "id": "mufti",
+    "name": "Credo Brands Marketing Ltd",
+    "url": "https://zerodha.com/markets/stocks/NSE/MUFTI/"
+  },
+  {
+    "id": "pvrinox",
+    "name": "PVR Inox",
+    "url": "https://zerodha.com/markets/stocks/NSE/PVRINOX/"
+  },
+  {
+    "id": "shriramfin",
+    "name": "Shriram Finance",
+    "url": "https://zerodha.com/markets/stocks/NSE/SHRIRAMFIN/"
+  },
+  {
+    "id": "pfc",
+    "name": "Power Finance Corp",
+    "url": "https://zerodha.com/markets/stocks/NSE/PFC/"
+  },
+  {
+    "id": "iex",
+    "name": "IEX",
+    "url": "https://zerodha.com/markets/stocks/NSE/IEX/"
+  },
+  {
+    "id": "heritgfood",
+    "name": "Heritage Foods Ltd",
+    "url": "https://zerodha.com/markets/stocks/NSE/HERITGFOOD/"
+  },
+  {
+    "id": "hatsun",
+    "name": "Hatsun Agro Products",
+    "url": "https://zerodha.com/markets/stocks/BSE/HATSUN/"
+  },
+  {
+    "id": "abdl",
+    "name": "Allied Blenders & Distillers",
+    "url": "https://zerodha.com/markets/stocks/NSE/ABDL/"
+  },
+  {
+    "id": "oberoirlty",
+    "name": "Oberoi Realty",
+    "url": "https://zerodha.com/markets/stocks/NSE/OBEROIRLTY/"
+  },
+  {
+    "id": "jwl",
+    "name": "Jupiter Wagons",
+    "url": "https://zerodha.com/markets/stocks/NSE/JWL/"
+  },
+  {
+    "id": "scodatubes",
+    "name": "Scoda Tubes",
+    "url": "https://zerodha.com/markets/stocks/NSE/SCODATUBES/"
+  },
+  {
+    "id": "msumi",
+    "name": "Mothersonsumi Wiring",
+    "url": "https://zerodha.com/markets/stocks/NSE/MSUMI/"
+  },
+  {
+    "id": "ushamart",
+    "name": "Usha Martin",
+    "url": "https://zerodha.com/markets/stocks/NSE/USHAMART/"
+  },
+  {
+    "id": "godrejind",
+    "name": "Godrej Industries",
+    "url": "https://zerodha.com/markets/stocks/NSE/GODREJIND/"
+  },
+  {
+    "id": "nike",
+    "name": "Nike",
+    "url": null
+  },
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "url": null
+  },
+  {
+    "id": "banking-and-financial-services",
+    "name": "Banking and Financial Services",
+    "url": null
+  },
+  {
+    "id": "textiles",
+    "name": "Textiles",
+    "url": null
+  },
+  {
+    "id": "real-estate",
+    "name": "Real Estate",
+    "url": null
+  },
+  {
+    "id": "consumer-appliances-retail",
+    "name": "Consumer Appliances & Retail",
+    "url": null
+  },
+  {
+    "id": "food-beverage",
+    "name": "Food & Beverage",
+    "url": null
+  },
+  {
+    "id": "hospitality-hotels",
+    "name": "Hospitality & Hotels",
+    "url": null
+  },
+  {
+    "id": "pharmaceuticals-chemicals",
+    "name": "Pharmaceuticals & Chemicals",
+    "url": null
+  },
+  {
+    "id": "cement-construction-materials",
+    "name": "Cement & Construction Materials",
+    "url": null
+  },
+  {
+    "id": "capital-goods-engineering",
+    "name": "Capital Goods & Engineering",
+    "url": null
+  },
+  {
+    "id": "global",
+    "name": "Global",
+    "url": null
+  },
+  {
+    "id": "kotak-mahindra-bank-limited",
+    "name": "Kotak Mahindra Bank",
+    "url": "https://zerodha.com/markets/stocks/kotak-mahindra-bank-limited/"
+  },
+  {
+    "id": "idfc-bank-limited",
+    "name": "IDFC First Bank",
+    "url": "https://zerodha.com/markets/stocks/idfc-bank-limited/"
+  },
+  {
+    "id": "computer-age-management-services-ltd",
+    "name": "CAMS",
+    "url": "https://zerodha.com/markets/stocks/computer-age-management-services-ltd/"
+  },
+  {
+    "id": "sportking-india-limited",
+    "name": "Sportking India",
+    "url": "https://zerodha.com/markets/stocks/sportking-india-limited/"
+  },
+  {
+    "id": "godrej-properties-limited",
+    "name": "Godrej Properties",
+    "url": "https://zerodha.com/markets/stocks/godrej-properties-limited/"
+  },
+  {
+    "id": "graviss-foods",
+    "name": "Graviss Foods",
+    "url": null
+  },
+  {
+    "id": "avenue-supermarts-limited",
+    "name": "Avenue Supermarts",
+    "url": "https://zerodha.com/markets/stocks/avenue-supermarts-limited/"
+  },
+  {
+    "id": "the-indian-hotels-company-limited",
+    "name": "Indian Hotels Company",
+    "url": "https://zerodha.com/markets/stocks/the-indian-hotels-company-limited/"
+  },
+  {
+    "id": "hind-rectifiers-limited",
+    "name": "Hind Rectifiers Limited",
+    "url": "https://zerodha.com/markets/stocks/hind-rectifiers-limited/"
+  },
+  {
+    "id": "godrej-agrovet-ltd",
+    "name": "Godrej Agrovet",
+    "url": "https://zerodha.com/markets/stocks/godrej-agrovet-ltd/"
+  },
+  {
+    "id": "ultratech-cement-limited",
+    "name": "Ultratech Cement",
+    "url": "https://zerodha.com/markets/stocks/ultratech-cement-limited/"
+  },
+  {
+    "id": "rr-kabel-ltd",
+    "name": "R R Kabel",
+    "url": "https://zerodha.com/markets/stocks/rr-kabel-ltd/"
+  },
+  {
+    "id": "ccl-products-india-limited",
+    "name": "CCL Products",
+    "url": "https://zerodha.com/markets/stocks/ccl-products-india-limited/"
+  },
+  {
+    "id": "tatva-chintan-pharma-chem-ltd",
+    "name": "Tatva Chintan Pharma Chem",
+    "url": "https://zerodha.com/markets/stocks/tatva-chintan-pharma-chem-ltd/"
+  },
+  {
+    "id": "onesource-specialty-pharma-ltd",
+    "name": "OneSource Specialty Pharma",
+    "url": "https://zerodha.com/markets/stocks/onesource-specialty-pharma-ltd/"
+  },
+  {
+    "id": "coca-cola",
+    "name": "Coca Cola",
+    "url": null
+  },
+  {
+    "id": "minda-corporation-limited",
+    "name": "Minda Corporation Limited",
+    "url": "https://zerodha.com/markets/stocks/minda-corporation-limited/"
+  },
+  {
+    "id": "ola-electric-mobility-ltd",
+    "name": "Ola Electric Mobility",
+    "url": "https://zerodha.com/markets/stocks/ola-electric-mobility-ltd/"
+  },
+  {
+    "id": "cummins-india-limited",
+    "name": "Cummins India",
+    "url": "https://zerodha.com/markets/stocks/cummins-india-limited/"
+  },
+  {
+    "id": "suzlon-energy-limited",
+    "name": "Suzlon Energy",
+    "url": "https://zerodha.com/markets/stocks/suzlon-energy-limited/"
+  },
+  {
+    "id": "flair-writing-industries-ltd",
+    "name": "Flair",
+    "url": "https://zerodha.com/markets/stocks/flair-writing-industries-ltd/"
+  },
+  {
+    "id": "linc-pen-plastics-limited",
+    "name": "Linc Pen & Plastics Ltd",
+    "url": "https://zerodha.com/markets/stocks/linc-pen-plastics-limited/"
+  },
+  {
+    "id": "eid-parry-india-limited",
+    "name": "EID Parry (India) Ltd| Small Cap",
+    "url": "https://zerodha.com/markets/stocks/eid-parry-india-limited/"
+  },
+  {
+    "id": "monte-carlo-fashions-limited",
+    "name": "Monte Carlo Fashions Limited",
+    "url": "https://zerodha.com/markets/stocks/monte-carlo-fashions-limited/"
+  },
+  {
+    "id": "campus-activewear-ltd",
+    "name": "Campus Activewear",
+    "url": "https://zerodha.com/markets/stocks/campus-activewear-ltd/"
+  },
+  {
+    "id": "life-insurance-corporation-of-india",
+    "name": "Life Insurance Corporation of India",
+    "url": "https://zerodha.com/markets/stocks/life-insurance-corporation-of-india/"
+  },
+  {
+    "id": "general-insurance-corporation-of-india-limited",
+    "name": "General Insurance Corporation of India",
+    "url": "https://zerodha.com/markets/stocks/general-insurance-corporation-of-india-limited/#peers"
+  },
+  {
+    "id": "cyient-limited",
+    "name": "Cyient",
+    "url": "https://zerodha.com/markets/stocks/cyient-limited/"
+  },
+  {
+    "id": "medplus-health-services-ltd",
+    "name": "MedPlus",
+    "url": "https://zerodha.com/markets/stocks/medplus-health-services-ltd/"
+  },
+  {
+    "id": "tvs-supply-chain-solutions-ltd",
+    "name": "TVS Supply Chain Solutions",
+    "url": "https://zerodha.com/markets/stocks/tvs-supply-chain-solutions-ltd/"
+  },
+  {
+    "id": "tbo-tek-ltd",
+    "name": "TBO Tek Ltd",
+    "url": "https://zerodha.com/markets/stocks/tbo-tek-ltd/"
+  },
+  {
+    "id": "indian-railway-catering-tourism-corpn-ltd",
+    "name": "Indian Railway Catering and Tourism Corporation",
+    "url": "https://zerodha.com/markets/stocks/indian-railway-catering--tourism-corpn-ltd/"
+  },
+  {
+    "id": "20-microns-limited",
+    "name": "20 Microns Limited",
+    "url": "https://zerodha.com/markets/stocks/20-microns-limited/"
+  },
+  {
+    "id": "heidelberg-cement-india-limited",
+    "name": "Heidelberg Cement",
+    "url": "https://zerodha.com/markets/stocks/heidelberg-cement-india-limited/"
+  },
+  {
+    "id": "hero-motocorp-limited",
+    "name": "Hero Motocorp",
+    "url": "https://zerodha.com/markets/stocks/hero-motocorp-limited/"
+  },
+  {
+    "id": "exide-industries-limited",
+    "name": "Exide",
+    "url": "https://zerodha.com/markets/stocks/exide-industries-limited/"
+  },
+  {
+    "id": "hyundai-motor-india-ltd",
+    "name": "Hyundai Motor India",
+    "url": "https://zerodha.com/markets/stocks/hyundai-motor-india-ltd/"
+  },
+  {
+    "id": "torrent-power-limited",
+    "name": "Torrent Power",
+    "url": "https://zerodha.com/markets/stocks/torrent-power-limited/"
+  },
+  {
+    "id": "mahanagar-20gas-q4fy25-earnings-20call-20transcript-final-pdf",
+    "name": "Mahanagar Gas",
+    "url": "https://www.mahanagargas.com:3000/Mahanagar%20Gas_Q4FY25_Earnings%20Call%20Transcript_Final.pdf"
+  },
+  {
+    "id": "tata-power-company-limited",
+    "name": "Tata Power",
+    "url": "https://zerodha.com/markets/stocks/tata-power-company-limited/"
+  },
+  {
+    "id": "jsw-energy-limited",
+    "name": "JSW ENERGY",
+    "url": "https://www.tijorifinance.com/company/jsw-energy-limited/"
+  },
+  {
+    "id": "larsen-toubro-limited",
+    "name": "Larsen & Toubro",
+    "url": "https://zerodha.com/markets/stocks/larsen-toubro-limited/"
+  },
+  {
+    "id": "kei-industries-limited",
+    "name": "KEI Industries| Mid Cap",
+    "url": "https://zerodha.com/markets/stocks/kei-industries-limited/"
+  },
+  {
+    "id": "kaynes-technology-india-ltd",
+    "name": "Kaynes Technology",
+    "url": "https://zerodha.com/markets/stocks/kaynes-technology-india-ltd/"
+  },
+  {
+    "id": "bank-of-baroda",
+    "name": "Bank of Baroda",
+    "url": "https://zerodha.com/markets/stocks/bank-of-baroda/"
+  },
+  {
+    "id": "suryoday-small-finance-bank-ltd",
+    "name": "Suryoday Small Finance Bank| Small Cap",
+    "url": "https://zerodha.com/markets/stocks/suryoday-small-finance-bank-ltd/"
+  },
+  {
+    "id": "satin-creditcare-network-limited",
+    "name": "Satin Creditcare",
+    "url": "https://zerodha.com/markets/stocks/satin-creditcare-network-limited/"
+  },
+  {
+    "id": "piramal-enterprises-limited",
+    "name": "Piramal Enterprises",
+    "url": "https://zerodha.com/markets/stocks/piramal-enterprises-limited/"
+  },
+  {
+    "id": "ethos-ltd",
+    "name": "Ethos Ltd.",
+    "url": "http://v"
+  },
+  {
+    "id": "sapphire-foods-india-ltd",
+    "name": "Sapphire Foods India",
+    "url": "https://zerodha.com/markets/stocks/sapphire-foods-india-ltd/"
+  },
+  {
+    "id": "jubilant-foodworks-limited",
+    "name": "Jubilant FoodWorks",
+    "url": "https://zerodha.com/markets/stocks/jubilant-foodworks-limited/"
+  },
+  {
+    "id": "ruchi-soya-industries-limited",
+    "name": "Patanjali Foods",
+    "url": "https://zerodha.com/markets/stocks/ruchi-soya-industries-limited/"
+  },
+  {
+    "id": "page-industries-limited",
+    "name": "Page Industries",
+    "url": "https://zerodha.com/markets/stocks/page-industries-limited/"
+  },
+  {
+    "id": "westlife-development-limited",
+    "name": "Westlife",
+    "url": "https://zerodha.com/markets/stocks/westlife-development-limited/"
+  },
+  {
+    "id": "pidilite-industries-limited",
+    "name": "Pidilite Industries",
+    "url": "https://zerodha.com/markets/stocks/pidilite-industries-limited/"
+  },
+  {
+    "id": "aarti-pharmalabs-ltd",
+    "name": "Aarti Pharma",
+    "url": "https://zerodha.com/markets/stocks/aarti-pharmalabs-ltd/"
+  },
+  {
+    "id": "welspun-enterprise-limited",
+    "name": "Welspun Enterprises",
+    "url": "https://zerodha.com/markets/stocks/welspun-enterprise-limited/"
+  },
+  {
+    "id": "route-mobile-ltd",
+    "name": "Route Mobile",
+    "url": "https://zerodha.com/markets/stocks/route-mobile-ltd/"
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba",
+    "url": null
+  },
+  {
+    "id": "tencent",
+    "name": "Tencent",
+    "url": null
+  },
+  {
+    "id": "under-armour",
+    "name": "Under Armour",
+    "url": null
+  },
+  {
+    "id": "saudi-aramco",
+    "name": "Saudi Aramco",
+    "url": null
+  },
+  {
+    "id": "hugo-boss",
+    "name": "Hugo Boss",
+    "url": null
+  },
+  {
+    "id": "bmw",
+    "name": "BMW",
+    "url": null
+  },
+  {
+    "id": "l-t-mindtree",
+    "name": "L&T Mindtree",
+    "url": null
+  },
+  {
+    "id": "hcltech",
+    "name": "HCL Technologies",
+    "url": "https://zerodha.com/markets/stocks/NSE/HCLTECH/"
+  },
+  {
+    "id": "tatatech",
+    "name": "Tata Technologies",
+    "url": "https://zerodha.com/markets/stocks/NSE/TATATECH/"
+  },
+  {
+    "id": "techm",
+    "name": "Tech Mahindra",
+    "url": "https://zerodha.com/markets/stocks/NSE/TECHM/"
+  },
+  {
+    "id": "wipro",
+    "name": "Wipro",
+    "url": "https://zerodha.com/markets/stocks/NSE/WIPRO/"
+  },
+  {
+    "id": "angelone",
+    "name": "Angel One",
+    "url": "https://zerodha.com/markets/stocks/NSE/ANGELONE/"
+  },
+  {
+    "id": "allcargo",
+    "name": "Allcargo Group",
+    "url": "https://zerodha.com/markets/stocks/NSE/ALLCARGO/"
+  },
+  {
+    "id": "reliance",
+    "name": "Reliance Industries",
+    "url": "https://zerodha.com/markets/stocks/NSE/RELIANCE/"
+  },
+  {
+    "id": "kei",
+    "name": "KEI Industries",
+    "url": "https://zerodha.com/markets/stocks/NSE/KEI/"
+  },
+  {
+    "id": "zomato",
+    "name": "Zomato",
+    "url": null
+  },
+  {
+    "id": "shoppers-stop",
+    "name": "Shoppers Stop",
+    "url": null
+  },
+  {
+    "id": "bajaj-finance",
+    "name": "Bajaj Finance",
+    "url": null
+  },
+  {
+    "id": "jsw-infrastructure",
+    "name": "JSW Infrastructure",
+    "url": null
+  },
+  {
+    "id": "bharat-petroleum-corporation",
+    "name": "Bharat Petroleum Corporation",
+    "url": null
+  },
+  {
+    "id": "indian-oil-corporation",
+    "name": "Indian Oil Corporation",
+    "url": null
+  },
+  {
+    "id": "star-health",
+    "name": "Star Health",
+    "url": null
+  },
+  {
+    "id": "varun-beverages",
+    "name": "Varun Beverages",
+    "url": null
+  },
+  {
+    "id": "vishal-mega-mart",
+    "name": "Vishal Mega Mart",
+    "url": null
+  },
+  {
+    "id": "ceat",
+    "name": "CEAT",
+    "url": null
+  },
+  {
+    "id": "sebi-chairman",
+    "name": "SEBI Chairman",
+    "url": null
+  },
+  {
+    "id": "google",
+    "name": "Google",
+    "url": null
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "url": null
+  },
+  {
+    "id": "icicibank",
+    "name": "ICICI Bank",
+    "url": "https://zerodha.com/markets/stocks/NSE/ICICIBANK/"
+  },
+  {
+    "id": "ltf",
+    "name": "L&T Finance Ltd",
+    "url": "https://zerodha.com/markets/stocks/NSE/LTF/"
+  },
+  {
+    "id": "polycab",
+    "name": "Polycab India",
+    "url": "https://zerodha.com/markets/stocks/NSE/POLYCAB/"
+  },
+  {
+    "id": "havells",
+    "name": "Havells",
+    "url": "https://zerodha.com/markets/stocks/NSE/HAVELLS/"
+  },
+  {
+    "id": "ultracemco",
+    "name": "Ultratech Cement",
+    "url": "https://zerodha.com/markets/stocks/NSE/ULTRACEMCO/"
+  },
+  {
+    "id": "ixigo",
+    "name": "Ixigo",
+    "url": "https://zerodha.com/markets/stocks/NSE/IXIGO/"
+  },
+  {
+    "id": "eternal",
+    "name": "Eternal",
+    "url": "https://zerodha.com/markets/stocks/NSE/ETERNAL/"
+  },
+  {
+    "id": "ltfoods",
+    "name": "LT Foods",
+    "url": "https://zerodha.com/markets/stocks/NSE/LTFOODS/"
+  },
+  {
+    "id": "dbcorp",
+    "name": "D.B. Corp",
+    "url": "https://zerodha.com/markets/stocks/NSE/DBCORP/"
+  },
+  {
+    "id": "drreddy",
+    "name": "Dr Reddy’s",
+    "url": "https://zerodha.com/markets/stocks/NSE/DRREDDY/"
+  },
+  {
+    "id": "infobean",
+    "name": "Infobeans Technologies",
+    "url": "https://zerodha.com/markets/stocks/NSE/INFOBEAN/"
+  },
+  {
+    "id": "meta-platforms",
+    "name": "Meta",
+    "url": "https://simplywall.st/en/stocks/us/media/nasdaq-meta/meta-platforms"
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "url": "https://simplywall.st/en/stocks/us/software/nasdaq-msft/microsoft"
+  },
+  {
+    "id": "alphabet",
+    "name": "Alphabet",
+    "url": "https://simplywall.st/en/stocks/us/media/nasdaq-googl/alphabet"
+  },
+  {
+    "id": "boeing",
+    "name": "The Boeing Co",
+    "url": "https://simplywall.st/en/stocks/us/capital-goods/nyse-ba/boeing"
+  },
+  {
+    "id": "spotify-technology",
+    "name": "Spotify",
+    "url": "https://simplywall.st/en/stocks/us/media/nyse-spot/spotify-technology"
+  },
+  {
+    "id": "organicrec",
+    "name": "Organic Recycling",
+    "url": "https://zerodha.com/markets/stocks/BSE/ORGANICREC/"
+  },
+  {
+    "id": "skfindia",
+    "name": "SKF India Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/SKFINDIA/"
+  },
+  {
+    "id": "timken",
+    "name": "Timken India Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/TIMKEN/"
+  },
+  {
+    "id": "kec",
+    "name": "KEC International Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/KEC/"
+  },
+  {
+    "id": "auropharma",
+    "name": "Aurobindo Pharma Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/AUROPHARMA/"
+  },
+  {
+    "id": "irfc",
+    "name": "Indian Railway Finance Corporation Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/IRFC/"
+  },
+  {
+    "id": "poonawalla",
+    "name": "Poonawalla Fincorp Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/POONAWALLA/"
+  },
+  {
+    "id": "canfinhome",
+    "name": "Can Fin Homes Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/CANFINHOME/"
+  },
+  {
+    "id": "bataindia",
+    "name": "Bata India Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/BATAINDIA/"
+  },
+  {
+    "id": "apex",
+    "name": "Apex Frozen Foods",
+    "url": "https://zerodha.com/markets/stocks/NSE/APEX/"
+  },
+  {
+    "id": "thomascott",
+    "name": "Thomas Scott",
+    "url": "https://zerodha.com/markets/stocks/NSE/THOMASCOTT/"
+  },
+  {
+    "id": "brigade",
+    "name": "Brigade Enterprises Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/BRIGADE/"
+  },
+  {
+    "id": "are-m",
+    "name": "Amara Raja Energy & Mobility Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/ARE&M/"
+  },
+  {
+    "id": "kelltontec",
+    "name": "Kellton Tech Solutions",
+    "url": "https://zerodha.com/markets/stocks/BSE/KELLTONTEC/"
+  },
+  {
+    "id": "jindalsaw",
+    "name": "Jindal Saw",
+    "url": "https://zerodha.com/markets/stocks/NSE/JINDALSAW/"
+  },
+  {
+    "id": "bluspring",
+    "name": "Bluspring Enterprise",
+    "url": "https://zerodha.com/markets/stocks/NSE/BLUSPRING/"
+  },
+  {
+    "id": "new-year-s-edition",
+    "name": "New Year's Edition",
+    "url": null
+  }
+]
