@@ -16,14 +16,17 @@ import re
 import time
 from dataclasses import dataclass
 from datetime import datetime
+from difflib import SequenceMatcher
 from html.parser import HTMLParser
 from typing import Optional
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse
 from urllib.request import Request, urlopen
 
 BASE_URL = "https://thechatter.zerodha.com/"
 SITEMAP_URL = urljoin(BASE_URL, "sitemap")
 OUTPUT_DIR = "data"
+ZERODHA_STOCKS_BASE = "https://zerodha.com/markets/stocks"
+ZERODHA_STOCKS_SEARCH_URL = ZERODHA_STOCKS_BASE + "/search/?q={query}"
 
 TITLE_INCLUDE = "the chatter"
 TITLE_EXCLUDE = ["points and figures", "plotlines"]
@@ -81,6 +84,27 @@ SECTOR_HEADING_TOKEN_SET = {
     "textiles",
     "transport",
     "utilities",
+}
+MARKET_LOOKUP_STOPWORDS = {
+    "limited",
+    "ltd",
+    "inc",
+    "corp",
+    "corporation",
+    "company",
+    "co",
+    "private",
+    "pvt",
+    "plc",
+    "ag",
+    "sa",
+    "group",
+    "holdings",
+    "holding",
+    "technologies",
+    "technology",
+    "india",
+    "ind",
 }
 
 
@@ -169,6 +193,160 @@ def canonical_company_id(name: str, href: Optional[str]) -> str:
             if last and last not in {"markets", "stocks"}:
                 return slugify(last)
     return slugify(name)
+
+
+def _lookup_tokens(text: str) -> list[str]:
+    normalized = text.lower().replace("&", " and ")
+    normalized = re.sub(r"[^a-z0-9]+", " ", normalized).strip()
+    return [token for token in normalized.split() if token and token not in MARKET_LOOKUP_STOPWORDS]
+
+
+def _lookup_fingerprint(text: str) -> str:
+    return "".join(_lookup_tokens(text))
+
+
+def _normalize_display_name(raw: object) -> str:
+    if isinstance(raw, list):
+        return " ".join([str(item).strip() for item in raw if str(item).strip()])
+    return str(raw or "").strip()
+
+
+def _iter_zerodha_candidates(payload: object):
+    if not isinstance(payload, dict):
+        return
+    for bucket in ("companies", "brands"):
+        items = payload.get(bucket, [])
+        if not isinstance(items, list):
+            continue
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            display_name = _normalize_display_name(item.get("display_name") or item.get("name"))
+            exchange = str(item.get("exchange") or "").strip().upper()
+            symbol = str(item.get("symbol") or "").strip().upper()
+            slug = str(item.get("slug") or "").strip()
+            if display_name and exchange and symbol:
+                yield {
+                    "display_name": display_name,
+                    "exchange": exchange,
+                    "symbol": symbol,
+                    "slug": slug,
+                }
+
+
+def _candidate_match_score(company_name: str, company_id: str, candidate: dict[str, str]) -> int:
+    company_tokens = _lookup_tokens(company_name)
+    company_fp = "".join(company_tokens) or re.sub(r"[^a-z0-9]+", "", company_id.lower())
+
+    display_tokens = _lookup_tokens(candidate["display_name"])
+    display_fp = "".join(display_tokens)
+    slug_fp = _lookup_fingerprint(candidate.get("slug", ""))
+
+    score = 0
+    if display_fp and display_fp == company_fp:
+        score += 140
+    if slug_fp and slug_fp == company_fp:
+        score += 130
+
+    if company_fp and display_fp and (display_fp.startswith(company_fp) or company_fp.startswith(display_fp)):
+        score += 70
+    if company_fp and slug_fp and (slug_fp.startswith(company_fp) or company_fp.startswith(slug_fp)):
+        score += 70
+
+    if company_fp and display_fp:
+        score += int(SequenceMatcher(None, company_fp, display_fp).ratio() * 120)
+    if company_fp and slug_fp:
+        score += int(SequenceMatcher(None, company_fp, slug_fp).ratio() * 90)
+
+    if company_tokens and display_tokens:
+        overlap = len(set(company_tokens).intersection(display_tokens))
+        score += overlap * 18
+        if company_tokens[0] == display_tokens[0]:
+            score += 25
+        elif overlap == 0:
+            score -= 20
+
+    if candidate["exchange"] == "NSE":
+        score += 8
+    return score
+
+
+def _fetch_market_search(query: str, cache: dict[str, object]) -> object:
+    key = query.strip().lower()
+    if not key:
+        return {}
+    if key in cache:
+        return cache[key]
+
+    search_url = ZERODHA_STOCKS_SEARCH_URL.format(query=quote(key))
+    try:
+        payload = json.loads(fetch(search_url))
+    except Exception:
+        payload = {}
+    cache[key] = payload
+    return payload
+
+
+def _url_exists(url: str, cache: dict[str, bool]) -> bool:
+    if url in cache:
+        return cache[url]
+    try:
+        req = Request(url, headers={"User-Agent": "CompanyChatterBot/0.1"})
+        with urlopen(req, timeout=20) as resp:
+            ok = resp.status == 200
+    except Exception:
+        ok = False
+    cache[url] = ok
+    return ok
+
+
+def resolve_market_url_for_company(company: Company, search_cache: dict[str, object], url_cache: dict[str, bool]) -> Optional[str]:
+    if company.url:
+        return company.url
+    if company.id == "global":
+        return None
+
+    best_score = -1
+    best_url = None
+    tried_queries = set()
+    for query in [company.name, company.id.replace("-", " ")]:
+        query_key = query.strip().lower()
+        if not query_key or query_key in tried_queries:
+            continue
+        tried_queries.add(query_key)
+
+        payload = _fetch_market_search(query, search_cache)
+        for candidate in _iter_zerodha_candidates(payload):
+            score = _candidate_match_score(company.name, company.id, candidate)
+            candidate_url = f"{ZERODHA_STOCKS_BASE}/{candidate['exchange']}/{candidate['symbol']}/"
+            if score > best_score:
+                best_score = score
+                best_url = candidate_url
+
+    if best_url and best_score >= 100 and _url_exists(best_url, url_cache):
+        return best_url
+    return None
+
+
+def enrich_company_urls(companies: dict[str, Company]) -> None:
+    search_cache: dict[str, object] = {}
+    url_cache: dict[str, bool] = {}
+    resolved = 0
+    unresolved = 0
+
+    for company in companies.values():
+        if company.url:
+            continue
+        resolved_url = resolve_market_url_for_company(company, search_cache, url_cache)
+        if resolved_url:
+            company.url = resolved_url
+            resolved += 1
+        else:
+            unresolved += 1
+        time.sleep(0.05)
+
+    print(f"Resolved market URLs: {resolved}")
+    print(f"Still without market URL: {unresolved}")
 
 
 def _has_company_url_signal(href: Optional[str]) -> bool:
@@ -571,6 +749,8 @@ def main() -> None:
         if idx % 10 == 0:
             print(f"Processed {idx}/{len(post_urls)} posts...")
         time.sleep(0.2)
+
+    enrich_company_urls(companies)
 
     with open(f"{OUTPUT_DIR}/editions.json", "w", encoding="utf-8") as f:
         json.dump([e.__dict__ for e in editions.values()], f, ensure_ascii=False, indent=2)

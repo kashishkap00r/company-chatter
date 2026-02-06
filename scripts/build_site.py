@@ -14,6 +14,7 @@ Outputs:
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import shutil
@@ -106,6 +107,38 @@ def _select_display_name(variants: list[dict]) -> str:
     return min(variants, key=rank)["name"]
 
 
+def _stable_hash(value: str) -> int:
+    digest = hashlib.sha1(value.encode("utf-8")).hexdigest()
+    return int(digest[:12], 16)
+
+
+def _floating_style(slug: str) -> str:
+    h = _stable_hash(f"floating:{slug}")
+    x = 4 + (h % 92)
+    y = 7 + ((h // 97) % 82)
+
+    if 36 <= x <= 64 and 24 <= y <= 74:
+        y = 7 + ((y + 27) % 82)
+
+    scale = 0.84 + ((h // 7919) % 48) / 100
+    opacity = 0.06 + ((h // 101) % 20) / 100
+    duration = 16 + ((h // 379) % 20)
+    delay = -((h // 193) % 24)
+    drift = ((h // 877) % 10) - 5
+    return (
+        f"--x:{x}%; --y:{y}%; --scale:{scale:.2f}; --opacity:{opacity:.2f}; "
+        f"--duration:{duration}s; --delay:{delay}s; --drift:{drift}px;"
+    )
+
+
+def _pick_floating_companies(company_records: list[dict], limit: int = 42) -> list[dict]:
+    if not company_records:
+        return []
+    pool = sorted(company_records, key=lambda c: (-c["quote_count"], c["name"].lower()))[:120]
+    ranked = sorted(pool, key=lambda c: _stable_hash(f"pick:{c['slug']}"))
+    return ranked[: min(limit, len(ranked))]
+
+
 def merge_company_variants(companies: list[dict], quotes: list[dict]) -> tuple[list[dict], list[dict]]:
     quote_count_by_company: dict[str, int] = {}
     for q in quotes:
@@ -165,36 +198,38 @@ def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[d
         if edition_date and edition_date > latest_date_by_company.get(company_id, ""):
             latest_date_by_company[company_id] = edition_date
 
-    cards = []
+    company_records = []
     for company in sorted(companies, key=lambda c: c["name"].lower()):
         slug = company["id"]
         count = quote_count_by_company.get(slug, 0)
         if count == 0:
             continue
-        editions_count = len(edition_ids_by_company.get(slug, set()))
-        latest_date = format_date(latest_date_by_company.get(slug, ""))
-        cards.append(
-            "\n".join(
-                [
-                    f'<a class="company-item" data-name="{html_escape(company["name"].lower())}" href="/company/{slug}/">',
-                    '  <div class="company-item-head">',
-                    f"    <strong>{html_escape(company['name'])}</strong>",
-                    f'    <span class="pill">{count} quotes</span>',
-                    "  </div>",
-                    '  <div class="company-item-meta">',
-                    f"    <span>{editions_count} editions</span>",
-                    f"    <span>Latest: {latest_date}</span>",
-                    "  </div>",
-                    "</a>",
-                ]
+        company_records.append(
+            {
+                "slug": slug,
+                "name": company["name"],
+                "quote_count": count,
+                "edition_count": len(edition_ids_by_company.get(slug, set())),
+                "latest_date": format_date(latest_date_by_company.get(slug, "")),
+            }
+        )
+
+    floating_links = []
+    for record in _pick_floating_companies(company_records):
+        floating_links.append(
+            (
+                f'<a class="floating-company" href="/company/{record["slug"]}/" '
+                f'style="{_floating_style(record["slug"])}">{html_escape(record["name"])}</a>'
             )
         )
 
-    visible_companies = len(cards)
+    company_data_json = json.dumps(company_records, ensure_ascii=False).replace("</", "<\\/")
+    visible_companies = len(company_records)
     content = render_template(
         "index.html",
         {
-            "company_cards": "\n".join(cards) if cards else "<p>No companies yet.</p>",
+            "floating_companies": "\n".join(floating_links),
+            "company_data_json": company_data_json,
             "total_companies": str(visible_companies),
             "total_quotes": str(len(quotes)),
             "total_editions": str(len(editions)),
@@ -261,35 +296,31 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
             edition_source_url = edition.get("url") or edition_quotes[0].get("source_url", "")
 
             sectors = sorted({q.get("sector", "").strip() for q in edition_quotes if q.get("sector")})
-            sector_chips = "".join([f'<span class="sector-chip">{html_escape(s)}</span>' for s in sectors])
+            sector_line = ""
+            if sectors:
+                sector_line = f'<p class="chapter-sector">{html_escape(" · ".join(sectors))}</p>'
 
             quote_cards = []
             for index, q in enumerate(edition_quotes, start=1):
-                quote_context = q.get("context") or "Context not provided in source."
-                quote_speaker = q.get("speaker") or "Speaker not explicitly mentioned."
-                quote_sector = q.get("sector") or "Unspecified sector"
+                quote_context = (q.get("context") or "").strip()
+                quote_speaker = (q.get("speaker") or "").strip()
+                story_parts = []
+
+                if quote_context:
+                    story_parts.append(f'<p class="story-context">{html_escape(quote_context)}</p>')
+                story_parts.append(f'<blockquote class="story-quote">“{html_escape(q["text"])}”</blockquote>')
+                if quote_speaker:
+                    story_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
+                story_parts.append(
+                    f'<a class="small-link" href="{html_escape(q["source_url"])}">Source</a>'
+                )
 
                 quote_cards.append(
                     "\n".join(
                         [
-                            '<article class="quote-card">',
-                            '  <div class="quote-card-header">',
-                            f'    <span class="quote-number">Quote {index}</span>',
-                            f'    <span class="quote-sector">{html_escape(quote_sector)}</span>',
-                            "  </div>",
-                            '  <div class="quote-field">',
-                            '    <span class="field-label">Context</span>',
-                            f'    <p class="field-value">{html_escape(quote_context)}</p>',
-                            "  </div>",
-                            '  <div class="quote-field">',
-                            '    <span class="field-label">Quote</span>',
-                            f'    <blockquote class="quote-text">{html_escape(q["text"])}</blockquote>',
-                            "  </div>",
-                            '  <div class="quote-field">',
-                            '    <span class="field-label">Who Said It</span>',
-                            f'    <p class="field-value speaker-line">{html_escape(quote_speaker)}</p>',
-                            "  </div>",
-                            f'  <a class="small-link" href="{html_escape(q["source_url"])}">Open source quote</a>',
+                            '<article class="story-card">',
+                            f'  <span class="story-index">{index:02d}</span>',
+                            f'  <div class="story-body">{"".join(story_parts)}</div>',
                             "</article>",
                         ]
                     )
@@ -297,40 +328,40 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
 
             edition_link = ""
             if edition_source_url:
-                edition_link = (
-                    f'<a class="small-link" href="{html_escape(edition_source_url)}">Read full edition</a>'
-                )
+                edition_link = f'<a class="small-link" href="{html_escape(edition_source_url)}">Full edition</a>'
 
             edition_sections.append(
                 "\n".join(
                     [
-                        '<section class="edition-block">',
-                        '  <div class="edition-head">',
+                        '<section class="edition-chapter">',
+                        '  <div class="chapter-head">',
                         "    <div>",
-                        '      <p class="edition-kicker">Edition</p>',
+                        f'      <p class="chapter-date">{html_escape(format_date(edition_date))}</p>',
                         f"      <h3>{html_escape(edition_title)}</h3>",
-                        f'      <p class="edition-meta">{html_escape(format_date(edition_date))} · {len(edition_quotes)} quotes</p>',
+                        f'      <p class="chapter-meta">{len(edition_quotes)} quotes</p>',
+                        f"      {sector_line}" if sector_line else "",
                         "    </div>",
                         f"    {edition_link}",
                         "  </div>",
-                        f'  <div class="edition-sectors">{sector_chips}</div>' if sector_chips else "",
-                        f'  <div class="edition-quotes">{"".join(quote_cards)}</div>',
+                        f'  <div class="storyline">{"".join(quote_cards)}</div>',
                         "</section>",
                     ]
                 )
             )
 
-        company_link = ""
+        company_name_link = html_escape(company["name"])
         if company.get("url"):
-            company_link = f'<a class="company-link" href="{html_escape(company["url"])}">Open market page</a>'
+            company_name_link = (
+                f'<a class="company-title-link" href="{html_escape(company["url"])}">'
+                f"{html_escape(company['name'])}</a>"
+            )
 
-        meta = "Quotes grouped by edition. Each quote preserves context, statement, and speaker when available."
+        meta = "Edition-by-edition storyline from The Chatter archive."
         content = render_template(
             "company.html",
             {
-                "company_name": html_escape(company["name"]),
+                "company_name_link": company_name_link,
                 "company_meta": meta,
-                "company_link": company_link,
                 "edition_sections": "\n".join(edition_sections) if edition_sections else "<p>No quotes yet.</p>",
                 "quote_count": str(len(company_quotes)),
                 "first_date": format_date(min([d for d in dates if d] or [""])),

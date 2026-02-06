@@ -1,59 +1,90 @@
-<section class="landing">
-  <div class="landing-copy">
-    <p class="eyebrow">The Chatter, Decoded</p>
-    <h2>Company commentary with clean quote structure.</h2>
-    <p>
-      Open any company to see quotes grouped by edition, with context, the exact statement,
-      and who said it.
-    </p>
+<section class="home-stage">
+  <div class="floating-field" aria-hidden="true">
+    {{ floating_companies }}
   </div>
-  <div class="landing-metrics">
-    <div class="metric-grid">
-      <article class="metric-card">
-        <p>Companies</p>
-        <strong>{{ total_companies }}</strong>
-      </article>
-      <article class="metric-card">
-        <p>Quotes</p>
-        <strong>{{ total_quotes }}</strong>
-      </article>
-      <article class="metric-card">
-        <p>Editions</p>
-        <strong>{{ total_editions }}</strong>
-      </article>
+
+  <div class="search-stage">
+    <p class="eyebrow">Company Chatter</p>
+    <h2>Search once. Read the company story, edition by edition.</h2>
+    <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_editions }} editions</p>
+
+    <div class="search-shell">
+      <input
+        type="search"
+        id="companySearch"
+        placeholder="Search companies..."
+        autocomplete="off"
+      />
     </div>
+    <p class="result-caption"><span id="resultCount">Top matches</span></p>
+    <div class="search-results" id="searchResults"></div>
   </div>
 </section>
 
-<section class="search-panel">
-  <label for="companySearch">Search companies</label>
-  <input type="search" placeholder="Type a company name..." id="companySearch" />
-  <span id="resultCount">{{ total_companies }} shown</span>
-</section>
-
-<div class="company-list" id="companyList">
-  {{ company_cards }}
-</div>
-
+<script id="companyData" type="application/json">{{ company_data_json }}</script>
 <script>
   const input = document.getElementById('companySearch');
-  const list = document.getElementById('companyList');
   const resultCount = document.getElementById('resultCount');
-  const items = Array.from(list.querySelectorAll('[data-name]'));
+  const searchResults = document.getElementById('searchResults');
+  const companyData = JSON.parse(document.getElementById('companyData').textContent || '[]');
+  const floatingLinks = Array.from(document.querySelectorAll('.floating-company'));
 
-  function updateCount() {
-    const visible = items.filter((item) => item.style.display !== 'none').length;
-    resultCount.textContent = `${visible} shown`;
+  function escapeHtml(value) {
+    return value
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function renderResults(rows, query) {
+    if (!rows.length) {
+      searchResults.innerHTML = '<p class="empty-state">No company found for this query.</p>';
+      return;
+    }
+
+    searchResults.innerHTML = rows
+      .slice(0, 10)
+      .map(
+        (row) => `
+          <a class="result-item" href="/company/${row.slug}/">
+            <strong>${escapeHtml(row.name)}</strong>
+            <span>${row.quote_count} quotes · ${row.edition_count} editions · ${escapeHtml(row.latest_date)}</span>
+          </a>
+        `
+      )
+      .join('');
+
+    resultCount.textContent = query ? `${rows.length} matches` : 'Top matches';
+  }
+
+  function topMatches() {
+    return [...companyData]
+      .sort((a, b) => (b.quote_count - a.quote_count) || a.name.localeCompare(b.name))
+      .slice(0, 10);
   }
 
   input.addEventListener('input', () => {
-    const value = input.value.trim().toLowerCase();
-    items.forEach((item) => {
-      const name = item.getAttribute('data-name');
-      item.style.display = name.includes(value) ? '' : 'none';
-    });
-    updateCount();
+    const query = input.value.trim().toLowerCase();
+    if (!query) {
+      renderResults(topMatches(), '');
+      return;
+    }
+    const matches = companyData.filter((row) => row.name.toLowerCase().includes(query));
+    renderResults(matches, query);
   });
 
-  updateCount();
+  function fadeFloatingName() {
+    if (!floatingLinks.length) {
+      return;
+    }
+    const pick = floatingLinks[Math.floor(Math.random() * floatingLinks.length)];
+    pick.classList.add('is-fading');
+    window.setTimeout(() => pick.classList.remove('is-fading'), 1600);
+    window.setTimeout(fadeFloatingName, 1100 + Math.floor(Math.random() * 1800));
+  }
+
+  renderResults(topMatches(), '');
+  window.setTimeout(fadeFloatingName, 1200);
 </script>
