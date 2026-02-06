@@ -1,19 +1,32 @@
-<section class="company-page">
-  <div>
-    <div class="hero-card">
-      <h2>{{ company_name }}</h2>
-      <p>{{ company_meta }}</p>
+<section class="company-hero">
+  <div class="company-hero-main">
+    <p class="eyebrow">Company Timeline</p>
+    <h2>{{ company_name }}</h2>
+    <p>{{ company_meta }}</p>
+    <div class="company-hero-links">
       {{ company_link }}
     </div>
-    <div class="timeline">
-      {{ quote_cards }}
-    </div>
   </div>
-  <aside class="side-card">
-    <h3>Company Summary</h3>
-    <p>Total quotes: <strong>{{ quote_count }}</strong></p>
-    <p>First mention: <strong>{{ first_date }}</strong></p>
-    <p>Latest mention: <strong>{{ last_date }}</strong></p>
-    <div class="badge"><strong>{{ editions_count }}</strong> editions</div>
-  </aside>
+  <div class="company-metrics">
+    <article class="metric-tile">
+      <p>Total Quotes</p>
+      <strong>{{ quote_count }}</strong>
+    </article>
+    <article class="metric-tile">
+      <p>First Mention</p>
+      <strong>{{ first_date }}</strong>
+    </article>
+    <article class="metric-tile">
+      <p>Latest Mention</p>
+      <strong>{{ last_date }}</strong>
+    </article>
+    <article class="metric-tile">
+      <p>Editions Covered</p>
+      <strong>{{ editions_count }}</strong>
+    </article>
+  </div>
+</section>
+
+<section class="timeline-shell">
+  {{ edition_sections }}
 </section>

@@ -1,22 +1,35 @@
-<section class="hero">
-  <div class="hero-card">
-    <h2>All Company Highlights</h2>
-    <p>Every quote we have surfaced in The Chatter, organized by company and ordered by time.</p>
+<section class="landing">
+  <div class="landing-copy">
+    <p class="eyebrow">The Chatter, Decoded</p>
+    <h2>Company commentary with clean quote structure.</h2>
+    <p>
+      Open any company to see quotes grouped by edition, with context, the exact statement,
+      and who said it.
+    </p>
   </div>
-  <div class="hero-card">
-    <h2>What you get</h2>
-    <p>Scan the most important comments without digging through full calls. Each quote links back to the source edition.</p>
-  </div>
-  <div class="hero-card">
-    <h2>MVP scope</h2>
-    <p>Quotes only for now. Decks and pitch visuals are coming later.</p>
+  <div class="landing-metrics">
+    <div class="metric-grid">
+      <article class="metric-card">
+        <p>Companies</p>
+        <strong>{{ total_companies }}</strong>
+      </article>
+      <article class="metric-card">
+        <p>Quotes</p>
+        <strong>{{ total_quotes }}</strong>
+      </article>
+      <article class="metric-card">
+        <p>Editions</p>
+        <strong>{{ total_editions }}</strong>
+      </article>
+    </div>
   </div>
 </section>
 
-<div class="search">
-  <strong>Search</strong>
-  <input type="search" placeholder="Search companies" id="companySearch" />
-</div>
+<section class="search-panel">
+  <label for="companySearch">Search companies</label>
+  <input type="search" placeholder="Type a company name..." id="companySearch" />
+  <span id="resultCount">{{ total_companies }} shown</span>
+</section>
 
 <div class="company-list" id="companyList">
   {{ company_cards }}
@@ -25,7 +38,13 @@
 <script>
   const input = document.getElementById('companySearch');
   const list = document.getElementById('companyList');
+  const resultCount = document.getElementById('resultCount');
   const items = Array.from(list.querySelectorAll('[data-name]'));
+
+  function updateCount() {
+    const visible = items.filter((item) => item.style.display !== 'none').length;
+    resultCount.textContent = `${visible} shown`;
+  }
 
   input.addEventListener('input', () => {
     const value = input.value.trim().toLowerCase();
@@ -33,5 +52,8 @@
       const name = item.getAttribute('data-name');
       item.style.display = name.includes(value) ? '' : 'none';
     });
+    updateCount();
   });
+
+  updateCount();
 </script>

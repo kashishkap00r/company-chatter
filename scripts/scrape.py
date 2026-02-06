@@ -266,13 +266,42 @@ def title_from_url(url: str) -> str:
 
 def split_quote_and_speaker(text: str) -> tuple[str, Optional[str]]:
     stripped = text.strip()
-    # Common attribution formats: "Quote..." - Speaker
-    m = re.match(r'^(.*?)[\s]*(?:[-–—]\s*|"\s*[-–—]\s*)([^-–—"].{1,80})$', stripped)
-    if m:
-        quote = m.group(1).strip().strip('"“”')
-        speaker = m.group(2).strip()
-        if quote and speaker:
+
+    def looks_like_speaker(value: str) -> bool:
+        candidate = value.strip().strip('"“”').strip()
+        if len(candidate) < 3 or len(candidate) > 90:
+            return False
+        if "%" in candidate:
+            return False
+        if not re.search(r"[A-Za-z]", candidate):
+            return False
+        if sum(ch.isdigit() for ch in candidate) > 1:
+            return False
+
+        lowered = candidate.lower()
+        if any(lowered.startswith(prefix) for prefix in ["management", "ceo", "cfo", "md", "chairman", "analyst"]):
+            return True
+        if "," in candidate:
+            return True
+
+        words = re.findall(r"[A-Za-z][A-Za-z.&']*", candidate)
+        if 1 <= len(words) <= 6:
+            return all(word[0].isupper() or word.isupper() for word in words)
+        return False
+
+    attribution_patterns = [
+        r"^(?P<quote>.+?)\s+[–—-]\s+(?P<speaker>.+)$",
+        r'^(?P<quote>.+?[”"])\s*[–—-]\s*(?P<speaker>.+)$',
+    ]
+    for pattern in attribution_patterns:
+        m = re.match(pattern, stripped)
+        if not m:
+            continue
+        quote = m.group("quote").strip().strip('"“”').strip()
+        speaker = m.group("speaker").strip().strip('"“”').strip()
+        if quote and speaker and looks_like_speaker(speaker):
             return quote, speaker
+
     return stripped.strip('"“”'), None
 
 
@@ -489,6 +518,7 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
             last_context = text
             continue
         if tag == "blockquote" and current_company:
+            quote_text, speaker = split_quote_and_speaker(text)
             quote_id = slugify(f"{edition_id}-{current_company.id}-{len(quotes)}")
             quotes.append(
                 Quote(
@@ -496,9 +526,9 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
                     edition_id=edition_id,
                     company_id=current_company.id,
                     sector=current_sector,
-                    text=text,
+                    text=quote_text or text,
                     context=last_context,
-                    speaker=None,
+                    speaker=speaker,
                     source_url=url,
                 )
             )
