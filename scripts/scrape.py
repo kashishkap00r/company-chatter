@@ -29,6 +29,59 @@ TITLE_INCLUDE = "the chatter"
 TITLE_EXCLUDE = ["points and figures", "plotlines"]
 QUOTE_START_CHARS = ('"', "“", "‘", "'")
 QUOTE_END_CHARS = ('"', "”", "’", "'")
+SECTOR_HEADING_EXACT = {
+    "banking and financial services",
+    "capital goods and engineering",
+    "cement and construction materials",
+    "consumer appliances and retail",
+    "food and beverage",
+    "global",
+    "hospitality and hotels",
+    "new years edition",
+    "pharmaceuticals and chemicals",
+    "real estate",
+    "textiles",
+}
+SECTOR_HEADING_TOKEN_SET = {
+    "aerospace",
+    "airlines",
+    "appliances",
+    "auto",
+    "automobile",
+    "automobiles",
+    "banking",
+    "beverage",
+    "capital",
+    "cement",
+    "chemicals",
+    "communication",
+    "construction",
+    "consumer",
+    "defence",
+    "engineering",
+    "estate",
+    "financial",
+    "food",
+    "goods",
+    "healthcare",
+    "hospitality",
+    "hotels",
+    "infrastructure",
+    "insurance",
+    "materials",
+    "metals",
+    "mining",
+    "oil",
+    "pharmaceuticals",
+    "power",
+    "real",
+    "retail",
+    "services",
+    "telecom",
+    "textiles",
+    "transport",
+    "utilities",
+}
 
 
 @dataclass
@@ -118,12 +171,48 @@ def canonical_company_id(name: str, href: Optional[str]) -> str:
     return slugify(name)
 
 
-def is_probable_company_name(name: str) -> bool:
+def _has_company_url_signal(href: Optional[str]) -> bool:
+    company_url = normalize_company_url(href)
+    if not company_url:
+        return False
+    parsed = urlparse(company_url)
+    parts = [p for p in parsed.path.split("/") if p]
+    if not parts:
+        return False
+    return parts[-1].lower() not in {"markets", "stocks"}
+
+
+def _is_sector_like_heading(name: str) -> bool:
+    normalized = re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+    if not normalized:
+        return False
+
+    if normalized in SECTOR_HEADING_EXACT:
+        return True
+
+    if re.match(r"^edition\s*#?\s*\d+$", normalized):
+        return True
+
+    tokens = normalized.split()
+    if "edition" in tokens and len(tokens) <= 4:
+        return True
+
+    sector_tokens = [t for t in tokens if t not in {"and"}]
+    if sector_tokens and all(t in SECTOR_HEADING_TOKEN_SET for t in sector_tokens):
+        return True
+    return False
+
+
+def is_probable_company_name(name: str, href: Optional[str]) -> bool:
     if not name or len(name) < 2:
         return False
     if re.match(r"(?i)^edition\s*#?\d+", name):
         return False
     if name.lower() in {"the chatter", "the chatter by zerodha"}:
+        return False
+    if _has_company_url_signal(href):
+        return True
+    if _is_sector_like_heading(name):
         return False
     return True
 
@@ -339,6 +428,7 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
 
     companies: dict[str, Company] = {}
     quotes: list[Quote] = []
+    quote_count_by_company: dict[str, int] = {}
 
     current_sector: Optional[str] = None
     current_company: Optional[Company] = None
@@ -352,10 +442,10 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
             continue
         if tag == "h3":
             name = normalize_company_name(text)
-            if not is_probable_company_name(name):
+            company_url = normalize_company_url(node.get("href"))
+            if not is_probable_company_name(name, company_url):
                 current_company = None
                 continue
-            company_url = normalize_company_url(node.get("href"))
             company_id = canonical_company_id(name, company_url)
             if company_id not in companies:
                 companies[company_id] = Company(
@@ -393,6 +483,7 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
                             source_url=url,
                         )
                     )
+                    quote_count_by_company[current_company.id] = quote_count_by_company.get(current_company.id, 0) + 1
                     last_context = None
                     continue
             last_context = text
@@ -411,9 +502,11 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
                     source_url=url,
                 )
             )
+            quote_count_by_company[current_company.id] = quote_count_by_company.get(current_company.id, 0) + 1
             last_context = None
 
-    return edition, list(companies.values()), quotes
+    companies_with_quotes = [c for cid, c in companies.items() if quote_count_by_company.get(cid, 0) > 0]
+    return edition, companies_with_quotes, quotes
 
 
 def main() -> None:

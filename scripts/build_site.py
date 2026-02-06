@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -161,6 +162,8 @@ def build_index(companies: list[dict], quotes: list[dict]) -> None:
     for company in sorted(companies, key=lambda c: c["name"].lower()):
         slug = company["id"]
         count = quote_count_by_company.get(slug, 0)
+        if count == 0:
+            continue
         cards.append(
             "\n".join(
                 [
@@ -192,6 +195,11 @@ def format_date(date_str: str) -> str:
 
 
 def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes: list[dict]) -> None:
+    company_dir = SITE_DIR / "company"
+    if company_dir.exists():
+        shutil.rmtree(company_dir)
+    ensure_dir(company_dir)
+
     quotes_by_company: dict[str, list[dict]] = {}
     for q in quotes:
         quotes_by_company.setdefault(q["company_id"], []).append(q)
@@ -206,6 +214,8 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
                 q["id"],
             ),
         )
+        if not company_quotes:
+            continue
 
         quote_cards = []
         dates = []

@@ -350,11 +350,6 @@
     "url": null
   },
   {
-    "id": "edition-7",
-    "name": "Edition # 7",
-    "url": null
-  },
-  {
     "id": "moldtek-packaging-limited",
     "name": "Mold-Tek Packaging",
     "url": "https://zerodha.com/markets/stocks/moldtek-packaging-limited/"
@@ -1170,56 +1165,6 @@
     "url": null
   },
   {
-    "id": "banking-and-financial-services",
-    "name": "Banking and Financial Services",
-    "url": null
-  },
-  {
-    "id": "textiles",
-    "name": "Textiles",
-    "url": null
-  },
-  {
-    "id": "real-estate",
-    "name": "Real Estate",
-    "url": null
-  },
-  {
-    "id": "consumer-appliances-retail",
-    "name": "Consumer Appliances & Retail",
-    "url": null
-  },
-  {
-    "id": "food-beverage",
-    "name": "Food & Beverage",
-    "url": null
-  },
-  {
-    "id": "hospitality-hotels",
-    "name": "Hospitality & Hotels",
-    "url": null
-  },
-  {
-    "id": "pharmaceuticals-chemicals",
-    "name": "Pharmaceuticals & Chemicals",
-    "url": null
-  },
-  {
-    "id": "cement-construction-materials",
-    "name": "Cement & Construction Materials",
-    "url": null
-  },
-  {
-    "id": "capital-goods-engineering",
-    "name": "Capital Goods & Engineering",
-    "url": null
-  },
-  {
-    "id": "global",
-    "name": "Global",
-    "url": null
-  },
-  {
     "id": "kotak-mahindra-bank-limited",
     "name": "Kotak Mahindra Bank",
     "url": "https://zerodha.com/markets/stocks/kotak-mahindra-bank-limited/"
@@ -1585,11 +1530,6 @@
     "url": "https://zerodha.com/markets/stocks/NSE/KEI/"
   },
   {
-    "id": "zomato",
-    "name": "Zomato",
-    "url": null
-  },
-  {
     "id": "shoppers-stop",
     "name": "Shoppers Stop",
     "url": null
@@ -1617,11 +1557,6 @@
   {
     "id": "star-health",
     "name": "Star Health",
-    "url": null
-  },
-  {
-    "id": "varun-beverages",
-    "name": "Varun Beverages",
     "url": null
   },
   {
@@ -1808,10 +1743,5 @@
     "id": "bluspring",
     "name": "Bluspring Enterprise",
     "url": "https://zerodha.com/markets/stocks/NSE/BLUSPRING/"
-  },
-  {
-    "id": "new-year-s-edition",
-    "name": "New Year's Edition",
-    "url": null
   }
 ]
