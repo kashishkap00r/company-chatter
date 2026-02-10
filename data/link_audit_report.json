@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-02-10T04:46:28+00:00",
+  "counts": {
+    "total_companies": 349,
+    "linked_companies": 314,
+    "unlinked_companies": 35,
+    "mandatory_total": 16,
+    "mandatory_missing": 0,
+    "mandatory_mismatched": 0,
+    "existing_links_kept": 314,
+    "manual_overrides_applied": 0,
+    "auto_resolved": 0,
+    "unresolved_after_resolution": 35
+  },
+  "mandatory_missing": [],
+  "mandatory_mismatched": [],
+  "manual_overrides_applied": [],
+  "manual_overrides_missing_company": [],
+  "manual_overrides_invalid_target": [],
+  "rejected_existing_urls": [],
+  "non_mandatory_unlinked": [
+    {
+      "company_key": "alibaba",
+      "display_name": "Alibaba"
+    },
+    {
+      "company_key": "alphabet",
+      "display_name": "Alphabet"
+    },
+    {
+      "company_key": "anheuser-busch-inbev-sa",
+      "display_name": "Anheuser-Busch Inbev SA"
+    },
+    {
+      "company_key": "apple",
+      "display_name": "Apple"
+    },
+    {
+      "company_key": "bayer-ag",
+      "display_name": "Bayer AG"
+    },
+    {
+      "company_key": "bmw",
+      "display_name": "BMW"
+    },
+    {
+      "company_key": "coca-cola",
+      "display_name": "Coca Cola"
+    },
+    {
+      "company_key": "coinbase",
+      "display_name": "Coinbase"
+    },
+    {
+      "company_key": "crif-high-mark-on-overlending",
+      "display_name": "CRIF High Mark on Overlending"
+    },
+    {
+      "company_key": "daimler",
+      "display_name": "Daimler"
+    },
+    {
+      "company_key": "ferrari",
+      "display_name": "Ferrari"
+    },
+    {
+      "company_key": "freightos",
+      "display_name": "Freightos"
+    },
+    {
+      "company_key": "google",
+      "display_name": "Google"
+    },
+    {
+      "company_key": "graviss-foods",
+      "display_name": "Graviss Foods"
+    },
+    {
+      "company_key": "hugo-boss",
+      "display_name": "Hugo Boss"
+    },
+    {
+      "company_key": "labour-ministry-secretary-comments-on-elis-scheme",
+      "display_name": "Labour MInistry Secretary comments on ELIS Scheme"
+    },
+    {
+      "company_key": "maersk",
+      "display_name": "Maersk"
+    },
+    {
+      "company_key": "meta",
+      "display_name": "Meta"
+    },
+    {
+      "company_key": "microsoft",
+      "display_name": "Microsoft"
+    },
+    {
+      "company_key": "netflix",
+      "display_name": "Netflix"
+    },
+    {
+      "company_key": "nike",
+      "display_name": "Nike"
+    },
+    {
+      "company_key": "novo-nordisk",
+      "display_name": "Novo Nordisk"
+    },
+    {
+      "company_key": "piaggio-group",
+      "display_name": "Piaggio Group"
+    },
+    {
+      "company_key": "saudi-aramco",
+      "display_name": "Saudi Aramco"
+    },
+    {
+      "company_key": "sebi-chairman",
+      "display_name": "SEBI Chairman"
+    },
+    {
+      "company_key": "shopify",
+      "display_name": "Shopify"
+    },
+    {
+      "company_key": "siemens-energy-ag",
+      "display_name": "Siemens Energy AG"
+    },
+    {
+      "company_key": "sony",
+      "display_name": "Sony"
+    },
+    {
+      "company_key": "spotify",
+      "display_name": "Spotify"
+    },
+    {
+      "company_key": "telecom-minister-on-trai-satellite-spectrum-auction",
+      "display_name": "Telecom Minister on TRAI Satellite Spectrum Auction"
+    },
+    {
+      "company_key": "tencent",
+      "display_name": "Tencent"
+    },
+    {
+      "company_key": "tesla",
+      "display_name": "Tesla"
+    },
+    {
+      "company_key": "the-boeing-co",
+      "display_name": "The Boeing Co"
+    },
+    {
+      "company_key": "the-coca-cola-co",
+      "display_name": "The Coca-Cola Co"
+    },
+    {
+      "company_key": "under-armour",
+      "display_name": "Under Armour"
+    }
+  ]
+}

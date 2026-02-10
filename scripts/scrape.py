@@ -15,11 +15,12 @@ import json
 import re
 import time
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from html.parser import HTMLParser
+from pathlib import Path
 from typing import Optional
-from urllib.parse import quote, urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 BASE_URL = "https://thechatter.zerodha.com/"
@@ -27,6 +28,10 @@ SITEMAP_URL = urljoin(BASE_URL, "sitemap")
 OUTPUT_DIR = "data"
 ZERODHA_STOCKS_BASE = "https://zerodha.com/markets/stocks"
 ZERODHA_STOCKS_SEARCH_URL = ZERODHA_STOCKS_BASE + "/search/?q={query}"
+MANUAL_MARKET_URLS_FILE = "manual_market_urls.json"
+INDIAN_LISTED_MANDATORY_FILE = "indian_listed_mandatory.json"
+LINK_AUDIT_REPORT_FILE = "link_audit_report.json"
+ALLOWED_EXCHANGES = {"NSE", "BSE"}
 
 TITLE_INCLUDE = "the chatter"
 TITLE_EXCLUDE = ["points and figures", "plotlines"]
@@ -183,8 +188,129 @@ def normalize_company_url(href: Optional[str]) -> Optional[str]:
     return urljoin(BASE_URL, href).strip()
 
 
+def canonicalize_zerodha_stock_url(url: Optional[str]) -> Optional[str]:
+    if not url:
+        return None
+    parsed = urlparse(url.strip())
+    host = parsed.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    if host not in {"zerodha.com", "thechatter.zerodha.com"}:
+        return None
+    parts = [part for part in parsed.path.split("/") if part]
+    if len(parts) < 3:
+        return None
+    if parts[0].lower() != "markets" or parts[1].lower() != "stocks":
+        return None
+
+    # Zerodha stock URLs are expected in one of these shapes:
+    # - /markets/stocks/<slug>/
+    # - /markets/stocks/<exchange>/<symbol>/
+    tail = parts[2:]
+    safe_segment = re.compile(r"^[A-Za-z0-9._-]+$")
+    safe_symbol = re.compile(r"^[A-Za-z0-9._&-]+$")
+    normalized_tail: list[str]
+    if len(tail) == 1:
+        slug = tail[0]
+        if not safe_segment.fullmatch(slug):
+            return None
+        lowered = slug.lower()
+        if lowered in {"search"} or lowered.startswith(("http", "www")):
+            return None
+        normalized_tail = [slug]
+    elif len(tail) == 2:
+        exchange = tail[0].upper()
+        symbol = tail[1].upper()
+        if exchange not in ALLOWED_EXCHANGES:
+            return None
+        if not safe_symbol.fullmatch(symbol):
+            return None
+        normalized_tail = [exchange, symbol]
+    else:
+        return None
+
+    normalized_path = "/" + "/".join(["markets", "stocks", *normalized_tail]) + "/"
+    return urlunparse(("https", "zerodha.com", normalized_path, "", "", ""))
+
+
+def _read_json(path: Path, default: object) -> object:
+    if not path.exists():
+        return default
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _write_json(path: Path, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def load_manual_market_urls() -> dict[str, dict[str, str]]:
+    path = Path(OUTPUT_DIR) / MANUAL_MARKET_URLS_FILE
+    raw = _read_json(path, {})
+    if not isinstance(raw, dict):
+        raise ValueError(f"{path} must be a JSON object keyed by company id")
+
+    parsed: dict[str, dict[str, str]] = {}
+    for key, value in raw.items():
+        company_key = str(key).strip()
+        if not company_key:
+            raise ValueError(f"{path} contains an empty company key")
+        if not isinstance(value, dict):
+            raise ValueError(f"{path} entry for '{company_key}' must be a JSON object")
+
+        override_url = canonicalize_zerodha_stock_url(str(value.get("url") or "").strip())
+        if not override_url:
+            raise ValueError(f"{path} entry for '{company_key}' has invalid Zerodha stocks URL")
+
+        reason = str(value.get("reason") or "").strip()
+        verified_on = str(value.get("verified_on") or "").strip()
+        if not reason or not verified_on:
+            raise ValueError(f"{path} entry for '{company_key}' must include reason and verified_on")
+        try:
+            datetime.fromisoformat(verified_on)
+        except ValueError as exc:
+            raise ValueError(f"{path} entry for '{company_key}' has invalid verified_on date") from exc
+
+        parsed[company_key] = {
+            "url": override_url,
+            "reason": reason,
+            "verified_on": verified_on,
+        }
+    return parsed
+
+
+def load_mandatory_indian_listed_links() -> dict[str, dict[str, str]]:
+    path = Path(OUTPUT_DIR) / INDIAN_LISTED_MANDATORY_FILE
+    raw = _read_json(path, [])
+    if not isinstance(raw, list):
+        raise ValueError(f"{path} must be a JSON array")
+
+    parsed: dict[str, dict[str, str]] = {}
+    for index, item in enumerate(raw):
+        if not isinstance(item, dict):
+            raise ValueError(f"{path} entry {index} must be a JSON object")
+        company_key = str(item.get("company_key") or "").strip()
+        display_name = str(item.get("display_name") or "").strip()
+        expected_url = canonicalize_zerodha_stock_url(str(item.get("expected_url") or "").strip())
+
+        if not company_key or not display_name or not expected_url:
+            raise ValueError(
+                f"{path} entry {index} must include company_key, display_name, and expected_url"
+            )
+        if company_key in parsed:
+            raise ValueError(f"{path} has duplicate company_key '{company_key}'")
+
+        parsed[company_key] = {
+            "display_name": display_name,
+            "expected_url": expected_url,
+        }
+    return parsed
+
+
 def canonical_company_id(name: str, href: Optional[str]) -> str:
-    company_url = normalize_company_url(href)
+    company_url = canonicalize_zerodha_stock_url(normalize_company_url(href))
     if company_url:
         parsed = urlparse(company_url)
         parts = [p for p in parsed.path.split("/") if p]
@@ -221,7 +347,7 @@ def _iter_zerodha_candidates(payload: object):
             exchange = str(item.get("exchange") or "").strip().upper()
             symbol = str(item.get("symbol") or "").strip().upper()
             slug = str(item.get("slug") or "").strip()
-            if display_name and exchange and symbol:
+            if display_name and symbol and exchange in ALLOWED_EXCHANGES:
                 yield {
                     "display_name": display_name,
                     "exchange": exchange,
@@ -343,22 +469,11 @@ def _fetch_market_search(query: str, cache: dict[str, object]) -> object:
     return payload
 
 
-def _url_exists(url: str, cache: dict[str, bool]) -> bool:
-    if url in cache:
-        return cache[url]
-    try:
-        req = Request(url, headers={"User-Agent": "CompanyChatterBot/0.1"})
-        with urlopen(req, timeout=20) as resp:
-            ok = resp.status == 200
-    except Exception:
-        ok = False
-    cache[url] = ok
-    return ok
-
-
-def resolve_market_url_for_company(company: Company, search_cache: dict[str, object], url_cache: dict[str, bool]) -> Optional[str]:
+def resolve_market_url_for_company(company: Company, search_cache: dict[str, object]) -> Optional[str]:
     if company.url:
-        return company.url
+        normalized_existing = canonicalize_zerodha_stock_url(company.url)
+        if normalized_existing:
+            return normalized_existing
     if company.id == "global":
         return None
 
@@ -377,46 +492,183 @@ def resolve_market_url_for_company(company: Company, search_cache: dict[str, obj
             if not _is_confident_market_match(features):
                 continue
             score = _candidate_match_score(candidate, features)
-            candidate_url = f"{ZERODHA_STOCKS_BASE}/{candidate['exchange']}/{candidate['symbol']}/"
+            candidate_url = canonicalize_zerodha_stock_url(
+                f"{ZERODHA_STOCKS_BASE}/{candidate['exchange']}/{candidate['symbol']}/"
+            )
+            if not candidate_url:
+                continue
             if score > best_score:
                 best_score = score
                 best_url = candidate_url
 
-    if best_url and best_score >= 120 and _url_exists(best_url, url_cache):
+    if best_url and best_score >= 120:
         return best_url
     return None
 
 
-def enrich_company_urls(companies: dict[str, Company]) -> None:
+def enrich_company_urls(
+    companies: dict[str, Company],
+    manual_overrides: dict[str, dict[str, str]],
+    mandatory_links: dict[str, dict[str, str]],
+) -> dict[str, object]:
     search_cache: dict[str, object] = {}
-    url_cache: dict[str, bool] = {}
-    resolved = 0
+    existing_kept = 0
+    resolved_auto = 0
+    resolved_manual = 0
     unresolved = 0
+    rejected_existing_urls: list[dict[str, str]] = []
+    manual_overrides_applied: list[dict[str, str]] = []
+    manual_overrides_missing_company: list[dict[str, str]] = []
+    manual_overrides_invalid_target: list[dict[str, str]] = []
 
-    for company in companies.values():
+    for company in sorted(companies.values(), key=lambda c: c.id):
+        normalized_existing = canonicalize_zerodha_stock_url(company.url) if company.url else None
+        if company.url and not normalized_existing:
+            rejected_existing_urls.append(
+                {
+                    "company_key": company.id,
+                    "display_name": company.name,
+                    "existing_url": company.url,
+                    "reason": "not_zerodha_stocks_url",
+                }
+            )
+            company.url = None
+        elif normalized_existing:
+            company.url = normalized_existing
+            existing_kept += 1
+
+        override = manual_overrides.get(company.id)
+        if override:
+            override_url = canonicalize_zerodha_stock_url(override["url"])
+            if override_url:
+                if company.url != override_url:
+                    manual_overrides_applied.append(
+                        {
+                            "company_key": company.id,
+                            "display_name": company.name,
+                            "url": override_url,
+                            "reason": override["reason"],
+                            "verified_on": override["verified_on"],
+                        }
+                    )
+                    resolved_manual += 1
+                company.url = override_url
+            else:
+                manual_overrides_invalid_target.append(
+                    {
+                        "company_key": company.id,
+                        "display_name": company.name,
+                        "url": override["url"],
+                        "reason": "override_url_invalid_format",
+                    }
+                )
+                company.url = None
+
         if company.url:
             continue
-        resolved_url = resolve_market_url_for_company(company, search_cache, url_cache)
+
+        resolved_url = resolve_market_url_for_company(company, search_cache)
         if resolved_url:
             company.url = resolved_url
-            resolved += 1
+            resolved_auto += 1
         else:
             unresolved += 1
         time.sleep(0.05)
 
-    print(f"Resolved market URLs: {resolved}")
+    for company_key, override in manual_overrides.items():
+        if company_key not in companies:
+            manual_overrides_missing_company.append(
+                {
+                    "company_key": company_key,
+                    "reason": override["reason"],
+                    "verified_on": override["verified_on"],
+                }
+            )
+
+    mandatory_missing: list[dict[str, str]] = []
+    mandatory_mismatched: list[dict[str, str]] = []
+    for company_key, requirement in mandatory_links.items():
+        company = companies.get(company_key)
+        if not company:
+            mandatory_missing.append(
+                {
+                    "company_key": company_key,
+                    "display_name": requirement["display_name"],
+                    "expected_url": requirement["expected_url"],
+                    "reason": "company_not_found_in_latest_scrape",
+                }
+            )
+            continue
+
+        company_url = canonicalize_zerodha_stock_url(company.url)
+        if not company_url:
+            mandatory_missing.append(
+                {
+                    "company_key": company_key,
+                    "display_name": company.name,
+                    "expected_url": requirement["expected_url"],
+                    "reason": "resolved_without_zerodha_url",
+                }
+            )
+            continue
+
+        if company_url != requirement["expected_url"]:
+            mandatory_mismatched.append(
+                {
+                    "company_key": company_key,
+                    "display_name": company.name,
+                    "expected_url": requirement["expected_url"],
+                    "actual_url": company_url,
+                    "reason": "url_mismatch",
+                }
+            )
+
+    linked = sum(1 for company in companies.values() if canonicalize_zerodha_stock_url(company.url))
+    non_mandatory_unlinked = [
+        {"company_key": company.id, "display_name": company.name}
+        for company in sorted(companies.values(), key=lambda c: c.name.lower())
+        if not canonicalize_zerodha_stock_url(company.url) and company.id not in mandatory_links
+    ]
+
+    report = {
+        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "counts": {
+            "total_companies": len(companies),
+            "linked_companies": linked,
+            "unlinked_companies": len(companies) - linked,
+            "mandatory_total": len(mandatory_links),
+            "mandatory_missing": len(mandatory_missing),
+            "mandatory_mismatched": len(mandatory_mismatched),
+            "existing_links_kept": existing_kept,
+            "manual_overrides_applied": resolved_manual,
+            "auto_resolved": resolved_auto,
+            "unresolved_after_resolution": unresolved,
+        },
+        "mandatory_missing": mandatory_missing,
+        "mandatory_mismatched": mandatory_mismatched,
+        "manual_overrides_applied": manual_overrides_applied,
+        "manual_overrides_missing_company": manual_overrides_missing_company,
+        "manual_overrides_invalid_target": manual_overrides_invalid_target,
+        "rejected_existing_urls": rejected_existing_urls,
+        "non_mandatory_unlinked": non_mandatory_unlinked,
+    }
+
+    print(f"Kept valid Zerodha URLs: {existing_kept}")
+    print(f"Applied manual overrides: {resolved_manual}")
+    print(f"Resolved via market search: {resolved_auto}")
     print(f"Still without market URL: {unresolved}")
+    print(f"Mandatory missing: {len(mandatory_missing)}")
+    print(f"Mandatory mismatched: {len(mandatory_mismatched)}")
+
+    return report
+
+
+def write_link_audit_report(report: dict[str, object]) -> None:
+    _write_json(Path(OUTPUT_DIR) / LINK_AUDIT_REPORT_FILE, report)
 
 
 def _has_company_url_signal(href: Optional[str]) -> bool:
-    company_url = normalize_company_url(href)
-    if not company_url:
-        return False
-    parsed = urlparse(company_url)
-    parts = [p for p in parsed.path.split("/") if p]
-    if not parts:
-        return False
-    return parts[-1].lower() not in {"markets", "stocks"}
+    return bool(canonicalize_zerodha_stock_url(normalize_company_url(href)))
 
 
 def _is_sector_like_heading(name: str) -> bool:
@@ -708,7 +960,7 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
             continue
         if tag == "h3":
             name = normalize_company_name(text)
-            company_url = normalize_company_url(node.get("href"))
+            company_url = canonicalize_zerodha_stock_url(normalize_company_url(node.get("href")))
             if not is_probable_company_name(name, company_url):
                 current_company = None
                 continue
@@ -777,6 +1029,9 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
 
 
 def main() -> None:
+    manual_overrides = load_manual_market_urls()
+    mandatory_links = load_mandatory_indian_listed_links()
+
     sitemap_html = fetch(SITEMAP_URL)
     year_pages = parse_sitemap_years(sitemap_html) or [SITEMAP_URL]
 
@@ -809,7 +1064,8 @@ def main() -> None:
             print(f"Processed {idx}/{len(post_urls)} posts...")
         time.sleep(0.2)
 
-    enrich_company_urls(companies)
+    link_audit_report = enrich_company_urls(companies, manual_overrides, mandatory_links)
+    write_link_audit_report(link_audit_report)
 
     with open(f"{OUTPUT_DIR}/editions.json", "w", encoding="utf-8") as f:
         json.dump([e.__dict__ for e in editions.values()], f, ensure_ascii=False, indent=2)
@@ -821,6 +1077,10 @@ def main() -> None:
     print(f"Editions: {len(editions)}")
     print(f"Companies: {len(companies)}")
     print(f"Quotes: {len(quotes)}")
+    print(f"Link audit report: {OUTPUT_DIR}/{LINK_AUDIT_REPORT_FILE}")
+
+    if link_audit_report["counts"]["mandatory_missing"] or link_audit_report["counts"]["mandatory_mismatched"]:
+        raise SystemExit("Mandatory Indian-listed link validation failed; inspect link audit report.")
 
 
 if __name__ == "__main__":

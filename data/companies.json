@@ -527,7 +527,7 @@
   {
     "id": "canara-bank",
     "name": "Canara Bank",
-    "url": "https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/https://zerodha.com/markets/stocks/canara-bank/"
+    "url": "https://zerodha.com/markets/stocks/NSE/CANBK/"
   },
   {
     "id": "chambal-fertilizers-chemicals-limited",
@@ -557,7 +557,7 @@
   {
     "id": "housing-and-urban-development-corporation",
     "name": "Housing and Urban Development Corporation",
-    "url": "https://zerodha.com/markets/stocks/housing-and-urban-development-corporation/https://zerodha.com/markets/stocks/housing-and-urban-development-corporation/"
+    "url": "https://zerodha.com/markets/stocks/NSE/HUDCO/"
   },
   {
     "id": "apcotex-industries-limited",
@@ -607,7 +607,7 @@
   {
     "id": "siemens-energy-ag",
     "name": "Siemens Energy AG",
-    "url": "https://zerodha.com/markets/stocks/BSE/ENRIN/"
+    "url": null
   },
   {
     "id": "novo-nordisk",
@@ -877,12 +877,12 @@
   {
     "id": "tesla",
     "name": "Tesla",
-    "url": "https://simplywall.st/en/stocks/us/automobiles/nasdaq-tsla/tesla"
+    "url": null
   },
   {
     "id": "apple",
     "name": "Apple",
-    "url": "https://simplywall.st/en/stocks/us/tech/nasdaq-aapl/apple"
+    "url": null
   },
   {
     "id": "fabclean",
@@ -1297,7 +1297,7 @@
   {
     "id": "general-insurance-corporation-of-india-limited",
     "name": "General Insurance Corporation of India",
-    "url": "https://zerodha.com/markets/stocks/general-insurance-corporation-of-india-limited/#peers"
+    "url": "https://zerodha.com/markets/stocks/general-insurance-corporation-of-india-limited/"
   },
   {
     "id": "cyient-limited",
@@ -1355,9 +1355,9 @@
     "url": "https://zerodha.com/markets/stocks/torrent-power-limited/"
   },
   {
-    "id": "mahanagar-20gas-q4fy25-earnings-20call-20transcript-final-pdf",
+    "id": "mahanagar-gas",
     "name": "Mahanagar Gas",
-    "url": "https://www.mahanagargas.com:3000/Mahanagar%20Gas_Q4FY25_Earnings%20Call%20Transcript_Final.pdf"
+    "url": "https://zerodha.com/markets/stocks/NSE/MGL/"
   },
   {
     "id": "tata-power-company-limited",
@@ -1365,9 +1365,9 @@
     "url": "https://zerodha.com/markets/stocks/tata-power-company-limited/"
   },
   {
-    "id": "jsw-energy-limited",
+    "id": "jsw-energy",
     "name": "JSW ENERGY",
-    "url": "https://www.tijorifinance.com/company/jsw-energy-limited/"
+    "url": "https://zerodha.com/markets/stocks/NSE/JSWENERGY/"
   },
   {
     "id": "larsen-toubro-limited",
@@ -1407,7 +1407,7 @@
   {
     "id": "ethos-ltd",
     "name": "Ethos Ltd.",
-    "url": "http://v"
+    "url": "https://zerodha.com/markets/stocks/NSE/ETHOSLTD/"
   },
   {
     "id": "sapphire-foods-india-ltd",
@@ -1487,7 +1487,7 @@
   {
     "id": "l-t-mindtree",
     "name": "L&T Mindtree",
-    "url": "https://zerodha.com/markets/stocks/NSE/LTF/"
+    "url": "https://zerodha.com/markets/stocks/NSE/LTIM/"
   },
   {
     "id": "hcltech",
@@ -1562,7 +1562,7 @@
   {
     "id": "vishal-mega-mart",
     "name": "Vishal Mega Mart",
-    "url": "https://zerodha.com/markets/stocks/BSE/VMM/"
+    "url": "https://zerodha.com/markets/stocks/NSE/VMM/"
   },
   {
     "id": "ceat",
@@ -1640,29 +1640,29 @@
     "url": "https://zerodha.com/markets/stocks/NSE/INFOBEAN/"
   },
   {
-    "id": "meta-platforms",
-    "name": "Meta",
-    "url": "https://simplywall.st/en/stocks/us/media/nasdaq-meta/meta-platforms"
-  },
-  {
     "id": "microsoft",
     "name": "Microsoft",
-    "url": "https://simplywall.st/en/stocks/us/software/nasdaq-msft/microsoft"
+    "url": null
   },
   {
     "id": "alphabet",
     "name": "Alphabet",
-    "url": "https://simplywall.st/en/stocks/us/media/nasdaq-googl/alphabet"
+    "url": null
   },
   {
-    "id": "boeing",
+    "id": "the-boeing-co",
     "name": "The Boeing Co",
-    "url": "https://simplywall.st/en/stocks/us/capital-goods/nyse-ba/boeing"
+    "url": null
   },
   {
-    "id": "spotify-technology",
+    "id": "spotify",
     "name": "Spotify",
-    "url": "https://simplywall.st/en/stocks/us/media/nyse-spot/spotify-technology"
+    "url": null
+  },
+  {
+    "id": "the-coca-cola-co",
+    "name": "The Coca-Cola Co",
+    "url": null
   },
   {
     "id": "organicrec",

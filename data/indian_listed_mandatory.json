@@ -1,0 +1,82 @@
+[
+  {
+    "company_key": "bajaj-finance",
+    "display_name": "Bajaj Finance",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/BAJFINANCE/"
+  },
+  {
+    "company_key": "bharat-petroleum-corporation",
+    "display_name": "Bharat Petroleum Corporation",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/BPCL/"
+  },
+  {
+    "company_key": "canara-bank",
+    "display_name": "Canara Bank",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/CANBK/"
+  },
+  {
+    "company_key": "ceat",
+    "display_name": "CEAT",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/CEATLTD/"
+  },
+  {
+    "company_key": "digitide-solutions",
+    "display_name": "Digitide Solutions",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/DIGITIDE/"
+  },
+  {
+    "company_key": "ethos-ltd",
+    "display_name": "Ethos Ltd.",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/ETHOSLTD/"
+  },
+  {
+    "company_key": "housing-and-urban-development-corporation",
+    "display_name": "Housing and Urban Development Corporation",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/HUDCO/"
+  },
+  {
+    "company_key": "indian-oil-corporation",
+    "display_name": "Indian Oil Corporation",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/IOC/"
+  },
+  {
+    "company_key": "jsw-energy",
+    "display_name": "JSW ENERGY",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/JSWENERGY/"
+  },
+  {
+    "company_key": "jsw-infrastructure",
+    "display_name": "JSW Infrastructure",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/JSWINFRA/"
+  },
+  {
+    "company_key": "l-t-mindtree",
+    "display_name": "L&T Mindtree",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/LTIM/"
+  },
+  {
+    "company_key": "mahanagar-gas",
+    "display_name": "Mahanagar Gas",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/MGL/"
+  },
+  {
+    "company_key": "pfizer",
+    "display_name": "Pfizer",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/PFIZER/"
+  },
+  {
+    "company_key": "shoppers-stop",
+    "display_name": "Shoppers Stop",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/SHOPERSTOP/"
+  },
+  {
+    "company_key": "star-health",
+    "display_name": "Star Health",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/"
+  },
+  {
+    "company_key": "vishal-mega-mart",
+    "display_name": "Vishal Mega Mart",
+    "expected_url": "https://zerodha.com/markets/stocks/NSE/VMM/"
+  }
+]
