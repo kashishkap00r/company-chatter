@@ -1,0 +1,14 @@
+{
+  "exact_names": [
+    "We've also added links to our stock pages that give you a quick fundamental overview of the company.",
+    "CRIF High Mark on Overlending",
+    "Labour Ministry Secretary comments on ELIS Scheme",
+    "Telecom Minister on TRAI Satellite Spectrum Auction"
+  ],
+  "name_patterns": [
+    "^we(?:'ve|\\s+have)\\b",
+    "\\b(?:minister|secretary)\\b.*\\bon\\b",
+    "\\bcomments?\\s+on\\b"
+  ],
+  "allow_names": []
+}

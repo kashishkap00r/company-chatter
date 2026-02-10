@@ -29,6 +29,13 @@
     ["ABB Limited", "ABB India Limited"],
     ["Aditya Birla Fashion", "Aditya Birla Fashion & Retail Ltd"]
   ],
+  "must_exclude_company_names": [
+    "We've also added links to our stock pages that give you a quick fundamental overview of the company.",
+    "CRIF High Mark on Overlending",
+    "Labour Ministry Secretary comments on ELIS Scheme",
+    "Telecom Minister on TRAI Satellite Spectrum Auction"
+  ],
+  "allowed_suspicious_null_url_names": [],
   "critical_company_expectations": [
     {
       "company_name": "SBI",

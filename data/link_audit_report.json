@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-02-10T09:31:31+00:00",
+  "generated_at": "2026-02-10T10:38:12+00:00",
   "counts": {
-    "total_companies": 788,
-    "linked_companies": 679,
-    "unlinked_companies": 109,
+    "total_companies": 780,
+    "linked_companies": 676,
+    "unlinked_companies": 104,
     "mandatory_total": 16,
     "mandatory_missing": 0,
     "mandatory_mismatched": 0,
-    "existing_links_kept": 559,
+    "existing_links_kept": 566,
     "manual_overrides_applied": 12,
-    "auto_resolved": 108,
-    "unresolved_after_resolution": 109
+    "auto_resolved": 98,
+    "unresolved_after_resolution": 104
   },
   "mandatory_missing": [],
   "mandatory_mismatched": [],
@@ -177,10 +177,6 @@
       "display_name": "Coinbase"
     },
     {
-      "company_key": "crif-high-mark-on-overlending",
-      "display_name": "CRIF High Mark on Overlending"
-    },
-    {
       "company_key": "daimler",
       "display_name": "Daimler"
     },
@@ -325,10 +321,6 @@
       "display_name": "Krispy Kreme, Inc."
     },
     {
-      "company_key": "labour-ministry-secretary-comments-on-elis-scheme",
-      "display_name": "Labour Ministry Secretary comments on ELIS Scheme"
-    },
-    {
       "company_key": "maersk",
       "display_name": "Maersk"
     },
@@ -425,10 +417,6 @@
       "display_name": "SEBI Chairman"
     },
     {
-      "company_key": "sebi-comments",
-      "display_name": "SEBI comments"
-    },
-    {
       "company_key": "shell",
       "display_name": "Shell"
     },
@@ -463,10 +451,6 @@
     {
       "company_key": "target",
       "display_name": "Target"
-    },
-    {
-      "company_key": "telecom-minister-on-trai-satellite-spectrum-auction",
-      "display_name": "Telecom Minister on TRAI Satellite Spectrum Auction"
     },
     {
       "company_key": "tencent",
@@ -527,10 +511,6 @@
     {
       "company_key": "wd-40-company",
       "display_name": "WD-40 Company"
-    },
-    {
-      "company_key": "we-ve-also-added-links-to-our-stock-pages-that-give-you-a-quick-fundamental-overview-of-the-company",
-      "display_name": "We've also added links to our stock pages that give you a quick fundamental overview of the company."
     },
     {
       "company_key": "xerox-holdings-corporation",

@@ -48,6 +48,7 @@ ACRONYM_SUFFIX_STRIP_TOKENS = LEGAL_SUFFIX_TOKENS - {"company", "co"}
 MARKET_EXCHANGES = {"NSE", "BSE"}
 ENTITY_ALIAS_RULES_FILE = DATA_DIR / "entity_alias_rules.json"
 ENTITY_BLOCK_RULES_FILE = DATA_DIR / "entity_block_rules.json"
+NON_COMPANY_RULES_FILE = DATA_DIR / "non_company_rules.json"
 ENTITY_RESOLUTION_REPORT_FILE = DATA_DIR / "entity_resolution_report.json"
 TOKEN_EQUIVALENTS = {
     "tech": "technology",
@@ -70,6 +71,61 @@ INITIALISM_IGNORED_TOKENS = {
     "of",
     "the",
 }
+COMPANY_HINT_TOKENS = {
+    "bank",
+    "bancorp",
+    "bancshares",
+    "beverages",
+    "bio",
+    "biosciences",
+    "capital",
+    "chemicals",
+    "company",
+    "communications",
+    "corp",
+    "corporation",
+    "energy",
+    "engineering",
+    "financial",
+    "foods",
+    "group",
+    "holding",
+    "holdings",
+    "inc",
+    "industries",
+    "insurance",
+    "international",
+    "labs",
+    "limited",
+    "ltd",
+    "motors",
+    "pharma",
+    "pharmaceuticals",
+    "plc",
+    "private",
+    "pvt",
+    "retail",
+    "sa",
+    "systems",
+    "technologies",
+    "technology",
+}
+SENTENCE_START_TOKENS = {
+    "we",
+    "we've",
+    "our",
+    "this",
+    "that",
+    "these",
+    "those",
+    "broader",
+    "sectoral",
+    "check",
+    "have",
+    "introducing",
+    "given",
+    "are",
+}
 
 
 def read_json(path: Path):
@@ -77,6 +133,38 @@ def read_json(path: Path):
         return []
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def _normalize_name_key(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+
+
+def _load_non_company_rules(path: Path) -> dict[str, object]:
+    payload = read_json(path)
+    if not isinstance(payload, dict):
+        return {"exact_name_keys": set(), "allow_name_keys": set(), "name_patterns": []}
+
+    exact_names = payload.get("exact_names", [])
+    allow_names = payload.get("allow_names", [])
+    name_patterns = payload.get("name_patterns", [])
+    if not isinstance(exact_names, list) or not isinstance(allow_names, list) or not isinstance(name_patterns, list):
+        return {"exact_name_keys": set(), "allow_name_keys": set(), "name_patterns": []}
+
+    compiled_patterns: list[re.Pattern[str]] = []
+    for pattern in name_patterns:
+        pattern_text = str(pattern).strip()
+        if not pattern_text:
+            continue
+        try:
+            compiled_patterns.append(re.compile(pattern_text, flags=re.IGNORECASE))
+        except re.error:
+            continue
+
+    return {
+        "exact_name_keys": {_normalize_name_key(str(name)) for name in exact_names if str(name).strip()},
+        "allow_name_keys": {_normalize_name_key(str(name)) for name in allow_names if str(name).strip()},
+        "name_patterns": compiled_patterns,
+    }
 
 
 def render_template(template_name: str, context: dict[str, str]) -> str:
@@ -264,6 +352,47 @@ def _are_company_names_compatible(
     )
 
 
+def _has_company_hint(words: list[str]) -> bool:
+    return any(token in COMPANY_HINT_TOKENS for token in words)
+
+
+def _looks_like_topic_or_sentence(name: str) -> bool:
+    words = [w.lower() for w in re.findall(r"[A-Za-z0-9&'.-]+", name)]
+    if not words:
+        return False
+
+    first_word = words[0]
+    if first_word in SENTENCE_START_TOKENS and len(words) > 4:
+        return True
+
+    lowered = " ".join(words)
+    if re.search(r"\bcomments?\s+on\b", lowered):
+        return True
+
+    if "on" in words and len(words) >= 4 and not _has_company_hint(words):
+        return True
+
+    if any(token in {"minister", "secretary"} for token in words) and "on" in words:
+        return True
+    return False
+
+
+def _matches_non_company_rules(name: str, rules: dict[str, object]) -> bool:
+    name_key = _normalize_name_key(name)
+    allow_name_keys = rules.get("allow_name_keys", set())
+    if name_key in allow_name_keys:
+        return False
+
+    exact_name_keys = rules.get("exact_name_keys", set())
+    if name_key in exact_name_keys:
+        return True
+
+    for pattern in rules.get("name_patterns", []):
+        if pattern.search(name):
+            return True
+    return False
+
+
 def _market_key_from_url(url: str | None) -> str | None:
     if not url:
         return None
@@ -316,6 +445,7 @@ def merge_company_variants(
 ) -> tuple[list[dict], list[dict], list[dict], dict[str, object]]:
     alias_pairs = _load_rule_pairs(ENTITY_ALIAS_RULES_FILE, "aliases")
     block_pairs = _load_rule_pairs(ENTITY_BLOCK_RULES_FILE, "blocks")
+    non_company_rules = _load_non_company_rules(NON_COMPANY_RULES_FILE)
     block_pairs.add(
         frozenset(
             {
@@ -338,6 +468,12 @@ def merge_company_variants(
 
     parent = {c["id"]: c["id"] for c in companies}
     quarantined_company_reason: dict[str, str] = {}
+    for company in companies:
+        company_name = str(company.get("name", "")).strip()
+        if not company_name:
+            continue
+        if _matches_non_company_rules(company_name, non_company_rules) or _looks_like_topic_or_sentence(company_name):
+            quarantined_company_reason[company["id"]] = "non_company_label"
 
     def find(company_id: str) -> str:
         root = company_id

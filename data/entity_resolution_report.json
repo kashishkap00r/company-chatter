@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-02-10T09:31:35+00:00",
+  "generated_at": "2026-02-10T10:38:21+00:00",
   "counts": {
-    "input_companies": 788,
-    "canonical_companies": 609,
+    "input_companies": 780,
+    "canonical_companies": 604,
     "quarantined_companies": 6,
-    "merged_groups": 153,
+    "merged_groups": 150,
     "dropped_quote_rows": 0,
-    "dropped_mention_rows": 7,
-    "input_quotes": 3996,
-    "output_quotes": 3996,
-    "input_mentions": 974,
-    "output_mentions": 967,
+    "dropped_mention_rows": 6,
+    "input_quotes": 3977,
+    "output_quotes": 3977,
+    "input_mentions": 957,
+    "output_mentions": 951,
     "market_conflicts": 13,
     "cross_bucket_merges": 26
   },
@@ -21,7 +21,7 @@
       "reason": "market_key_conflict_mentions_only",
       "market_key": "NSE:5PAISA",
       "quote_count": 0,
-      "mention_count": 2
+      "mention_count": 1
     },
     {
       "id": "dixon",
@@ -66,6 +66,23 @@
   ],
   "merged_groups": [
     {
+      "canonical_id": "pvr-inox-limited",
+      "canonical_name": "PVR INOX",
+      "members": [
+        {
+          "id": "pvr-inox",
+          "name": "PVR INOX"
+        },
+        {
+          "id": "pvr-inox-limited",
+          "name": "PVR INOX Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:PVRINOX"
+      ]
+    },
+    {
       "canonical_id": "manapurram-finance",
       "canonical_name": "Manappuram Finance",
       "members": [
@@ -96,7 +113,7 @@
         }
       ],
       "market_keys": [
-        "NSE:MCX"
+        "BSE:MCX"
       ]
     },
     {
@@ -152,23 +169,6 @@
       ],
       "market_keys": [
         "NSE:DABUR"
-      ]
-    },
-    {
-      "canonical_id": "pvr-inox-limited",
-      "canonical_name": "PVR INOX",
-      "members": [
-        {
-          "id": "pvr-inox",
-          "name": "PVR INOX"
-        },
-        {
-          "id": "pvr-inox-limited",
-          "name": "PVR INOX Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:PVRINOX"
       ]
     },
     {
@@ -232,23 +232,6 @@
         }
       ],
       "market_keys": []
-    },
-    {
-      "canonical_id": "olectra-greentech",
-      "canonical_name": "Olectra Greentech",
-      "members": [
-        {
-          "id": "olectra-greentech",
-          "name": "Olectra Greentech"
-        },
-        {
-          "id": "olectra-greentech-ltd",
-          "name": "Olectra Greentech Ltd"
-        }
-      ],
-      "market_keys": [
-        "NSE:OLECTRA"
-      ]
     },
     {
       "canonical_id": "pi-industries",
@@ -333,6 +316,23 @@
       ],
       "market_keys": [
         "NSE:VIJAYA"
+      ]
+    },
+    {
+      "canonical_id": "olectra-greentech",
+      "canonical_name": "Olectra Greentech",
+      "members": [
+        {
+          "id": "olectra-greentech",
+          "name": "Olectra Greentech"
+        },
+        {
+          "id": "olectra-greentech-ltd",
+          "name": "Olectra Greentech Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:OLECTRA"
       ]
     },
     {
@@ -563,112 +563,6 @@
       "market_keys": []
     },
     {
-      "canonical_id": "tcs",
-      "canonical_name": "TCS",
-      "members": [
-        {
-          "id": "tata-consultancy-services",
-          "name": "Tata Consultancy Services"
-        },
-        {
-          "id": "tata-consultancy-services-limited",
-          "name": "Tata Consultancy Services Limited"
-        },
-        {
-          "id": "tcs",
-          "name": "TCS"
-        }
-      ],
-      "market_keys": [
-        "NSE:TCS"
-      ]
-    },
-    {
-      "canonical_id": "wipro",
-      "canonical_name": "Wipro",
-      "members": [
-        {
-          "id": "wipro",
-          "name": "Wipro"
-        },
-        {
-          "id": "wipro-limited",
-          "name": "Wipro Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:WIPRO"
-      ]
-    },
-    {
-      "canonical_id": "infosys",
-      "canonical_name": "Infosys",
-      "members": [
-        {
-          "id": "infosys",
-          "name": "Infosys"
-        },
-        {
-          "id": "infosys-limited",
-          "name": "Infosys Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:INFY"
-      ]
-    },
-    {
-      "canonical_id": "hcl-technologies",
-      "canonical_name": "HCL Technologies",
-      "members": [
-        {
-          "id": "hcl-technologies",
-          "name": "HCL Technologies"
-        },
-        {
-          "id": "hcl-technologies-ltd",
-          "name": "HCL Technologies Ltd"
-        }
-      ],
-      "market_keys": [
-        "NSE:HCLTECH"
-      ]
-    },
-    {
-      "canonical_id": "tata-motors",
-      "canonical_name": "Tata Motors",
-      "members": [
-        {
-          "id": "tata-motors",
-          "name": "Tata Motors"
-        },
-        {
-          "id": "tata-motors-limited",
-          "name": "Tata Motors Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:TMCV"
-      ]
-    },
-    {
-      "canonical_id": "maruti-suzuki",
-      "canonical_name": "Maruti Suzuki",
-      "members": [
-        {
-          "id": "maruti-suzuki",
-          "name": "Maruti Suzuki"
-        },
-        {
-          "id": "maruti-suzuki-india-limited",
-          "name": "Maruti Suzuki India Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:MARUTI"
-      ]
-    },
-    {
       "canonical_id": "sbi",
       "canonical_name": "SBI",
       "members": [
@@ -810,6 +704,112 @@
       ],
       "market_keys": [
         "NSE:AKZOINDIA"
+      ]
+    },
+    {
+      "canonical_id": "tcs",
+      "canonical_name": "TCS",
+      "members": [
+        {
+          "id": "tata-consultancy-services",
+          "name": "Tata Consultancy Services"
+        },
+        {
+          "id": "tata-consultancy-services-limited",
+          "name": "Tata Consultancy Services Limited"
+        },
+        {
+          "id": "tcs",
+          "name": "TCS"
+        }
+      ],
+      "market_keys": [
+        "NSE:TCS"
+      ]
+    },
+    {
+      "canonical_id": "wipro",
+      "canonical_name": "Wipro",
+      "members": [
+        {
+          "id": "wipro",
+          "name": "Wipro"
+        },
+        {
+          "id": "wipro-limited",
+          "name": "Wipro Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:WIPRO"
+      ]
+    },
+    {
+      "canonical_id": "infosys",
+      "canonical_name": "Infosys",
+      "members": [
+        {
+          "id": "infosys",
+          "name": "Infosys"
+        },
+        {
+          "id": "infosys-limited",
+          "name": "Infosys Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:INFY"
+      ]
+    },
+    {
+      "canonical_id": "hcl-technologies",
+      "canonical_name": "HCL Technologies",
+      "members": [
+        {
+          "id": "hcl-technologies",
+          "name": "HCL Technologies"
+        },
+        {
+          "id": "hcl-technologies-ltd",
+          "name": "HCL Technologies Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:HCLTECH"
+      ]
+    },
+    {
+      "canonical_id": "tata-motors",
+      "canonical_name": "Tata Motors",
+      "members": [
+        {
+          "id": "tata-motors",
+          "name": "Tata Motors"
+        },
+        {
+          "id": "tata-motors-limited",
+          "name": "Tata Motors Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:TATAMOTORS"
+      ]
+    },
+    {
+      "canonical_id": "maruti-suzuki",
+      "canonical_name": "Maruti Suzuki",
+      "members": [
+        {
+          "id": "maruti-suzuki",
+          "name": "Maruti Suzuki"
+        },
+        {
+          "id": "maruti-suzuki-india-limited",
+          "name": "Maruti Suzuki India Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:MARUTI"
       ]
     },
     {
@@ -1340,23 +1340,6 @@
       ]
     },
     {
-      "canonical_id": "waaree-energies-ltd",
-      "canonical_name": "Waaree Energies",
-      "members": [
-        {
-          "id": "waaree-energies",
-          "name": "Waaree Energies"
-        },
-        {
-          "id": "waaree-energies-ltd",
-          "name": "Waaree Energies Ltd"
-        }
-      ],
-      "market_keys": [
-        "NSE:WAAREEENER"
-      ]
-    },
-    {
       "canonical_id": "polycab-india",
       "canonical_name": "Polycab",
       "members": [
@@ -1477,6 +1460,23 @@
       ],
       "market_keys": [
         "NSE:UNIONBANK"
+      ]
+    },
+    {
+      "canonical_id": "waaree-energies-ltd",
+      "canonical_name": "Waaree Energies",
+      "members": [
+        {
+          "id": "waaree-energies",
+          "name": "Waaree Energies"
+        },
+        {
+          "id": "waaree-energies-ltd",
+          "name": "Waaree Energies Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:WAAREEENER"
       ]
     },
     {
@@ -2234,23 +2234,6 @@
       ]
     },
     {
-      "canonical_id": "minda-corporation",
-      "canonical_name": "Minda Corporation",
-      "members": [
-        {
-          "id": "minda-corporation",
-          "name": "Minda Corporation"
-        },
-        {
-          "id": "minda-corporation-limited",
-          "name": "Minda Corporation Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:MINDACORP"
-      ]
-    },
-    {
       "canonical_id": "linc-pen-plastics",
       "canonical_name": "Linc Pen & Plastics",
       "members": [
@@ -2350,40 +2333,6 @@
       ],
       "market_keys": [
         "NSE:TECHM"
-      ]
-    },
-    {
-      "canonical_id": "shoppers-stop",
-      "canonical_name": "Shopper Stop",
-      "members": [
-        {
-          "id": "shopper-stop",
-          "name": "Shopper Stop"
-        },
-        {
-          "id": "shoppers-stop",
-          "name": "Shoppers Stop"
-        }
-      ],
-      "market_keys": [
-        "NSE:SHOPERSTOP"
-      ]
-    },
-    {
-      "canonical_id": "bharat-petroleum-corporation",
-      "canonical_name": "Bharat Petroleum",
-      "members": [
-        {
-          "id": "bharat-petroleum",
-          "name": "Bharat Petroleum"
-        },
-        {
-          "id": "bharat-petroleum-corporation",
-          "name": "Bharat Petroleum Corporation"
-        }
-      ],
-      "market_keys": [
-        "NSE:BPCL"
       ]
     },
     {
@@ -2898,7 +2847,7 @@
           "root": "5paisa-capital",
           "is_primary": false,
           "quote_count": 0,
-          "mention_count": 2,
+          "mention_count": 1,
           "members": [
             {
               "id": "5paisa-capital",
@@ -2954,35 +2903,6 @@
       ]
     },
     {
-      "market_key": "NSE:DIXON",
-      "components": [
-        {
-          "root": "dixon-technologies",
-          "is_primary": true,
-          "quote_count": 30,
-          "mention_count": 3,
-          "members": [
-            {
-              "id": "dixon-technologies",
-              "name": "Dixon Technologies"
-            }
-          ]
-        },
-        {
-          "root": "dixon",
-          "is_primary": false,
-          "quote_count": 0,
-          "mention_count": 1,
-          "members": [
-            {
-              "id": "dixon",
-              "name": "Dixon"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "market_key": "NSE:GODREJPROP",
       "components": [
         {
@@ -3006,6 +2926,35 @@
             {
               "id": "godrej-property",
               "name": "Godrej Property"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:DIXON",
+      "components": [
+        {
+          "root": "dixon-technologies",
+          "is_primary": true,
+          "quote_count": 30,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "dixon-technologies",
+              "name": "Dixon Technologies"
+            }
+          ]
+        },
+        {
+          "root": "dixon",
+          "is_primary": false,
+          "quote_count": 0,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "dixon",
+              "name": "Dixon"
             }
           ]
         }
@@ -3125,20 +3074,20 @@
       ]
     },
     {
-      "left_root": "multi-commodity-exchange",
-      "right_root": "multi-commodity-exchange-of-india",
+      "left_root": "multi-commodity-exchange-of-india",
+      "right_root": "multi-commodity-exchange",
       "left_anchor": {
-        "id": "multi-commodity-exchange",
-        "name": "Multi Commodity Exchange"
-      },
-      "right_anchor": {
         "id": "multi-commodity-exchange-of-india",
         "name": "Multi Commodity Exchange of India"
       },
-      "left_market_keys": [
-        "NSE:MCX"
-      ],
-      "right_market_keys": []
+      "right_anchor": {
+        "id": "multi-commodity-exchange",
+        "name": "Multi Commodity Exchange"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "BSE:MCX"
+      ]
     },
     {
       "left_root": "central-depository-services",
@@ -3203,22 +3152,6 @@
       "right_market_keys": []
     },
     {
-      "left_root": "maruti-suzuki",
-      "right_root": "maruti-suzuki-india-limited",
-      "left_anchor": {
-        "id": "maruti-suzuki",
-        "name": "Maruti Suzuki"
-      },
-      "right_anchor": {
-        "id": "maruti-suzuki-india-limited",
-        "name": "Maruti Suzuki India Limited"
-      },
-      "left_market_keys": [
-        "NSE:MARUTI"
-      ],
-      "right_market_keys": []
-    },
-    {
       "left_root": "power-grid-corporation",
       "right_root": "power-grid-corporation-of-india-limited",
       "left_anchor": {
@@ -3233,6 +3166,22 @@
         "NSE:POWERGRID"
       ],
       "right_market_keys": []
+    },
+    {
+      "left_root": "maruti-suzuki-india-limited",
+      "right_root": "maruti-suzuki",
+      "left_anchor": {
+        "id": "maruti-suzuki-india-limited",
+        "name": "Maruti Suzuki India Limited"
+      },
+      "right_anchor": {
+        "id": "maruti-suzuki",
+        "name": "Maruti Suzuki"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:MARUTI"
+      ]
     },
     {
       "left_root": "saregama-india",

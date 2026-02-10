@@ -32,6 +32,7 @@ MANUAL_MARKET_URLS_FILE = "manual_market_urls.json"
 INDIAN_LISTED_MANDATORY_FILE = "indian_listed_mandatory.json"
 LINK_AUDIT_REPORT_FILE = "link_audit_report.json"
 COMPANY_MENTIONS_FILE = "company_mentions.json"
+NON_COMPANY_RULES_FILE = "non_company_rules.json"
 ALLOWED_EXCHANGES = {"NSE", "BSE"}
 
 TITLE_INCLUDE = "the chatter"
@@ -109,6 +110,61 @@ MARKET_LOOKUP_STOPWORDS = {
     "technology",
     "india",
     "ind",
+}
+COMPANY_HINT_TOKENS = {
+    "bank",
+    "bancorp",
+    "bancshares",
+    "beverages",
+    "bio",
+    "biosciences",
+    "capital",
+    "chemicals",
+    "company",
+    "communications",
+    "corp",
+    "corporation",
+    "energy",
+    "engineering",
+    "financial",
+    "foods",
+    "group",
+    "holding",
+    "holdings",
+    "inc",
+    "industries",
+    "insurance",
+    "international",
+    "labs",
+    "limited",
+    "ltd",
+    "motors",
+    "pharma",
+    "pharmaceuticals",
+    "plc",
+    "private",
+    "pvt",
+    "retail",
+    "sa",
+    "systems",
+    "technologies",
+    "technology",
+}
+SENTENCE_START_TOKENS = {
+    "we",
+    "we've",
+    "our",
+    "this",
+    "that",
+    "these",
+    "those",
+    "broader",
+    "sectoral",
+    "check",
+    "have",
+    "introducing",
+    "given",
+    "are",
 }
 
 
@@ -331,6 +387,39 @@ def load_mandatory_indian_listed_links() -> dict[str, dict[str, str]]:
             "expected_url": expected_url,
         }
     return parsed
+
+
+def _normalize_name_key(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+
+
+def load_non_company_rules() -> dict[str, object]:
+    path = Path(OUTPUT_DIR) / NON_COMPANY_RULES_FILE
+    raw = _read_json(path, {})
+    if not isinstance(raw, dict):
+        raise ValueError(f"{path} must be a JSON object")
+
+    exact_names = raw.get("exact_names", [])
+    name_patterns = raw.get("name_patterns", [])
+    allow_names = raw.get("allow_names", [])
+    if not isinstance(exact_names, list) or not isinstance(name_patterns, list) or not isinstance(allow_names, list):
+        raise ValueError(f"{path} must contain list values for exact_names, name_patterns, and allow_names")
+
+    compiled_patterns: list[re.Pattern[str]] = []
+    for index, pattern in enumerate(name_patterns):
+        pattern_text = str(pattern).strip()
+        if not pattern_text:
+            continue
+        try:
+            compiled_patterns.append(re.compile(pattern_text, flags=re.IGNORECASE))
+        except re.error as exc:
+            raise ValueError(f"{path} has invalid regex at name_patterns[{index}]") from exc
+
+    return {
+        "exact_name_keys": {_normalize_name_key(str(name)) for name in exact_names if str(name).strip()},
+        "allow_name_keys": {_normalize_name_key(str(name)) for name in allow_names if str(name).strip()},
+        "name_patterns": compiled_patterns,
+    }
 
 
 def canonical_company_id(name: str, href: Optional[str]) -> str:
@@ -690,6 +779,16 @@ def _has_company_url_signal(href: Optional[str]) -> bool:
     return bool(canonicalize_zerodha_stock_url(normalize_company_url(href)))
 
 
+def _is_edition_heading(name: str) -> bool:
+    normalized = re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+    if not normalized:
+        return False
+    if re.match(r"^edition\s*#?\s*\d+$", normalized):
+        return True
+    tokens = normalized.split()
+    return "edition" in tokens and len(tokens) <= 4
+
+
 def _is_sector_like_heading(name: str) -> bool:
     normalized = re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
     if not normalized:
@@ -698,23 +797,67 @@ def _is_sector_like_heading(name: str) -> bool:
     if normalized in SECTOR_HEADING_EXACT:
         return True
 
-    if re.match(r"^edition\s*#?\s*\d+$", normalized):
+    if _is_edition_heading(name):
         return True
 
     tokens = normalized.split()
-    if "edition" in tokens and len(tokens) <= 4:
-        return True
-
     sector_tokens = [t for t in tokens if t not in {"and"}]
     if sector_tokens and all(t in SECTOR_HEADING_TOKEN_SET for t in sector_tokens):
         return True
     return False
 
 
-def is_probable_company_name(name: str, href: Optional[str]) -> bool:
+def _is_listable_sector_heading(name: str) -> bool:
+    return _is_sector_like_heading(name) and not _is_edition_heading(name)
+
+
+def _has_company_hint(words: list[str]) -> bool:
+    return any(token in COMPANY_HINT_TOKENS for token in words)
+
+
+def _looks_like_topic_or_sentence(name: str) -> bool:
+    words = [w.lower() for w in re.findall(r"[A-Za-z0-9&'.-]+", name)]
+    if not words:
+        return False
+
+    first_word = words[0]
+    if first_word in SENTENCE_START_TOKENS and len(words) > 4:
+        return True
+
+    lowered = " ".join(words)
+    if re.search(r"\bcomments?\s+on\b", lowered):
+        return True
+
+    if "on" in words and len(words) >= 4 and not _has_company_hint(words):
+        return True
+
+    if any(token in {"minister", "secretary"} for token in words) and "on" in words:
+        return True
+    return False
+
+
+def _matches_non_company_rules(name: str, rules: dict[str, object]) -> bool:
+    name_key = _normalize_name_key(name)
+    allow_name_keys = rules.get("allow_name_keys", set())
+    if name_key in allow_name_keys:
+        return False
+
+    exact_name_keys = rules.get("exact_name_keys", set())
+    if name_key in exact_name_keys:
+        return True
+
+    for pattern in rules.get("name_patterns", []):
+        if pattern.search(name):
+            return True
+    return False
+
+
+def is_probable_company_name(name: str, href: Optional[str], non_company_rules: dict[str, object]) -> bool:
     if not name or len(name) < 2:
         return False
     if re.match(r"(?i)^edition\s*#?\d+", name):
+        return False
+    if _is_sector_like_heading(name):
         return False
     lowered = name.lower()
     if lowered in {"the chatter", "the chatter by zerodha"}:
@@ -726,11 +869,11 @@ def is_probable_company_name(name: str, href: Optional[str]) -> bool:
     words = re.findall(r"[A-Za-z0-9&'.-]+", name)
     if ":" in name and len(words) > 4:
         return False
-    if words and words[0].lower() in {"we", "broader", "sectoral", "check", "have", "introducing", "given", "are"} and len(words) > 4:
-        return False
     if _has_company_url_signal(href):
         return True
-    if _is_sector_like_heading(name):
+    if _looks_like_topic_or_sentence(name):
+        return False
+    if _matches_non_company_rules(name, non_company_rules):
         return False
     return True
 
@@ -957,7 +1100,10 @@ def extract_article_html(html: str) -> str:
     return html
 
 
-def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote], list[CompanyMention]]:
+def parse_post(
+    url: str,
+    non_company_rules: dict[str, object],
+) -> tuple[Optional[Edition], list[Company], list[Quote], list[CompanyMention]]:
     html = fetch(url)
     title = extract_title(html)
     if not is_target_post(title):
@@ -992,7 +1138,7 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote],
         normalized_name = normalize_company_name(name)
         if not normalized_name:
             return None
-        if not is_probable_company_name(normalized_name, company_url):
+        if not is_probable_company_name(normalized_name, company_url, non_company_rules):
             return None
 
         company_id = canonical_company_id(normalized_name, company_url)
@@ -1091,7 +1237,9 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote],
             company_name, sector_hint = parse_company_heading(heading_text)
             company_url = canonicalize_zerodha_stock_url(normalize_company_url(node.get("href")))
 
-            structured_heading = bool(company_url) or ("|" in heading_text) or tag == "h3"
+            structured_heading = bool(company_url) or ("|" in heading_text)
+            if tag == "h3" and not structured_heading and company_name:
+                structured_heading = is_probable_company_name(company_name, company_url, non_company_rules)
             company = register_company(company_name, company_url) if company_name and structured_heading else None
             if company:
                 current_company = company
@@ -1113,7 +1261,7 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote],
                 continue
 
             if in_list_item:
-                if current_sector and _is_sector_like_heading(current_sector):
+                if current_sector and _is_listable_sector_heading(current_sector):
                     listed_company = register_company(text, None)
                     if listed_company:
                         register_mention(listed_company, "list")
@@ -1144,9 +1292,54 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote],
     return edition, companies_with_coverage, quotes, mentions
 
 
+def apply_non_company_sanity_filter(
+    companies: dict[str, Company],
+    quotes: list[Quote],
+    mentions: list[CompanyMention],
+    non_company_rules: dict[str, object],
+) -> tuple[dict[str, Company], list[Quote], list[CompanyMention], dict[str, object]]:
+    blocked_company_ids = {
+        company.id
+        for company in companies.values()
+        if _matches_non_company_rules(company.name, non_company_rules)
+        or _looks_like_topic_or_sentence(company.name)
+    }
+    if not blocked_company_ids:
+        return (
+            companies,
+            quotes,
+            mentions,
+            {
+                "removed_company_ids": [],
+                "removed_companies": 0,
+                "removed_quote_rows": 0,
+                "removed_mention_rows": 0,
+            },
+        )
+
+    filtered_companies = {cid: company for cid, company in companies.items() if cid not in blocked_company_ids}
+    filtered_quotes = [quote for quote in quotes if quote.company_id not in blocked_company_ids]
+    filtered_mentions = [mention for mention in mentions if mention.company_id not in blocked_company_ids]
+    removed_company_names = [companies[cid].name for cid in sorted(blocked_company_ids) if cid in companies]
+
+    return (
+        filtered_companies,
+        filtered_quotes,
+        filtered_mentions,
+        {
+            "removed_company_ids": sorted(blocked_company_ids),
+            "removed_company_names": removed_company_names,
+            "removed_companies": len(blocked_company_ids),
+            "removed_quote_rows": len(quotes) - len(filtered_quotes),
+            "removed_mention_rows": len(mentions) - len(filtered_mentions),
+        },
+    )
+
+
 def main() -> None:
     manual_overrides = load_manual_market_urls()
     mandatory_links = load_mandatory_indian_listed_links()
+    non_company_rules = load_non_company_rules()
 
     sitemap_html = fetch(SITEMAP_URL)
     year_pages = parse_sitemap_years(sitemap_html) or [SITEMAP_URL]
@@ -1166,7 +1359,7 @@ def main() -> None:
 
     for idx, url in enumerate(post_urls, start=1):
         try:
-            edition, comps, qs, ms = parse_post(url)
+            edition, comps, qs, ms = parse_post(url, non_company_rules)
         except Exception as exc:  # pragma: no cover
             print(f"Failed to parse {url}: {exc}")
             continue
@@ -1181,6 +1374,20 @@ def main() -> None:
         if idx % 10 == 0:
             print(f"Processed {idx}/{len(post_urls)} posts...")
         time.sleep(0.2)
+
+    companies, quotes, mentions, sanity_report = apply_non_company_sanity_filter(
+        companies,
+        quotes,
+        mentions,
+        non_company_rules,
+    )
+    if sanity_report["removed_companies"]:
+        print(
+            "Removed non-company rows:"
+            f" companies={sanity_report['removed_companies']},"
+            f" quotes={sanity_report['removed_quote_rows']},"
+            f" mentions={sanity_report['removed_mention_rows']}"
+        )
 
     link_audit_report = enrich_company_urls(companies, manual_overrides, mandatory_links)
     write_link_audit_report(link_audit_report)
