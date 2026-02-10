@@ -1,0 +1,42 @@
+name: Entity Resolution Guard
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "data/**"
+      - "templates/**"
+      - "assets/**"
+      - ".github/workflows/entity-resolution-guard.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "data/**"
+      - "templates/**"
+      - "assets/**"
+      - ".github/workflows/entity-resolution-guard.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape latest archive
+        run: python3 scripts/scrape.py
+
+      - name: Build site and entity report
+        run: python3 scripts/build_site.py
+
+      - name: Validate entity-resolution invariants
+        run: python3 scripts/validate_entity_resolution.py

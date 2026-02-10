@@ -289,6 +289,16 @@ def _market_key_from_url(url: str | None) -> str | None:
     return f"{exchange}:{symbol}"
 
 
+def _select_canonical_url(variants: list[dict]) -> str | None:
+    urls = [str(c.get("url") or "").strip() for c in variants if str(c.get("url") or "").strip()]
+    if not urls:
+        return None
+    for url in urls:
+        if _market_key_from_url(url):
+            return url
+    return urls[0]
+
+
 def _select_display_name(variants: list[dict]) -> str:
     def rank(c: dict) -> tuple[int, int, int, str]:
         return (
@@ -366,6 +376,7 @@ def merge_company_variants(
                     union(left_id, right_id)
 
     market_conflicts: list[dict[str, object]] = []
+    cross_bucket_merges: list[dict[str, object]] = []
 
     # Ticker-first: merge companies sharing the same exchange/symbol when names
     # are compatible. If a market group still has multiple incompatible
@@ -457,6 +468,73 @@ def merge_company_variants(
                 if _are_company_names_compatible(left_name, right_name, alias_pairs, block_pairs):
                     union(left_id, right_id)
 
+    # Cross-bucket merge pass: catch acronym/full-name or slug/symbol variants
+    # that are compatible but ended up in separate buckets (for example:
+    # "SBI" vs "State Bank of India"), while still preventing market conflicts.
+    def _current_components() -> dict[str, list[str]]:
+        components: dict[str, list[str]] = {}
+        for company in companies:
+            company_id = company["id"]
+            if company_id in quarantined_company_reason:
+                continue
+            components.setdefault(find(company_id), []).append(company_id)
+        return components
+
+    components = _current_components()
+    component_roots = list(components.keys())
+    component_market_keys: dict[str, set[str]] = {}
+    component_anchor_id: dict[str, str] = {}
+    for root, component_ids in components.items():
+        component_market_keys[root] = {
+            market_key_by_company_id.get(company_id)
+            for company_id in component_ids
+            if market_key_by_company_id.get(company_id)
+        }
+        component_anchor_id[root] = max(
+            component_ids,
+            key=lambda company_id: (
+                quote_count_by_company.get(company_id, 0),
+                mention_count_by_company.get(company_id, 0),
+                1 if market_key_by_company_id.get(company_id) else 0,
+                companies_by_id[company_id]["name"].lower(),
+            ),
+        )
+
+    for left_index, left_root in enumerate(component_roots):
+        left_anchor_id = component_anchor_id[left_root]
+        left_anchor_name = companies_by_id[left_anchor_id]["name"]
+        left_market_keys = component_market_keys[left_root]
+
+        for right_root in component_roots[left_index + 1 :]:
+            right_anchor_id = component_anchor_id[right_root]
+            if find(left_anchor_id) == find(right_anchor_id):
+                continue
+
+            right_anchor_name = companies_by_id[right_anchor_id]["name"]
+            right_market_keys = component_market_keys[right_root]
+            pair_key = frozenset({_rule_key(left_anchor_name), _rule_key(right_anchor_name)})
+            if pair_key in block_pairs:
+                continue
+
+            # Allow only when market identity is equal or absent on one side.
+            if left_market_keys and right_market_keys and left_market_keys != right_market_keys:
+                continue
+
+            if not _are_company_names_compatible(left_anchor_name, right_anchor_name, alias_pairs, block_pairs):
+                continue
+
+            union(left_anchor_id, right_anchor_id)
+            cross_bucket_merges.append(
+                {
+                    "left_root": left_root,
+                    "right_root": right_root,
+                    "left_anchor": {"id": left_anchor_id, "name": left_anchor_name},
+                    "right_anchor": {"id": right_anchor_id, "name": right_anchor_name},
+                    "left_market_keys": sorted(left_market_keys),
+                    "right_market_keys": sorted(right_market_keys),
+                }
+            )
+
     grouped_company_ids: dict[str, list[str]] = {}
     for company in companies:
         if company["id"] in quarantined_company_reason:
@@ -535,7 +613,7 @@ def merge_company_variants(
         )
         primary_id = primary["id"]
         display_name = _select_display_name(variants)
-        canonical_url = primary.get("url") or next((c.get("url") for c in variants if c.get("url")), None)
+        canonical_url = _select_canonical_url(variants)
         identity_source = "single"
         identity_confidence = "medium"
         if len(component_ids) > 1 and component_market_keys:
@@ -610,6 +688,7 @@ def merge_company_variants(
             "input_mentions": len(mentions),
             "output_mentions": len(merged_mentions),
             "market_conflicts": len(market_conflicts),
+            "cross_bucket_merges": len(cross_bucket_merges),
         },
         "quarantined_companies": [
             {
@@ -624,6 +703,7 @@ def merge_company_variants(
         ],
         "merged_groups": merged_groups,
         "market_conflicts": market_conflicts,
+        "cross_bucket_merges": cross_bucket_merges,
     }
 
     return merged_companies, merged_quotes, merged_mentions, resolution_report

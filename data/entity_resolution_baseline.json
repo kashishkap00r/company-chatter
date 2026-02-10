@@ -1,0 +1,53 @@
+{
+  "thresholds": {
+    "max_market_conflicts": 13,
+    "max_quarantined_companies": 6,
+    "max_dropped_quote_rows": 0,
+    "max_dropped_mention_rows": 7,
+    "max_repeat_name_keys": 0
+  },
+  "must_keep_blocked_pairs_separate": [
+    ["Reliance Consumer Products", "Reliance Industries"],
+    ["Adani Cement", "Ambuja Cement"],
+    ["Pfizer", "L'Oréal"],
+    ["Crocs", "Metro Brands Ltd."],
+    ["Hermès International", "KEC International"]
+  ],
+  "must_keep_alias_pairs_merged": [
+    ["SBI", "State Bank of India"],
+    ["HDFC AMC", "HDFC Asset Management Company"],
+    ["ABB Limited", "ABB India Limited"],
+    ["Aditya Birla Fashion", "Aditya Birla Fashion & Retail Ltd"],
+    ["TCS", "Tata Consultancy Services"],
+    ["IEX", "Indian Energy Exchange"],
+    ["HUDCO", "Housing and Urban Development Corporation"],
+    ["REC Ltd.", "Rural Electrification Corporation"]
+  ],
+  "must_not_coexist_in_index": [
+    ["SBI", "State Bank of India"],
+    ["HDFC AMC", "HDFC Asset Management Company"],
+    ["ABB Limited", "ABB India Limited"],
+    ["Aditya Birla Fashion", "Aditya Birla Fashion & Retail Ltd"]
+  ],
+  "critical_company_expectations": [
+    {
+      "company_name": "SBI",
+      "min_edition_count": 3,
+      "required_edition_ids": [
+        "p-the-chatter-between-seasons"
+      ]
+    },
+    {
+      "company_name": "Reliance Industries",
+      "min_edition_count": 3
+    },
+    {
+      "company_name": "Reliance Consumer Products",
+      "min_edition_count": 1
+    },
+    {
+      "company_name": "HDFC AMC",
+      "min_edition_count": 2
+    }
+  ]
+}

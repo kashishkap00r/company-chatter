@@ -1,17 +1,18 @@
 {
-  "generated_at": "2026-02-10T08:57:24+00:00",
+  "generated_at": "2026-02-10T09:31:35+00:00",
   "counts": {
     "input_companies": 788,
-    "canonical_companies": 635,
+    "canonical_companies": 609,
     "quarantined_companies": 6,
-    "merged_groups": 132,
+    "merged_groups": 153,
     "dropped_quote_rows": 0,
     "dropped_mention_rows": 7,
     "input_quotes": 3996,
     "output_quotes": 3996,
     "input_mentions": 974,
     "output_mentions": 967,
-    "market_conflicts": 13
+    "market_conflicts": 13,
+    "cross_bucket_merges": 26
   },
   "quarantined_companies": [
     {
@@ -64,6 +65,95 @@
     }
   ],
   "merged_groups": [
+    {
+      "canonical_id": "manapurram-finance",
+      "canonical_name": "Manappuram Finance",
+      "members": [
+        {
+          "id": "manappuram-finance",
+          "name": "Manappuram Finance"
+        },
+        {
+          "id": "manapurram-finance",
+          "name": "Manapurram Finance"
+        }
+      ],
+      "market_keys": [
+        "NSE:MANAPPURAM"
+      ]
+    },
+    {
+      "canonical_id": "multi-commodity-exchange",
+      "canonical_name": "Multi Commodity Exchange",
+      "members": [
+        {
+          "id": "multi-commodity-exchange",
+          "name": "Multi Commodity Exchange"
+        },
+        {
+          "id": "multi-commodity-exchange-of-india",
+          "name": "Multi Commodity Exchange of India"
+        }
+      ],
+      "market_keys": [
+        "NSE:MCX"
+      ]
+    },
+    {
+      "canonical_id": "central-depository-services-india-limited",
+      "canonical_name": "Central Depository Services",
+      "members": [
+        {
+          "id": "central-depository-services",
+          "name": "Central Depository Services"
+        },
+        {
+          "id": "central-depository-services-india-limited",
+          "name": "Central Depository Services (India) Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:CDSL"
+      ]
+    },
+    {
+      "canonical_id": "cholamandalam-investment-and-finance",
+      "canonical_name": "Cholamandalam Finance",
+      "members": [
+        {
+          "id": "cholamandalam-finance",
+          "name": "Cholamandalam Finance"
+        },
+        {
+          "id": "cholamandalam-investment-and-finance",
+          "name": "Cholamandalam Investment and Finance"
+        }
+      ],
+      "market_keys": [
+        "NSE:CHOLAFIN"
+      ]
+    },
+    {
+      "canonical_id": "dabur-india-ltd",
+      "canonical_name": "Dabur",
+      "members": [
+        {
+          "id": "dabur",
+          "name": "Dabur"
+        },
+        {
+          "id": "dabur-india",
+          "name": "Dabur India"
+        },
+        {
+          "id": "dabur-india-ltd",
+          "name": "Dabur India Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:DABUR"
+      ]
+    },
     {
       "canonical_id": "pvr-inox-limited",
       "canonical_name": "PVR INOX",
@@ -124,6 +214,21 @@
         {
           "id": "vinfast-auto-ltd",
           "name": "VinFast Auto Ltd."
+        }
+      ],
+      "market_keys": []
+    },
+    {
+      "canonical_id": "virgin-galactic-holdings-inc",
+      "canonical_name": "Virgin Galactic",
+      "members": [
+        {
+          "id": "virgin-galactic",
+          "name": "Virgin Galactic"
+        },
+        {
+          "id": "virgin-galactic-holdings-inc",
+          "name": "Virgin Galactic Holdings, Inc."
         }
       ],
       "market_keys": []
@@ -337,23 +442,6 @@
       ]
     },
     {
-      "canonical_id": "dabur-india-ltd",
-      "canonical_name": "Dabur India",
-      "members": [
-        {
-          "id": "dabur-india",
-          "name": "Dabur India"
-        },
-        {
-          "id": "dabur-india-ltd",
-          "name": "Dabur India Ltd"
-        }
-      ],
-      "market_keys": [
-        "NSE:DABUR"
-      ]
-    },
-    {
       "canonical_id": "ntpc",
       "canonical_name": "NTPC",
       "members": [
@@ -564,6 +652,40 @@
       ]
     },
     {
+      "canonical_id": "maruti-suzuki",
+      "canonical_name": "Maruti Suzuki",
+      "members": [
+        {
+          "id": "maruti-suzuki",
+          "name": "Maruti Suzuki"
+        },
+        {
+          "id": "maruti-suzuki-india-limited",
+          "name": "Maruti Suzuki India Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:MARUTI"
+      ]
+    },
+    {
+      "canonical_id": "sbi",
+      "canonical_name": "SBI",
+      "members": [
+        {
+          "id": "sbi",
+          "name": "SBI"
+        },
+        {
+          "id": "state-bank-of-india",
+          "name": "State Bank of India"
+        }
+      ],
+      "market_keys": [
+        "NSE:SBIN"
+      ]
+    },
+    {
       "canonical_id": "bajaj-finserv",
       "canonical_name": "Bajaj Finserv",
       "members": [
@@ -612,6 +734,27 @@
       ],
       "market_keys": [
         "NSE:HINDUNILVR"
+      ]
+    },
+    {
+      "canonical_id": "power-grid-corporation",
+      "canonical_name": "Power Grid Corporation of India",
+      "members": [
+        {
+          "id": "power-grid-corporation",
+          "name": "Power Grid Corporation"
+        },
+        {
+          "id": "power-grid-corporation-of-india",
+          "name": "Power Grid Corporation of India"
+        },
+        {
+          "id": "power-grid-corporation-of-india-limited",
+          "name": "Power Grid Corporation of India Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:POWERGRID"
       ]
     },
     {
@@ -668,21 +811,6 @@
       "market_keys": [
         "NSE:AKZOINDIA"
       ]
-    },
-    {
-      "canonical_id": "power-grid-corporation-of-india",
-      "canonical_name": "Power Grid Corporation of India",
-      "members": [
-        {
-          "id": "power-grid-corporation-of-india",
-          "name": "Power Grid Corporation of India"
-        },
-        {
-          "id": "power-grid-corporation-of-india-limited",
-          "name": "Power Grid Corporation of India Limited"
-        }
-      ],
-      "market_keys": []
     },
     {
       "canonical_id": "cochin-shipyard-ltd",
@@ -863,6 +991,23 @@
       ]
     },
     {
+      "canonical_id": "saregama-india",
+      "canonical_name": "Saregama",
+      "members": [
+        {
+          "id": "saregama",
+          "name": "Saregama"
+        },
+        {
+          "id": "saregama-india",
+          "name": "Saregama India"
+        }
+      ],
+      "market_keys": [
+        "BSE:SAREGAMA"
+      ]
+    },
+    {
       "canonical_id": "kaynes-technology-india",
       "canonical_name": "Kaynes Technology",
       "members": [
@@ -952,6 +1097,21 @@
       ]
     },
     {
+      "canonical_id": "j-p-morgan",
+      "canonical_name": "JP Morgan",
+      "members": [
+        {
+          "id": "j-p-morgan",
+          "name": "J.P. Morgan"
+        },
+        {
+          "id": "jp-morgan",
+          "name": "JP Morgan"
+        }
+      ],
+      "market_keys": []
+    },
+    {
       "canonical_id": "gopal-snacks-ltd",
       "canonical_name": "Gopal Snacks",
       "members": [
@@ -1000,6 +1160,23 @@
       ],
       "market_keys": [
         "NSE:TALBROAUTO"
+      ]
+    },
+    {
+      "canonical_id": "thomas-cook-india-ltd",
+      "canonical_name": "Thomas Cook",
+      "members": [
+        {
+          "id": "thomas-cook",
+          "name": "Thomas Cook"
+        },
+        {
+          "id": "thomas-cook-india-ltd",
+          "name": "Thomas Cook (India) Ltd."
+        }
+      ],
+      "market_keys": [
+        "NSE:THOMASCOOK"
       ]
     },
     {
@@ -1088,6 +1265,25 @@
       ]
     },
     {
+      "canonical_id": "sony",
+      "canonical_name": "Sony",
+      "members": [
+        {
+          "id": "sony",
+          "name": "Sony"
+        },
+        {
+          "id": "sony-group",
+          "name": "Sony Group"
+        },
+        {
+          "id": "sony-group-corporation",
+          "name": "Sony Group Corporation"
+        }
+      ],
+      "market_keys": []
+    },
+    {
       "canonical_id": "abb-india-limited",
       "canonical_name": "ABB Limited",
       "members": [
@@ -1105,6 +1301,45 @@
       ]
     },
     {
+      "canonical_id": "mod-tek-packaging",
+      "canonical_name": "Mod-Tek Packaging",
+      "members": [
+        {
+          "id": "mod-tek-packaging",
+          "name": "Mod-Tek Packaging"
+        },
+        {
+          "id": "mold-tek-packaging",
+          "name": "Mold-Tek Packaging"
+        }
+      ],
+      "market_keys": [
+        "BSE:MOLDTKPAC"
+      ]
+    },
+    {
+      "canonical_id": "allied-blenders-distillers",
+      "canonical_name": "Allied Blenders",
+      "members": [
+        {
+          "id": "allied-blenders",
+          "name": "Allied Blenders"
+        },
+        {
+          "id": "allied-blenders-and-distillers",
+          "name": "Allied Blenders and Distillers"
+        },
+        {
+          "id": "allied-blenders-distillers",
+          "name": "Allied Blenders & Distillers"
+        }
+      ],
+      "market_keys": [
+        "BSE:ABDL",
+        "NSE:ABDL"
+      ]
+    },
+    {
       "canonical_id": "waaree-energies-ltd",
       "canonical_name": "Waaree Energies",
       "members": [
@@ -1119,6 +1354,57 @@
       ],
       "market_keys": [
         "NSE:WAAREEENER"
+      ]
+    },
+    {
+      "canonical_id": "polycab-india",
+      "canonical_name": "Polycab",
+      "members": [
+        {
+          "id": "polycab",
+          "name": "Polycab"
+        },
+        {
+          "id": "polycab-india",
+          "name": "Polycab India"
+        }
+      ],
+      "market_keys": [
+        "NSE:POLYCAB"
+      ]
+    },
+    {
+      "canonical_id": "cg-power-industrial-solutions-ltd",
+      "canonical_name": "CG Power",
+      "members": [
+        {
+          "id": "cg-power",
+          "name": "CG Power"
+        },
+        {
+          "id": "cg-power-industrial-solutions-ltd",
+          "name": "CG Power & Industrial Solutions Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:CGPOWER"
+      ]
+    },
+    {
+      "canonical_id": "d-b-corp",
+      "canonical_name": "D.B. Corp",
+      "members": [
+        {
+          "id": "d-b-corp",
+          "name": "D.B. Corp"
+        },
+        {
+          "id": "db-corp-ltd",
+          "name": "DB Corp Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:DBCORP"
       ]
     },
     {
@@ -1157,6 +1443,57 @@
       ],
       "market_keys": [
         "NSE:TITAN"
+      ]
+    },
+    {
+      "canonical_id": "kalyan-jewellers",
+      "canonical_name": "Kalyan Jewellers",
+      "members": [
+        {
+          "id": "kalyan-jewellers",
+          "name": "Kalyan Jewellers"
+        },
+        {
+          "id": "kalyan-jewellers-india",
+          "name": "Kalyan Jewellers India"
+        }
+      ],
+      "market_keys": [
+        "NSE:KALYANKJIL"
+      ]
+    },
+    {
+      "canonical_id": "union-bank",
+      "canonical_name": "Union Bank",
+      "members": [
+        {
+          "id": "union-bank",
+          "name": "Union Bank"
+        },
+        {
+          "id": "union-bank-of-india",
+          "name": "Union Bank Of India"
+        }
+      ],
+      "market_keys": [
+        "NSE:UNIONBANK"
+      ]
+    },
+    {
+      "canonical_id": "rr-kabel-ltd",
+      "canonical_name": "R R Kabel",
+      "members": [
+        {
+          "id": "r-r-kabel",
+          "name": "R R Kabel"
+        },
+        {
+          "id": "rr-kabel-ltd",
+          "name": "RR Kabel Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:RRKABEL"
       ]
     },
     {
@@ -1348,6 +1685,23 @@
       ],
       "market_keys": [
         "NSE:IGL"
+      ]
+    },
+    {
+      "canonical_id": "adani-ports-and-sez",
+      "canonical_name": "Adani Ports and SEZ",
+      "members": [
+        {
+          "id": "adani-ports-and-sez",
+          "name": "Adani Ports and SEZ"
+        },
+        {
+          "id": "adani-ports-and-special-economic-zone-limited",
+          "name": "Adani Ports and Special Economic Zone Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:ADANIPORTS"
       ]
     },
     {
@@ -1731,6 +2085,25 @@
       ]
     },
     {
+      "canonical_id": "the-coca-cola-co",
+      "canonical_name": "Coca Cola",
+      "members": [
+        {
+          "id": "coca-cola",
+          "name": "Coca Cola"
+        },
+        {
+          "id": "the-coca-cola-co",
+          "name": "The Coca-Cola Co"
+        },
+        {
+          "id": "the-coca-cola-company",
+          "name": "The Coca-Cola Company"
+        }
+      ],
+      "market_keys": []
+    },
+    {
       "canonical_id": "td-power-systems",
       "canonical_name": "TD Power Systems",
       "members": [
@@ -1861,21 +2234,6 @@
       ]
     },
     {
-      "canonical_id": "the-coca-cola-co",
-      "canonical_name": "The Coca-Cola Co",
-      "members": [
-        {
-          "id": "the-coca-cola-co",
-          "name": "The Coca-Cola Co"
-        },
-        {
-          "id": "the-coca-cola-company",
-          "name": "The Coca-Cola Company"
-        }
-      ],
-      "market_keys": []
-    },
-    {
       "canonical_id": "minda-corporation",
       "canonical_name": "Minda Corporation",
       "members": [
@@ -1907,6 +2265,23 @@
       ],
       "market_keys": [
         "BSE:LINC"
+      ]
+    },
+    {
+      "canonical_id": "eid-parry",
+      "canonical_name": "EID Parry",
+      "members": [
+        {
+          "id": "eid-parry",
+          "name": "EID Parry"
+        },
+        {
+          "id": "eid-parry-india-ltd",
+          "name": "EID Parry (India) Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:EIDPARRY"
       ]
     },
     {
@@ -2026,23 +2401,6 @@
       ],
       "market_keys": [
         "NSE:CEATLTD"
-      ]
-    },
-    {
-      "canonical_id": "d-b-corp",
-      "canonical_name": "D.B. Corp",
-      "members": [
-        {
-          "id": "d-b-corp",
-          "name": "D.B. Corp"
-        },
-        {
-          "id": "db-corp-ltd",
-          "name": "DB Corp Ltd"
-        }
-      ],
-      "market_keys": [
-        "NSE:DBCORP"
       ]
     },
     {
@@ -2252,16 +2610,31 @@
       "market_keys": []
     },
     {
-      "canonical_id": "sony-group-corporation",
-      "canonical_name": "Sony Group",
+      "canonical_id": "formula-one-group",
+      "canonical_name": "Formula One",
       "members": [
         {
-          "id": "sony-group",
-          "name": "Sony Group"
+          "id": "formula-one",
+          "name": "Formula One"
         },
         {
-          "id": "sony-group-corporation",
-          "name": "Sony Group Corporation"
+          "id": "formula-one-group",
+          "name": "Formula One Group"
+        }
+      ],
+      "market_keys": []
+    },
+    {
+      "canonical_id": "dbs-group-holdings-ltd",
+      "canonical_name": "DBS Group Holding",
+      "members": [
+        {
+          "id": "dbs-group-holding",
+          "name": "DBS Group Holding"
+        },
+        {
+          "id": "dbs-group-holdings-ltd",
+          "name": "DBS Group Holdings Ltd"
         }
       ],
       "market_keys": []
@@ -2732,6 +3105,412 @@
           ]
         }
       ]
+    }
+  ],
+  "cross_bucket_merges": [
+    {
+      "left_root": "manappuram-finance",
+      "right_root": "manapurram-finance",
+      "left_anchor": {
+        "id": "manappuram-finance",
+        "name": "Manappuram Finance"
+      },
+      "right_anchor": {
+        "id": "manapurram-finance",
+        "name": "Manapurram Finance"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:MANAPPURAM"
+      ]
+    },
+    {
+      "left_root": "multi-commodity-exchange",
+      "right_root": "multi-commodity-exchange-of-india",
+      "left_anchor": {
+        "id": "multi-commodity-exchange",
+        "name": "Multi Commodity Exchange"
+      },
+      "right_anchor": {
+        "id": "multi-commodity-exchange-of-india",
+        "name": "Multi Commodity Exchange of India"
+      },
+      "left_market_keys": [
+        "NSE:MCX"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "central-depository-services",
+      "right_root": "central-depository-services-india-limited",
+      "left_anchor": {
+        "id": "central-depository-services",
+        "name": "Central Depository Services"
+      },
+      "right_anchor": {
+        "id": "central-depository-services-india-limited",
+        "name": "Central Depository Services (India) Limited"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:CDSL"
+      ]
+    },
+    {
+      "left_root": "cholamandalam-finance",
+      "right_root": "cholamandalam-investment-and-finance",
+      "left_anchor": {
+        "id": "cholamandalam-finance",
+        "name": "Cholamandalam Finance"
+      },
+      "right_anchor": {
+        "id": "cholamandalam-investment-and-finance",
+        "name": "Cholamandalam Investment and Finance"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:CHOLAFIN"
+      ]
+    },
+    {
+      "left_root": "dabur",
+      "right_root": "dabur-india",
+      "left_anchor": {
+        "id": "dabur",
+        "name": "Dabur"
+      },
+      "right_anchor": {
+        "id": "dabur-india-ltd",
+        "name": "Dabur India Ltd"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:DABUR"
+      ]
+    },
+    {
+      "left_root": "virgin-galactic-holdings-inc",
+      "right_root": "virgin-galactic",
+      "left_anchor": {
+        "id": "virgin-galactic-holdings-inc",
+        "name": "Virgin Galactic Holdings, Inc."
+      },
+      "right_anchor": {
+        "id": "virgin-galactic",
+        "name": "Virgin Galactic"
+      },
+      "left_market_keys": [],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "maruti-suzuki",
+      "right_root": "maruti-suzuki-india-limited",
+      "left_anchor": {
+        "id": "maruti-suzuki",
+        "name": "Maruti Suzuki"
+      },
+      "right_anchor": {
+        "id": "maruti-suzuki-india-limited",
+        "name": "Maruti Suzuki India Limited"
+      },
+      "left_market_keys": [
+        "NSE:MARUTI"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "power-grid-corporation",
+      "right_root": "power-grid-corporation-of-india-limited",
+      "left_anchor": {
+        "id": "power-grid-corporation",
+        "name": "Power Grid Corporation"
+      },
+      "right_anchor": {
+        "id": "power-grid-corporation-of-india",
+        "name": "Power Grid Corporation of India"
+      },
+      "left_market_keys": [
+        "NSE:POWERGRID"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "saregama-india",
+      "right_root": "saregama",
+      "left_anchor": {
+        "id": "saregama-india",
+        "name": "Saregama India"
+      },
+      "right_anchor": {
+        "id": "saregama",
+        "name": "Saregama"
+      },
+      "left_market_keys": [
+        "BSE:SAREGAMA"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "jp-morgan",
+      "right_root": "j-p-morgan",
+      "left_anchor": {
+        "id": "jp-morgan",
+        "name": "JP Morgan"
+      },
+      "right_anchor": {
+        "id": "j-p-morgan",
+        "name": "J.P. Morgan"
+      },
+      "left_market_keys": [],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "thomas-cook-india-ltd",
+      "right_root": "thomas-cook",
+      "left_anchor": {
+        "id": "thomas-cook-india-ltd",
+        "name": "Thomas Cook (India) Ltd."
+      },
+      "right_anchor": {
+        "id": "thomas-cook",
+        "name": "Thomas Cook"
+      },
+      "left_market_keys": [
+        "NSE:THOMASCOOK"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "sony",
+      "right_root": "sony-group",
+      "left_anchor": {
+        "id": "sony",
+        "name": "Sony"
+      },
+      "right_anchor": {
+        "id": "sony-group-corporation",
+        "name": "Sony Group Corporation"
+      },
+      "left_market_keys": [],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "mold-tek-packaging",
+      "right_root": "mod-tek-packaging",
+      "left_anchor": {
+        "id": "mold-tek-packaging",
+        "name": "Mold-Tek Packaging"
+      },
+      "right_anchor": {
+        "id": "mod-tek-packaging",
+        "name": "Mod-Tek Packaging"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "BSE:MOLDTKPAC"
+      ]
+    },
+    {
+      "left_root": "allied-blenders-and-distillers",
+      "right_root": "allied-blenders",
+      "left_anchor": {
+        "id": "allied-blenders-and-distillers",
+        "name": "Allied Blenders and Distillers"
+      },
+      "right_anchor": {
+        "id": "allied-blenders",
+        "name": "Allied Blenders"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "BSE:ABDL"
+      ]
+    },
+    {
+      "left_root": "allied-blenders-and-distillers",
+      "right_root": "allied-blenders-distillers",
+      "left_anchor": {
+        "id": "allied-blenders-and-distillers",
+        "name": "Allied Blenders and Distillers"
+      },
+      "right_anchor": {
+        "id": "allied-blenders-distillers",
+        "name": "Allied Blenders & Distillers"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:ABDL"
+      ]
+    },
+    {
+      "left_root": "polycab",
+      "right_root": "polycab-india",
+      "left_anchor": {
+        "id": "polycab",
+        "name": "Polycab"
+      },
+      "right_anchor": {
+        "id": "polycab-india",
+        "name": "Polycab India"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:POLYCAB"
+      ]
+    },
+    {
+      "left_root": "cg-power",
+      "right_root": "cg-power-industrial-solutions-ltd",
+      "left_anchor": {
+        "id": "cg-power",
+        "name": "CG Power"
+      },
+      "right_anchor": {
+        "id": "cg-power-industrial-solutions-ltd",
+        "name": "CG Power & Industrial Solutions Ltd"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:CGPOWER"
+      ]
+    },
+    {
+      "left_root": "dilip-buildcon",
+      "right_root": "db-corp-ltd",
+      "left_anchor": {
+        "id": "dilip-buildcon",
+        "name": "Dilip Buildcon"
+      },
+      "right_anchor": {
+        "id": "db-corp-ltd",
+        "name": "DB Corp Ltd"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:DBCORP"
+      ]
+    },
+    {
+      "left_root": "kalyan-jewellers",
+      "right_root": "kalyan-jewellers-india",
+      "left_anchor": {
+        "id": "kalyan-jewellers",
+        "name": "Kalyan Jewellers"
+      },
+      "right_anchor": {
+        "id": "kalyan-jewellers-india",
+        "name": "Kalyan Jewellers India"
+      },
+      "left_market_keys": [
+        "NSE:KALYANKJIL"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "union-bank-of-india",
+      "right_root": "union-bank",
+      "left_anchor": {
+        "id": "union-bank-of-india",
+        "name": "Union Bank Of India"
+      },
+      "right_anchor": {
+        "id": "union-bank",
+        "name": "Union Bank"
+      },
+      "left_market_keys": [],
+      "right_market_keys": [
+        "NSE:UNIONBANK"
+      ]
+    },
+    {
+      "left_root": "rr-kabel-ltd",
+      "right_root": "r-r-kabel",
+      "left_anchor": {
+        "id": "rr-kabel-ltd",
+        "name": "RR Kabel Ltd"
+      },
+      "right_anchor": {
+        "id": "r-r-kabel",
+        "name": "R R Kabel"
+      },
+      "left_market_keys": [
+        "NSE:RRKABEL"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "adani-ports-and-sez",
+      "right_root": "adani-ports-and-special-economic-zone-limited",
+      "left_anchor": {
+        "id": "adani-ports-and-sez",
+        "name": "Adani Ports and SEZ"
+      },
+      "right_anchor": {
+        "id": "adani-ports-and-special-economic-zone-limited",
+        "name": "Adani Ports and Special Economic Zone Limited"
+      },
+      "left_market_keys": [
+        "NSE:ADANIPORTS"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "coca-cola",
+      "right_root": "the-coca-cola-company",
+      "left_anchor": {
+        "id": "coca-cola",
+        "name": "Coca Cola"
+      },
+      "right_anchor": {
+        "id": "the-coca-cola-co",
+        "name": "The Coca-Cola Co"
+      },
+      "left_market_keys": [],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "eid-parry",
+      "right_root": "eid-parry-india-ltd",
+      "left_anchor": {
+        "id": "eid-parry",
+        "name": "EID Parry"
+      },
+      "right_anchor": {
+        "id": "eid-parry-india-ltd",
+        "name": "EID Parry (India) Ltd"
+      },
+      "left_market_keys": [
+        "NSE:EIDPARRY"
+      ],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "formula-one",
+      "right_root": "formula-one-group",
+      "left_anchor": {
+        "id": "formula-one",
+        "name": "Formula One"
+      },
+      "right_anchor": {
+        "id": "formula-one-group",
+        "name": "Formula One Group"
+      },
+      "left_market_keys": [],
+      "right_market_keys": []
+    },
+    {
+      "left_root": "dbs-group-holding",
+      "right_root": "dbs-group-holdings-ltd",
+      "left_anchor": {
+        "id": "dbs-group-holding",
+        "name": "DBS Group Holding"
+      },
+      "right_anchor": {
+        "id": "dbs-group-holdings-ltd",
+        "name": "DBS Group Holdings Ltd"
+      },
+      "left_market_keys": [],
+      "right_market_keys": []
     }
   ]
 }
