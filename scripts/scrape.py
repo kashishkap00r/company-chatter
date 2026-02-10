@@ -31,6 +31,7 @@ ZERODHA_STOCKS_SEARCH_URL = ZERODHA_STOCKS_BASE + "/search/?q={query}"
 MANUAL_MARKET_URLS_FILE = "manual_market_urls.json"
 INDIAN_LISTED_MANDATORY_FILE = "indian_listed_mandatory.json"
 LINK_AUDIT_REPORT_FILE = "link_audit_report.json"
+COMPANY_MENTIONS_FILE = "company_mentions.json"
 ALLOWED_EXCHANGES = {"NSE", "BSE"}
 
 TITLE_INCLUDE = "the chatter"
@@ -138,6 +139,16 @@ class Quote:
     source_url: str
 
 
+@dataclass
+class CompanyMention:
+    id: str
+    edition_id: str
+    company_id: str
+    sector: Optional[str]
+    source_url: str
+    mention_type: str
+
+
 def fetch(url: str) -> str:
     req = Request(url, headers={"User-Agent": "CompanyChatterBot/0.1"})
     with urlopen(req, timeout=30) as resp:
@@ -178,6 +189,21 @@ def normalize_company_name(text: str) -> str:
             text = text.split(sep, 1)[0].strip()
     text = re.sub(r"\s*\([^)]*\)\s*$", "", text).strip()
     return text
+
+
+def parse_company_heading(text: str) -> tuple[str, Optional[str]]:
+    cleaned = " ".join(text.split()).strip()
+    if not cleaned:
+        return "", None
+
+    if "|" in cleaned:
+        parts = [part.strip() for part in cleaned.split("|") if part.strip()]
+        if parts:
+            company_name = normalize_company_name(parts[0])
+            sector_hint = parts[-1] if len(parts) >= 2 else None
+            return company_name, sector_hint
+
+    return normalize_company_name(cleaned), None
 
 
 def normalize_company_url(href: Optional[str]) -> Optional[str]:
@@ -695,7 +721,17 @@ def is_probable_company_name(name: str, href: Optional[str]) -> bool:
         return False
     if re.match(r"(?i)^edition\s*#?\d+", name):
         return False
-    if name.lower() in {"the chatter", "the chatter by zerodha"}:
+    lowered = name.lower()
+    if lowered in {"the chatter", "the chatter by zerodha"}:
+        return False
+    if lowered.startswith("the chatter"):
+        return False
+    if any(ch in name for ch in {"?", "!"}):
+        return False
+    words = re.findall(r"[A-Za-z0-9&'.-]+", name)
+    if ":" in name and len(words) > 4:
+        return False
+    if words and words[0].lower() in {"we", "broader", "sectoral", "check", "have", "introducing", "given", "are"} and len(words) > 4:
         return False
     if _has_company_url_signal(href):
         return True
@@ -805,40 +841,48 @@ def is_speaker_line(text: str) -> bool:
     return False
 
 
+def is_direct_quote_paragraph(text: str) -> bool:
+    stripped = text.strip()
+    if len(stripped) < 25:
+        return False
+    return stripped.startswith(("“", '"', "‘", "'", "...", "…"))
+
+
 class ContentExtractor(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
         self.nodes: list[dict] = []
         self._current_tag: Optional[str] = None
         self._current_text: list[str] = []
-        self._h3_link: Optional[str] = None
-        self._inside_h3: bool = False
+        self._heading_link: Optional[str] = None
         self._blockquote_depth: int = 0
+        self._list_item_depth: int = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, Optional[str]]]) -> None:
         if tag == "blockquote":
             self._flush()
             self._blockquote_depth += 1
-        if tag in {"h2", "h3", "p"}:
+        if tag == "li":
+            self._list_item_depth += 1
+        if tag in {"h1", "h2", "h3", "p"}:
             self._flush()
             self._current_tag = tag
             self._current_text = []
-            if tag == "h3":
-                self._inside_h3 = True
-                self._h3_link = None
-        if tag == "a" and self._inside_h3:
+            if tag in {"h1", "h2", "h3"}:
+                self._heading_link = None
+        if tag == "a" and self._current_tag in {"h1", "h2", "h3"}:
             for k, v in attrs:
                 if k == "href" and v:
-                    self._h3_link = v
+                    self._heading_link = v
 
     def handle_endtag(self, tag: str) -> None:
-        if tag in {"h2", "h3", "p"}:
+        if tag in {"h1", "h2", "h3", "p"}:
             self._flush()
         if tag == "blockquote":
             self._flush()
             self._blockquote_depth = max(0, self._blockquote_depth - 1)
-        if tag == "h3":
-            self._inside_h3 = False
+        if tag == "li":
+            self._list_item_depth = max(0, self._list_item_depth - 1)
 
     def handle_data(self, data: str) -> None:
         if self._current_tag:
@@ -850,13 +894,15 @@ class ContentExtractor(HTMLParser):
         text = " ".join(" ".join(self._current_text).split())
         if text:
             node = {"tag": self._current_tag, "text": text}
-            if self._current_tag == "h3" and self._h3_link:
-                node["href"] = self._h3_link
+            if self._current_tag in {"h1", "h2", "h3"} and self._heading_link:
+                node["href"] = self._heading_link
             if self._current_tag == "p":
                 node["in_blockquote"] = self._blockquote_depth > 0
+                node["in_list_item"] = self._list_item_depth > 0
             self.nodes.append(node)
         self._current_tag = None
         self._current_text = []
+        self._heading_link = None
 
 
 def extract_published_date(html: str) -> Optional[str]:
@@ -916,11 +962,11 @@ def extract_article_html(html: str) -> str:
     return html
 
 
-def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]:
+def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote], list[CompanyMention]]:
     html = fetch(url)
     title = extract_title(html)
     if not is_target_post(title):
-        return None, [], []
+        return None, [], [], []
 
     date = extract_published_date(html) or ""
     edition_slug = urlparse(url).path.strip("/") or title
@@ -938,12 +984,58 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
 
     companies: dict[str, Company] = {}
     quotes: list[Quote] = []
+    mentions: list[CompanyMention] = []
+    mention_index_by_company: dict[str, int] = {}
     quote_count_by_company: dict[str, int] = {}
 
     current_sector: Optional[str] = None
     current_company: Optional[Company] = None
     last_context: Optional[str] = None
     current_blockquote_parts: list[str] = []
+
+    def register_company(name: str, company_url: Optional[str]) -> Optional[Company]:
+        normalized_name = normalize_company_name(name)
+        if not normalized_name:
+            return None
+        if not is_probable_company_name(normalized_name, company_url):
+            return None
+
+        company_id = canonical_company_id(normalized_name, company_url)
+        if company_id not in companies:
+            companies[company_id] = Company(
+                id=company_id,
+                name=normalized_name,
+                url=company_url,
+            )
+        else:
+            if company_url and not companies[company_id].url:
+                companies[company_id].url = company_url
+            if len(normalized_name) < len(companies[company_id].name):
+                companies[company_id].name = normalized_name
+        return companies[company_id]
+
+    def register_mention(company: Company, mention_type: str) -> None:
+        index = mention_index_by_company.get(company.id)
+        if index is None:
+            mention = CompanyMention(
+                id=slugify(f"{edition_id}-{company.id}-{mention_type}-{len(mentions)}"),
+                edition_id=edition_id,
+                company_id=company.id,
+                sector=current_sector,
+                source_url=url,
+                mention_type=mention_type,
+            )
+            mentions.append(mention)
+            mention_index_by_company[company.id] = len(mentions) - 1
+            return
+
+        existing = mentions[index]
+        if existing.mention_type != "heading" and mention_type == "heading":
+            existing.mention_type = "heading"
+        if mention_type == "heading" and current_sector:
+            existing.sector = current_sector
+        elif not existing.sector and current_sector:
+            existing.sector = current_sector
 
     def flush_blockquote_parts() -> None:
         nonlocal last_context, current_blockquote_parts
@@ -962,8 +1054,15 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
             speaker = parts[-1].lstrip("-–— ").strip()
             quote_text = " ".join(parts[:-1]).strip()
 
-        quote_text = quote_text.strip().strip('"“”').strip()
-        if not quote_text:
+        emit_quote(quote_text, speaker)
+
+    def emit_quote(quote_text: str, speaker: Optional[str]) -> None:
+        nonlocal last_context
+        if not current_company:
+            return
+
+        cleaned_quote = quote_text.strip().strip('"“”').strip()
+        if not cleaned_quote:
             return
 
         quote_id = slugify(f"{edition_id}-{current_company.id}-{len(quotes)}")
@@ -973,45 +1072,43 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
                 edition_id=edition_id,
                 company_id=current_company.id,
                 sector=current_sector,
-                text=quote_text,
+                text=cleaned_quote,
                 context=last_context,
                 speaker=speaker,
                 source_url=url,
             )
         )
         quote_count_by_company[current_company.id] = quote_count_by_company.get(current_company.id, 0) + 1
+        register_mention(current_company, "heading")
         last_context = None
 
     for node in extractor.nodes:
         tag = node["tag"]
         text = node["text"]
         in_blockquote = bool(node.get("in_blockquote", False))
+        in_list_item = bool(node.get("in_list_item", False))
 
         if tag != "p" or not in_blockquote:
             flush_blockquote_parts()
 
-        if tag == "h2":
-            current_sector = text
-            continue
-        if tag == "h3":
-            name = normalize_company_name(text)
+        if tag in {"h1", "h2", "h3"}:
+            heading_text = " ".join(text.split()).strip()
+            company_name, sector_hint = parse_company_heading(heading_text)
             company_url = canonicalize_zerodha_stock_url(normalize_company_url(node.get("href")))
-            if not is_probable_company_name(name, company_url):
-                current_company = None
+
+            structured_heading = bool(company_url) or ("|" in heading_text) or tag == "h3"
+            company = register_company(company_name, company_url) if company_name and structured_heading else None
+            if company:
+                current_company = company
+                if sector_hint and _is_sector_like_heading(sector_hint):
+                    current_sector = sector_hint
+                register_mention(company, "heading")
+                last_context = None
                 continue
-            company_id = canonical_company_id(name, company_url)
-            if company_id not in companies:
-                companies[company_id] = Company(
-                    id=company_id,
-                    name=name,
-                    url=company_url,
-                )
-            else:
-                if company_url and not companies[company_id].url:
-                    companies[company_id].url = company_url
-                if len(name) < len(companies[company_id].name):
-                    companies[company_id].name = name
-            current_company = companies[company_id]
+
+            if _is_sector_like_heading(heading_text):
+                current_sector = heading_text
+            current_company = None
             last_context = None
             continue
         if tag == "p":
@@ -1019,19 +1116,37 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
                 if current_company:
                     current_blockquote_parts.append(text)
                 continue
+
+            if in_list_item:
+                if current_sector and _is_sector_like_heading(current_sector):
+                    listed_company = register_company(text, None)
+                    if listed_company:
+                        register_mention(listed_company, "list")
+                current_company = None
+                last_context = None
+                continue
+
             if current_company and is_speaker_line(text) and quotes:
                 last_quote = quotes[-1]
                 if last_quote.edition_id == edition_id and last_quote.company_id == current_company.id and not last_quote.speaker:
                     last_quote.speaker = text.lstrip("-–— ").strip()
                     continue
+            if current_company and is_direct_quote_paragraph(text):
+                quote_text, speaker = split_quote_and_speaker(text)
+                emit_quote(quote_text, speaker)
+                continue
             # Keep plain paragraphs as context only; actual quotes are emitted from blockquotes.
             last_context = text
             continue
 
     flush_blockquote_parts()
 
-    companies_with_quotes = [c for cid, c in companies.items() if quote_count_by_company.get(cid, 0) > 0]
-    return edition, companies_with_quotes, quotes
+    companies_with_coverage = [
+        c
+        for cid, c in companies.items()
+        if quote_count_by_company.get(cid, 0) > 0 or cid in mention_index_by_company
+    ]
+    return edition, companies_with_coverage, quotes, mentions
 
 
 def main() -> None:
@@ -1052,10 +1167,11 @@ def main() -> None:
     editions: dict[str, Edition] = {}
     companies: dict[str, Company] = {}
     quotes: list[Quote] = []
+    mentions: list[CompanyMention] = []
 
     for idx, url in enumerate(post_urls, start=1):
         try:
-            edition, comps, qs = parse_post(url)
+            edition, comps, qs, ms = parse_post(url)
         except Exception as exc:  # pragma: no cover
             print(f"Failed to parse {url}: {exc}")
             continue
@@ -1066,6 +1182,7 @@ def main() -> None:
             if c.id not in companies:
                 companies[c.id] = c
         quotes.extend(qs)
+        mentions.extend(ms)
         if idx % 10 == 0:
             print(f"Processed {idx}/{len(post_urls)} posts...")
         time.sleep(0.2)
@@ -1079,10 +1196,13 @@ def main() -> None:
         json.dump([c.__dict__ for c in companies.values()], f, ensure_ascii=False, indent=2)
     with open(f"{OUTPUT_DIR}/quotes.json", "w", encoding="utf-8") as f:
         json.dump([q.__dict__ for q in quotes], f, ensure_ascii=False, indent=2)
+    with open(f"{OUTPUT_DIR}/{COMPANY_MENTIONS_FILE}", "w", encoding="utf-8") as f:
+        json.dump([m.__dict__ for m in mentions], f, ensure_ascii=False, indent=2)
 
     print(f"Editions: {len(editions)}")
     print(f"Companies: {len(companies)}")
     print(f"Quotes: {len(quotes)}")
+    print(f"Mentions: {len(mentions)}")
     print(f"Link audit report: {OUTPUT_DIR}/{LINK_AUDIT_REPORT_FILE}")
 
     if link_audit_report["counts"]["mandatory_missing"] or link_audit_report["counts"]["mandatory_mismatched"]:

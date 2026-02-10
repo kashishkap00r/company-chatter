@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-02-10T05:05:09+00:00",
+  "generated_at": "2026-02-10T08:01:10+00:00",
   "counts": {
-    "total_companies": 351,
-    "linked_companies": 314,
-    "unlinked_companies": 37,
+    "total_companies": 1211,
+    "linked_companies": 1088,
+    "unlinked_companies": 123,
     "mandatory_total": 16,
     "mandatory_missing": 0,
     "mandatory_mismatched": 0,
-    "existing_links_kept": 298,
+    "existing_links_kept": 567,
     "manual_overrides_applied": 16,
-    "auto_resolved": 0,
-    "unresolved_after_resolution": 37
+    "auto_resolved": 505,
+    "unresolved_after_resolution": 123
   },
   "mandatory_missing": [],
   "mandatory_mismatched": [],
@@ -73,7 +73,7 @@
     },
     {
       "company_key": "jsw-energy",
-      "display_name": "JSW ENERGY",
+      "display_name": "JSW Energy",
       "url": "https://zerodha.com/markets/stocks/NSE/JSWENERGY/",
       "reason": "Source heading links to a third-party site; enforce official Zerodha listing.",
       "verified_on": "2026-02-09"
@@ -133,6 +133,30 @@
   "rejected_existing_urls": [],
   "non_mandatory_unlinked": [
     {
+      "company_key": "accenture-plc",
+      "display_name": "Accenture plc"
+    },
+    {
+      "company_key": "adani-cement",
+      "display_name": "Adani Cement"
+    },
+    {
+      "company_key": "adobe",
+      "display_name": "Adobe"
+    },
+    {
+      "company_key": "adobe-inc",
+      "display_name": "Adobe Inc"
+    },
+    {
+      "company_key": "advanced-micro-devices",
+      "display_name": "Advanced Micro Devices"
+    },
+    {
+      "company_key": "airbnb-inc",
+      "display_name": "Airbnb Inc."
+    },
+    {
       "company_key": "alibaba",
       "display_name": "Alibaba"
     },
@@ -142,19 +166,47 @@
     },
     {
       "company_key": "anheuser-busch-inbev-sa",
-      "display_name": "Anheuser-Busch Inbev SA"
+      "display_name": "Anheuser-Busch InBev SA"
     },
     {
       "company_key": "apple",
       "display_name": "Apple"
     },
     {
+      "company_key": "bain-capital-specialty-finance-inc",
+      "display_name": "Bain Capital Specialty Finance, Inc."
+    },
+    {
       "company_key": "bayer-ag",
       "display_name": "Bayer AG"
     },
     {
+      "company_key": "birkenstock",
+      "display_name": "Birkenstock"
+    },
+    {
       "company_key": "bmw",
       "display_name": "BMW"
+    },
+    {
+      "company_key": "boeing",
+      "display_name": "Boeing"
+    },
+    {
+      "company_key": "broadcom-inc",
+      "display_name": "Broadcom Inc"
+    },
+    {
+      "company_key": "cams",
+      "display_name": "CAMS"
+    },
+    {
+      "company_key": "cg-power",
+      "display_name": "CG Power"
+    },
+    {
+      "company_key": "cisco",
+      "display_name": "Cisco"
     },
     {
       "company_key": "coca-cola",
@@ -173,36 +225,184 @@
       "display_name": "Daimler"
     },
     {
+      "company_key": "dassault-syst-mes",
+      "display_name": "Dassault Systèmes"
+    },
+    {
+      "company_key": "dave-buster-s-entertainment-inc",
+      "display_name": "Dave & Buster's Entertainment, Inc."
+    },
+    {
+      "company_key": "dave-buster-s-entertainment",
+      "display_name": "Dave & Buster’s Entertainment"
+    },
+    {
+      "company_key": "dbs-group-holding",
+      "display_name": "DBS Group Holding"
+    },
+    {
+      "company_key": "dbs-group-holdings-ltd",
+      "display_name": "DBS Group Holdings Ltd"
+    },
+    {
+      "company_key": "embassy-reit",
+      "display_name": "Embassy REIT"
+    },
+    {
       "company_key": "ferrari",
       "display_name": "Ferrari"
+    },
+    {
+      "company_key": "figma-inc",
+      "display_name": "Figma, Inc."
+    },
+    {
+      "company_key": "formula-one",
+      "display_name": "Formula One"
+    },
+    {
+      "company_key": "formula-one-group",
+      "display_name": "Formula One Group"
+    },
+    {
+      "company_key": "foxconn",
+      "display_name": "Foxconn"
     },
     {
       "company_key": "freightos",
       "display_name": "Freightos"
     },
     {
+      "company_key": "general-motors",
+      "display_name": "General Motors"
+    },
+    {
+      "company_key": "genpact-limited",
+      "display_name": "Genpact Limited"
+    },
+    {
+      "company_key": "gitlab",
+      "display_name": "GitLab"
+    },
+    {
+      "company_key": "gitlab-inc",
+      "display_name": "GitLab Inc."
+    },
+    {
       "company_key": "google",
       "display_name": "Google"
+    },
+    {
+      "company_key": "gopro",
+      "display_name": "GoPro"
     },
     {
       "company_key": "graviss-foods",
       "display_name": "Graviss Foods"
     },
     {
+      "company_key": "hal",
+      "display_name": "HAL"
+    },
+    {
+      "company_key": "hanesbrands",
+      "display_name": "Hanesbrands"
+    },
+    {
+      "company_key": "hanesbrands-inc",
+      "display_name": "Hanesbrands Inc."
+    },
+    {
+      "company_key": "harley-davidson",
+      "display_name": "Harley-Davidson"
+    },
+    {
+      "company_key": "harley-davidson-inc",
+      "display_name": "Harley-Davidson Inc."
+    },
+    {
+      "company_key": "hdfc-amc",
+      "display_name": "HDFC AMC"
+    },
+    {
+      "company_key": "heineken-holding",
+      "display_name": "Heineken Holding"
+    },
+    {
+      "company_key": "hp",
+      "display_name": "HP"
+    },
+    {
+      "company_key": "hp-inc",
+      "display_name": "HP Inc."
+    },
+    {
       "company_key": "hugo-boss",
       "display_name": "Hugo Boss"
     },
     {
+      "company_key": "intel-corporation",
+      "display_name": "Intel Corporation"
+    },
+    {
+      "company_key": "j-p-morgan",
+      "display_name": "J.P. Morgan"
+    },
+    {
+      "company_key": "johnson-johnson",
+      "display_name": "Johnson & Johnson"
+    },
+    {
+      "company_key": "jos-alukkas",
+      "display_name": "Jos Alukkas"
+    },
+    {
+      "company_key": "jp-morgan",
+      "display_name": "JP Morgan"
+    },
+    {
+      "company_key": "jpmorgan-chase",
+      "display_name": "JPMorgan Chase"
+    },
+    {
+      "company_key": "jpmorgan-chase-co",
+      "display_name": "JPMorgan Chase & Co"
+    },
+    {
+      "company_key": "krispy-kreme",
+      "display_name": "Krispy Kreme"
+    },
+    {
+      "company_key": "krispy-kreme-inc",
+      "display_name": "Krispy Kreme, Inc."
+    },
+    {
       "company_key": "labour-ministry-secretary-comments-on-elis-scheme",
-      "display_name": "Labour MInistry Secretary comments on ELIS Scheme"
+      "display_name": "Labour Ministry Secretary comments on ELIS Scheme"
     },
     {
       "company_key": "maersk",
       "display_name": "Maersk"
     },
     {
+      "company_key": "mattel-inc",
+      "display_name": "Mattel Inc."
+    },
+    {
+      "company_key": "mcdonald-s",
+      "display_name": "McDonald's"
+    },
+    {
       "company_key": "meta",
       "display_name": "Meta"
+    },
+    {
+      "company_key": "micron-technology",
+      "display_name": "Micron Technology"
+    },
+    {
+      "company_key": "micron-technology-inc",
+      "display_name": "Micron Technology, Inc."
     },
     {
       "company_key": "microsoft",
@@ -213,40 +413,136 @@
       "display_name": "Netflix"
     },
     {
+      "company_key": "netgear",
+      "display_name": "Netgear"
+    },
+    {
+      "company_key": "netgear-inc",
+      "display_name": "NETGEAR, Inc."
+    },
+    {
       "company_key": "nike",
       "display_name": "Nike"
+    },
+    {
+      "company_key": "nike-inc",
+      "display_name": "NIKE, Inc."
+    },
+    {
+      "company_key": "novavax",
+      "display_name": "Novavax"
     },
     {
       "company_key": "novo-nordisk",
       "display_name": "Novo Nordisk"
     },
     {
+      "company_key": "nvidia-corporation",
+      "display_name": "NVIDIA Corporation"
+    },
+    {
+      "company_key": "oracle-corporation",
+      "display_name": "Oracle Corporation"
+    },
+    {
+      "company_key": "p-g-health",
+      "display_name": "P&G Health"
+    },
+    {
+      "company_key": "paiggio-group",
+      "display_name": "Paiggio Group"
+    },
+    {
+      "company_key": "pepsico",
+      "display_name": "PepsiCo"
+    },
+    {
       "company_key": "piaggio-group",
       "display_name": "Piaggio Group"
+    },
+    {
+      "company_key": "pvr-inox",
+      "display_name": "PVR INOX"
+    },
+    {
+      "company_key": "pvr-inox-limited",
+      "display_name": "PVR INOX Limited"
+    },
+    {
+      "company_key": "reliance-consumer-products",
+      "display_name": "Reliance Consumer Products"
+    },
+    {
+      "company_key": "rural-electrification-corporation",
+      "display_name": "Rural Electrification Corporation"
+    },
+    {
+      "company_key": "salesforce-inc",
+      "display_name": "Salesforce, Inc."
+    },
+    {
+      "company_key": "samsung-sdi-co-ltd",
+      "display_name": "Samsung SDI Co Ltd."
+    },
+    {
+      "company_key": "sandisk-corporation",
+      "display_name": "SanDisk Corporation"
     },
     {
       "company_key": "saudi-aramco",
       "display_name": "Saudi Aramco"
     },
     {
+      "company_key": "sbi-cards",
+      "display_name": "SBI Cards"
+    },
+    {
       "company_key": "sebi-chairman",
       "display_name": "SEBI Chairman"
+    },
+    {
+      "company_key": "sebi-comments",
+      "display_name": "SEBI comments"
+    },
+    {
+      "company_key": "shell",
+      "display_name": "Shell"
+    },
+    {
+      "company_key": "shell-plc",
+      "display_name": "Shell plc"
     },
     {
       "company_key": "shopify",
       "display_name": "Shopify"
     },
     {
-      "company_key": "siemens-energy-ag",
-      "display_name": "Siemens Energy AG"
-    },
-    {
       "company_key": "sony",
       "display_name": "Sony"
     },
     {
+      "company_key": "sony-group",
+      "display_name": "Sony Group"
+    },
+    {
+      "company_key": "sony-group-corporation",
+      "display_name": "Sony Group Corporation"
+    },
+    {
       "company_key": "spotify",
       "display_name": "Spotify"
+    },
+    {
+      "company_key": "style-bazaar",
+      "display_name": "Style Bazaar"
+    },
+    {
+      "company_key": "synaptics-incorporated",
+      "display_name": "Synaptics Incorporated"
+    },
+    {
+      "company_key": "target",
+      "display_name": "Target"
     },
     {
       "company_key": "telecom-minister-on-trai-satellite-spectrum-auction",
@@ -265,20 +561,68 @@
       "display_name": "The Boeing Co"
     },
     {
+      "company_key": "the-boeing-company",
+      "display_name": "The Boeing Company"
+    },
+    {
       "company_key": "the-coca-cola-co",
       "display_name": "The Coca-Cola Co"
+    },
+    {
+      "company_key": "the-coca-cola-company",
+      "display_name": "The Coca-Cola Company"
+    },
+    {
+      "company_key": "uber-technologies",
+      "display_name": "Uber Technologies"
     },
     {
       "company_key": "under-armour",
       "display_name": "Under Armour"
     },
     {
-      "company_key": "varun-beverages",
-      "display_name": "Varun Beverages"
+      "company_key": "vinfast-auto-limited",
+      "display_name": "Vinfast Auto Limited"
     },
     {
-      "company_key": "zomato",
-      "display_name": "Zomato"
+      "company_key": "vinfast-auto-ltd",
+      "display_name": "VinFast Auto Ltd."
+    },
+    {
+      "company_key": "virgin-galactic",
+      "display_name": "Virgin Galactic"
+    },
+    {
+      "company_key": "virgin-galactic-holdings-inc",
+      "display_name": "Virgin Galactic Holdings, Inc."
+    },
+    {
+      "company_key": "walmart-inc",
+      "display_name": "Walmart Inc"
+    },
+    {
+      "company_key": "warner-bros-discovery",
+      "display_name": "Warner Bros. Discovery"
+    },
+    {
+      "company_key": "wd-40-company",
+      "display_name": "WD-40 Company"
+    },
+    {
+      "company_key": "we-ve-also-added-links-to-our-stock-pages-that-give-you-a-quick-fundamental-overview-of-the-company",
+      "display_name": "We've also added links to our stock pages that give you a quick fundamental overview of the company."
+    },
+    {
+      "company_key": "westlife",
+      "display_name": "Westlife"
+    },
+    {
+      "company_key": "xerox-holdings-corporation",
+      "display_name": "Xerox Holdings Corporation"
+    },
+    {
+      "company_key": "xiaomi",
+      "display_name": "Xiaomi"
     }
   ]
 }

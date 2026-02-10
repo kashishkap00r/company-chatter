@@ -5,6 +5,7 @@ Inputs:
 - data/editions.json
 - data/companies.json
 - data/quotes.json
+- data/company_mentions.json
 
 Outputs:
 - site/index.html
@@ -106,10 +107,16 @@ def _select_display_name(variants: list[dict]) -> str:
     return min(variants, key=rank)["name"]
 
 
-def merge_company_variants(companies: list[dict], quotes: list[dict]) -> tuple[list[dict], list[dict]]:
+def merge_company_variants(
+    companies: list[dict], quotes: list[dict], mentions: list[dict]
+) -> tuple[list[dict], list[dict], list[dict]]:
     quote_count_by_company: dict[str, int] = {}
     for q in quotes:
         quote_count_by_company[q["company_id"]] = quote_count_by_company.get(q["company_id"], 0) + 1
+
+    mention_count_by_company: dict[str, int] = {}
+    for m in mentions:
+        mention_count_by_company[m["company_id"]] = mention_count_by_company.get(m["company_id"], 0) + 1
 
     groups: dict[str, list[dict]] = {}
     for c in companies:
@@ -125,6 +132,7 @@ def merge_company_variants(companies: list[dict], quotes: list[dict]) -> tuple[l
             key=lambda c: (
                 1 if c.get("url") else 0,
                 quote_count_by_company.get(c["id"], 0),
+                mention_count_by_company.get(c["id"], 0),
                 0 if _has_legal_suffix(c["name"]) else 1,
                 -len(c["name"]),
             ),
@@ -149,10 +157,16 @@ def merge_company_variants(companies: list[dict], quotes: list[dict]) -> tuple[l
         updated["company_id"] = alias_map.get(q["company_id"], q["company_id"])
         merged_quotes.append(updated)
 
-    return merged_companies, merged_quotes
+    merged_mentions: list[dict] = []
+    for m in mentions:
+        updated = dict(m)
+        updated["company_id"] = alias_map.get(m["company_id"], m["company_id"])
+        merged_mentions.append(updated)
+
+    return merged_companies, merged_quotes, merged_mentions
 
 
-def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[dict]) -> None:
+def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[dict], mentions: list[dict]) -> None:
     quote_count_by_company: dict[str, int] = {}
     edition_ids_by_company: dict[str, set[str]] = {}
     latest_date_by_company: dict[str, str] = {}
@@ -165,18 +179,27 @@ def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[d
         if edition_date and edition_date > latest_date_by_company.get(company_id, ""):
             latest_date_by_company[company_id] = edition_date
 
+    for m in mentions:
+        company_id = m["company_id"]
+        edition_id = m["edition_id"]
+        edition_ids_by_company.setdefault(company_id, set()).add(edition_id)
+        edition_date = editions.get(edition_id, {}).get("date", "")
+        if edition_date and edition_date > latest_date_by_company.get(company_id, ""):
+            latest_date_by_company[company_id] = edition_date
+
     company_records = []
     for company in sorted(companies, key=lambda c: c["name"].lower()):
         slug = company["id"]
-        count = quote_count_by_company.get(slug, 0)
-        if count == 0:
+        quote_count = quote_count_by_company.get(slug, 0)
+        edition_ids = edition_ids_by_company.get(slug, set())
+        if quote_count == 0 and not edition_ids:
             continue
         company_records.append(
             {
                 "slug": slug,
                 "name": company["name"],
-                "quote_count": count,
-                "edition_count": len(edition_ids_by_company.get(slug, set())),
+                "quote_count": quote_count,
+                "edition_count": len(edition_ids),
                 "latest_date": format_date(latest_date_by_company.get(slug, "")),
             }
         )
@@ -205,79 +228,103 @@ def format_date(date_str: str) -> str:
         return date_str
 
 
-def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes: list[dict]) -> None:
+def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes: list[dict], mentions: list[dict]) -> None:
     company_dir = SITE_DIR / "company"
     if company_dir.exists():
         shutil.rmtree(company_dir)
     ensure_dir(company_dir)
 
-    quotes_by_company: dict[str, list[dict]] = {}
+    quotes_by_company_edition: dict[str, dict[str, list[dict]]] = {}
     for q in quotes:
-        quotes_by_company.setdefault(q["company_id"], []).append(q)
+        quotes_by_company_edition.setdefault(q["company_id"], {}).setdefault(q["edition_id"], []).append(q)
+
+    mentions_by_company_edition: dict[str, dict[str, list[dict]]] = {}
+    for m in mentions:
+        mentions_by_company_edition.setdefault(m["company_id"], {}).setdefault(m["edition_id"], []).append(m)
 
     for company in companies:
         slug = company["id"]
-        company_quotes = sorted(
-            quotes_by_company.get(slug, []),
-            key=lambda q: (
-                editions.get(q["edition_id"], {}).get("date", "") or "9999-12-31",
-                q["edition_id"],
-                q["id"],
+        quote_editions = set(quotes_by_company_edition.get(slug, {}).keys())
+        mention_editions = set(mentions_by_company_edition.get(slug, {}).keys())
+        covered_edition_ids = sorted(
+            quote_editions.union(mention_editions),
+            key=lambda edition_id: (
+                editions.get(edition_id, {}).get("date", "") or "9999-12-31",
+                edition_id,
             ),
         )
-        if not company_quotes:
+        if not covered_edition_ids:
             continue
 
         edition_sections = []
-        dates = []
-        edition_ids = set()
+        dates = [editions.get(edition_id, {}).get("date", "") for edition_id in covered_edition_ids]
+        company_quote_count = 0
 
-        for q in company_quotes:
-            edition = editions.get(q["edition_id"], {})
-            date = edition.get("date", "")
-            dates.append(date)
-            edition_ids.add(q["edition_id"])
-
-        grouped_quotes: list[tuple[str, list[dict]]] = []
-        for quote in company_quotes:
-            edition_id = quote["edition_id"]
-            if grouped_quotes and grouped_quotes[-1][0] == edition_id:
-                grouped_quotes[-1][1].append(quote)
-            else:
-                grouped_quotes.append((edition_id, [quote]))
-
-        for edition_id, edition_quotes in grouped_quotes:
+        for edition_id in covered_edition_ids:
+            edition_quotes = sorted(
+                quotes_by_company_edition.get(slug, {}).get(edition_id, []),
+                key=lambda q: q["id"],
+            )
+            edition_mentions = mentions_by_company_edition.get(slug, {}).get(edition_id, [])
             edition = editions.get(edition_id, {})
             edition_title = edition.get("title") or edition_id
             edition_date = edition.get("date", "")
-            edition_source_url = edition.get("url") or edition_quotes[0].get("source_url", "")
+            edition_source_url = (
+                edition.get("url")
+                or (edition_quotes[0].get("source_url", "") if edition_quotes else "")
+                or (edition_mentions[0].get("source_url", "") if edition_mentions else "")
+            )
 
-            sectors = sorted({q.get("sector", "").strip() for q in edition_quotes if q.get("sector")})
+            sectors = sorted(
+                {
+                    sector
+                    for sector in (
+                        [q.get("sector", "").strip() for q in edition_quotes]
+                        + [m.get("sector", "").strip() for m in edition_mentions]
+                    )
+                    if sector
+                }
+            )
             sector_line = ""
             if sectors:
                 sector_line = f'<p class="chapter-sector">{html_escape(" · ".join(sectors))}</p>'
 
             quote_cards = []
-            for index, q in enumerate(edition_quotes, start=1):
-                quote_context = (q.get("context") or "").strip()
-                quote_speaker = (q.get("speaker") or "").strip()
-                story_parts = []
+            chapter_meta = "Mentioned (no quote extracted)"
+            if edition_quotes:
+                chapter_meta = f"{len(edition_quotes)} quotes"
+                company_quote_count += len(edition_quotes)
+                for index, q in enumerate(edition_quotes, start=1):
+                    quote_context = (q.get("context") or "").strip()
+                    quote_speaker = (q.get("speaker") or "").strip()
+                    story_parts = []
 
-                if quote_context:
-                    story_parts.append(f'<p class="story-context">{html_escape(quote_context)}</p>')
-                story_parts.append(f'<blockquote class="story-quote">“{html_escape(q["text"])}”</blockquote>')
-                if quote_speaker:
-                    story_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
-                story_parts.append(
-                    f'<a class="small-link" href="{html_escape(q["source_url"])}">Source</a>'
-                )
+                    if quote_context:
+                        story_parts.append(f'<p class="story-context">{html_escape(quote_context)}</p>')
+                    story_parts.append(f'<blockquote class="story-quote">“{html_escape(q["text"])}”</blockquote>')
+                    if quote_speaker:
+                        story_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
+                    story_parts.append(
+                        f'<a class="small-link" href="{html_escape(q["source_url"])}">Source</a>'
+                    )
 
+                    quote_cards.append(
+                        "\n".join(
+                            [
+                                '<article class="story-card">',
+                                f'  <span class="story-index">{index:02d}</span>',
+                                f'  <div class="story-body">{"".join(story_parts)}</div>',
+                                "</article>",
+                            ]
+                        )
+                    )
+            else:
                 quote_cards.append(
                     "\n".join(
                         [
-                            '<article class="story-card">',
-                            f'  <span class="story-index">{index:02d}</span>',
-                            f'  <div class="story-body">{"".join(story_parts)}</div>',
+                            '<article class="story-card story-mention">',
+                            '  <span class="story-index">--</span>',
+                            '  <div class="story-body"><p class="mention-note">Featured in this edition, but no direct quote block was extracted.</p></div>',
                             "</article>",
                         ]
                     )
@@ -295,7 +342,7 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
                         "    <div>",
                         f'      <p class="chapter-date">{html_escape(format_date(edition_date))}</p>',
                         f"      <h3>{html_escape(edition_title)}</h3>",
-                        f'      <p class="chapter-meta">{len(edition_quotes)} quotes</p>',
+                        f'      <p class="chapter-meta">{chapter_meta}</p>',
                         f"      {sector_line}" if sector_line else "",
                         "    </div>",
                         f"    {edition_link}",
@@ -320,10 +367,10 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
                 "company_name_link": company_name_link,
                 "company_meta": meta,
                 "edition_sections": "\n".join(edition_sections) if edition_sections else "<p>No quotes yet.</p>",
-                "quote_count": str(len(company_quotes)),
+                "quote_count": str(company_quote_count),
                 "first_date": format_date(min([d for d in dates if d] or [""])),
                 "last_date": format_date(max([d for d in dates if d] or [""])),
-                "editions_count": str(len(edition_ids)),
+                "editions_count": str(len(covered_edition_ids)),
             },
         )
         html = wrap_base(f"{company['name']} | Company Chatter", content)
@@ -346,10 +393,11 @@ def main() -> None:
     editions = {e["id"]: e for e in read_json(DATA_DIR / "editions.json")}
     companies = read_json(DATA_DIR / "companies.json")
     quotes = read_json(DATA_DIR / "quotes.json")
-    companies, quotes = merge_company_variants(companies, quotes)
+    mentions = read_json(DATA_DIR / "company_mentions.json")
+    companies, quotes, mentions = merge_company_variants(companies, quotes, mentions)
 
-    build_index(companies, editions, quotes)
-    build_company_pages(companies, editions, quotes)
+    build_index(companies, editions, quotes, mentions)
+    build_company_pages(companies, editions, quotes, mentions)
 
     print("Site build complete")
 

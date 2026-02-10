@@ -328,6 +328,10 @@ a {
   border-top: 0;
 }
 
+.story-mention {
+  border-top-style: solid;
+}
+
 .story-index {
   padding-top: 3px;
   color: #86959f;
@@ -364,6 +368,16 @@ a {
   color: #34586a;
   font-size: 13px;
   line-height: 1.5;
+}
+
+.mention-note {
+  margin: 0;
+  padding: 10px 12px;
+  border-left: 2px solid rgba(12, 146, 196, 0.32);
+  background: rgba(12, 146, 196, 0.06);
+  color: #24424f;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .small-link {
