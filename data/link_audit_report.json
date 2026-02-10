@@ -1,27 +1,20 @@
 {
-  "generated_at": "2026-02-10T08:01:10+00:00",
+  "generated_at": "2026-02-10T08:56:12+00:00",
   "counts": {
-    "total_companies": 1211,
-    "linked_companies": 1088,
-    "unlinked_companies": 123,
+    "total_companies": 788,
+    "linked_companies": 679,
+    "unlinked_companies": 109,
     "mandatory_total": 16,
     "mandatory_missing": 0,
     "mandatory_mismatched": 0,
-    "existing_links_kept": 567,
-    "manual_overrides_applied": 16,
-    "auto_resolved": 505,
-    "unresolved_after_resolution": 123
+    "existing_links_kept": 559,
+    "manual_overrides_applied": 12,
+    "auto_resolved": 108,
+    "unresolved_after_resolution": 109
   },
   "mandatory_missing": [],
   "mandatory_mismatched": [],
   "manual_overrides_applied": [
-    {
-      "company_key": "bajaj-finance",
-      "display_name": "Bajaj Finance",
-      "url": "https://zerodha.com/markets/stocks/NSE/BAJFINANCE/",
-      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
-      "verified_on": "2026-02-09"
-    },
     {
       "company_key": "bharat-petroleum-corporation",
       "display_name": "Bharat Petroleum Corporation",
@@ -72,20 +65,6 @@
       "verified_on": "2026-02-09"
     },
     {
-      "company_key": "jsw-energy",
-      "display_name": "JSW Energy",
-      "url": "https://zerodha.com/markets/stocks/NSE/JSWENERGY/",
-      "reason": "Source heading links to a third-party site; enforce official Zerodha listing.",
-      "verified_on": "2026-02-09"
-    },
-    {
-      "company_key": "jsw-infrastructure",
-      "display_name": "JSW Infrastructure",
-      "url": "https://zerodha.com/markets/stocks/NSE/JSWINFRA/",
-      "reason": "Known listed entity; keep stable mapped URL when automatic enrichment is inconclusive.",
-      "verified_on": "2026-02-10"
-    },
-    {
       "company_key": "l-t-mindtree",
       "display_name": "L&T Mindtree",
       "url": "https://zerodha.com/markets/stocks/NSE/LTIM/",
@@ -119,13 +98,6 @@
       "url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/",
       "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
       "verified_on": "2026-02-09"
-    },
-    {
-      "company_key": "vishal-mega-mart",
-      "display_name": "Vishal Mega Mart",
-      "url": "https://zerodha.com/markets/stocks/NSE/VMM/",
-      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
-      "verified_on": "2026-02-09"
     }
   ],
   "manual_overrides_missing_company": [],
@@ -135,10 +107,6 @@
     {
       "company_key": "accenture-plc",
       "display_name": "Accenture plc"
-    },
-    {
-      "company_key": "adani-cement",
-      "display_name": "Adani Cement"
     },
     {
       "company_key": "adobe",
@@ -197,14 +165,6 @@
       "display_name": "Broadcom Inc"
     },
     {
-      "company_key": "cams",
-      "display_name": "CAMS"
-    },
-    {
-      "company_key": "cg-power",
-      "display_name": "CG Power"
-    },
-    {
       "company_key": "cisco",
       "display_name": "Cisco"
     },
@@ -243,10 +203,6 @@
     {
       "company_key": "dbs-group-holdings-ltd",
       "display_name": "DBS Group Holdings Ltd"
-    },
-    {
-      "company_key": "embassy-reit",
-      "display_name": "Embassy REIT"
     },
     {
       "company_key": "ferrari",
@@ -301,10 +257,6 @@
       "display_name": "Graviss Foods"
     },
     {
-      "company_key": "hal",
-      "display_name": "HAL"
-    },
-    {
       "company_key": "hanesbrands",
       "display_name": "Hanesbrands"
     },
@@ -319,10 +271,6 @@
     {
       "company_key": "harley-davidson-inc",
       "display_name": "Harley-Davidson Inc."
-    },
-    {
-      "company_key": "hdfc-amc",
-      "display_name": "HDFC AMC"
     },
     {
       "company_key": "heineken-holding",
@@ -445,10 +393,6 @@
       "display_name": "Oracle Corporation"
     },
     {
-      "company_key": "p-g-health",
-      "display_name": "P&G Health"
-    },
-    {
       "company_key": "paiggio-group",
       "display_name": "Paiggio Group"
     },
@@ -459,22 +403,6 @@
     {
       "company_key": "piaggio-group",
       "display_name": "Piaggio Group"
-    },
-    {
-      "company_key": "pvr-inox",
-      "display_name": "PVR INOX"
-    },
-    {
-      "company_key": "pvr-inox-limited",
-      "display_name": "PVR INOX Limited"
-    },
-    {
-      "company_key": "reliance-consumer-products",
-      "display_name": "Reliance Consumer Products"
-    },
-    {
-      "company_key": "rural-electrification-corporation",
-      "display_name": "Rural Electrification Corporation"
     },
     {
       "company_key": "salesforce-inc",
@@ -491,10 +419,6 @@
     {
       "company_key": "saudi-aramco",
       "display_name": "Saudi Aramco"
-    },
-    {
-      "company_key": "sbi-cards",
-      "display_name": "SBI Cards"
     },
     {
       "company_key": "sebi-chairman",
@@ -531,10 +455,6 @@
     {
       "company_key": "spotify",
       "display_name": "Spotify"
-    },
-    {
-      "company_key": "style-bazaar",
-      "display_name": "Style Bazaar"
     },
     {
       "company_key": "synaptics-incorporated",
@@ -611,10 +531,6 @@
     {
       "company_key": "we-ve-also-added-links-to-our-stock-pages-that-give-you-a-quick-fundamental-overview-of-the-company",
       "display_name": "We've also added links to our stock pages that give you a quick fundamental overview of the company."
-    },
-    {
-      "company_key": "westlife",
-      "display_name": "Westlife"
     },
     {
       "company_key": "xerox-holdings-corporation",

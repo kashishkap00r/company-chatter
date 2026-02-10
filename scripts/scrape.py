@@ -334,14 +334,9 @@ def load_mandatory_indian_listed_links() -> dict[str, dict[str, str]]:
 
 
 def canonical_company_id(name: str, href: Optional[str]) -> str:
-    company_url = canonicalize_zerodha_stock_url(normalize_company_url(href))
-    if company_url:
-        parsed = urlparse(company_url)
-        parts = [p for p in parsed.path.split("/") if p]
-        if parts:
-            last = parts[-1]
-            if last and last not in {"markets", "stocks"}:
-                return slugify(last)
+    # Keep extraction-time IDs name-based so a noisy/bad heading URL does not
+    # collapse different companies into a single identity.
+    _ = href
     return slugify(name)
 
 
