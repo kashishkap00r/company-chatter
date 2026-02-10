@@ -1,12 +1,42 @@
 {
+  "acrysil-limited": {
+    "url": "https://zerodha.com/markets/stocks/NSE/CARYSIL/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "aelea-commodities": {
+    "url": "https://zerodha.com/markets/stocks/BSE/ACLD/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "all-time-plastics": {
+    "url": "https://zerodha.com/markets/stocks/NSE/ALLTIME/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "allied-blenders": {
+    "url": "https://zerodha.com/markets/stocks/NSE/ABDL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "allied-blenders-and-distillers": {
+    "url": "https://zerodha.com/markets/stocks/NSE/ABDL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "allied-blenders-distillers": {
+    "url": "https://zerodha.com/markets/stocks/NSE/ABDL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
   "bajaj-finance": {
     "url": "https://zerodha.com/markets/stocks/NSE/BAJFINANCE/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
   },
-  "canara-bank": {
-    "url": "https://zerodha.com/markets/stocks/NSE/CANBK/",
-    "reason": "Verified via Zerodha instruments feed (`api.kite.trade/instruments`) for NSE tradingsymbol CANBK.",
+  "barbeque-nation-hospitality-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/UFBL/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
     "verified_on": "2026-02-10"
   },
   "bharat-petroleum-corporation": {
@@ -14,29 +44,174 @@
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
   },
+  "bharati-airtel": {
+    "url": "https://zerodha.com/markets/stocks/NSE/BHARTIARTL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "bharatrohan-airborne-innovations": {
+    "url": "https://zerodha.com/markets/stocks/BSE/BHARATROHN/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "bharti-airtel": {
+    "url": "https://zerodha.com/markets/stocks/NSE/BHARTIARTL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "bharti-airtel-limited": {
+    "url": "https://zerodha.com/markets/stocks/NSE/BHARTIARTL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "borosil-renewables": {
+    "url": "https://zerodha.com/markets/stocks/NSE/BORORENEW/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "brookfield-india-reit": {
+    "url": "https://zerodha.com/markets/stocks/NSE/BIRET/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "cams": {
+    "url": "https://zerodha.com/markets/stocks/NSE/CAMS/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "canara-bank": {
+    "url": "https://zerodha.com/markets/stocks/NSE/CANBK/",
+    "reason": "Verified via Zerodha instruments feed (`api.kite.trade/instruments`) for NSE tradingsymbol CANBK.",
+    "verified_on": "2026-02-10"
+  },
   "ceat": {
     "url": "https://zerodha.com/markets/stocks/NSE/CEATLTD/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
+  },
+  "ceigall-india": {
+    "url": "https://zerodha.com/markets/stocks/NSE/CEIGALL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "deepak-nitrite": {
+    "url": "https://zerodha.com/markets/stocks/NSE/DEEPAKNTR/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "dhanuka-agritech": {
+    "url": "https://zerodha.com/markets/stocks/NSE/DHANUKA/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
   },
   "digitide-solutions": {
     "url": "https://zerodha.com/markets/stocks/NSE/DIGITIDE/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
   },
+  "dixon": {
+    "url": "https://zerodha.com/markets/stocks/NSE/DIXON/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "doms": {
+    "url": "https://zerodha.com/markets/stocks/NSE/DOMS/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "earkart-limited": {
+    "url": "https://zerodha.com/markets/stocks/BSE/EARKART/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "embassy-office-parks": {
+    "url": "https://zerodha.com/markets/stocks/NSE/EMBASSY/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "embassy-reit": {
+    "url": "https://zerodha.com/markets/stocks/NSE/EMBASSY/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
   "ethos-ltd": {
     "url": "https://zerodha.com/markets/stocks/NSE/ETHOSLTD/",
     "reason": "Source heading links to a broken external URL; enforce official Zerodha listing.",
     "verified_on": "2026-02-09"
+  },
+  "eureka-forbes": {
+    "url": "https://zerodha.com/markets/stocks/NSE/EUREKAFORB/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "eureka-forbes-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/EUREKAFORB/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "fabtech-technologies": {
+    "url": "https://zerodha.com/markets/stocks/NSE/FABTECH/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "ganesha-ecosphere": {
+    "url": "https://zerodha.com/markets/stocks/NSE/GANECOS/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "graviss-foods": {
+    "url": "https://zerodha.com/markets/stocks/BSE/GRAVISSHO/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "groww": {
+    "url": "https://zerodha.com/markets/stocks/NSE/GROWW/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "housing-and-urban-development-corporation": {
+    "url": "https://zerodha.com/markets/stocks/NSE/HUDCO/",
+    "reason": "Verified via Zerodha instruments feed (`api.kite.trade/instruments`) for NSE tradingsymbol HUDCO.",
+    "verified_on": "2026-02-10"
   },
   "indian-oil-corporation": {
     "url": "https://zerodha.com/markets/stocks/NSE/IOC/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
   },
-  "housing-and-urban-development-corporation": {
-    "url": "https://zerodha.com/markets/stocks/NSE/HUDCO/",
-    "reason": "Verified via Zerodha instruments feed (`api.kite.trade/instruments`) for NSE tradingsymbol HUDCO.",
+  "indian-railway-catering-and-tourism-corporation": {
+    "url": "https://zerodha.com/markets/stocks/NSE/IRCTC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "ion-exchange": {
+    "url": "https://zerodha.com/markets/stocks/NSE/IONEXCHANG/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "irctc": {
+    "url": "https://zerodha.com/markets/stocks/NSE/IRCTC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "ixigo": {
+    "url": "https://zerodha.com/markets/stocks/NSE/IXIGO/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "jain-resource-recycling": {
+    "url": "https://zerodha.com/markets/stocks/NSE/JAINREC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "jbm-auto": {
+    "url": "https://zerodha.com/markets/stocks/NSE/JBMA/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "jd-cables": {
+    "url": "https://zerodha.com/markets/stocks/BSE/JDL/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
     "verified_on": "2026-02-10"
   },
   "jsw-energy": {
@@ -49,34 +224,214 @@
     "reason": "Known listed entity; keep stable mapped URL when automatic enrichment is inconclusive.",
     "verified_on": "2026-02-10"
   },
+  "kanpur-plastipack": {
+    "url": "https://zerodha.com/markets/stocks/NSE/KANPRPLA/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "kddl-limited": {
+    "url": "https://zerodha.com/markets/stocks/NSE/KDDL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
   "l-t-mindtree": {
     "url": "https://zerodha.com/markets/stocks/NSE/LTIM/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
+  },
+  "linc-pen-plastics": {
+    "url": "https://zerodha.com/markets/stocks/NSE/LINC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "linc-pen-plastics-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/LINC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
   },
   "mahanagar-gas": {
     "url": "https://zerodha.com/markets/stocks/NSE/MGL/",
     "reason": "Source heading links to a PDF transcript; enforce official Zerodha listing.",
     "verified_on": "2026-02-09"
   },
+  "mod-tek-packaging": {
+    "url": "https://zerodha.com/markets/stocks/NSE/MOLDTKPAC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "mold-tek-packaging": {
+    "url": "https://zerodha.com/markets/stocks/NSE/MOLDTKPAC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "national-securities-depository": {
+    "url": "https://zerodha.com/markets/stocks/NSE/NSDL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "national-securities-depository-limited": {
+    "url": "https://zerodha.com/markets/stocks/NSE/NSDL/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "nestl-india-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/NESTLEIND/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "nestle": {
+    "url": "https://zerodha.com/markets/stocks/NSE/NESTLEIND/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "onesource-specialty-pharma": {
+    "url": "https://zerodha.com/markets/stocks/NSE/ONESOURCE/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "organic-recycling": {
+    "url": "https://zerodha.com/markets/stocks/BSE/ORGANICREC/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "organic-recycling-systems": {
+    "url": "https://zerodha.com/markets/stocks/BSE/ORGANICREC/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "pace-digitek": {
+    "url": "https://zerodha.com/markets/stocks/NSE/PACEDIGITK/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "paradeep-parivahan": {
+    "url": "https://zerodha.com/markets/stocks/BSE/PPARIVAH/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
   "pfizer": {
     "url": "https://zerodha.com/markets/stocks/NSE/PFIZER/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
+  },
+  "protean-e-gov-technologies": {
+    "url": "https://zerodha.com/markets/stocks/NSE/PROTEAN/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "quality-power-electrical-equipments": {
+    "url": "https://zerodha.com/markets/stocks/BSE/QPOWER/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "racl-geartech": {
+    "url": "https://zerodha.com/markets/stocks/NSE/RACLGEAR/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "racl-geartech-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/RACLGEAR/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "relaxo-footwears": {
+    "url": "https://zerodha.com/markets/stocks/BSE/RELAXO/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "rupa-company-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/RUPA/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "saregama": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SAREGAMA/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "saregama-india": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SAREGAMA/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "schaeffler-india-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SCHAEFFLER/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "scoda-tubes": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SCODATUBES/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "senco-gold": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SENCO/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "shilchar-technologies": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SHILCTECH/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
   },
   "shoppers-stop": {
     "url": "https://zerodha.com/markets/stocks/NSE/SHOPERSTOP/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
   },
+  "sportking-india": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SPORTKING/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
   "star-health": {
     "url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/",
     "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
     "verified_on": "2026-02-09"
   },
+  "symphony": {
+    "url": "https://zerodha.com/markets/stocks/NSE/SYMPHONY/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "tbo-tek": {
+    "url": "https://zerodha.com/markets/stocks/NSE/TBOTEK/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "tbo-tek-ltd": {
+    "url": "https://zerodha.com/markets/stocks/NSE/TBOTEK/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "urban-company": {
+    "url": "https://zerodha.com/markets/stocks/BSE/URBANCO/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
   "vishal-mega-mart": {
     "url": "https://zerodha.com/markets/stocks/NSE/VMM/",
-    "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
-    "verified_on": "2026-02-09"
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "wework-india": {
+    "url": "https://zerodha.com/markets/stocks/NSE/WEWORK/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "wework-india-management": {
+    "url": "https://zerodha.com/markets/stocks/NSE/WEWORK/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
+  },
+  "yash-highvoltage": {
+    "url": "https://zerodha.com/markets/stocks/BSE/YASHHV/",
+    "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+    "verified_on": "2026-02-10"
+  },
+  "zen-technologies": {
+    "url": "https://zerodha.com/markets/stocks/NSE/ZENTEC/",
+    "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+    "verified_on": "2026-02-10"
   }
 }

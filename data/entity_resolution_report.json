@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-02-10T10:38:21+00:00",
+  "generated_at": "2026-02-10T17:25:10+00:00",
   "counts": {
     "input_companies": 780,
-    "canonical_companies": 604,
-    "quarantined_companies": 6,
-    "merged_groups": 150,
+    "canonical_companies": 602,
+    "quarantined_companies": 7,
+    "merged_groups": 151,
     "dropped_quote_rows": 0,
-    "dropped_mention_rows": 6,
+    "dropped_mention_rows": 7,
     "input_quotes": 3977,
     "output_quotes": 3977,
     "input_mentions": 957,
-    "output_mentions": 951,
-    "market_conflicts": 13,
-    "cross_bucket_merges": 26
+    "output_mentions": 950,
+    "market_conflicts": 32,
+    "cross_bucket_merges": 6
   },
   "quarantined_companies": [
     {
@@ -28,6 +28,14 @@
       "name": "Dixon",
       "reason": "market_key_conflict_mentions_only",
       "market_key": "NSE:DIXON",
+      "quote_count": 0,
+      "mention_count": 1
+    },
+    {
+      "id": "flair-writing-industries",
+      "name": "Flair Writing Industries",
+      "reason": "market_key_conflict_mentions_only",
+      "market_key": "NSE:KRITI",
       "quote_count": 0,
       "mention_count": 1
     },
@@ -48,10 +56,10 @@
       "mention_count": 1
     },
     {
-      "id": "metro-brands-ltd",
-      "name": "Metro Brands Ltd.",
+      "id": "kec-international",
+      "name": "KEC International",
       "reason": "market_key_conflict_mentions_only",
-      "market_key": "NSE:METROBRAND",
+      "market_key": "NSE:KSHINTL",
       "quote_count": 0,
       "mention_count": 1
     },
@@ -66,7 +74,7 @@
   ],
   "merged_groups": [
     {
-      "canonical_id": "pvr-inox-limited",
+      "canonical_id": "pvr-inox",
       "canonical_name": "PVR INOX",
       "members": [
         {
@@ -83,7 +91,7 @@
       ]
     },
     {
-      "canonical_id": "manapurram-finance",
+      "canonical_id": "manappuram-finance",
       "canonical_name": "Manappuram Finance",
       "members": [
         {
@@ -113,7 +121,7 @@
         }
       ],
       "market_keys": [
-        "BSE:MCX"
+        "NSE:MCX"
       ]
     },
     {
@@ -151,7 +159,7 @@
       ]
     },
     {
-      "canonical_id": "dabur-india-ltd",
+      "canonical_id": "dabur",
       "canonical_name": "Dabur",
       "members": [
         {
@@ -247,7 +255,7 @@
         }
       ],
       "market_keys": [
-        "BSE:PIIND"
+        "NSE:IFBIND"
       ]
     },
     {
@@ -417,7 +425,7 @@
         }
       ],
       "market_keys": [
-        "BSE:WEWORK"
+        "NSE:WEWORK"
       ]
     },
     {
@@ -513,9 +521,7 @@
           "name": "Crocs, Inc."
         }
       ],
-      "market_keys": [
-        "NSE:METROBRAND"
-      ]
+      "market_keys": []
     },
     {
       "canonical_id": "krispy-kreme-inc",
@@ -580,7 +586,7 @@
       ]
     },
     {
-      "canonical_id": "bajaj-finserv",
+      "canonical_id": "bajaj-finserv-limited",
       "canonical_name": "Bajaj Finserv",
       "members": [
         {
@@ -631,7 +637,7 @@
       ]
     },
     {
-      "canonical_id": "power-grid-corporation",
+      "canonical_id": "power-grid-corporation-of-india",
       "canonical_name": "Power Grid Corporation of India",
       "members": [
         {
@@ -669,7 +675,7 @@
         }
       ],
       "market_keys": [
-        "BSE:BHARTIARTL"
+        "NSE:BHARTIARTL"
       ]
     },
     {
@@ -690,7 +696,7 @@
       ]
     },
     {
-      "canonical_id": "akzo-nobel-india",
+      "canonical_id": "akzo-nobel-india-limited",
       "canonical_name": "Akzo Nobel India",
       "members": [
         {
@@ -779,23 +785,6 @@
       ]
     },
     {
-      "canonical_id": "tata-motors",
-      "canonical_name": "Tata Motors",
-      "members": [
-        {
-          "id": "tata-motors",
-          "name": "Tata Motors"
-        },
-        {
-          "id": "tata-motors-limited",
-          "name": "Tata Motors Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:TATAMOTORS"
-      ]
-    },
-    {
       "canonical_id": "maruti-suzuki",
       "canonical_name": "Maruti Suzuki",
       "members": [
@@ -864,7 +853,7 @@
       ]
     },
     {
-      "canonical_id": "eureka-forbes",
+      "canonical_id": "eureka-forbes-ltd",
       "canonical_name": "Eureka Forbes",
       "members": [
         {
@@ -877,11 +866,11 @@
         }
       ],
       "market_keys": [
-        "BSE:EUREKAFORB"
+        "NSE:EUREKAFORB"
       ]
     },
     {
-      "canonical_id": "cipla-ltd",
+      "canonical_id": "cipla-limited",
       "canonical_name": "Cipla",
       "members": [
         {
@@ -915,7 +904,7 @@
         }
       ],
       "market_keys": [
-        "BSE:ARMANFIN"
+        "NSE:HDBFS"
       ]
     },
     {
@@ -1004,7 +993,7 @@
         }
       ],
       "market_keys": [
-        "BSE:SAREGAMA"
+        "NSE:SAREGAMA"
       ]
     },
     {
@@ -1112,7 +1101,7 @@
       "market_keys": []
     },
     {
-      "canonical_id": "gopal-snacks-ltd",
+      "canonical_id": "gopal-snacks",
       "canonical_name": "Gopal Snacks",
       "members": [
         {
@@ -1129,7 +1118,7 @@
       ]
     },
     {
-      "canonical_id": "mahindra-mahindra",
+      "canonical_id": "mahindra-mahindra-ltd",
       "canonical_name": "Mahindra & Mahindra",
       "members": [
         {
@@ -1146,7 +1135,7 @@
       ]
     },
     {
-      "canonical_id": "talbros-automotive-components-ltd",
+      "canonical_id": "talbros-automotive-components",
       "canonical_name": "Talbros Automotive Components",
       "members": [
         {
@@ -1163,7 +1152,7 @@
       ]
     },
     {
-      "canonical_id": "thomas-cook-india-ltd",
+      "canonical_id": "thomas-cook",
       "canonical_name": "Thomas Cook",
       "members": [
         {
@@ -1197,7 +1186,24 @@
       ]
     },
     {
-      "canonical_id": "cms-info-systems-ltd",
+      "canonical_id": "metro-brands",
+      "canonical_name": "Metro Brands",
+      "members": [
+        {
+          "id": "metro-brands",
+          "name": "Metro Brands"
+        },
+        {
+          "id": "metro-brands-ltd",
+          "name": "Metro Brands Ltd."
+        }
+      ],
+      "market_keys": [
+        "NSE:METROBRAND"
+      ]
+    },
+    {
+      "canonical_id": "cms-info-systems",
       "canonical_name": "CMS Info Systems",
       "members": [
         {
@@ -1214,7 +1220,7 @@
       ]
     },
     {
-      "canonical_id": "schneider-electric-infrastructure-ltd",
+      "canonical_id": "schneider-electric-infrastructure",
       "canonical_name": "Schneider Electric Infrastructure",
       "members": [
         {
@@ -1231,7 +1237,7 @@
       ]
     },
     {
-      "canonical_id": "mtar-technologies-ltd",
+      "canonical_id": "mtar-technologies",
       "canonical_name": "Mtar Technologies",
       "members": [
         {
@@ -1261,7 +1267,7 @@
         }
       ],
       "market_keys": [
-        "BSE:FINPIPE"
+        "NSE:FIEMIND"
       ]
     },
     {
@@ -1301,7 +1307,7 @@
       ]
     },
     {
-      "canonical_id": "mod-tek-packaging",
+      "canonical_id": "mold-tek-packaging",
       "canonical_name": "Mod-Tek Packaging",
       "members": [
         {
@@ -1314,7 +1320,7 @@
         }
       ],
       "market_keys": [
-        "BSE:MOLDTKPAC"
+        "NSE:MOLDTKPAC"
       ]
     },
     {
@@ -1335,7 +1341,6 @@
         }
       ],
       "market_keys": [
-        "BSE:ABDL",
         "NSE:ABDL"
       ]
     },
@@ -1357,7 +1362,7 @@
       ]
     },
     {
-      "canonical_id": "cg-power-industrial-solutions-ltd",
+      "canonical_id": "cg-power",
       "canonical_name": "CG Power",
       "members": [
         {
@@ -1374,24 +1379,7 @@
       ]
     },
     {
-      "canonical_id": "d-b-corp",
-      "canonical_name": "D.B. Corp",
-      "members": [
-        {
-          "id": "d-b-corp",
-          "name": "D.B. Corp"
-        },
-        {
-          "id": "db-corp-ltd",
-          "name": "DB Corp Ltd"
-        }
-      ],
-      "market_keys": [
-        "NSE:DBCORP"
-      ]
-    },
-    {
-      "canonical_id": "vedant-fashions-ltd",
+      "canonical_id": "vedant-fashions",
       "canonical_name": "Vedant Fashions",
       "members": [
         {
@@ -1429,7 +1417,7 @@
       ]
     },
     {
-      "canonical_id": "kalyan-jewellers",
+      "canonical_id": "kalyan-jewellers-india",
       "canonical_name": "Kalyan Jewellers",
       "members": [
         {
@@ -1463,7 +1451,7 @@
       ]
     },
     {
-      "canonical_id": "waaree-energies-ltd",
+      "canonical_id": "waaree-energies",
       "canonical_name": "Waaree Energies",
       "members": [
         {
@@ -1477,6 +1465,23 @@
       ],
       "market_keys": [
         "NSE:WAAREEENER"
+      ]
+    },
+    {
+      "canonical_id": "bajaj-housing-finance",
+      "canonical_name": "Bajaj Finance",
+      "members": [
+        {
+          "id": "bajaj-finance",
+          "name": "Bajaj Finance"
+        },
+        {
+          "id": "bajaj-housing-finance",
+          "name": "Bajaj Housing Finance"
+        }
+      ],
+      "market_keys": [
+        "NSE:BAJFINANCE"
       ]
     },
     {
@@ -1599,7 +1604,7 @@
       ]
     },
     {
-      "canonical_id": "federal-bank",
+      "canonical_id": "federal-bank-limited",
       "canonical_name": "Federal Bank",
       "members": [
         {
@@ -1616,7 +1621,7 @@
       ]
     },
     {
-      "canonical_id": "lupin",
+      "canonical_id": "lupin-limited",
       "canonical_name": "Lupin",
       "members": [
         {
@@ -1633,7 +1638,7 @@
       ]
     },
     {
-      "canonical_id": "biocon-ltd",
+      "canonical_id": "biocon-limited",
       "canonical_name": "Biocon",
       "members": [
         {
@@ -1654,7 +1659,7 @@
       ]
     },
     {
-      "canonical_id": "gujarat-fluorochemicals",
+      "canonical_id": "gujarat-fluorochemicals-limited",
       "canonical_name": "Gujarat Fluorochemicals",
       "members": [
         {
@@ -1671,7 +1676,7 @@
       ]
     },
     {
-      "canonical_id": "indraprastha-gas-ltd",
+      "canonical_id": "indraprastha-gas-limited",
       "canonical_name": "Indraprastha Gas Ltd",
       "members": [
         {
@@ -1688,7 +1693,7 @@
       ]
     },
     {
-      "canonical_id": "adani-ports-and-sez",
+      "canonical_id": "adani-ports-and-special-economic-zone-limited",
       "canonical_name": "Adani Ports and SEZ",
       "members": [
         {
@@ -1705,7 +1710,7 @@
       ]
     },
     {
-      "canonical_id": "bharat-electronics-ltd",
+      "canonical_id": "bharat-electronics-limited",
       "canonical_name": "Bharat Electronics Ltd",
       "members": [
         {
@@ -1722,7 +1727,7 @@
       ]
     },
     {
-      "canonical_id": "hindustan-aeronautics-ltd",
+      "canonical_id": "hindustan-aeronautics-limited",
       "canonical_name": "Hindustan Aeronautics Ltd",
       "members": [
         {
@@ -1791,6 +1796,23 @@
       ],
       "market_keys": [
         "NSE:PRESTIGE"
+      ]
+    },
+    {
+      "canonical_id": "dixon-technologies",
+      "canonical_name": "Dixon Technologies",
+      "members": [
+        {
+          "id": "dixon-technologies",
+          "name": "Dixon Technologies"
+        },
+        {
+          "id": "dixon-technologies-india-limited",
+          "name": "Dixon Technologies (India) Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:DIXON"
       ]
     },
     {
@@ -2000,7 +2022,7 @@
         }
       ],
       "market_keys": [
-        "BSE:NSDL"
+        "NSE:NSDL"
       ]
     },
     {
@@ -2017,7 +2039,7 @@
         }
       ],
       "market_keys": [
-        "BSE:RACLGEAR"
+        "NSE:RACLGEAR"
       ]
     },
     {
@@ -2048,7 +2070,9 @@
           "name": "Dave & Buster's Entertainment, Inc."
         }
       ],
-      "market_keys": []
+      "market_keys": [
+        "NSE:ZEEL"
+      ]
     },
     {
       "canonical_id": "tata-technologies",
@@ -2148,9 +2172,7 @@
           "name": "Starbucks Corporation"
         }
       ],
-      "market_keys": [
-        "NSE:TATACONSUM"
-      ]
+      "market_keys": []
     },
     {
       "canonical_id": "shell-plc",
@@ -2234,7 +2256,7 @@
       ]
     },
     {
-      "canonical_id": "linc-pen-plastics",
+      "canonical_id": "linc-pen-plastics-ltd",
       "canonical_name": "Linc Pen & Plastics",
       "members": [
         {
@@ -2247,11 +2269,11 @@
         }
       ],
       "market_keys": [
-        "BSE:LINC"
+        "NSE:LINC"
       ]
     },
     {
-      "canonical_id": "eid-parry",
+      "canonical_id": "eid-parry-india-ltd",
       "canonical_name": "EID Parry",
       "members": [
         {
@@ -2268,7 +2290,7 @@
       ]
     },
     {
-      "canonical_id": "monte-carlo-fashions",
+      "canonical_id": "monte-carlo-fashions-limited",
       "canonical_name": "Monte Carlo Fashions",
       "members": [
         {
@@ -2285,7 +2307,7 @@
       ]
     },
     {
-      "canonical_id": "tbo-tek",
+      "canonical_id": "tbo-tek-ltd",
       "canonical_name": "TBO Tek",
       "members": [
         {
@@ -2298,11 +2320,11 @@
         }
       ],
       "market_keys": [
-        "BSE:TBOTEK"
+        "NSE:TBOTEK"
       ]
     },
     {
-      "canonical_id": "20-microns",
+      "canonical_id": "20-microns-limited",
       "canonical_name": "20 Microns",
       "members": [
         {
@@ -2350,6 +2372,23 @@
       ],
       "market_keys": [
         "NSE:CEATLTD"
+      ]
+    },
+    {
+      "canonical_id": "d-b-corp",
+      "canonical_name": "D.B. Corp",
+      "members": [
+        {
+          "id": "d-b-corp",
+          "name": "D.B. Corp"
+        },
+        {
+          "id": "db-corp-ltd",
+          "name": "DB Corp Ltd"
+        }
+      ],
+      "market_keys": [
+        "NSE:DBCORP"
       ]
     },
     {
@@ -2473,23 +2512,6 @@
       ],
       "market_keys": [
         "NSE:TIMKEN"
-      ]
-    },
-    {
-      "canonical_id": "kec-international-limited",
-      "canonical_name": "KEC International",
-      "members": [
-        {
-          "id": "kec-international",
-          "name": "KEC International"
-        },
-        {
-          "id": "kec-international-limited",
-          "name": "KEC International Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:KEC"
       ]
     },
     {
@@ -2653,11 +2675,93 @@
         }
       ],
       "market_keys": [
-        "NSE:HONDAPOWER"
+        "NSE:HYUNDAI"
       ]
     }
   ],
   "market_conflicts": [
+    {
+      "market_key": "NSE:DRREDDY",
+      "components": [
+        {
+          "root": "dr-reddy-s",
+          "is_primary": true,
+          "quote_count": 12,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "dr-reddy-s",
+              "name": "Dr Reddy’s"
+            }
+          ]
+        },
+        {
+          "root": "dr-reddys-laboratories-ltd",
+          "is_primary": false,
+          "quote_count": 2,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "dr-reddys-laboratories-ltd",
+              "name": "Dr Reddys Laboratories Ltd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:ADANIGREEN",
+      "components": [
+        {
+          "root": "solarium-green-energy",
+          "is_primary": false,
+          "quote_count": 8,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "solarium-green-energy",
+              "name": "Solarium Green Energy"
+            }
+          ]
+        },
+        {
+          "root": "saatvik-green-energy",
+          "is_primary": false,
+          "quote_count": 5,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "saatvik-green-energy",
+              "name": "Saatvik Green Energy"
+            }
+          ]
+        },
+        {
+          "root": "kpi-green-energy",
+          "is_primary": false,
+          "quote_count": 2,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "kpi-green-energy",
+              "name": "KPI Green Energy"
+            }
+          ]
+        },
+        {
+          "root": "adani-green",
+          "is_primary": true,
+          "quote_count": 13,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "adani-green",
+              "name": "Adani Green"
+            }
+          ]
+        }
+      ]
+    },
     {
       "market_key": "NSE:GROWW",
       "components": [
@@ -2688,33 +2792,198 @@
       ]
     },
     {
-      "market_key": "NSE:METROBRAND",
+      "market_key": "NSE:MAXHEALTH",
       "components": [
         {
-          "root": "crocs",
+          "root": "max-healthcare",
+          "is_primary": true,
+          "quote_count": 4,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "max-healthcare",
+              "name": "Max Healthcare"
+            }
+          ]
+        },
+        {
+          "root": "max-health",
+          "is_primary": false,
+          "quote_count": 4,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "max-health",
+              "name": "Max Health"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:IRCTC",
+      "components": [
+        {
+          "root": "irctc",
+          "is_primary": true,
+          "quote_count": 8,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "irctc",
+              "name": "IRCTC"
+            }
+          ]
+        },
+        {
+          "root": "indian-railway-catering-and-tourism-corporation",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "indian-railway-catering-and-tourism-corporation",
+              "name": "Indian Railway Catering and Tourism Corporation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:IFBIND",
+      "components": [
+        {
+          "root": "pi-industries",
+          "is_primary": true,
+          "quote_count": 15,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "pi-industries",
+              "name": "PI Industries"
+            },
+            {
+              "id": "pi-industries-limited",
+              "name": "PI Industries Limited"
+            }
+          ]
+        },
+        {
+          "root": "ifb-industries",
+          "is_primary": false,
+          "quote_count": 4,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "ifb-industries",
+              "name": "IFB Industries"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:TATAELXSI",
+      "components": [
+        {
+          "root": "tata-steel",
+          "is_primary": false,
+          "quote_count": 13,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "tata-steel",
+              "name": "Tata Steel"
+            }
+          ]
+        },
+        {
+          "root": "tata-elxsi",
+          "is_primary": true,
+          "quote_count": 32,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "tata-elxsi",
+              "name": "Tata Elxsi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:WAAREEENER",
+      "components": [
+        {
+          "root": "premier-energies",
+          "is_primary": false,
+          "quote_count": 18,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "premier-energies",
+              "name": "Premier Energies"
+            }
+          ]
+        },
+        {
+          "root": "waaree-energies",
+          "is_primary": true,
+          "quote_count": 27,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "waaree-energies",
+              "name": "Waaree Energies"
+            },
+            {
+              "id": "waaree-energies-ltd",
+              "name": "Waaree Energies Ltd"
+            }
+          ]
+        },
+        {
+          "root": "waaree-renewable-technologies",
+          "is_primary": false,
+          "quote_count": 5,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "waaree-renewable-technologies",
+              "name": "Waaree Renewable Technologies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:HDBFS",
+      "components": [
+        {
+          "root": "arman-financial-services",
           "is_primary": true,
           "quote_count": 3,
           "mention_count": 2,
           "members": [
             {
-              "id": "crocs",
-              "name": "Crocs"
+              "id": "arman-financial-services",
+              "name": "Arman Financial Services"
             },
             {
-              "id": "crocs-inc",
-              "name": "Crocs, Inc."
+              "id": "arman-financial-services-ltd",
+              "name": "Arman Financial Services Ltd"
             }
           ]
         },
         {
-          "root": "metro-brands-ltd",
+          "root": "hdb-financial-services",
           "is_primary": false,
-          "quote_count": 0,
+          "quote_count": 2,
           "mention_count": 1,
           "members": [
             {
-              "id": "metro-brands-ltd",
-              "name": "Metro Brands Ltd."
+              "id": "hdb-financial-services",
+              "name": "HDB Financial Services"
             }
           ]
         }
@@ -2750,6 +3019,146 @@
       ]
     },
     {
+      "market_key": "NSE:IOC",
+      "components": [
+        {
+          "root": "indian-oil-corporation",
+          "is_primary": true,
+          "quote_count": 4,
+          "mention_count": 4,
+          "members": [
+            {
+              "id": "indian-oil-corp",
+              "name": "Indian Oil Corp."
+            },
+            {
+              "id": "indian-oil-corporation",
+              "name": "Indian Oil Corporation"
+            },
+            {
+              "id": "indian-oil-corporation-limited",
+              "name": "Indian Oil Corporation Limited"
+            }
+          ]
+        },
+        {
+          "root": "indian-hotels-company",
+          "is_primary": false,
+          "quote_count": 4,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "indian-hotels-company",
+              "name": "Indian Hotels Company"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:EXIDEIND",
+      "components": [
+        {
+          "root": "exide-industries",
+          "is_primary": true,
+          "quote_count": 13,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "exide-industries",
+              "name": "Exide Industries"
+            }
+          ]
+        },
+        {
+          "root": "exide",
+          "is_primary": false,
+          "quote_count": 4,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "exide",
+              "name": "Exide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:ZEEL",
+      "components": [
+        {
+          "root": "entertainment-network",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "entertainment-network",
+              "name": "Entertainment Network"
+            }
+          ]
+        },
+        {
+          "root": "zee-entertainment",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "zee-entertainment",
+              "name": "ZEE Entertainment"
+            }
+          ]
+        },
+        {
+          "root": "dave-buster-s-entertainment",
+          "is_primary": true,
+          "quote_count": 6,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "dave-buster-s-entertainment",
+              "name": "Dave & Buster’s Entertainment"
+            },
+            {
+              "id": "dave-buster-s-entertainment-inc",
+              "name": "Dave & Buster's Entertainment, Inc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:MINDACORP",
+      "components": [
+        {
+          "root": "uno-minda",
+          "is_primary": true,
+          "quote_count": 12,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "uno-minda",
+              "name": "UNO Minda"
+            }
+          ]
+        },
+        {
+          "root": "minda-corporation-limited",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "minda-corporation-limited",
+              "name": "Minda Corporation Limited"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "market_key": "NSE:AMBUJACEM",
       "components": [
         {
@@ -2779,6 +3188,35 @@
       ]
     },
     {
+      "market_key": "NSE:NESTLEIND",
+      "components": [
+        {
+          "root": "nestl-india-ltd",
+          "is_primary": true,
+          "quote_count": 5,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "nestl-india-ltd",
+              "name": "Nestlé India Ltd"
+            }
+          ]
+        },
+        {
+          "root": "nestle",
+          "is_primary": false,
+          "quote_count": 2,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "nestle",
+              "name": "Nestlé"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "market_key": "NSE:RELIANCE",
       "components": [
         {
@@ -2796,12 +3234,16 @@
         {
           "root": "reliance-industries-ltd",
           "is_primary": true,
-          "quote_count": 42,
-          "mention_count": 3,
+          "quote_count": 46,
+          "mention_count": 4,
           "members": [
             {
               "id": "reliance-industries",
               "name": "Reliance Industries"
+            },
+            {
+              "id": "reliance-industries-limited",
+              "name": "Reliance Industries Limited"
             },
             {
               "id": "reliance-industries-ltd",
@@ -2812,29 +3254,95 @@
       ]
     },
     {
-      "market_key": "NSE:PFIZER",
+      "market_key": "NSE:HAL",
       "components": [
         {
-          "root": "pfizer",
-          "is_primary": true,
-          "quote_count": 6,
+          "root": "hal",
+          "is_primary": false,
+          "quote_count": 1,
           "mention_count": 1,
           "members": [
             {
-              "id": "pfizer",
-              "name": "Pfizer"
+              "id": "hal",
+              "name": "HAL"
             }
           ]
         },
         {
-          "root": "l-or-al",
+          "root": "hindustan-aeronautics-ltd",
+          "is_primary": true,
+          "quote_count": 8,
+          "mention_count": 3,
+          "members": [
+            {
+              "id": "hindustan-aeronautics-limited",
+              "name": "Hindustan Aeronautics Limited"
+            },
+            {
+              "id": "hindustan-aeronautics-ltd",
+              "name": "Hindustan Aeronautics Ltd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:TATACHEM",
+      "components": [
+        {
+          "root": "tata-chemicals",
+          "is_primary": false,
+          "quote_count": 2,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "tata-chemicals",
+              "name": "Tata Chemicals"
+            }
+          ]
+        },
+        {
+          "root": "acutaas-chemicals",
+          "is_primary": true,
+          "quote_count": 13,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "acutaas-chemicals",
+              "name": "Acutaas Chemicals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:MEDPLUS",
+      "components": [
+        {
+          "root": "medplus-health-services-limited",
+          "is_primary": true,
+          "quote_count": 4,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "medplus-health-services",
+              "name": "MedPlus Health Services"
+            },
+            {
+              "id": "medplus-health-services-limited",
+              "name": "MedPlus Health Services Limited"
+            }
+          ]
+        },
+        {
+          "root": "medplus",
           "is_primary": false,
           "quote_count": 3,
           "mention_count": 1,
           "members": [
             {
-              "id": "l-or-al",
-              "name": "L’Oréal"
+              "id": "medplus",
+              "name": "MedPlus"
             }
           ]
         }
@@ -2903,6 +3411,35 @@
       ]
     },
     {
+      "market_key": "NSE:AUBANK",
+      "components": [
+        {
+          "root": "jana-small-finance-bank",
+          "is_primary": true,
+          "quote_count": 6,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "jana-small-finance-bank",
+              "name": "Jana Small Finance Bank"
+            }
+          ]
+        },
+        {
+          "root": "au-small-finance-bank",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "au-small-finance-bank",
+              "name": "Au Small Finance Bank"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "market_key": "NSE:GODREJPROP",
       "components": [
         {
@@ -2937,12 +3474,16 @@
         {
           "root": "dixon-technologies",
           "is_primary": true,
-          "quote_count": 30,
-          "mention_count": 3,
+          "quote_count": 35,
+          "mention_count": 4,
           "members": [
             {
               "id": "dixon-technologies",
               "name": "Dixon Technologies"
+            },
+            {
+              "id": "dixon-technologies-india-limited",
+              "name": "Dixon Technologies (India) Limited"
             }
           ]
         },
@@ -2955,6 +3496,35 @@
             {
               "id": "dixon",
               "name": "Dixon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:EMBASSY",
+      "components": [
+        {
+          "root": "embassy-office-parks",
+          "is_primary": true,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "embassy-office-parks",
+              "name": "Embassy Office Parks"
+            }
+          ]
+        },
+        {
+          "root": "embassy-reit",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "embassy-reit",
+              "name": "Embassy REIT"
             }
           ]
         }
@@ -3023,33 +3593,120 @@
       ]
     },
     {
-      "market_key": "NSE:KEC",
+      "market_key": "NSE:GICRE",
       "components": [
         {
-          "root": "herme-s-international",
+          "root": "general-motors",
           "is_primary": false,
           "quote_count": 2,
           "mention_count": 1,
           "members": [
             {
-              "id": "herme-s-international",
-              "name": "Hermès International"
+              "id": "general-motors",
+              "name": "General Motors"
+            }
+          ]
+        },
+        {
+          "root": "general-insurance-corporation-of-india",
+          "is_primary": true,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "general-insurance-corporation-of-india",
+              "name": "General Insurance Corporation of India"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:KRITI",
+      "components": [
+        {
+          "root": "flair-writing-industries",
+          "is_primary": false,
+          "quote_count": 0,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "flair-writing-industries",
+              "name": "Flair Writing Industries"
+            }
+          ]
+        },
+        {
+          "root": "flair",
+          "is_primary": true,
+          "quote_count": 4,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "flair",
+              "name": "Flair"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:HYUNDAI",
+      "components": [
+        {
+          "root": "hyundai-motor-india",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "hyundai-motor-india",
+              "name": "Hyundai Motor India"
+            }
+          ]
+        },
+        {
+          "root": "honda-motor",
+          "is_primary": true,
+          "quote_count": 3,
+          "mention_count": 2,
+          "members": [
+            {
+              "id": "honda-motor",
+              "name": "Honda Motor"
+            },
+            {
+              "id": "honda-motor-co-ltd",
+              "name": "Honda Motor Co., Ltd."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "market_key": "NSE:KSHINTL",
+      "components": [
+        {
+          "root": "ksh-international",
+          "is_primary": true,
+          "quote_count": 9,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "ksh-international",
+              "name": "KSH International"
             }
           ]
         },
         {
           "root": "kec-international",
-          "is_primary": true,
-          "quote_count": 5,
-          "mention_count": 2,
+          "is_primary": false,
+          "quote_count": 0,
+          "mention_count": 1,
           "members": [
             {
               "id": "kec-international",
               "name": "KEC International"
-            },
-            {
-              "id": "kec-international-limited",
-              "name": "KEC International Limited"
             }
           ]
         }
@@ -3057,86 +3714,6 @@
     }
   ],
   "cross_bucket_merges": [
-    {
-      "left_root": "manappuram-finance",
-      "right_root": "manapurram-finance",
-      "left_anchor": {
-        "id": "manappuram-finance",
-        "name": "Manappuram Finance"
-      },
-      "right_anchor": {
-        "id": "manapurram-finance",
-        "name": "Manapurram Finance"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:MANAPPURAM"
-      ]
-    },
-    {
-      "left_root": "multi-commodity-exchange-of-india",
-      "right_root": "multi-commodity-exchange",
-      "left_anchor": {
-        "id": "multi-commodity-exchange-of-india",
-        "name": "Multi Commodity Exchange of India"
-      },
-      "right_anchor": {
-        "id": "multi-commodity-exchange",
-        "name": "Multi Commodity Exchange"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "BSE:MCX"
-      ]
-    },
-    {
-      "left_root": "central-depository-services",
-      "right_root": "central-depository-services-india-limited",
-      "left_anchor": {
-        "id": "central-depository-services",
-        "name": "Central Depository Services"
-      },
-      "right_anchor": {
-        "id": "central-depository-services-india-limited",
-        "name": "Central Depository Services (India) Limited"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:CDSL"
-      ]
-    },
-    {
-      "left_root": "cholamandalam-finance",
-      "right_root": "cholamandalam-investment-and-finance",
-      "left_anchor": {
-        "id": "cholamandalam-finance",
-        "name": "Cholamandalam Finance"
-      },
-      "right_anchor": {
-        "id": "cholamandalam-investment-and-finance",
-        "name": "Cholamandalam Investment and Finance"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:CHOLAFIN"
-      ]
-    },
-    {
-      "left_root": "dabur",
-      "right_root": "dabur-india",
-      "left_anchor": {
-        "id": "dabur",
-        "name": "Dabur"
-      },
-      "right_anchor": {
-        "id": "dabur-india-ltd",
-        "name": "Dabur India Ltd"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:DABUR"
-      ]
-    },
     {
       "left_root": "virgin-galactic-holdings-inc",
       "right_root": "virgin-galactic",
@@ -3149,54 +3726,6 @@
         "name": "Virgin Galactic"
       },
       "left_market_keys": [],
-      "right_market_keys": []
-    },
-    {
-      "left_root": "power-grid-corporation",
-      "right_root": "power-grid-corporation-of-india-limited",
-      "left_anchor": {
-        "id": "power-grid-corporation",
-        "name": "Power Grid Corporation"
-      },
-      "right_anchor": {
-        "id": "power-grid-corporation-of-india",
-        "name": "Power Grid Corporation of India"
-      },
-      "left_market_keys": [
-        "NSE:POWERGRID"
-      ],
-      "right_market_keys": []
-    },
-    {
-      "left_root": "maruti-suzuki-india-limited",
-      "right_root": "maruti-suzuki",
-      "left_anchor": {
-        "id": "maruti-suzuki-india-limited",
-        "name": "Maruti Suzuki India Limited"
-      },
-      "right_anchor": {
-        "id": "maruti-suzuki",
-        "name": "Maruti Suzuki"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:MARUTI"
-      ]
-    },
-    {
-      "left_root": "saregama-india",
-      "right_root": "saregama",
-      "left_anchor": {
-        "id": "saregama-india",
-        "name": "Saregama India"
-      },
-      "right_anchor": {
-        "id": "saregama",
-        "name": "Saregama"
-      },
-      "left_market_keys": [
-        "BSE:SAREGAMA"
-      ],
       "right_market_keys": []
     },
     {
@@ -3214,22 +3743,6 @@
       "right_market_keys": []
     },
     {
-      "left_root": "thomas-cook-india-ltd",
-      "right_root": "thomas-cook",
-      "left_anchor": {
-        "id": "thomas-cook-india-ltd",
-        "name": "Thomas Cook (India) Ltd."
-      },
-      "right_anchor": {
-        "id": "thomas-cook",
-        "name": "Thomas Cook"
-      },
-      "left_market_keys": [
-        "NSE:THOMASCOOK"
-      ],
-      "right_market_keys": []
-    },
-    {
       "left_root": "sony",
       "right_root": "sony-group",
       "left_anchor": {
@@ -3244,166 +3757,6 @@
       "right_market_keys": []
     },
     {
-      "left_root": "mold-tek-packaging",
-      "right_root": "mod-tek-packaging",
-      "left_anchor": {
-        "id": "mold-tek-packaging",
-        "name": "Mold-Tek Packaging"
-      },
-      "right_anchor": {
-        "id": "mod-tek-packaging",
-        "name": "Mod-Tek Packaging"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "BSE:MOLDTKPAC"
-      ]
-    },
-    {
-      "left_root": "allied-blenders-and-distillers",
-      "right_root": "allied-blenders",
-      "left_anchor": {
-        "id": "allied-blenders-and-distillers",
-        "name": "Allied Blenders and Distillers"
-      },
-      "right_anchor": {
-        "id": "allied-blenders",
-        "name": "Allied Blenders"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "BSE:ABDL"
-      ]
-    },
-    {
-      "left_root": "allied-blenders-and-distillers",
-      "right_root": "allied-blenders-distillers",
-      "left_anchor": {
-        "id": "allied-blenders-and-distillers",
-        "name": "Allied Blenders and Distillers"
-      },
-      "right_anchor": {
-        "id": "allied-blenders-distillers",
-        "name": "Allied Blenders & Distillers"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:ABDL"
-      ]
-    },
-    {
-      "left_root": "polycab",
-      "right_root": "polycab-india",
-      "left_anchor": {
-        "id": "polycab",
-        "name": "Polycab"
-      },
-      "right_anchor": {
-        "id": "polycab-india",
-        "name": "Polycab India"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:POLYCAB"
-      ]
-    },
-    {
-      "left_root": "cg-power",
-      "right_root": "cg-power-industrial-solutions-ltd",
-      "left_anchor": {
-        "id": "cg-power",
-        "name": "CG Power"
-      },
-      "right_anchor": {
-        "id": "cg-power-industrial-solutions-ltd",
-        "name": "CG Power & Industrial Solutions Ltd"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:CGPOWER"
-      ]
-    },
-    {
-      "left_root": "dilip-buildcon",
-      "right_root": "db-corp-ltd",
-      "left_anchor": {
-        "id": "dilip-buildcon",
-        "name": "Dilip Buildcon"
-      },
-      "right_anchor": {
-        "id": "db-corp-ltd",
-        "name": "DB Corp Ltd"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:DBCORP"
-      ]
-    },
-    {
-      "left_root": "kalyan-jewellers",
-      "right_root": "kalyan-jewellers-india",
-      "left_anchor": {
-        "id": "kalyan-jewellers",
-        "name": "Kalyan Jewellers"
-      },
-      "right_anchor": {
-        "id": "kalyan-jewellers-india",
-        "name": "Kalyan Jewellers India"
-      },
-      "left_market_keys": [
-        "NSE:KALYANKJIL"
-      ],
-      "right_market_keys": []
-    },
-    {
-      "left_root": "union-bank-of-india",
-      "right_root": "union-bank",
-      "left_anchor": {
-        "id": "union-bank-of-india",
-        "name": "Union Bank Of India"
-      },
-      "right_anchor": {
-        "id": "union-bank",
-        "name": "Union Bank"
-      },
-      "left_market_keys": [],
-      "right_market_keys": [
-        "NSE:UNIONBANK"
-      ]
-    },
-    {
-      "left_root": "rr-kabel-ltd",
-      "right_root": "r-r-kabel",
-      "left_anchor": {
-        "id": "rr-kabel-ltd",
-        "name": "RR Kabel Ltd"
-      },
-      "right_anchor": {
-        "id": "r-r-kabel",
-        "name": "R R Kabel"
-      },
-      "left_market_keys": [
-        "NSE:RRKABEL"
-      ],
-      "right_market_keys": []
-    },
-    {
-      "left_root": "adani-ports-and-sez",
-      "right_root": "adani-ports-and-special-economic-zone-limited",
-      "left_anchor": {
-        "id": "adani-ports-and-sez",
-        "name": "Adani Ports and SEZ"
-      },
-      "right_anchor": {
-        "id": "adani-ports-and-special-economic-zone-limited",
-        "name": "Adani Ports and Special Economic Zone Limited"
-      },
-      "left_market_keys": [
-        "NSE:ADANIPORTS"
-      ],
-      "right_market_keys": []
-    },
-    {
       "left_root": "coca-cola",
       "right_root": "the-coca-cola-company",
       "left_anchor": {
@@ -3415,22 +3768,6 @@
         "name": "The Coca-Cola Co"
       },
       "left_market_keys": [],
-      "right_market_keys": []
-    },
-    {
-      "left_root": "eid-parry",
-      "right_root": "eid-parry-india-ltd",
-      "left_anchor": {
-        "id": "eid-parry",
-        "name": "EID Parry"
-      },
-      "right_anchor": {
-        "id": "eid-parry-india-ltd",
-        "name": "EID Parry (India) Ltd"
-      },
-      "left_market_keys": [
-        "NSE:EIDPARRY"
-      ],
       "right_market_keys": []
     },
     {

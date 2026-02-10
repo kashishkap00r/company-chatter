@@ -425,7 +425,7 @@ def _select_canonical_url(variants: list[dict]) -> str | None:
     for url in urls:
         if _market_key_from_url(url):
             return url
-    return urls[0]
+    return None
 
 
 def _select_display_name(variants: list[dict]) -> str:
@@ -902,7 +902,7 @@ def format_date(date_str: str) -> str:
     if not date_str:
         return "Unknown"
     try:
-        return datetime.fromisoformat(date_str).strftime("%b %d, %Y")
+        return datetime.fromisoformat(date_str).strftime("%b'%y")
     except ValueError:
         return date_str
 
@@ -981,11 +981,13 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
                     if quote_context:
                         story_parts.append(f'<p class="story-context">{html_escape(quote_context)}</p>')
                     story_parts.append(f'<blockquote class="story-quote">“{html_escape(q["text"])}”</blockquote>')
+                    footer_parts = []
                     if quote_speaker:
-                        story_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
-                    story_parts.append(
-                        f'<a class="small-link" href="{html_escape(q["source_url"])}">Source</a>'
+                        footer_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
+                    footer_parts.append(
+                        f'<a class="small-link quote-source" href="{html_escape(q["source_url"])}">Source</a>'
                     )
+                    story_parts.append(f'<div class="story-footer">{"".join(footer_parts)}</div>')
 
                     quote_cards.append(
                         "\n".join(
@@ -1039,17 +1041,23 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
                 f"{html_escape(company['name'])}</a>"
             )
 
+        valid_dates = sorted([date_value for date_value in dates if date_value])
+        timeline_parts = []
+        if valid_dates:
+            first_label = format_date(valid_dates[0])
+            last_label = format_date(valid_dates[-1])
+            timeline_parts.append(first_label if first_label == last_label else f"{first_label} - {last_label}")
+        timeline_parts.append(f"{len(covered_edition_ids)} editions")
+        timeline_parts.append(f"{company_quote_count} quotes")
+
         meta = "Edition-by-edition storyline from The Chatter archive."
         content = render_template(
             "company.html",
             {
                 "company_name_link": company_name_link,
                 "company_meta": meta,
+                "company_timeline_meta": " · ".join(timeline_parts),
                 "edition_sections": "\n".join(edition_sections) if edition_sections else "<p>No quotes yet.</p>",
-                "quote_count": str(company_quote_count),
-                "first_date": format_date(min([d for d in dates if d] or [""])),
-                "last_date": format_date(max([d for d in dates if d] or [""])),
-                "editions_count": str(len(covered_edition_ids)),
             },
         )
         html = wrap_base(f"{company['name']} | Company Chatter", content)

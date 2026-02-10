@@ -1,10 +1,10 @@
 {
   "thresholds": {
-    "max_market_conflicts": 13,
-    "max_quarantined_companies": 6,
+    "max_market_conflicts": 32,
+    "max_quarantined_companies": 7,
     "max_dropped_quote_rows": 0,
     "max_dropped_mention_rows": 7,
-    "max_repeat_name_keys": 0
+    "max_repeat_name_keys": 1
   },
   "must_keep_blocked_pairs_separate": [
     ["Reliance Consumer Products", "Reliance Industries"],

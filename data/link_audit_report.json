@@ -1,26 +1,114 @@
 {
-  "generated_at": "2026-02-10T10:38:12+00:00",
+  "generated_at": "2026-02-10T16:58:27+00:00",
   "counts": {
     "total_companies": 780,
-    "linked_companies": 676,
-    "unlinked_companies": 104,
-    "mandatory_total": 16,
+    "linked_companies": 675,
+    "unlinked_companies": 105,
+    "mandatory_total": 15,
     "mandatory_missing": 0,
     "mandatory_mismatched": 0,
-    "existing_links_kept": 566,
-    "manual_overrides_applied": 12,
-    "auto_resolved": 98,
-    "unresolved_after_resolution": 104
+    "existing_nse_links_kept": 335,
+    "existing_bse_links_converted_to_nse": 2,
+    "existing_bse_links_removed": 44,
+    "existing_slug_links_removed": 185,
+    "manual_overrides_applied": 74,
+    "auto_resolved": 264,
+    "unresolved_after_resolution": 105,
+    "nse_sitemap_symbols": 2371
   },
   "mandatory_missing": [],
   "mandatory_mismatched": [],
   "manual_overrides_applied": [
+    {
+      "company_key": "acrysil-limited",
+      "display_name": "Acrysil Limited",
+      "url": "https://zerodha.com/markets/stocks/NSE/CARYSIL/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "aelea-commodities",
+      "display_name": "Aelea Commodities",
+      "url": "https://zerodha.com/markets/stocks/BSE/ACLD/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "allied-blenders",
+      "display_name": "Allied Blenders",
+      "url": "https://zerodha.com/markets/stocks/NSE/ABDL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "allied-blenders-and-distillers",
+      "display_name": "Allied Blenders and Distillers",
+      "url": "https://zerodha.com/markets/stocks/NSE/ABDL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "barbeque-nation-hospitality-ltd",
+      "display_name": "Barbeque-Nation Hospitality Ltd.",
+      "url": "https://zerodha.com/markets/stocks/NSE/UFBL/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
     {
       "company_key": "bharat-petroleum-corporation",
       "display_name": "Bharat Petroleum Corporation",
       "url": "https://zerodha.com/markets/stocks/NSE/BPCL/",
       "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
       "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "bharati-airtel",
+      "display_name": "Bharati Airtel",
+      "url": "https://zerodha.com/markets/stocks/NSE/BHARTIARTL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "bharatrohan-airborne-innovations",
+      "display_name": "BharatRohan Airborne Innovations",
+      "url": "https://zerodha.com/markets/stocks/BSE/BHARATROHN/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "bharti-airtel",
+      "display_name": "Bharti Airtel",
+      "url": "https://zerodha.com/markets/stocks/NSE/BHARTIARTL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "bharti-airtel-limited",
+      "display_name": "Bharti Airtel Limited",
+      "url": "https://zerodha.com/markets/stocks/NSE/BHARTIARTL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "borosil-renewables",
+      "display_name": "Borosil Renewables",
+      "url": "https://zerodha.com/markets/stocks/NSE/BORORENEW/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "brookfield-india-reit",
+      "display_name": "Brookfield India REIT",
+      "url": "https://zerodha.com/markets/stocks/NSE/BIRET/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "cams",
+      "display_name": "CAMS",
+      "url": "https://zerodha.com/markets/stocks/NSE/CAMS/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
     },
     {
       "company_key": "canara-bank",
@@ -37,6 +125,20 @@
       "verified_on": "2026-02-09"
     },
     {
+      "company_key": "deepak-nitrite",
+      "display_name": "Deepak Nitrite",
+      "url": "https://zerodha.com/markets/stocks/NSE/DEEPAKNTR/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "dhanuka-agritech",
+      "display_name": "Dhanuka Agritech",
+      "url": "https://zerodha.com/markets/stocks/NSE/DHANUKA/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
       "company_key": "digitide-solutions",
       "display_name": "Digitide Solutions",
       "url": "https://zerodha.com/markets/stocks/NSE/DIGITIDE/",
@@ -44,11 +146,74 @@
       "verified_on": "2026-02-09"
     },
     {
+      "company_key": "dixon",
+      "display_name": "Dixon",
+      "url": "https://zerodha.com/markets/stocks/NSE/DIXON/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "earkart-limited",
+      "display_name": "Earkart Limited",
+      "url": "https://zerodha.com/markets/stocks/BSE/EARKART/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "embassy-office-parks",
+      "display_name": "Embassy Office Parks",
+      "url": "https://zerodha.com/markets/stocks/NSE/EMBASSY/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
       "company_key": "ethos-ltd",
       "display_name": "Ethos Ltd.",
       "url": "https://zerodha.com/markets/stocks/NSE/ETHOSLTD/",
       "reason": "Source heading links to a broken external URL; enforce official Zerodha listing.",
       "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "eureka-forbes",
+      "display_name": "Eureka Forbes",
+      "url": "https://zerodha.com/markets/stocks/NSE/EUREKAFORB/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "eureka-forbes-ltd",
+      "display_name": "Eureka Forbes Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/EUREKAFORB/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "fabtech-technologies",
+      "display_name": "Fabtech Technologies",
+      "url": "https://zerodha.com/markets/stocks/NSE/FABTECH/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "ganesha-ecosphere",
+      "display_name": "Ganesha Ecosphere",
+      "url": "https://zerodha.com/markets/stocks/NSE/GANECOS/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "graviss-foods",
+      "display_name": "Graviss Foods",
+      "url": "https://zerodha.com/markets/stocks/BSE/GRAVISSHO/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "groww",
+      "display_name": "Groww",
+      "url": "https://zerodha.com/markets/stocks/NSE/GROWW/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
     },
     {
       "company_key": "housing-and-urban-development-corporation",
@@ -65,11 +230,74 @@
       "verified_on": "2026-02-09"
     },
     {
+      "company_key": "indian-railway-catering-and-tourism-corporation",
+      "display_name": "Indian Railway Catering and Tourism Corporation",
+      "url": "https://zerodha.com/markets/stocks/NSE/IRCTC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "ion-exchange",
+      "display_name": "Ion Exchange",
+      "url": "https://zerodha.com/markets/stocks/NSE/IONEXCHANG/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "jain-resource-recycling",
+      "display_name": "Jain Resource Recycling",
+      "url": "https://zerodha.com/markets/stocks/NSE/JAINREC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "jbm-auto",
+      "display_name": "JBM Auto",
+      "url": "https://zerodha.com/markets/stocks/NSE/JBMA/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "jd-cables",
+      "display_name": "JD Cables",
+      "url": "https://zerodha.com/markets/stocks/BSE/JDL/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "kanpur-plastipack",
+      "display_name": "Kanpur Plastipack",
+      "url": "https://zerodha.com/markets/stocks/NSE/KANPRPLA/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "kddl-limited",
+      "display_name": "KDDL Limited",
+      "url": "https://zerodha.com/markets/stocks/NSE/KDDL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
       "company_key": "l-t-mindtree",
       "display_name": "L&T Mindtree",
       "url": "https://zerodha.com/markets/stocks/NSE/LTIM/",
       "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
       "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "linc-pen-plastics",
+      "display_name": "Linc Pen & Plastics",
+      "url": "https://zerodha.com/markets/stocks/NSE/LINC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "linc-pen-plastics-ltd",
+      "display_name": "Linc Pen & Plastics Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/LINC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
     },
     {
       "company_key": "mahanagar-gas",
@@ -79,11 +307,158 @@
       "verified_on": "2026-02-09"
     },
     {
+      "company_key": "mod-tek-packaging",
+      "display_name": "Mod-Tek Packaging",
+      "url": "https://zerodha.com/markets/stocks/NSE/MOLDTKPAC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "mold-tek-packaging",
+      "display_name": "Mold-Tek Packaging",
+      "url": "https://zerodha.com/markets/stocks/NSE/MOLDTKPAC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "national-securities-depository",
+      "display_name": "National Securities Depository",
+      "url": "https://zerodha.com/markets/stocks/NSE/NSDL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "national-securities-depository-limited",
+      "display_name": "National Securities Depository Limited",
+      "url": "https://zerodha.com/markets/stocks/NSE/NSDL/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "nestl-india-ltd",
+      "display_name": "Nestlé India Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/NESTLEIND/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "nestle",
+      "display_name": "Nestlé",
+      "url": "https://zerodha.com/markets/stocks/NSE/NESTLEIND/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "organic-recycling",
+      "display_name": "Organic Recycling",
+      "url": "https://zerodha.com/markets/stocks/BSE/ORGANICREC/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "organic-recycling-systems",
+      "display_name": "Organic Recycling Systems",
+      "url": "https://zerodha.com/markets/stocks/BSE/ORGANICREC/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "pace-digitek",
+      "display_name": "Pace Digitek",
+      "url": "https://zerodha.com/markets/stocks/NSE/PACEDIGITK/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "paradeep-parivahan",
+      "display_name": "Paradeep Parivahan",
+      "url": "https://zerodha.com/markets/stocks/BSE/PPARIVAH/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
       "company_key": "pfizer",
       "display_name": "Pfizer",
       "url": "https://zerodha.com/markets/stocks/NSE/PFIZER/",
       "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
       "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "protean-e-gov-technologies",
+      "display_name": "Protean e-Gov Technologies",
+      "url": "https://zerodha.com/markets/stocks/NSE/PROTEAN/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "quality-power-electrical-equipments",
+      "display_name": "Quality Power Electrical Equipments",
+      "url": "https://zerodha.com/markets/stocks/BSE/QPOWER/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "racl-geartech",
+      "display_name": "RACL Geartech",
+      "url": "https://zerodha.com/markets/stocks/NSE/RACLGEAR/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "racl-geartech-ltd",
+      "display_name": "RACL Geartech Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/RACLGEAR/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "relaxo-footwears",
+      "display_name": "Relaxo Footwears",
+      "url": "https://zerodha.com/markets/stocks/BSE/RELAXO/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "rupa-company-ltd",
+      "display_name": "Rupa & Company Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/RUPA/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "saregama",
+      "display_name": "Saregama",
+      "url": "https://zerodha.com/markets/stocks/NSE/SAREGAMA/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "saregama-india",
+      "display_name": "Saregama India",
+      "url": "https://zerodha.com/markets/stocks/NSE/SAREGAMA/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "schaeffler-india-ltd",
+      "display_name": "Schaeffler India Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/SCHAEFFLER/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "senco-gold",
+      "display_name": "Senco Gold",
+      "url": "https://zerodha.com/markets/stocks/NSE/SENCO/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "shilchar-technologies",
+      "display_name": "Shilchar Technologies",
+      "url": "https://zerodha.com/markets/stocks/NSE/SHILCTECH/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
     },
     {
       "company_key": "shoppers-stop",
@@ -93,16 +468,344 @@
       "verified_on": "2026-02-09"
     },
     {
+      "company_key": "sportking-india",
+      "display_name": "Sportking India",
+      "url": "https://zerodha.com/markets/stocks/NSE/SPORTKING/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
       "company_key": "star-health",
       "display_name": "Star Health",
       "url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/",
       "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
       "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "symphony",
+      "display_name": "Symphony",
+      "url": "https://zerodha.com/markets/stocks/NSE/SYMPHONY/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "tbo-tek",
+      "display_name": "TBO Tek",
+      "url": "https://zerodha.com/markets/stocks/NSE/TBOTEK/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "tbo-tek-ltd",
+      "display_name": "TBO Tek Ltd",
+      "url": "https://zerodha.com/markets/stocks/NSE/TBOTEK/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "urban-company",
+      "display_name": "Urban Company",
+      "url": "https://zerodha.com/markets/stocks/BSE/URBANCO/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "wework-india",
+      "display_name": "WeWork India",
+      "url": "https://zerodha.com/markets/stocks/NSE/WEWORK/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "wework-india-management",
+      "display_name": "WeWork India Management",
+      "url": "https://zerodha.com/markets/stocks/NSE/WEWORK/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "yash-highvoltage",
+      "display_name": "Yash Highvoltage",
+      "url": "https://zerodha.com/markets/stocks/BSE/YASHHV/",
+      "reason": "User-confirmed mapping supplied in chat; enforce explicit market URL.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "zen-technologies",
+      "display_name": "Zen Technologies",
+      "url": "https://zerodha.com/markets/stocks/NSE/ZENTEC/",
+      "reason": "User-confirmed NSE mapping supplied in chat; enforce explicit URL.",
+      "verified_on": "2026-02-10"
     }
   ],
   "manual_overrides_missing_company": [],
   "manual_overrides_invalid_target": [],
-  "rejected_existing_urls": [],
+  "rejected_existing_urls": [
+    {
+      "company_key": "acutaas-chemicals",
+      "display_name": "Acutaas Chemicals",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/ACUTAAS/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "aelea-commodities",
+      "display_name": "Aelea Commodities",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/ACLD/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "arman-financial-services-ltd",
+      "display_name": "Arman Financial Services Ltd",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/ARMANFIN/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "bajaj-housing-finance",
+      "display_name": "Bajaj Housing Finance",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/BAJAJHFL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "bharati-airtel",
+      "display_name": "Bharati Airtel",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/BHARTIARTL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "bharatrohan-airborne-innovations",
+      "display_name": "BharatRohan Airborne Innovations",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/BHARATROHN/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "deepak-nitrite",
+      "display_name": "Deepak Nitrite",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/DEEPAKNTR/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "dhanuka-agritech",
+      "display_name": "Dhanuka Agritech",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/DHANUKA/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "earkart-limited",
+      "display_name": "Earkart Limited",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/EARKART/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "embassy-office-parks",
+      "display_name": "Embassy Office Parks",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/EMBASSY/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "eureka-forbes",
+      "display_name": "Eureka Forbes",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/EUREKAFORB/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "fabtech-technologies",
+      "display_name": "Fabtech Technologies",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/FABCLEAN/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "finolex-industries-limited",
+      "display_name": "Finolex Industries Limited",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/FINPIPE/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "ganesha-ecosphere",
+      "display_name": "Ganesha Ecosphere",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/GANECOS/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "hatsun-agro-products",
+      "display_name": "Hatsun Agro Products",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/HATSUN/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "jain-resource-recycling",
+      "display_name": "Jain Resource Recycling",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/JAINREC/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "jana-small-finance-bank",
+      "display_name": "Jana Small Finance Bank",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/JSFB/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "jbm-auto",
+      "display_name": "JBM Auto",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/JBMA/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "jd-cables",
+      "display_name": "JD Cables",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/JDL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "kanpur-plastipack",
+      "display_name": "Kanpur Plastipack",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/KANPRPLA/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "kellton-tech-solutions",
+      "display_name": "Kellton Tech Solutions",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/KELLTONTEC/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "kilburn-engineering-ltd",
+      "display_name": "Kilburn Engineering Ltd",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/KILBUNENGG/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "manorama-industries",
+      "display_name": "Manorama Industries",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/MANORAMA/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "national-securities-depository",
+      "display_name": "National Securities Depository",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/NSDL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "organic-recycling",
+      "display_name": "Organic Recycling",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/ORGANICREC/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "paradeep-parivahan",
+      "display_name": "Paradeep Parivahan",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/PPARIVAH/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "pi-industries",
+      "display_name": "PI Industries",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/PIIND/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "premier-energies",
+      "display_name": "Premier Energies",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/PREMIERENE/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "quality-power-electrical-equipments",
+      "display_name": "Quality Power Electrical Equipments",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/QPOWER/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "racl-geartech",
+      "display_name": "RACL Geartech",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/RACLGEAR/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "racl-geartech-ltd",
+      "display_name": "RACL Geartech Ltd",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/RACLGEAR/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "rir-power-electronics-ltd",
+      "display_name": "RIR Power Electronics Ltd",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/RIR/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "samvardhana-motherson-international-ltd",
+      "display_name": "Samvardhana Motherson International Ltd",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/MOTHERSON/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "saregama-india",
+      "display_name": "Saregama India",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/SAREGAMA/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "schaeffler-india-ltd",
+      "display_name": "Schaeffler India Ltd",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/SCHAEFFLER/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "senco-gold",
+      "display_name": "Senco Gold",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/SENCO/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "shilchar-technologies",
+      "display_name": "Shilchar Technologies",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/SHILCTECH/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "tata-steel",
+      "display_name": "Tata Steel",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/TATASTEEL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "uno-minda",
+      "display_name": "UNO Minda",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/UNOMINDA/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "urban-company",
+      "display_name": "Urban Company",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/URBANCO/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "vardhman-textiles",
+      "display_name": "Vardhman Textiles",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/VTL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "waaree-renewable-technologies",
+      "display_name": "Waaree Renewable Technologies",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/WAAREERTL/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "wework-india-management",
+      "display_name": "WeWork India Management",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/WEWORK/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    },
+    {
+      "company_key": "yash-highvoltage",
+      "display_name": "Yash Highvoltage",
+      "existing_url": "https://zerodha.com/markets/stocks/BSE/YASHHV/",
+      "reason": "bse_symbol_missing_in_nse_sitemap"
+    }
+  ],
   "non_mandatory_unlinked": [
     {
       "company_key": "accenture-plc",
@@ -141,10 +844,6 @@
       "display_name": "Apple"
     },
     {
-      "company_key": "bain-capital-specialty-finance-inc",
-      "display_name": "Bain Capital Specialty Finance, Inc."
-    },
-    {
       "company_key": "bayer-ag",
       "display_name": "Bayer AG"
     },
@@ -177,6 +876,14 @@
       "display_name": "Coinbase"
     },
     {
+      "company_key": "crocs",
+      "display_name": "Crocs"
+    },
+    {
+      "company_key": "crocs-inc",
+      "display_name": "Crocs, Inc."
+    },
+    {
       "company_key": "daimler",
       "display_name": "Daimler"
     },
@@ -185,20 +892,16 @@
       "display_name": "Dassault Systèmes"
     },
     {
-      "company_key": "dave-buster-s-entertainment-inc",
-      "display_name": "Dave & Buster's Entertainment, Inc."
-    },
-    {
-      "company_key": "dave-buster-s-entertainment",
-      "display_name": "Dave & Buster’s Entertainment"
-    },
-    {
       "company_key": "dbs-group-holding",
       "display_name": "DBS Group Holding"
     },
     {
       "company_key": "dbs-group-holdings-ltd",
       "display_name": "DBS Group Holdings Ltd"
+    },
+    {
+      "company_key": "delta-air-lines",
+      "display_name": "Delta Air Lines"
     },
     {
       "company_key": "ferrari",
@@ -225,10 +928,6 @@
       "display_name": "Freightos"
     },
     {
-      "company_key": "general-motors",
-      "display_name": "General Motors"
-    },
-    {
       "company_key": "genpact-limited",
       "display_name": "Genpact Limited"
     },
@@ -247,10 +946,6 @@
     {
       "company_key": "gopro",
       "display_name": "GoPro"
-    },
-    {
-      "company_key": "graviss-foods",
-      "display_name": "Graviss Foods"
     },
     {
       "company_key": "hanesbrands",
@@ -319,6 +1014,10 @@
     {
       "company_key": "krispy-kreme-inc",
       "display_name": "Krispy Kreme, Inc."
+    },
+    {
+      "company_key": "l-or-al",
+      "display_name": "L’Oréal"
     },
     {
       "company_key": "maersk",
@@ -443,6 +1142,14 @@
     {
       "company_key": "spotify",
       "display_name": "Spotify"
+    },
+    {
+      "company_key": "starbucks",
+      "display_name": "Starbucks"
+    },
+    {
+      "company_key": "starbucks-corporation",
+      "display_name": "Starbucks Corporation"
     },
     {
       "company_key": "synaptics-incorporated",

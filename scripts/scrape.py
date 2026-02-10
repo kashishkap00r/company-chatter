@@ -13,27 +13,33 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
+import sys
 import time
+import csv
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Optional
-from urllib.parse import quote, urljoin, urlparse, urlunparse
+from urllib.parse import urljoin, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 BASE_URL = "https://thechatter.zerodha.com/"
 SITEMAP_URL = urljoin(BASE_URL, "sitemap")
 OUTPUT_DIR = "data"
 ZERODHA_STOCKS_BASE = "https://zerodha.com/markets/stocks"
-ZERODHA_STOCKS_SEARCH_URL = ZERODHA_STOCKS_BASE + "/search/?q={query}"
+KITE_INSTRUMENTS_URL = "https://api.kite.trade/instruments"
 MANUAL_MARKET_URLS_FILE = "manual_market_urls.json"
 INDIAN_LISTED_MANDATORY_FILE = "indian_listed_mandatory.json"
 LINK_AUDIT_REPORT_FILE = "link_audit_report.json"
 COMPANY_MENTIONS_FILE = "company_mentions.json"
 NON_COMPANY_RULES_FILE = "non_company_rules.json"
+ZERODHA_NSE_INDEX_FILE = "zerodha_nse_stock_index.json"
+ZERODHA_NSE_INSTRUMENTS_FILE = "zerodha_nse_instruments_index.json"
 ALLOWED_EXCHANGES = {"NSE", "BSE"}
+FINAL_MARKET_EXCHANGE = "NSE"
 
 TITLE_INCLUDE = "the chatter"
 TITLE_EXCLUDE = ["points and figures", "plotlines"]
@@ -313,6 +319,88 @@ def canonicalize_zerodha_stock_url(url: Optional[str]) -> Optional[str]:
     return urlunparse(("https", "zerodha.com", normalized_path, "", "", ""))
 
 
+def parse_zerodha_stock_url_parts(url: Optional[str]) -> Optional[dict[str, str]]:
+    canonical = canonicalize_zerodha_stock_url(url)
+    if not canonical:
+        return None
+
+    parts = [part for part in urlparse(canonical).path.split("/") if part]
+    if len(parts) not in {3, 4}:
+        return None
+    if parts[0].lower() != "markets" or parts[1].lower() != "stocks":
+        return None
+
+    if len(parts) == 3:
+        return {
+            "kind": "slug",
+            "canonical_url": canonical,
+            "slug": parts[2],
+        }
+
+    exchange = parts[2].upper()
+    symbol = parts[3].upper()
+    if exchange not in ALLOWED_EXCHANGES:
+        return None
+    if not re.fullmatch(r"[A-Z0-9._&-]+", symbol):
+        return None
+    return {
+        "kind": "market",
+        "canonical_url": canonical,
+        "exchange": exchange,
+        "symbol": symbol,
+        "market_key": f"{exchange}:{symbol}",
+    }
+
+
+def market_key_from_zerodha_stock_url(url: Optional[str]) -> Optional[str]:
+    parts = parse_zerodha_stock_url_parts(url)
+    if not parts or parts["kind"] != "market":
+        return None
+    return parts["market_key"]
+
+
+def stock_symbol_from_zerodha_stock_url(url: Optional[str]) -> Optional[str]:
+    parts = parse_zerodha_stock_url_parts(url)
+    if not parts or parts["kind"] != "market":
+        return None
+    return parts["symbol"]
+
+
+def slug_query_from_zerodha_stock_url(url: Optional[str]) -> Optional[str]:
+    parts = parse_zerodha_stock_url_parts(url)
+    if not parts or parts["kind"] != "slug":
+        return None
+    slug = parts["slug"].strip()
+    if not slug:
+        return None
+    return slug.replace("-", " ")
+
+
+def nse_stock_url_for_symbol(symbol: str, nse_urls_by_symbol: Optional[dict[str, str]] = None) -> Optional[str]:
+    normalized_symbol = str(symbol or "").strip().upper()
+    if not normalized_symbol:
+        return None
+    if not re.fullmatch(r"[A-Z0-9._&-]+", normalized_symbol):
+        return None
+    if nse_urls_by_symbol and normalized_symbol in nse_urls_by_symbol:
+        return nse_urls_by_symbol[normalized_symbol]
+    return canonicalize_zerodha_stock_url(f"{ZERODHA_STOCKS_BASE}/{FINAL_MARKET_EXCHANGE}/{normalized_symbol}/")
+
+
+def is_nse_stock_url(url: Optional[str]) -> bool:
+    parts = parse_zerodha_stock_url_parts(url)
+    if not parts or parts["kind"] != "market":
+        return False
+    return parts["exchange"] == FINAL_MARKET_EXCHANGE
+
+
+def is_market_stock_url(url: Optional[str]) -> bool:
+    parts = parse_zerodha_stock_url_parts(url)
+    if not parts or parts["kind"] != "market":
+        return False
+    return parts["exchange"] in ALLOWED_EXCHANGES
+
+
 def _read_json(path: Path, default: object) -> object:
     if not path.exists():
         return default
@@ -387,6 +475,116 @@ def load_mandatory_indian_listed_links() -> dict[str, dict[str, str]]:
             "expected_url": expected_url,
         }
     return parsed
+
+
+def load_zerodha_nse_stock_index() -> dict[str, str]:
+    path = Path(OUTPUT_DIR) / ZERODHA_NSE_INDEX_FILE
+    if not path.exists():
+        refresh_script = BASE_DIR / "scripts" / "refresh_zerodha_nse_index.py"
+        if not refresh_script.exists():
+            raise ValueError(f"{path} is missing and refresh script was not found at {refresh_script}")
+        print(f"{path} missing; refreshing from {refresh_script.name}...")
+        subprocess.run([sys.executable, str(refresh_script)], cwd=str(BASE_DIR), check=True)
+
+    raw = _read_json(path, {})
+    if not isinstance(raw, dict):
+        raise ValueError(f"{path} must be a JSON object")
+    entries = raw.get("entries", [])
+    if not isinstance(entries, list):
+        raise ValueError(f"{path} must contain an 'entries' array")
+
+    urls_by_symbol: dict[str, str] = {}
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        symbol = str(entry.get("symbol") or "").strip().upper()
+        raw_url = canonicalize_zerodha_stock_url(str(entry.get("url") or "").strip())
+        if not symbol or not raw_url:
+            continue
+        parts = parse_zerodha_stock_url_parts(raw_url)
+        if not parts or parts["kind"] != "market":
+            continue
+        if parts["exchange"] != FINAL_MARKET_EXCHANGE:
+            continue
+        if parts["symbol"] != symbol:
+            continue
+        urls_by_symbol[symbol] = parts["canonical_url"]
+
+    if not urls_by_symbol:
+        raise ValueError(f"{path} did not contain any valid NSE stock entries")
+    return urls_by_symbol
+
+
+def _parse_nse_instrument_candidates(rows: list[dict[str, object]], nse_urls_by_symbol: dict[str, str]) -> list[dict[str, str]]:
+    deduped: dict[str, dict[str, str]] = {}
+    for row in rows:
+        symbol = str(row.get("symbol") or "").strip().upper()
+        if not symbol or symbol not in nse_urls_by_symbol:
+            continue
+
+        display_name = str(row.get("display_name") or "").strip()
+        if not display_name:
+            display_name = symbol
+
+        existing = deduped.get(symbol)
+        if existing and len(existing["display_name"]) >= len(display_name):
+            continue
+        deduped[symbol] = {
+            "display_name": display_name,
+            "exchange": FINAL_MARKET_EXCHANGE,
+            "symbol": symbol,
+            "slug": slugify(display_name).replace("-", " "),
+        }
+
+    return [deduped[symbol] for symbol in sorted(deduped)]
+
+
+def load_nse_market_candidates(nse_urls_by_symbol: dict[str, str]) -> list[dict[str, str]]:
+    cache_path = Path(OUTPUT_DIR) / ZERODHA_NSE_INSTRUMENTS_FILE
+    parsed_rows: list[dict[str, object]] = []
+
+    try:
+        csv_payload = fetch(KITE_INSTRUMENTS_URL)
+        csv_reader = csv.DictReader(csv_payload.splitlines())
+        for row in csv_reader:
+            exchange = str(row.get("exchange") or "").strip().upper()
+            segment = str(row.get("segment") or "").strip().upper()
+            instrument_type = str(row.get("instrument_type") or "").strip().upper()
+            symbol = str(row.get("tradingsymbol") or "").strip().upper()
+            name = str(row.get("name") or "").strip()
+            if exchange != FINAL_MARKET_EXCHANGE:
+                continue
+            if segment != FINAL_MARKET_EXCHANGE:
+                continue
+            if instrument_type not in {"EQ", "BE"}:
+                continue
+            if not symbol:
+                continue
+            parsed_rows.append(
+                {
+                    "symbol": symbol,
+                    "display_name": name or symbol,
+                }
+            )
+
+        _write_json(
+            cache_path,
+            {
+                "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+                "source_url": KITE_INSTRUMENTS_URL,
+                "entry_count": len(parsed_rows),
+                "entries": parsed_rows,
+            },
+        )
+    except Exception:
+        cached = _read_json(cache_path, {})
+        entries = cached.get("entries", []) if isinstance(cached, dict) else []
+        if isinstance(entries, list):
+            for row in entries:
+                if isinstance(row, dict):
+                    parsed_rows.append(row)
+
+    return _parse_nse_instrument_candidates(parsed_rows, nse_urls_by_symbol)
 
 
 def _normalize_name_key(name: str) -> str:
@@ -561,48 +759,47 @@ def _candidate_match_score(candidate: dict[str, str], features: dict[str, object
     return score
 
 
-def _fetch_market_search(query: str, cache: dict[str, object]) -> object:
-    key = query.strip().lower()
-    if not key:
-        return {}
-    if key in cache:
-        return cache[key]
-
-    search_url = ZERODHA_STOCKS_SEARCH_URL.format(query=quote(key))
-    try:
-        payload = json.loads(fetch(search_url))
-    except Exception:
-        payload = {}
-    cache[key] = payload
-    return payload
-
-
-def resolve_market_url_for_company(company: Company, search_cache: dict[str, object]) -> Optional[str]:
-    if company.url:
+def resolve_market_url_for_company(
+    company: Company,
+    nse_urls_by_symbol: dict[str, str],
+    nse_market_candidates: list[dict[str, str]],
+    slug_hint_url: Optional[str] = None,
+    symbol_hint: Optional[str] = None,
+) -> Optional[str]:
+    if company.url and is_nse_stock_url(company.url):
         normalized_existing = canonicalize_zerodha_stock_url(company.url)
         if normalized_existing:
             return normalized_existing
     if company.id == "global":
         return None
 
+    normalized_symbol_hint = str(symbol_hint or "").strip().upper()
+    if normalized_symbol_hint and normalized_symbol_hint in nse_urls_by_symbol:
+        return nse_urls_by_symbol[normalized_symbol_hint]
+
     best_score = -1
     best_url = None
-    tried_queries = set()
-    for query in [company.name, company.id.replace("-", " ")]:
-        query_key = query.strip().lower()
-        if not query_key or query_key in tried_queries:
-            continue
-        tried_queries.add(query_key)
+    tried_name_hints = set()
+    lookup_name_hints = [company.name, company.id.replace("-", " ")]
+    slug_hint_query = slug_query_from_zerodha_stock_url(slug_hint_url)
+    if slug_hint_query:
+        lookup_name_hints.append(slug_hint_query)
 
-        payload = _fetch_market_search(query, search_cache)
-        for candidate in _iter_zerodha_candidates(payload):
-            features = _candidate_match_features(company.name, company.id, candidate)
+    for name_hint in lookup_name_hints:
+        hint_key = name_hint.strip().lower()
+        if not hint_key or hint_key in tried_name_hints:
+            continue
+        tried_name_hints.add(hint_key)
+
+        for candidate in nse_market_candidates:
+            symbol = str(candidate["symbol"]).upper()
+            if symbol not in nse_urls_by_symbol:
+                continue
+            features = _candidate_match_features(name_hint, company.id, candidate)
             if not _is_confident_market_match(features):
                 continue
-            score = _candidate_match_score(candidate, features)
-            candidate_url = canonicalize_zerodha_stock_url(
-                f"{ZERODHA_STOCKS_BASE}/{candidate['exchange']}/{candidate['symbol']}/"
-            )
+            score = _candidate_match_score(candidate, features) + (6 if hint_key == company.name.lower() else 0)
+            candidate_url = nse_urls_by_symbol[symbol]
             if not candidate_url:
                 continue
             if score > best_score:
@@ -618,9 +815,13 @@ def enrich_company_urls(
     companies: dict[str, Company],
     manual_overrides: dict[str, dict[str, str]],
     mandatory_links: dict[str, dict[str, str]],
+    nse_urls_by_symbol: dict[str, str],
+    nse_market_candidates: list[dict[str, str]],
 ) -> dict[str, object]:
-    search_cache: dict[str, object] = {}
-    existing_kept = 0
+    existing_nse_kept = 0
+    existing_bse_converted = 0
+    existing_bse_removed = 0
+    existing_slug_removed = 0
     resolved_auto = 0
     resolved_manual = 0
     unresolved = 0
@@ -630,6 +831,8 @@ def enrich_company_urls(
     manual_overrides_invalid_target: list[dict[str, str]] = []
 
     for company in sorted(companies.values(), key=lambda c: c.id):
+        slug_lookup_hint: Optional[str] = None
+        symbol_lookup_hint: Optional[str] = None
         normalized_existing = canonicalize_zerodha_stock_url(company.url) if company.url else None
         if company.url and not normalized_existing:
             rejected_existing_urls.append(
@@ -642,32 +845,70 @@ def enrich_company_urls(
             )
             company.url = None
         elif normalized_existing:
-            company.url = normalized_existing
-            existing_kept += 1
+            existing_parts = parse_zerodha_stock_url_parts(normalized_existing)
+            if existing_parts and existing_parts["kind"] == "market":
+                existing_exchange = existing_parts["exchange"]
+                existing_symbol = existing_parts["symbol"]
+                symbol_lookup_hint = existing_symbol
+
+                if existing_exchange == FINAL_MARKET_EXCHANGE:
+                    company.url = existing_parts["canonical_url"]
+                    existing_nse_kept += 1
+                elif existing_exchange != FINAL_MARKET_EXCHANGE and existing_symbol in nse_urls_by_symbol:
+                    company.url = nse_urls_by_symbol[existing_symbol]
+                    existing_bse_converted += 1
+                else:
+                    company.url = None
+                    if existing_exchange == "BSE":
+                        existing_bse_removed += 1
+                        rejected_existing_urls.append(
+                            {
+                                "company_key": company.id,
+                                "display_name": company.name,
+                                "existing_url": existing_parts["canonical_url"],
+                                "reason": "bse_symbol_missing_in_nse_sitemap",
+                            }
+                        )
+                    else:
+                        rejected_existing_urls.append(
+                            {
+                                "company_key": company.id,
+                                "display_name": company.name,
+                                "existing_url": existing_parts["canonical_url"],
+                                "reason": "nse_symbol_missing_in_nse_sitemap",
+                            }
+                        )
+            else:
+                # Slug-shaped stock URLs are stale; force upgrade via market lookup.
+                slug_lookup_hint = normalized_existing
+                company.url = None
+                existing_slug_removed += 1
 
         override = manual_overrides.get(company.id)
         if override:
             override_url = canonicalize_zerodha_stock_url(override["url"])
-            if override_url:
-                if company.url != override_url:
+            override_parts = parse_zerodha_stock_url_parts(override_url) if override_url else None
+            if override_parts and override_parts["kind"] == "market":
+                normalized_override_url = override_parts["canonical_url"]
+                if company.url != normalized_override_url:
                     manual_overrides_applied.append(
                         {
                             "company_key": company.id,
                             "display_name": company.name,
-                            "url": override_url,
+                            "url": normalized_override_url,
                             "reason": override["reason"],
                             "verified_on": override["verified_on"],
                         }
                     )
                     resolved_manual += 1
-                company.url = override_url
+                company.url = normalized_override_url
             else:
                 manual_overrides_invalid_target.append(
                     {
                         "company_key": company.id,
                         "display_name": company.name,
                         "url": override["url"],
-                        "reason": "override_url_invalid_format",
+                        "reason": "override_url_not_market_symbol_format",
                     }
                 )
                 company.url = None
@@ -675,11 +916,18 @@ def enrich_company_urls(
         if company.url:
             continue
 
-        resolved_url = resolve_market_url_for_company(company, search_cache)
-        if resolved_url:
+        resolved_url = resolve_market_url_for_company(
+            company,
+            nse_urls_by_symbol,
+            nse_market_candidates,
+            slug_lookup_hint,
+            symbol_lookup_hint,
+        )
+        if resolved_url and is_market_stock_url(resolved_url):
             company.url = resolved_url
             resolved_auto += 1
         else:
+            company.url = None
             unresolved += 1
         time.sleep(0.05)
 
@@ -709,13 +957,13 @@ def enrich_company_urls(
             continue
 
         company_url = canonicalize_zerodha_stock_url(company.url)
-        if not company_url:
+        if not company_url or not is_nse_stock_url(company_url):
             mandatory_missing.append(
                 {
                     "company_key": company_key,
                     "display_name": company.name,
                     "expected_url": requirement["expected_url"],
-                    "reason": "resolved_without_zerodha_url",
+                    "reason": "resolved_without_nse_zerodha_url",
                 }
             )
             continue
@@ -731,11 +979,11 @@ def enrich_company_urls(
                 }
             )
 
-    linked = sum(1 for company in companies.values() if canonicalize_zerodha_stock_url(company.url))
+    linked = sum(1 for company in companies.values() if is_market_stock_url(company.url))
     non_mandatory_unlinked = [
         {"company_key": company.id, "display_name": company.name}
         for company in sorted(companies.values(), key=lambda c: c.name.lower())
-        if not canonicalize_zerodha_stock_url(company.url) and company.id not in mandatory_links
+        if not is_market_stock_url(company.url) and company.id not in mandatory_links
     ]
 
     report = {
@@ -747,10 +995,14 @@ def enrich_company_urls(
             "mandatory_total": len(mandatory_links),
             "mandatory_missing": len(mandatory_missing),
             "mandatory_mismatched": len(mandatory_mismatched),
-            "existing_links_kept": existing_kept,
+            "existing_nse_links_kept": existing_nse_kept,
+            "existing_bse_links_converted_to_nse": existing_bse_converted,
+            "existing_bse_links_removed": existing_bse_removed,
+            "existing_slug_links_removed": existing_slug_removed,
             "manual_overrides_applied": resolved_manual,
             "auto_resolved": resolved_auto,
             "unresolved_after_resolution": unresolved,
+            "nse_sitemap_symbols": len(nse_urls_by_symbol),
         },
         "mandatory_missing": mandatory_missing,
         "mandatory_mismatched": mandatory_mismatched,
@@ -761,7 +1013,10 @@ def enrich_company_urls(
         "non_mandatory_unlinked": non_mandatory_unlinked,
     }
 
-    print(f"Kept valid Zerodha URLs: {existing_kept}")
+    print(f"Kept existing NSE links: {existing_nse_kept}")
+    print(f"Converted BSE->NSE links: {existing_bse_converted}")
+    print(f"Removed BSE-only links: {existing_bse_removed}")
+    print(f"Removed slug-style links: {existing_slug_removed}")
     print(f"Applied manual overrides: {resolved_manual}")
     print(f"Resolved via market search: {resolved_auto}")
     print(f"Still without market URL: {unresolved}")
@@ -1340,6 +1595,10 @@ def main() -> None:
     manual_overrides = load_manual_market_urls()
     mandatory_links = load_mandatory_indian_listed_links()
     non_company_rules = load_non_company_rules()
+    nse_urls_by_symbol = load_zerodha_nse_stock_index()
+    nse_market_candidates = load_nse_market_candidates(nse_urls_by_symbol)
+    print(f"NSE sitemap symbols loaded: {len(nse_urls_by_symbol)}")
+    print(f"NSE market candidates loaded: {len(nse_market_candidates)}")
 
     sitemap_html = fetch(SITEMAP_URL)
     year_pages = parse_sitemap_years(sitemap_html) or [SITEMAP_URL]
@@ -1389,7 +1648,13 @@ def main() -> None:
             f" mentions={sanity_report['removed_mention_rows']}"
         )
 
-    link_audit_report = enrich_company_urls(companies, manual_overrides, mandatory_links)
+    link_audit_report = enrich_company_urls(
+        companies,
+        manual_overrides,
+        mandatory_links,
+        nse_urls_by_symbol,
+        nse_market_candidates,
+    )
     write_link_audit_report(link_audit_report)
 
     with open(f"{OUTPUT_DIR}/editions.json", "w", encoding="utf-8") as f:

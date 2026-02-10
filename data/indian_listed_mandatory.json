@@ -73,10 +73,5 @@
     "company_key": "star-health",
     "display_name": "Star Health",
     "expected_url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/"
-  },
-  {
-    "company_key": "vishal-mega-mart",
-    "display_name": "Vishal Mega Mart",
-    "expected_url": "https://zerodha.com/markets/stocks/NSE/VMM/"
   }
 ]

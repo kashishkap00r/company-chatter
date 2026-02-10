@@ -3,25 +3,32 @@
   <h2>Find a company. Read its story.</h2>
   <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_editions }} editions</p>
 
-  <div class="search-shell">
-    <input
-      type="search"
-      id="companySearch"
-      placeholder="Search companies..."
-      autocomplete="off"
-    />
+  <div class="search-module">
+    <div class="search-shell">
+      <input
+        type="search"
+        id="companySearch"
+        placeholder="Search companies..."
+        autocomplete="off"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="searchResults"
+        aria-label="Search companies"
+      />
+    </div>
+    <div class="search-results" id="searchResults" role="listbox" hidden></div>
   </div>
-
-  <p class="result-caption" id="resultCount" hidden></p>
-  <div class="search-results" id="searchResults" hidden></div>
 </section>
 
 <script id="companyData" type="application/json">{{ company_data_json }}</script>
 <script>
   const input = document.getElementById('companySearch');
-  const resultCount = document.getElementById('resultCount');
   const searchResults = document.getElementById('searchResults');
   const companyData = JSON.parse(document.getElementById('companyData').textContent || '[]');
+  let activeIndex = -1;
+  let visibleRows = [];
+  let blurTimeout = null;
 
   function escapeHtml(value) {
     return value
@@ -33,43 +40,159 @@
   }
 
   function hideResults() {
-    resultCount.hidden = true;
     searchResults.hidden = true;
     searchResults.innerHTML = '';
+    visibleRows = [];
+    activeIndex = -1;
+    input.setAttribute('aria-expanded', 'false');
+    input.removeAttribute('aria-activedescendant');
   }
 
-  function renderResults(rows, query) {
+  function rankedMatches(query) {
+    const lowered = query.toLowerCase();
+    return companyData
+      .filter((row) => row.name.toLowerCase().includes(lowered))
+      .sort((left, right) => {
+        const leftName = left.name.toLowerCase();
+        const rightName = right.name.toLowerCase();
+        const leftExactRank = leftName === lowered ? 0 : 1;
+        const rightExactRank = rightName === lowered ? 0 : 1;
+        if (leftExactRank !== rightExactRank) {
+          return leftExactRank - rightExactRank;
+        }
+
+        const leftPrefixRank = leftName.startsWith(lowered) ? 0 : 1;
+        const rightPrefixRank = rightName.startsWith(lowered) ? 0 : 1;
+        if (leftPrefixRank !== rightPrefixRank) {
+          return leftPrefixRank - rightPrefixRank;
+        }
+
+        return leftName.localeCompare(rightName);
+      });
+  }
+
+  function setActiveIndex(nextIndex) {
+    const items = Array.from(searchResults.querySelectorAll('.result-item'));
+    if (!items.length) {
+      activeIndex = -1;
+      input.removeAttribute('aria-activedescendant');
+      return;
+    }
+
+    if (nextIndex < 0) {
+      nextIndex = items.length - 1;
+    } else if (nextIndex >= items.length) {
+      nextIndex = 0;
+    }
+
+    activeIndex = nextIndex;
+    items.forEach((item, index) => {
+      const isActive = index === activeIndex;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+    });
+
+    const activeItem = items[activeIndex];
+    if (activeItem) {
+      input.setAttribute('aria-activedescendant', activeItem.id);
+      activeItem.scrollIntoView({ block: 'nearest' });
+    }
+  }
+
+  function renderResults(rows, rawQuery) {
+    const query = rawQuery.trim();
     if (!query) {
       hideResults();
       return;
     }
 
-    resultCount.hidden = false;
+    visibleRows = rows.slice(0, 10);
+    activeIndex = -1;
+    input.removeAttribute('aria-activedescendant');
+    input.setAttribute('aria-expanded', 'true');
     searchResults.hidden = false;
-    resultCount.textContent = `${rows.length} matches`;
 
-    if (!rows.length) {
-      searchResults.innerHTML = '<p class="empty-state">No company found for this query.</p>';
+    if (!visibleRows.length) {
+      searchResults.innerHTML = `
+        <p class="results-meta">0 matches</p>
+        <p class="empty-state">No company found for this query.</p>
+      `;
       return;
     }
 
-    searchResults.innerHTML = rows
-      .slice(0, 10)
-      .map(
-        (row) => `
-          <a class="result-item" href="/company/${row.slug}/">
-            <strong>${escapeHtml(row.name)}</strong>
-            <span>${row.quote_count} quotes · ${row.edition_count} editions · ${escapeHtml(row.latest_date)}</span>
-          </a>
-        `
-      )
-      .join('');
+    searchResults.innerHTML = `
+      <p class="results-meta">${rows.length} matches</p>
+      ${visibleRows
+        .map(
+          (row, index) => `
+            <a class="result-item" id="resultOption${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
+              <strong>${escapeHtml(row.name)}</strong>
+              <span>${row.quote_count} quotes · ${row.edition_count} editions · ${escapeHtml(row.latest_date)}</span>
+            </a>
+          `
+        )
+        .join('')}
+    `;
   }
 
   input.addEventListener('input', () => {
-    const query = input.value.trim().toLowerCase();
-    const matches = companyData.filter((row) => row.name.toLowerCase().includes(query));
-    renderResults(matches, query);
+    clearTimeout(blurTimeout);
+    const query = input.value;
+    renderResults(rankedMatches(query), query);
+  });
+
+  input.addEventListener('focus', () => {
+    const query = input.value;
+    if (query.trim()) {
+      renderResults(rankedMatches(query), query);
+    }
+  });
+
+  input.addEventListener('keydown', (event) => {
+    if (searchResults.hidden) {
+      return;
+    }
+
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      hideResults();
+      return;
+    }
+
+    if (!visibleRows.length) {
+      return;
+    }
+
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      setActiveIndex(activeIndex + 1);
+      return;
+    }
+
+    if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      setActiveIndex(activeIndex - 1);
+      return;
+    }
+
+    if (event.key === 'Enter' && activeIndex >= 0) {
+      event.preventDefault();
+      window.location.href = `/company/${visibleRows[activeIndex].slug}/`;
+    }
+  });
+
+  input.addEventListener('blur', () => {
+    blurTimeout = setTimeout(hideResults, 120);
+  });
+
+  searchResults.addEventListener('mousedown', () => {
+    clearTimeout(blurTimeout);
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.search-module')) {
+      hideResults();
+    }
   });
 
   hideResults();

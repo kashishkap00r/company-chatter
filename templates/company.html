@@ -1,27 +1,8 @@
-<section class="company-hero">
-  <div class="company-hero-main">
-    <p class="eyebrow">Company Timeline</p>
-    <h2>{{ company_name_link }}</h2>
-    <p>{{ company_meta }}</p>
-  </div>
-  <div class="company-metrics">
-    <article class="metric-tile">
-      <p>Total Quotes</p>
-      <strong>{{ quote_count }}</strong>
-    </article>
-    <article class="metric-tile">
-      <p>First Mention</p>
-      <strong>{{ first_date }}</strong>
-    </article>
-    <article class="metric-tile">
-      <p>Latest Mention</p>
-      <strong>{{ last_date }}</strong>
-    </article>
-    <article class="metric-tile">
-      <p>Editions Covered</p>
-      <strong>{{ editions_count }}</strong>
-    </article>
-  </div>
+<section class="company-hero company-hero-minimal">
+  <p class="eyebrow">Company Timeline</p>
+  <h2>{{ company_name_link }}</h2>
+  <p class="company-mini-meta">{{ company_timeline_meta }}</p>
+  <p class="company-summary">{{ company_meta }}</p>
 </section>
 
 <section class="story-timeline">

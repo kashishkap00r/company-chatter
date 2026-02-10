@@ -20,6 +20,15 @@ Output JSON files will be written to `data/`:
 - `data/company_mentions.json`
 - `data/link_audit_report.json`
 
+## Refresh Zerodha NSE Stock Index
+```bash
+python3 scripts/refresh_zerodha_nse_index.py
+```
+
+This refreshes `data/zerodha_nse_stock_index.json` from
+`https://zerodha.com/markets/stocks/sitemap.xml` (browser fallback is automatic).
+Only `NSE` stock URLs are retained.
+
 ## Build Static Site
 ```bash
 python3 scripts/build_site.py
