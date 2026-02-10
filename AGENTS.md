@@ -1,42 +1,46 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repo converts The Chatter archive into company-level quote timelines.
+This repository builds a static “Company Chatter” site from The Chatter archive.
 
-- `scripts/`: core pipeline scripts.
-  - `scrape.py` fetches and extracts editions, companies, quotes, and mentions.
-  - `build_site.py` merges entity variants and renders static pages.
-  - `validate_entity_resolution.py` enforces no-duplication/no-leakage invariants.
-- `data/`: source-of-truth JSON and rule files (`entity_*_rules.json`, baseline/report files, generated datasets).
-- `templates/` and `assets/`: HTML templates and CSS.
-- `site/`: generated static output.
-- `.github/workflows/entity-resolution-guard.yml`: CI pipeline (scrape, build, validate).
+- `scripts/`: pipeline entry points.
+  - `scrape.py` extracts editions, companies, quotes, and mentions.
+  - `build_site.py` resolves entities and renders static HTML.
+  - `validate_entity_resolution.py` enforces entity guardrails.
+  - `refresh_zerodha_nse_index.py` refreshes NSE symbol mappings.
+- `data/`: generated datasets and rule files (`entity_alias_rules.json`, `entity_block_rules.json`, baseline/report JSON).
+- `templates/` + `assets/`: HTML templates and CSS.
+- `site/`: generated output (deploy artifact).
+- `.github/workflows/`: CI checks for scrape/build/validation.
 
 ## Build, Test, and Development Commands
-- `python3 scripts/scrape.py`: scrape and refresh `data/*.json`.
-- `python3 scripts/build_site.py`: build `site/` and entity resolution report.
+- `python3 scripts/scrape.py`: refresh archive data in `data/`.
+- `python3 scripts/build_site.py`: generate `site/` and entity report.
 - `python3 scripts/validate_entity_resolution.py`: fail on duplicate/leakage regressions.
 - `python3 scripts/scrape.py && python3 scripts/build_site.py && python3 scripts/validate_entity_resolution.py`: full local verification.
-- `./scripts/preview.sh [port]`: local preview (`8787` default).
+- `./scripts/preview.sh 8000`: preview locally.
 - `./scripts/deploy_pages.sh company-chatter`: build, validate, deploy to Cloudflare Pages.
 
 ## Coding Style & Naming Conventions
-- Use Python 3 with 4-space indentation and type hints for new/changed functions.
-- Prefer small, deterministic helpers; keep extraction and merge logic explicit.
-- Use `snake_case` for variables/functions, lowercase slugs for IDs, and stable JSON schemas.
-- Keep rule/config changes in `data/` (not hardcoded in multiple places) whenever possible.
+- Python: 4-space indentation, `snake_case`, small deterministic helpers, and type hints for new/changed code.
+- IDs/slugs: lowercase kebab-style values (for example, `company-id`).
+- Keep rule-driven behavior in `data/*.json` instead of hardcoding in multiple places.
+- Frontend classes should remain readable and consistent with existing template/CSS patterns.
 
 ## Testing Guidelines
-- Primary gate is `scripts/validate_entity_resolution.py` plus CI workflow.
-- After logic changes, run the full pipeline and confirm validation passes.
-- If entity behavior changes, update corresponding rule/baseline files and regenerated reports.
-- For UI-impacting changes, spot-check `site/index.html` and affected company pages.
+- No dedicated unit-test suite yet; the primary gate is `validate_entity_resolution.py`.
+- For parser/resolver changes, run the full pipeline and inspect count deltas in `data/entity_resolution_report.json`.
+- For UI changes, preview generated pages (`site/index.html`, representative `site/company/<slug>/index.html`) before pushing.
 
 ## Commit & Pull Request Guidelines
-- Follow existing commit style: short imperative subject lines (for example, `Add hard-fail entity resolution guardrails`).
-- Keep commits focused by concern (scraper, resolver, templates, data).
+- Use short imperative commit subjects, matching repo history (for example, `Harden Zerodha URL mapping`).
+- Keep commits focused by concern (scraper, resolver, UI, data).
 - PRs should include:
-  - problem statement and root cause,
-  - files changed and why,
-  - commands run with key outputs (counts/pass-fail),
-  - screenshots for visible UI/template changes.
+  - what changed and why,
+  - commands run and key outputs,
+  - screenshots for UI changes,
+  - notes on regenerated data files.
+
+## Security & Configuration Tips
+- Never commit secrets or API tokens.
+- Treat large JSON diffs carefully; review for accidental churn before pushing.
