@@ -1,20 +1,133 @@
 {
-  "generated_at": "2026-02-10T04:46:28+00:00",
+  "generated_at": "2026-02-10T05:05:09+00:00",
   "counts": {
-    "total_companies": 349,
+    "total_companies": 351,
     "linked_companies": 314,
-    "unlinked_companies": 35,
+    "unlinked_companies": 37,
     "mandatory_total": 16,
     "mandatory_missing": 0,
     "mandatory_mismatched": 0,
-    "existing_links_kept": 314,
-    "manual_overrides_applied": 0,
+    "existing_links_kept": 298,
+    "manual_overrides_applied": 16,
     "auto_resolved": 0,
-    "unresolved_after_resolution": 35
+    "unresolved_after_resolution": 37
   },
   "mandatory_missing": [],
   "mandatory_mismatched": [],
-  "manual_overrides_applied": [],
+  "manual_overrides_applied": [
+    {
+      "company_key": "bajaj-finance",
+      "display_name": "Bajaj Finance",
+      "url": "https://zerodha.com/markets/stocks/NSE/BAJFINANCE/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "bharat-petroleum-corporation",
+      "display_name": "Bharat Petroleum Corporation",
+      "url": "https://zerodha.com/markets/stocks/NSE/BPCL/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "canara-bank",
+      "display_name": "Canara Bank",
+      "url": "https://zerodha.com/markets/stocks/NSE/CANBK/",
+      "reason": "Verified via Zerodha instruments feed (`api.kite.trade/instruments`) for NSE tradingsymbol CANBK.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "ceat",
+      "display_name": "CEAT",
+      "url": "https://zerodha.com/markets/stocks/NSE/CEATLTD/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "digitide-solutions",
+      "display_name": "Digitide Solutions",
+      "url": "https://zerodha.com/markets/stocks/NSE/DIGITIDE/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "ethos-ltd",
+      "display_name": "Ethos Ltd.",
+      "url": "https://zerodha.com/markets/stocks/NSE/ETHOSLTD/",
+      "reason": "Source heading links to a broken external URL; enforce official Zerodha listing.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "housing-and-urban-development-corporation",
+      "display_name": "Housing and Urban Development Corporation",
+      "url": "https://zerodha.com/markets/stocks/NSE/HUDCO/",
+      "reason": "Verified via Zerodha instruments feed (`api.kite.trade/instruments`) for NSE tradingsymbol HUDCO.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "indian-oil-corporation",
+      "display_name": "Indian Oil Corporation",
+      "url": "https://zerodha.com/markets/stocks/NSE/IOC/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "jsw-energy",
+      "display_name": "JSW ENERGY",
+      "url": "https://zerodha.com/markets/stocks/NSE/JSWENERGY/",
+      "reason": "Source heading links to a third-party site; enforce official Zerodha listing.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "jsw-infrastructure",
+      "display_name": "JSW Infrastructure",
+      "url": "https://zerodha.com/markets/stocks/NSE/JSWINFRA/",
+      "reason": "Known listed entity; keep stable mapped URL when automatic enrichment is inconclusive.",
+      "verified_on": "2026-02-10"
+    },
+    {
+      "company_key": "l-t-mindtree",
+      "display_name": "L&T Mindtree",
+      "url": "https://zerodha.com/markets/stocks/NSE/LTIM/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "mahanagar-gas",
+      "display_name": "Mahanagar Gas",
+      "url": "https://zerodha.com/markets/stocks/NSE/MGL/",
+      "reason": "Source heading links to a PDF transcript; enforce official Zerodha listing.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "pfizer",
+      "display_name": "Pfizer",
+      "url": "https://zerodha.com/markets/stocks/NSE/PFIZER/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "shoppers-stop",
+      "display_name": "Shoppers Stop",
+      "url": "https://zerodha.com/markets/stocks/NSE/SHOPERSTOP/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "star-health",
+      "display_name": "Star Health",
+      "url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    },
+    {
+      "company_key": "vishal-mega-mart",
+      "display_name": "Vishal Mega Mart",
+      "url": "https://zerodha.com/markets/stocks/NSE/VMM/",
+      "reason": "Verified against Zerodha markets stock page index; enforce correct Indian-listed mapping.",
+      "verified_on": "2026-02-09"
+    }
+  ],
   "manual_overrides_missing_company": [],
   "manual_overrides_invalid_target": [],
   "rejected_existing_urls": [],
@@ -158,6 +271,14 @@
     {
       "company_key": "under-armour",
       "display_name": "Under Armour"
+    },
+    {
+      "company_key": "varun-beverages",
+      "display_name": "Varun Beverages"
+    },
+    {
+      "company_key": "zomato",
+      "display_name": "Zomato"
     }
   ]
 }

@@ -35,8 +35,6 @@ ALLOWED_EXCHANGES = {"NSE", "BSE"}
 
 TITLE_INCLUDE = "the chatter"
 TITLE_EXCLUDE = ["points and figures", "plotlines"]
-QUOTE_START_CHARS = ('"', "“", "‘", "'")
-QUOTE_END_CHARS = ('"', "”", "’", "'")
 SECTOR_HEADING_EXACT = {
     "banking and financial services",
     "capital goods and engineering",
@@ -794,19 +792,6 @@ def split_quote_and_speaker(text: str) -> tuple[str, Optional[str]]:
     return stripped.strip('"“”'), None
 
 
-def is_quote_text(text: str) -> bool:
-    stripped = text.strip()
-    if len(stripped) < 25:
-        return False
-    if stripped.startswith(QUOTE_START_CHARS):
-        return True
-    if stripped.endswith(QUOTE_END_CHARS):
-        return True
-    if ('"' in stripped and stripped.count('"') >= 2) or ("“" in stripped and "”" in stripped):
-        return True
-    return False
-
-
 def is_speaker_line(text: str) -> bool:
     stripped = text.strip()
     if not stripped or len(stripped) > 80:
@@ -826,12 +811,15 @@ class ContentExtractor(HTMLParser):
         self.nodes: list[dict] = []
         self._current_tag: Optional[str] = None
         self._current_text: list[str] = []
-        self._current_link: Optional[str] = None
         self._h3_link: Optional[str] = None
         self._inside_h3: bool = False
+        self._blockquote_depth: int = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, Optional[str]]]) -> None:
-        if tag in {"h2", "h3", "p", "blockquote"}:
+        if tag == "blockquote":
+            self._flush()
+            self._blockquote_depth += 1
+        if tag in {"h2", "h3", "p"}:
             self._flush()
             self._current_tag = tag
             self._current_text = []
@@ -844,8 +832,11 @@ class ContentExtractor(HTMLParser):
                     self._h3_link = v
 
     def handle_endtag(self, tag: str) -> None:
-        if tag in {"h2", "h3", "p", "blockquote"}:
+        if tag in {"h2", "h3", "p"}:
             self._flush()
+        if tag == "blockquote":
+            self._flush()
+            self._blockquote_depth = max(0, self._blockquote_depth - 1)
         if tag == "h3":
             self._inside_h3 = False
 
@@ -861,10 +852,11 @@ class ContentExtractor(HTMLParser):
             node = {"tag": self._current_tag, "text": text}
             if self._current_tag == "h3" and self._h3_link:
                 node["href"] = self._h3_link
+            if self._current_tag == "p":
+                node["in_blockquote"] = self._blockquote_depth > 0
             self.nodes.append(node)
         self._current_tag = None
         self._current_text = []
-        self._current_link = None
 
 
 def extract_published_date(html: str) -> Optional[str]:
@@ -951,10 +943,53 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
     current_sector: Optional[str] = None
     current_company: Optional[Company] = None
     last_context: Optional[str] = None
+    current_blockquote_parts: list[str] = []
+
+    def flush_blockquote_parts() -> None:
+        nonlocal last_context, current_blockquote_parts
+        if not current_company:
+            current_blockquote_parts = []
+            return
+
+        parts = [part.strip() for part in current_blockquote_parts if part and part.strip()]
+        current_blockquote_parts = []
+        if not parts:
+            return
+
+        combined = " ".join(parts)
+        quote_text, speaker = split_quote_and_speaker(combined)
+        if not speaker and len(parts) > 1 and is_speaker_line(parts[-1]):
+            speaker = parts[-1].lstrip("-–— ").strip()
+            quote_text = " ".join(parts[:-1]).strip()
+
+        quote_text = quote_text.strip().strip('"“”').strip()
+        if not quote_text:
+            return
+
+        quote_id = slugify(f"{edition_id}-{current_company.id}-{len(quotes)}")
+        quotes.append(
+            Quote(
+                id=quote_id,
+                edition_id=edition_id,
+                company_id=current_company.id,
+                sector=current_sector,
+                text=quote_text,
+                context=last_context,
+                speaker=speaker,
+                source_url=url,
+            )
+        )
+        quote_count_by_company[current_company.id] = quote_count_by_company.get(current_company.id, 0) + 1
+        last_context = None
 
     for node in extractor.nodes:
         tag = node["tag"]
         text = node["text"]
+        in_blockquote = bool(node.get("in_blockquote", False))
+
+        if tag != "p" or not in_blockquote:
+            flush_blockquote_parts()
+
         if tag == "h2":
             current_sector = text
             continue
@@ -980,49 +1015,20 @@ def parse_post(url: str) -> tuple[Optional[Edition], list[Company], list[Quote]]
             last_context = None
             continue
         if tag == "p":
+            if in_blockquote:
+                if current_company:
+                    current_blockquote_parts.append(text)
+                continue
             if current_company and is_speaker_line(text) and quotes:
                 last_quote = quotes[-1]
                 if last_quote.edition_id == edition_id and last_quote.company_id == current_company.id and not last_quote.speaker:
                     last_quote.speaker = text.lstrip("-–— ").strip()
                     continue
-            if current_company and is_quote_text(text):
-                quote_text, speaker = split_quote_and_speaker(text)
-                if quote_text:
-                    quote_id = slugify(f"{edition_id}-{current_company.id}-{len(quotes)}")
-                    quotes.append(
-                        Quote(
-                            id=quote_id,
-                            edition_id=edition_id,
-                            company_id=current_company.id,
-                            sector=current_sector,
-                            text=quote_text,
-                            context=last_context,
-                            speaker=speaker,
-                            source_url=url,
-                        )
-                    )
-                    quote_count_by_company[current_company.id] = quote_count_by_company.get(current_company.id, 0) + 1
-                    last_context = None
-                    continue
+            # Keep plain paragraphs as context only; actual quotes are emitted from blockquotes.
             last_context = text
             continue
-        if tag == "blockquote" and current_company:
-            quote_text, speaker = split_quote_and_speaker(text)
-            quote_id = slugify(f"{edition_id}-{current_company.id}-{len(quotes)}")
-            quotes.append(
-                Quote(
-                    id=quote_id,
-                    edition_id=edition_id,
-                    company_id=current_company.id,
-                    sector=current_sector,
-                    text=quote_text or text,
-                    context=last_context,
-                    speaker=speaker,
-                    source_url=url,
-                )
-            )
-            quote_count_by_company[current_company.id] = quote_count_by_company.get(current_company.id, 0) + 1
-            last_context = None
+
+    flush_blockquote_parts()
 
     companies_with_quotes = [c for cid, c in companies.items() if quote_count_by_company.get(cid, 0) > 0]
     return edition, companies_with_quotes, quotes

@@ -1530,6 +1530,11 @@
     "url": "https://zerodha.com/markets/stocks/NSE/KEI/"
   },
   {
+    "id": "zomato",
+    "name": "Zomato",
+    "url": null
+  },
+  {
     "id": "shoppers-stop",
     "name": "Shoppers Stop",
     "url": "https://zerodha.com/markets/stocks/NSE/SHOPERSTOP/"
@@ -1558,6 +1563,11 @@
     "id": "star-health",
     "name": "Star Health",
     "url": "https://zerodha.com/markets/stocks/NSE/STARHEALTH/"
+  },
+  {
+    "id": "varun-beverages",
+    "name": "Varun Beverages",
+    "url": null
   },
   {
     "id": "vishal-mega-mart",
