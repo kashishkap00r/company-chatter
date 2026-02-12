@@ -1298,8 +1298,10 @@ def render_dailybrief_section(stories: list[dict]) -> str:
         [
             '<section class="segment-card brief-card card">',
             '  <div class="segment-header">',
-            '    <p class="segment-chip segment-chip-brief"><span class="segment-chip-icon">DB</span>Daily Brief</p>',
-            "    <h3>Headlines</h3>",
+            (
+                '    <a class="segment-chip segment-chip-brief" href="https://thedailybrief.zerodha.com/"'
+                ' target="_blank" rel="noopener noreferrer"><span class="segment-chip-icon">DB</span>Daily Brief</a>'
+            ),
             "    <p class=\"segment-subtitle\">Quick market stories where this company is mentioned.</p>",
             f'    <p class="segment-meta">{html_escape(summary)}</p>',
             "  </div>",
@@ -1343,8 +1345,10 @@ def render_chatter_section(
         [
             '<section class="segment-card chatter-card card">',
             '  <div class="segment-header">',
-            '    <p class="segment-chip segment-chip-chatter"><span class="segment-chip-icon">CC</span>The Chatter</p>',
-            "    <h3>Dossier Timeline</h3>",
+            (
+                '    <a class="segment-chip segment-chip-chatter" href="https://thechatterbyzerodha.substack.com/"'
+                ' target="_blank" rel="noopener noreferrer"><span class="segment-chip-icon">CC</span>The Chatter</a>'
+            ),
             "    <p class=\"segment-subtitle\">Deep management quotes and context from earnings calls.</p>",
             f'    <p class="segment-meta">{html_escape(timeline_meta)}</p>',
             "  </div>",
