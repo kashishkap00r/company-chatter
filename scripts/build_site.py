@@ -1027,6 +1027,8 @@ def _load_dailybrief_alias_rules(path: Path) -> dict[str, object]:
         "company_aliases": {},
         "alias_overrides": {},
         "blocked_aliases": set(),
+        "strict_companies": set(),
+        "company_blocked_aliases": {},
     }
     if not isinstance(payload, dict):
         return defaults
@@ -1034,6 +1036,8 @@ def _load_dailybrief_alias_rules(path: Path) -> dict[str, object]:
     company_aliases_payload = payload.get("company_aliases", {})
     alias_overrides_payload = payload.get("alias_overrides", {})
     blocked_aliases_payload = payload.get("blocked_aliases", [])
+    strict_companies_payload = payload.get("strict_companies", [])
+    company_blocked_aliases_payload = payload.get("company_blocked_aliases", {})
 
     parsed_company_aliases: dict[str, set[str]] = {}
     if isinstance(company_aliases_payload, dict):
@@ -1064,10 +1068,33 @@ def _load_dailybrief_alias_rules(path: Path) -> dict[str, object]:
             if alias_key:
                 parsed_blocked_aliases.add(alias_key)
 
+    parsed_strict_companies: set[str] = set()
+    if isinstance(strict_companies_payload, list):
+        for company_id in strict_companies_payload:
+            company_key = str(company_id).strip()
+            if company_key:
+                parsed_strict_companies.add(company_key)
+
+    parsed_company_blocked_aliases: dict[str, set[str]] = {}
+    if isinstance(company_blocked_aliases_payload, dict):
+        for company_id, aliases in company_blocked_aliases_payload.items():
+            company_key = str(company_id).strip()
+            if not company_key or not isinstance(aliases, list):
+                continue
+            parsed_aliases = {
+                _normalize_alias_phrase(str(alias))
+                for alias in aliases
+                if _normalize_alias_phrase(str(alias))
+            }
+            if parsed_aliases:
+                parsed_company_blocked_aliases[company_key] = parsed_aliases
+
     return {
         "company_aliases": parsed_company_aliases,
         "alias_overrides": parsed_alias_overrides,
         "blocked_aliases": parsed_blocked_aliases,
+        "strict_companies": parsed_strict_companies,
+        "company_blocked_aliases": parsed_company_blocked_aliases,
     }
 
 
@@ -1125,6 +1152,19 @@ def _build_company_alias_map(
     company_aliases_rules = alias_rules.get("company_aliases", {})
     alias_overrides = alias_rules.get("alias_overrides", {})
     blocked_aliases = alias_rules.get("blocked_aliases", set())
+    strict_companies = alias_rules.get("strict_companies", set())
+    company_blocked_aliases = alias_rules.get("company_blocked_aliases", {})
+
+    if not isinstance(company_aliases_rules, dict):
+        company_aliases_rules = {}
+    if not isinstance(alias_overrides, dict):
+        alias_overrides = {}
+    if not isinstance(blocked_aliases, set):
+        blocked_aliases = set()
+    if not isinstance(strict_companies, set):
+        strict_companies = set()
+    if not isinstance(company_blocked_aliases, dict):
+        company_blocked_aliases = {}
 
     for company in companies:
         company_id = str(company.get("id") or "").strip()
@@ -1133,38 +1173,52 @@ def _build_company_alias_map(
 
         aliases: set[str] = set()
         company_name = str(company.get("name") or "").strip()
-        normalized_name = _normalize_alias_phrase(company_name)
-        if normalized_name:
-            aliases.add(normalized_name)
-
-        collapsed_name = _normalize_alias_phrase(" ".join(_normalized_name_tokens(company_name)))
-        if collapsed_name:
-            aliases.add(collapsed_name)
-
-        for member_name in merged_member_names.get(company_id, set()):
-            alias_key = _normalize_alias_phrase(member_name)
+        explicit_aliases: set[str] = set()
+        for alias in company_aliases_rules.get(company_id, set()):
+            alias_key = _normalize_alias_phrase(str(alias))
             if alias_key:
-                aliases.add(alias_key)
+                explicit_aliases.add(alias_key)
 
-        if isinstance(company_aliases_rules, dict):
-            for alias in company_aliases_rules.get(company_id, set()):
-                alias_key = _normalize_alias_phrase(str(alias))
+        if company_id in strict_companies:
+            aliases.update(explicit_aliases)
+        else:
+            normalized_name = _normalize_alias_phrase(company_name)
+            if normalized_name:
+                aliases.add(normalized_name)
+
+            collapsed_name = _normalize_alias_phrase(" ".join(_normalized_name_tokens(company_name)))
+            if collapsed_name:
+                aliases.add(collapsed_name)
+
+            for member_name in merged_member_names.get(company_id, set()):
+                alias_key = _normalize_alias_phrase(member_name)
                 if alias_key:
                     aliases.add(alias_key)
 
-        symbol_alias = _company_symbol_from_url(company.get("url"))
-        if symbol_alias:
-            aliases.add(symbol_alias)
+            aliases.update(explicit_aliases)
 
-        if isinstance(alias_overrides, dict):
+            symbol_alias = _company_symbol_from_url(company.get("url"))
+            if symbol_alias:
+                aliases.add(symbol_alias)
+
             for alias_key, override_company_id in alias_overrides.items():
                 if override_company_id == company_id:
                     aliases.add(_normalize_alias_phrase(alias_key))
 
+        company_specific_blocked = company_blocked_aliases.get(company_id, set())
+        if not isinstance(company_specific_blocked, set):
+            company_specific_blocked = set()
+
         aliases = {
             alias
             for alias in aliases
-            if alias and alias not in blocked_aliases and len(alias) >= 2 and not alias.isdigit()
+            if (
+                alias
+                and alias not in blocked_aliases
+                and alias not in company_specific_blocked
+                and len(alias) >= 2
+                and not alias.isdigit()
+            )
         }
         aliases_by_company[company_id] = aliases
 

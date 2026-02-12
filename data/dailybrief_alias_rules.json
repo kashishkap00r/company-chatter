@@ -9,6 +9,28 @@
     "tata-motors": [
       "jaguar land rover",
       "jlr"
+    ],
+    "dollar-industries": [
+      "dollar industries",
+      "dollar industries limited",
+      "dollar inds"
+    ],
+    "urban-company": [
+      "urban company",
+      "urban company limited",
+      "urbanclap",
+      "urban clap"
+    ],
+    "target": [
+      "target corporation",
+      "target corp",
+      "target stores",
+      "target inc"
+    ],
+    "vodafone-idea": [
+      "vodafone idea",
+      "vodafone idea limited",
+      "vodafone idea ltd"
     ]
   },
   "alias_overrides": {
@@ -25,5 +47,27 @@
     "global",
     "market",
     "markets"
-  ]
+  ],
+  "strict_companies": [
+    "dollar-industries",
+    "urban-company",
+    "target",
+    "vodafone-idea"
+  ],
+  "company_blocked_aliases": {
+    "dollar-industries": [
+      "dollar"
+    ],
+    "urban-company": [
+      "urban"
+    ],
+    "target": [
+      "target"
+    ],
+    "vodafone-idea": [
+      "idea",
+      "vodafone",
+      "vi"
+    ]
+  }
 }
