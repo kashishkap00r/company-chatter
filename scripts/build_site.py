@@ -196,6 +196,7 @@ def wrap_base(
     updated_relative: str,
     body_class: str = "",
     asset_version: str,
+    header_search_html: str = "",
 ) -> str:
     return render_template(
         "base.html",
@@ -206,6 +207,7 @@ def wrap_base(
             "updated_relative": updated_relative,
             "body_class": body_class,
             "asset_version": asset_version,
+            "header_search_html": header_search_html,
         },
     )
 
@@ -870,16 +872,12 @@ def merge_company_variants(
     return merged_companies, merged_quotes, merged_mentions, resolution_report
 
 
-def build_index(
+def build_company_records(
     companies: list[dict],
     quotes: list[dict],
     mentions: list[dict],
     story_mentions_count_by_company: dict[str, int],
-    total_story_mentions: int,
-    updated_iso: str,
-    updated_relative: str,
-    asset_version: str,
-) -> None:
+) -> list[dict]:
     quote_count_by_company: dict[str, int] = {}
     edition_ids_by_company: dict[str, set[str]] = {}
     for q in quotes:
@@ -909,6 +907,17 @@ def build_index(
             }
         )
 
+    return company_records
+
+
+def build_index(
+    company_records: list[dict],
+    quotes: list[dict],
+    total_story_mentions: int,
+    updated_iso: str,
+    updated_relative: str,
+    asset_version: str,
+) -> None:
     company_data_json = json.dumps(company_records, ensure_ascii=False).replace("</", "<\\/")
     company_record_by_slug = {str(row["slug"]): row for row in company_records}
     featured_company_records = [
@@ -1648,7 +1657,14 @@ def build_company_pages(
             content,
             updated_iso=updated_iso,
             updated_relative=updated_relative,
+            body_class="body--company",
             asset_version=asset_version,
+            header_search_html=render_template(
+                "header_search.html",
+                {
+                    "current_company_slug": slug,
+                },
+            ),
         )
         out_dir = SITE_DIR / "company" / slug
         ensure_dir(out_dir)
@@ -1688,12 +1704,15 @@ def main() -> None:
     total_story_mentions = len(dailybrief_story_mentions)
     updated_iso, updated_relative = build_update_metadata(editions, dailybrief_posts)
     asset_version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+    company_records = build_company_records(companies, quotes, mentions, story_mentions_count_by_company)
+    (SITE_DIR / "assets" / "company-search-index.json").write_text(
+        json.dumps(company_records, ensure_ascii=False),
+        encoding="utf-8",
+    )
 
     build_index(
-        companies,
+        company_records,
         quotes,
-        mentions,
-        story_mentions_count_by_company,
         total_story_mentions,
         updated_iso,
         updated_relative,

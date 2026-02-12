@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="/assets/oat-theme-overrides.css?v={{ asset_version }}" />
     <link rel="stylesheet" href="/assets/styles.css?v={{ asset_version }}" />
   </head>
-  <body class="{{ body_class }}">
+  <body class="{{ body_class }}" data-asset-version="{{ asset_version }}">
     <header class="header">
       <div class="header-inner">
         <a class="brand" href="/">
@@ -41,6 +41,7 @@
             <small>Track what companies say and where they’re mentioned.</small>
           </span>
         </a>
+        {{ header_search_html }}
       </div>
     </header>
     <main class="container fade-in">
@@ -53,6 +54,359 @@
       <a href="https://thedailybrief.zerodha.com/" target="_blank" rel="noopener noreferrer">The Daily Brief</a>.
       Last updated {{ updated_relative }}.
     </footer>
+    <script>
+      (() => {
+        const root = document.querySelector('.header-search');
+        if (!root) {
+          return;
+        }
+
+        const desktopInput = document.getElementById('headerCompanySearch');
+        const desktopResults = document.getElementById('headerSearchResults');
+        const mobileInput = document.getElementById('headerCompanySearchMobile');
+        const mobileResults = document.getElementById('headerSearchResultsMobile');
+        const mobileToggle = document.getElementById('headerSearchToggle');
+        const mobileOverlay = document.getElementById('headerSearchOverlay');
+        const mobileClose = document.getElementById('headerSearchClose');
+        const currentCompanySlug = root.dataset.currentCompany || '';
+
+        let companyData = null;
+        let loadPromise = null;
+        let loadFailed = false;
+
+        function escapeHtml(value) {
+          return value
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+
+        function ensureCompanyData() {
+          if (Array.isArray(companyData)) {
+            return Promise.resolve(companyData);
+          }
+          if (loadPromise) {
+            return loadPromise;
+          }
+
+          const assetVersion = document.body.dataset.assetVersion || '';
+          const querySuffix = assetVersion ? `?v=${encodeURIComponent(assetVersion)}` : '';
+          loadPromise = window
+            .fetch(`/assets/company-search-index.json${querySuffix}`, { credentials: 'same-origin' })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`Failed to load search index (${response.status})`);
+              }
+              return response.json();
+            })
+            .then((payload) => {
+              companyData = Array.isArray(payload) ? payload : [];
+              loadFailed = false;
+              return companyData;
+            })
+            .catch(() => {
+              companyData = [];
+              loadFailed = true;
+              return companyData;
+            });
+
+          return loadPromise;
+        }
+
+        function rankedMatches(query) {
+          const lowered = query.toLowerCase();
+          return (companyData || [])
+            .filter(
+              (row) =>
+                row.slug !== currentCompanySlug &&
+                typeof row.name === 'string' &&
+                row.name.toLowerCase().includes(lowered)
+            )
+            .sort((left, right) => {
+              const leftName = left.name.toLowerCase();
+              const rightName = right.name.toLowerCase();
+              const leftExactRank = leftName === lowered ? 0 : 1;
+              const rightExactRank = rightName === lowered ? 0 : 1;
+              if (leftExactRank !== rightExactRank) {
+                return leftExactRank - rightExactRank;
+              }
+
+              const leftPrefixRank = leftName.startsWith(lowered) ? 0 : 1;
+              const rightPrefixRank = rightName.startsWith(lowered) ? 0 : 1;
+              if (leftPrefixRank !== rightPrefixRank) {
+                return leftPrefixRank - rightPrefixRank;
+              }
+
+              return leftName.localeCompare(rightName);
+            });
+        }
+
+        function renderRows(rows, idPrefix) {
+          return rows
+            .map(
+              (row, index) => `
+                <a class="result-item" id="${idPrefix}${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
+                  <strong>${escapeHtml(row.name)}</strong>
+                  <span>${row.quote_count} quotes · ${row.story_mentions_count} story mentions</span>
+                </a>
+              `
+            )
+            .join('');
+        }
+
+        function hideResults(context) {
+          context.results.hidden = true;
+          context.results.innerHTML = '';
+          context.visibleRows = [];
+          context.activeIndex = -1;
+          context.input.setAttribute('aria-expanded', 'false');
+          context.input.removeAttribute('aria-activedescendant');
+        }
+
+        function showMessage(context, label, message) {
+          context.visibleRows = [];
+          context.activeIndex = -1;
+          context.input.setAttribute('aria-expanded', 'true');
+          context.input.removeAttribute('aria-activedescendant');
+          context.results.hidden = false;
+          context.results.innerHTML = `
+            <p class="results-meta">${label}</p>
+            <p class="empty-state">${message}</p>
+          `;
+        }
+
+        function showResults(context, rows, label) {
+          context.visibleRows = rows.slice(0, 10);
+          context.activeIndex = -1;
+          context.input.removeAttribute('aria-activedescendant');
+          context.input.setAttribute('aria-expanded', 'true');
+          context.results.hidden = false;
+
+          if (!context.visibleRows.length) {
+            showMessage(context, '0 matches', 'No company found for this query.');
+            return;
+          }
+
+          context.results.innerHTML = `
+            <p class="results-meta">${label}</p>
+            ${renderRows(context.visibleRows, context.idPrefix)}
+          `;
+        }
+
+        function setActiveIndex(context, nextIndex) {
+          const items = Array.from(context.results.querySelectorAll('.result-item'));
+          if (!items.length) {
+            context.activeIndex = -1;
+            context.input.removeAttribute('aria-activedescendant');
+            return;
+          }
+
+          if (nextIndex < 0) {
+            nextIndex = items.length - 1;
+          } else if (nextIndex >= items.length) {
+            nextIndex = 0;
+          }
+
+          context.activeIndex = nextIndex;
+          items.forEach((item, index) => {
+            const isActive = index === context.activeIndex;
+            item.classList.toggle('active', isActive);
+            item.setAttribute('aria-selected', String(isActive));
+          });
+
+          const activeItem = items[context.activeIndex];
+          if (activeItem) {
+            context.input.setAttribute('aria-activedescendant', activeItem.id);
+            activeItem.scrollIntoView({ block: 'nearest' });
+          }
+        }
+
+        function renderResults(context, rawQuery) {
+          const query = rawQuery.trim();
+          if (!query) {
+            hideResults(context);
+            return;
+          }
+
+          if (loadFailed) {
+            showMessage(context, 'Search unavailable', 'Unable to load company index right now.');
+            return;
+          }
+
+          if (!Array.isArray(companyData)) {
+            showMessage(context, 'Loading companies', 'Please wait a moment...');
+            void ensureCompanyData().then(() => {
+              const latestQuery = context.input.value.trim();
+              if (!latestQuery) {
+                hideResults(context);
+                return;
+              }
+              renderResults(context, latestQuery);
+            });
+            return;
+          }
+
+          const matches = rankedMatches(query);
+          showResults(context, matches, `${matches.length} matches`);
+        }
+
+        function bindContext(context) {
+          context.input.addEventListener('focus', () => {
+            void ensureCompanyData();
+            renderResults(context, context.input.value);
+          });
+
+          context.input.addEventListener('input', () => {
+            renderResults(context, context.input.value);
+          });
+
+          context.input.addEventListener('keydown', (event) => {
+            if (context.results.hidden) {
+              return;
+            }
+
+            if (event.key === 'Escape') {
+              event.preventDefault();
+              hideResults(context);
+              return;
+            }
+
+            if (!context.visibleRows.length) {
+              return;
+            }
+
+            if (event.key === 'ArrowDown') {
+              event.preventDefault();
+              setActiveIndex(context, context.activeIndex + 1);
+              return;
+            }
+
+            if (event.key === 'ArrowUp') {
+              event.preventDefault();
+              setActiveIndex(context, context.activeIndex - 1);
+              return;
+            }
+
+            if (event.key === 'Enter' && context.activeIndex >= 0) {
+              event.preventDefault();
+              window.location.href = `/company/${context.visibleRows[context.activeIndex].slug}/`;
+            }
+          });
+
+          context.results.addEventListener('pointerdown', (event) => {
+            if (!(event.target instanceof Element)) {
+              return;
+            }
+
+            const rowLink = event.target.closest('.result-item');
+            if (!rowLink) {
+              return;
+            }
+
+            const href = rowLink.getAttribute('href');
+            if (!href) {
+              return;
+            }
+
+            event.preventDefault();
+            window.location.href = href;
+          });
+        }
+
+        if (desktopInput && desktopResults) {
+          const desktopContext = {
+            input: desktopInput,
+            results: desktopResults,
+            idPrefix: 'headerResultOption',
+            activeIndex: -1,
+            visibleRows: [],
+          };
+
+          bindContext(desktopContext);
+
+          desktopInput.addEventListener('blur', () => {
+            window.setTimeout(() => {
+              if (!root.contains(document.activeElement)) {
+                hideResults(desktopContext);
+              }
+            }, 0);
+          });
+
+          document.addEventListener('pointerdown', (event) => {
+            if (!(event.target instanceof Element)) {
+              return;
+            }
+            if (!event.target.closest('.header-search-form')) {
+              hideResults(desktopContext);
+            }
+          });
+
+          hideResults(desktopContext);
+        }
+
+        if (mobileInput && mobileResults) {
+          const mobileContext = {
+            input: mobileInput,
+            results: mobileResults,
+            idPrefix: 'headerMobileResultOption',
+            activeIndex: -1,
+            visibleRows: [],
+          };
+          bindContext(mobileContext);
+          hideResults(mobileContext);
+
+          const openOverlay = () => {
+            if (!mobileOverlay) {
+              return;
+            }
+            mobileOverlay.hidden = false;
+            document.body.classList.add('header-search-overlay-open');
+            void ensureCompanyData();
+            window.setTimeout(() => {
+              mobileInput.focus();
+            }, 0);
+          };
+
+          const closeOverlay = () => {
+            if (!mobileOverlay) {
+              return;
+            }
+            mobileOverlay.hidden = true;
+            document.body.classList.remove('header-search-overlay-open');
+            hideResults(mobileContext);
+          };
+
+          if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+              openOverlay();
+            });
+          }
+
+          if (mobileClose) {
+            mobileClose.addEventListener('click', () => {
+              closeOverlay();
+            });
+          }
+
+          if (mobileOverlay) {
+            mobileOverlay.addEventListener('pointerdown', (event) => {
+              if (event.target === mobileOverlay) {
+                closeOverlay();
+              }
+            });
+          }
+
+          document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && mobileOverlay && !mobileOverlay.hidden) {
+              event.preventDefault();
+              closeOverlay();
+            }
+          });
+        }
+      })();
+    </script>
     <script src="/assets/vendor/oat/oat.min.js?v={{ asset_version }}" defer></script>
   </body>
 </html>

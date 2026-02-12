@@ -1,0 +1,47 @@
+<div class="header-search" data-current-company="{{ current_company_slug }}">
+  <form class="header-search-form" role="search" novalidate>
+    <label class="header-search-shell" data-field>
+      <input
+        type="search"
+        id="headerCompanySearch"
+        placeholder="Jump to another company..."
+        autocomplete="off"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="headerSearchResults"
+        aria-label="Search companies from this page"
+      />
+    </label>
+    <div class="header-search-results card" id="headerSearchResults" role="listbox" hidden></div>
+  </form>
+
+  <button class="header-search-toggle" id="headerSearchToggle" type="button" aria-label="Search companies">
+    <span class="header-search-toggle-icon" aria-hidden="true"></span>
+  </button>
+
+  <div class="header-search-overlay" id="headerSearchOverlay" hidden>
+    <div class="header-search-overlay-panel card" role="dialog" aria-modal="true" aria-label="Search companies">
+      <div class="header-search-overlay-head">
+        <p>Search companies</p>
+        <button class="header-search-close" id="headerSearchClose" type="button">Close</button>
+      </div>
+      <form class="header-search-mobile-form" role="search" novalidate>
+        <label class="header-search-shell" data-field>
+          <input
+            type="search"
+            id="headerCompanySearchMobile"
+            placeholder="Type a company name..."
+            autocomplete="off"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="headerSearchResultsMobile"
+            aria-label="Search companies from this page"
+          />
+        </label>
+      </form>
+      <div class="header-search-mobile-results card" id="headerSearchResultsMobile" role="listbox" hidden></div>
+    </div>
+  </div>
+</div>
