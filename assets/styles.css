@@ -506,7 +506,7 @@ a {
   padding-top: 8px;
 }
 
-.segment-dropdown summary {
+.segment-dropdown > summary {
   cursor: pointer;
   color: var(--brand-blue);
   font-family: var(--font-mono);
@@ -517,7 +517,7 @@ a {
   list-style: none;
 }
 
-.segment-dropdown summary::-webkit-details-marker {
+.segment-dropdown > summary::-webkit-details-marker {
   display: none;
 }
 
@@ -826,7 +826,7 @@ a {
     font-size: 17px;
   }
 
-  .segment-dropdown summary {
+  .segment-dropdown > summary {
     font-size: 10px;
   }
 

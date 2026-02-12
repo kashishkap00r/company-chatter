@@ -195,6 +195,7 @@ def wrap_base(
     updated_iso: str,
     updated_relative: str,
     body_class: str = "",
+    asset_version: str,
 ) -> str:
     return render_template(
         "base.html",
@@ -204,6 +205,7 @@ def wrap_base(
             "updated_iso": updated_iso,
             "updated_relative": updated_relative,
             "body_class": body_class,
+            "asset_version": asset_version,
         },
     )
 
@@ -876,6 +878,7 @@ def build_index(
     total_story_mentions: int,
     updated_iso: str,
     updated_relative: str,
+    asset_version: str,
 ) -> None:
     quote_count_by_company: dict[str, int] = {}
     edition_ids_by_company: dict[str, set[str]] = {}
@@ -951,6 +954,7 @@ def build_index(
         updated_iso=updated_iso,
         updated_relative=updated_relative,
         body_class="body--home-fixed",
+        asset_version=asset_version,
     )
     (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
 
@@ -1515,6 +1519,7 @@ def build_company_pages(
     dailybrief_mentions_by_company: dict[str, list[dict]],
     updated_iso: str,
     updated_relative: str,
+    asset_version: str,
 ) -> None:
     company_dir = SITE_DIR / "company"
     if company_dir.exists():
@@ -1643,6 +1648,7 @@ def build_company_pages(
             content,
             updated_iso=updated_iso,
             updated_relative=updated_relative,
+            asset_version=asset_version,
         )
         out_dir = SITE_DIR / "company" / slug
         ensure_dir(out_dir)
@@ -1681,6 +1687,7 @@ def main() -> None:
     }
     total_story_mentions = len(dailybrief_story_mentions)
     updated_iso, updated_relative = build_update_metadata(editions, dailybrief_posts)
+    asset_version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
 
     build_index(
         companies,
@@ -1690,6 +1697,7 @@ def main() -> None:
         total_story_mentions,
         updated_iso,
         updated_relative,
+        asset_version,
     )
     build_company_pages(
         companies,
@@ -1699,6 +1707,7 @@ def main() -> None:
         dailybrief_mentions_by_company,
         updated_iso,
         updated_relative,
+        asset_version,
     )
     ENTITY_RESOLUTION_REPORT_FILE.write_text(
         json.dumps(resolution_report, ensure_ascii=False, indent=2),
