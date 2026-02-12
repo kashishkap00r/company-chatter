@@ -8,7 +8,7 @@ on:
       - "data/**"
       - "templates/**"
       - "assets/**"
-      - ".github/workflows/entity-resolution-guard.yml"
+      - ".github/workflows/**"
   push:
     branches: [main]
     paths:
@@ -16,7 +16,7 @@ on:
       - "data/**"
       - "templates/**"
       - "assets/**"
-      - ".github/workflows/entity-resolution-guard.yml"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 jobs:
@@ -31,9 +31,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Scrape latest archive
-        run: python3 scripts/scrape.py
 
       - name: Build site and entity report
         run: python3 scripts/build_site.py

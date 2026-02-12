@@ -31,6 +31,27 @@
       "vodafone idea",
       "vodafone idea limited",
       "vodafone idea ltd"
+    ],
+    "spotify": [
+      "spotify technology",
+      "spotify technologies",
+      "spotify india",
+      "spotify premium"
+    ],
+    "route-mobile": [
+      "route mobile",
+      "route mobile limited",
+      "routemobile"
+    ],
+    "rain-industries": [
+      "rain industries",
+      "rain industries limited",
+      "rain inds"
+    ],
+    "shell-plc": [
+      "shell plc",
+      "royal dutch shell",
+      "shell india"
     ]
   },
   "alias_overrides": {
@@ -52,7 +73,11 @@
     "dollar-industries",
     "urban-company",
     "target",
-    "vodafone-idea"
+    "vodafone-idea",
+    "spotify",
+    "route-mobile",
+    "rain-industries",
+    "shell-plc"
   ],
   "company_blocked_aliases": {
     "dollar-industries": [
@@ -68,6 +93,18 @@
       "idea",
       "vodafone",
       "vi"
+    ],
+    "spotify": [
+      "spotify"
+    ],
+    "route-mobile": [
+      "route"
+    ],
+    "rain-industries": [
+      "rain"
+    ],
+    "shell-plc": [
+      "shell"
     ]
   }
 }
