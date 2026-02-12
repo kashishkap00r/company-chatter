@@ -259,13 +259,15 @@ a {
 }
 
 .company-hero {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .company-hero-minimal {
   border: 1px solid var(--stroke);
   border-radius: var(--radius-16);
-  background: var(--surface-1);
+  background:
+    linear-gradient(180deg, rgba(56, 126, 209, 0.06) 0%, rgba(255, 255, 255, 0) 46%),
+    var(--surface-1);
   box-shadow: var(--shadow-2);
   padding: clamp(20px, 3.4vw, 30px);
 }
@@ -299,28 +301,203 @@ a {
 .company-mini-meta {
   margin: 0;
   color: var(--label-grey);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .company-summary {
   margin: 8px 0 0;
   color: var(--body-grey);
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.56;
 }
 
+.segment-card {
+  margin-bottom: 14px;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-16);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-2);
+  padding: 14px 16px;
+}
+
+.segment-card.card {
+  overflow: visible;
+}
+
+.brief-card {
+  border-color: #efdec0;
+  background:
+    linear-gradient(180deg, rgba(255, 164, 18, 0.09) 0%, rgba(255, 255, 255, 0) 42%),
+    var(--surface-1);
+}
+
+.chatter-card {
+  border-color: #d7e1ef;
+  background:
+    linear-gradient(180deg, rgba(56, 126, 209, 0.08) 0%, rgba(255, 255, 255, 0) 40%),
+    var(--surface-1);
+}
+
+.segment-header h3 {
+  margin: 6px 0 2px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.24;
+  color: var(--deep-grey);
+}
+
+.segment-subtitle {
+  margin: 0;
+  color: var(--body-grey);
+  font-size: 14px;
+}
+
+.segment-meta {
+  margin: 2px 0 0;
+  color: var(--label-grey);
+  font-size: 12px;
+}
+
+.segment-chip {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.segment-chip-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.segment-chip-brief {
+  color: #9b6400;
+  background: rgba(255, 164, 18, 0.2);
+}
+
+.segment-chip-brief .segment-chip-icon {
+  background: rgba(255, 164, 18, 0.36);
+  color: #8e5b00;
+}
+
+.segment-chip-chatter {
+  color: #2f6db6;
+  background: rgba(56, 126, 209, 0.18);
+}
+
+.segment-chip-chatter .segment-chip-icon {
+  background: rgba(56, 126, 209, 0.3);
+  color: #255ca0;
+}
+
+.headline-list {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.headline-item {
+  padding: 9px 0;
+  border-top: 1px solid #e4e7ea;
+}
+
+.headline-item:first-child {
+  border-top: 0;
+}
+
+.headline-link {
+  color: var(--deep-grey);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.26;
+}
+
+.headline-link:hover {
+  color: #9b6400;
+}
+
+.headline-meta {
+  margin: 3px 0 0;
+  color: var(--label-grey);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.segment-empty {
+  margin: 10px 0 2px;
+  color: var(--body-grey);
+  font-size: 14px;
+}
+
+.segment-dropdown {
+  margin-top: 8px;
+  border-top: 1px dashed #cfd3d7;
+  padding-top: 8px;
+}
+
+.segment-dropdown summary {
+  cursor: pointer;
+  color: var(--brand-blue);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.segment-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.segment-dropdown-panel {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.28s ease,
+    opacity 0.28s ease,
+    margin-top 0.28s ease;
+}
+
+.segment-dropdown[open] .segment-dropdown-panel {
+  margin-top: 8px;
+  max-height: 3200px;
+  opacity: 1;
+}
+
+.headline-list-more {
+  margin-top: 0;
+}
+
+.story-timeline-more {
+  margin-top: 0;
+}
+
 .story-timeline {
+  margin-top: 10px;
   display: grid;
   gap: 14px;
 }
 
 .edition-chapter {
-  border: 1px solid var(--stroke);
+  border: 1px solid #dce3ec;
   border-radius: var(--radius-16);
-  background: var(--surface-1);
+  background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow-2);
   padding: 16px;
 }
@@ -522,6 +699,22 @@ a {
 
   .home-minimal h2 {
     font-size: clamp(30px, 10vw, 46px);
+  }
+
+  .segment-card {
+    padding: 12px 13px;
+  }
+
+  .segment-header h3 {
+    font-size: 18px;
+  }
+
+  .headline-link {
+    font-size: 16px;
+  }
+
+  .segment-dropdown summary {
+    font-size: 10px;
   }
 
   .chapter-head {

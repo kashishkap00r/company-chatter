@@ -1,10 +1,46 @@
 <section class="company-hero company-hero-minimal card">
-  <p class="eyebrow">Company Timeline</p>
+  <p class="eyebrow">Company Archive</p>
   <h2>{{ company_name_link }}</h2>
   <p class="company-mini-meta">{{ company_timeline_meta }}</p>
   <p class="company-summary">{{ company_meta }}</p>
 </section>
 
-<section class="story-timeline">
-  {{ edition_sections }}
-</section>
+{{ dailybrief_section }}
+
+{{ chatter_section }}
+
+<script>
+  (() => {
+    const companySlug = '{{ company_slug }}';
+    if (!companySlug) {
+      return;
+    }
+
+    const detailsNodes = document.querySelectorAll('details[data-persist-key]');
+    detailsNodes.forEach((node) => {
+      const persistKey = node.dataset.persistKey;
+      if (!persistKey) {
+        return;
+      }
+      const storageKey = `cc:${companySlug}:${persistKey}`;
+      try {
+        const saved = window.localStorage.getItem(storageKey);
+        if (saved === 'open') {
+          node.open = true;
+        } else if (saved === 'closed') {
+          node.open = false;
+        }
+      } catch (_error) {
+        // Ignore storage failures.
+      }
+
+      node.addEventListener('toggle', () => {
+        try {
+          window.localStorage.setItem(storageKey, node.open ? 'open' : 'closed');
+        } catch (_error) {
+          // Ignore storage failures.
+        }
+      });
+    });
+  })();
+</script>

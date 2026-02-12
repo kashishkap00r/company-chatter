@@ -1,7 +1,7 @@
 <section class="home-minimal">
   <p class="eyebrow">Company Chatter</p>
   <h2>Find a company. Read its story.</h2>
-  <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_editions }} editions</p>
+  <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_story_mentions }} story mentions</p>
 
   <div class="search-module">
     <form class="search-shell card" role="search" novalidate>
@@ -130,7 +130,7 @@
           (row, index) => `
             <a class="result-item" id="resultOption${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
               <strong>${escapeHtml(row.name)}</strong>
-              <span>${row.quote_count} quotes · ${row.edition_count} editions · ${escapeHtml(row.latest_date)}</span>
+              <span>${row.quote_count} quotes · ${row.story_mentions_count} story mentions</span>
             </a>
           `
         )

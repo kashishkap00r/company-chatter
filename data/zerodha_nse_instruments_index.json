@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-10T16:56:23+00:00",
+  "generated_at": "2026-02-12T19:01:43+00:00",
   "source_url": "https://api.kite.trade/instruments",
-  "entry_count": 9106,
+  "entry_count": 9107,
   "entries": [
     {
       "symbol": "GOLDSTAR-SM",
@@ -9536,16 +9536,16 @@
       "display_name": "ICICIPRAMC - ICICMOINAV"
     },
     {
-      "symbol": "LOYALTEX",
-      "display_name": "LOYAL TEXTILE MILLS"
-    },
-    {
       "symbol": "GUJGASLTD",
       "display_name": "GUJARAT GAS"
     },
     {
       "symbol": "BHARTIARTL",
       "display_name": "BHARTI AIRTEL"
+    },
+    {
+      "symbol": "LOYALTEX-BE",
+      "display_name": "LOYAL TEXTILE MILLS"
     },
     {
       "symbol": "USASEEDS-SM",
@@ -16624,7 +16624,7 @@
       "display_name": "TARAPUR TRANSFORMERS"
     },
     {
-      "symbol": "NIRAJISPAT",
+      "symbol": "NIRAJISPAT-BE",
       "display_name": "NIRAJ ISPAT IND"
     },
     {
@@ -21868,10 +21868,6 @@
       "display_name": "MIRAEAMC - SMALLCAP"
     },
     {
-      "symbol": "1035UCL26-NA",
-      "display_name": "1035UCL26-NA"
-    },
-    {
       "symbol": "105UCL2026-NB",
       "display_name": "105UCL2026-NB"
     },
@@ -21978,10 +21974,6 @@
     {
       "symbol": "744IRFC34-NR",
       "display_name": "744IRFC34-NR"
-    },
-    {
-      "symbol": "832TPL26-N4",
-      "display_name": "832TPL26-N4"
     },
     {
       "symbol": "832TPL27-N5",
@@ -22804,8 +22796,8 @@
       "display_name": "MUTF27-NL"
     },
     {
-      "symbol": "SABTNL-BE",
-      "display_name": "SRI ADHIKARI BRO TELE N L"
+      "symbol": "AQYLON-BE",
+      "display_name": "AQYLON NEXUS"
     },
     {
       "symbol": "VISHWAS-SM",
@@ -25130,10 +25122,6 @@
     {
       "symbol": "73BOB34-N0",
       "display_name": "73BOB34-N0"
-    },
-    {
-      "symbol": "975SIPL27A-N0",
-      "display_name": "975SIPL27A-N0"
     },
     {
       "symbol": "731RECL39-N0",
@@ -30064,6 +30052,10 @@
       "display_name": "GROWWAMC - GRWCHEINAV"
     },
     {
+      "symbol": "GROWWEINAV",
+      "display_name": "GROWWAMC - GROWWEINAV"
+    },
+    {
       "symbol": "PILITA",
       "display_name": "PIL ITALICA LIFESTYLE"
     },
@@ -32628,7 +32620,7 @@
       "display_name": "SPANDANA RS.5 PPD UP"
     },
     {
-      "symbol": "MEDISTEP-SM",
+      "symbol": "MEDISTEP-ST",
       "display_name": "MEDISTEP HEALTHCARE"
     },
     {
@@ -34144,10 +34136,6 @@
       "display_name": "PIRAMAL FINANCE"
     },
     {
-      "symbol": "935PFL26-N0",
-      "display_name": "935PFL26-N0"
-    },
-    {
       "symbol": "95PFL34-N0",
       "display_name": "95PFL34-N0"
     },
@@ -34920,7 +34908,7 @@
       "display_name": "GLOTTIS"
     },
     {
-      "symbol": "VIJAYPD-SM",
+      "symbol": "VIJAYPD-ST",
       "display_name": "VIJAYPD CEUTICAL"
     },
     {
@@ -35380,10 +35368,6 @@
       "display_name": "RAJESH EXPORTS"
     },
     {
-      "symbol": "DIL-BZ",
-      "display_name": "DEBOCK INDUSTRIES"
-    },
-    {
       "symbol": "895PAPL27-N0",
       "display_name": "895PAPL27-N0"
     },
@@ -35760,7 +35744,7 @@
       "display_name": "GOI LOAN  6.68% 2033"
     },
     {
-      "symbol": "KRMAYURVED-ST",
+      "symbol": "KRMAYURVED-SM",
       "display_name": "KRM AYURVEDA"
     },
     {
@@ -36306,6 +36290,26 @@
     {
       "symbol": "1225DCCL27-N0",
       "display_name": "1225DCCL27-N0"
+    },
+    {
+      "symbol": "790TPL29-N0",
+      "display_name": "790TPL29-N0"
+    },
+    {
+      "symbol": "785TPL28-N0",
+      "display_name": "785TPL28-N0"
+    },
+    {
+      "symbol": "GJL-ST",
+      "display_name": "GROVER JEWELLS"
+    },
+    {
+      "symbol": "BRANDMAN-ST",
+      "display_name": "BRANDMAN RETAIL"
+    },
+    {
+      "symbol": "GROWWPSE",
+      "display_name": "GROWWAMC - GROWWPSE"
     },
     {
       "symbol": "KRISHNADEF",

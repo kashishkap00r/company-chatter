@@ -1,0 +1,29 @@
+{
+  "company_aliases": {
+    "reliance-industries": [
+      "reliance",
+      "ril",
+      "reliance retail",
+      "reliance consumer products"
+    ],
+    "tata-motors": [
+      "jaguar land rover",
+      "jlr"
+    ]
+  },
+  "alias_overrides": {
+    "reliance": "reliance-industries",
+    "ril": "reliance-industries",
+    "jaguar land rover": "tata-motors",
+    "jlr": "tata-motors"
+  },
+  "blocked_aliases": [
+    "group",
+    "company",
+    "india",
+    "indian",
+    "global",
+    "market",
+    "markets"
+  ]
+}

@@ -19,6 +19,18 @@ Output JSON files will be written to `data/`:
 - `data/quotes.json`
 - `data/company_mentions.json`
 - `data/link_audit_report.json`
+- `data/dailybrief_posts.json`
+- `data/dailybrief_fetch_state.json`
+
+## Daily Brief Refresh (standalone)
+`scripts/scrape.py` now refreshes Daily Brief cache automatically.  
+To refresh only Daily Brief data:
+```bash
+python3 scripts/scrape_dailybrief.py
+```
+
+Manual alias controls for broad group mentions:
+- `data/dailybrief_alias_rules.json`
 
 ## Refresh Zerodha NSE Stock Index
 ```bash
@@ -35,6 +47,8 @@ python3 scripts/build_site.py
 ```
 
 Output will be in `site/`.
+Additional build artifact:
+- `data/dailybrief_story_mentions.json`
 
 ## UI Library (Oat)
 Oat is vendored locally and loaded from:

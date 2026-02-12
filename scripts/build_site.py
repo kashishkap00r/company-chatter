@@ -6,12 +6,14 @@ Inputs:
 - data/companies.json
 - data/quotes.json
 - data/company_mentions.json
+- data/dailybrief_posts.json (optional)
 
 Outputs:
 - site/index.html
 - site/company/<slug>/index.html
 - site/assets/styles.css
 - data/entity_resolution_report.json
+- data/dailybrief_story_mentions.json
 """
 
 from __future__ import annotations
@@ -50,6 +52,9 @@ ENTITY_ALIAS_RULES_FILE = DATA_DIR / "entity_alias_rules.json"
 ENTITY_BLOCK_RULES_FILE = DATA_DIR / "entity_block_rules.json"
 NON_COMPANY_RULES_FILE = DATA_DIR / "non_company_rules.json"
 ENTITY_RESOLUTION_REPORT_FILE = DATA_DIR / "entity_resolution_report.json"
+DAILYBRIEF_POSTS_FILE = DATA_DIR / "dailybrief_posts.json"
+DAILYBRIEF_ALIAS_RULES_FILE = DATA_DIR / "dailybrief_alias_rules.json"
+DAILYBRIEF_STORY_MENTIONS_FILE = DATA_DIR / "dailybrief_story_mentions.json"
 TOKEN_EQUIVALENTS = {
     "tech": "technology",
     "technologies": "technology",
@@ -126,6 +131,8 @@ SENTENCE_START_TOKENS = {
     "given",
     "are",
 }
+DAILYBRIEF_VISIBLE_DEFAULT = 3
+CHATTER_VISIBLE_DEFAULT = 4
 
 
 def read_json(path: Path):
@@ -845,41 +852,39 @@ def merge_company_variants(
     return merged_companies, merged_quotes, merged_mentions, resolution_report
 
 
-def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[dict], mentions: list[dict]) -> None:
+def build_index(
+    companies: list[dict],
+    quotes: list[dict],
+    mentions: list[dict],
+    story_mentions_count_by_company: dict[str, int],
+    total_story_mentions: int,
+) -> None:
     quote_count_by_company: dict[str, int] = {}
     edition_ids_by_company: dict[str, set[str]] = {}
-    latest_date_by_company: dict[str, str] = {}
     for q in quotes:
         company_id = q["company_id"]
         quote_count_by_company[company_id] = quote_count_by_company.get(company_id, 0) + 1
         edition_ids_by_company.setdefault(company_id, set()).add(q["edition_id"])
 
-        edition_date = editions.get(q["edition_id"], {}).get("date", "")
-        if edition_date and edition_date > latest_date_by_company.get(company_id, ""):
-            latest_date_by_company[company_id] = edition_date
-
     for m in mentions:
         company_id = m["company_id"]
         edition_id = m["edition_id"]
         edition_ids_by_company.setdefault(company_id, set()).add(edition_id)
-        edition_date = editions.get(edition_id, {}).get("date", "")
-        if edition_date and edition_date > latest_date_by_company.get(company_id, ""):
-            latest_date_by_company[company_id] = edition_date
 
     company_records = []
     for company in sorted(companies, key=lambda c: c["name"].lower()):
         slug = company["id"]
         quote_count = quote_count_by_company.get(slug, 0)
+        story_mentions_count = story_mentions_count_by_company.get(slug, 0)
         edition_ids = edition_ids_by_company.get(slug, set())
-        if quote_count == 0 and not edition_ids:
+        if quote_count == 0 and story_mentions_count == 0 and not edition_ids:
             continue
         company_records.append(
             {
                 "slug": slug,
                 "name": company["name"],
                 "quote_count": quote_count,
-                "edition_count": len(edition_ids),
-                "latest_date": format_date(latest_date_by_company.get(slug, "")),
+                "story_mentions_count": story_mentions_count,
             }
         )
 
@@ -891,7 +896,7 @@ def build_index(companies: list[dict], editions: dict[str, dict], quotes: list[d
             "company_data_json": company_data_json,
             "total_companies": str(visible_companies),
             "total_quotes": str(len(quotes)),
-            "total_editions": str(len(editions)),
+            "total_story_mentions": str(total_story_mentions),
         },
     )
     html = wrap_base("Company Chatter", content)
@@ -907,7 +912,456 @@ def format_date(date_str: str) -> str:
         return date_str
 
 
-def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes: list[dict], mentions: list[dict]) -> None:
+def format_story_date(date_str: str) -> str:
+    if not date_str:
+        return "Unknown date"
+    try:
+        return datetime.fromisoformat(date_str).strftime("%d %b %Y")
+    except ValueError:
+        return date_str
+
+
+def slugify(value: str) -> str:
+    value = value.lower().strip()
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    return value.strip("-") or "unknown"
+
+
+def _normalize_alias_phrase(text: str) -> str:
+    normalized = text.lower().replace("&", " and ")
+    normalized = normalized.replace("’", "'")
+    normalized = re.sub(r"[^a-z0-9]+", " ", normalized)
+    return " ".join(normalized.split())
+
+
+def _load_dailybrief_alias_rules(path: Path) -> dict[str, object]:
+    payload = read_json(path)
+    defaults: dict[str, object] = {
+        "company_aliases": {},
+        "alias_overrides": {},
+        "blocked_aliases": set(),
+    }
+    if not isinstance(payload, dict):
+        return defaults
+
+    company_aliases_payload = payload.get("company_aliases", {})
+    alias_overrides_payload = payload.get("alias_overrides", {})
+    blocked_aliases_payload = payload.get("blocked_aliases", [])
+
+    parsed_company_aliases: dict[str, set[str]] = {}
+    if isinstance(company_aliases_payload, dict):
+        for company_id, aliases in company_aliases_payload.items():
+            company_key = str(company_id).strip()
+            if not company_key or not isinstance(aliases, list):
+                continue
+            parsed_aliases = {
+                _normalize_alias_phrase(str(alias))
+                for alias in aliases
+                if _normalize_alias_phrase(str(alias))
+            }
+            if parsed_aliases:
+                parsed_company_aliases[company_key] = parsed_aliases
+
+    parsed_alias_overrides: dict[str, str] = {}
+    if isinstance(alias_overrides_payload, dict):
+        for alias, company_id in alias_overrides_payload.items():
+            alias_key = _normalize_alias_phrase(str(alias))
+            company_key = str(company_id).strip()
+            if alias_key and company_key:
+                parsed_alias_overrides[alias_key] = company_key
+
+    parsed_blocked_aliases: set[str] = set()
+    if isinstance(blocked_aliases_payload, list):
+        for alias in blocked_aliases_payload:
+            alias_key = _normalize_alias_phrase(str(alias))
+            if alias_key:
+                parsed_blocked_aliases.add(alias_key)
+
+    return {
+        "company_aliases": parsed_company_aliases,
+        "alias_overrides": parsed_alias_overrides,
+        "blocked_aliases": parsed_blocked_aliases,
+    }
+
+
+def _merged_member_names_by_canonical_id(resolution_report: dict[str, object]) -> dict[str, set[str]]:
+    groups = resolution_report.get("merged_groups", [])
+    if not isinstance(groups, list):
+        return {}
+
+    members_by_canonical: dict[str, set[str]] = {}
+    for group in groups:
+        if not isinstance(group, dict):
+            continue
+        canonical_id = str(group.get("canonical_id") or "").strip()
+        if not canonical_id:
+            continue
+
+        member_names: set[str] = set()
+        canonical_name = str(group.get("canonical_name") or "").strip()
+        if canonical_name:
+            member_names.add(canonical_name)
+
+        members = group.get("members", [])
+        if isinstance(members, list):
+            for member in members:
+                if not isinstance(member, dict):
+                    continue
+                member_name = str(member.get("name") or "").strip()
+                if member_name:
+                    member_names.add(member_name)
+
+        if member_names:
+            members_by_canonical.setdefault(canonical_id, set()).update(member_names)
+
+    return members_by_canonical
+
+
+def _company_symbol_from_url(url: str | None) -> str | None:
+    market_key = _market_key_from_url(url)
+    if not market_key:
+        return None
+    _, symbol = market_key.split(":", 1)
+    normalized_symbol = _normalize_alias_phrase(symbol)
+    if 1 < len(normalized_symbol) <= 12:
+        return normalized_symbol
+    return None
+
+
+def _build_company_alias_map(
+    companies: list[dict],
+    resolution_report: dict[str, object],
+    alias_rules: dict[str, object],
+) -> dict[str, set[str]]:
+    aliases_by_company: dict[str, set[str]] = {}
+    merged_member_names = _merged_member_names_by_canonical_id(resolution_report)
+    company_aliases_rules = alias_rules.get("company_aliases", {})
+    alias_overrides = alias_rules.get("alias_overrides", {})
+    blocked_aliases = alias_rules.get("blocked_aliases", set())
+
+    for company in companies:
+        company_id = str(company.get("id") or "").strip()
+        if not company_id:
+            continue
+
+        aliases: set[str] = set()
+        company_name = str(company.get("name") or "").strip()
+        normalized_name = _normalize_alias_phrase(company_name)
+        if normalized_name:
+            aliases.add(normalized_name)
+
+        collapsed_name = _normalize_alias_phrase(" ".join(_normalized_name_tokens(company_name)))
+        if collapsed_name:
+            aliases.add(collapsed_name)
+
+        for member_name in merged_member_names.get(company_id, set()):
+            alias_key = _normalize_alias_phrase(member_name)
+            if alias_key:
+                aliases.add(alias_key)
+
+        if isinstance(company_aliases_rules, dict):
+            for alias in company_aliases_rules.get(company_id, set()):
+                alias_key = _normalize_alias_phrase(str(alias))
+                if alias_key:
+                    aliases.add(alias_key)
+
+        symbol_alias = _company_symbol_from_url(company.get("url"))
+        if symbol_alias:
+            aliases.add(symbol_alias)
+
+        if isinstance(alias_overrides, dict):
+            for alias_key, override_company_id in alias_overrides.items():
+                if override_company_id == company_id:
+                    aliases.add(_normalize_alias_phrase(alias_key))
+
+        aliases = {
+            alias
+            for alias in aliases
+            if alias and alias not in blocked_aliases and len(alias) >= 2 and not alias.isdigit()
+        }
+        aliases_by_company[company_id] = aliases
+
+    return aliases_by_company
+
+
+def _compile_alias_pattern(alias: str) -> re.Pattern[str]:
+    pattern_text = re.escape(alias).replace(r"\ ", r"\s+")
+    return re.compile(rf"(?<![a-z0-9]){pattern_text}(?![a-z0-9])")
+
+
+def _build_company_alias_specs(
+    aliases_by_company: dict[str, set[str]],
+    alias_rules: dict[str, object],
+) -> dict[str, list[dict[str, object]]]:
+    alias_to_companies: dict[str, set[str]] = {}
+    for company_id, aliases in aliases_by_company.items():
+        for alias in aliases:
+            alias_to_companies.setdefault(alias, set()).add(company_id)
+
+    alias_overrides = alias_rules.get("alias_overrides", {})
+    if not isinstance(alias_overrides, dict):
+        alias_overrides = {}
+    blocked_aliases = alias_rules.get("blocked_aliases", set())
+    if not isinstance(blocked_aliases, set):
+        blocked_aliases = set()
+
+    specs_by_company: dict[str, list[dict[str, object]]] = {}
+    for company_id, aliases in aliases_by_company.items():
+        specs: list[dict[str, object]] = []
+        for alias in aliases:
+            if alias in blocked_aliases:
+                continue
+
+            override_company = alias_overrides.get(alias)
+            if override_company and override_company != company_id:
+                continue
+            if not override_company and len(alias_to_companies.get(alias, set())) > 1:
+                continue
+
+            first_token = alias.split()[0]
+            specs.append(
+                {
+                    "alias": alias,
+                    "first_token": first_token,
+                    "pattern": _compile_alias_pattern(alias),
+                }
+            )
+
+        specs.sort(key=lambda item: len(str(item["alias"])), reverse=True)
+        specs_by_company[company_id] = specs
+
+    return specs_by_company
+
+
+def _count_story_mentions(normalized_story_text: str, alias_specs: list[dict[str, object]]) -> int:
+    occupied_spans: list[tuple[int, int]] = []
+    count = 0
+
+    for spec in alias_specs:
+        pattern = spec["pattern"]
+        if not isinstance(pattern, re.Pattern):
+            continue
+        for match in pattern.finditer(normalized_story_text):
+            start, end = match.span()
+            overlaps = any(not (end <= used_start or start >= used_end) for used_start, used_end in occupied_spans)
+            if overlaps:
+                continue
+            occupied_spans.append((start, end))
+            count += 1
+
+    return count
+
+
+def build_dailybrief_story_mentions(
+    companies: list[dict],
+    resolution_report: dict[str, object],
+    dailybrief_posts: list[dict],
+) -> list[dict]:
+    if not isinstance(dailybrief_posts, list):
+        return []
+
+    alias_rules = _load_dailybrief_alias_rules(DAILYBRIEF_ALIAS_RULES_FILE)
+    aliases_by_company = _build_company_alias_map(companies, resolution_report, alias_rules)
+    alias_specs_by_company = _build_company_alias_specs(aliases_by_company, alias_rules)
+    company_ids = [str(company.get("id") or "").strip() for company in companies if str(company.get("id") or "").strip()]
+
+    story_mentions: list[dict] = []
+    seen_company_story: set[tuple[str, str]] = set()
+
+    for post in dailybrief_posts:
+        if not isinstance(post, dict):
+            continue
+        post_url = str(post.get("url") or "").strip()
+        if not post_url:
+            continue
+
+        post_title = str(post.get("title") or "").strip()
+        story_date = str(post.get("date") or post.get("sitemap_lastmod") or "").strip()
+        stories = post.get("stories", [])
+        if not isinstance(stories, list):
+            continue
+
+        for story in stories:
+            if not isinstance(story, dict):
+                continue
+            story_title = str(story.get("title") or "").strip() or post_title or "Daily Brief story"
+            story_id = str(story.get("story_id") or "").strip()
+            if not story_id:
+                story_id = slugify(f"{post_url}-{story.get('position', 0)}-{story_title}")
+
+            story_text = str(story.get("text") or "").strip()
+            normalized_story_text = _normalize_alias_phrase(story_text)
+            if not normalized_story_text:
+                continue
+
+            story_tokens = set(normalized_story_text.split())
+            matched_companies: list[tuple[str, int]] = []
+
+            for company_id in company_ids:
+                alias_specs = alias_specs_by_company.get(company_id, [])
+                if not alias_specs:
+                    continue
+                if not any(str(spec.get("first_token") or "") in story_tokens for spec in alias_specs):
+                    continue
+
+                mention_count = _count_story_mentions(normalized_story_text, alias_specs)
+                if mention_count > 0:
+                    matched_companies.append((company_id, mention_count))
+
+            if not matched_companies:
+                continue
+
+            for company_id, mention_count in matched_companies:
+                dedupe_key = (company_id, story_id)
+                if dedupe_key in seen_company_story:
+                    continue
+                seen_company_story.add(dedupe_key)
+                story_mentions.append(
+                    {
+                        "company_id": company_id,
+                        "story_id": story_id,
+                        "story_title": story_title,
+                        "story_url": post_url,
+                        "post_title": post_title,
+                        "story_date": story_date,
+                        "story_position": int(story.get("position") or 0),
+                        "story_source": str(story.get("source") or ""),
+                        "mention_count": int(mention_count),
+                    }
+                )
+
+    return story_mentions
+
+
+def group_dailybrief_mentions_by_company(story_mentions: list[dict]) -> dict[str, list[dict]]:
+    by_company: dict[str, list[dict]] = {}
+    for row in story_mentions:
+        company_id = str(row.get("company_id") or "").strip()
+        if not company_id:
+            continue
+        by_company.setdefault(company_id, []).append(row)
+
+    for rows in by_company.values():
+        rows.sort(key=lambda row: str(row.get("story_title") or "").lower())
+        rows.sort(key=lambda row: str(row.get("story_date") or ""), reverse=True)
+        rows.sort(key=lambda row: int(row.get("mention_count") or 0), reverse=True)
+
+    return by_company
+
+
+def _render_dailybrief_story_item(row: dict) -> str:
+    story_title = html_escape(str(row.get("story_title") or "Daily Brief story"))
+    story_url = html_escape(str(row.get("story_url") or ""))
+    story_date = html_escape(format_story_date(str(row.get("story_date") or "")))
+    mention_count = int(row.get("mention_count") or 0)
+    mention_label = "mention" if mention_count == 1 else "mentions"
+    return "\n".join(
+        [
+            '<li class="headline-item">',
+            (
+                f'  <a class="headline-link" href="{story_url}" target="_blank"'
+                ' rel="noopener noreferrer">'
+                f"{story_title}</a>"
+            ),
+            f'  <p class="headline-meta">{story_date} · {mention_count} {mention_label}</p>',
+            "</li>",
+        ]
+    )
+
+
+def render_dailybrief_section(stories: list[dict]) -> str:
+    visible_rows = stories[:DAILYBRIEF_VISIBLE_DEFAULT]
+    hidden_rows = stories[DAILYBRIEF_VISIBLE_DEFAULT:]
+
+    if visible_rows:
+        list_html = "\n".join(_render_dailybrief_story_item(row) for row in visible_rows)
+        body_html = f'<ol class="headline-list">{list_html}</ol>'
+    else:
+        body_html = '<p class="segment-empty">No Daily Brief story mentions for this company yet.</p>'
+
+    hidden_html = ""
+    if hidden_rows:
+        hidden_list_html = "\n".join(_render_dailybrief_story_item(row) for row in hidden_rows)
+        hidden_html = "\n".join(
+            [
+                '<details class="segment-dropdown" data-persist-key="dailybrief-more">',
+                f'  <summary>Show {len(hidden_rows)} more stories</summary>',
+                '  <div class="segment-dropdown-panel">',
+                f'    <ol class="headline-list headline-list-more">{hidden_list_html}</ol>',
+                "  </div>",
+                "</details>",
+            ]
+        )
+
+    summary = f"{len(stories)} story mentions · ranked by mention frequency"
+    return "\n".join(
+        [
+            '<section class="segment-card brief-card card">',
+            '  <div class="segment-header">',
+            '    <p class="segment-chip segment-chip-brief"><span class="segment-chip-icon">DB</span>Daily Brief</p>',
+            "    <h3>Headlines</h3>",
+            "    <p class=\"segment-subtitle\">Quick market stories where this company is mentioned.</p>",
+            f'    <p class="segment-meta">{html_escape(summary)}</p>',
+            "  </div>",
+            f"  {body_html}",
+            hidden_html,
+            "</section>",
+        ]
+    )
+
+
+def render_chatter_section(
+    visible_edition_sections: list[str],
+    hidden_edition_sections: list[str],
+    timeline_span: str,
+    edition_count: int,
+    quote_count: int,
+) -> str:
+    timeline_meta_parts = []
+    if timeline_span:
+        timeline_meta_parts.append(timeline_span)
+    timeline_meta_parts.append(f"{edition_count} editions")
+    timeline_meta_parts.append(f"{quote_count} quotes")
+    timeline_meta = " · ".join(timeline_meta_parts)
+
+    visible_html = "".join(visible_edition_sections)
+    hidden_html = ""
+    if hidden_edition_sections:
+        hidden_cards = "".join(hidden_edition_sections)
+        hidden_html = "\n".join(
+            [
+                '<details class="segment-dropdown" data-persist-key="chatter-more">',
+                f'  <summary>Show {len(hidden_edition_sections)} more editions</summary>',
+                '  <div class="segment-dropdown-panel">',
+                f'    <div class="story-timeline story-timeline-more">{hidden_cards}</div>',
+                "  </div>",
+                "</details>",
+            ]
+        )
+
+    return "\n".join(
+        [
+            '<section class="segment-card chatter-card card">',
+            '  <div class="segment-header">',
+            '    <p class="segment-chip segment-chip-chatter"><span class="segment-chip-icon">CC</span>The Chatter</p>',
+            "    <h3>Dossier Timeline</h3>",
+            "    <p class=\"segment-subtitle\">Deep management quotes and context from earnings calls.</p>",
+            f'    <p class="segment-meta">{html_escape(timeline_meta)}</p>',
+            "  </div>",
+            f'  <div class="story-timeline">{visible_html}</div>',
+            hidden_html,
+            "</section>",
+        ]
+    )
+
+
+def build_company_pages(
+    companies: list[dict],
+    editions: dict[str, dict],
+    quotes: list[dict],
+    mentions: list[dict],
+    dailybrief_mentions_by_company: dict[str, list[dict]],
+) -> None:
     company_dir = SITE_DIR / "company"
     if company_dir.exists():
         shutil.rmtree(company_dir)
@@ -928,9 +1382,10 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
         covered_edition_ids = sorted(
             quote_editions.union(mention_editions),
             key=lambda edition_id: (
-                editions.get(edition_id, {}).get("date", "") or "9999-12-31",
+                editions.get(edition_id, {}).get("date", ""),
                 edition_id,
             ),
+            reverse=True,
         )
         if not covered_edition_ids:
             continue
@@ -1027,22 +1482,36 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
             )
 
         valid_dates = sorted([date_value for date_value in dates if date_value])
-        timeline_parts = []
+        timeline_span = ""
         if valid_dates:
             first_label = format_date(valid_dates[0])
             last_label = format_date(valid_dates[-1])
-            timeline_parts.append(first_label if first_label == last_label else f"{first_label} - {last_label}")
-        timeline_parts.append(f"{len(covered_edition_ids)} editions")
-        timeline_parts.append(f"{company_quote_count} quotes")
+            timeline_span = first_label if first_label == last_label else f"{first_label} - {last_label}"
 
-        meta = "Edition-by-edition storyline from The Chatter archive."
+        dailybrief_stories = dailybrief_mentions_by_company.get(slug, [])
+        company_story_mentions = len(dailybrief_stories)
+        hero_meta = f"{company_quote_count} quotes · {company_story_mentions} story mentions"
+        meta = "The Chatter gives depth. Daily Brief gives wider market context."
+
+        visible_edition_sections = edition_sections[:CHATTER_VISIBLE_DEFAULT]
+        hidden_edition_sections = edition_sections[CHATTER_VISIBLE_DEFAULT:]
+        dailybrief_section = render_dailybrief_section(dailybrief_stories)
+        chatter_section = render_chatter_section(
+            visible_edition_sections,
+            hidden_edition_sections,
+            timeline_span,
+            len(covered_edition_ids),
+            company_quote_count,
+        )
         content = render_template(
             "company.html",
             {
+                "company_slug": slug,
                 "company_name_link": company_name_link,
                 "company_meta": meta,
-                "company_timeline_meta": " · ".join(timeline_parts),
-                "edition_sections": "\n".join(edition_sections) if edition_sections else "<p>No quotes yet.</p>",
+                "company_timeline_meta": hero_meta,
+                "dailybrief_section": dailybrief_section,
+                "chatter_section": chatter_section,
             },
         )
         html = wrap_base(f"{company['name']} | Company Chatter", content)
@@ -1071,14 +1540,35 @@ def main() -> None:
     quotes = read_json(DATA_DIR / "quotes.json")
     mentions = read_json(DATA_DIR / "company_mentions.json")
     companies, quotes, mentions, resolution_report = merge_company_variants(companies, quotes, mentions)
+    dailybrief_posts = read_json(DAILYBRIEF_POSTS_FILE)
+    dailybrief_story_mentions = build_dailybrief_story_mentions(companies, resolution_report, dailybrief_posts)
+    DAILYBRIEF_STORY_MENTIONS_FILE.write_text(
+        json.dumps(dailybrief_story_mentions, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    dailybrief_mentions_by_company = group_dailybrief_mentions_by_company(dailybrief_story_mentions)
+    story_mentions_count_by_company = {
+        company_id: len(rows) for company_id, rows in dailybrief_mentions_by_company.items()
+    }
+    total_story_mentions = len(dailybrief_story_mentions)
 
-    build_index(companies, editions, quotes, mentions)
-    build_company_pages(companies, editions, quotes, mentions)
+    build_index(
+        companies,
+        quotes,
+        mentions,
+        story_mentions_count_by_company,
+        total_story_mentions,
+    )
+    build_company_pages(companies, editions, quotes, mentions, dailybrief_mentions_by_company)
     ENTITY_RESOLUTION_REPORT_FILE.write_text(
         json.dumps(resolution_report, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
+    matched_story_count = len({row["story_id"] for row in dailybrief_story_mentions})
+    print(f"Daily Brief matched stories: {matched_story_count}")
+    print(f"Daily Brief total story mentions: {total_story_mentions}")
+    print(f"Daily Brief companies with matches: {len(dailybrief_mentions_by_company)}")
     print("Site build complete")
 
 

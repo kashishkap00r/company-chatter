@@ -3,44 +3,41 @@
 ## Project Structure & Module Organization
 This repository builds a static “Company Chatter” site from The Chatter archive.
 
-- `scripts/`: pipeline entry points.
-  - `scrape.py` extracts editions, companies, quotes, and mentions.
-  - `build_site.py` resolves entities and renders static HTML.
-  - `validate_entity_resolution.py` enforces entity guardrails.
-  - `refresh_zerodha_nse_index.py` refreshes NSE symbol mappings.
-- `data/`: generated datasets and rule files (`entity_alias_rules.json`, `entity_block_rules.json`, baseline/report JSON).
-- `templates/` + `assets/`: HTML templates and CSS.
-- `site/`: generated output (deploy artifact).
-- `.github/workflows/`: CI checks for scrape/build/validation.
+- `scripts/`: pipeline entry points (`scrape.py`, `build_site.py`, `validate_entity_resolution.py`, deploy/preview helpers).
+- `templates/`: HTML templates (`base.html`, `index.html`, `company.html`).
+- `assets/`: styles and UI library files (`styles.css`, `oat-theme-overrides.css`, `vendor/oat/*`).
+- `data/`: extracted datasets and entity-resolution rules/reports.
+- `site/`: generated output for local preview and Cloudflare deployment (build artifact).
+- `output/playwright/`: visual QA screenshots when UI checks are run.
 
 ## Build, Test, and Development Commands
-- `python3 scripts/scrape.py`: refresh archive data in `data/`.
-- `python3 scripts/build_site.py`: generate `site/` and entity report.
-- `python3 scripts/validate_entity_resolution.py`: fail on duplicate/leakage regressions.
+- `python3 scripts/scrape.py`: refresh source data into `data/`.
+- `python3 scripts/build_site.py`: generate static site into `site/`.
+- `python3 scripts/validate_entity_resolution.py`: enforce merge/no-leakage guardrails.
 - `python3 scripts/scrape.py && python3 scripts/build_site.py && python3 scripts/validate_entity_resolution.py`: full local verification.
-- `./scripts/preview.sh 8000`: preview locally.
-- `./scripts/deploy_pages.sh company-chatter`: build, validate, deploy to Cloudflare Pages.
+- `./scripts/preview.sh 8000`: build and serve locally at `http://localhost:8000`.
+- `./scripts/deploy_pages.sh company-chatter`: build, validate, and deploy to Cloudflare Pages.
+- `./scripts/update_oat.sh [ref]`: refresh vendored Oat UI assets (optional ref override).
 
 ## Coding Style & Naming Conventions
-- Python: 4-space indentation, `snake_case`, small deterministic helpers, and type hints for new/changed code.
-- IDs/slugs: lowercase kebab-style values (for example, `company-id`).
-- Keep rule-driven behavior in `data/*.json` instead of hardcoding in multiple places.
-- Frontend classes should remain readable and consistent with existing template/CSS patterns.
+- Use Python with 4-space indentation and `snake_case` naming.
+- Keep template logic lightweight; put transformations in `scripts/build_site.py`.
+- Use lowercase kebab-case for IDs/slugs (example: `tata-capital`).
+- Prefer rule-driven updates in `data/*.json` over hardcoded entity exceptions.
+- For Python sanity checks, run `python3 -m py_compile scripts/*.py`.
 
 ## Testing Guidelines
-- No dedicated unit-test suite yet; the primary gate is `validate_entity_resolution.py`.
-- For parser/resolver changes, run the full pipeline and inspect count deltas in `data/entity_resolution_report.json`.
-- For UI changes, preview generated pages (`site/index.html`, representative `site/company/<slug>/index.html`) before pushing.
+- There is no dedicated unit-test suite; `validate_entity_resolution.py` is the primary quality gate.
+- For parser/resolver changes, run full pipeline and inspect `data/entity_resolution_report.json` deltas.
+- For UI changes, verify homepage search behavior and at least one company page on desktop and mobile.
 
 ## Commit & Pull Request Guidelines
-- Use short imperative commit subjects, matching repo history (for example, `Harden Zerodha URL mapping`).
-- Keep commits focused by concern (scraper, resolver, UI, data).
-- PRs should include:
-  - what changed and why,
-  - commands run and key outputs,
-  - screenshots for UI changes,
-  - notes on regenerated data files.
+- Use short imperative commit messages (example: `Harden entity conflict guardrails`).
+- Keep commits scoped by concern (scraper, resolver, UI, data).
+- PRs should include: summary, rationale, commands run, key outputs, and screenshots for UI changes.
+- Clearly call out regenerated data artifacts to reduce review noise.
 
 ## Security & Configuration Tips
-- Never commit secrets or API tokens.
-- Treat large JSON diffs carefully; review for accidental churn before pushing.
+- Never commit secrets or tokens.
+- Verify Cloudflare auth before deploy: `npx wrangler whoami`.
+- Review large JSON diffs carefully to avoid accidental churn.

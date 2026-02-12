@@ -29,12 +29,14 @@ from urllib.request import Request, urlopen
 BASE_URL = "https://thechatter.zerodha.com/"
 SITEMAP_URL = urljoin(BASE_URL, "sitemap")
 OUTPUT_DIR = "data"
+BASE_DIR = Path(__file__).resolve().parent.parent
 ZERODHA_STOCKS_BASE = "https://zerodha.com/markets/stocks"
 KITE_INSTRUMENTS_URL = "https://api.kite.trade/instruments"
 MANUAL_MARKET_URLS_FILE = "manual_market_urls.json"
 INDIAN_LISTED_MANDATORY_FILE = "indian_listed_mandatory.json"
 LINK_AUDIT_REPORT_FILE = "link_audit_report.json"
 COMPANY_MENTIONS_FILE = "company_mentions.json"
+DAILYBRIEF_POSTS_FILE = "dailybrief_posts.json"
 NON_COMPANY_RULES_FILE = "non_company_rules.json"
 ZERODHA_NSE_INDEX_FILE = "zerodha_nse_stock_index.json"
 ZERODHA_NSE_INSTRUMENTS_FILE = "zerodha_nse_instruments_index.json"
@@ -1030,6 +1032,20 @@ def write_link_audit_report(report: dict[str, object]) -> None:
     _write_json(Path(OUTPUT_DIR) / LINK_AUDIT_REPORT_FILE, report)
 
 
+def refresh_dailybrief_cache() -> None:
+    script = BASE_DIR / "scripts" / "scrape_dailybrief.py"
+    if not script.exists():
+        print("Warning: scripts/scrape_dailybrief.py not found; skipping Daily Brief refresh.")
+        return
+
+    print("Refreshing Daily Brief story cache...", flush=True)
+    try:
+        subprocess.run([sys.executable, str(script)], cwd=str(BASE_DIR), check=True)
+    except Exception as exc:  # pragma: no cover - network/data drift
+        print(f"Warning: Daily Brief refresh failed; keeping previous {OUTPUT_DIR}/{DAILYBRIEF_POSTS_FILE}.")
+        print(f"Reason: {exc}")
+
+
 def _has_company_url_signal(href: Optional[str]) -> bool:
     return bool(canonicalize_zerodha_stock_url(normalize_company_url(href)))
 
@@ -1671,6 +1687,7 @@ def main() -> None:
     print(f"Quotes: {len(quotes)}")
     print(f"Mentions: {len(mentions)}")
     print(f"Link audit report: {OUTPUT_DIR}/{LINK_AUDIT_REPORT_FILE}")
+    refresh_dailybrief_cache()
 
     if link_audit_report["counts"]["mandatory_missing"] or link_audit_report["counts"]["mandatory_mismatched"]:
         raise SystemExit("Mandatory Indian-listed link validation failed; inspect link audit report.")
