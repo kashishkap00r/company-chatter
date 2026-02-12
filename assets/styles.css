@@ -13,8 +13,9 @@
   --radius-8: 8px;
   --radius-16: 16px;
   --radius-32: 32px;
-  --font-main: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-main: "Space Grotesk", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-editorial: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 * {
@@ -31,7 +32,7 @@ body {
   background: var(--white);
   color: var(--deep-grey);
   font-family: var(--font-main);
-  line-height: 1.6;
+  line-height: 1.58;
 }
 
 .body--home-fixed {
@@ -85,7 +86,7 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
 }
 
 .brand-mark {
@@ -94,26 +95,29 @@ a {
   justify-content: center;
   flex: 0 0 auto;
   min-width: 1em;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1;
 }
 
 .brand-text {
   display: grid;
-  gap: 2px;
+  gap: 3px;
 }
 
 .brand-text strong {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.01em;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.014em;
 }
 
 .brand-text small {
   color: var(--label-grey);
-  font-size: 11px;
-  letter-spacing: 0.01em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.012em;
+  line-height: 1.32;
   text-transform: none;
 }
 
@@ -126,9 +130,10 @@ a {
 .eyebrow {
   margin: 0;
   color: var(--brand-blue);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.065em;
   text-transform: uppercase;
 }
 
@@ -145,18 +150,21 @@ a {
 
 .home-minimal h2 {
   margin: 2px 0 0;
-  max-width: 14ch;
-  font-size: clamp(34px, 5.6vw, 58px);
-  font-weight: 700;
-  line-height: 1.06;
-  letter-spacing: -0.02em;
+  max-width: 15ch;
+  font-family: var(--font-editorial);
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.008em;
   color: var(--deep-grey);
 }
 
 .search-subtle {
   margin: 0;
   color: var(--label-grey);
-  font-size: 13px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.01em;
 }
 
 .search-module {
@@ -198,9 +206,9 @@ a {
   outline: none;
   color: var(--deep-grey);
   font-family: var(--font-main);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
-  line-height: 1.28;
+  line-height: 1.32;
   padding: 10px 8px;
 }
 
@@ -232,9 +240,10 @@ a {
   padding: 10px 14px;
   border-bottom: 1px solid var(--stroke);
   color: var(--label-grey);
+  font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: left;
 }
@@ -264,15 +273,18 @@ a {
 }
 
 .result-item strong {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.22;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.004em;
   color: var(--deep-grey);
 }
 
 .result-item span {
   color: var(--label-grey);
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.01em;
 }
 
 .empty-state {
@@ -304,10 +316,10 @@ a {
 .company-hero-minimal h2 {
   margin: 8px 0 4px;
   font-family: var(--font-editorial);
-  font-size: clamp(40px, 6vw, 58px);
+  font-size: clamp(36px, 5.1vw, 54px);
   font-weight: 600;
-  line-height: 0.96;
-  letter-spacing: -0.01em;
+  line-height: 0.98;
+  letter-spacing: -0.006em;
   color: var(--deep-grey);
 }
 
@@ -326,7 +338,8 @@ a {
 .company-mini-meta {
   margin: 0;
   color: var(--label-grey);
-  font-size: 13px;
+  font-family: var(--font-mono);
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
@@ -335,7 +348,7 @@ a {
   margin: 8px 0 0;
   color: var(--body-grey);
   font-size: 15px;
-  line-height: 1.56;
+  line-height: 1.64;
 }
 
 .segment-card {
@@ -367,9 +380,11 @@ a {
 
 .segment-header h3 {
   margin: 6px 0 2px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.24;
+  font-family: var(--font-editorial);
+  font-size: clamp(24px, 3.2vw, 32px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.004em;
   color: var(--deep-grey);
 }
 
@@ -377,12 +392,15 @@ a {
   margin: 0;
   color: var(--body-grey);
   font-size: 14px;
+  line-height: 1.52;
 }
 
 .segment-meta {
   margin: 2px 0 0;
   color: var(--label-grey);
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.01em;
 }
 
 .segment-chip {
@@ -392,9 +410,10 @@ a {
   gap: 7px;
   padding: 4px 10px;
   border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -413,9 +432,10 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 999px;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
 }
 
 .segment-chip-brief {
@@ -455,9 +475,10 @@ a {
 
 .headline-link {
   color: var(--deep-grey);
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.26;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.002em;
 }
 
 .headline-link:hover {
@@ -467,7 +488,9 @@ a {
 .headline-meta {
   margin: 3px 0 0;
   color: var(--label-grey);
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.01em;
   line-height: 1.4;
 }
 
@@ -486,9 +509,10 @@ a {
 .segment-dropdown summary {
   cursor: pointer;
   color: var(--brand-blue);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   list-style: none;
 }
@@ -553,28 +577,30 @@ a {
 .chapter-date {
   margin: 0;
   color: var(--brand-blue);
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .chapter-head h3 {
   margin: 5px 0 3px;
   font-family: var(--font-editorial);
-  font-size: clamp(21px, 2.6vw, 30px);
+  font-size: clamp(22px, 2.8vw, 32px);
   font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: 0.001em;
+  line-height: 1.1;
+  letter-spacing: -0.002em;
   color: var(--deep-grey);
 }
 
 .chapter-meta {
   margin: 0;
   color: var(--label-grey);
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -604,8 +630,10 @@ a {
 .story-index {
   padding-top: 3px;
   color: var(--label-grey);
-  font-size: 11px;
+  font-family: var(--font-mono);
+  font-size: 10px;
   font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .story-body {
@@ -616,23 +644,25 @@ a {
 .story-kicker {
   margin: 0 0 8px;
   color: var(--brand-blue);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .story-context {
   margin: 0 0 10px;
   color: var(--body-grey);
-  font-size: 17px;
-  line-height: 1.66;
+  font-size: clamp(16px, 1.15vw, 17.5px);
+  line-height: 1.68;
+  font-weight: 500;
 }
 
 .story-quote {
   margin: 0;
   position: relative;
-  padding: 11px 13px 11px 19px;
+  padding: 12px 14px 12px 20px;
   border: 1px solid var(--stroke);
   border-left: 3px solid var(--brand-blue);
   border-radius: var(--radius-8);
@@ -640,9 +670,9 @@ a {
   box-shadow: var(--shadow-2);
   color: var(--deep-grey);
   font-family: var(--font-editorial);
-  font-size: clamp(18px, 1.55vw, 21px);
+  font-size: clamp(17px, 1.4vw, 19.5px);
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.57;
   letter-spacing: 0;
 }
 
@@ -670,9 +700,9 @@ a {
 .story-speaker {
   margin: 0;
   color: var(--body-grey);
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.55;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .mention-note {
@@ -690,9 +720,10 @@ a {
   display: inline-flex;
   align-items: center;
   color: var(--brand-blue);
+  font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -715,7 +746,9 @@ a {
   margin: 0 auto;
   padding: 0 4.5vw 40px;
   color: var(--label-grey);
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.01em;
   text-align: center;
 }
 
@@ -724,6 +757,7 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+  font-family: var(--font-main);
   font-weight: 600;
 }
 
@@ -757,7 +791,19 @@ a {
   }
 
   .home-minimal h2 {
-    font-size: clamp(30px, 10vw, 46px);
+    font-size: clamp(34px, 11vw, 52px);
+  }
+
+  .brand-mark {
+    font-size: 22px;
+  }
+
+  .brand-text strong {
+    font-size: 20px;
+  }
+
+  .brand-text small {
+    font-size: 9px;
   }
 
   .body--home-fixed .home-minimal {
@@ -773,11 +819,11 @@ a {
   }
 
   .segment-header h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .headline-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .segment-dropdown summary {
@@ -798,8 +844,8 @@ a {
   }
 
   .story-quote {
-    font-size: clamp(17px, 4.5vw, 19px);
-    line-height: 1.52;
+    font-size: clamp(16.5px, 4.5vw, 18.2px);
+    line-height: 1.56;
   }
 
   .quote-source {
