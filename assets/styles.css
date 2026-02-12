@@ -89,17 +89,13 @@ a {
 }
 
 .brand-mark {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-8);
-  display: grid;
-  place-items: center;
-  background: var(--brand-blue);
-  color: var(--white);
-  font-family: var(--font-main);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 1em;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .brand-text {
@@ -116,9 +112,9 @@ a {
 
 .brand-text small {
   color: var(--label-grey);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 .container {
