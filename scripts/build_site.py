@@ -132,7 +132,7 @@ SENTENCE_START_TOKENS = {
     "are",
 }
 DAILYBRIEF_VISIBLE_DEFAULT = 3
-CHATTER_VISIBLE_DEFAULT = 4
+CHATTER_VISIBLE_QUOTES_DEFAULT = 2
 FEATURED_COMPANY_SLUGS = [
     "hdfc-bank",
     "reliance-industries",
@@ -946,7 +946,7 @@ def build_index(
         },
     )
     html = wrap_base(
-        "Company Chatter",
+        "Company Radar",
         content,
         updated_iso=updated_iso,
         updated_relative=updated_relative,
@@ -998,7 +998,9 @@ def build_update_metadata(editions: dict[str, dict], dailybrief_posts: list[dict
     today = datetime.now(timezone.utc).date()
     updated_date = max(latest_dates) if latest_dates else today
     delta_days = max((today - updated_date).days, 0)
-    if delta_days == 1:
+    if delta_days == 0:
+        relative = "today"
+    elif delta_days == 1:
         relative = "1 day ago"
     else:
         relative = f"{delta_days} days ago"
@@ -1398,8 +1400,8 @@ def render_dailybrief_section(stories: list[dict]) -> str:
 
 
 def render_chatter_section(
-    visible_edition_sections: list[str],
-    hidden_edition_sections: list[str],
+    visible_quote_cards: list[str],
+    hidden_quote_cards: list[str],
     timeline_span: str,
     edition_count: int,
     quote_count: int,
@@ -1411,14 +1413,21 @@ def render_chatter_section(
     timeline_meta_parts.append(f"{quote_count} quotes")
     timeline_meta = " · ".join(timeline_meta_parts)
 
-    visible_html = "".join(visible_edition_sections)
+    visible_html = "".join(visible_quote_cards)
+    body_html = (
+        f'  <div class="story-timeline">{visible_html}</div>'
+        if visible_quote_cards
+        else '  <p class="segment-empty">No direct The Chatter quotes for this company yet.</p>'
+    )
     hidden_html = ""
-    if hidden_edition_sections:
-        hidden_cards = "".join(hidden_edition_sections)
+    if hidden_quote_cards:
+        hidden_cards = "".join(hidden_quote_cards)
+        hidden_count = len(hidden_quote_cards)
+        hidden_label = "quote" if hidden_count == 1 else "quotes"
         hidden_html = "\n".join(
             [
                 '<details class="segment-dropdown" data-persist-key="chatter-more">',
-                f'  <summary>Show {len(hidden_edition_sections)} more editions</summary>',
+                f'  <summary>Show {hidden_count} more {hidden_label}</summary>',
                 '  <div class="segment-dropdown-panel">',
                 f'    <div class="story-timeline story-timeline-more">{hidden_cards}</div>',
                 "  </div>",
@@ -1437,7 +1446,7 @@ def render_chatter_section(
             "    <p class=\"segment-subtitle\">Deep management quotes and context from earnings calls.</p>",
             f'    <p class="segment-meta">{html_escape(timeline_meta)}</p>',
             "  </div>",
-            f'  <div class="story-timeline">{visible_html}</div>',
+            body_html,
             hidden_html,
             "</section>",
         ]
@@ -1481,89 +1490,59 @@ def build_company_pages(
         if not covered_edition_ids:
             continue
 
-        edition_sections = []
+        quote_card_sections: list[str] = []
         dates = [editions.get(edition_id, {}).get("date", "") for edition_id in covered_edition_ids]
         company_quote_count = 0
+        company_quote_index = 1
 
         for edition_id in covered_edition_ids:
             edition_quotes = sorted(
                 quotes_by_company_edition.get(slug, {}).get(edition_id, []),
                 key=lambda q: q["id"],
             )
-            edition_mentions = mentions_by_company_edition.get(slug, {}).get(edition_id, [])
             edition = editions.get(edition_id, {})
             edition_title = edition.get("title") or edition_id
             edition_date = edition.get("date", "")
-            edition_source_url = (
-                edition.get("url")
-                or (edition_quotes[0].get("source_url", "") if edition_quotes else "")
-                or (edition_mentions[0].get("source_url", "") if edition_mentions else "")
-            )
+            if not edition_quotes:
+                continue
 
-            quote_cards = []
-            chapter_meta = "Mentioned (no quote extracted)"
-            if edition_quotes:
-                chapter_meta = f"{len(edition_quotes)} quotes"
-                company_quote_count += len(edition_quotes)
-                for index, q in enumerate(edition_quotes, start=1):
-                    quote_context = (q.get("context") or "").strip()
-                    quote_speaker = (q.get("speaker") or "").strip()
-                    story_parts = []
+            edition_date_label = format_date(edition_date)
+            edition_label_parts = []
+            if edition_date_label and edition_date_label != "Unknown":
+                edition_label_parts.append(edition_date_label)
+            if edition_title:
+                edition_label_parts.append(str(edition_title))
+            edition_label = " · ".join(edition_label_parts) or str(edition_title)
 
-                    if quote_context:
-                        story_parts.append(f'<p class="story-context">{html_escape(quote_context)}</p>')
-                    story_parts.append(f'<blockquote class="story-quote">“{html_escape(q["text"])}”</blockquote>')
-                    footer_parts = []
-                    if quote_speaker:
-                        footer_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
-                    footer_parts.append(
-                        f'<a class="small-link quote-source" href="{html_escape(q["source_url"])}">Source</a>'
-                    )
+            for q in edition_quotes:
+                company_quote_count += 1
+                quote_context = (q.get("context") or "").strip()
+                quote_speaker = (q.get("speaker") or "").strip()
+                source_url = str(q.get("source_url") or "").strip()
+                story_parts = [f'<p class="story-kicker">{html_escape(edition_label)}</p>']
+
+                if quote_context:
+                    story_parts.append(f'<p class="story-context">{html_escape(quote_context)}</p>')
+                story_parts.append(f'<blockquote class="story-quote">“{html_escape(q["text"])}”</blockquote>')
+                footer_parts = []
+                if quote_speaker:
+                    footer_parts.append(f'<p class="story-speaker">— {html_escape(quote_speaker)}</p>')
+                if source_url:
+                    footer_parts.append(f'<a class="small-link quote-source" href="{html_escape(source_url)}">Source</a>')
+                if footer_parts:
                     story_parts.append(f'<div class="story-footer">{"".join(footer_parts)}</div>')
 
-                    quote_cards.append(
-                        "\n".join(
-                            [
-                                '<article class="story-card">',
-                                f'  <span class="story-index">{index:02d}</span>',
-                                f'  <div class="story-body">{"".join(story_parts)}</div>',
-                                "</article>",
-                            ]
-                        )
-                    )
-            else:
-                quote_cards.append(
+                quote_card_sections.append(
                     "\n".join(
                         [
-                            '<article class="story-card story-mention">',
-                            '  <span class="story-index">--</span>',
-                            '  <div class="story-body"><p class="mention-note">Featured in this edition, but no direct quote block was extracted.</p></div>',
+                            '<article class="story-card">',
+                            f'  <span class="story-index">{company_quote_index:02d}</span>',
+                            f'  <div class="story-body">{"".join(story_parts)}</div>',
                             "</article>",
                         ]
                     )
                 )
-
-            edition_link = ""
-            if edition_source_url:
-                edition_link = f'<a class="small-link" href="{html_escape(edition_source_url)}">Full edition</a>'
-
-            edition_sections.append(
-                "\n".join(
-                    [
-                        '<section class="edition-chapter card">',
-                        '  <div class="chapter-head">',
-                        "    <div>",
-                        f'      <p class="chapter-date">{html_escape(format_date(edition_date))}</p>',
-                        f"      <h3>{html_escape(edition_title)}</h3>",
-                        f'      <p class="chapter-meta">{chapter_meta}</p>',
-                        "    </div>",
-                        f"    {edition_link}",
-                        "  </div>",
-                        f'  <div class="storyline">{"".join(quote_cards)}</div>',
-                        "</section>",
-                    ]
-                )
-            )
+                company_quote_index += 1
 
         company_name_link = html_escape(company["name"])
         if company.get("url"):
@@ -1584,12 +1563,12 @@ def build_company_pages(
         hero_meta = f"{company_quote_count} quotes · {company_story_mentions} story mentions"
         meta = "The Chatter gives depth. Daily Brief gives wider market context."
 
-        visible_edition_sections = edition_sections[:CHATTER_VISIBLE_DEFAULT]
-        hidden_edition_sections = edition_sections[CHATTER_VISIBLE_DEFAULT:]
+        visible_quote_cards = quote_card_sections[:CHATTER_VISIBLE_QUOTES_DEFAULT]
+        hidden_quote_cards = quote_card_sections[CHATTER_VISIBLE_QUOTES_DEFAULT:]
         dailybrief_section = render_dailybrief_section(dailybrief_stories)
         chatter_section = render_chatter_section(
-            visible_edition_sections,
-            hidden_edition_sections,
+            visible_quote_cards,
+            hidden_quote_cards,
             timeline_span,
             len(covered_edition_ids),
             company_quote_count,
@@ -1606,7 +1585,7 @@ def build_company_pages(
             },
         )
         html = wrap_base(
-            f"{company['name']} | Company Chatter",
+            f"{company['name']} | Company Radar",
             content,
             updated_iso=updated_iso,
             updated_relative=updated_relative,
