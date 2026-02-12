@@ -4,31 +4,34 @@
   <p class="search-subtle">{{ total_companies }} companies · {{ total_quotes }} quotes · {{ total_editions }} editions</p>
 
   <div class="search-module">
-    <div class="search-shell">
-      <input
-        type="search"
-        id="companySearch"
-        placeholder="Search companies..."
-        autocomplete="off"
-        role="combobox"
-        aria-autocomplete="list"
-        aria-expanded="false"
-        aria-controls="searchResults"
-        aria-label="Search companies"
-      />
-    </div>
-    <div class="search-results" id="searchResults" role="listbox" hidden></div>
+    <form class="search-shell card" role="search" novalidate>
+      <label class="search-field" data-field>
+        <input
+          type="search"
+          id="companySearch"
+          placeholder="Search companies..."
+          autocomplete="off"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-controls="searchResults"
+          aria-label="Search companies"
+        />
+      </label>
+    </form>
+    <div class="search-results card" id="searchResults" role="listbox" hidden></div>
   </div>
 </section>
 
 <script id="companyData" type="application/json">{{ company_data_json }}</script>
 <script>
+  const searchForm = document.querySelector('.search-shell');
+  const searchModule = document.querySelector('.search-module');
   const input = document.getElementById('companySearch');
   const searchResults = document.getElementById('searchResults');
   const companyData = JSON.parse(document.getElementById('companyData').textContent || '[]');
   let activeIndex = -1;
   let visibleRows = [];
-  let blurTimeout = null;
 
   function escapeHtml(value) {
     return value
@@ -136,7 +139,6 @@
   }
 
   input.addEventListener('input', () => {
-    clearTimeout(blurTimeout);
     const query = input.value;
     renderResults(rankedMatches(query), query);
   });
@@ -145,6 +147,13 @@
     const query = input.value;
     if (query.trim()) {
       renderResults(rankedMatches(query), query);
+    }
+  });
+
+  searchForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (activeIndex >= 0 && visibleRows[activeIndex]) {
+      window.location.href = `/company/${visibleRows[activeIndex].slug}/`;
     }
   });
 
@@ -182,14 +191,37 @@
   });
 
   input.addEventListener('blur', () => {
-    blurTimeout = setTimeout(hideResults, 120);
+    window.setTimeout(() => {
+      if (!searchModule.contains(document.activeElement)) {
+        hideResults();
+      }
+    }, 0);
   });
 
-  searchResults.addEventListener('mousedown', () => {
-    clearTimeout(blurTimeout);
+  searchResults.addEventListener('pointerdown', (event) => {
+    if (!(event.target instanceof Element)) {
+      return;
+    }
+
+    const rowLink = event.target.closest('.result-item');
+    if (!rowLink) {
+      return;
+    }
+
+    const href = rowLink.getAttribute('href');
+    if (!href) {
+      return;
+    }
+
+    event.preventDefault();
+    window.location.href = href;
   });
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener('pointerdown', (event) => {
+    if (!(event.target instanceof Element)) {
+      return;
+    }
+
     if (!event.target.closest('.search-module')) {
       hideResults();
     }

@@ -36,6 +36,21 @@ python3 scripts/build_site.py
 
 Output will be in `site/`.
 
+## UI Library (Oat)
+Oat is vendored locally and loaded from:
+- `assets/vendor/oat/oat.min.css`
+- `assets/vendor/oat/oat.min.js`
+
+To refresh Oat assets (pinned by default to a known commit):
+```bash
+./scripts/update_oat.sh
+```
+
+To update from a specific Oat ref/commit:
+```bash
+./scripts/update_oat.sh <oat-ref>
+```
+
 ## Entity-Resolution Guardrail
 Run this after build to enforce no-repeat/no-leakage constraints:
 ```bash

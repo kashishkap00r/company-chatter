@@ -954,20 +954,6 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
                 or (edition_mentions[0].get("source_url", "") if edition_mentions else "")
             )
 
-            sectors = sorted(
-                {
-                    sector
-                    for sector in (
-                        [q.get("sector", "").strip() for q in edition_quotes]
-                        + [m.get("sector", "").strip() for m in edition_mentions]
-                    )
-                    if sector
-                }
-            )
-            sector_line = ""
-            if sectors:
-                sector_line = f'<p class="chapter-sector">{html_escape(" · ".join(sectors))}</p>'
-
             quote_cards = []
             chapter_meta = "Mentioned (no quote extracted)"
             if edition_quotes:
@@ -1018,13 +1004,12 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
             edition_sections.append(
                 "\n".join(
                     [
-                        '<section class="edition-chapter">',
+                        '<section class="edition-chapter card">',
                         '  <div class="chapter-head">',
                         "    <div>",
                         f'      <p class="chapter-date">{html_escape(format_date(edition_date))}</p>',
                         f"      <h3>{html_escape(edition_title)}</h3>",
                         f'      <p class="chapter-meta">{chapter_meta}</p>',
-                        f"      {sector_line}" if sector_line else "",
                         "    </div>",
                         f"    {edition_link}",
                         "  </div>",
@@ -1068,9 +1053,13 @@ def build_company_pages(companies: list[dict], editions: dict[str, dict], quotes
 
 def copy_assets() -> None:
     ensure_dir(SITE_DIR / "assets")
-    for path in ASSETS_DIR.iterdir():
-        if path.is_file():
-            (SITE_DIR / "assets" / path.name).write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
+    for path in ASSETS_DIR.rglob("*"):
+        if not path.is_file():
+            continue
+        rel_path = path.relative_to(ASSETS_DIR)
+        dest_path = SITE_DIR / "assets" / rel_path
+        ensure_dir(dest_path.parent)
+        shutil.copy2(path, dest_path)
 
 
 def main() -> None:

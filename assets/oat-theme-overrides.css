@@ -1,0 +1,40 @@
+:root {
+  --background: #ffffff;
+  --foreground: #424242;
+  --card: #fafafb;
+  --card-foreground: #424242;
+  --primary: #387ed1;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f7;
+  --secondary-foreground: #424242;
+  --muted: #f5f5f7;
+  --muted-foreground: #7b7f84;
+  --faint: #fafafb;
+  --accent: #f5f5f7;
+  --danger: #df514c;
+  --danger-foreground: #ffffff;
+  --success: #4caf50;
+  --success-foreground: #ffffff;
+  --warning: #ff8c00;
+  --warning-foreground: #09090b;
+  --border: #d5d5d5;
+  --input: #d5d5d5;
+  --ring: #387ed1;
+
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 1rem;
+
+  --font-sans: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --shadow-small: 0 4px 12px rgba(66, 66, 66, 0.1);
+  --shadow-medium: 0 6px 16px rgba(66, 66, 66, 0.12);
+  --shadow-large: 0 8px 24px rgba(66, 66, 66, 0.14);
+}
+
+/* Keep the inherited editorial font pairing in top-layer components too. */
+dialog,
+[popover] {
+  font-family: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}

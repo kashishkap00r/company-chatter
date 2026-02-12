@@ -13,7 +13,8 @@
   --radius-8: 8px;
   --radius-16: 16px;
   --radius-32: 32px;
-  --font-main: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-main: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-editorial: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -149,6 +150,14 @@ a {
   transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
+.search-shell.card {
+  overflow: visible;
+}
+
+.search-field {
+  margin: 0;
+}
+
 .search-shell:focus-within {
   border-color: var(--brand-blue);
   box-shadow:
@@ -158,6 +167,7 @@ a {
 
 .search-shell input {
   width: 100%;
+  margin: 0;
   border: 0;
   background: transparent;
   outline: none;
@@ -167,6 +177,10 @@ a {
   font-weight: 500;
   line-height: 1.28;
   padding: 10px 8px;
+}
+
+.search-shell input:focus {
+  box-shadow: none;
 }
 
 .search-shell input::placeholder {
@@ -183,6 +197,7 @@ a {
   border-radius: var(--radius-16);
   background: var(--white);
   box-shadow: var(--shadow-1);
+  padding: 0;
   max-height: min(60vh, 440px);
   overflow: hidden auto;
 }
@@ -255,12 +270,17 @@ a {
   padding: clamp(20px, 3.4vw, 30px);
 }
 
+.company-hero-minimal.card {
+  overflow: visible;
+}
+
 .company-hero-minimal h2 {
   margin: 8px 0 4px;
-  font-size: clamp(32px, 6vw, 54px);
-  font-weight: 800;
-  line-height: 1.02;
-  letter-spacing: -0.02em;
+  font-family: var(--font-editorial);
+  font-size: clamp(40px, 6vw, 58px);
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.01em;
   color: var(--deep-grey);
 }
 
@@ -279,16 +299,17 @@ a {
 .company-mini-meta {
   margin: 0;
   color: var(--label-grey);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
 .company-summary {
   margin: 8px 0 0;
   color: var(--body-grey);
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.56;
 }
 
 .story-timeline {
@@ -304,6 +325,10 @@ a {
   padding: 16px;
 }
 
+.edition-chapter.card {
+  overflow: visible;
+}
+
 .chapter-head {
   display: flex;
   justify-content: space-between;
@@ -315,39 +340,36 @@ a {
 .chapter-date {
   margin: 0;
   color: var(--brand-blue);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .chapter-head h3 {
   margin: 5px 0 3px;
-  font-size: clamp(24px, 4.2vw, 36px);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-family: var(--font-editorial);
+  font-size: clamp(21px, 2.6vw, 30px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0.001em;
   color: var(--deep-grey);
 }
 
 .chapter-meta {
   margin: 0;
   color: var(--label-grey);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-
-.chapter-sector {
-  margin: 6px 0 0;
-  color: var(--body-grey);
   font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
 }
 
 .storyline {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  align-items: start;
 }
 
 .story-card {
@@ -358,7 +380,7 @@ a {
   padding: 12px 0 2px;
 }
 
-.story-card:first-child {
+.story-card:nth-child(-n + 2) {
   border-top: 0;
 }
 
@@ -381,33 +403,34 @@ a {
 .story-context {
   margin: 0 0 10px;
   color: var(--body-grey);
-  font-size: 15px;
-  line-height: 1.68;
+  font-size: 17px;
+  line-height: 1.66;
 }
 
 .story-quote {
   margin: 0;
   position: relative;
-  padding: 15px 16px 15px 22px;
+  padding: 11px 13px 11px 19px;
   border: 1px solid var(--stroke);
   border-left: 3px solid var(--brand-blue);
   border-radius: var(--radius-8);
   background: var(--white);
   box-shadow: var(--shadow-2);
   color: var(--deep-grey);
-  font-size: clamp(20px, 2.4vw, 28px);
+  font-family: var(--font-editorial);
+  font-size: clamp(18px, 1.55vw, 21px);
   font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: -0.005em;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 
 .story-quote::before {
   content: "\201C";
   position: absolute;
-  top: 5px;
-  left: 8px;
+  top: 4px;
+  left: 7px;
   color: rgba(255, 164, 18, 0.42);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1;
   pointer-events: none;
@@ -425,8 +448,9 @@ a {
 .story-speaker {
   margin: 0;
   color: var(--body-grey);
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
 }
 
 .mention-note {
@@ -476,6 +500,16 @@ a {
   animation: fadeIn 0.24s ease both;
 }
 
+@media (max-width: 980px) {
+  .storyline {
+    grid-template-columns: 1fr;
+  }
+
+  .story-card:nth-child(2) {
+    border-top: 1px dashed #cfd3d7;
+  }
+}
+
 @media (max-width: 840px) {
   .container {
     padding-top: 24px;
@@ -504,8 +538,8 @@ a {
   }
 
   .story-quote {
-    font-size: clamp(19px, 5.5vw, 23px);
-    line-height: 1.62;
+    font-size: clamp(17px, 4.5vw, 19px);
+    line-height: 1.52;
   }
 
   .quote-source {
