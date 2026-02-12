@@ -173,6 +173,19 @@ a {
   position: relative;
 }
 
+.home-context {
+  margin: 8px auto 0;
+  width: min(760px, 100%);
+  color: var(--body-grey);
+  font-family: var(--font-main);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.home-context span {
+  display: block;
+}
+
 .search-shell {
   width: 100%;
   border: 1px solid var(--stroke);
@@ -792,6 +805,11 @@ a {
 
   .home-minimal h2 {
     font-size: clamp(34px, 11vw, 52px);
+  }
+
+  .home-context {
+    font-size: 12.5px;
+    line-height: 1.52;
   }
 
   .brand-mark {
