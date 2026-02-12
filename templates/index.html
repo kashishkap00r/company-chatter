@@ -24,12 +24,16 @@
 </section>
 
 <script id="companyData" type="application/json">{{ company_data_json }}</script>
+<script id="featuredCompanyData" type="application/json">{{ featured_company_data_json }}</script>
 <script>
   const searchForm = document.querySelector('.search-shell');
   const searchModule = document.querySelector('.search-module');
   const input = document.getElementById('companySearch');
   const searchResults = document.getElementById('searchResults');
   const companyData = JSON.parse(document.getElementById('companyData').textContent || '[]');
+  const featuredCompanyData = JSON.parse(
+    document.getElementById('featuredCompanyData').textContent || '[]'
+  );
   let activeIndex = -1;
   let visibleRows = [];
 
@@ -74,6 +78,49 @@
       });
   }
 
+  function renderRows(rows) {
+    return rows
+      .map(
+        (row, index) => `
+          <a class="result-item" id="resultOption${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
+            <strong>${escapeHtml(row.name)}</strong>
+            <span>${row.quote_count} quotes · ${row.story_mentions_count} story mentions</span>
+          </a>
+        `
+      )
+      .join('');
+  }
+
+  function showResults(rows, resultsLabel) {
+    visibleRows = rows.slice(0, 10);
+    activeIndex = -1;
+    input.removeAttribute('aria-activedescendant');
+    input.setAttribute('aria-expanded', 'true');
+    searchResults.hidden = false;
+
+    if (!visibleRows.length) {
+      searchResults.innerHTML = `
+        <p class="results-meta">0 matches</p>
+        <p class="empty-state">No company found for this query.</p>
+      `;
+      return;
+    }
+
+    searchResults.innerHTML = `
+      <p class="results-meta">${resultsLabel}</p>
+      ${renderRows(visibleRows)}
+    `;
+  }
+
+  function renderFeaturedResults() {
+    if (!featuredCompanyData.length) {
+      hideResults();
+      return;
+    }
+
+    showResults(featuredCompanyData.slice(0, 5), 'Featured companies');
+  }
+
   function setActiveIndex(nextIndex) {
     const items = Array.from(searchResults.querySelectorAll('.result-item'));
     if (!items.length) {
@@ -105,37 +152,10 @@
   function renderResults(rows, rawQuery) {
     const query = rawQuery.trim();
     if (!query) {
-      hideResults();
+      renderFeaturedResults();
       return;
     }
-
-    visibleRows = rows.slice(0, 10);
-    activeIndex = -1;
-    input.removeAttribute('aria-activedescendant');
-    input.setAttribute('aria-expanded', 'true');
-    searchResults.hidden = false;
-
-    if (!visibleRows.length) {
-      searchResults.innerHTML = `
-        <p class="results-meta">0 matches</p>
-        <p class="empty-state">No company found for this query.</p>
-      `;
-      return;
-    }
-
-    searchResults.innerHTML = `
-      <p class="results-meta">${rows.length} matches</p>
-      ${visibleRows
-        .map(
-          (row, index) => `
-            <a class="result-item" id="resultOption${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
-              <strong>${escapeHtml(row.name)}</strong>
-              <span>${row.quote_count} quotes · ${row.story_mentions_count} story mentions</span>
-            </a>
-          `
-        )
-        .join('')}
-    `;
+    showResults(rows, `${rows.length} matches`);
   }
 
   input.addEventListener('input', () => {
@@ -145,9 +165,7 @@
 
   input.addEventListener('focus', () => {
     const query = input.value;
-    if (query.trim()) {
-      renderResults(rankedMatches(query), query);
-    }
+    renderResults(rankedMatches(query), query);
   });
 
   searchForm.addEventListener('submit', (event) => {

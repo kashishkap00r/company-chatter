@@ -34,6 +34,35 @@ body {
   line-height: 1.6;
 }
 
+.body--home-fixed {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.body--home-fixed .header {
+  flex: 0 0 auto;
+}
+
+.body--home-fixed .container {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding-bottom: 22px;
+}
+
+.body--home-fixed .home-minimal {
+  min-height: 100%;
+  padding-top: clamp(36px, 9vh, 86px);
+  padding-bottom: 10px;
+}
+
+.body--home-fixed .footer {
+  flex: 0 0 auto;
+  padding-bottom: 20px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -680,6 +709,19 @@ a {
   padding: 0 4.5vw 40px;
   color: var(--label-grey);
   font-size: 12px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--brand-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #2a64a9;
 }
 
 .fade-in {
@@ -708,6 +750,14 @@ a {
 
   .home-minimal h2 {
     font-size: clamp(30px, 10vw, 46px);
+  }
+
+  .body--home-fixed .home-minimal {
+    padding-top: clamp(24px, 9vh, 56px);
+  }
+
+  .body--home-fixed .footer {
+    padding-bottom: 14px;
   }
 
   .segment-card {

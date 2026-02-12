@@ -21,7 +21,7 @@ from __future__ import annotations
 import json
 import re
 import shutil
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 from urllib.parse import urlparse
@@ -133,6 +133,13 @@ SENTENCE_START_TOKENS = {
 }
 DAILYBRIEF_VISIBLE_DEFAULT = 3
 CHATTER_VISIBLE_DEFAULT = 4
+FEATURED_COMPANY_SLUGS = [
+    "hdfc-bank",
+    "reliance-industries",
+    "hindustan-unilever",
+    "adani-green",
+    "tata-motors",
+]
 
 
 def read_json(path: Path):
@@ -181,13 +188,22 @@ def render_template(template_name: str, context: dict[str, str]) -> str:
     return template
 
 
-def wrap_base(title: str, content: str) -> str:
+def wrap_base(
+    title: str,
+    content: str,
+    *,
+    updated_iso: str,
+    updated_relative: str,
+    body_class: str = "",
+) -> str:
     return render_template(
         "base.html",
         {
             "title": title,
             "content": content,
-            "updated": datetime.now(timezone.utc).date().isoformat(),
+            "updated_iso": updated_iso,
+            "updated_relative": updated_relative,
+            "body_class": body_class,
         },
     )
 
@@ -858,6 +874,8 @@ def build_index(
     mentions: list[dict],
     story_mentions_count_by_company: dict[str, int],
     total_story_mentions: int,
+    updated_iso: str,
+    updated_relative: str,
 ) -> None:
     quote_count_by_company: dict[str, int] = {}
     edition_ids_by_company: dict[str, set[str]] = {}
@@ -889,17 +907,51 @@ def build_index(
         )
 
     company_data_json = json.dumps(company_records, ensure_ascii=False).replace("</", "<\\/")
+    company_record_by_slug = {str(row["slug"]): row for row in company_records}
+    featured_company_records = [
+        company_record_by_slug[slug]
+        for slug in FEATURED_COMPANY_SLUGS
+        if slug in company_record_by_slug
+    ]
+    if len(featured_company_records) < 5:
+        featured_slugs = {str(row["slug"]) for row in featured_company_records}
+        fallback_ranked = sorted(
+            company_records,
+            key=lambda row: (
+                -(int(row["quote_count"]) + int(row["story_mentions_count"])),
+                -int(row["quote_count"]),
+                -int(row["story_mentions_count"]),
+                str(row["name"]).lower(),
+            ),
+        )
+        for row in fallback_ranked:
+            slug = str(row["slug"])
+            if slug in featured_slugs:
+                continue
+            featured_company_records.append(row)
+            featured_slugs.add(slug)
+            if len(featured_company_records) == 5:
+                break
+
+    featured_company_data_json = json.dumps(featured_company_records, ensure_ascii=False).replace("</", "<\\/")
     visible_companies = len(company_records)
     content = render_template(
         "index.html",
         {
             "company_data_json": company_data_json,
+            "featured_company_data_json": featured_company_data_json,
             "total_companies": str(visible_companies),
             "total_quotes": str(len(quotes)),
             "total_story_mentions": str(total_story_mentions),
         },
     )
-    html = wrap_base("Company Chatter", content)
+    html = wrap_base(
+        "Company Chatter",
+        content,
+        updated_iso=updated_iso,
+        updated_relative=updated_relative,
+        body_class="body--home-fixed",
+    )
     (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
 
 
@@ -919,6 +971,39 @@ def format_story_date(date_str: str) -> str:
         return datetime.fromisoformat(date_str).strftime("%d %b %Y")
     except ValueError:
         return date_str
+
+
+def parse_iso_date(date_str: str) -> date | None:
+    value = date_str.strip()
+    if not value:
+        return None
+    try:
+        return date.fromisoformat(value[:10])
+    except ValueError:
+        return None
+
+
+def build_update_metadata(editions: dict[str, dict], dailybrief_posts: list[dict]) -> tuple[str, str]:
+    latest_dates: list[date] = []
+    for edition in editions.values():
+        edition_date = parse_iso_date(str(edition.get("date") or ""))
+        if edition_date:
+            latest_dates.append(edition_date)
+
+    for post in dailybrief_posts:
+        post_date = parse_iso_date(str(post.get("date") or ""))
+        if post_date:
+            latest_dates.append(post_date)
+
+    today = datetime.now(timezone.utc).date()
+    updated_date = max(latest_dates) if latest_dates else today
+    delta_days = max((today - updated_date).days, 0)
+    if delta_days == 1:
+        relative = "1 day ago"
+    else:
+        relative = f"{delta_days} days ago"
+
+    return updated_date.isoformat(), relative
 
 
 def slugify(value: str) -> str:
@@ -1365,6 +1450,8 @@ def build_company_pages(
     quotes: list[dict],
     mentions: list[dict],
     dailybrief_mentions_by_company: dict[str, list[dict]],
+    updated_iso: str,
+    updated_relative: str,
 ) -> None:
     company_dir = SITE_DIR / "company"
     if company_dir.exists():
@@ -1518,7 +1605,12 @@ def build_company_pages(
                 "chatter_section": chatter_section,
             },
         )
-        html = wrap_base(f"{company['name']} | Company Chatter", content)
+        html = wrap_base(
+            f"{company['name']} | Company Chatter",
+            content,
+            updated_iso=updated_iso,
+            updated_relative=updated_relative,
+        )
         out_dir = SITE_DIR / "company" / slug
         ensure_dir(out_dir)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -1555,6 +1647,7 @@ def main() -> None:
         company_id: len(rows) for company_id, rows in dailybrief_mentions_by_company.items()
     }
     total_story_mentions = len(dailybrief_story_mentions)
+    updated_iso, updated_relative = build_update_metadata(editions, dailybrief_posts)
 
     build_index(
         companies,
@@ -1562,8 +1655,18 @@ def main() -> None:
         mentions,
         story_mentions_count_by_company,
         total_story_mentions,
+        updated_iso,
+        updated_relative,
     )
-    build_company_pages(companies, editions, quotes, mentions, dailybrief_mentions_by_company)
+    build_company_pages(
+        companies,
+        editions,
+        quotes,
+        mentions,
+        dailybrief_mentions_by_company,
+        updated_iso,
+        updated_relative,
+    )
     ENTITY_RESOLUTION_REPORT_FILE.write_text(
         json.dumps(resolution_report, ensure_ascii=False, indent=2),
         encoding="utf-8",

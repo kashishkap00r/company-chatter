@@ -1,6 +1,6 @@
 # Company Chatter: Context and Future Plan
 
-Last updated: 2026-02-11
+Last updated: 2026-02-12
 
 ## 1) Current Snapshot
 - Branch: `main`
@@ -50,7 +50,12 @@ Last updated: 2026-02-11
 2. Add a lightweight UI smoke checklist (homepage search click, company page order/layout, mobile responsiveness) before every deploy.
 3. Optionally add an automated browser check for search result click-through reliability.
 
-## 6) Working Tree Reminder
+## 6) Known Mapping Gaps To Fix
+- `Dollar Industries` is currently over-matching Daily Brief stories that are really about the `US dollar` (macro currency references).
+- `Urban Company` is currently over-matching Daily Brief stories that are talking broadly about `urban India`, not the company.
+- Required fix direction: tighten alias/entity disambiguation for these ambiguous terms so macro/general words do not map to company entities.
+
+## 7) Working Tree Reminder
 Current work includes updates to:
 - `AGENTS.md`
 - `assets/styles.css`
