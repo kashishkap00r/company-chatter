@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-12T19:01:43+00:00",
+  "generated_at": "2026-02-14T03:52:51+00:00",
   "source_url": "https://api.kite.trade/instruments",
-  "entry_count": 9107,
+  "entry_count": 9155,
   "entries": [
     {
       "symbol": "GOLDSTAR-SM",
@@ -641,7 +641,7 @@
     },
     {
       "symbol": "ICICIB22",
-      "display_name": "ICICIPRAMC - BHARATIWIN"
+      "display_name": "BHARAT 22 ETF"
     },
     {
       "symbol": "BPCL",
@@ -805,7 +805,7 @@
     },
     {
       "symbol": "SBIETFPB",
-      "display_name": "SBIAMC - SBIETFPB"
+      "display_name": "SBI ETF PRIVATE BANK ETF"
     },
     {
       "symbol": "COROMANDEL",
@@ -813,7 +813,7 @@
     },
     {
       "symbol": "SBIETFIT",
-      "display_name": "SBIAMC - SBIETFIT"
+      "display_name": "SBI ETF IT ETF"
     },
     {
       "symbol": "COSMOFIRST",
@@ -1161,7 +1161,7 @@
     },
     {
       "symbol": "AXISBNKETF",
-      "display_name": "AXISAMC - AXISBNKETF"
+      "display_name": "AXIS NIFTY BANK ETF"
     },
     {
       "symbol": "UFLEX",
@@ -1333,7 +1333,7 @@
     },
     {
       "symbol": "ESG",
-      "display_name": "MIRAEAMC - MAESGETF"
+      "display_name": "MIRAE ASSET NIFTY 100 ESG SECTOR LEADERS ETF"
     },
     {
       "symbol": "PRAXIS",
@@ -1681,7 +1681,7 @@
     },
     {
       "symbol": "MOGSEC",
-      "display_name": "MOTILALAMC - G5"
+      "display_name": "MOTILAL OSWAL NIFTY 5 YEAR BENCHMARK G-SEC ETF"
     },
     {
       "symbol": "ASTERDM",
@@ -2097,7 +2097,7 @@
     },
     {
       "symbol": "LIQUIDETF",
-      "display_name": "DSP LIQUID ETF"
+      "display_name": "DSP NIFTY 1D RATE LIQUID ETF"
     },
     {
       "symbol": "KREBSBIO",
@@ -2408,10 +2408,6 @@
       "display_name": "BROOKFIELD INDIA RET"
     },
     {
-      "symbol": "621AS26-SG",
-      "display_name": "SDL AS 6.21% 2026"
-    },
-    {
       "symbol": "70TS51-SG",
       "display_name": "SDL TS 7.0% 2051"
     },
@@ -2657,7 +2653,7 @@
     },
     {
       "symbol": "CONSUMBEES",
-      "display_name": "NIP IND ETF CONSUMPTION"
+      "display_name": "NIPPON INDIA ETF CONSUMPTION"
     },
     {
       "symbol": "NKIND",
@@ -2809,11 +2805,11 @@
     },
     {
       "symbol": "IT",
-      "display_name": "KOTAKMAMC - KOTAKIT"
+      "display_name": "KOTAK NIFTY IT ETF"
     },
     {
       "symbol": "DIVOPPBEES",
-      "display_name": "NIP IND ETF DIV OPP"
+      "display_name": "NIPPON INDIA ETF NIFTY DIVIDEND OPPORTUNITIES 50"
     },
     {
       "symbol": "PFIZER",
@@ -2910,10 +2906,6 @@
     {
       "symbol": "MTARTECH",
       "display_name": "MTAR TECHNOLOGIES"
-    },
-    {
-      "symbol": "PRECOT",
-      "display_name": "PRECOT"
     },
     {
       "symbol": "BUTTERFLY",
@@ -3193,7 +3185,7 @@
     },
     {
       "symbol": "BSE500IETF",
-      "display_name": "ICICIPRAMC - ICICI500"
+      "display_name": "ICICI PRUDENTIAL BSE 500 ETF"
     },
     {
       "symbol": "WONDERLA",
@@ -3205,7 +3197,7 @@
     },
     {
       "symbol": "AXISTECETF",
-      "display_name": "AXISAMC - AXISTECETF"
+      "display_name": "AXIS NIFTY IT ETF"
     },
     {
       "symbol": "SAURASHCEM",
@@ -3217,7 +3209,7 @@
     },
     {
       "symbol": "SDL26BEES",
-      "display_name": "RELCAPAMC-NETFSDL26"
+      "display_name": "NIPPON INDIA ETF NIFTY SDL - 2026 MATURITY"
     },
     {
       "symbol": "JINDALSAW",
@@ -3341,7 +3333,7 @@
     },
     {
       "symbol": "GILT5YBEES",
-      "display_name": "RELCAPAMC - NETFGILT5Y"
+      "display_name": "NIPPON INDIA ETF NIFTY 5 YR BENCHMARK G-SEC"
     },
     {
       "symbol": "SKFINDIA",
@@ -3649,7 +3641,7 @@
     },
     {
       "symbol": "MAFANG",
-      "display_name": "MIRAEAMC - MAFANG"
+      "display_name": "MIRAE ASSET NYSE FANG+ ETF"
     },
     {
       "symbol": "TNPETRO",
@@ -3701,7 +3693,7 @@
     },
     {
       "symbol": "AXISBPSETF",
-      "display_name": "AXISAMC - AXISBPSETF"
+      "display_name": "AXIS NIFTY AAA BOND PLUS SDL APR 2026 50-50 ETF"
     },
     {
       "symbol": "TTKPRESTIG",
@@ -3769,11 +3761,11 @@
     },
     {
       "symbol": "AXISHCETF",
-      "display_name": "AXISAMC - AXISHCETF"
+      "display_name": "AXIS NIFTY HEALTHCARE ETF"
     },
     {
       "symbol": "HEALTHIETF",
-      "display_name": "ICICIPRAMC - ICICIPHARM"
+      "display_name": "ICICI PRUDENTIAL NIFTY HEALTHCARE ETF"
     },
     {
       "symbol": "JUBLPHARMA",
@@ -4209,7 +4201,7 @@
     },
     {
       "symbol": "SENSEXIETF",
-      "display_name": "ICICI PRUD SENSEX ETF"
+      "display_name": "ICICI PRUDENTIAL BSE SENSEX ETF"
     },
     {
       "symbol": "GS100426C-GS",
@@ -4321,7 +4313,7 @@
     },
     {
       "symbol": "NEXT50IETF",
-      "display_name": "ICICIPRAMC - ICICINXT50"
+      "display_name": "ICICI PRUDENTIAL NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "GS220840C-GS",
@@ -4525,7 +4517,7 @@
     },
     {
       "symbol": "LIQUIDIETF",
-      "display_name": "ICICIPRAMC - ICICILIQ"
+      "display_name": "ICICI PRUDENTIAL BSE LIQUID RATE ETF - IDCW"
     },
     {
       "symbol": "SNOWMAN",
@@ -4661,7 +4653,7 @@
     },
     {
       "symbol": "PHARMABEES",
-      "display_name": "NIPPONAMC - NETFPHARMA"
+      "display_name": "NIPPON INDIA NIFTY PHARMA ETF"
     },
     {
       "symbol": "675BR27-SG",
@@ -4877,7 +4869,7 @@
     },
     {
       "symbol": "SBIETFCON",
-      "display_name": "SBIAMC - SBIETFCON"
+      "display_name": "SBI ETF CONSUMPTION ETF"
     },
     {
       "symbol": "699WB30-SG",
@@ -4917,7 +4909,7 @@
     },
     {
       "symbol": "BFSI",
-      "display_name": "MIRAEAMC - MAFSETF"
+      "display_name": "MIRAE ASSET NIFTY FINANCIAL SERVICES ETF"
     },
     {
       "symbol": "625AS26-SG",
@@ -4985,7 +4977,7 @@
     },
     {
       "symbol": "FMCGIETF",
-      "display_name": "ICICIPRAMC - ICICIFMCG"
+      "display_name": "ICICI PRUDENTIAL NIFTY FMCG ETF"
     },
     {
       "symbol": "REXPIPES-SM",
@@ -5224,7 +5216,7 @@
       "display_name": "SDL KL 7.06% 2039"
     },
     {
-      "symbol": "ABMINTLLTD",
+      "symbol": "ABMINTLLTD-BE",
       "display_name": "ABM INTERNATIONAL"
     },
     {
@@ -5381,7 +5373,7 @@
     },
     {
       "symbol": "AXISCETF",
-      "display_name": "AXISAMC - AXISCETF"
+      "display_name": "AXIS NIFTY INDIA CONSUMPTION ETF"
     },
     {
       "symbol": "686AP35-SG",
@@ -5425,7 +5417,7 @@
     },
     {
       "symbol": "MASPTOP50",
-      "display_name": "MIRAEAMC - MASPTOP50"
+      "display_name": "MIRAE ASSET S&P 500 TOP 50 ETF"
     },
     {
       "symbol": "925SCL26-NR",
@@ -5433,7 +5425,7 @@
     },
     {
       "symbol": "BANKNIFTY1",
-      "display_name": "KOTAKMAMC-KOTAKBKETF"
+      "display_name": "KOTAK NIFTY BANK ETF"
     },
     {
       "symbol": "889SCL26-NS",
@@ -5482,6 +5474,10 @@
     {
       "symbol": "684PN31-SG",
       "display_name": "SDL PN 6.84% 2031"
+    },
+    {
+      "symbol": "PRECOT-BE",
+      "display_name": "PRECOT"
     },
     {
       "symbol": "698PN33-SG",
@@ -5549,7 +5545,7 @@
     },
     {
       "symbol": "BSLSENETFG",
-      "display_name": "BIRLASLAMC - BSLSENETFG"
+      "display_name": "ADITYA BIRLA SUN LIFE BSE SENSEX ETF"
     },
     {
       "symbol": "SGBOCT26-GB",
@@ -5657,7 +5653,7 @@
     },
     {
       "symbol": "LICNETFGSC",
-      "display_name": "LICNAMC - LICNMFET"
+      "display_name": "LIC MF NIFTY 8-13 YR G-SEC ETF"
     },
     {
       "symbol": "ATGL",
@@ -5800,6 +5796,10 @@
       "display_name": "D K ENTERPRISES GLOBAL L"
     },
     {
+      "symbol": "RAJVIR-BZ",
+      "display_name": "RAJVIR INDUSTRIES"
+    },
+    {
       "symbol": "SELMC-BE",
       "display_name": "SEL MANUFACTURING CO"
     },
@@ -5813,7 +5813,7 @@
     },
     {
       "symbol": "HEALTHY",
-      "display_name": "BIRLASLAMC - HEALTHY"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY HEALTHCARE ETF"
     },
     {
       "symbol": "APOLSINHOT",
@@ -5865,7 +5865,7 @@
     },
     {
       "symbol": "NIFTYETF",
-      "display_name": "MIRAEAMC - MAN50ETF"
+      "display_name": "MIRAE ASSET NIFTY 50 ETF"
     },
     {
       "symbol": "SGBNOV26-GB",
@@ -5909,7 +5909,7 @@
     },
     {
       "symbol": "CONSUMIETF",
-      "display_name": "ICICIPRAMC - ICICICONSU"
+      "display_name": "ICICI PRUDENTIAL NIFTY INDIA CONSUMPTION ETF"
     },
     {
       "symbol": "SHUBHLAXMI-ST",
@@ -5917,7 +5917,7 @@
     },
     {
       "symbol": "TECH",
-      "display_name": "BIRLASLAMC - TECH"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY IT ETF"
     },
     {
       "symbol": "698BR30-SG",
@@ -6021,7 +6021,7 @@
     },
     {
       "symbol": "EQUAL50ADD",
-      "display_name": "DSPAMC - DSPNEWETF"
+      "display_name": "DSP NIFTY 50 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "SJS",
@@ -6361,7 +6361,7 @@
     },
     {
       "symbol": "MAHKTECH",
-      "display_name": "MIRAEAMC - MAHKTECH"
+      "display_name": "MIRAE ASSET HANG SENG TECH ETF"
     },
     {
       "symbol": "STARHEALTH",
@@ -6493,7 +6493,7 @@
     },
     {
       "symbol": "BBETF0432",
-      "display_name": "EDELAMC - BBETF0432"
+      "display_name": "BHARAT BOND ETF - APRIL 2032"
     },
     {
       "symbol": "SHRIRAMPPS",
@@ -6517,7 +6517,7 @@
     },
     {
       "symbol": "SBIETFQLTY",
-      "display_name": "SBIAMC - SBIETFQLTY"
+      "display_name": "SBI NIFTY 200 QUALITY 30 ETF"
     },
     {
       "symbol": "MAPMYINDIA",
@@ -6585,11 +6585,11 @@
     },
     {
       "symbol": "ABSLNN50ET",
-      "display_name": "BIRLASLAMC - ABSLNN50ET"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "SETFNN50",
-      "display_name": "SBI-ETF NIFTY NEXT 50"
+      "display_name": "SBI NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "DATAPATTNS",
@@ -6597,7 +6597,7 @@
     },
     {
       "symbol": "SETFNIFBK",
-      "display_name": "SBI-ETF NIFTY BANK"
+      "display_name": "SBI NIFTY BANK ETF"
     },
     {
       "symbol": "STAR",
@@ -6625,7 +6625,7 @@
     },
     {
       "symbol": "ALPHA",
-      "display_name": "KOTAKMAMC - KOTAKALPHA"
+      "display_name": "KOTAK NIFTY ALPHA 50 ETF"
     },
     {
       "symbol": "MANAKCOAT",
@@ -6633,7 +6633,7 @@
     },
     {
       "symbol": "MONQ50",
-      "display_name": "MOTILALAMC - MONQ50"
+      "display_name": "MOTILAL OSWAL NASDAQ Q 50 ETF"
     },
     {
       "symbol": "HECPROJECT",
@@ -6645,11 +6645,11 @@
     },
     {
       "symbol": "NIFTYADD",
-      "display_name": "DSPAMC - DSPNIFTY"
+      "display_name": "DSP NIFTY 50 ETF"
     },
     {
       "symbol": "MIDQ50ADD",
-      "display_name": "DSPAMC - DSPQ50ETF"
+      "display_name": "DSP NIFTY MIDCAP 150 QUALITY 50 ETF"
     },
     {
       "symbol": "HAVISHA",
@@ -6768,7 +6768,7 @@
       "display_name": "NRB BEARING"
     },
     {
-      "symbol": "UNITEDPOLY-BE",
+      "symbol": "UNITEDPOLY",
       "display_name": "UNITED POLYFAB GUJ."
     },
     {
@@ -6945,7 +6945,7 @@
     },
     {
       "symbol": "NETF",
-      "display_name": "TATAAML - NETF"
+      "display_name": "TATA NIFTY 50 ETF"
     },
     {
       "symbol": "654GS2032-GS",
@@ -6953,7 +6953,7 @@
     },
     {
       "symbol": "AUTOIETF",
-      "display_name": "ICICIPRAMC - ICICIAUTO"
+      "display_name": "ICICI PRUDENTIAL NIFTY AUTO ETF"
     },
     {
       "symbol": "BIL",
@@ -7021,7 +7021,7 @@
     },
     {
       "symbol": "AUTOBEES",
-      "display_name": "NIPPONAMC - NETFAUTO"
+      "display_name": "NIPPON INDIA NIFTY AUTO ETF"
     },
     {
       "symbol": "MHLXMIRU",
@@ -7093,7 +7093,7 @@
     },
     {
       "symbol": "SILVERIETF",
-      "display_name": "ICICIPRAMC - ICICISILVE"
+      "display_name": "ICICI PRUDENTIAL SILVER ETF"
     },
     {
       "symbol": "PRECISION-SM",
@@ -7109,7 +7109,7 @@
     },
     {
       "symbol": "MAKEINDIA",
-      "display_name": "MIRAEAMC - MAMFGETF"
+      "display_name": "MIRAE ASSET NIFTY INDIA MANUFACTURING ETF"
     },
     {
       "symbol": "GRWRHITECH",
@@ -7121,7 +7121,7 @@
     },
     {
       "symbol": "SILVER",
-      "display_name": "BIRLASLAMC - SILVER"
+      "display_name": "ADITYA BIRLA SUN LIFE SILVER ETF"
     },
     {
       "symbol": "732KA34-SG",
@@ -7165,11 +7165,11 @@
     },
     {
       "symbol": "MIDCAP",
-      "display_name": "KOTAKMAMC - KOTAKMID50"
+      "display_name": "KOTAK NIFTY MIDCAP 50 ETF"
     },
     {
       "symbol": "SILVERBEES",
-      "display_name": "NIPPONAMC - NETFSILVER"
+      "display_name": "NIPPON INDIA SILVER ETF"
     },
     {
       "symbol": "CROWN",
@@ -7265,7 +7265,7 @@
     },
     {
       "symbol": "MOMOMENTUM",
-      "display_name": "MOTILALAMC - MOMOMENTUM"
+      "display_name": "MOTILAL OSWAL NIFTY 200 MOMENTUM 30 ETF"
     },
     {
       "symbol": "685AS29-SG",
@@ -7489,7 +7489,7 @@
     },
     {
       "symbol": "GSEC5IETF",
-      "display_name": "ICICIPRAMC - ICICI5GSEC"
+      "display_name": "ICICI PRUDENTIAL NIFTY 5 YR BENCHMARK G-SEC ETF"
     },
     {
       "symbol": "708MP29-SG",
@@ -7553,7 +7553,7 @@
     },
     {
       "symbol": "MIDCAPETF",
-      "display_name": "MIRAEAMC - MAM150ETF"
+      "display_name": "MIRAE ASSET NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "RAJRILTD-BE",
@@ -7617,7 +7617,7 @@
     },
     {
       "symbol": "MID150BEES",
-      "display_name": "NIP IND ETF MIDCAP 150"
+      "display_name": "NIPPON INDIA ETF NIFTY MIDCAP 150"
     },
     {
       "symbol": "GATEWAY",
@@ -7725,7 +7725,7 @@
     },
     {
       "symbol": "LOWVOL1",
-      "display_name": "KOTAKMAMC - KOTAKLOVOL"
+      "display_name": "KOTAK NIFTY 100 LOW VOLATILITY 30 ETF"
     },
     {
       "symbol": "97SFL29-YZ",
@@ -7737,7 +7737,7 @@
     },
     {
       "symbol": "MOLOWVOL",
-      "display_name": "MOTILALAMC - MOLOWVOL"
+      "display_name": "MOTILAL OSWAL BSE LOW VOLATILITY ETF"
     },
     {
       "symbol": "713RJ29-SG",
@@ -7889,7 +7889,7 @@
     },
     {
       "symbol": "TNIDETF",
-      "display_name": "TATAAML - TNIDETF"
+      "display_name": "TATA NIFTY INDIA DIGITAL EXCHANGE TRADED FUND"
     },
     {
       "symbol": "EUROTEXIND-BE",
@@ -8017,7 +8017,7 @@
     },
     {
       "symbol": "SNXT50BETA",
-      "display_name": "UTIAMC-SNXT50BETA"
+      "display_name": "UTI BSE SENSEX NEXT 50 ETF"
     },
     {
       "symbol": "TPLPLASTEH",
@@ -8090,6 +8090,10 @@
     {
       "symbol": "CAMPUS",
       "display_name": "CAMPUS ACTIVEWEAR"
+    },
+    {
+      "symbol": "QUINTEGRA-BE",
+      "display_name": "QUINTEGRA SOLUTIONS"
     },
     {
       "symbol": "TRU",
@@ -8433,7 +8437,7 @@
     },
     {
       "symbol": "NV20BEES",
-      "display_name": "NIP IND ETF ETF NV20"
+      "display_name": "NIPPON INDIA ETF NV20"
     },
     {
       "symbol": "RILINFRA-SM",
@@ -8981,7 +8985,7 @@
     },
     {
       "symbol": "SETFNIF50",
-      "display_name": "SBI-ETF NIFTY 50"
+      "display_name": "SBI NIFTY 50 ETF"
     },
     {
       "symbol": "BALKRISHNA",
@@ -9244,6 +9248,10 @@
       "display_name": "SDL AS 7.83% 2032"
     },
     {
+      "symbol": "UNIVAFOODS-BE",
+      "display_name": "UNIVA FOODS"
+    },
+    {
       "symbol": "78GJ32A-SG",
       "display_name": "SDL GJ 7.8% 2032"
     },
@@ -9393,19 +9401,19 @@
     },
     {
       "symbol": "MOHEALTH",
-      "display_name": "MOTILALAMC - MOHEALTH"
+      "display_name": "MOTILAL OSWAL BSE HEALTHCARE ETF"
     },
     {
       "symbol": "NIFTYBETA",
-      "display_name": "UTIAMC-NIFTYBETA"
+      "display_name": "UTI NIFTY 50 ETF"
     },
     {
       "symbol": "CONS",
-      "display_name": "KOTAKMAMC - KOTAKCONS"
+      "display_name": "KOTAK NIFTY INDIA CONSUMPTION ETF"
     },
     {
       "symbol": "SENSEXBETA",
-      "display_name": "UTIAMC-SENSEXBETA"
+      "display_name": "UTI BSE SENSEX ETF"
     },
     {
       "symbol": "KOCONSINAV",
@@ -9493,7 +9501,7 @@
     },
     {
       "symbol": "NIFTYBEES",
-      "display_name": "NIP IND ETF NIFTY BEES"
+      "display_name": "NIPPON INDIA ETF NIFTY 50 BEES"
     },
     {
       "symbol": "KRBL",
@@ -9525,7 +9533,7 @@
     },
     {
       "symbol": "MOM30IETF",
-      "display_name": "ICICIPRAMC - ICICIMOM30"
+      "display_name": "ICICI PRUDENTIAL NIFTY 200 MOMENTUM 30 ETF"
     },
     {
       "symbol": "SHREEPUSHK",
@@ -9557,11 +9565,11 @@
     },
     {
       "symbol": "HDFCNEXT50",
-      "display_name": "HDFCAMC - HDFCNEXT50"
+      "display_name": "HDFC NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "HDFCNIF100",
-      "display_name": "HDFCAMC - HDFCNIF100"
+      "display_name": "HDFC NIFTY 100 ETF"
     },
     {
       "symbol": "ASAL",
@@ -9629,7 +9637,7 @@
     },
     {
       "symbol": "MNC",
-      "display_name": "KOTAKMAMC - KOTAKMNC"
+      "display_name": "KOTAK NIFTY MNC ETF"
     },
     {
       "symbol": "KOKMNCINAV",
@@ -9641,11 +9649,11 @@
     },
     {
       "symbol": "NIFTYQLITY",
-      "display_name": "BIRLASLAMC - NIFTYQLITY"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY 200 QUALITY 30 ETF"
     },
     {
       "symbol": "MOMENTUM",
-      "display_name": "BIRLASLAMC - MOMENTUM"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY 200 MOMENTUM 30 ETF"
     },
     {
       "symbol": "SURANAT&P",
@@ -9689,7 +9697,7 @@
     },
     {
       "symbol": "INFRAIETF",
-      "display_name": "ICICIPRAMC - ICICIINFRA"
+      "display_name": "ICICI PRUDENTIAL NIFTY INFRASTRUCTURE ETF"
     },
     {
       "symbol": "INDIAMART",
@@ -9737,7 +9745,7 @@
     },
     {
       "symbol": "SILVERADD",
-      "display_name": "DSPAMC - DSPSILVETF"
+      "display_name": "DSP SILVER ETF"
     },
     {
       "symbol": "DSPSILINAV",
@@ -9793,11 +9801,11 @@
     },
     {
       "symbol": "MOQUALITY",
-      "display_name": "MOTILALAMC - MOQUALITY"
+      "display_name": "MOTILAL OSWAL BSE QUALITY ETF"
     },
     {
       "symbol": "MOVALUE",
-      "display_name": "MOTILALAMC - MOVALUE"
+      "display_name": "MOTILAL OSWAL BSE ENHANCED VALUE ETF"
     },
     {
       "symbol": "MOQLTYINAV",
@@ -9865,7 +9873,7 @@
     },
     {
       "symbol": "HDFCSILVER",
-      "display_name": "HDFCAMC - HDFCSILVER"
+      "display_name": "HDFC SILVER ETF"
     },
     {
       "symbol": "HDFCSIINAV",
@@ -9880,7 +9888,7 @@
       "display_name": "JFL LIFE SCIENCES"
     },
     {
-      "symbol": "KORE-ST",
+      "symbol": "KORE-SM",
       "display_name": "JAY JALARAM TECHNO"
     },
     {
@@ -9945,7 +9953,7 @@
     },
     {
       "symbol": "JUNIORBEES",
-      "display_name": "NIP IND ETF JUNIOR BEES"
+      "display_name": "NIPPON INDIA ETF NIFTY NEXT 50 JUNIOR BEES"
     },
     {
       "symbol": "DIVISLAB",
@@ -10045,7 +10053,7 @@
     },
     {
       "symbol": "LIQUIDBEES",
-      "display_name": "NIP IND ETF LIQUID BEES"
+      "display_name": "NIPPON INDIA ETF NIFTY 1D RATE LIQUID BEES"
     },
     {
       "symbol": "INFOBEAN",
@@ -10057,7 +10065,7 @@
     },
     {
       "symbol": "BANKIETF",
-      "display_name": "ICICIPRAMC - IPRU5008"
+      "display_name": "ICICI PRUDENTIAL NIFTY BANK ETF"
     },
     {
       "symbol": "DCMNVL",
@@ -10086,6 +10094,10 @@
     {
       "symbol": "AGRITECH-BE",
       "display_name": "AGRI-TECH (INDIA)"
+    },
+    {
+      "symbol": "GFSTEELS-BE",
+      "display_name": "GRAND FOUNDRY"
     },
     {
       "symbol": "LIBAS",
@@ -10149,7 +10161,7 @@
     },
     {
       "symbol": "AXISILVER",
-      "display_name": "AXISAMC - AXISILVER"
+      "display_name": "AXIS SILVER ETF"
     },
     {
       "symbol": "INDIGO",
@@ -10205,7 +10217,7 @@
     },
     {
       "symbol": "HDFCGROWTH",
-      "display_name": "HDFCAMC - HDFCGROWTH"
+      "display_name": "HDFC NIFTY GROWTH SECTORS 15 ETF"
     },
     {
       "symbol": "WELSPUNLIV",
@@ -10213,7 +10225,7 @@
     },
     {
       "symbol": "HDFCQUAL",
-      "display_name": "HDFCAMC - HDFCQUAL"
+      "display_name": "HDFC NIFTY100 QUALITY 30 ETF"
     },
     {
       "symbol": "JAIBALAJI",
@@ -10221,7 +10233,7 @@
     },
     {
       "symbol": "HDFCVALUE",
-      "display_name": "HDFCAMC - HDFCVALUE"
+      "display_name": "HDFC NIFTY50 VALUE 20 ETF"
     },
     {
       "symbol": "IGL",
@@ -10333,7 +10345,7 @@
     },
     {
       "symbol": "LICNETFN50",
-      "display_name": "LICNAMC - LICNFENGP"
+      "display_name": "LIC MF NIFTY 50 ETF"
     },
     {
       "symbol": "MUKANDLTD",
@@ -10380,6 +10392,10 @@
       "display_name": "TTK HEALTHCARE"
     },
     {
+      "symbol": "BGLOBAL-BZ",
+      "display_name": "BHARATIYA GLOBAL INFO"
+    },
+    {
       "symbol": "BIOCON",
       "display_name": "BIOCON"
     },
@@ -10393,7 +10409,7 @@
     },
     {
       "symbol": "PVTBANIETF",
-      "display_name": "ICICIPRAMC - ICICIBANKP"
+      "display_name": "ICICI PRUDENTIAL NIFTY PRIVATE BANK ETF"
     },
     {
       "symbol": "776MH30-SG",
@@ -10489,11 +10505,11 @@
     },
     {
       "symbol": "BANKBEES",
-      "display_name": "NIP IND ETF BANK BEES"
+      "display_name": "NIPPON INDIA ETF BANK BEES"
     },
     {
       "symbol": "LICNETFSEN",
-      "display_name": "LICNAMC - LICNFESGP"
+      "display_name": "LIC MF BSE SENSEX ETF"
     },
     {
       "symbol": "PILANIINVS",
@@ -10509,7 +10525,7 @@
     },
     {
       "symbol": "NV20",
-      "display_name": "KOTAKMAMC - KTKNV20ETF"
+      "display_name": "KOTAK NIFTY 50 VALUE 20 ETF"
     },
     {
       "symbol": "JPASSOCIAT-BE",
@@ -10605,7 +10621,7 @@
     },
     {
       "symbol": "HDFCMOMENT",
-      "display_name": "HDFCAMC - HDFCMOMENT"
+      "display_name": "HDFC NIFTY200 MOMENTUM 30 ETF"
     },
     {
       "symbol": "COFORGE",
@@ -10613,7 +10629,7 @@
     },
     {
       "symbol": "HDFCLOWVOL",
-      "display_name": "HDFCAMC - HDFCLOWVOL"
+      "display_name": "HDFC NIFTY100 LOW VOLATILITY 30 ETF"
     },
     {
       "symbol": "TEXINFRA",
@@ -10665,11 +10681,11 @@
     },
     {
       "symbol": "HDFCNIFTY",
-      "display_name": "HDFCAMC - HDFCNIFTY"
+      "display_name": "HDFC NIFTY 50 ETF"
     },
     {
       "symbol": "HDFCSENSEX",
-      "display_name": "HDFCAMC - HDFCSENSEX"
+      "display_name": "HDFC BSE SENSEX ETF"
     },
     {
       "symbol": "LINCOLN",
@@ -11241,11 +11257,11 @@
     },
     {
       "symbol": "HDFCNIFIT",
-      "display_name": "HDFCAMC - HDFCNIFIT"
+      "display_name": "HDFC NIFTY IT ETF"
     },
     {
       "symbol": "HDFCPVTBAN",
-      "display_name": "HDFCAMC - HDFCPVTBAN"
+      "display_name": "HDFC NIFTY PRIVATE BANK ETF"
     },
     {
       "symbol": "HDFCPBINAV",
@@ -11341,7 +11357,7 @@
     },
     {
       "symbol": "FINIETF",
-      "display_name": "ICICIPRAMC-ICICIFIN"
+      "display_name": "ICICI PRUDENTIAL NIFTY FINANCIAL SERVICES EX-BANK ETF"
     },
     {
       "symbol": "ICIFININAV",
@@ -11457,7 +11473,7 @@
     },
     {
       "symbol": "NPBET",
-      "display_name": "TATAAML - NPBET"
+      "display_name": "TATA NIFTY PRIVATE BANK ETF"
     },
     {
       "symbol": "BAHETI-SM",
@@ -11466,6 +11482,10 @@
     {
       "symbol": "DHARMAJ",
       "display_name": "DHARMAJ CROP GUARD"
+    },
+    {
+      "symbol": "SECL-ST",
+      "display_name": "SALASAR EXTERIOR CONT"
     },
     {
       "symbol": "SAFARI",
@@ -11505,7 +11525,7 @@
     },
     {
       "symbol": "SILVER1",
-      "display_name": "KOTAKMAMC - KOTAKSILVE"
+      "display_name": "KOTAK SILVER ETF"
     },
     {
       "symbol": "AIAENG",
@@ -11593,11 +11613,11 @@
     },
     {
       "symbol": "EBBETF0433",
-      "display_name": "EDELAMC - EBBETF0433"
+      "display_name": "BHARAT BOND ETF - APRIL 2033"
     },
     {
       "symbol": "GSEC10IETF",
-      "display_name": "ICICIPRAMC - ICICI10GS"
+      "display_name": "ICICI PRUDENTIAL NIFTY 10 YR BENCHMARK G-SEC ETF"
     },
     {
       "symbol": "PVRINOX",
@@ -11641,7 +11661,7 @@
     },
     {
       "symbol": "COMMOIETF",
-      "display_name": "ICICIPRAMC - ICICICOMMO"
+      "display_name": "ICICI PRUDENTIAL NIFTY COMMODITIES ETF"
     },
     {
       "symbol": "ALLETEC-SM",
@@ -12133,7 +12153,7 @@
     },
     {
       "symbol": "BANKADD",
-      "display_name": "DSPAMC - DSPBANK"
+      "display_name": "DSP NIFTY BANK ETF"
     },
     {
       "symbol": "TALBROAUTO",
@@ -12340,6 +12360,10 @@
       "display_name": "MM FORGINGS"
     },
     {
+      "symbol": "CLCIND-BE",
+      "display_name": "CLC INDUSTRIES"
+    },
+    {
       "symbol": "865IIFL28-NS",
       "display_name": "865IIFL28-NS"
     },
@@ -12473,7 +12497,7 @@
     },
     {
       "symbol": "LIQUID1",
-      "display_name": "KOTAKMAMC - KOTAKLIQ"
+      "display_name": "KOTAK NIFTY 1D RATE LIQUID ETF"
     },
     {
       "symbol": "PARACABLES",
@@ -12549,7 +12573,7 @@
     },
     {
       "symbol": "ABSLBANETF",
-      "display_name": "BIRLASLAMC - ABSLBANETF"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY BANK ETF"
     },
     {
       "symbol": "771WB39-SG",
@@ -12833,15 +12857,15 @@
     },
     {
       "symbol": "HDFCBSE500",
-      "display_name": "HDFCAMC - HDFCBSE500"
+      "display_name": "HDFC BSE 500 ETF"
     },
     {
       "symbol": "HDFCSML250",
-      "display_name": "HDFCAMC - HDFCSML250"
+      "display_name": "HDFC NIFTY SMALLCAP 250 ETF"
     },
     {
       "symbol": "HDFCMID150",
-      "display_name": "HDFCAMC - HDFCMID150"
+      "display_name": "HDFC NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "HBS500INAV",
@@ -12937,7 +12961,7 @@
     },
     {
       "symbol": "GOLDETF",
-      "display_name": "MIRAEAMC - MAGOLDETF"
+      "display_name": "MIRAE ASSET GOLD ETF"
     },
     {
       "symbol": "MAGOLDINAV",
@@ -13129,7 +13153,7 @@
     },
     {
       "symbol": "GOLDBEES",
-      "display_name": "NIP IND ETF GOLD BEES"
+      "display_name": "NIPPON INDIA ETF GOLD BEES"
     },
     {
       "symbol": "771BR33-SG",
@@ -13237,7 +13261,7 @@
     },
     {
       "symbol": "ABSLLIQUID",
-      "display_name": "BIRLASLAMC - ABSLLIQUID"
+      "display_name": "ADITYA BIRLA SUN LIFE CRISIL LIQUID OVERNIGHT ETF"
     },
     {
       "symbol": "739NHAI31A-ND",
@@ -13273,7 +13297,7 @@
     },
     {
       "symbol": "GOLDBETA",
-      "display_name": "UTIAMC-UTIGOLDBETA"
+      "display_name": "UTI MUTUAL FUND - UTI GOLD EXCHANGE TRADED FUND"
     },
     {
       "symbol": "DISHTV",
@@ -13345,7 +13369,7 @@
     },
     {
       "symbol": "PSUBNKIETF",
-      "display_name": "ICICIPRAMC - PSUBANKICI"
+      "display_name": "ICICI PRUDENTIAL NIFTY PSU BANK ETF"
     },
     {
       "symbol": "PSBKICINAV",
@@ -13557,7 +13581,7 @@
     },
     {
       "symbol": "AXSENSEX",
-      "display_name": "AXISAMC - AXSENSEX"
+      "display_name": "AXIS BSE SENSEX ETF"
     },
     {
       "symbol": "ADVANIHOTR",
@@ -13585,7 +13609,7 @@
     },
     {
       "symbol": "LOWVOL",
-      "display_name": "MIRAEAMC - MANV30F"
+      "display_name": "MIRAE ASSET NIFTY 100 LOW VOLATILITY 30 ETF"
     },
     {
       "symbol": "SPARC",
@@ -13777,7 +13801,7 @@
     },
     {
       "symbol": "GSEC10YEAR",
-      "display_name": "MIRAEAMC - MAGS813ETF"
+      "display_name": "MIRAE ASSET NIFTY 8-13 YR G-SEC ETF"
     },
     {
       "symbol": "NAGREEKCAP",
@@ -13877,7 +13901,7 @@
     },
     {
       "symbol": "PSUBNKBEES",
-      "display_name": "NIP IND ETF PSU BANK BEES"
+      "display_name": "NIPPON INDIA ETF PSU BANK BEES"
     },
     {
       "symbol": "BAJAJELEC",
@@ -13917,7 +13941,7 @@
     },
     {
       "symbol": "PSUBANK",
-      "display_name": "KOTAK PSU BANK"
+      "display_name": "KOTAK NIFTY PSU BANK ETF"
     },
     {
       "symbol": "BLAL",
@@ -13941,7 +13965,7 @@
     },
     {
       "symbol": "SILVERBETA",
-      "display_name": "UTIAMC-SILVERBETA"
+      "display_name": "UTI SILVER ETF"
     },
     {
       "symbol": "SILETFINAV",
@@ -14085,7 +14109,7 @@
     },
     {
       "symbol": "LICNFNHGP",
-      "display_name": "LICNAMC - LICNFNHGP"
+      "display_name": "LIC MF NIFTY 100 ETF"
     },
     {
       "symbol": "1025SFIL26-NT",
@@ -14261,7 +14285,7 @@
     },
     {
       "symbol": "GOLDADD",
-      "display_name": "DSPAMC - DSPGOLD"
+      "display_name": "DSP GOLD ETF"
     },
     {
       "symbol": "NAHARCAP",
@@ -14332,7 +14356,7 @@
       "display_name": "2.50%GOLDBONDS2027SR-VII"
     },
     {
-      "symbol": "DENEERS-SM",
+      "symbol": "DENEERS-ST",
       "display_name": "DE NEERS TOOLS"
     },
     {
@@ -14533,7 +14557,7 @@
     },
     {
       "symbol": "EBBETF0430",
-      "display_name": "EDELAMC - EBBETF0430"
+      "display_name": "BHARAT BOND ETF - APRIL 2030"
     },
     {
       "symbol": "743MZ36-SG",
@@ -14737,7 +14761,7 @@
     },
     {
       "symbol": "SILVERAG",
-      "display_name": "MIRAEAMC - MASILVER"
+      "display_name": "MIRAE ASSET SILVER ETF"
     },
     {
       "symbol": "MASILINAV",
@@ -15065,7 +15089,7 @@
     },
     {
       "symbol": "SHARIABEES",
-      "display_name": "NIP IND ETF SHARIAH BEES"
+      "display_name": "NIPPON INDIA ETF NIFTY 50 SHARIAH BEES"
     },
     {
       "symbol": "HMAAGRO",
@@ -15185,7 +15209,7 @@
     },
     {
       "symbol": "MIDCAPIETF",
-      "display_name": "ICICIPRAMC - ICICIM150"
+      "display_name": "ICICI PRUDENTIAL NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "875SFL27-ZF",
@@ -15201,7 +15225,7 @@
     },
     {
       "symbol": "NEXT50",
-      "display_name": "MIRAEAMC - MANXT50"
+      "display_name": "MIRAE ASSET NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "SHRIPISTON",
@@ -15225,7 +15249,7 @@
     },
     {
       "symbol": "ITADD",
-      "display_name": "DSPAMC - DSPIT"
+      "display_name": "DSP NIFTY IT ETF"
     },
     {
       "symbol": "TRIDHYA-SM",
@@ -15285,7 +15309,7 @@
     },
     {
       "symbol": "SETFGOLD",
-      "display_name": "SBI-ETF GOLD"
+      "display_name": "SBI GOLD ETF"
     },
     {
       "symbol": "BLS",
@@ -15377,7 +15401,7 @@
     },
     {
       "symbol": "SETF10GILT",
-      "display_name": "SBIAMC - SETF10GILT"
+      "display_name": "SBI NIFTY 10 YR BENCHMARK G-SEC ETF"
     },
     {
       "symbol": "PREMEXPLN",
@@ -15397,7 +15421,7 @@
     },
     {
       "symbol": "BANKETF",
-      "display_name": "MIRAEAMC - BANKETF"
+      "display_name": "MIRAE ASSET NIFTY BANK ETF"
     },
     {
       "symbol": "GLOBUSSPR",
@@ -15461,7 +15485,7 @@
     },
     {
       "symbol": "NV20IETF",
-      "display_name": "ICICI PRUDENTIAL NV20 ETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY50 VALUE 20 ETF"
     },
     {
       "symbol": "CONTROLPR",
@@ -15533,7 +15557,7 @@
     },
     {
       "symbol": "LIQUID",
-      "display_name": "MIRAEAMC - LIQUID"
+      "display_name": "MIRAE ASSET NIFTY 1D RATE LIQUID ETF-IDCW"
     },
     {
       "symbol": "LIQIDINAV",
@@ -15541,7 +15565,7 @@
     },
     {
       "symbol": "PVTBANKADD",
-      "display_name": "DSPAMC - DSPPVBKETF"
+      "display_name": "DSP NIFTY PRIVATE BANK ETF"
     },
     {
       "symbol": "ASALCBR",
@@ -15553,11 +15577,11 @@
     },
     {
       "symbol": "SENSEXADD",
-      "display_name": "DSPAMC - DSPSENXETF"
+      "display_name": "DSP BSE SENSEX ETF"
     },
     {
       "symbol": "PSUBANKADD",
-      "display_name": "DSPAMC - DSPPSBKETF"
+      "display_name": "DSP NIFTY PSU BANK ETF"
     },
     {
       "symbol": "DSPPVBINAV",
@@ -15661,11 +15685,11 @@
     },
     {
       "symbol": "LTGILTBEES",
-      "display_name": "NIP IND ETF LONGTERM GILT"
+      "display_name": "NIPPON INDIA ETF LONG TERM GILT"
     },
     {
       "symbol": "MIDSELIETF",
-      "display_name": "ICICI PRUD MIDCAP SEL ETF"
+      "display_name": "ICICI PRUDENTIAL BSE MIDCAP SELECT ETF"
     },
     {
       "symbol": "QUESS",
@@ -15733,7 +15757,7 @@
     },
     {
       "symbol": "QUAL30IETF",
-      "display_name": "ICICIPRAMC - ICICIQTY30"
+      "display_name": "ICICI PRUDENTIAL NIFTY 200 QUALITY 30 ETF"
     },
     {
       "symbol": "LTIM",
@@ -15822,6 +15846,10 @@
     {
       "symbol": "ABBOTINDIA",
       "display_name": "ABBOTT INDIA"
+    },
+    {
+      "symbol": "HDIL-BZ",
+      "display_name": "HOUSING DEV & INFRA"
     },
     {
       "symbol": "GEEKAYWIRE",
@@ -15977,7 +16005,7 @@
     },
     {
       "symbol": "NIFTY1",
-      "display_name": "KOTAK NIFTY ETF"
+      "display_name": "KOTAK NIFTY 50 ETF"
     },
     {
       "symbol": "745JK53-SG",
@@ -16097,7 +16125,7 @@
     },
     {
       "symbol": "HDFCLIQUID",
-      "display_name": "HDFCAMC - HDFCLIQUID"
+      "display_name": "HDFC NIFTY 1D RATE LIQUID ETF - GROWTH"
     },
     {
       "symbol": "HDFLIQINAV",
@@ -16109,11 +16137,11 @@
     },
     {
       "symbol": "HNGSNGBEES",
-      "display_name": "NIP IND ETF HANGSENG BEES"
+      "display_name": "NIPPON INDIA ETF HANG SENG BEES"
     },
     {
       "symbol": "IVZINGOLD",
-      "display_name": "INVESCO INDIA GOLD ETF"
+      "display_name": "INVESCO INDIA GOLD EXCHANGE TRADED FUND"
     },
     {
       "symbol": "745BR31-SG",
@@ -16165,7 +16193,7 @@
     },
     {
       "symbol": "MIDCAPBETA",
-      "display_name": "UTIAMC-MIDCAPBETA"
+      "display_name": "UTI NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "NIM150INAV",
@@ -16601,7 +16629,7 @@
     },
     {
       "symbol": "IDFNIFTYET",
-      "display_name": "BANDHANAMC - IDFNIFTYET"
+      "display_name": "BANDHAN NIFTY 50 ETF"
     },
     {
       "symbol": "HIGREEN-SM",
@@ -16841,7 +16869,7 @@
     },
     {
       "symbol": "ITBEES",
-      "display_name": "NIP IND ETF IT"
+      "display_name": "NIPPON INDIA ETF NIFTY IT"
     },
     {
       "symbol": "SAAKSHI-SM",
@@ -16989,7 +17017,7 @@
     },
     {
       "symbol": "SENSEXETF",
-      "display_name": "MIRAEAMC - SENSEXETF"
+      "display_name": "MIRAE ASSET S&P BSE SENSEX ETF"
     },
     {
       "symbol": "AARTISURF",
@@ -17005,7 +17033,7 @@
     },
     {
       "symbol": "MONIFTY500",
-      "display_name": "MOTILALAMC - MONIFTY500"
+      "display_name": "MOTILAL OSWAL NIFTY 500 ETF"
     },
     {
       "symbol": "SENSEXINAV",
@@ -17028,12 +17056,12 @@
       "display_name": "BLISS GVS PHARMA"
     },
     {
-      "symbol": "EMAMIREAL",
-      "display_name": "EMAMI REALTY"
+      "symbol": "EFACTOR-SM",
+      "display_name": "E FACTOR EXPERIENCES"
     },
     {
-      "symbol": "EFACTOR-ST",
-      "display_name": "E FACTOR EXPERIENCES"
+      "symbol": "EMAMIREAL",
+      "display_name": "EMAMI REALTY"
     },
     {
       "symbol": "THEJO",
@@ -17045,7 +17073,7 @@
     },
     {
       "symbol": "MOM50",
-      "display_name": "MOTILAL OSWAL M50 ETF"
+      "display_name": "MOTILAL OSWAL NIFTY 50 ETF"
     },
     {
       "symbol": "TERASOFT",
@@ -17164,7 +17192,7 @@
       "display_name": "SECMARK CONSULTANCY"
     },
     {
-      "symbol": "TICL-BE",
+      "symbol": "TICL",
       "display_name": "TWAMEV CONS AND INFRA"
     },
     {
@@ -17337,11 +17365,11 @@
     },
     {
       "symbol": "ITETF",
-      "display_name": "MIRAEAMC - ITETF"
+      "display_name": "MIRAE ASSET NIFTY IT ETF"
     },
     {
       "symbol": "ALPHAETF",
-      "display_name": "MIRAEAMC - ALPHAETF"
+      "display_name": "MIRAE ASSET NIFTY 200 ALPHA 30 ETF"
     },
     {
       "symbol": "ITETFINAV",
@@ -17362,6 +17390,14 @@
     {
       "symbol": "COMPINFO-BZ",
       "display_name": "COMPUAGE INFOCOM"
+    },
+    {
+      "symbol": "GAYAPROJ-BZ",
+      "display_name": "GAYATRI PROJECTS"
+    },
+    {
+      "symbol": "CMICABLES-BZ",
+      "display_name": "CMI"
     },
     {
       "symbol": "ANSALAPI-BZ",
@@ -17397,7 +17433,7 @@
     },
     {
       "symbol": "LIQUIDSBI",
-      "display_name": "SBIAMC - LIQUIDSBI"
+      "display_name": "SBI NIFTY 1D RATE LIQUID ETF - IDCW"
     },
     {
       "symbol": "LIQSBIINAV",
@@ -17681,7 +17717,7 @@
     },
     {
       "symbol": "EGOLD",
-      "display_name": "EDELAMC - EGOLD"
+      "display_name": "EDELWEISS GOLD ETF"
     },
     {
       "symbol": "KILITCH",
@@ -17825,7 +17861,7 @@
     },
     {
       "symbol": "INFRABEES",
-      "display_name": "NIP IND ETF INFRA BEES"
+      "display_name": "NIPPON INDIA ETF INFRA BEES"
     },
     {
       "symbol": "948SCL26A-NN",
@@ -18089,7 +18125,7 @@
     },
     {
       "symbol": "ESILVER",
-      "display_name": "EDELAMC - ESILVER"
+      "display_name": "EDELWEISS SILVER ETF"
     },
     {
       "symbol": "ESILINAV",
@@ -18384,7 +18420,7 @@
       "display_name": "ANJANI PORTLAND CEM"
     },
     {
-      "symbol": "GRAPHISAD-SM",
+      "symbol": "GRAPHISAD-ST",
       "display_name": "GRAPHISADS"
     },
     {
@@ -18461,7 +18497,7 @@
     },
     {
       "symbol": "AXISGOLD",
-      "display_name": "AXIS MF - AXIS GOLD ETF"
+      "display_name": "AXIS GOLD ETF"
     },
     {
       "symbol": "GRAVITA",
@@ -18477,7 +18513,7 @@
     },
     {
       "symbol": "BBNPPGOLD",
-      "display_name": "BARODABNP - BBNPPGOLD"
+      "display_name": "BARODA BNP PARIBAS GOLD ETF"
     },
     {
       "symbol": "BNGOLDINAV",
@@ -19401,11 +19437,11 @@
     },
     {
       "symbol": "AXISNIFTY",
-      "display_name": "AXISAMC - AXISNIFTY"
+      "display_name": "AXIS NIFTY 50 ETF"
     },
     {
       "symbol": "LOWVOLIETF",
-      "display_name": "ICICI PR NIF LW VL 30 ETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY 100 LOW VOLATILITY 30 ETF"
     },
     {
       "symbol": "753AS29-SG",
@@ -19537,7 +19573,7 @@
     },
     {
       "symbol": "TATAGOLD",
-      "display_name": "TATAAML-TATAGOLD"
+      "display_name": "TATA GOLD EXCHANGE TRADED FUND"
     },
     {
       "symbol": "AVADHSUGAR",
@@ -19553,7 +19589,7 @@
     },
     {
       "symbol": "MOM100",
-      "display_name": "MOTILAL OS MIDCAP100 ETF"
+      "display_name": "MOTILAL OSWAL NIFTY MIDCAP 100 ETF"
     },
     {
       "symbol": "THEINVEST",
@@ -19561,7 +19597,7 @@
     },
     {
       "symbol": "TATSILV",
-      "display_name": "TATAAML-TATSILV"
+      "display_name": "TATA SILVER EXCHANGE TRADED FUND"
     },
     {
       "symbol": "TAGOLDINAV",
@@ -19589,7 +19625,7 @@
     },
     {
       "symbol": "NEXT50BETA",
-      "display_name": "UTIAMC-NEXT50BETA"
+      "display_name": "UTI NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "STEL",
@@ -19688,7 +19724,7 @@
       "display_name": "835SMFG27-N0"
     },
     {
-      "symbol": "COMSYN-BE",
+      "symbol": "COMSYN",
       "display_name": "COMMERCIAL SYN BAGS"
     },
     {
@@ -19818,6 +19854,10 @@
     {
       "symbol": "775SIDBI27-N1",
       "display_name": "775SIDBI27-N1"
+    },
+    {
+      "symbol": "EDUCOMP-BZ",
+      "display_name": "EDUCOMP SOLUTIONS"
     },
     {
       "symbol": "CAPACITE",
@@ -20137,7 +20177,7 @@
     },
     {
       "symbol": "NIFTYBETF",
-      "display_name": "BFAM - NIFTYBETF"
+      "display_name": "BAJAJ FINSERV NIFTY 50 ETF"
     },
     {
       "symbol": "711MP30-SG",
@@ -20205,7 +20245,7 @@
     },
     {
       "symbol": "BANKBETF",
-      "display_name": "BFAM - BANKBETF"
+      "display_name": "BAJAJ FINSERV NIFTY BANK ETF"
     },
     {
       "symbol": "BANKBINAV",
@@ -20961,7 +21001,7 @@
     },
     {
       "symbol": "EBBETF0431",
-      "display_name": "EDELAMC - EBBETF0431"
+      "display_name": "BHARAT BOND ETF - APRIL 2031"
     },
     {
       "symbol": "SGBJUL28IV-GB",
@@ -21121,7 +21161,7 @@
     },
     {
       "symbol": "ITIETF",
-      "display_name": "ICICIPRAMC - ICICITECH"
+      "display_name": "ICICI PRUDENTIAL NIFTY IT ETF"
     },
     {
       "symbol": "65KA30-SG",
@@ -21217,7 +21257,7 @@
     },
     {
       "symbol": "HDFCNIFBAN",
-      "display_name": "HDFCAMC - HDFCNIFBAN"
+      "display_name": "HDFC NIFTY BANKING ETF"
     },
     {
       "symbol": "68GS2060-GS",
@@ -21225,7 +21265,7 @@
     },
     {
       "symbol": "BANKBETA",
-      "display_name": "UTIAMC-BANKBETA"
+      "display_name": "UTI NIFTY BANK ETF"
     },
     {
       "symbol": "655AS30A-SG",
@@ -21301,7 +21341,7 @@
     },
     {
       "symbol": "ITBETA",
-      "display_name": "UTIAMC-ITBETA"
+      "display_name": "UTI NIFTY IT ETF"
     },
     {
       "symbol": "NIFITEINAV",
@@ -21388,16 +21428,16 @@
       "display_name": "806SDIL29-N0"
     },
     {
-      "symbol": "FONEBOX-ST",
+      "symbol": "FONEBOX-SM",
       "display_name": "FONEBOX RETAIL"
     },
     {
       "symbol": "GILT5BETA",
-      "display_name": "UTIAMC-GILT5BETA"
+      "display_name": "UTI NIFTY 5 YR BENCHMARK G-SEC ETF"
     },
     {
       "symbol": "GILT10BETA",
-      "display_name": "UTIAMC-GILT10BETA"
+      "display_name": "UTI NIFTY 10 YR BENCHMARK G-SEC ETF"
     },
     {
       "symbol": "DELAPLEX-SM",
@@ -21453,11 +21493,11 @@
     },
     {
       "symbol": "HEALTHADD",
-      "display_name": "DSPAMC - HEALTHADD"
+      "display_name": "DSP NIFTY HEALTHCARE ETF"
     },
     {
       "symbol": "HDFCPSUBK",
-      "display_name": "HDFCAMC HDFCPSUBK"
+      "display_name": "HDFC NIFTY PSU BANK ETF"
     },
     {
       "symbol": "HEALADINAV",
@@ -21689,7 +21729,7 @@
     },
     {
       "symbol": "LICNMID100",
-      "display_name": "LICNAMC - LICNMID100"
+      "display_name": "LIC MF NIFTY MIDCAP 100 ETF"
     },
     {
       "symbol": "WTICAB-SM",
@@ -21713,7 +21753,7 @@
     },
     {
       "symbol": "MON100",
-      "display_name": "MOTILAL OS NASDAQ100 ETF"
+      "display_name": "MOTILAL OSWAL NASDAQ 100 ETF"
     },
     {
       "symbol": "735PY27-SG",
@@ -21865,7 +21905,7 @@
     },
     {
       "symbol": "SMALLCAP",
-      "display_name": "MIRAEAMC - SMALLCAP"
+      "display_name": "MIRAE ASSET NIFTY SMALLCAP 250 MOMENTUM QUALITY 100 ETF"
     },
     {
       "symbol": "105UCL2026-NB",
@@ -22385,11 +22425,11 @@
     },
     {
       "symbol": "MOSMALL250",
-      "display_name": "MOTILALAMC - MOSMALL250"
+      "display_name": "MOTILAL OSWAL NIFTY SMALLCAP 250 ETF"
     },
     {
       "symbol": "MOREALTY",
-      "display_name": "MOTILALAMC - MOREALTY"
+      "display_name": "MOTILAL OSWAL NIFTY REALTY ETF"
     },
     {
       "symbol": "MOREALINAV",
@@ -22825,7 +22865,7 @@
     },
     {
       "symbol": "LIQUIDADD",
-      "display_name": "DSPAMC - LIQUIDADD"
+      "display_name": "DSP BSE LIQUID RATE ETF"
     },
     {
       "symbol": "BLUEPEBBLE-SM",
@@ -23409,11 +23449,11 @@
     },
     {
       "symbol": "BSLGOLDETF",
-      "display_name": "ADITYBIRLA SL GOLD ETF-GR"
+      "display_name": "BIRLA SUN LIFE GOLD ETF"
     },
     {
       "symbol": "ABSLPSE",
-      "display_name": "BIRLASLAMC-ABSLPSE"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY PSE ETF"
     },
     {
       "symbol": "8137TCL24-NH",
@@ -23473,7 +23513,7 @@
     },
     {
       "symbol": "MIDSMALL",
-      "display_name": "MIRAEAMC - MIDSMALL"
+      "display_name": "MIRAE ASSET NIFTY MIDSMALLCAP400 MOMENTUM QUALITY 100 ETF"
     },
     {
       "symbol": "MIDSMAINAV",
@@ -23585,7 +23625,7 @@
     },
     {
       "symbol": "LIQUIDBETF",
-      "display_name": "BFAM - LIQUIDBETF"
+      "display_name": "BAJAJ FINSERV NIFTY 1D RATE LIQUID ETF - GROWTH"
     },
     {
       "symbol": "LIQETFINAV",
@@ -23869,7 +23909,7 @@
     },
     {
       "symbol": "TOP100CASE",
-      "display_name": "ZERODHA NIFTY LARGECAP 100 ETF"
+      "display_name": "ZERODHA NIFTY 100 ETF"
     },
     {
       "symbol": "TOP100INAV",
@@ -23912,6 +23952,10 @@
       "display_name": "SDL JK 7.33% 2051"
     },
     {
+      "symbol": "SKIL-BZ",
+      "display_name": "SKIL INFRASTRUCTURE"
+    },
+    {
       "symbol": "GPECO-SM",
       "display_name": "GP ECO SOLUTIONS INDIA L"
     },
@@ -23921,7 +23965,7 @@
     },
     {
       "symbol": "BBNPNBETF",
-      "display_name": "BARODABNP - BBNPNBETF"
+      "display_name": "BARODA BNP PARIBAS NIFTY BANK ETF"
     },
     {
       "symbol": "BBNPNBINAV",
@@ -24061,7 +24105,7 @@
     },
     {
       "symbol": "IVZINNIFTY",
-      "display_name": "INVESCO INDIA NIFTY ETF"
+      "display_name": "INVESCO INDIA NIFTY 50 EXCHANGE TRADED FUND"
     },
     {
       "symbol": "1190VCCL26-N0",
@@ -24249,7 +24293,7 @@
     },
     {
       "symbol": "SBISILVER",
-      "display_name": "SBIAMC - SBISILVER"
+      "display_name": "SBI SILVER ETF"
     },
     {
       "symbol": "SBISILINAV",
@@ -24265,7 +24309,7 @@
     },
     {
       "symbol": "LIQUIDSHRI",
-      "display_name": "SHRIRAM - LIQUIDSHRI"
+      "display_name": "SHRIRAM NIFTY 1D RATE LIQUID ETF"
     },
     {
       "symbol": "LIQSHRINAV",
@@ -24301,7 +24345,7 @@
     },
     {
       "symbol": "ABGSEC",
-      "display_name": "BIRLASLAMC - ABGSEC"
+      "display_name": "ADITYA BIRLA SUN LIFE CRISIL BROAD BASED GILT ETF"
     },
     {
       "symbol": "DHANUKA",
@@ -24361,7 +24405,7 @@
     },
     {
       "symbol": "EVINDIA",
-      "display_name": "MIRAEAMC - EVINDIA"
+      "display_name": "MIRAE ASSET NIFTY EV AND NEW AGE AUTOMOTIVE ETF"
     },
     {
       "symbol": "817ABHF27-N0",
@@ -24465,7 +24509,7 @@
     },
     {
       "symbol": "SBINEQWETF",
-      "display_name": "SBIAMC - SBINEQWETF"
+      "display_name": "SBI NIFTY50 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "SBINEQINAV",
@@ -24481,7 +24525,7 @@
     },
     {
       "symbol": "OILIETF",
-      "display_name": "ICICIPRAMC - OILIETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY OIL & GAS ETF"
     },
     {
       "symbol": "MAITHANALL",
@@ -24861,7 +24905,7 @@
     },
     {
       "symbol": "BSLNIFTY",
-      "display_name": "ADITYBIRLA SL NIF ETF-GR"
+      "display_name": "ADITYA BIRLA SUN LIFE NIFTY 50 ETF"
     },
     {
       "symbol": "PPSL-SM",
@@ -24877,7 +24921,7 @@
     },
     {
       "symbol": "GROWWEV",
-      "display_name": "GROWWAMC - GROWWEV"
+      "display_name": "GROWW NIFTY EV & NEW AGE AUTOMOTIVE ETF"
     },
     {
       "symbol": "GROWEVINAV",
@@ -24953,7 +24997,7 @@
     },
     {
       "symbol": "GSEC10ABSL",
-      "display_name": "BIRLASLAMC - GSEC10ABSL"
+      "display_name": "ADITYA BIRLA SUN LIFE CRISIL 10 YEAR GILT ETF"
     },
     {
       "symbol": "GSEC10INAV",
@@ -24969,7 +25013,7 @@
     },
     {
       "symbol": "METALIETF",
-      "display_name": "ICICIPRAMC - METALIETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY METAL ETF"
     },
     {
       "symbol": "POSITRON-SM",
@@ -25085,7 +25129,7 @@
     },
     {
       "symbol": "MODEFENCE",
-      "display_name": "MOTILALAMC - MODEFENCE"
+      "display_name": "MOTILAL OSWAL NIFTY INDIA DEFENCE ETF"
     },
     {
       "symbol": "MODEFINAV",
@@ -25301,7 +25345,7 @@
     },
     {
       "symbol": "MULTICAP",
-      "display_name": "MIRAEAMC - MULTICAP"
+      "display_name": "MIRAE ASSET NIFTY500 MULTICAP 50:25:25 ETF"
     },
     {
       "symbol": "TREEHOUSE",
@@ -25457,7 +25501,7 @@
     },
     {
       "symbol": "TOP10ADD",
-      "display_name": "DSPAMC - TOP10ADD"
+      "display_name": "DSP NIFTY TOP 10 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "726BOB34-N0",
@@ -25524,7 +25568,7 @@
       "display_name": "807SMFG27-N0"
     },
     {
-      "symbol": "VIESL-ST",
+      "symbol": "VIESL-SM",
       "display_name": "VISION INFRA EQUIP SOL L"
     },
     {
@@ -25549,7 +25593,7 @@
     },
     {
       "symbol": "EBANKNIFTY",
-      "display_name": "EDELAMC - EBANKNIFTY"
+      "display_name": "EDELWEISS NIFTY BANK ETF"
     },
     {
       "symbol": "TOLINS",
@@ -25749,7 +25793,7 @@
     },
     {
       "symbol": "GROWWLIQID",
-      "display_name": "GROWWAMC - GROWWLIQID"
+      "display_name": "GROWW NIFTY 1D RATE LIQUID ETF"
     },
     {
       "symbol": "815SICC27-N0",
@@ -26009,7 +26053,7 @@
     },
     {
       "symbol": "MOMENTUM50",
-      "display_name": "MOTILALAMC - MOMENTUM50"
+      "display_name": "MOTILAL OSWAL NIFTY 500 MOMENTUM 50 ETF"
     },
     {
       "symbol": "INDOTHAI",
@@ -26049,7 +26093,7 @@
     },
     {
       "symbol": "LICMFGOLD",
-      "display_name": "LIC MF - LIC GOLD ETF"
+      "display_name": "LIC MF GOLD ETF"
     },
     {
       "symbol": "KRN",
@@ -26177,7 +26221,7 @@
     },
     {
       "symbol": "BANKPSU",
-      "display_name": "MIRAEAMC - BANKPSU"
+      "display_name": "MIRAE ASSET NIFTY PSU BANK ETF"
     },
     {
       "symbol": "BNKPSUINAV",
@@ -26197,7 +26241,7 @@
     },
     {
       "symbol": "METAL",
-      "display_name": "MIRAEAMC - METAL"
+      "display_name": "MIRAE ASSET NIFTY METAL ETF"
     },
     {
       "symbol": "METALINAV",
@@ -26209,7 +26253,7 @@
     },
     {
       "symbol": "GROWWDEFNC",
-      "display_name": "GROWWAMC - GROWWDEFNC"
+      "display_name": "GROWW NIFTY INDIA DEFENCE ETF"
     },
     {
       "symbol": "71MH32A-SG",
@@ -26365,7 +26409,7 @@
     },
     {
       "symbol": "VAL30IETF",
-      "display_name": "ICICIPRAMC - VAL30IETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY200 VALUE 30 ETF"
     },
     {
       "symbol": "VAL30IINAV",
@@ -26393,7 +26437,7 @@
     },
     {
       "symbol": "GROWWGOLD",
-      "display_name": "GROWWAMC - GROWWGOLD"
+      "display_name": "GROWW GOLD ETF"
     },
     {
       "symbol": "GROWWGINAV",
@@ -26593,7 +26637,7 @@
     },
     {
       "symbol": "EMULTIMQ",
-      "display_name": "EDELAMC - EMULTIMQ"
+      "display_name": "EDELWEISS NIFTY500 MULTICAP MOMENTUM QUALITY 50 ETF"
     },
     {
       "symbol": "EMLTMQINAV",
@@ -26713,7 +26757,7 @@
     },
     {
       "symbol": "LIQUIDPLUS",
-      "display_name": "MIRAEAMC - LIQUIDPLUS"
+      "display_name": "MIRAE ASSET NIFTY 1D RATE LIQUID ETF - GROWTH"
     },
     {
       "symbol": "LIQPLSINAV",
@@ -27368,6 +27412,10 @@
       "display_name": "712PGCIL34-N0"
     },
     {
+      "symbol": "SRPL-BZ",
+      "display_name": "SHREE RAM PROTEINS"
+    },
+    {
       "symbol": "DAMCAPITAL",
       "display_name": "DAM CAPITAL ADVISORS"
     },
@@ -27661,7 +27709,7 @@
     },
     {
       "symbol": "CONSUMER",
-      "display_name": "MIRAEAMC - CONSUMER"
+      "display_name": "MIRAE ASSET NIFTY INDIA NEW AGE CONSUMPTION ETF"
     },
     {
       "symbol": "CONSUMINAV",
@@ -27761,7 +27809,7 @@
     },
     {
       "symbol": "ECAPINSURE",
-      "display_name": "EDELAMC - ECAPINSURE"
+      "display_name": "EDELWEISS BSE CAPITAL MARKETS & INSURANCE ETF"
     },
     {
       "symbol": "810NIT40-N0",
@@ -27962,6 +28010,10 @@
     {
       "symbol": "CAPINVIT-IV",
       "display_name": "CAPITAL INFRA TRUST"
+    },
+    {
+      "symbol": "SWANDEF-BE",
+      "display_name": "SWAN DEFENCE N HEVY IND L"
     },
     {
       "symbol": "723BOB35-N0",
@@ -28241,7 +28293,7 @@
     },
     {
       "symbol": "NEXT30ADD",
-      "display_name": "DSPAMC - NEXT30ADD"
+      "display_name": "DSP BSE SENSEX NEXT 30 ETF"
     },
     {
       "symbol": "79742SIC30-N0",
@@ -28377,7 +28429,7 @@
     },
     {
       "symbol": "GROWWRAIL",
-      "display_name": "GROWWAMC - GROWWRAIL"
+      "display_name": "GROWW NIFTY INDIA RAILWAYS PSU ETF"
     },
     {
       "symbol": "GRRAILINAV",
@@ -28421,7 +28473,7 @@
     },
     {
       "symbol": "NIFTYIETF",
-      "display_name": "ICICI PRUD NIFTY ETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY 50 ETF"
     },
     {
       "symbol": "790ABHFL27-N0",
@@ -28485,7 +28537,7 @@
     },
     {
       "symbol": "NIF100BEES",
-      "display_name": "NIP IND ETF NIFTY 100"
+      "display_name": "NIPPON INDIA ETF NIFTY 100"
     },
     {
       "symbol": "718TN55A-SG",
@@ -28589,7 +28641,7 @@
     },
     {
       "symbol": "UNIONGOLD",
-      "display_name": "UNIONAMC - UNIONGOLD"
+      "display_name": "UNION GOLD ETF"
     },
     {
       "symbol": "UNGOLDINAV",
@@ -28717,7 +28769,7 @@
     },
     {
       "symbol": "MSCIINDIA",
-      "display_name": "KOTAKMAMC - MSCIINDIA"
+      "display_name": "KOTAK MSCI INDIA ETF"
     },
     {
       "symbol": "MSCIININAV",
@@ -28725,7 +28777,7 @@
     },
     {
       "symbol": "GROWWN200",
-      "display_name": "GROWWAMC - GROWWN200"
+      "display_name": "GROWW NIFTY 200 ETF"
     },
     {
       "symbol": "HPTL-SM",
@@ -28853,7 +28905,7 @@
     },
     {
       "symbol": "NIFTY100EW",
-      "display_name": "KOTAKMAMC - NIFTY100EW"
+      "display_name": "KOTAK NIFTY 100 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "737NBRD35-N0",
@@ -28897,7 +28949,7 @@
     },
     {
       "symbol": "AONETOTAL",
-      "display_name": "AONEAMC - AONETOTAL"
+      "display_name": "ANGEL ONE NIFTY TOTAL MARKET ETF"
     },
     {
       "symbol": "AONETOINAV",
@@ -29077,7 +29129,7 @@
     },
     {
       "symbol": "MOCAPITAL",
-      "display_name": "MOTILALAMC - MOCAPITAL"
+      "display_name": "MOTILAL OSWAL NIFTY CAPITAL MARKET ETF"
     },
     {
       "symbol": "MOCAPIINAV",
@@ -29205,7 +29257,7 @@
     },
     {
       "symbol": "GOLD360",
-      "display_name": "360ONEAMC - GOLD360"
+      "display_name": "360 ONE GOLD ETF"
     },
     {
       "symbol": "ABFRL",
@@ -29213,11 +29265,11 @@
     },
     {
       "symbol": "SELECTIPO",
-      "display_name": "MIRAEAMC - SELECTIPO"
+      "display_name": "MIRAE ASSET BSE SELECT IPO ETF"
     },
     {
       "symbol": "EQUAL200",
-      "display_name": "MIRAEAMC - EQUAL200"
+      "display_name": "MIRAE ASSET BSE 200 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "EQU200INAV",
@@ -29241,7 +29293,7 @@
     },
     {
       "symbol": "CASHIETF",
-      "display_name": "ICICIPRAMC - CASHIETF"
+      "display_name": "ICICI PRUDENTIAL BSE LIQUID RATE ETF - GROWTH"
     },
     {
       "symbol": "775PFCL26A-N0",
@@ -29265,7 +29317,7 @@
     },
     {
       "symbol": "AXISVALUE",
-      "display_name": "AXISAMC - AXISVALUE"
+      "display_name": "AXIS NIFTY500 VALUE 50 ETF"
     },
     {
       "symbol": "AXISVAINAV",
@@ -29517,7 +29569,7 @@
     },
     {
       "symbol": "SILVERCASE",
-      "display_name": "ZERODHAAMC - SILVERCASE"
+      "display_name": "ZERODHA SILVER ETF"
     },
     {
       "symbol": "758LICH35A-N0",
@@ -29533,7 +29585,7 @@
     },
     {
       "symbol": "SBIBPB",
-      "display_name": "SBIAMC - SBIBPB"
+      "display_name": "SBI BSE PSU BANK ETF"
     },
     {
       "symbol": "SBIBPBINAV",
@@ -29545,7 +29597,7 @@
     },
     {
       "symbol": "NIF100IETF",
-      "display_name": "ICICI PRUD NIFTY 100 ETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY 100 ETF"
     },
     {
       "symbol": "364D260326-TB",
@@ -29729,11 +29781,11 @@
     },
     {
       "symbol": "MID150",
-      "display_name": "KOTAKMAMC - MID150"
+      "display_name": "KOTAK NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "AONELIQUID",
-      "display_name": "AONEAMC - AONELIQUID"
+      "display_name": "ANGEL ONE NIFTY 1D RATE LIQUID ETF - GROWTH"
     },
     {
       "symbol": "MID15INAV",
@@ -29924,6 +29976,10 @@
       "display_name": "KOTAKMAMC - MOME30INAV"
     },
     {
+      "symbol": "NEUEON-BE",
+      "display_name": "NEUEON CORPORATION"
+    },
+    {
       "symbol": "NIFTYCINAV",
       "display_name": "ZERODHAAMC - NIFTYCINAV"
     },
@@ -30054,6 +30110,10 @@
     {
       "symbol": "GROWWEINAV",
       "display_name": "GROWWAMC - GROWWEINAV"
+    },
+    {
+      "symbol": "HLTCREINAV",
+      "display_name": "MIRAEAMC - HLTCREINAV"
     },
     {
       "symbol": "PILITA",
@@ -30225,7 +30285,7 @@
     },
     {
       "symbol": "EVIETF",
-      "display_name": "ICICIPRAMC - EVIETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY EV & NEW AGE AUTOMOTIVE ETF"
     },
     {
       "symbol": "684TS56-SG",
@@ -30457,7 +30517,7 @@
     },
     {
       "symbol": "GROWWMOM50",
-      "display_name": "GROWWAMC - GROWWMOM50"
+      "display_name": "GROWW NIFTY 500 MOMENTUM 50 ETF"
     },
     {
       "symbol": "67RJ35-SG",
@@ -30557,7 +30617,7 @@
     },
     {
       "symbol": "SILVER360",
-      "display_name": "360ONEAMC - SILVER360"
+      "display_name": "360 ONE SILVER ETF"
     },
     {
       "symbol": "960IIFL30-Y2",
@@ -30793,7 +30853,7 @@
     },
     {
       "symbol": "GROWWSLVR",
-      "display_name": "GROWWAMC - GROWWSLVR"
+      "display_name": "GROWW SILVER ETF"
     },
     {
       "symbol": "930PFL27A-N0",
@@ -30921,7 +30981,7 @@
     },
     {
       "symbol": "MON50EQUAL",
-      "display_name": "MOTILALAMC - MON50EQUAL"
+      "display_name": "MOTILAL OSWAL NIFTY 50 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "686NHPCL36-N0",
@@ -31077,7 +31137,7 @@
     },
     {
       "symbol": "MOINFRA",
-      "display_name": "MOTILALAMC - MOINFRA"
+      "display_name": "MOTILAL OSWAL BSE INDIA INFRASTRUCTURE ETF"
     },
     {
       "symbol": "664HR36-SG",
@@ -31137,11 +31197,11 @@
     },
     {
       "symbol": "AONENIFTY",
-      "display_name": "AONEAMC - AONENIFTY"
+      "display_name": "ANGEL ONE NIFTY 50 ETF"
     },
     {
       "symbol": "MOMGF",
-      "display_name": "MOTILALAMC - MOMGF"
+      "display_name": "MOTILAL OSWAL NIFTY INDIA MANUFACTURING ETF"
     },
     {
       "symbol": "BELRISE",
@@ -31217,7 +31277,7 @@
     },
     {
       "symbol": "EQUAL50",
-      "display_name": "MIRAEAMC - EQUAL50"
+      "display_name": "MIRAE ASSET NIFTY50 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "747ABCL29-N0",
@@ -31229,7 +31289,7 @@
     },
     {
       "symbol": "MONEXT50",
-      "display_name": "MOTILALAMC - MONEXT50"
+      "display_name": "MOTILAL OSWAL NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "930APMD32-N0",
@@ -31417,7 +31477,7 @@
     },
     {
       "symbol": "MOPSE",
-      "display_name": "MOTILALAMC - MOPSE"
+      "display_name": "MOTILAL OSWAL NIFTY PSE ETF"
     },
     {
       "symbol": "705AP39-SG",
@@ -31457,7 +31517,7 @@
     },
     {
       "symbol": "MOTOUR",
-      "display_name": "MOTILALAMC - MOTOUR"
+      "display_name": "MOTILAL OSWAL NIFTY INDIA TOURISM ETF"
     },
     {
       "symbol": "364D110626-TB",
@@ -31477,7 +31537,7 @@
     },
     {
       "symbol": "SNXT30BEES",
-      "display_name": "NIPPONAMC - SNXT30BEES"
+      "display_name": "NIPPON INDIA BSE SENSEX NEXT 30 ETF"
     },
     {
       "symbol": "9SCL27-N2",
@@ -31594,6 +31654,10 @@
     {
       "symbol": "955SCL35-NO",
       "display_name": "955SCL35-NO"
+    },
+    {
+      "symbol": "SAHAJ-SZ",
+      "display_name": "SAHAJ FASHIONS"
     },
     {
       "symbol": "805MFL27-N0",
@@ -31825,7 +31889,7 @@
     },
     {
       "symbol": "MOALPHA50",
-      "display_name": "MOTILALAMC - MOALPHA50"
+      "display_name": "MOTILAL OSWAL NIFTY ALPHA 50 ETF"
     },
     {
       "symbol": "364D090726-TB",
@@ -31897,7 +31961,7 @@
     },
     {
       "symbol": "LIQGRWBEES",
-      "display_name": "NIPPONAMC - LIQGRWBEES"
+      "display_name": "NIPPON INDIA NIFTY 1D RATE LIQUID ETF - GROWTH"
     },
     {
       "symbol": "614TN28-SG",
@@ -32025,7 +32089,7 @@
     },
     {
       "symbol": "TOP15IETF",
-      "display_name": "ICICIPRAMC - TOP15IETF"
+      "display_name": "ICICI PRUDENTIAL NIFTY TOP 15 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "719PN40-SG",
@@ -32037,7 +32101,7 @@
     },
     {
       "symbol": "MOGOLD",
-      "display_name": "MOTILALAMC - MOGOLD"
+      "display_name": "MOTILAL OSWAL GOLD ETF"
     },
     {
       "symbol": "BRIGHOTEL",
@@ -32057,11 +32121,11 @@
     },
     {
       "symbol": "GROWWNET",
-      "display_name": "GROWWAMC - GROWWNET"
+      "display_name": "GROWW NIFTY INDIA INTERNET ETF"
     },
     {
       "symbol": "MOMIDMTM",
-      "display_name": "MOTILALAMC - MOMIDMTM"
+      "display_name": "MOTILAL OSWAL NIFTY MIDCAP150 MOMENTUM 50 ETF"
     },
     {
       "symbol": "712LTFL28-N0",
@@ -32285,7 +32349,7 @@
     },
     {
       "symbol": "QUALITY30",
-      "display_name": "KOTAKMAMC - QUALITY30"
+      "display_name": "KOTAK NIFTY200 QUALITY 30 ETF"
     },
     {
       "symbol": "EUROBOND",
@@ -32421,7 +32485,7 @@
     },
     {
       "symbol": "GROWWPOWER",
-      "display_name": "GROWWAMC - GROWWPOWER"
+      "display_name": "GROWW BSE POWER ETF"
     },
     {
       "symbol": "658IRFC30-N0",
@@ -32565,7 +32629,7 @@
     },
     {
       "symbol": "GROWWLOVOL",
-      "display_name": "GROWWAMC - GROWWLOVOL"
+      "display_name": "GROWW NIFTY 500 LOW VOLATILITY 50 ETF"
     },
     {
       "symbol": "JAINIK-SM",
@@ -32653,7 +32717,7 @@
     },
     {
       "symbol": "MOSILVER",
-      "display_name": "MOTILALAMC - MOSILVER"
+      "display_name": "MOTILAL OSWAL SILVER ETF"
     },
     {
       "symbol": "JSWCEMENT",
@@ -32665,7 +32729,7 @@
     },
     {
       "symbol": "SBILIQETF",
-      "display_name": "SBIAMC - SBILIQETF"
+      "display_name": "SBI NIFTY 1D RATE LIQUID ETF"
     },
     {
       "symbol": "STUDIOLSD-SM",
@@ -32740,10 +32804,6 @@
       "display_name": "SDL KL 7.49% 2056"
     },
     {
-      "symbol": "182D190226-TB",
-      "display_name": "GOI TBILL 182D-19/02/26"
-    },
-    {
       "symbol": "364D200826-TB",
       "display_name": "GOI TBILL 364D-20/08/26"
     },
@@ -32753,7 +32813,7 @@
     },
     {
       "symbol": "INTERNET",
-      "display_name": "MIRAEAMC - INTERNET"
+      "display_name": "MIRAE ASSET NIFTY INDIA INTERNET ETF"
     },
     {
       "symbol": "TVSINVIT-IV",
@@ -32797,7 +32857,7 @@
     },
     {
       "symbol": "MANUFGBEES",
-      "display_name": "NIPPONAMC - MANUFGBEES"
+      "display_name": "NIPPON INDIA NIFTY INDIA MANUFACTURING ETF"
     },
     {
       "symbol": "ARCIIL-SM",
@@ -32837,7 +32897,7 @@
     },
     {
       "symbol": "GROWWNIFTY",
-      "display_name": "GROWWAMC - GROWWNIFTY"
+      "display_name": "GROWW NIFTY 50 ETF"
     },
     {
       "symbol": "ARFIN",
@@ -32845,7 +32905,7 @@
     },
     {
       "symbol": "LTGILTCASE",
-      "display_name": "ZERODHAAMC - LTGILTCASE"
+      "display_name": "ZERODHA NIFTY 8-13 YR G-SEC ETF"
     },
     {
       "symbol": "975ISF35-N0",
@@ -33012,6 +33072,10 @@
       "display_name": "SIMBHAOLI SUGARS"
     },
     {
+      "symbol": "GENSOL-BZ",
+      "display_name": "GENSOL ENGINEERING"
+    },
+    {
       "symbol": "674MH29-SG",
       "display_name": "SDL MH 6.74% 2029"
     },
@@ -33121,7 +33185,7 @@
     },
     {
       "symbol": "AONEGOLD",
-      "display_name": "AONEAMC - AONEGOLD"
+      "display_name": "ANGEL ONE GOLD ETF"
     },
     {
       "symbol": "AMANTA",
@@ -33229,11 +33293,11 @@
     },
     {
       "symbol": "ELM250",
-      "display_name": "EDELAMC - ELM250"
+      "display_name": "EDELWEISS NIFTY LARGEMIDCAP 250 ETF"
     },
     {
       "symbol": "SML100CASE",
-      "display_name": "ZERODHAAMC - SML100CASE"
+      "display_name": "ZERODHA NIFTY SMALLCAP 100 ETF"
     },
     {
       "symbol": "STLNETWORK",
@@ -33733,7 +33797,7 @@
     },
     {
       "symbol": "NIFTYCASE",
-      "display_name": "ZERODHAAMC - NIFTYCASE"
+      "display_name": "ZERODHA NIFTY 50 ETF"
     },
     {
       "symbol": "658TN29-SG",
@@ -33885,15 +33949,15 @@
     },
     {
       "symbol": "FLEXIADD",
-      "display_name": "DSPAMC - FLEXIADD"
+      "display_name": "DSP NIFTY500 FLEXICAP QUALITY 30 ETF"
     },
     {
       "symbol": "MONIFTY100",
-      "display_name": "MOTILALAMC - MONIFTY100"
+      "display_name": "MOTILAL OSWAL NIFTY 100 ETF"
     },
     {
       "symbol": "MOENERGY",
-      "display_name": "MOTILALAMC - MOENERGY"
+      "display_name": "MOTILAL OSWAL NIFTY ENERGY ETF"
     },
     {
       "symbol": "728OR49-SG",
@@ -33981,7 +34045,7 @@
     },
     {
       "symbol": "GROWWRLTY",
-      "display_name": "GROWWAMC - GROWWRLTY"
+      "display_name": "GROWW NIFTY REALTY ETF"
     },
     {
       "symbol": "182D090426-TB",
@@ -34017,7 +34081,7 @@
     },
     {
       "symbol": "GROWWNXT50",
-      "display_name": "GROWWAMC - GROWWNXT50"
+      "display_name": "GROWW NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "GEMAROMA",
@@ -34025,7 +34089,7 @@
     },
     {
       "symbol": "ELIQUID",
-      "display_name": "EDELAMC - ELIQUID"
+      "display_name": "EDELWEISS NIFTY 1D RATE LIQUID ETF"
     },
     {
       "symbol": "875PFL27-N0",
@@ -34061,7 +34125,7 @@
     },
     {
       "symbol": "MOMENTUM30",
-      "display_name": "KOTAKMAMC - MOMENTUM30"
+      "display_name": "KOTAK NIFTY 200 MOMENTUM 30 ETF"
     },
     {
       "symbol": "741JK42-SG",
@@ -34113,7 +34177,7 @@
     },
     {
       "symbol": "GROWWSC250",
-      "display_name": "GROWWAMC - GROWWSC250"
+      "display_name": "GROWW NIFTY SMALLCAP 250 ETF"
     },
     {
       "symbol": "712OIT40-N0",
@@ -34225,11 +34289,11 @@
     },
     {
       "symbol": "CHOICEGOLD",
-      "display_name": "CHOICEAMC - CHOICEGOLD"
+      "display_name": "CHOICE GOLD ETF"
     },
     {
       "symbol": "GROWWMC150",
-      "display_name": "GROWWAMC - GROWWMC150"
+      "display_name": "GROWW NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "PWL",
@@ -34325,7 +34389,7 @@
     },
     {
       "symbol": "ENERGY",
-      "display_name": "MIRAEAMC - ENERGY"
+      "display_name": "MIRAE ASSET NIFTY ENERGY ETF"
     },
     {
       "symbol": "TMCV",
@@ -34369,7 +34433,7 @@
     },
     {
       "symbol": "SMALL250",
-      "display_name": "MIRAEAMC - SMALL250"
+      "display_name": "MIRAE ASSET NIFTY SMALLCAP 250 ETF"
     },
     {
       "symbol": "PINELABS",
@@ -34464,10 +34528,6 @@
       "display_name": "SDL RJ 6.75% 2030"
     },
     {
-      "symbol": "91D190226-TB",
-      "display_name": "GOI TBILL 91D-19/02/26"
-    },
-    {
       "symbol": "182D210526-TB",
       "display_name": "GOI TBILL 182D-21/05/26"
     },
@@ -34501,11 +34561,11 @@
     },
     {
       "symbol": "CHEMICAL",
-      "display_name": "KOTAKMAMC - CHEMICAL"
+      "display_name": "KOTAK NIFTY CHEMICALS ETF"
     },
     {
       "symbol": "MOIPO",
-      "display_name": "MOTILALAMC - MOIPO"
+      "display_name": "MOTILAL OSWAL BSE SELECT IPO ETF"
     },
     {
       "symbol": "910HFL36-N0",
@@ -34593,7 +34653,7 @@
     },
     {
       "symbol": "MSCIADD",
-      "display_name": "DSPAMC - MSCIADD"
+      "display_name": "DSP MSCI INDIA ETF"
     },
     {
       "symbol": "708PFCL35-N0",
@@ -34625,15 +34685,15 @@
     },
     {
       "symbol": "ESENSEX",
-      "display_name": "EDELAMC - ESENSEX"
+      "display_name": "EDELWEISS BSE SENSEX ETF"
     },
     {
       "symbol": "ENIFTY",
-      "display_name": "EDELAMC - ENIFTY"
+      "display_name": "EDELWEISS NIFTY 50 ETF"
     },
     {
       "symbol": "MOSERVICE",
-      "display_name": "MOTILALAMC - MOSERVICE"
+      "display_name": "MOTILAL OSWAL NIFTY SERVICES SECTOR ETF"
     },
     {
       "symbol": "707GJ33-SG",
@@ -34757,11 +34817,11 @@
     },
     {
       "symbol": "GROWWCAPM",
-      "display_name": "GROWWAMC - GROWWCAPM"
+      "display_name": "GROWW NIFTY CAPITAL MARKETS ETF"
     },
     {
       "symbol": "MOMNC",
-      "display_name": "MOTILALAMC - MOMNC"
+      "display_name": "MOTILAL OSWAL NIFTY MNC ETF"
     },
     {
       "symbol": "675HP29-SG",
@@ -35121,11 +35181,11 @@
     },
     {
       "symbol": "GOLDBND",
-      "display_name": "BANDHANAMC - GOLDBND"
+      "display_name": "BANDHAN GOLD ETF"
     },
     {
       "symbol": "SILVERBND",
-      "display_name": "BANDHANAMC - SILVERBND"
+      "display_name": "BANDHAN SILVER ETF"
     },
     {
       "symbol": "FWSTC-SM",
@@ -35177,11 +35237,11 @@
     },
     {
       "symbol": "MIDCAPADD",
-      "display_name": "DSPAMC - MIDCAPADD"
+      "display_name": "DSP NIFTY MIDCAP 150 ETF"
     },
     {
       "symbol": "SMALLADD",
-      "display_name": "DSPAMC - SMALLADD"
+      "display_name": "DSP NIFTY SMALLCAP 250 ETF"
     },
     {
       "symbol": "915APSBC26-N0",
@@ -35293,11 +35353,11 @@
     },
     {
       "symbol": "DIVIDEND",
-      "display_name": "MIRAEAMC - DIVIDEND"
+      "display_name": "MIRAE ASSET BSE 500 DIVIDEND LEADERS 50 ETF"
     },
     {
       "symbol": "TOP20",
-      "display_name": "MIRAEAMC - TOP20"
+      "display_name": "MIRAE ASSET NIFTY TOP 20 EQUAL WEIGHT ETF"
     },
     {
       "symbol": "ASHWINI-SM",
@@ -35321,7 +35381,7 @@
     },
     {
       "symbol": "GROWWMETAL",
-      "display_name": "GROWWAMC - GROWWMETAL"
+      "display_name": "GROWW NIFTY METAL ETF"
     },
     {
       "symbol": "752AP37-SG",
@@ -35425,7 +35485,7 @@
     },
     {
       "symbol": "TWCGOLDETF",
-      "display_name": "WEALTH - TWCGOLDETF"
+      "display_name": "THE WEALTH COMPANY GOLD ETF"
     },
     {
       "symbol": "925IIFL32A-N0",
@@ -35701,7 +35761,7 @@
     },
     {
       "symbol": "NEXT50ADD",
-      "display_name": "DSPAMC - NEXT50ADD"
+      "display_name": "DSP NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "12DCCL29A-N0",
@@ -35873,7 +35933,7 @@
     },
     {
       "symbol": "GROWWCHEM",
-      "display_name": "GROWWAMC - GROWWCHEM"
+      "display_name": "GROWW NIFTY CHEMICALS ETF"
     },
     {
       "symbol": "761TS42-SG",
@@ -35921,7 +35981,7 @@
     },
     {
       "symbol": "NEXT50ETF",
-      "display_name": "KOTAKMAMC - NEXT50ETF"
+      "display_name": "KOTAK NIFTY NEXT 50 ETF"
     },
     {
       "symbol": "91D170426-TB",
@@ -36276,6 +36336,78 @@
       "display_name": "C K K RETAIL MART"
     },
     {
+      "symbol": "702GJ31-SG",
+      "display_name": "SDL GJ 7.02% 2031"
+    },
+    {
+      "symbol": "719KA32A-SG",
+      "display_name": "SDL KA 7.19% 2032"
+    },
+    {
+      "symbol": "731TN33A-SG",
+      "display_name": "SDL TN 7.31% 2033"
+    },
+    {
+      "symbol": "744MP34-SG",
+      "display_name": "SDL MP 7.44% 2034"
+    },
+    {
+      "symbol": "755KA35-SG",
+      "display_name": "SDL KA 7.55% 2035"
+    },
+    {
+      "symbol": "754TN36-SG",
+      "display_name": "SDL TN 7.54% 2036"
+    },
+    {
+      "symbol": "756KA36-SG",
+      "display_name": "SDL KA 7.56% 2036"
+    },
+    {
+      "symbol": "759CG36-SG",
+      "display_name": "SDL CG 7.59% 2036"
+    },
+    {
+      "symbol": "758TN37-SG",
+      "display_name": "SDL TN 7.58% 2037"
+    },
+    {
+      "symbol": "777PN38-SG",
+      "display_name": "SDL PN 7.77% 2038"
+    },
+    {
+      "symbol": "776TS39-SG",
+      "display_name": "SDL TS 7.76% 2039"
+    },
+    {
+      "symbol": "786BR39-SG",
+      "display_name": "SDL BR 7.86% 2039"
+    },
+    {
+      "symbol": "778HR40-SG",
+      "display_name": "SDL HR 7.78% 2040"
+    },
+    {
+      "symbol": "781UP41-SG",
+      "display_name": "SDL UP 7.81% 2041"
+    },
+    {
+      "symbol": "780TS42-SG",
+      "display_name": "SDL TS 7.80% 2042"
+    },
+    {
+      "symbol": "782MP42-SG",
+      "display_name": "SDL MP 7.82% 2042"
+    },
+    {
+      "symbol": "785MZ42-SG",
+      "display_name": "SDL MZ 7.85% 2042"
+    },
+    {
+      "symbol": "783HR43-SG",
+      "display_name": "SDL HR 7.83% 2043"
+    },
+    {
       "symbol": "KNAGRI",
       "display_name": "KN AGRI RESOURCES"
     },
@@ -36284,12 +36416,68 @@
       "display_name": "NEOCHEM BIO SOLUTIONS"
     },
     {
+      "symbol": "782WB45-SG",
+      "display_name": "SDL WB 7.82% 2045"
+    },
+    {
+      "symbol": "787AS46-SG",
+      "display_name": "SDL AS 7.87% 2046"
+    },
+    {
+      "symbol": "784WB47-SG",
+      "display_name": "SDL WB 7.84% 2047"
+    },
+    {
+      "symbol": "784MP47-SG",
+      "display_name": "SDL MP 7.84% 2047"
+    },
+    {
+      "symbol": "784TS47-SG",
+      "display_name": "SDL TS 7.84% 2047"
+    },
+    {
+      "symbol": "777BR52-SG",
+      "display_name": "SDL BR 7.77% 2052"
+    },
+    {
+      "symbol": "775TS53-SG",
+      "display_name": "SDL TS 7.75% 2053"
+    },
+    {
+      "symbol": "91D140526-TB",
+      "display_name": "GOI TBILL 91D-14/05/26"
+    },
+    {
+      "symbol": "182D130826-TB",
+      "display_name": "GOI TBILL 182D-13/08/26"
+    },
+    {
+      "symbol": "364D110227-TB",
+      "display_name": "GOI TBILL 364D-11/02/27"
+    },
+    {
+      "symbol": "BIOPOL-ST",
+      "display_name": "BIOPOL CHEMICALS"
+    },
+    {
+      "symbol": "KWIL-BE",
+      "display_name": "KWALITY WALL'S (INDIA) L"
+    },
+    {
       "symbol": "ATLPP-E1",
       "display_name": "ATL RE.0.50 PPD UP"
     },
     {
       "symbol": "1225DCCL27-N0",
       "display_name": "1225DCCL27-N0"
+    },
+    {
+      "symbol": "730TCHFL28-N0",
+      "display_name": "730TCHFL28-N0"
+    },
+    {
+      "symbol": "FRACTAL",
+      "display_name": "FRACTAL ANALYTICS"
     },
     {
       "symbol": "790TPL29-N0",
@@ -36310,6 +36498,14 @@
     {
       "symbol": "GROWWPSE",
       "display_name": "GROWWAMC - GROWWPSE"
+    },
+    {
+      "symbol": "AYE",
+      "display_name": "AYE FINANCE"
+    },
+    {
+      "symbol": "HEALTHCARE",
+      "display_name": "MIRAEAMC - HEALTHCARE"
     },
     {
       "symbol": "KRISHNADEF",
@@ -36418,10 +36614,6 @@
     {
       "symbol": "ARSIFHRHD-SF",
       "display_name": "ARSIFHRHD-SF"
-    },
-    {
-      "symbol": "ADANIENPP1-E1",
-      "display_name": "ADANIENT RE. 0.75 PPD UP"
     },
     {
       "symbol": "ISIFHLSDG-SF",

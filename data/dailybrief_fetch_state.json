@@ -1,8 +1,14 @@
 {
-  "generated_at": "2026-02-12T19:04:41+00:00",
+  "generated_at": "2026-02-14T03:54:33+00:00",
   "sitemap_url": "https://thedailybrief.zerodha.com/sitemap.xml",
-  "post_count": 524,
+  "post_count": 525,
   "posts": {
+    "https://thedailybrief.zerodha.com/p/between-industrial-policy-and-trade": {
+      "lastmod": "2026-02-13",
+      "content_hash": "b23bc2022ee3ecc65848b63c113ab1c98035cdca",
+      "story_count": 2,
+      "fetched_at": "2026-02-14T03:54:33+00:00"
+    },
     "https://thedailybrief.zerodha.com/p/whats-behind-record-psu-bank-profits": {
       "lastmod": "2026-02-12",
       "content_hash": "26167f3b8d5db0b6f4d4f2b1300528babd9b0980",
