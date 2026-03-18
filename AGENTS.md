@@ -1,43 +1,42 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository builds a static “Company Chatter” site from The Chatter archive.
-
-- `scripts/`: pipeline entry points (`scrape.py`, `build_site.py`, `validate_entity_resolution.py`, deploy/preview helpers).
-- `templates/`: HTML templates (`base.html`, `index.html`, `company.html`).
-- `assets/`: styles and UI library files (`styles.css`, `oat-theme-overrides.css`, `vendor/oat/*`).
-- `data/`: extracted datasets and entity-resolution rules/reports.
-- `site/`: generated output for local preview and Cloudflare deployment (build artifact).
-- `output/playwright/`: visual QA screenshots when UI checks are run.
+- `scripts/`: core pipeline and operations (`scrape.py`, `scrape_dailybrief.py`, `build_site.py`, `validate_entity_resolution.py`) plus helpers (`preview.sh`, `deploy_pages.sh`, `update_oat.sh`).
+- `templates/`: HTML templates for shared layout and pages (`base.html`, `index.html`, `company.html`, `header_search.html`).
+- `assets/`: CSS, fonts, icons, and vendored UI assets (`assets/vendor/oat/`).
+- `data/`: scraped inputs, rule files, and generated reports (for example `entity_resolution_report.json`).
+- `site/`: generated static output used for local preview and Pages deploys.
+- `.github/workflows/`: CI checks and scheduled refresh automation.
 
 ## Build, Test, and Development Commands
-- `python3 scripts/scrape.py`: refresh source data into `data/`.
-- `python3 scripts/build_site.py`: generate static site into `site/`.
-- `python3 scripts/validate_entity_resolution.py`: enforce merge/no-leakage guardrails.
-- `python3 scripts/scrape.py && python3 scripts/build_site.py && python3 scripts/validate_entity_resolution.py`: full local verification.
-- `./scripts/preview.sh 8000`: build and serve locally at `http://localhost:8000`.
+- `python3 scripts/scrape.py`: refresh The Chatter data and Daily Brief cache.
+- `python3 scripts/scrape_dailybrief.py`: refresh only Daily Brief data.
+- `python3 scripts/build_site.py`: generate the static site into `site/`.
+- `python3 scripts/validate_entity_resolution.py`: enforce entity-resolution guardrails.
+- `./scripts/preview.sh 8787`: build and serve locally at `http://localhost:8787`.
 - `./scripts/deploy_pages.sh company-chatter`: build, validate, and deploy to Cloudflare Pages.
-- `./scripts/update_oat.sh [ref]`: refresh vendored Oat UI assets (optional ref override).
 
 ## Coding Style & Naming Conventions
-- Use Python with 4-space indentation and `snake_case` naming.
-- Keep template logic lightweight; put transformations in `scripts/build_site.py`.
-- Use lowercase kebab-case for IDs/slugs (example: `tata-capital`).
-- Prefer rule-driven updates in `data/*.json` over hardcoded entity exceptions.
-- For Python sanity checks, run `python3 -m py_compile scripts/*.py`.
+- Python: 4-space indentation, `snake_case`, deterministic helper functions.
+- Keep parsing and resolution logic in `scripts/`; keep templates declarative.
+- Frontend is vanilla HTML/CSS/JS; avoid adding framework dependencies.
+- Use kebab-case for slugs, CSS classes, and IDs (example: `reliance-industries`, `header-search-results`).
+- Prefer updates to JSON rule files in `data/` over hardcoded one-off logic.
 
 ## Testing Guidelines
-- There is no dedicated unit-test suite; `validate_entity_resolution.py` is the primary quality gate.
-- For parser/resolver changes, run full pipeline and inspect `data/entity_resolution_report.json` deltas.
-- For UI changes, verify homepage search behavior and at least one company page on desktop and mobile.
+- There is no separate unit-test suite; the required quality gate is build + validation.
+- Before merge, run:
+  - `python3 scripts/build_site.py`
+  - `python3 scripts/validate_entity_resolution.py`
+- For UI changes, manually verify homepage and company-page search behavior on desktop and mobile.
+- Review generated `data/` diffs to confirm regressions are intentional.
 
 ## Commit & Pull Request Guidelines
-- Use short imperative commit messages (example: `Harden entity conflict guardrails`).
-- Keep commits scoped by concern (scraper, resolver, UI, data).
-- PRs should include: summary, rationale, commands run, key outputs, and screenshots for UI changes.
-- Clearly call out regenerated data artifacts to reduce review noise.
+- Use concise imperative commit messages (example: `Add company-page header search`).
+- Keep commits scoped by concern (scrape logic, resolver rules, UI, deploy).
+- PRs should include: change summary, commands run, relevant issue/context, and screenshots for visible UI changes.
 
-## Security & Configuration Tips
-- Never commit secrets or tokens.
-- Verify Cloudflare auth before deploy: `npx wrangler whoami`.
-- Review large JSON diffs carefully to avoid accidental churn.
+## Security & Configuration Notes
+- Do not commit tokens, credentials, or environment secrets.
+- Confirm Cloudflare auth with `npx wrangler whoami`.
+- `wrangler.jsonc` is configured with `pages_build_output_dir = "site"`.

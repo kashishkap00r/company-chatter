@@ -38,8 +38,12 @@
   const featuredCompanyData = JSON.parse(
     document.getElementById('featuredCompanyData').textContent || '[]'
   );
+  const TAP_MOVE_THRESHOLD_PX = 10;
   let activeIndex = -1;
   let visibleRows = [];
+  let pointerTrack = null;
+  let suppressRowClickUntil = 0;
+  let isInteractingWithResults = false;
 
   function escapeHtml(value) {
     return value
@@ -55,8 +59,20 @@
     searchResults.innerHTML = '';
     visibleRows = [];
     activeIndex = -1;
+    pointerTrack = null;
+    suppressRowClickUntil = 0;
+    isInteractingWithResults = false;
     input.setAttribute('aria-expanded', 'false');
     input.removeAttribute('aria-activedescendant');
+  }
+
+  function isMobileViewport() {
+    return window.matchMedia('(max-width: 840px)').matches;
+  }
+
+  function navigateTo(href) {
+    hideResults();
+    window.location.assign(href);
   }
 
   function rankedMatches(query) {
@@ -175,7 +191,7 @@
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (activeIndex >= 0 && visibleRows[activeIndex]) {
-      window.location.href = `/company/${visibleRows[activeIndex].slug}/`;
+      navigateTo(`/company/${visibleRows[activeIndex].slug}/`);
     }
   });
 
@@ -208,12 +224,19 @@
 
     if (event.key === 'Enter' && activeIndex >= 0) {
       event.preventDefault();
-      window.location.href = `/company/${visibleRows[activeIndex].slug}/`;
+      navigateTo(`/company/${visibleRows[activeIndex].slug}/`);
     }
   });
 
   input.addEventListener('blur', () => {
+    if (isMobileViewport()) {
+      return;
+    }
+
     window.setTimeout(() => {
+      if (isInteractingWithResults) {
+        return;
+      }
       if (!searchModule.contains(document.activeElement)) {
         hideResults();
       }
@@ -230,13 +253,68 @@
       return;
     }
 
+    pointerTrack = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      moved: false,
+    };
+    isInteractingWithResults = true;
+  });
+
+  searchResults.addEventListener('pointermove', (event) => {
+    if (!pointerTrack || pointerTrack.pointerId !== event.pointerId) {
+      return;
+    }
+
+    const deltaX = Math.abs(event.clientX - pointerTrack.startX);
+    const deltaY = Math.abs(event.clientY - pointerTrack.startY);
+    if (deltaX > TAP_MOVE_THRESHOLD_PX || deltaY > TAP_MOVE_THRESHOLD_PX) {
+      pointerTrack.moved = true;
+    }
+  });
+
+  searchResults.addEventListener('pointerup', (event) => {
+    if (!pointerTrack || pointerTrack.pointerId !== event.pointerId) {
+      return;
+    }
+
+    if (pointerTrack.moved) {
+      suppressRowClickUntil = Date.now() + 350;
+    }
+    pointerTrack = null;
+    window.setTimeout(() => {
+      isInteractingWithResults = false;
+    }, 0);
+  });
+
+  searchResults.addEventListener('pointercancel', () => {
+    pointerTrack = null;
+    isInteractingWithResults = false;
+  });
+
+  searchResults.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) {
+      return;
+    }
+
+    const rowLink = event.target.closest('.result-item');
+    if (!rowLink) {
+      return;
+    }
+
+    if (Date.now() < suppressRowClickUntil) {
+      event.preventDefault();
+      return;
+    }
+
     const href = rowLink.getAttribute('href');
     if (!href) {
       return;
     }
 
     event.preventDefault();
-    window.location.href = href;
+    navigateTo(href);
   });
 
   document.addEventListener('pointerdown', (event) => {

@@ -61,18 +61,27 @@
           return;
         }
 
-        const desktopInput = document.getElementById('headerCompanySearch');
-        const desktopResults = document.getElementById('headerSearchResults');
-        const mobileInput = document.getElementById('headerCompanySearchMobile');
-        const mobileResults = document.getElementById('headerSearchResultsMobile');
-        const mobileToggle = document.getElementById('headerSearchToggle');
-        const mobileOverlay = document.getElementById('headerSearchOverlay');
-        const mobileClose = document.getElementById('headerSearchClose');
+        const searchInput = document.getElementById('headerCompanySearch');
+        const searchResults = document.getElementById('headerSearchResults');
         const currentCompanySlug = root.dataset.currentCompany || '';
+        const TAP_MOVE_THRESHOLD_PX = 10;
+
+        if (!searchInput || !searchResults) {
+          return;
+        }
 
         let companyData = null;
         let loadPromise = null;
         let loadFailed = false;
+        let activeIndex = -1;
+        let visibleRows = [];
+        let pointerTrack = null;
+        let suppressRowClickUntil = 0;
+        let isInteractingWithResults = false;
+
+        function isMobileViewport() {
+          return window.matchMedia('(max-width: 840px)').matches;
+        }
 
         function escapeHtml(value) {
           return value
@@ -143,11 +152,11 @@
             });
         }
 
-        function renderRows(rows, idPrefix) {
+        function renderRows(rows) {
           return rows
             .map(
               (row, index) => `
-                <a class="result-item" id="${idPrefix}${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
+                <a class="result-item" id="headerResultOption${index}" role="option" aria-selected="false" href="/company/${row.slug}/">
                   <strong>${escapeHtml(row.name)}</strong>
                   <span>${row.quote_count} quotes · ${row.story_mentions_count} story mentions</span>
                 </a>
@@ -156,50 +165,58 @@
             .join('');
         }
 
-        function hideResults(context) {
-          context.results.hidden = true;
-          context.results.innerHTML = '';
-          context.visibleRows = [];
-          context.activeIndex = -1;
-          context.input.setAttribute('aria-expanded', 'false');
-          context.input.removeAttribute('aria-activedescendant');
+        function hideResults() {
+          searchResults.hidden = true;
+          searchResults.innerHTML = '';
+          visibleRows = [];
+          activeIndex = -1;
+          pointerTrack = null;
+          suppressRowClickUntil = 0;
+          isInteractingWithResults = false;
+          searchInput.setAttribute('aria-expanded', 'false');
+          searchInput.removeAttribute('aria-activedescendant');
         }
 
-        function showMessage(context, label, message) {
-          context.visibleRows = [];
-          context.activeIndex = -1;
-          context.input.setAttribute('aria-expanded', 'true');
-          context.input.removeAttribute('aria-activedescendant');
-          context.results.hidden = false;
-          context.results.innerHTML = `
+        function navigateTo(href) {
+          hideResults();
+          window.location.assign(href);
+        }
+
+        function showMessage(label, message) {
+          visibleRows = [];
+          activeIndex = -1;
+          searchInput.setAttribute('aria-expanded', 'true');
+          searchInput.removeAttribute('aria-activedescendant');
+          searchResults.hidden = false;
+          searchResults.innerHTML = `
             <p class="results-meta">${label}</p>
             <p class="empty-state">${message}</p>
           `;
         }
 
-        function showResults(context, rows, label) {
-          context.visibleRows = rows.slice(0, 10);
-          context.activeIndex = -1;
-          context.input.removeAttribute('aria-activedescendant');
-          context.input.setAttribute('aria-expanded', 'true');
-          context.results.hidden = false;
+        function showResults(rows, label) {
+          visibleRows = rows.slice(0, 10);
+          activeIndex = -1;
+          searchInput.removeAttribute('aria-activedescendant');
+          searchInput.setAttribute('aria-expanded', 'true');
+          searchResults.hidden = false;
 
-          if (!context.visibleRows.length) {
-            showMessage(context, '0 matches', 'No company found for this query.');
+          if (!visibleRows.length) {
+            showMessage('0 matches', 'No company found for this query.');
             return;
           }
 
-          context.results.innerHTML = `
+          searchResults.innerHTML = `
             <p class="results-meta">${label}</p>
-            ${renderRows(context.visibleRows, context.idPrefix)}
+            ${renderRows(visibleRows)}
           `;
         }
 
-        function setActiveIndex(context, nextIndex) {
-          const items = Array.from(context.results.querySelectorAll('.result-item'));
+        function setActiveIndex(nextIndex) {
+          const items = Array.from(searchResults.querySelectorAll('.result-item'));
           if (!items.length) {
-            context.activeIndex = -1;
-            context.input.removeAttribute('aria-activedescendant');
+            activeIndex = -1;
+            searchInput.removeAttribute('aria-activedescendant');
             return;
           }
 
@@ -209,202 +226,190 @@
             nextIndex = 0;
           }
 
-          context.activeIndex = nextIndex;
+          activeIndex = nextIndex;
           items.forEach((item, index) => {
-            const isActive = index === context.activeIndex;
+            const isActive = index === activeIndex;
             item.classList.toggle('active', isActive);
             item.setAttribute('aria-selected', String(isActive));
           });
 
-          const activeItem = items[context.activeIndex];
+          const activeItem = items[activeIndex];
           if (activeItem) {
-            context.input.setAttribute('aria-activedescendant', activeItem.id);
+            searchInput.setAttribute('aria-activedescendant', activeItem.id);
             activeItem.scrollIntoView({ block: 'nearest' });
           }
         }
 
-        function renderResults(context, rawQuery) {
+        function renderResults(rawQuery) {
           const query = rawQuery.trim();
           if (!query) {
-            hideResults(context);
+            hideResults();
             return;
           }
 
           if (loadFailed) {
-            showMessage(context, 'Search unavailable', 'Unable to load company index right now.');
+            showMessage('Search unavailable', 'Unable to load company index right now.');
             return;
           }
 
           if (!Array.isArray(companyData)) {
-            showMessage(context, 'Loading companies', 'Please wait a moment...');
+            showMessage('Loading companies', 'Please wait a moment...');
             void ensureCompanyData().then(() => {
-              const latestQuery = context.input.value.trim();
+              const latestQuery = searchInput.value.trim();
               if (!latestQuery) {
-                hideResults(context);
+                hideResults();
                 return;
               }
-              renderResults(context, latestQuery);
+              renderResults(latestQuery);
             });
             return;
           }
 
           const matches = rankedMatches(query);
-          showResults(context, matches, `${matches.length} matches`);
+          showResults(matches, `${matches.length} matches`);
         }
 
-        function bindContext(context) {
-          context.input.addEventListener('focus', () => {
-            void ensureCompanyData();
-            renderResults(context, context.input.value);
-          });
+        searchInput.addEventListener('focus', () => {
+          void ensureCompanyData();
+          renderResults(searchInput.value);
+        });
 
-          context.input.addEventListener('input', () => {
-            renderResults(context, context.input.value);
-          });
+        searchInput.addEventListener('input', () => {
+          renderResults(searchInput.value);
+        });
 
-          context.input.addEventListener('keydown', (event) => {
-            if (context.results.hidden) {
-              return;
-            }
+        searchInput.addEventListener('keydown', (event) => {
+          if (searchResults.hidden) {
+            return;
+          }
 
-            if (event.key === 'Escape') {
-              event.preventDefault();
-              hideResults(context);
-              return;
-            }
-
-            if (!context.visibleRows.length) {
-              return;
-            }
-
-            if (event.key === 'ArrowDown') {
-              event.preventDefault();
-              setActiveIndex(context, context.activeIndex + 1);
-              return;
-            }
-
-            if (event.key === 'ArrowUp') {
-              event.preventDefault();
-              setActiveIndex(context, context.activeIndex - 1);
-              return;
-            }
-
-            if (event.key === 'Enter' && context.activeIndex >= 0) {
-              event.preventDefault();
-              window.location.href = `/company/${context.visibleRows[context.activeIndex].slug}/`;
-            }
-          });
-
-          context.results.addEventListener('pointerdown', (event) => {
-            if (!(event.target instanceof Element)) {
-              return;
-            }
-
-            const rowLink = event.target.closest('.result-item');
-            if (!rowLink) {
-              return;
-            }
-
-            const href = rowLink.getAttribute('href');
-            if (!href) {
-              return;
-            }
-
+          if (event.key === 'Escape') {
             event.preventDefault();
-            window.location.href = href;
-          });
-        }
-
-        if (desktopInput && desktopResults) {
-          const desktopContext = {
-            input: desktopInput,
-            results: desktopResults,
-            idPrefix: 'headerResultOption',
-            activeIndex: -1,
-            visibleRows: [],
-          };
-
-          bindContext(desktopContext);
-
-          desktopInput.addEventListener('blur', () => {
-            window.setTimeout(() => {
-              if (!root.contains(document.activeElement)) {
-                hideResults(desktopContext);
-              }
-            }, 0);
-          });
-
-          document.addEventListener('pointerdown', (event) => {
-            if (!(event.target instanceof Element)) {
-              return;
-            }
-            if (!event.target.closest('.header-search-form')) {
-              hideResults(desktopContext);
-            }
-          });
-
-          hideResults(desktopContext);
-        }
-
-        if (mobileInput && mobileResults) {
-          const mobileContext = {
-            input: mobileInput,
-            results: mobileResults,
-            idPrefix: 'headerMobileResultOption',
-            activeIndex: -1,
-            visibleRows: [],
-          };
-          bindContext(mobileContext);
-          hideResults(mobileContext);
-
-          const openOverlay = () => {
-            if (!mobileOverlay) {
-              return;
-            }
-            mobileOverlay.hidden = false;
-            document.body.classList.add('header-search-overlay-open');
-            void ensureCompanyData();
-            window.setTimeout(() => {
-              mobileInput.focus();
-            }, 0);
-          };
-
-          const closeOverlay = () => {
-            if (!mobileOverlay) {
-              return;
-            }
-            mobileOverlay.hidden = true;
-            document.body.classList.remove('header-search-overlay-open');
-            hideResults(mobileContext);
-          };
-
-          if (mobileToggle) {
-            mobileToggle.addEventListener('click', () => {
-              openOverlay();
-            });
+            hideResults();
+            return;
           }
 
-          if (mobileClose) {
-            mobileClose.addEventListener('click', () => {
-              closeOverlay();
-            });
+          if (!visibleRows.length) {
+            return;
           }
 
-          if (mobileOverlay) {
-            mobileOverlay.addEventListener('pointerdown', (event) => {
-              if (event.target === mobileOverlay) {
-                closeOverlay();
-              }
-            });
+          if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            setActiveIndex(activeIndex + 1);
+            return;
           }
 
-          document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && mobileOverlay && !mobileOverlay.hidden) {
-              event.preventDefault();
-              closeOverlay();
+          if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            setActiveIndex(activeIndex - 1);
+            return;
+          }
+
+          if (event.key === 'Enter' && activeIndex >= 0) {
+            event.preventDefault();
+            navigateTo(`/company/${visibleRows[activeIndex].slug}/`);
+          }
+        });
+
+        searchInput.addEventListener('blur', () => {
+          if (isMobileViewport()) {
+            return;
+          }
+
+          window.setTimeout(() => {
+            if (isInteractingWithResults) {
+              return;
             }
-          });
-        }
+            if (!root.contains(document.activeElement)) {
+              hideResults();
+            }
+          }, 0);
+        });
+
+        searchResults.addEventListener('pointerdown', (event) => {
+          if (!(event.target instanceof Element)) {
+            return;
+          }
+
+          const rowLink = event.target.closest('.result-item');
+          if (!rowLink) {
+            return;
+          }
+
+          pointerTrack = {
+            pointerId: event.pointerId,
+            startX: event.clientX,
+            startY: event.clientY,
+            moved: false,
+          };
+          isInteractingWithResults = true;
+        });
+
+        searchResults.addEventListener('pointermove', (event) => {
+          if (!pointerTrack || pointerTrack.pointerId !== event.pointerId) {
+            return;
+          }
+
+          const deltaX = Math.abs(event.clientX - pointerTrack.startX);
+          const deltaY = Math.abs(event.clientY - pointerTrack.startY);
+          if (deltaX > TAP_MOVE_THRESHOLD_PX || deltaY > TAP_MOVE_THRESHOLD_PX) {
+            pointerTrack.moved = true;
+          }
+        });
+
+        searchResults.addEventListener('pointerup', (event) => {
+          if (!pointerTrack || pointerTrack.pointerId !== event.pointerId) {
+            return;
+          }
+
+          if (pointerTrack.moved) {
+            suppressRowClickUntil = Date.now() + 350;
+          }
+          pointerTrack = null;
+          window.setTimeout(() => {
+            isInteractingWithResults = false;
+          }, 0);
+        });
+
+        searchResults.addEventListener('pointercancel', () => {
+          pointerTrack = null;
+          isInteractingWithResults = false;
+        });
+
+        searchResults.addEventListener('click', (event) => {
+          if (!(event.target instanceof Element)) {
+            return;
+          }
+
+          const rowLink = event.target.closest('.result-item');
+          if (!rowLink) {
+            return;
+          }
+
+          if (Date.now() < suppressRowClickUntil) {
+            event.preventDefault();
+            return;
+          }
+
+          const href = rowLink.getAttribute('href');
+          if (!href) {
+            return;
+          }
+
+          event.preventDefault();
+          navigateTo(href);
+        });
+
+        document.addEventListener('pointerdown', (event) => {
+          if (!(event.target instanceof Element)) {
+            return;
+          }
+          if (!event.target.closest('.header-search-form')) {
+            hideResults();
+          }
+        });
+
+        hideResults();
       })();
     </script>
     <script src="/assets/vendor/oat/oat.min.js?v={{ asset_version }}" defer></script>
