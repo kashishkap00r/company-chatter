@@ -24,6 +24,12 @@
     "url": "https://thechatter.zerodha.com/p/the-chatter-anchor-and-ambitions"
   },
   {
+    "id": "p-the-chatter-bets-and-blueprints",
+    "title": "The Chatter: Bets and blueprints",
+    "date": "2026-02-20",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-bets-and-blueprints"
+  },
+  {
     "id": "p-the-chatter-between-headwinds-and",
     "title": "The Chatter: Between Headwinds and Tailwinds",
     "date": "2025-09-25",
@@ -96,6 +102,12 @@
     "url": "https://thechatter.zerodha.com/p/the-chatter-frameworks-and-forecasts"
   },
   {
+    "id": "p-the-chatter-half-a-century-in",
+    "title": "The Chatter: Half a century in",
+    "date": "2026-03-13",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-half-a-century-in"
+  },
+  {
     "id": "p-the-chatter-in-the-middle-of-things",
     "title": "The Chatter: In the Middle of Things",
     "date": "2025-07-17",
@@ -142,6 +154,12 @@
     "title": "The Chatter: On Record",
     "date": "2025-07-03",
     "url": "https://thechatter.zerodha.com/p/the-chatter-on-record"
+  },
+  {
+    "id": "p-the-chatter-patience-and-payoff",
+    "title": "The Chatter: Patience &amp; payoff",
+    "date": "2026-02-27",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-patience-and-payoff"
   },
   {
     "id": "p-the-chatter-playing-the-long-game",
@@ -210,9 +228,75 @@
     "url": "https://thechatter.zerodha.com/p/the-chatter-tailwinds-building"
   },
   {
+    "id": "p-the-chatter-talking-points",
+    "title": "The Chatter: Talking Points",
+    "date": "2026-01-09",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-talking-points"
+  },
+  {
+    "id": "p-the-chatter-tariffs-and-tailwinds",
+    "title": "The Chatter: Tariffs &amp; Tailwinds.",
+    "date": "2025-10-16",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-tariffs-and-tailwinds"
+  },
+  {
+    "id": "p-the-chatter-the-blind-spots",
+    "title": "The Chatter: The Blind Spots",
+    "date": "2025-11-14",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-the-blind-spots"
+  },
+  {
+    "id": "p-the-chatter-the-known-unknowns",
+    "title": "The Chatter: The Known Unknowns",
+    "date": "2025-07-31",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-the-known-unknowns"
+  },
+  {
+    "id": "p-the-chatter-the-mood-in-the-room",
+    "title": "The Chatter: The Mood in the Room",
+    "date": "2025-06-26",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-the-mood-in-the-room"
+  },
+  {
+    "id": "p-the-chatter-the-pivot-quarter",
+    "title": "The Chatter: The Pivot Quarter",
+    "date": "2025-12-19",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-the-pivot-quarter"
+  },
+  {
+    "id": "p-the-chatter-the-push-and-pull",
+    "title": "The Chatter: The Push and Pull",
+    "date": "2025-08-28",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-the-push-and-pull"
+  },
+  {
+    "id": "p-the-chatter-threads-and-tensions",
+    "title": "The Chatter: Threads and Tensions",
+    "date": "2026-01-16",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-threads-and-tensions"
+  },
+  {
+    "id": "p-the-chatter-threads-in-the-data",
+    "title": "The Chatter: Threads in the data",
+    "date": "2026-03-06",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-threads-in-the-data"
+  },
+  {
     "id": "p-the-chatter-underneath-the-noise",
     "title": "The Chatter: Underneath the Noise",
     "date": "2025-09-04",
     "url": "https://thechatter.zerodha.com/p/the-chatter-underneath-the-noise"
+  },
+  {
+    "id": "p-the-chatter-weights-and-measures",
+    "title": "The Chatter: Weights and Measures",
+    "date": "2026-01-23",
+    "url": "https://thechatter.zerodha.com/p/the-chatter-weights-and-measures"
+  },
+  {
+    "id": "p-wrapping-2025-at-the-chatter",
+    "title": "Wrapping 2025 at The Chatter",
+    "date": "2025-12-30",
+    "url": "https://thechatter.zerodha.com/p/wrapping-2025-at-the-chatter"
   }
 ]

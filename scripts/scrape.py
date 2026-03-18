@@ -38,6 +38,7 @@ LINK_AUDIT_REPORT_FILE = "link_audit_report.json"
 COMPANY_MENTIONS_FILE = "company_mentions.json"
 DAILYBRIEF_POSTS_FILE = "dailybrief_posts.json"
 NON_COMPANY_RULES_FILE = "non_company_rules.json"
+CHATTER_POST_CACHE_FILE = "chatter_post_cache.json"
 ZERODHA_NSE_INDEX_FILE = "zerodha_nse_stock_index.json"
 ZERODHA_NSE_INSTRUMENTS_FILE = "zerodha_nse_instruments_index.json"
 ALLOWED_EXCHANGES = {"NSE", "BSE"}
@@ -213,10 +214,22 @@ class CompanyMention:
     mention_type: str
 
 
-def fetch(url: str) -> str:
+def fetch(url: str, max_retries: int = 4) -> str:
+    from urllib.error import HTTPError
+
     req = Request(url, headers={"User-Agent": "CompanyChatterBot/0.1"})
-    with urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="ignore")
+    for attempt in range(max_retries + 1):
+        try:
+            with urlopen(req, timeout=30) as resp:
+                return resp.read().decode("utf-8", errors="ignore")
+        except HTTPError as exc:
+            if exc.code == 429 and attempt < max_retries:
+                delay = 2 ** attempt + 1
+                print(f"  Rate limited on {url}, retrying in {delay}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(delay)
+                continue
+            raise
+    raise RuntimeError(f"Exhausted retries for {url}")
 
 
 def slugify(value: str) -> str:
@@ -1374,8 +1387,9 @@ def extract_article_html(html: str) -> str:
 def parse_post(
     url: str,
     non_company_rules: dict[str, object],
+    cached_html: Optional[str] = None,
 ) -> tuple[Optional[Edition], list[Company], list[Quote], list[CompanyMention]]:
-    html = fetch(url)
+    html = cached_html if cached_html is not None else fetch(url)
     title = extract_title(html)
     if not is_target_post(title):
         return None, [], [], []
@@ -1627,6 +1641,15 @@ def main() -> None:
 
     post_urls = sorted(set(post_urls))
 
+    cache_path = Path(OUTPUT_DIR) / CHATTER_POST_CACHE_FILE
+    post_cache: dict[str, str] = {}
+    if cache_path.exists():
+        try:
+            post_cache = json.loads(cache_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            post_cache = {}
+    cache_hits = 0
+
     editions: dict[str, Edition] = {}
     companies: dict[str, Company] = {}
     quotes: list[Quote] = []
@@ -1634,7 +1657,15 @@ def main() -> None:
 
     for idx, url in enumerate(post_urls, start=1):
         try:
-            edition, comps, qs, ms = parse_post(url, non_company_rules)
+            cached_html = post_cache.get(url)
+            if cached_html:
+                cache_hits += 1
+            else:
+                full_html = fetch(url)
+                cached_html = full_html
+                post_cache[url] = full_html
+                time.sleep(1)
+            edition, comps, qs, ms = parse_post(url, non_company_rules, cached_html=cached_html)
         except Exception as exc:  # pragma: no cover
             print(f"Failed to parse {url}: {exc}")
             continue
@@ -1648,7 +1679,9 @@ def main() -> None:
         mentions.extend(ms)
         if idx % 10 == 0:
             print(f"Processed {idx}/{len(post_urls)} posts...")
-        time.sleep(0.2)
+
+    print(f"Post cache: {cache_hits} hits, {len(post_urls) - cache_hits} fetched")
+    _write_json(cache_path, post_cache)
 
     companies, quotes, mentions, sanity_report = apply_non_company_sanity_filter(
         companies,

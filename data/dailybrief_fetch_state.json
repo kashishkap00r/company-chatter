@@ -1,13 +1,199 @@
 {
-  "generated_at": "2026-02-14T03:54:33+00:00",
+  "generated_at": "2026-03-18T10:32:14+00:00",
   "sitemap_url": "https://thedailybrief.zerodha.com/sitemap.xml",
-  "post_count": 525,
+  "post_count": 556,
   "posts": {
+    "https://thedailybrief.zerodha.com/p/the-new-rules-of-paying-for-electricity": {
+      "lastmod": "2026-03-18",
+      "content_hash": "1b43a1fc1874208d506ba76ce7bae65a5aead012",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:01+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/indias-sez-policy": {
+      "lastmod": "2026-03-17",
+      "content_hash": "3287650b87d41577e746c2fa0de411b90883ac3e",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:50+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/trimming-the-chinese-wall": {
+      "lastmod": "2026-03-16",
+      "content_hash": "36e11310999233b98fe6f91713f82f8ae7c5e4e9",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:03+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/the-chokepoint-that-powers-the-global": {
+      "lastmod": "2026-03-15",
+      "content_hash": "619870c2f23536d612a5321ea6de75432fecc5b8",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:31:58+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/whats-going-on-with-private-credit": {
+      "lastmod": "2026-03-14",
+      "content_hash": "f518eb61f3114ff3231decfcf6dae938111776da",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:08+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/what-is-oil-actually": {
+      "lastmod": "2026-03-13",
+      "content_hash": "d3984483873655fb1e4e37ab834f8fbe5899d76a",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:05+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/the-iran-war-and-indias-fertilizer": {
+      "lastmod": "2026-03-12",
+      "content_hash": "af8d820c92710c18edf1fc02943ccf7e3589c237",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:00+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/pentagon-anthropic-and-the-promise": {
+      "lastmod": "2026-03-11",
+      "content_hash": "af63e0daa71999980a7d3a42c0c0b515d9ea0f1e",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:56+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/inside-indias-largest-highway-invit": {
+      "lastmod": "2026-03-10",
+      "content_hash": "3cd83440eec62420770053058a579049c9511eb2",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:52+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/whats-up-with-tobacco-consumption": {
+      "lastmod": "2026-03-09",
+      "content_hash": "5aa75c5493738bc119b0f48d3878ad50d986cc43",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:10+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/indian-it-takes-an-interest-in-data": {
+      "lastmod": "2026-03-07",
+      "content_hash": "8dfb50b03e9a78b707f345a4134da0e7cd3c927c",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:31:47+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/why-did-global-trade-come-to-a-halt": {
+      "lastmod": "2026-03-06",
+      "content_hash": "6dd4db213524310f71b46b2e57e9ed75844770b9",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:11+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/india-prepares-to-invest-in-us-stocks": {
+      "lastmod": "2026-03-05",
+      "content_hash": "1bfdd47c831d977a2af411f64504fc48b050c346",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:47+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/a-fifth-of-the-worlds-oil-is-in-danger": {
+      "lastmod": "2026-03-04",
+      "content_hash": "ecb677c2384fb0b57a98e2b759ff29cf7a7a00fa",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:43+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/the-conjurings-of-data-center-finance": {
+      "lastmod": "2026-03-02",
+      "content_hash": "28fd08e94d498209981616c8a3ba61ae76faf6f1",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:59+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/is-india-reopening-to-china-who-said": {
+      "lastmod": "2026-02-28",
+      "content_hash": "cc02acd7bdfd5c2574f6e0fb162bab6906cec818",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:31:53+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/keytruda-the-clone-wars": {
+      "lastmod": "2026-02-27",
+      "content_hash": "462550624bdf3b4003f0302fcafb1b381e7dc7cd",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:55+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/indias-metro-ridership-problem": {
+      "lastmod": "2026-02-27",
+      "content_hash": "200e124f6ec8689dbc68770aa1f358c8452bc454",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:50+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/whats-behind-the-great-nicobar-megaproject": {
+      "lastmod": "2026-02-25",
+      "content_hash": "9fe48835acd22c51ce2b3d9702d6bdeb0727da31",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:07+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/how-the-us-supreme-court-killed-liberation": {
+      "lastmod": "2026-02-24",
+      "content_hash": "6e50f165312f109a5786cf8b5c7204442e61f776",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:46+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/what-it-takes-to-move-a-city": {
+      "lastmod": "2026-02-23",
+      "content_hash": "5e218d37c059e5f58e12734857236b47c0f36e4f",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:06+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/gold-etfs-attract-more-money-than": {
+      "lastmod": "2026-02-22",
+      "content_hash": "35f996bc70fb37aaf5d38ce8e62ca82c667a5822",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:31:45+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/will-india-get-a-self-driving-car": {
+      "lastmod": "2026-02-21",
+      "content_hash": "d6b2ba2b0551aa4a68769cdaade1df8b9292b7da",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:32:14+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/why-is-global-waste-trade-going-down": {
+      "lastmod": "2026-02-20",
+      "content_hash": "a81815b37db3df8a50ef715329c6c382b14f821a",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:13+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/can-indias-small-businesses-be-paid": {
+      "lastmod": "2026-02-19",
+      "content_hash": "50b279d997f242736d55ff4ecacb246c433f6058",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:44+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/why-is-ac-ownership-so-low-in-india": {
+      "lastmod": "2026-02-18",
+      "content_hash": "11c18bf6878a483ad55b56325e948abd4d9acf28",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:32:12+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/100000-of-you": {
+      "lastmod": "2026-02-18",
+      "content_hash": "1fe671860df851419ec0c0cd98f37e5647f27324",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:31:42+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/indias-discoms-posted-a-profit-how": {
+      "lastmod": "2026-02-17",
+      "content_hash": "4eca0cd166f4c97375e0572cbf738060d09b7ae7",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:48+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/understanding-shipbuilding-industry": {
+      "lastmod": "2026-02-16",
+      "content_hash": "d2eaca909ec30817fb121eac0f9915ab679b7ac3",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:32:05+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/the-age-of-electricity": {
+      "lastmod": "2026-02-16",
+      "content_hash": "e0c8814cbd62d50ad4ff17dea4aadacfeb8d2e44",
+      "story_count": 2,
+      "fetched_at": "2026-03-18T10:31:57+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/whats-the-next-step-for-dixon-kaynes": {
+      "lastmod": "2026-02-14",
+      "content_hash": "c54a626d798641e32fec1240aeef069402ef867e",
+      "story_count": 1,
+      "fetched_at": "2026-03-18T10:32:09+00:00"
+    },
     "https://thedailybrief.zerodha.com/p/between-industrial-policy-and-trade": {
       "lastmod": "2026-02-13",
       "content_hash": "b23bc2022ee3ecc65848b63c113ab1c98035cdca",
       "story_count": 2,
-      "fetched_at": "2026-02-14T03:54:33+00:00"
+      "fetched_at": "2026-03-18T10:31:43+00:00"
     },
     "https://thedailybrief.zerodha.com/p/whats-behind-record-psu-bank-profits": {
       "lastmod": "2026-02-12",

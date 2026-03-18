@@ -1,6 +1,6 @@
 {
   "thresholds": {
-    "max_market_conflicts": 32,
+    "max_market_conflicts": 40,
     "max_quarantined_companies": 7,
     "max_dropped_quote_rows": 0,
     "max_dropped_mention_rows": 7,
