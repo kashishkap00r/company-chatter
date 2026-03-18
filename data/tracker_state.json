@@ -4,10 +4,10 @@
     "2026-01-01",
     "2026-03-31"
   ],
-  "last_updated": "2026-03-18T19:05:29+00:00",
+  "last_updated": "2026-03-18T19:20:20+00:00",
   "summary": {
     "total_companies": 250,
-    "chatter_eligible": 193,
+    "chatter_eligible": 209,
     "chatter_covered": 73,
     "pnf_eligible": 223,
     "pnf_covered": 0
@@ -18,7 +18,7 @@
       "name": "360 ONE WAM LIMITED",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-20",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -89,8 +89,8 @@
       "symbol": "ABCAPITAL",
       "name": "Aditya Birla Capital Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -108,7 +108,7 @@
       "name": "ACC Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -126,7 +126,7 @@
       "name": "Adani Energy Solutions Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -179,8 +179,8 @@
       "symbol": "ADANIPORTS",
       "name": "Adani Ports and Special Economic Zone Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -270,7 +270,7 @@
       "name": "Ambuja Cements Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -306,7 +306,7 @@
       "name": "APL Apollo Tubes Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -323,8 +323,8 @@
       "symbol": "APOLLOHOSP",
       "name": "Apollo Hospitals Enterprise Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -342,7 +342,7 @@
       "name": "Apollo Tyres Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-10",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -377,8 +377,8 @@
       "symbol": "ASIANPAINT",
       "name": "Asian Paints Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
         "covered_date": "2026-01-30"
@@ -431,8 +431,8 @@
       "symbol": "AUBANK",
       "name": "AU Small Finance Bank Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -450,7 +450,7 @@
       "name": "Aurobindo Pharma Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-16",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -521,8 +521,8 @@
       "symbol": "BAJAJFINSV",
       "name": "Bajaj Finserv Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -846,7 +846,7 @@
       "name": "Britannia Industries Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-16",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -917,8 +917,8 @@
       "symbol": "CHOLAFIN",
       "name": "Cholamandalam Investment and Finance Company Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Talking Points",
         "covered_date": "2026-01-09"
@@ -936,7 +936,7 @@
       "name": "Cipla Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-09",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1044,7 +1044,7 @@
       "name": "Coromandel International Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-09",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1116,7 +1116,7 @@
       "name": "Dalmia Bharat Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible_since": "2026-01-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Weights and Measures",
         "covered_date": "2026-01-23"
@@ -1152,7 +1152,7 @@
       "name": "Divi's Laboratories Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-14",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -1223,8 +1223,8 @@
       "symbol": "DRREDDY",
       "name": "Dr. Reddy's Laboratories Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1296,7 +1296,7 @@
       "name": "Escorts Kubota Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-13",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1386,7 +1386,7 @@
       "name": "Gujarat Fluorochemicals Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-18",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1457,8 +1457,8 @@
       "symbol": "GLAXO",
       "name": "GlaxoSmithKline Pharmaceuticals Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1476,7 +1476,7 @@
       "name": "Glenmark Pharmaceuticals Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1493,8 +1493,8 @@
       "symbol": "GMRAIRPORT",
       "name": "GMR AIRPORTS LIMITED",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Patience &amp; payoff",
         "covered_date": "2026-02-27"
@@ -1602,7 +1602,7 @@
       "name": "Gujarat Gas Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1656,7 +1656,7 @@
       "name": "Havells India Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-13",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1764,7 +1764,7 @@
       "name": "Hexaware Technologies Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-10",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1836,7 +1836,7 @@
       "name": "Hindustan Zinc Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2016,7 +2016,7 @@
       "name": "Indraprastha Gas Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-18",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2034,7 +2034,7 @@
       "name": "The Indian Hotels Company Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-19",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2142,7 +2142,7 @@
       "name": "Indian Overseas Bank",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2177,8 +2177,8 @@
       "symbol": "IPCALAB",
       "name": "IPCA Laboratories Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2214,7 +2214,7 @@
       "name": "Indian Railway Catering And Tourism Corporation Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-18",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -2250,7 +2250,7 @@
       "name": "Indian Railway Finance Corporation Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2376,7 +2376,7 @@
       "name": "JSW Energy Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2393,8 +2393,8 @@
       "symbol": "JSWINFRA",
       "name": "JSW Infrastructure Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2466,7 +2466,7 @@
       "name": "KEI Industries Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2555,8 +2555,8 @@
       "symbol": "LICI",
       "name": "Life Insurance Corporation Of India",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2682,7 +2682,7 @@
       "name": "L&T Technology Services Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-20",
+        "eligible_since": "2026-01-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Threads and Tensions",
         "covered_date": "2026-01-16"
@@ -2826,7 +2826,7 @@
       "name": "Max Healthcare Institute Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-12",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2880,7 +2880,7 @@
       "name": "Max Financial Services Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-18",
+        "eligible_since": "2026-03-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2898,7 +2898,7 @@
       "name": "Samvardhana Motherson International Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-16",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2970,7 +2970,7 @@
       "name": "Muthoot Finance Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-18",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Tailwinds building",
         "covered_date": "2026-02-13"
@@ -3024,7 +3024,7 @@
       "name": "Info Edge (India) Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-19",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -3060,7 +3060,7 @@
       "name": "NHPC Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-12",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3294,7 +3294,7 @@
       "name": "One 97 Communications Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3510,7 +3510,7 @@
       "name": "Hitachi Energy India Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-12",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3546,7 +3546,7 @@
       "name": "Prestige Estates Projects Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-02",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3600,7 +3600,7 @@
       "name": "Rail Vikas Nigam Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-09",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3654,7 +3654,7 @@
       "name": "SBI Life Insurance Company Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3779,8 +3779,8 @@
       "symbol": "SOLARINDS",
       "name": "Solar Industries India Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3870,7 +3870,7 @@
       "name": "Supreme Industries Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3906,7 +3906,7 @@
       "name": "Swiggy Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3923,8 +3923,8 @@
       "symbol": "SYNGENE",
       "name": "Syngene International Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-01-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Tailwinds building",
         "covered_date": "2026-02-13"
@@ -3960,7 +3960,7 @@
       "name": "TATA CONSUMER PRODUCTS LIMITED",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-30",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3978,7 +3978,7 @@
       "name": "Tata Elxsi Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-20",
+        "eligible_since": "2026-01-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Threads and Tensions",
         "covered_date": "2026-01-16"
@@ -4050,7 +4050,7 @@
       "name": "Tata Technologies Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4140,7 +4140,7 @@
       "name": "Titan Company Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-13",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -4158,7 +4158,7 @@
       "name": "Tata Motors Passenger Vehicles Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-11",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Tailwinds building",
         "covered_date": "2026-02-13"
@@ -4176,7 +4176,7 @@
       "name": "Torrent Pharmaceuticals Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-20",
+        "eligible_since": "2026-02-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Bets and blueprints",
         "covered_date": "2026-02-20"
@@ -4194,7 +4194,7 @@
       "name": "Torrent Power Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-13",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4266,7 +4266,7 @@
       "name": "UCO Bank",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4320,7 +4320,7 @@
       "name": "United Spirits Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible_since": "2026-01-01",
         "covered": true,
         "covered_in_edition": "The Chatter: Weights and Measures",
         "covered_date": "2026-01-23"
@@ -4356,7 +4356,7 @@
       "name": "UPL Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-06",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4427,8 +4427,8 @@
       "symbol": "VOLTAS",
       "name": "Voltas Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4482,7 +4482,7 @@
       "name": "Yes Bank Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4500,7 +4500,7 @@
       "name": "Zydus Lifesciences Limited",
       "chatter": {
         "eligible": true,
-        "eligible_since": "2026-02-15",
+        "eligible_since": "2026-02-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
