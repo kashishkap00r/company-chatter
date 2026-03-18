@@ -1,0 +1,62 @@
+name: Tracker Refresh
+
+on:
+  schedule:
+    # Daily 7:30 AM IST (02:00 UTC)
+    - cron: "0 2 * * *"
+  push:
+    branches: [main]
+    paths:
+      - data/editions.json
+      - data/quotes.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tracker-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore P&F post cache
+        uses: actions/cache@v4
+        with:
+          path: data/tracker_pnf_cache.json
+          key: tracker-pnf-cache
+
+      - name: Run tracker refresh
+        run: python3 scripts/tracker_refresh.py
+
+      - name: Detect state changes
+        id: changes
+        run: |
+          if git diff --quiet -- data/tracker_state.json data/tracker_pnf_editions.json; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push tracker state
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tracker_state.json data/tracker_pnf_editions.json
+          git commit -m "chore: daily tracker state refresh"
+          git pull --rebase origin main
+          git push origin HEAD:main
