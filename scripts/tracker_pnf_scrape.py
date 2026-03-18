@@ -20,7 +20,7 @@ OUTPUT_PATH = DATA_DIR / "tracker_pnf_editions.json"
 BASE_URL = "https://thechatter.zerodha.com/"
 SITEMAP_URL = urljoin(BASE_URL, "sitemap")
 
-PNF_TITLE_MATCH = "points and figures"
+PNF_TITLE_PATTERNS = ["points and figures", "points & figures", "points &amp; figures"]
 
 
 def _fetch(url: str, max_retries: int = 4) -> str:
@@ -117,7 +117,7 @@ class CompanyHeadingExtractor(HTMLParser):
 def parse_pnf_post(html: str) -> dict | None:
     """Parse a P&F post, extracting title, date, and company headings."""
     title = _extract_title(html)
-    if PNF_TITLE_MATCH not in title.lower():
+    if not any(pat in title.lower() for pat in PNF_TITLE_PATTERNS):
         return None
 
     date = _extract_date(html)
