@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-03-18T10:43:10+00:00",
+  "generated_at": "2026-03-21T03:39:48+00:00",
   "counts": {
-    "input_companies": 832,
-    "canonical_companies": 639,
+    "input_companies": 840,
+    "canonical_companies": 643,
     "quarantined_companies": 7,
-    "merged_groups": 166,
+    "merged_groups": 169,
     "dropped_quote_rows": 0,
     "dropped_mention_rows": 7,
-    "input_quotes": 4651,
-    "output_quotes": 4651,
-    "input_mentions": 1039,
-    "output_mentions": 1032,
-    "market_conflicts": 36,
+    "input_quotes": 4792,
+    "output_quotes": 4792,
+    "input_mentions": 1055,
+    "output_mentions": 1048,
+    "market_conflicts": 37,
     "cross_bucket_merges": 6
   },
   "quarantined_companies": [
@@ -375,6 +375,23 @@
       ],
       "market_keys": [
         "NSE:OLECTRA"
+      ]
+    },
+    {
+      "canonical_id": "hero-motocorp",
+      "canonical_name": "Hero MotoCorp",
+      "members": [
+        {
+          "id": "hero-motocorp",
+          "name": "Hero MotoCorp"
+        },
+        {
+          "id": "hero-motocorp-limited",
+          "name": "Hero MotoCorp Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:HEROMOTOCO"
       ]
     },
     {
@@ -1553,7 +1570,24 @@
       ]
     },
     {
-      "canonical_id": "kalyan-jewellers-india",
+      "canonical_id": "blue-star-limited",
+      "canonical_name": "Blue Star",
+      "members": [
+        {
+          "id": "blue-star",
+          "name": "Blue Star"
+        },
+        {
+          "id": "blue-star-limited",
+          "name": "Blue Star Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:BLUESTARCO"
+      ]
+    },
+    {
+      "canonical_id": "kalyan-jewellers-india-limited",
       "canonical_name": "Kalyan Jewellers",
       "members": [
         {
@@ -1563,6 +1597,10 @@
         {
           "id": "kalyan-jewellers-india",
           "name": "Kalyan Jewellers India"
+        },
+        {
+          "id": "kalyan-jewellers-india-limited",
+          "name": "Kalyan Jewellers India Limited"
         }
       ],
       "market_keys": [
@@ -1969,6 +2007,23 @@
       ]
     },
     {
+      "canonical_id": "jk-cement-limited",
+      "canonical_name": "JK Cements",
+      "members": [
+        {
+          "id": "jk-cement-limited",
+          "name": "JK Cement Limited"
+        },
+        {
+          "id": "jk-cements",
+          "name": "JK Cements"
+        }
+      ],
+      "market_keys": [
+        "NSE:JKCEMENT"
+      ]
+    },
+    {
       "canonical_id": "dixon-technologies",
       "canonical_name": "Dixon Technologies",
       "members": [
@@ -2347,6 +2402,40 @@
       ]
     },
     {
+      "canonical_id": "tech-mahindra",
+      "canonical_name": "Tech Mahindra",
+      "members": [
+        {
+          "id": "tech-mahindra",
+          "name": "Tech Mahindra"
+        },
+        {
+          "id": "tech-mahindra-limited",
+          "name": "Tech Mahindra Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:TECHM"
+      ]
+    },
+    {
+      "canonical_id": "indian-railway-finance-corporation-limited",
+      "canonical_name": "Indian Railway Finance Corporation",
+      "members": [
+        {
+          "id": "indian-railway-finance-corporation",
+          "name": "Indian Railway Finance Corporation"
+        },
+        {
+          "id": "indian-railway-finance-corporation-limited",
+          "name": "Indian Railway Finance Corporation Limited"
+        }
+      ],
+      "market_keys": [
+        "NSE:IRFC"
+      ]
+    },
+    {
       "canonical_id": "the-coca-cola-co",
       "canonical_name": "Coca Cola",
       "members": [
@@ -2596,23 +2685,6 @@
       ]
     },
     {
-      "canonical_id": "tech-mahindra",
-      "canonical_name": "Tech Mahindra",
-      "members": [
-        {
-          "id": "tech-mahindra",
-          "name": "Tech Mahindra"
-        },
-        {
-          "id": "tech-mahindra-limited",
-          "name": "Tech Mahindra Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:TECHM"
-      ]
-    },
-    {
       "canonical_id": "ceat-ltd",
       "canonical_name": "CEAT",
       "members": [
@@ -2787,23 +2859,6 @@
       ]
     },
     {
-      "canonical_id": "indian-railway-finance-corporation-limited",
-      "canonical_name": "Indian Railway Finance Corporation",
-      "members": [
-        {
-          "id": "indian-railway-finance-corporation",
-          "name": "Indian Railway Finance Corporation"
-        },
-        {
-          "id": "indian-railway-finance-corporation-limited",
-          "name": "Indian Railway Finance Corporation Limited"
-        }
-      ],
-      "market_keys": [
-        "NSE:IRFC"
-      ]
-    },
-    {
       "canonical_id": "bata-india-limited",
       "canonical_name": "Bata India",
       "members": [
@@ -2935,6 +2990,35 @@
     }
   ],
   "market_conflicts": [
+    {
+      "market_key": "NSE:APOLLOTYRE",
+      "components": [
+        {
+          "root": "apl-apollo-tubes",
+          "is_primary": false,
+          "quote_count": 3,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "apl-apollo-tubes",
+              "name": "APL Apollo Tubes"
+            }
+          ]
+        },
+        {
+          "root": "apollo-tyres-limited",
+          "is_primary": true,
+          "quote_count": 8,
+          "mention_count": 1,
+          "members": [
+            {
+              "id": "apollo-tyres-limited",
+              "name": "Apollo Tyres Limited"
+            }
+          ]
+        }
+      ]
+    },
     {
       "market_key": "NSE:DRREDDY",
       "components": [

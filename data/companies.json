@@ -2795,6 +2795,66 @@
     "url": "https://zerodha.com/markets/stocks/NSE/ZEEL/"
   },
   {
+    "id": "tech-mahindra",
+    "name": "Tech Mahindra",
+    "url": "https://zerodha.com/markets/stocks/NSE/TECHM/"
+  },
+  {
+    "id": "persistent-systems-limited",
+    "name": "Persistent Systems Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/PERSISTENT/"
+  },
+  {
+    "id": "apollo-tyres-limited",
+    "name": "Apollo Tyres Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/APOLLOTYRE/"
+  },
+  {
+    "id": "hero-motocorp-limited",
+    "name": "Hero MotoCorp Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/HEROMOTOCO/"
+  },
+  {
+    "id": "larsen-toubro",
+    "name": "Larsen & Toubro",
+    "url": "https://zerodha.com/markets/stocks/NSE/LT/"
+  },
+  {
+    "id": "indian-railway-finance-corporation-limited",
+    "name": "Indian Railway Finance Corporation Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/IRFC/"
+  },
+  {
+    "id": "jk-cement-limited",
+    "name": "JK Cement Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/JKCEMENT/"
+  },
+  {
+    "id": "adani-total-gas-limited",
+    "name": "Adani Total Gas Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/ATGL/"
+  },
+  {
+    "id": "ajanta-pharma",
+    "name": "Ajanta Pharma",
+    "url": "https://zerodha.com/markets/stocks/NSE/AJANTPHARM/"
+  },
+  {
+    "id": "blue-star-limited",
+    "name": "Blue Star Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/BLUESTARCO/"
+  },
+  {
+    "id": "kalyan-jewellers-india-limited",
+    "name": "Kalyan Jewellers India Limited",
+    "url": "https://zerodha.com/markets/stocks/NSE/KALYANKJIL/"
+  },
+  {
+    "id": "accenture-plc",
+    "name": "Accenture plc",
+    "url": null
+  },
+  {
     "id": "idfc-first-bank",
     "name": "IDFC First Bank",
     "url": "https://zerodha.com/markets/stocks/NSE/IDFCFIRSTB/"
@@ -2858,11 +2918,6 @@
     "id": "td-power-systems",
     "name": "TD Power Systems",
     "url": "https://zerodha.com/markets/stocks/NSE/TDPOWERSYS/"
-  },
-  {
-    "id": "larsen-toubro",
-    "name": "Larsen & Toubro",
-    "url": "https://zerodha.com/markets/stocks/NSE/LT/"
   },
   {
     "id": "rural-electrification-corporation",
@@ -3195,11 +3250,6 @@
     "url": null
   },
   {
-    "id": "accenture-plc",
-    "name": "Accenture plc",
-    "url": null
-  },
-  {
     "id": "genpact-limited",
     "name": "Genpact Limited",
     "url": null
@@ -3338,11 +3388,6 @@
     "id": "hcl-technologies",
     "name": "HCL Technologies",
     "url": "https://zerodha.com/markets/stocks/NSE/HCLTECH/"
-  },
-  {
-    "id": "tech-mahindra",
-    "name": "Tech Mahindra",
-    "url": "https://zerodha.com/markets/stocks/NSE/TECHM/"
   },
   {
     "id": "wipro",
@@ -3743,11 +3788,6 @@
     "id": "aurobindo-pharma-limited",
     "name": "Aurobindo Pharma Limited",
     "url": "https://zerodha.com/markets/stocks/NSE/AUROPHARMA/"
-  },
-  {
-    "id": "indian-railway-finance-corporation-limited",
-    "name": "Indian Railway Finance Corporation Limited",
-    "url": "https://zerodha.com/markets/stocks/NSE/IRFC/"
   },
   {
     "id": "poonawalla-fincorp-limited",

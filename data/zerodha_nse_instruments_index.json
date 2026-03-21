@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-18T10:40:01+00:00",
+  "generated_at": "2026-03-21T03:38:28+00:00",
   "source_url": "https://api.kite.trade/instruments",
-  "entry_count": 9323,
+  "entry_count": 9381,
   "entries": [
     {
       "symbol": "GOLDSTAR-ST",
@@ -90,6 +90,10 @@
     {
       "symbol": "677WB40-SG",
       "display_name": "SDL WB 6.77% 2040"
+    },
+    {
+      "symbol": "SANWARIA-BZ",
+      "display_name": "SANWARIA CONSUMER"
     },
     {
       "symbol": "HAPPSTMNDS",
@@ -1760,7 +1764,7 @@
       "display_name": "INGERSOLL-RAND INDIA"
     },
     {
-      "symbol": "AURIGROW-BE",
+      "symbol": "AURIGROW",
       "display_name": "AURI GROW INDIA"
     },
     {
@@ -2010,6 +2014,10 @@
     {
       "symbol": "66UK31-SG",
       "display_name": "SDL UK 6.6% 2031"
+    },
+    {
+      "symbol": "KESORAMIND",
+      "display_name": "KESORAM INDUSTRIES"
     },
     {
       "symbol": "666JH34-SG",
@@ -2996,7 +3004,7 @@
       "display_name": "RANA SUGARS"
     },
     {
-      "symbol": "MAHICKRA-SM",
+      "symbol": "MAHICKRA-ST",
       "display_name": "MAHICKRA CHEMICAL"
     },
     {
@@ -4624,10 +4632,6 @@
       "display_name": "SDL BR 6.75% 2027"
     },
     {
-      "symbol": "KESORAMIND-BE",
-      "display_name": "KESORAM INDUSTRIES"
-    },
-    {
       "symbol": "633AS26-SG",
       "display_name": "SDL AS 6.33% 2026"
     },
@@ -5764,6 +5768,10 @@
       "display_name": "D K ENTERPRISES GLOBAL L"
     },
     {
+      "symbol": "RAJVIR-BZ",
+      "display_name": "RAJVIR INDUSTRIES"
+    },
+    {
       "symbol": "SELMC",
       "display_name": "SEL MANUFACTURING CO"
     },
@@ -5872,7 +5880,7 @@
       "display_name": "ICICI PRUDENTIAL NIFTY INDIA CONSUMPTION ETF"
     },
     {
-      "symbol": "SHUBHLAXMI-ST",
+      "symbol": "SHUBHLAXMI-SM",
       "display_name": "SHUBHLAXMI JEWEL ART"
     },
     {
@@ -6218,10 +6226,6 @@
     {
       "symbol": "DMCC",
       "display_name": "DMCC SPECIALITY CHEMICALS"
-    },
-    {
-      "symbol": "ICDSLTD",
-      "display_name": "ICDS"
     },
     {
       "symbol": "83GS2040-GS",
@@ -6838,6 +6842,10 @@
     {
       "symbol": "722AP42-SG",
       "display_name": "SDL AP 7.22% 2042"
+    },
+    {
+      "symbol": "ABAN-BE",
+      "display_name": "ABAN OFFSHORE"
     },
     {
       "symbol": "875SCFL27-Y9",
@@ -7696,6 +7704,10 @@
       "display_name": "97SFL29-YZ"
     },
     {
+      "symbol": "BLUECHIP-BE",
+      "display_name": "BLUE CHIP INDIA"
+    },
+    {
       "symbol": "VETO",
       "display_name": "VETO SWITCHGEAR CABLE"
     },
@@ -8060,6 +8072,10 @@
       "display_name": "CAMPUS ACTIVEWEAR"
     },
     {
+      "symbol": "QUINTEGRA-BE",
+      "display_name": "QUINTEGRA SOLUTIONS"
+    },
+    {
       "symbol": "TRU",
       "display_name": "TRUCAP FINANCE"
     },
@@ -8216,6 +8232,10 @@
       "display_name": "GOI LOAN 7.72% 2049"
     },
     {
+      "symbol": "ICDSLTD-BE",
+      "display_name": "ICDSLTD"
+    },
+    {
       "symbol": "SPLPETRO",
       "display_name": "SUPREME PETROCHEM"
     },
@@ -8302,6 +8322,10 @@
     {
       "symbol": "GSTL-ST",
       "display_name": "GLOBESECURE TECHNO"
+    },
+    {
+      "symbol": "EASTSILK-BE",
+      "display_name": "EASTERN SILK INDUSTRIES L"
     },
     {
       "symbol": "763HR28-SG",
@@ -9196,6 +9220,10 @@
       "display_name": "SDL AS 7.83% 2032"
     },
     {
+      "symbol": "UNIVAFOODS-BE",
+      "display_name": "UNIVA FOODS"
+    },
+    {
       "symbol": "78GJ32A-SG",
       "display_name": "SDL GJ 7.8% 2032"
     },
@@ -10036,8 +10064,12 @@
       "display_name": "NATH BIO-GENES (I)"
     },
     {
-      "symbol": "AGRITECH-BE",
+      "symbol": "AGRITECH",
       "display_name": "AGRI-TECH (INDIA)"
+    },
+    {
+      "symbol": "GFSTEELS-BE",
+      "display_name": "GRAND FOUNDRY"
     },
     {
       "symbol": "LIBAS",
@@ -10336,6 +10368,10 @@
       "display_name": "TTK HEALTHCARE"
     },
     {
+      "symbol": "BGLOBAL-BZ",
+      "display_name": "BHARATIYA GLOBAL INFO"
+    },
+    {
       "symbol": "BIOCON",
       "display_name": "BIOCON"
     },
@@ -10466,10 +10502,6 @@
     {
       "symbol": "NV20",
       "display_name": "KOTAK NIFTY 50 VALUE 20 ETF"
-    },
-    {
-      "symbol": "JPASSOCIAT-BE",
-      "display_name": "JAIPRAKASH ASSOCIATES"
     },
     {
       "symbol": "QMSMEDI-SM",
@@ -11420,6 +11452,10 @@
       "display_name": "DHARMAJ CROP GUARD"
     },
     {
+      "symbol": "SECL-ST",
+      "display_name": "SALASAR EXTERIOR CONT"
+    },
+    {
       "symbol": "SAFARI",
       "display_name": "SAFARI IND (INDIA)"
     },
@@ -12286,6 +12322,10 @@
     {
       "symbol": "MMFL",
       "display_name": "MM FORGINGS"
+    },
+    {
+      "symbol": "CLCIND-BE",
+      "display_name": "CLC INDUSTRIES"
     },
     {
       "symbol": "865IIFL28-NS",
@@ -13334,10 +13374,6 @@
     {
       "symbol": "SANCO-BZ",
       "display_name": "SANCO INDUSTRIES"
-    },
-    {
-      "symbol": "735GJ26-SG",
-      "display_name": "SDL GJ 7.35% 2026"
     },
     {
       "symbol": "766HR29-SG",
@@ -15576,7 +15612,7 @@
       "display_name": "GPT INFRAPROJECTS"
     },
     {
-      "symbol": "VIJIFIN",
+      "symbol": "VIJIFIN-BE",
       "display_name": "VIJI FINANCE"
     },
     {
@@ -15742,6 +15778,10 @@
     {
       "symbol": "ABBOTINDIA",
       "display_name": "ABBOTT INDIA"
+    },
+    {
+      "symbol": "HDIL-BZ",
+      "display_name": "HOUSING DEV & INFRA"
     },
     {
       "symbol": "GEEKAYWIRE",
@@ -16236,12 +16276,12 @@
       "display_name": "SAB EVENTS & GOVERNANCE"
     },
     {
-      "symbol": "SAROJA-SM",
-      "display_name": "SAROJA PHARMA INDUS IND L"
+      "symbol": "TVVISION",
+      "display_name": "TV VISION"
     },
     {
-      "symbol": "TVVISION-BE",
-      "display_name": "TV VISION"
+      "symbol": "SAROJA-SM",
+      "display_name": "SAROJA PHARMA INDUS IND L"
     },
     {
       "symbol": "PRAMARA-SM",
@@ -16792,7 +16832,7 @@
       "display_name": "DIGIKORE STUDIOS"
     },
     {
-      "symbol": "UMESLTD",
+      "symbol": "UMESLTD-BE",
       "display_name": "USHA MARTIN EDU & SOL"
     },
     {
@@ -17278,6 +17318,14 @@
     {
       "symbol": "COMPINFO-BZ",
       "display_name": "COMPUAGE INFOCOM"
+    },
+    {
+      "symbol": "GAYAPROJ-BZ",
+      "display_name": "GAYATRI PROJECTS"
+    },
+    {
+      "symbol": "CMICABLES-BZ",
+      "display_name": "CMI"
     },
     {
       "symbol": "ANSALAPI-BZ",
@@ -17960,10 +18008,6 @@
       "display_name": "SDL KA 7.67% 2036"
     },
     {
-      "symbol": "CLEDUCATE",
-      "display_name": "CL EDUCATE"
-    },
-    {
       "symbol": "JWL",
       "display_name": "JUPITER WAGONS"
     },
@@ -17982,6 +18026,10 @@
     {
       "symbol": "766ML32-SG",
       "display_name": "SDL ML 7.66% 2032"
+    },
+    {
+      "symbol": "CLEDUCATE-BE",
+      "display_name": "CL EDUCATE"
     },
     {
       "symbol": "765GA33-SG",
@@ -18080,10 +18128,6 @@
       "display_name": "N R AGARWAL INDS"
     },
     {
-      "symbol": "SHANKARA",
-      "display_name": "SHANKARA BLDG PRODUCT"
-    },
-    {
       "symbol": "FEDFINA",
       "display_name": "FEDBANK FINANCIAL SER L"
     },
@@ -18098,6 +18142,10 @@
     {
       "symbol": "768TN30B-SG",
       "display_name": "SDL TN 7.68% 2030"
+    },
+    {
+      "symbol": "SHANKARA-BE",
+      "display_name": "SHANKARA BLDG PRODUCT"
     },
     {
       "symbol": "774CG31-SG",
@@ -19324,7 +19372,7 @@
       "display_name": "SDL AS 7.53% 2029"
     },
     {
-      "symbol": "TRANSWIND-ST",
+      "symbol": "TRANSWIND-SM",
       "display_name": "TRANSWIND INFRA"
     },
     {
@@ -19730,6 +19778,10 @@
     {
       "symbol": "775SIDBI27-N1",
       "display_name": "775SIDBI27-N1"
+    },
+    {
+      "symbol": "EDUCOMP-BZ",
+      "display_name": "EDUCOMP SOLUTIONS"
     },
     {
       "symbol": "CAPACITE",
@@ -21746,10 +21798,6 @@
     {
       "symbol": "ZENITHDRUG-SM",
       "display_name": "ZENITH DRUGS"
-    },
-    {
-      "symbol": "840NIRMA26-N6",
-      "display_name": "840NIRMA26-N6"
     },
     {
       "symbol": "850NIRMA27-N7",
@@ -23800,6 +23848,10 @@
       "display_name": "SDL JK 7.33% 2051"
     },
     {
+      "symbol": "SKIL-BZ",
+      "display_name": "SKIL INFRASTRUCTURE"
+    },
+    {
       "symbol": "GPECO-SM",
       "display_name": "GP ECO SOLUTIONS INDIA L"
     },
@@ -24592,7 +24644,7 @@
       "display_name": "737IRFC29-N0"
     },
     {
-      "symbol": "SATECH-ST",
+      "symbol": "SATECH-SM",
       "display_name": "S A TECH SOFTWARE INDIA L"
     },
     {
@@ -24864,12 +24916,12 @@
       "display_name": "POSITRON ENERGY"
     },
     {
-      "symbol": "INVENTURE",
-      "display_name": "INVENTURE GRO & SEC"
+      "symbol": "SUNLITE-SM",
+      "display_name": "SUNLITE RECYCLING IND"
     },
     {
-      "symbol": "SUNLITE-ST",
-      "display_name": "SUNLITE RECYCLING IND"
+      "symbol": "INVENTURE",
+      "display_name": "INVENTURE GRO & SEC"
     },
     {
       "symbol": "METALIINAV",
@@ -27252,6 +27304,10 @@
       "display_name": "712PGCIL34-N0"
     },
     {
+      "symbol": "SRPL-BZ",
+      "display_name": "SHREE RAM PROTEINS"
+    },
+    {
       "symbol": "DAMCAPITAL",
       "display_name": "DAM CAPITAL ADVISORS"
     },
@@ -27630,6 +27686,10 @@
     {
       "symbol": "716WB42-SG",
       "display_name": "SDL WB 7.16% 2042"
+    },
+    {
+      "symbol": "ARSHIYA-BZ",
+      "display_name": "ARSHIYA"
     },
     {
       "symbol": "CEREBRAINT-BZ",
@@ -29404,10 +29464,6 @@
       "display_name": "ICICI PRUDENTIAL NIFTY 100 ETF"
     },
     {
-      "symbol": "364D260326-TB",
-      "display_name": "GOI TBILL 364D-26/03/26"
-    },
-    {
       "symbol": "707AP36-SG",
       "display_name": "SDL AP 7.07% 2036"
     },
@@ -29778,6 +29834,10 @@
     {
       "symbol": "MOME30INAV",
       "display_name": "KOTAKMAMC - MOME30INAV"
+    },
+    {
+      "symbol": "NEUEON-BE",
+      "display_name": "NEUEON CORPORATION"
     },
     {
       "symbol": "NIFTYCINAV",
@@ -31264,7 +31324,7 @@
       "display_name": "857CIFL32-N0"
     },
     {
-      "symbol": "SACHEEROME-ST",
+      "symbol": "SACHEEROME-SM",
       "display_name": "SACHEEROME"
     },
     {
@@ -31486,6 +31546,10 @@
     {
       "symbol": "955SCL35-NO",
       "display_name": "955SCL35-NO"
+    },
+    {
+      "symbol": "SAHAJ-SZ",
+      "display_name": "SAHAJ FASHIONS"
     },
     {
       "symbol": "805MFL27-N0",
@@ -31912,7 +31976,7 @@
       "display_name": "HDB FINANCIAL SERVICES L"
     },
     {
-      "symbol": "RTL-SM",
+      "symbol": "RTL-ST",
       "display_name": "RAMA TELECOM"
     },
     {
@@ -32896,6 +32960,10 @@
       "display_name": "SIMBHAOLI SUGARS"
     },
     {
+      "symbol": "GENSOL-BZ",
+      "display_name": "GENSOL ENGINEERING"
+    },
+    {
       "symbol": "674MH29-SG",
       "display_name": "SDL MH 6.74% 2029"
     },
@@ -33240,10 +33308,6 @@
       "display_name": "IVALUE INFOSOLUTIONS"
     },
     {
-      "symbol": "182D260326-TB",
-      "display_name": "GOI TBILL 182D-26/03/26"
-    },
-    {
       "symbol": "364D240926-TB",
       "display_name": "GOI TBILL 364D-24/09/26"
     },
@@ -33450,6 +33514,10 @@
     {
       "symbol": "DHARAN-BZ",
       "display_name": "DHARAN INFRA-EPC"
+    },
+    {
+      "symbol": "RHFL-BZ",
+      "display_name": "RELIANCE HOME FINANCE"
     },
     {
       "symbol": "JKIPL",
@@ -35444,6 +35512,10 @@
       "display_name": "RAJESH EXPORTS"
     },
     {
+      "symbol": "DIL-BZ",
+      "display_name": "DEBOCK INDUSTRIES"
+    },
+    {
       "symbol": "895PAPL27-N0",
       "display_name": "895PAPL27-N0"
     },
@@ -35522,6 +35594,10 @@
     {
       "symbol": "930IIFL35A-N0",
       "display_name": "930IIFL35A-N0"
+    },
+    {
+      "symbol": "FCONSUMER-BZ",
+      "display_name": "FUTURE CONSUMER"
     },
     {
       "symbol": "707GJ30-SG",
@@ -36432,7 +36508,7 @@
       "display_name": "OMNITECH ENGINEERING"
     },
     {
-      "symbol": "YAAP-ST",
+      "symbol": "YAAP-SM",
       "display_name": "YAAP DIGITAL"
     },
     {
@@ -36492,7 +36568,7 @@
       "display_name": "DCM SHRIRAM FINE CHEM"
     },
     {
-      "symbol": "DCMSIL",
+      "symbol": "DCMSIL-BE",
       "display_name": "DCM SHRIRAM INTERNATNL L"
     },
     {
@@ -36748,7 +36824,7 @@
       "display_name": "GOI LOAN  6.36% 2031"
     },
     {
-      "symbol": "GICL-BE",
+      "symbol": "GICL",
       "display_name": "GLOBE INTL CARRIERS"
     },
     {
@@ -36852,7 +36928,7 @@
       "display_name": "805NMC36-N8"
     },
     {
-      "symbol": "STRIDERS-ST",
+      "symbol": "STRIDERS-SM",
       "display_name": "STRIDERS IMPEX"
     },
     {
@@ -36872,7 +36948,7 @@
       "display_name": "920SCL36-N0"
     },
     {
-      "symbol": "ACETEC-ST",
+      "symbol": "ACETEC-SM",
       "display_name": "ACETECH E-COMMERCE"
     },
     {
@@ -36922,10 +36998,6 @@
     {
       "symbol": "TVSMNCRPS-P1",
       "display_name": "TVS MOTOR COMPANY"
-    },
-    {
-      "symbol": "HCG-RE-BE",
-      "display_name": "HEALTHCARE GLOBAL"
     },
     {
       "symbol": "VITAL",
@@ -36994,10 +37066,6 @@
     {
       "symbol": "719RECL31-N0",
       "display_name": "719RECL31-N0"
-    },
-    {
-      "symbol": "JFL-RE-ST",
-      "display_name": "JFL LIFE SCIENCES"
     },
     {
       "symbol": "664TN29-SG",
@@ -37204,6 +37272,50 @@
       "display_name": "785KSFP28-N0"
     },
     {
+      "symbol": "722AS32-SG",
+      "display_name": "SDL AS 7.22% 2032"
+    },
+    {
+      "symbol": "77TS54-SG",
+      "display_name": "SDL TS 7.7% 2054"
+    },
+    {
+      "symbol": "749JH36-SG",
+      "display_name": "SDL JH 7.49% 2036"
+    },
+    {
+      "symbol": "699NL30-SG",
+      "display_name": "SDL NL 6.99% 2030"
+    },
+    {
+      "symbol": "703TN31-SG",
+      "display_name": "SDL TN 7.03% 2031"
+    },
+    {
+      "symbol": "728TN33-SG",
+      "display_name": "SDL TN 7.28% 2033"
+    },
+    {
+      "symbol": "779PY41-SG",
+      "display_name": "SDL PY 7.79% 2041"
+    },
+    {
+      "symbol": "765MP41-SG",
+      "display_name": "SDL MP 7.65% 2041"
+    },
+    {
+      "symbol": "769HR42A-SG",
+      "display_name": "SDL HR 7.69% 2042"
+    },
+    {
+      "symbol": "SINGERIND",
+      "display_name": "SINGER INDIA"
+    },
+    {
+      "symbol": "744NBRD29-N0",
+      "display_name": "744NBRD29-N0"
+    },
+    {
       "symbol": "809HFL33-N0",
       "display_name": "809HFL33-N0"
     },
@@ -37224,6 +37336,78 @@
       "display_name": "766JCL31-N0"
     },
     {
+      "symbol": "RSL",
+      "display_name": "RAJPUTANA STAINLESS"
+    },
+    {
+      "symbol": "772UP44-SG",
+      "display_name": "SDL UP 7.72% 2044"
+    },
+    {
+      "symbol": "773CG44-SG",
+      "display_name": "SDL CG 7.73% 2044"
+    },
+    {
+      "symbol": "773HR45A-SG",
+      "display_name": "SDL HR 7.73% 2045"
+    },
+    {
+      "symbol": "779WB45-SG",
+      "display_name": "SDL WB 7.79% 2045"
+    },
+    {
+      "symbol": "775TS45-SG",
+      "display_name": "SDL TS 7.75% 2045"
+    },
+    {
+      "symbol": "78JK46-SG",
+      "display_name": "SDL JK 7.8% 2046"
+    },
+    {
+      "symbol": "777KL48-SG",
+      "display_name": "SDL KL 7.77% 2048"
+    },
+    {
+      "symbol": "776WB49-SG",
+      "display_name": "SDL WB 7.76% 2049"
+    },
+    {
+      "symbol": "771KL53-SG",
+      "display_name": "SDL KL 7.71% 2053"
+    },
+    {
+      "symbol": "738GJ35-SG",
+      "display_name": "SDL GJ 7.38% 2035"
+    },
+    {
+      "symbol": "683MH30-SG",
+      "display_name": "SDL MH 6.83% 2030"
+    },
+    {
+      "symbol": "72JH32-SG",
+      "display_name": "SDL JH 7.2% 2032"
+    },
+    {
+      "symbol": "729GJ34-SG",
+      "display_name": "SDL GJ 7.29% 2034"
+    },
+    {
+      "symbol": "744MP35A-SG",
+      "display_name": "SDL MP 7.44% 2035"
+    },
+    {
+      "symbol": "756SK36-SG",
+      "display_name": "SDL SK 7.56% 2036"
+    },
+    {
+      "symbol": "749RJ36-SG",
+      "display_name": "SDL RJ 7.49% 2036"
+    },
+    {
+      "symbol": "752GA37-SG",
+      "display_name": "SDL GA 7.52% 2037"
+    },
+    {
       "symbol": "1165ESFB32-N0",
       "display_name": "1165ESFB32-N0"
     },
@@ -37242,6 +37426,54 @@
     {
       "symbol": "SHADOWFAX",
       "display_name": "SHADOWFAX TECHNOLOGIES L"
+    },
+    {
+      "symbol": "757UP38-SG",
+      "display_name": "SDL UP 7.57% 2038"
+    },
+    {
+      "symbol": "757TN38-SG",
+      "display_name": "SDL TN 7.57% 2038"
+    },
+    {
+      "symbol": "777TR41-SG",
+      "display_name": "SDL TR 7.77% 2041"
+    },
+    {
+      "symbol": "769TS56-SG",
+      "display_name": "SDL TS 7.69% 2056"
+    },
+    {
+      "symbol": "746TN35-SG",
+      "display_name": "SDL TN 7.46% 2035"
+    },
+    {
+      "symbol": "91D190626-TB",
+      "display_name": "GOI TBILL 91D-19/06/26"
+    },
+    {
+      "symbol": "182D180926-TB",
+      "display_name": "GOI TBILL 182D-18/09/26"
+    },
+    {
+      "symbol": "364D190327-TB",
+      "display_name": "GOI TBILL 364D-19/03/27"
+    },
+    {
+      "symbol": "PRABHA-RE-BE",
+      "display_name": "PRABHA ENERGY"
+    },
+    {
+      "symbol": "723EXIM31-N0",
+      "display_name": "723EXIM31-N0"
+    },
+    {
+      "symbol": "INNOVISION",
+      "display_name": "INNOVISION"
+    },
+    {
+      "symbol": "975MWL29-N0",
+      "display_name": "975MWL29-N0"
     },
     {
       "symbol": "727NBRD29A-N0",

@@ -1,5 +1,71 @@
 [
   {
+    "company_id": "interglobe-aviation",
+    "story_id": "p-whither-indias-pilots-1-a-scramble-for-pilots",
+    "story_title": "A scramble for pilots?",
+    "story_url": "https://thedailybrief.zerodha.com/p/whither-indias-pilots",
+    "post_title": "Whither India’s pilots?",
+    "story_date": "2026-03-20",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 7
+  },
+  {
+    "company_id": "google",
+    "story_id": "p-what-fssais-new-licensing-rules-actually-2-the-world-s-most-common-metal-is-in-short-supply",
+    "story_title": "The world’s most common metal is in short supply",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-fssais-new-licensing-rules-actually",
+    "post_title": "What FSSAI's new licensing rules actually change",
+    "story_date": "2026-03-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "meta",
+    "story_id": "p-what-fssais-new-licensing-rules-actually-2-the-world-s-most-common-metal-is-in-short-supply",
+    "story_title": "The world’s most common metal is in short supply",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-fssais-new-licensing-rules-actually",
+    "post_title": "What FSSAI's new licensing rules actually change",
+    "story_date": "2026-03-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "hindalco",
+    "story_id": "p-what-fssais-new-licensing-rules-actually-2-the-world-s-most-common-metal-is-in-short-supply",
+    "story_title": "The world’s most common metal is in short supply",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-fssais-new-licensing-rules-actually",
+    "post_title": "What FSSAI's new licensing rules actually change",
+    "story_date": "2026-03-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 3
+  },
+  {
+    "company_id": "microsoft",
+    "story_id": "p-what-fssais-new-licensing-rules-actually-2-the-world-s-most-common-metal-is-in-short-supply",
+    "story_title": "The world’s most common metal is in short supply",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-fssais-new-licensing-rules-actually",
+    "post_title": "What FSSAI's new licensing rules actually change",
+    "story_date": "2026-03-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "vedanta-ltd",
+    "story_id": "p-what-fssais-new-licensing-rules-actually-2-the-world-s-most-common-metal-is-in-short-supply",
+    "story_title": "The world’s most common metal is in short supply",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-fssais-new-licensing-rules-actually",
+    "post_title": "What FSSAI's new licensing rules actually change",
+    "story_date": "2026-03-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 2
+  },
+  {
     "company_id": "siemens-energy-ag",
     "story_id": "p-the-new-rules-of-paying-for-electricity-1-a-gas-the-world-cannot-live-without",
     "story_title": "A gas the world cannot live without",
@@ -748,6 +814,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "apollo-tyres-limited",
+    "story_id": "p-can-indias-small-businesses-be-paid-2-india-s-tyre-makers-just-had-their-best-quarter-in-years",
+    "story_title": "India’s tyre makers just had their best quarter in years",
+    "story_url": "https://thedailybrief.zerodha.com/p/can-indias-small-businesses-be-paid",
+    "post_title": "Can India’s small businesses be paid on time?",
+    "story_date": "2026-02-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "ceat-ltd",
     "story_id": "p-can-indias-small-businesses-be-paid-2-india-s-tyre-makers-just-had-their-best-quarter-in-years",
     "story_title": "India’s tyre makers just had their best quarter in years",
@@ -834,6 +911,17 @@
     "story_position": 1,
     "story_source": "intro_list+heading",
     "mention_count": 4
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-discoms-posted-a-profit-how-1-what-s-behind-india-s-state-discoms-recording-a-profit",
+    "story_title": "What’s behind India’s state discoms recording a profit?",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-discoms-posted-a-profit-how",
+    "post_title": "India's DISCOMs posted a profit. How real is it?",
+    "story_date": "2026-02-17",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
   },
   {
     "company_id": "sbi",
@@ -988,6 +1076,17 @@
     "story_position": 2,
     "story_source": "intro_list",
     "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-between-industrial-policy-and-trade-2-between-industrial-policy-and-trade-imbalances",
+    "story_title": "Between industrial policy and trade imbalances",
+    "story_url": "https://thedailybrief.zerodha.com/p/between-industrial-policy-and-trade",
+    "post_title": "Between industrial policy and trade imbalances",
+    "story_date": "2026-02-13",
+    "story_position": 2,
+    "story_source": "intro_list",
+    "mention_count": 2
   },
   {
     "company_id": "polycab-india",
@@ -1287,6 +1386,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-another-robust-quarter-for-indias-2-another-robust-quarter-for-india-s-midcap-it-firms",
+    "story_title": "Another robust quarter for India’s midcap IT firms",
+    "story_url": "https://thedailybrief.zerodha.com/p/another-robust-quarter-for-indias",
+    "post_title": "Another robust quarter for India’s midcap IT firms",
+    "story_date": "2026-02-09",
+    "story_position": 2,
+    "story_source": "intro_list",
+    "mention_count": 15
+  },
+  {
     "company_id": "google",
     "story_id": "p-another-robust-quarter-for-indias-2-another-robust-quarter-for-india-s-midcap-it-firms",
     "story_title": "Another robust quarter for India’s midcap IT firms",
@@ -1584,6 +1694,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-biggest-challenges-according-2-india-s-biggest-challenges-according-to-the-economic-survey",
+    "story_title": "India’s biggest challenges, according to the Economic Survey",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-biggest-challenges-according",
+    "post_title": "India’s biggest challenges, according to the Economic Survey",
+    "story_date": "2026-02-04",
+    "story_position": 2,
+    "story_source": "intro_list",
+    "mention_count": 3
+  },
+  {
     "company_id": "honda-motor-co-ltd",
     "story_id": "p-indias-biggest-challenges-according-2-india-s-biggest-challenges-according-to-the-economic-survey",
     "story_title": "India’s biggest challenges, according to the Economic Survey",
@@ -1749,6 +1870,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-new-electricity-policy-tries-2-india-s-new-electricity-policy-tries-to-switch-lanes",
+    "story_title": "India’s new electricity policy tries to switch lanes",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-new-electricity-policy-tries",
+    "post_title": "India’s new electricity policy tries to switch lanes",
+    "story_date": "2026-01-28",
+    "story_position": 2,
+    "story_source": "intro_list",
+    "mention_count": 1
+  },
+  {
     "company_id": "pvr",
     "story_id": "p-indias-new-electricity-policy-tries-2-india-s-new-electricity-policy-tries-to-switch-lanes",
     "story_title": "India’s new electricity policy tries to switch lanes",
@@ -1854,6 +1986,17 @@
     "story_url": "https://thedailybrief.zerodha.com/p/the-cycle-of-capital-goods-twists",
     "post_title": "The cycle of capital goods twists and turns",
     "story_date": "2026-01-23",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-how-the-indian-railways-became-electrified-1-the-electrification-of-indian-railways",
+    "story_title": "The electrification of Indian Railways",
+    "story_url": "https://thedailybrief.zerodha.com/p/how-the-indian-railways-became-electrified",
+    "post_title": "How the Indian Railways became electrified",
+    "story_date": "2026-01-22",
     "story_position": 1,
     "story_source": "intro_list+heading",
     "mention_count": 1
@@ -2442,6 +2585,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-ten-questions-for-2026-1-1-can-the-world-survive-two-superpowers-with-creaking-economies",
+    "story_title": "[1] Can the world survive two superpowers with creaking economies?",
+    "story_url": "https://thedailybrief.zerodha.com/p/ten-questions-for-2026",
+    "post_title": "Ten Questions for 2026",
+    "story_date": "2026-01-01",
+    "story_position": 1,
+    "story_source": "h2_fallback",
+    "mention_count": 1
+  },
+  {
     "company_id": "avenue-supermarts",
     "story_id": "p-ten-questions-for-2026-1-1-can-the-world-survive-two-superpowers-with-creaking-economies",
     "story_title": "[1] Can the world survive two superpowers with creaking economies?",
@@ -2552,6 +2706,17 @@
     "mention_count": 3
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indian-banks-court-some-suitors-from-1-do-japanese-banks-have-a-thing-for-indian-lenders",
+    "story_title": "Do Japanese Banks have a thing for Indian Lenders?",
+    "story_url": "https://thedailybrief.zerodha.com/p/indian-banks-court-some-suitors-from",
+    "post_title": "Indian banks court some suitors from Japan",
+    "story_date": "2025-12-23",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "reliance-industries",
     "story_id": "p-indian-banks-court-some-suitors-from-2-india-s-nuclear-sector-finally-opens-for-private-companies",
     "story_title": "India’s nuclear sector finally opens for private companies",
@@ -2564,6 +2729,17 @@
   },
   {
     "company_id": "reliance-industries",
+    "story_id": "p-indias-new-insurance-playbook-1-does-central-bank-independence-matter",
+    "story_title": "Does central bank independence matter?",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-new-insurance-playbook",
+    "post_title": "India's new insurance playbook",
+    "story_date": "2025-12-22",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-indias-new-insurance-playbook-1-does-central-bank-independence-matter",
     "story_title": "Does central bank independence matter?",
     "story_url": "https://thedailybrief.zerodha.com/p/indias-new-insurance-playbook",
@@ -2597,6 +2773,17 @@
   },
   {
     "company_id": "apple",
+    "story_id": "p-indias-new-insurance-playbook-2-india-s-new-insurance-playbook",
+    "story_title": "India’s new insurance playbook",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-new-insurance-playbook",
+    "post_title": "India's new insurance playbook",
+    "story_date": "2025-12-22",
+    "story_position": 2,
+    "story_source": "intro_list",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-indias-new-insurance-playbook-2-india-s-new-insurance-playbook",
     "story_title": "India’s new insurance playbook",
     "story_url": "https://thedailybrief.zerodha.com/p/indias-new-insurance-playbook",
@@ -2938,6 +3125,17 @@
   },
   {
     "company_id": "reliance-industries",
+    "story_id": "p-outlook-2026-part-2-trade-government-1-trade-isn-t-dying-but-it-s-being-rewired",
+    "story_title": "Trade isn’t dying, but it’s being rewired",
+    "story_url": "https://thedailybrief.zerodha.com/p/outlook-2026-part-2-trade-government",
+    "post_title": "Outlook 2026 - Part 2: Trade, government, and growth",
+    "story_date": "2025-12-14",
+    "story_position": 1,
+    "story_source": "h2_fallback",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-outlook-2026-part-2-trade-government-1-trade-isn-t-dying-but-it-s-being-rewired",
     "story_title": "Trade isn’t dying, but it’s being rewired",
     "story_url": "https://thedailybrief.zerodha.com/p/outlook-2026-part-2-trade-government",
@@ -3531,6 +3729,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-outlook-2026-part-1-global-economy-1-the-macro-backdrop",
+    "story_title": "The macro backdrop",
+    "story_url": "https://thedailybrief.zerodha.com/p/outlook-2026-part-1-global-economy",
+    "post_title": "Outlook 2026 - Part 1: Global economy and AI",
+    "story_date": "2025-11-30",
+    "story_position": 1,
+    "story_source": "h2_fallback",
+    "mention_count": 1
+  },
+  {
     "company_id": "google",
     "story_id": "p-outlook-2026-part-1-global-economy-1-the-macro-backdrop",
     "story_title": "The macro backdrop",
@@ -3608,7 +3817,7 @@
     "mention_count": 2
   },
   {
-    "company_id": "blue-star",
+    "company_id": "blue-star-limited",
     "story_id": "p-inside-indias-retail-surge-and-the-2-the-ac-makers-are-a-little-worried",
     "story_title": "The AC makers are a little worried",
     "story_url": "https://thedailybrief.zerodha.com/p/inside-indias-retail-surge-and-the",
@@ -4345,7 +4554,7 @@
     "mention_count": 10
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-quick-commerce-feels-the-need-for-2-a-golden-quarter-for-india-s-jewellery-companies",
     "story_title": "A golden quarter for India’s jewellery companies",
     "story_url": "https://thedailybrief.zerodha.com/p/quick-commerce-feels-the-need-for",
@@ -4917,6 +5126,17 @@
     "mention_count": 2
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-push-to-get-the-aam-aadmi-2-indian-it-is-getting-a-shakeup-from-below",
+    "story_title": "Indian IT is getting a shakeup from below",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-push-to-get-the-aam-aadmi",
+    "post_title": "India’s push to get the aam aadmi to fly",
+    "story_date": "2025-10-31",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 17
+  },
+  {
     "company_id": "google",
     "story_id": "p-indias-push-to-get-the-aam-aadmi-2-indian-it-is-getting-a-shakeup-from-below",
     "story_title": "Indian IT is getting a shakeup from below",
@@ -5104,6 +5324,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-why-evs-are-actually-depreciating-2-why-evs-are-actually-depreciating-faster-than-gasoline-cars",
+    "story_title": "Why EVs are actually depreciating faster than gasoline cars",
+    "story_url": "https://thedailybrief.zerodha.com/p/why-evs-are-actually-depreciating",
+    "post_title": "Why EVs are actually depreciating faster than gasoline cars",
+    "story_date": "2025-10-27",
+    "story_position": 2,
+    "story_source": "intro_list",
+    "mention_count": 1
+  },
+  {
     "company_id": "google",
     "story_id": "p-how-we-research-at-the-daily-brief-how-we-research-at-the-daily-brief",
     "story_title": "How we research at The Daily Brief",
@@ -5112,6 +5343,17 @@
     "story_date": "2025-10-26",
     "story_position": 1,
     "story_source": "single_fallback",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-global-maritime-trade-through-charts-1-growth-amid-volatility",
+    "story_title": "Growth amid volatility",
+    "story_url": "https://thedailybrief.zerodha.com/p/global-maritime-trade-through-charts",
+    "post_title": "Global maritime trade through charts",
+    "story_date": "2025-10-26",
+    "story_position": 1,
+    "story_source": "h1",
     "mention_count": 1
   },
   {
@@ -5190,6 +5432,17 @@
     "story_position": 1,
     "story_source": "intro_list+heading",
     "mention_count": 3
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-huge-bet-on-smart-electricity-1-india-s-huge-bet-on-smart-meters",
+    "story_title": "India’s huge bet on smart meters",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-huge-bet-on-smart-electricity",
+    "post_title": "India's huge bet on smart electricity meters",
+    "story_date": "2025-10-24",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
   },
   {
     "company_id": "sony",
@@ -6512,6 +6765,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-the-new-h1b-rules-take-a-hit-at-indian-1-h-1b-rules-come-for-india-s-it-industry",
+    "story_title": "H-1B rules come for India’s IT industry",
+    "story_url": "https://thedailybrief.zerodha.com/p/the-new-h1b-rules-take-a-hit-at-indian",
+    "post_title": "The new H1B rules take a hit at Indian IT",
+    "story_date": "2025-09-23",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "l-or-al",
     "story_id": "p-the-new-h1b-rules-take-a-hit-at-indian-2-france-s-debt-crisis-a-nation-at-crossroads",
     "story_title": "France's Debt Crisis: A nation at crossroads",
@@ -6667,6 +6931,17 @@
   },
   {
     "company_id": "apple",
+    "story_id": "p-the-puzzle-of-why-rural-india-is-2-the-daily-brief-ai-round-up-september-2025",
+    "story_title": "The Daily Brief AI Round-up: September 2025",
+    "story_url": "https://thedailybrief.zerodha.com/p/the-puzzle-of-why-rural-india-is",
+    "post_title": "The puzzle of why rural India is consuming more",
+    "story_date": "2025-09-19",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-the-puzzle-of-why-rural-india-is-2-the-daily-brief-ai-round-up-september-2025",
     "story_title": "The Daily Brief AI Round-up: September 2025",
     "story_url": "https://thedailybrief.zerodha.com/p/the-puzzle-of-why-rural-india-is",
@@ -7304,6 +7579,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-why-your-vegetables-matter-more-than-1-how-fruits-and-vegetables-shaped-indian-farming",
+    "story_title": "How fruits and vegetables shaped Indian farming",
+    "story_url": "https://thedailybrief.zerodha.com/p/why-your-vegetables-matter-more-than",
+    "post_title": "Why your vegetables matter more than you think",
+    "story_date": "2025-09-03",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 2
+  },
+  {
     "company_id": "ntpc",
     "story_id": "p-how-power-prices-work-in-india-1-problems-with-how-power-prices-really-work-in-india",
     "story_title": "Problems with how power prices really work in India",
@@ -7656,6 +7942,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-what-does-50-tariffs-even-mean-1-trying-to-understand-the-tariffs",
+    "story_title": "Trying to understand the tariffs",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-does-50-tariffs-even-mean",
+    "post_title": "What does 50% tariffs even mean?",
+    "story_date": "2025-08-20",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "jubilant-foodworks",
     "story_id": "p-what-does-50-tariffs-even-mean-2-fast-food-faster-business",
     "story_title": "Fast food, faster business",
@@ -7821,7 +8118,7 @@
     "mention_count": 6
   },
   {
-    "company_id": "blue-star",
+    "company_id": "blue-star-limited",
     "story_id": "p-ac-sales-crash-ev-charging-puzzle-1-why-are-ac-companies-struggling",
     "story_title": "Why are AC companies struggling?",
     "story_url": "https://thedailybrief.zerodha.com/p/ac-sales-crash-ev-charging-puzzle",
@@ -8096,7 +8393,7 @@
     "mention_count": 1
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-oil-diamonds-and-a-60b-ipo-3-big-2-india-prefers-the-real-diamond",
     "story_title": "India prefers the real diamond",
     "story_url": "https://thedailybrief.zerodha.com/p/oil-diamonds-and-a-60b-ipo-3-big",
@@ -9889,6 +10186,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "apollo-tyres-limited",
+    "story_id": "p-the-game-of-influencing-doctors-2-india-s-tyre-giants-navigate-a-bumpy-ride",
+    "story_title": "India's Tyre Giants Navigate a Bumpy Ride",
+    "story_url": "https://thedailybrief.zerodha.com/p/the-game-of-influencing-doctors",
+    "post_title": "The Game of Influencing Doctors",
+    "story_date": "2025-06-17",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "ceat-ltd",
     "story_id": "p-the-game-of-influencing-doctors-2-india-s-tyre-giants-navigate-a-bumpy-ride",
     "story_title": "India's Tyre Giants Navigate a Bumpy Ride",
@@ -10184,6 +10492,17 @@
     "story_position": 2,
     "story_source": "intro_list+heading",
     "mention_count": 11
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-the-one-thing-holding-back-clean-2-rbi-s-bold-move",
+    "story_title": "RBI's Bold Move",
+    "story_url": "https://thedailybrief.zerodha.com/p/the-one-thing-holding-back-clean",
+    "post_title": "The one thing holding back clean energy",
+    "story_date": "2025-06-09",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
   },
   {
     "company_id": "honda-motor-co-ltd",
@@ -10714,6 +11033,17 @@
     "mention_count": 2
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-how-indigo-hit-10-billion-2-where-electric-vehicles-are-in-2025-and-where-india-sits",
+    "story_title": "Where electric vehicles are in 2025: And where India sits",
+    "story_url": "https://thedailybrief.zerodha.com/p/how-indigo-hit-10-billion",
+    "post_title": "How IndiGo hit $10 Billion revenue?",
+    "story_date": "2025-05-26",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "sbi",
     "story_id": "p-is-indias-fragmented-pension-system-2-concerns-with-different-parts-of-the-pension-system",
     "story_title": "Concerns with different parts of the pension system",
@@ -10767,6 +11097,17 @@
     "story_position": 1,
     "story_source": "h1",
     "mention_count": 4
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-from-diamonds-to-disinflation-de-2-the-inflation-game-changer",
+    "story_title": "The inflation game changer",
+    "story_url": "https://thedailybrief.zerodha.com/p/from-diamonds-to-disinflation-de",
+    "post_title": "From Diamonds to Disinflation: De Beers, RBI, and the Business of War | Who said what? #23",
+    "story_date": "2025-05-24",
+    "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
   },
   {
     "company_id": "solar-industries",
@@ -10945,6 +11286,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-india-just-drew-the-line-with-bangladesh-2-is-this-the-end-of-the-dollar",
+    "story_title": "Is this the end of the dollar?",
+    "story_url": "https://thedailybrief.zerodha.com/p/india-just-drew-the-line-with-bangladesh",
+    "post_title": "India just drew the Line with Bangladesh",
+    "story_date": "2025-05-20",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "exide-industries",
     "story_id": "p-batteries-are-the-new-oil-1-what-s-the-big-deal-with-batteries-anyway",
     "story_title": "What’s the big deal with batteries anyway?",
@@ -10996,6 +11348,17 @@
     "post_title": "Batteries are the New Oil?",
     "story_date": "2025-05-19",
     "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-batteries-are-the-new-oil-2-the-rbi-intends-to-tread-lightly",
+    "story_title": "The RBI intends to tread lightly",
+    "story_url": "https://thedailybrief.zerodha.com/p/batteries-are-the-new-oil",
+    "post_title": "Batteries are the New Oil?",
+    "story_date": "2025-05-19",
+    "story_position": 2,
     "story_source": "intro_list+heading",
     "mention_count": 1
   },
@@ -11176,6 +11539,17 @@
     "mention_count": 8
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-why-indias-lpg-system-is-under-pressure-2-what-s-happening-with-indian-auto-giants",
+    "story_title": "What’s happening with Indian Auto Giants?",
+    "story_url": "https://thedailybrief.zerodha.com/p/why-indias-lpg-system-is-under-pressure",
+    "post_title": "Why India’s LPG System Is Under Pressure",
+    "story_date": "2025-05-15",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 2
+  },
+  {
     "company_id": "swiggy",
     "story_id": "p-food-wars-are-far-from-over-1-is-zomato-beating-swiggy",
     "story_title": "Is Zomato beating Swiggy?",
@@ -11352,7 +11726,7 @@
     "mention_count": 20
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-yes-banks-big-comeback-2-jewellery-titans-sparkle-in-q4",
     "story_title": "Jewellery Titans Sparkle in Q4",
     "story_url": "https://thedailybrief.zerodha.com/p/yes-banks-big-comeback",
@@ -11462,6 +11836,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-shifting-economy-jobs-coffee-2-people-aren-t-buying-or-are-they",
+    "story_title": "People aren’t buying or are they?",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-shifting-economy-jobs-coffee",
+    "post_title": "India’s Shifting Economy: Jobs, Coffee, Consumers, and the Big Banking Bet | Who said what? #21",
+    "story_date": "2025-05-10",
+    "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
     "company_id": "avenue-supermarts",
     "story_id": "p-indias-shifting-economy-jobs-coffee-2-people-aren-t-buying-or-are-they",
     "story_title": "People aren’t buying or are they?",
@@ -11537,6 +11922,17 @@
     "story_position": 4,
     "story_source": "h1",
     "mention_count": 3
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-a-6-jump-in-2-days-whats-pushing-1-why-is-the-taiwan-dollar-going-wild",
+    "story_title": "Why is the Taiwan Dollar going wild?",
+    "story_url": "https://thedailybrief.zerodha.com/p/a-6-jump-in-2-days-whats-pushing",
+    "post_title": "A 6%+ jump in 2 Days – What’s pushing Taiwan’s Dollar?",
+    "story_date": "2025-05-09",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
   },
   {
     "company_id": "reliance-industries",
@@ -11858,6 +12254,17 @@
     "mention_count": 2
   },
   {
+    "company_id": "adani-total-gas-limited",
+    "story_id": "p-why-are-indias-top-banks-taking-a-2-cng-is-losing-its-spark",
+    "story_title": "CNG is losing its spark",
+    "story_url": "https://thedailybrief.zerodha.com/p/why-are-indias-top-banks-taking-a",
+    "post_title": "Why Are India’s Top Banks Taking a Breather?",
+    "story_date": "2025-04-30",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 2
+  },
+  {
     "company_id": "mahanagar-gas",
     "story_id": "p-why-are-indias-top-banks-taking-a-2-cng-is-losing-its-spark",
     "story_title": "CNG is losing its spark",
@@ -12030,6 +12437,17 @@
     "post_title": "Who said what about Global Shipping, Declining Dollar & Banking troubles",
     "story_date": "2025-04-26",
     "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-who-said-what-about-global-shipping-3-india-s-banking-problems",
+    "story_title": "India’s banking problems",
+    "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-global-shipping",
+    "post_title": "Who said what about Global Shipping, Declining Dollar & Banking troubles",
+    "story_date": "2025-04-26",
+    "story_position": 3,
     "story_source": "h1",
     "mention_count": 1
   },
@@ -12207,6 +12625,28 @@
     "story_date": "2025-04-21",
     "story_position": 2,
     "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-wto-just-sent-a-warning-2-jerome-powell-sees-storm-clouds-gathering",
+    "story_title": "Jerome Powell sees storm clouds gathering",
+    "story_url": "https://thedailybrief.zerodha.com/p/wto-just-sent-a-warning",
+    "post_title": "WTO just sent a Warning!",
+    "story_date": "2025-04-21",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-please-help-understand-the-end-of-1-heightened-uncertainty-the-new-normal",
+    "story_title": "Heightened Uncertainty: The New Normal",
+    "story_url": "https://thedailybrief.zerodha.com/p/please-help-understand-the-end-of",
+    "post_title": "Please help understand the end of US exceptionalism and India's position!",
+    "story_date": "2025-04-20",
+    "story_position": 1,
+    "story_source": "h2_fallback",
     "mention_count": 1
   },
   {
@@ -12474,6 +12914,17 @@
     "mention_count": 4
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-who-said-what-about-indias-middle-1-saurabh-mukherjea-on-why-middle-class-is-in-a-crisis",
+    "story_title": "Saurabh Mukherjea on why middle class is in a crisis",
+    "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-indias-middle",
+    "post_title": "Who said What about India’s middle class, India’s growth, US-China war and more",
+    "story_date": "2025-03-31",
+    "story_position": 1,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
     "company_id": "pfizer",
     "story_id": "p-who-said-what-about-indias-middle-2-prashant-jain-on-where-india-stands",
     "story_title": "Prashant Jain on where India stands",
@@ -12584,6 +13035,17 @@
     "mention_count": 3
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-how-india-controls-the-worlds-rice-2-is-self-employment-in-india-a-choice-or-a-last-resort",
+    "story_title": "Is self-employment in India a choice — or a last resort?",
+    "story_url": "https://thedailybrief.zerodha.com/p/how-india-controls-the-worlds-rice",
+    "post_title": "How India Controls the World’s Rice Supply",
+    "story_date": "2025-03-26",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "google",
     "story_id": "p-how-india-controls-the-worlds-rice-2-is-self-employment-in-india-a-choice-or-a-last-resort",
     "story_title": "Is self-employment in India a choice — or a last resort?",
@@ -12683,6 +13145,17 @@
     "mention_count": 2
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-weight-loss-just-got-easier-in-india-2-what-s-up-with-pli-schemes",
+    "story_title": "What’s up with PLI Schemes?",
+    "story_url": "https://thedailybrief.zerodha.com/p/weight-loss-just-got-easier-in-india",
+    "post_title": "Weight Loss Just Got Easier in India?",
+    "story_date": "2025-03-24",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "arvind-limited",
     "story_id": "p-who-said-what-about-globalization-2-where-s-the-economy-headed",
     "story_title": "Where’s the economy headed?",
@@ -12706,6 +13179,17 @@
   },
   {
     "company_id": "reliance-industries",
+    "story_id": "p-who-said-what-about-globalization-2-where-s-the-economy-headed",
+    "story_title": "Where’s the economy headed?",
+    "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-globalization",
+    "post_title": "Who said what About Globalization, India’s Slowdown, US Debt Crisis & China’s Grip on Minerals",
+    "story_date": "2025-03-22",
+    "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-who-said-what-about-globalization-2-where-s-the-economy-headed",
     "story_title": "Where’s the economy headed?",
     "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-globalization",
@@ -12860,6 +13344,17 @@
   },
   {
     "company_id": "axis-bank",
+    "story_id": "p-who-said-what-about-market-volatility-3-navigating-a-fragmenting-world",
+    "story_title": "Navigating a Fragmenting World",
+    "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-market-volatility",
+    "post_title": "Who Said What About Market Volatility, Weak Dollar, India’s Economy & Trump’s Next Move",
+    "story_date": "2025-03-15",
+    "story_position": 3,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-who-said-what-about-market-volatility-3-navigating-a-fragmenting-world",
     "story_title": "Navigating a Fragmenting World",
     "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-market-volatility",
@@ -13145,6 +13640,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-what-happens-if-your-bank-fails-1-does-india-need-higher-deposit-insurance",
+    "story_title": "Does India need higher deposit insurance?",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-happens-if-your-bank-fails",
+    "post_title": "What happens if your bank fails?",
+    "story_date": "2025-02-25",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "icra",
     "story_id": "p-is-indias-economic-growth-slipping-1-how-s-the-indian-economy-doing",
     "story_title": "How’s the Indian economy doing?",
@@ -13174,6 +13680,17 @@
     "post_title": "Is India’s Economic Growth Slipping?",
     "story_date": "2025-02-24",
     "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-is-indias-economic-growth-slipping-2-how-well-does-the-government-spend-a-history",
+    "story_title": "How well does the government spend: A History",
+    "story_url": "https://thedailybrief.zerodha.com/p/is-indias-economic-growth-slipping",
+    "post_title": "Is India’s Economic Growth Slipping?",
+    "story_date": "2025-02-24",
+    "story_position": 2,
     "story_source": "intro_list+heading",
     "mention_count": 1
   },
@@ -13438,6 +13955,17 @@
     "post_title": "How Intel Lost Its Edge",
     "story_date": "2025-02-20",
     "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-how-intel-lost-its-edge-2-climate-change-and-economic-damage",
+    "story_title": "Climate change and economic damage",
+    "story_url": "https://thedailybrief.zerodha.com/p/how-intel-lost-its-edge",
+    "post_title": "How Intel Lost Its Edge",
+    "story_date": "2025-02-20",
+    "story_position": 2,
     "story_source": "intro_list+heading",
     "mention_count": 1
   },
@@ -13728,6 +14256,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-inflation-is-cooling-down-2-gold-prices-hit-the-roof",
+    "story_title": "Gold prices hit the roof",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-inflation-is-cooling-down",
+    "post_title": "India’s Inflation is Cooling Down… But There’s a Catch!",
+    "story_date": "2025-02-17",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "arvind-limited",
     "story_id": "p-who-said-what-about-indias-stock-3-did-the-rbi-make-a-big-mistake-with-the-rupee",
     "story_title": "Did the RBI Make a Big Mistake with the Rupee?",
@@ -13746,6 +14285,17 @@
     "post_title": "Who said what About India's Stock Valuations, RBI’s Mistake, Ray Dalio’s Debt Warning & More",
     "story_date": "2025-02-15",
     "story_position": 3,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-who-said-what-about-indias-stock-4-is-there-no-such-thing-as-critical-minerals",
+    "story_title": "Is there no such thing as critical minerals?",
+    "story_url": "https://thedailybrief.zerodha.com/p/who-said-what-about-indias-stock",
+    "post_title": "Who said what About India's Stock Valuations, RBI’s Mistake, Ray Dalio’s Debt Warning & More",
+    "story_date": "2025-02-15",
+    "story_position": 4,
     "story_source": "h1",
     "mention_count": 1
   },
@@ -13915,7 +14465,7 @@
     "mention_count": 11
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-hospitals-deliver-strong-results-2-hospitals-deliver-strong-results",
     "story_title": "Hospitals deliver strong results",
     "story_url": "https://thedailybrief.zerodha.com/p/hospitals-deliver-strong-results",
@@ -14025,7 +14575,7 @@
     "mention_count": 23
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-indias-inflation-is-not-slowing-down-2-a-clash-of-titans-and-kalyan",
     "story_title": "A clash of Titans (and Kalyan)",
     "story_url": "https://thedailybrief.zerodha.com/p/indias-inflation-is-not-slowing-down",
@@ -14069,7 +14619,7 @@
     "mention_count": 1
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-indias-inflation-is-not-slowing-down-3-india-s-inflation-is-not-slowing-down",
     "story_title": "India’s inflation is NOT slowing down!",
     "story_url": "https://thedailybrief.zerodha.com/p/indias-inflation-is-not-slowing-down",
@@ -14091,6 +14641,17 @@
     "mention_count": 2
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-indias-inflation-is-not-slowing-down-3-india-s-inflation-is-not-slowing-down",
+    "story_title": "India’s inflation is NOT slowing down!",
+    "story_url": "https://thedailybrief.zerodha.com/p/indias-inflation-is-not-slowing-down",
+    "post_title": "India’s inflation is NOT slowing down!",
+    "story_date": "2025-02-11",
+    "story_position": 3,
+    "story_source": "intro_list",
+    "mention_count": 1
+  },
+  {
     "company_id": "zomato",
     "story_id": "p-indias-inflation-is-not-slowing-down-3-india-s-inflation-is-not-slowing-down",
     "story_title": "India’s inflation is NOT slowing down!",
@@ -14100,6 +14661,17 @@
     "story_position": 3,
     "story_source": "intro_list",
     "mention_count": 3
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-a-104-cr-fraud-sebis-latest-investigation-2-rbi-cuts-rate-to-6-25",
+    "story_title": "RBI Cuts Rate to 6.25%!",
+    "story_url": "https://thedailybrief.zerodha.com/p/a-104-cr-fraud-sebis-latest-investigation",
+    "post_title": "A ₹104 Cr Fraud? SEBI’s Latest Investigation!",
+    "story_date": "2025-02-10",
+    "story_position": 2,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
   },
   {
     "company_id": "apple",
@@ -15114,6 +15686,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-what-caused-the-inflation-to-drop-1-breaking-down-the-headline-inflation-of-5-22",
+    "story_title": "Breaking down the headline inflation of 5.22%",
+    "story_url": "https://thedailybrief.zerodha.com/p/what-caused-the-inflation-to-drop",
+    "post_title": "What caused the inflation to drop?",
+    "story_date": "2025-01-15",
+    "story_position": 1,
+    "story_source": "intro_list+heading",
+    "mention_count": 1
+  },
+  {
     "company_id": "swiggy",
     "story_id": "p-heres-how-dmart-works-1-is-dmart-doing-well",
     "story_title": "Is DMart doing well?",
@@ -15555,6 +16138,17 @@
   },
   {
     "company_id": "bajaj-housing-finance",
+    "story_id": "p-2024-in-charts-how-did-indian-markets-1-markets-performance",
+    "story_title": "Markets performance",
+    "story_url": "https://thedailybrief.zerodha.com/p/2024-in-charts-how-did-indian-markets",
+    "post_title": "2024 in charts: How did Indian markets and economy perform?",
+    "story_date": "2024-12-29",
+    "story_position": 1,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-2024-in-charts-how-did-indian-markets-1-markets-performance",
     "story_title": "Markets performance",
     "story_url": "https://thedailybrief.zerodha.com/p/2024-in-charts-how-did-indian-markets",
@@ -16192,6 +16786,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-whats-in-store-for-the-global-economy-what-s-in-store-for-the-global-economy-in-2025",
+    "story_title": "What’s in store for the global economy in 2025?",
+    "story_url": "https://thedailybrief.zerodha.com/p/whats-in-store-for-the-global-economy",
+    "post_title": "What’s in store for the global economy in 2025?",
+    "story_date": "2024-12-08",
+    "story_position": 1,
+    "story_source": "single_fallback",
+    "mention_count": 1
+  },
+  {
     "company_id": "meta",
     "story_id": "p-whats-in-store-for-the-global-economy-what-s-in-store-for-the-global-economy-in-2025",
     "story_title": "What’s in store for the global economy in 2025?",
@@ -16522,6 +17127,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-eurozones-road-to-recovery-remains-eurozone-s-road-to-recovery-remains-bumpy",
+    "story_title": "Eurozone’s road to recovery remains bumpy",
+    "story_url": "https://thedailybrief.zerodha.com/p/eurozones-road-to-recovery-remains",
+    "post_title": "Eurozone’s road to recovery remains bumpy",
+    "story_date": "2024-11-30",
+    "story_position": 1,
+    "story_source": "single_fallback",
+    "mention_count": 1
+  },
+  {
     "company_id": "reliance-industries",
     "story_id": "p-why-is-vedanta-investing-2-billion-1-vedanta-s-saudi-copper-bet",
     "story_title": "Vedanta’s Saudi Copper Bet",
@@ -16837,6 +17453,17 @@
     "post_title": "Is the Indian economy slowing down?",
     "story_date": "2024-11-17",
     "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-is-the-indian-economy-slowing-down-4-what-are-core-industries-saying-about-the-economy",
+    "story_title": "What are core industries saying about the economy?",
+    "story_url": "https://thedailybrief.zerodha.com/p/is-the-indian-economy-slowing-down",
+    "post_title": "Is the Indian economy slowing down?",
+    "story_date": "2024-11-17",
+    "story_position": 4,
     "story_source": "h1",
     "mention_count": 1
   },
@@ -18106,6 +18733,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-from-22-billion-to-nothing-the-catastrophic-3-rising-rubber-prices-may-erase-gains-for-investors",
+    "story_title": "Rising rubber prices may erase gains for investors",
+    "story_url": "https://thedailybrief.zerodha.com/p/from-22-billion-to-nothing-the-catastrophic",
+    "post_title": "From $22 Billion to Nothing: The Catastrophic Fall of Byju’s",
+    "story_date": "2024-10-21",
+    "story_position": 3,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
     "company_id": "ceat-ltd",
     "story_id": "p-from-22-billion-to-nothing-the-catastrophic-3-rising-rubber-prices-may-erase-gains-for-investors",
     "story_title": "Rising rubber prices may erase gains for investors",
@@ -18359,7 +18997,7 @@
     "mention_count": 1
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-tatas-take-on-the-future-of-jewellery-1-zudio-fication-of-jewellery",
     "story_title": "Zudio-fication of jewellery",
     "story_url": "https://thedailybrief.zerodha.com/p/tatas-take-on-the-future-of-jewellery",
@@ -18509,6 +19147,17 @@
     "post_title": "Outcome of SEBI's board meeting",
     "story_date": "2024-10-03",
     "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-outcome-of-sebis-board-meeting-3-is-india-really-working-hard",
+    "story_title": "Is India really working hard?",
+    "story_url": "https://thedailybrief.zerodha.com/p/outcome-of-sebis-board-meeting",
+    "post_title": "Outcome of SEBI's board meeting",
+    "story_date": "2024-10-03",
+    "story_position": 3,
     "story_source": "h1",
     "mention_count": 1
   },
@@ -18953,6 +19602,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-why-axis-capital-got-barred-by-sebi-3-are-we-exporting-enough",
+    "story_title": "Are we exporting enough?",
+    "story_url": "https://thedailybrief.zerodha.com/p/why-axis-capital-got-barred-by-sebi",
+    "post_title": "Why Axis Capital got barred by SEBI?",
+    "story_date": "2024-09-23",
+    "story_position": 3,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
     "company_id": "titan-company-limited",
     "story_id": "p-special-whats-your-enough-special-what-s-your-enough",
     "story_title": "Special: What's your 'enough'?",
@@ -19064,6 +19724,17 @@
   },
   {
     "company_id": "tesla",
+    "story_id": "p-fords-comeback-can-it-win-in-india-1-ford-wants-to-come-back-in-the-game-again",
+    "story_title": "Ford wants to come back in the game, again!",
+    "story_url": "https://thedailybrief.zerodha.com/p/fords-comeback-can-it-win-in-india",
+    "post_title": "Ford’s Comeback - Can it Win in India Again?",
+    "story_date": "2024-09-17",
+    "story_position": 1,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-fords-comeback-can-it-win-in-india-1-ford-wants-to-come-back-in-the-game-again",
     "story_title": "Ford wants to come back in the game, again!",
     "story_url": "https://thedailybrief.zerodha.com/p/fords-comeback-can-it-win-in-india",
@@ -19602,7 +20273,7 @@
     "mention_count": 6
   },
   {
-    "company_id": "blue-star",
+    "company_id": "blue-star-limited",
     "story_id": "p-why-are-indian-consumers-not-spending-4-daikin-wants-a-piece-of-the-red-hot-indian-ac-market",
     "story_title": "Daikin wants a piece of the red-hot Indian AC market",
     "story_url": "https://thedailybrief.zerodha.com/p/why-are-indian-consumers-not-spending",
@@ -19723,7 +20394,7 @@
     "mention_count": 2
   },
   {
-    "company_id": "kalyan-jewellers-india",
+    "company_id": "kalyan-jewellers-india-limited",
     "story_id": "p-what-are-lab-grown-diamonds-1-diamonds-for-everyone",
     "story_title": "Diamonds for everyone",
     "story_url": "https://thedailybrief.zerodha.com/p/what-are-lab-grown-diamonds",
@@ -19939,6 +20610,17 @@
     "post_title": "The name is bond, Indian government bond",
     "story_date": "2024-08-28",
     "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-jay-powell-says-let-the-party-continue-1-powell-bhai-says-get-ready-to-party",
+    "story_title": "Powell bhai says get ready to party!",
+    "story_url": "https://thedailybrief.zerodha.com/p/jay-powell-says-let-the-party-continue",
+    "post_title": "Jay Powell says, \"Let the party continue\"",
+    "story_date": "2024-08-27",
+    "story_position": 1,
     "story_source": "h1",
     "mention_count": 1
   },
@@ -20414,6 +21096,17 @@
     "story_position": 2,
     "story_source": "h1",
     "mention_count": 2
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-do-indian-banks-have-a-retail-loan-2-roti-rice-rate",
+    "story_title": "Roti Rice Rate",
+    "story_url": "https://thedailybrief.zerodha.com/p/do-indian-banks-have-a-retail-loan",
+    "post_title": "Do Indian banks have a retail loan problem?",
+    "story_date": "2024-08-09",
+    "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
   },
   {
     "company_id": "reliance-industries",
@@ -21296,6 +21989,17 @@
     "mention_count": 1
   },
   {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-this-is-how-the-world-ends-3-rbi-s-latest-indian-economy-report",
+    "story_title": "RBI’s latest Indian economy report",
+    "story_url": "https://thedailybrief.zerodha.com/p/this-is-how-the-world-ends",
+    "post_title": "This is how the world ends.",
+    "story_date": "2024-07-22",
+    "story_position": 3,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
     "company_id": "netflix",
     "story_id": "p-this-is-how-the-world-ends-4-netflix-s-performance-in-india-this-quarter",
     "story_title": "Netflix’s performance in India this quarter",
@@ -21327,6 +22031,17 @@
     "story_position": 5,
     "story_source": "h1",
     "mention_count": 2
+  },
+  {
+    "company_id": "persistent-systems-limited",
+    "story_id": "p-this-is-how-the-world-ends-5-infosys-s-latest-earnings-report-insights",
+    "story_title": "Infosys’s latest earnings report Insights",
+    "story_url": "https://thedailybrief.zerodha.com/p/this-is-how-the-world-ends",
+    "post_title": "This is how the world ends.",
+    "story_date": "2024-07-22",
+    "story_position": 5,
+    "story_source": "h1",
+    "mention_count": 1
   },
   {
     "company_id": "one-97-communications",
@@ -21693,6 +22408,17 @@
   },
   {
     "company_id": "apple",
+    "story_id": "p-will-reliance-kill-decathlon-2-will-india-s-largest-stock-exchange-ipo",
+    "story_title": "Will India’s largest stock exchange IPO?",
+    "story_url": "https://thedailybrief.zerodha.com/p/will-reliance-kill-decathlon",
+    "post_title": "Will Reliance Kill Decathlon?",
+    "story_date": "2024-07-10",
+    "story_position": 2,
+    "story_source": "h1",
+    "mention_count": 1
+  },
+  {
+    "company_id": "persistent-systems-limited",
     "story_id": "p-will-reliance-kill-decathlon-2-will-india-s-largest-stock-exchange-ipo",
     "story_title": "Will India’s largest stock exchange IPO?",
     "story_url": "https://thedailybrief.zerodha.com/p/will-reliance-kill-decathlon",

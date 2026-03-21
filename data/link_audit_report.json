@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-18T10:43:06+00:00",
+  "generated_at": "2026-03-21T03:39:43+00:00",
   "counts": {
-    "total_companies": 832,
-    "linked_companies": 723,
+    "total_companies": 840,
+    "linked_companies": 731,
     "unlinked_companies": 109,
     "mandatory_total": 15,
     "mandatory_missing": 0,
     "mandatory_mismatched": 0,
-    "existing_nse_links_kept": 385,
+    "existing_nse_links_kept": 393,
     "existing_bse_links_converted_to_nse": 2,
     "existing_bse_links_removed": 48,
     "existing_slug_links_removed": 183,

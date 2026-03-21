@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-03-18T10:43:06+00:00",
+  "generated_at": "2026-03-21T03:39:44+00:00",
   "sitemap_url": "https://thedailybrief.zerodha.com/sitemap.xml",
-  "post_count": 556,
+  "post_count": 558,
   "posts": {
+    "https://thedailybrief.zerodha.com/p/whither-indias-pilots": {
+      "lastmod": "2026-03-20",
+      "content_hash": "a46be7d64d42e9d38f4809049d24007af4f60679",
+      "story_count": 2,
+      "fetched_at": "2026-03-21T03:39:44+00:00"
+    },
+    "https://thedailybrief.zerodha.com/p/what-fssais-new-licensing-rules-actually": {
+      "lastmod": "2026-03-19",
+      "content_hash": "5ada14f3775230c0fabfe2e60e58cb297ec98462",
+      "story_count": 2,
+      "fetched_at": "2026-03-21T03:39:44+00:00"
+    },
     "https://thedailybrief.zerodha.com/p/the-new-rules-of-paying-for-electricity": {
       "lastmod": "2026-03-18",
       "content_hash": "1b43a1fc1874208d506ba76ce7bae65a5aead012",
