@@ -4,11 +4,11 @@
     "2026-01-01",
     "2026-03-31"
   ],
-  "last_updated": "2026-03-20T04:30:49+00:00",
+  "last_updated": "2026-03-21T04:23:33+00:00",
   "summary": {
     "total_companies": 250,
     "chatter_eligible": 209,
-    "chatter_covered": 73,
+    "chatter_covered": 87,
     "pnf_eligible": 223,
     "pnf_covered": 52
   },
@@ -235,9 +235,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -343,9 +343,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-02-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -415,9 +415,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -667,9 +667,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -793,9 +793,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-02-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -1423,9 +1423,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-02-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -1747,9 +1747,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-02-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -2251,9 +2251,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -2341,9 +2341,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -2449,9 +2449,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-02-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -2629,9 +2629,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -2809,9 +2809,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -3313,9 +3313,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
@@ -4087,9 +4087,9 @@
       "chatter": {
         "eligible": true,
         "eligible_since": "2026-01-01",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "The Chatter: Reading the terrain",
+        "covered_date": "2026-03-20"
       },
       "pnf": {
         "eligible": true,
