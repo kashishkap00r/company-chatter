@@ -4,10 +4,10 @@
     "2026-01-01",
     "2026-03-31"
   ],
-  "last_updated": "2026-03-22T04:41:04+00:00",
+  "last_updated": "2026-03-23T04:45:25+00:00",
   "summary": {
     "total_companies": 250,
-    "chatter_eligible": 209,
+    "chatter_eligible": 210,
     "chatter_covered": 87,
     "pnf_eligible": 223,
     "pnf_covered": 52
@@ -161,8 +161,8 @@
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Limited",
       "chatter": {
-        "eligible": false,
-        "eligible_since": null,
+        "eligible": true,
+        "eligible_since": "2026-01-01",
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
