@@ -11,6 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from tracker_match import (
+    _build_auto_acronyms,
     extract_symbol_from_zerodha_url,
     load_aliases,
     load_acronyms,
@@ -58,12 +59,16 @@ def detect_chatter_coverage(
             editions[ed["id"]] = {"title": ed["title"], "date": ed["date"]}
 
     # Build company_id -> symbol mapping using Zerodha URLs first, then name matching
+    auto_acrs = _build_auto_acronyms(universe)
     company_to_symbol: dict[str, str | None] = {}
     for comp in companies_raw:
         comp_id = comp["id"]
         symbol = extract_symbol_from_zerodha_url(comp.get("url"))
         if not symbol or symbol not in universe:
-            symbol = resolve_symbol(comp.get("name", ""), universe, aliases, acronyms)
+            symbol = resolve_symbol(
+                comp.get("name", ""), universe, aliases, acronyms,
+                _auto_acronym_cache=auto_acrs,
+            )
         company_to_symbol[comp_id] = symbol
 
     # Find covered companies
@@ -101,6 +106,7 @@ def detect_pnf_coverage(
         return {}
 
     pnf_editions = json.loads(pnf_path.read_text())
+    auto_acrs = _build_auto_acronyms(universe)
     covered: dict[str, dict] = {}
 
     for edition in pnf_editions:
@@ -111,7 +117,10 @@ def detect_pnf_coverage(
         title = edition.get("title", "")
         for heading in edition.get("companies", []):
             company_name = _extract_company_from_heading(heading)
-            symbol = resolve_symbol(company_name, universe, aliases, acronyms)
+            symbol = resolve_symbol(
+                company_name, universe, aliases, acronyms,
+                _auto_acronym_cache=auto_acrs,
+            )
             if symbol and symbol in universe and symbol not in covered:
                 covered[symbol] = {
                     "edition_title": title,
