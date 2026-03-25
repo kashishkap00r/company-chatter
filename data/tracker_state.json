@@ -4,13 +4,13 @@
     "2026-01-01",
     "2026-03-31"
   ],
-  "last_updated": "2026-03-23T04:45:25+00:00",
+  "last_updated": "2026-03-25T04:39:15+00:00",
   "summary": {
     "total_companies": 250,
     "chatter_eligible": 210,
     "chatter_covered": 87,
     "pnf_eligible": 223,
-    "pnf_covered": 52
+    "pnf_covered": 71
   },
   "companies": [
     {
@@ -278,9 +278,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-13",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
+        "covered_date": "2026-02-03"
       }
     },
     {
@@ -422,9 +422,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-15",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -854,9 +854,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-02-04",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Grain in the graphs",
+        "covered_date": "2026-02-17"
       }
     },
     {
@@ -1232,9 +1232,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-21",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
+        "covered_date": "2026-01-28"
       }
     },
     {
@@ -1304,9 +1304,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-02",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -1376,9 +1376,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-03",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: What margins reveal",
+        "covered_date": "2026-03-10"
       }
     },
     {
@@ -1610,9 +1610,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-13",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -1808,9 +1808,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-14",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -2042,9 +2042,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-15",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Grain in the graphs",
+        "covered_date": "2026-02-17"
       }
     },
     {
@@ -2348,9 +2348,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-13",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -2384,9 +2384,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-19",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -2420,9 +2420,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-14",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -2456,9 +2456,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-14",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -3500,9 +3500,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-27",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -3554,9 +3554,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-30",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
+        "covered_date": "2026-03-17"
       }
     },
     {
@@ -3806,9 +3806,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-14",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
+        "covered_date": "2026-03-17"
       }
     },
     {
@@ -3860,9 +3860,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-21",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -4346,9 +4346,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-13",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
@@ -4418,9 +4418,9 @@
       "pnf": {
         "eligible": true,
         "eligible_since": "2026-01-21",
-        "covered": false,
-        "covered_in_edition": null,
-        "covered_date": null
+        "covered": true,
+        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
+        "covered_date": "2026-03-24"
       }
     },
     {
