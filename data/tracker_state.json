@@ -1,31 +1,31 @@
 {
-  "active_quarter": "Q3 FY26",
+  "active_quarter": "Q4 FY26",
   "results_window": [
-    "2026-01-01",
-    "2026-03-31"
+    "2026-04-01",
+    "2026-06-30"
   ],
-  "last_updated": "2026-03-31T04:54:34+00:00",
+  "last_updated": "2026-04-01T05:03:54+00:00",
   "summary": {
     "total_companies": 250,
-    "chatter_eligible": 210,
-    "chatter_covered": 87,
-    "pnf_eligible": 223,
-    "pnf_covered": 71
+    "chatter_eligible": 0,
+    "chatter_covered": 0,
+    "pnf_eligible": 0,
+    "pnf_covered": 0
   },
   "companies": [
     {
       "symbol": "360ONE",
       "name": "360 ONE WAM LIMITED",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-05",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -42,8 +42,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-03-09",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -55,16 +55,16 @@
       "chatter": {
         "eligible": false,
         "eligible_since": null,
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-02",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Roots in the results",
-        "covered_date": "2026-03-04"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -89,15 +89,15 @@
       "symbol": "ABCAPITAL",
       "name": "Aditya Birla Capital Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -107,15 +107,15 @@
       "symbol": "ACC",
       "name": "ACC Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -125,15 +125,15 @@
       "symbol": "ADANIENSOL",
       "name": "Adani Energy Solutions Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -143,51 +143,51 @@
       "symbol": "ADANIENT",
       "name": "Adani Enterprises Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-09",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-20",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "ADANIPORTS",
       "name": "Adani Ports and Special Economic Zone Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -197,15 +197,15 @@
       "symbol": "ADANIPOWER",
       "name": "Adani Power Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -215,15 +215,15 @@
       "symbol": "AIAENG",
       "name": "AIA Engineering Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -233,15 +233,15 @@
       "symbol": "AJANTPHARM",
       "name": "Ajanta Pharma Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-12",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -251,15 +251,15 @@
       "symbol": "ALKEM",
       "name": "Alkem Laboratories Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -269,33 +269,33 @@
       "symbol": "AMBUJACEM",
       "name": "Ambuja Cements Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "APARINDS",
       "name": "Apar Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -305,15 +305,15 @@
       "symbol": "APLAPOLLO",
       "name": "APL Apollo Tubes Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-15",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -323,33 +323,33 @@
       "symbol": "APOLLOHOSP",
       "name": "Apollo Hospitals Enterprise Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "APOLLOTYRE",
       "name": "Apollo Tyres Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -359,15 +359,15 @@
       "symbol": "ASHOKLEY",
       "name": "Ashok Leyland Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -377,15 +377,15 @@
       "symbol": "ASIANPAINT",
       "name": "Asian Paints Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -395,15 +395,15 @@
       "symbol": "ASTRAL",
       "name": "Astral Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads in the data",
-        "covered_date": "2026-03-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -413,33 +413,33 @@
       "symbol": "ATGL",
       "name": "Adani Total Gas Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-15",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "AUBANK",
       "name": "AU Small Finance Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-07",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -449,15 +449,15 @@
       "symbol": "AUROPHARMA",
       "name": "Aurobindo Pharma Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-08",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -467,15 +467,15 @@
       "symbol": "AWL",
       "name": "AWL Agri Business Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -485,15 +485,15 @@
       "symbol": "AXISBANK",
       "name": "Axis Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -503,15 +503,15 @@
       "symbol": "BAJAJ-AUTO",
       "name": "Bajaj Auto Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -521,15 +521,15 @@
       "symbol": "BAJAJFINSV",
       "name": "Bajaj Finserv Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -539,15 +539,15 @@
       "symbol": "BAJAJHFL",
       "name": "Bajaj Housing Finance Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -575,15 +575,15 @@
       "symbol": "BAJFINANCE",
       "name": "Bajaj Finance Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -593,51 +593,51 @@
       "symbol": "BALKRISIND",
       "name": "Balkrishna Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "BANKBARODA",
       "name": "Bank of Baroda",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "BANKINDIA",
       "name": "Bank of India",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -665,15 +665,15 @@
       "symbol": "BEL",
       "name": "Bharat Electronics Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -683,15 +683,15 @@
       "symbol": "BERGEPAINT",
       "name": "Berger Paints (I) Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads in the data",
-        "covered_date": "2026-03-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -701,15 +701,15 @@
       "symbol": "BHARATFORG",
       "name": "Bharat Forge Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-05",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -719,15 +719,15 @@
       "symbol": "BHARTIARTL",
       "name": "Bharti Airtel Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads in the data",
-        "covered_date": "2026-03-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -737,15 +737,15 @@
       "symbol": "BHARTIHEXA",
       "name": "Bharti Hexacom Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -773,15 +773,15 @@
       "symbol": "BIOCON",
       "name": "Biocon Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-13",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -791,15 +791,15 @@
       "symbol": "BLUESTARCO",
       "name": "Blue Star Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -809,18 +809,18 @@
       "symbol": "BOSCHLTD",
       "name": "Bosch Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads in the data",
-        "covered_date": "2026-03-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -834,8 +834,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-24",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -845,26 +845,8 @@
       "symbol": "BRITANNIA",
       "name": "Britannia Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
-      },
-      "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-04",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Grain in the graphs",
-        "covered_date": "2026-02-17"
-      }
-    },
-    {
-      "symbol": "BSE",
-      "name": "BSE Limited",
-      "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -872,24 +854,42 @@
       "pnf": {
         "eligible": false,
         "eligible_since": null,
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
+      }
+    },
+    {
+      "symbol": "BSE",
+      "name": "BSE Limited",
+      "chatter": {
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
+      },
+      "pnf": {
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "CANBK",
       "name": "Canara Bank",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -899,15 +899,15 @@
       "symbol": "CGPOWER",
       "name": "CG Power and Industrial Solutions Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -917,15 +917,15 @@
       "symbol": "CHOLAFIN",
       "name": "Cholamandalam Investment and Finance Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Talking Points",
-        "covered_date": "2026-01-09"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -935,15 +935,15 @@
       "symbol": "CIPLA",
       "name": "Cipla Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -960,8 +960,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-12",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -989,18 +989,18 @@
       "symbol": "COFORGE",
       "name": "Coforge Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Talking Points",
-        "covered_date": "2026-01-09"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Note in the Noise",
-        "covered_date": "2026-01-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -1025,15 +1025,15 @@
       "symbol": "CONCOR",
       "name": "Container Corporation of India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1043,15 +1043,15 @@
       "symbol": "COROMANDEL",
       "name": "Coromandel International Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1068,26 +1068,26 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Grain in the graphs",
-        "covered_date": "2026-02-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "CUMMINSIND",
       "name": "Cummins India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1097,15 +1097,15 @@
       "symbol": "DABUR",
       "name": "Dabur India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-15",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1115,33 +1115,33 @@
       "symbol": "DALBHARAT",
       "name": "Dalmia Bharat Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "DEEPAKNTR",
       "name": "Deepak Nitrite Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-12",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1151,15 +1151,15 @@
       "symbol": "DIVISLAB",
       "name": "Divi's Laboratories Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1169,15 +1169,15 @@
       "symbol": "DIXON",
       "name": "Dixon Technologies (India) Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-08",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1187,15 +1187,15 @@
       "symbol": "DLF",
       "name": "DLF Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1212,62 +1212,62 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-10",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Weight in the Whispers",
-        "covered_date": "2026-01-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "DRREDDY",
       "name": "Dr. Reddy's Laboratories Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "EICHERMOT",
       "name": "Eicher Motors Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "ENDURANCE",
       "name": "Endurance Technologies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1295,33 +1295,33 @@
       "symbol": "ESCORTS",
       "name": "Escorts Kubota Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-02",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "ETERNAL",
       "name": "ETERNAL LIMITED",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-15",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1331,15 +1331,15 @@
       "symbol": "EXIDEIND",
       "name": "Exide Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1367,33 +1367,33 @@
       "symbol": "FEDERALBNK",
       "name": "The Federal Bank  Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-03",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: What margins reveal",
-        "covered_date": "2026-03-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "FLUOROCHEM",
       "name": "Gujarat Fluorochemicals Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1403,33 +1403,33 @@
       "symbol": "FORTIS",
       "name": "Fortis Healthcare Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-07",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Weight in the Whispers",
-        "covered_date": "2026-01-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "GAIL",
       "name": "GAIL (India) Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1439,15 +1439,15 @@
       "symbol": "GICRE",
       "name": "General Insurance Corporation of India",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1457,15 +1457,15 @@
       "symbol": "GLAXO",
       "name": "GlaxoSmithKline Pharmaceuticals Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1475,15 +1475,15 @@
       "symbol": "GLENMARK",
       "name": "Glenmark Pharmaceuticals Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1493,18 +1493,18 @@
       "symbol": "GMRAIRPORT",
       "name": "GMR AIRPORTS LIMITED",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-11",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: What margins reveal",
-        "covered_date": "2026-03-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -1518,26 +1518,26 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
-        "covered_date": "2026-03-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "GODREJCP",
       "name": "Godrej Consumer Products Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1554,8 +1554,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-11",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1565,15 +1565,15 @@
       "symbol": "GODREJPROP",
       "name": "Godrej Properties Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1583,15 +1583,15 @@
       "symbol": "GRASIM",
       "name": "Grasim Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1601,33 +1601,33 @@
       "symbol": "GUJGASLTD",
       "name": "Gujarat Gas Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "GVT&D",
       "name": "GE Vernova T&D India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1644,8 +1644,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-18",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1655,15 +1655,15 @@
       "symbol": "HAVELLS",
       "name": "Havells India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1673,11 +1673,11 @@
       "symbol": "HCLTECH",
       "name": "HCL Technologies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
         "eligible": false,
@@ -1691,15 +1691,15 @@
       "symbol": "HDFCAMC",
       "name": "HDFC Asset Management Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-02",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1709,51 +1709,51 @@
       "symbol": "HDFCBANK",
       "name": "HDFC Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-12",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Stakes in the Stacks",
-        "covered_date": "2026-01-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "HDFCLIFE",
       "name": "HDFC Life Insurance Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
         "eligible": false,
         "eligible_since": null,
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Roots in the results",
-        "covered_date": "2026-03-04"
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "HEROMOTOCO",
       "name": "Hero MotoCorp Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-31",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1763,15 +1763,15 @@
       "symbol": "HEXT",
       "name": "Hexaware Technologies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1781,72 +1781,72 @@
       "symbol": "HINDALCO",
       "name": "Hindalco Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-05",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "HINDPETRO",
       "name": "Hindustan Petroleum Corporation Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "HINDUNILVR",
       "name": "Hindustan Unilever Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-04",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "HINDZINC",
       "name": "Hindustan Zinc Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Stakes in the Stacks",
-        "covered_date": "2026-01-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -1871,15 +1871,15 @@
       "symbol": "HUDCO",
       "name": "Housing & Urban Development Corporation Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1889,15 +1889,15 @@
       "symbol": "HYUNDAI",
       "name": "Hyundai Motor India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1907,33 +1907,33 @@
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Stakes in the Stacks",
-        "covered_date": "2026-01-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "ICICIGI",
       "name": "ICICI Lombard General Insurance Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1943,15 +1943,15 @@
       "symbol": "ICICIPRULI",
       "name": "ICICI Prudential Life Insurance Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-02",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1986,8 +1986,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -1997,15 +1997,15 @@
       "symbol": "IDFCFIRSTB",
       "name": "IDFC First Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-31",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2015,15 +2015,15 @@
       "symbol": "IGL",
       "name": "Indraprastha Gas Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-10",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2033,33 +2033,33 @@
       "symbol": "INDHOTEL",
       "name": "The Indian Hotels Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-15",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Grain in the graphs",
-        "covered_date": "2026-02-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "INDIANB",
       "name": "Indian Bank",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2069,15 +2069,15 @@
       "symbol": "INDIGO",
       "name": "InterGlobe Aviation Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2087,15 +2087,15 @@
       "symbol": "INDUSINDBK",
       "name": "IndusInd Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2105,15 +2105,15 @@
       "symbol": "INDUSTOWER",
       "name": "Indus Towers Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2123,33 +2123,33 @@
       "symbol": "INFY",
       "name": "Infosys Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
         "eligible": false,
         "eligible_since": null,
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Grain in the graphs",
-        "covered_date": "2026-02-17"
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "IOB",
       "name": "Indian Overseas Bank",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-09",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2166,8 +2166,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-02",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2177,15 +2177,15 @@
       "symbol": "IPCALAB",
       "name": "IPCA Laboratories Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2195,15 +2195,15 @@
       "symbol": "IRB",
       "name": "IRB Infrastructure Developers Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-11",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2213,15 +2213,15 @@
       "symbol": "IRCTC",
       "name": "Indian Railway Catering And Tourism Corporation Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2238,8 +2238,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-09",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2249,15 +2249,15 @@
       "symbol": "IRFC",
       "name": "Indian Railway Finance Corporation Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-12",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2269,9 +2269,9 @@
       "chatter": {
         "eligible": false,
         "eligible_since": null,
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
         "eligible": false,
@@ -2292,8 +2292,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2303,15 +2303,15 @@
       "symbol": "JINDALSTEL",
       "name": "JINDAL STEEL LIMITED",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2321,87 +2321,87 @@
       "symbol": "JIOFIN",
       "name": "Jio Financial Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-12",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: What margins reveal",
-        "covered_date": "2026-03-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "JKCEMENT",
       "name": "JK Cement Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "JSL",
       "name": "Jindal Stainless Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "JSWENERGY",
       "name": "JSW Energy Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "JSWINFRA",
       "name": "JSW Infrastructure Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-09",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2411,87 +2411,87 @@
       "symbol": "JSWSTEEL",
       "name": "JSW Steel Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "JUBLFOOD",
       "name": "Jubilant Foodworks Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "KALYANKJIL",
       "name": "Kalyan Jewellers India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "KEI",
       "name": "KEI Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
-        "covered_date": "2026-03-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "KOTAKBANK",
       "name": "Kotak Mahindra Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2501,15 +2501,15 @@
       "symbol": "KPITTECH",
       "name": "KPIT Technologies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2526,8 +2526,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-11",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2537,15 +2537,15 @@
       "symbol": "LICHSGFIN",
       "name": "LIC Housing Finance Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2555,15 +2555,15 @@
       "symbol": "LICI",
       "name": "Life Insurance Corporation Of India",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2591,15 +2591,15 @@
       "symbol": "LLOYDSME",
       "name": "Lloyds Metals And Energy Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2609,15 +2609,15 @@
       "symbol": "LODHA",
       "name": "Lodha Developers Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2627,15 +2627,15 @@
       "symbol": "LT",
       "name": "Larsen & Toubro Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2645,15 +2645,15 @@
       "symbol": "LTF",
       "name": "L&T Finance Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-08",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2663,15 +2663,15 @@
       "symbol": "LTM",
       "name": "LTIMindtree Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2681,15 +2681,15 @@
       "symbol": "LTTS",
       "name": "L&T Technology Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-15",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2699,15 +2699,15 @@
       "symbol": "LUPIN",
       "name": "Lupin Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2717,33 +2717,33 @@
       "symbol": "M&M",
       "name": "Mahindra & Mahindra Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "M&MFIN",
       "name": "Mahindra & Mahindra Financial Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2753,15 +2753,15 @@
       "symbol": "MAHABANK",
       "name": "Bank of Maharashtra",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-08",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2771,15 +2771,15 @@
       "symbol": "MANKIND",
       "name": "Mankind Pharma Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2789,51 +2789,51 @@
       "symbol": "MARICO",
       "name": "Marico Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-09",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Roots in the results",
-        "covered_date": "2026-03-04"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "MARUTI",
       "name": "Maruti Suzuki India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
-        "covered_date": "2026-03-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "MAXHEALTH",
       "name": "Max Healthcare Institute Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2850,8 +2850,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-03-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2861,15 +2861,15 @@
       "symbol": "MEDANTA",
       "name": "Global Health Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2879,15 +2879,15 @@
       "symbol": "MFSL",
       "name": "Max Financial Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-03-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-05",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2897,33 +2897,33 @@
       "symbol": "MOTHERSON",
       "name": "Samvardhana Motherson International Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "MOTILALOFS",
       "name": "Motilal Oswal Financial Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -2933,18 +2933,18 @@
       "symbol": "MPHASIS",
       "name": "MphasiS Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -2969,51 +2969,51 @@
       "symbol": "MUTHOOTFIN",
       "name": "Muthoot Finance Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-07",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "NAM-INDIA",
       "name": "Nippon Life India Asset Management Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-07",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "NATIONALUM",
       "name": "National Aluminium Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3023,18 +3023,18 @@
       "symbol": "NAUKRI",
       "name": "Info Edge (India) Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-02",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: What margins reveal",
-        "covered_date": "2026-03-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -3059,15 +3059,15 @@
       "symbol": "NHPC",
       "name": "NHPC Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3077,15 +3077,15 @@
       "symbol": "NIACL",
       "name": "The New India Assurance Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3095,15 +3095,15 @@
       "symbol": "NLCINDIA",
       "name": "NLC India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-05",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3120,8 +3120,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3131,15 +3131,15 @@
       "symbol": "NTPC",
       "name": "NTPC Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3167,15 +3167,15 @@
       "symbol": "NYKAA",
       "name": "FSN E-Commerce Ventures Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-20",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3185,15 +3185,15 @@
       "symbol": "OBEROIRLTY",
       "name": "Oberoi Realty Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3221,15 +3221,15 @@
       "symbol": "OIL",
       "name": "Oil India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-05",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3239,15 +3239,15 @@
       "symbol": "ONGC",
       "name": "Oil & Natural Gas Corporation Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-10",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3257,15 +3257,15 @@
       "symbol": "PAGEIND",
       "name": "Page Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3275,15 +3275,15 @@
       "symbol": "PATANJALI",
       "name": "Patanjali Foods Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads in the data",
-        "covered_date": "2026-03-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-07",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3293,15 +3293,15 @@
       "symbol": "PAYTM",
       "name": "One 97 Communications Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3311,33 +3311,33 @@
       "symbol": "PERSISTENT",
       "name": "Persistent Systems Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "PETRONET",
       "name": "Petronet LNG Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-10",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3383,15 +3383,15 @@
       "symbol": "PHOENIXLTD",
       "name": "The Phoenix Mills Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3401,15 +3401,15 @@
       "symbol": "PIDILITIND",
       "name": "Pidilite Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-02",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3419,15 +3419,15 @@
       "symbol": "PIIND",
       "name": "PI Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-05",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3437,33 +3437,33 @@
       "symbol": "PNB",
       "name": "Punjab National Bank",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "POLICYBZR",
       "name": "PB Fintech Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3473,15 +3473,15 @@
       "symbol": "POLYCAB",
       "name": "Polycab India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3491,33 +3491,33 @@
       "symbol": "POWERGRID",
       "name": "Power Grid Corporation of India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "POWERINDIA",
       "name": "Hitachi Energy India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3527,36 +3527,36 @@
       "symbol": "PREMIERENE",
       "name": "Premier Energies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-16",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "PRESTIGE",
       "name": "Prestige Estates Projects Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
-        "covered_date": "2026-03-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
@@ -3581,33 +3581,33 @@
       "symbol": "RELIANCE",
       "name": "Reliance Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-08",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Stakes in the Stacks",
-        "covered_date": "2026-01-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "RVNL",
       "name": "Rail Vikas Nigam Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3617,51 +3617,51 @@
       "symbol": "SAIL",
       "name": "Steel Authority of India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SBICARD",
       "name": "SBI Cards and Payment Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-20",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
-        "covered_date": "2026-03-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SBILIFE",
       "name": "SBI Life Insurance Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3671,51 +3671,51 @@
       "symbol": "SBIN",
       "name": "State Bank of India",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SCHAEFFLER",
       "name": "Schaeffler India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-03-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-17",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Roots in the results",
-        "covered_date": "2026-03-04"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SHREECEM",
       "name": "SHREE CEMENT LIMITED",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3725,15 +3725,15 @@
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Talking Points",
-        "covered_date": "2026-01-09"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3779,15 +3779,15 @@
       "symbol": "SOLARINDS",
       "name": "Solar Industries India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-28",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3797,33 +3797,33 @@
       "symbol": "SONACOMS",
       "name": "Sona BLW Precision Forgings Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Mapping the momentum",
-        "covered_date": "2026-03-17"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SRF",
       "name": "SRF Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3851,33 +3851,33 @@
       "symbol": "SUNPHARMA",
       "name": "Sun Pharmaceutical Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Patience &amp; payoff",
-        "covered_date": "2026-02-27"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SUPREMEIND",
       "name": "Supreme Industries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3887,33 +3887,33 @@
       "symbol": "SUZLON",
       "name": "Suzlon Energy Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "SWIGGY",
       "name": "Swiggy Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3923,15 +3923,15 @@
       "symbol": "SYNGENE",
       "name": "Syngene International Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-17",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3941,15 +3941,15 @@
       "symbol": "TATACOMM",
       "name": "Tata Communications Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-12",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3959,15 +3959,15 @@
       "symbol": "TATACONSUM",
       "name": "TATA CONSUMER PRODUCTS LIMITED",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-20",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -3977,15 +3977,15 @@
       "symbol": "TATAELXSI",
       "name": "Tata Elxsi Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4013,15 +4013,15 @@
       "symbol": "TATAPOWER",
       "name": "Tata Power Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-        "covered_date": "2026-02-06"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4031,33 +4031,33 @@
       "symbol": "TATASTEEL",
       "name": "Tata Steel Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-02",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "TATATECH",
       "name": "Tata Technologies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-07",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4067,15 +4067,15 @@
       "symbol": "TCS",
       "name": "Tata Consultancy Services Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-03",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4085,51 +4085,51 @@
       "symbol": "TECHM",
       "name": "Tech Mahindra Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Reading the terrain",
-        "covered_date": "2026-03-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-06",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Stakes in the Stacks",
-        "covered_date": "2026-01-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "THERMAX",
       "name": "Thermax Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-31",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "TIINDIA",
       "name": "Tube Investments of India Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4139,51 +4139,51 @@
       "symbol": "TITAN",
       "name": "Titan Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-02",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "TMPV",
       "name": "Tata Motors Passenger Vehicles Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Tailwinds building",
-        "covered_date": "2026-02-13"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-22",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pulse across the pack",
-        "covered_date": "2026-02-10"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "TORNTPHARM",
       "name": "Torrent Pharmaceuticals Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Bets and blueprints",
-        "covered_date": "2026-02-20"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-02",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4193,15 +4193,15 @@
       "symbol": "TORNTPOWER",
       "name": "Torrent Power Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4218,8 +4218,8 @@
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-02-04",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4229,15 +4229,15 @@
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Company Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4247,15 +4247,15 @@
       "symbol": "UBL",
       "name": "United Breweries Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4265,15 +4265,15 @@
       "symbol": "UCOBANK",
       "name": "UCO Bank",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4283,33 +4283,33 @@
       "symbol": "ULTRACEMCO",
       "name": "UltraTech Cement Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-02",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Depth in the Deck",
-        "covered_date": "2026-01-28"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "UNIONBANK",
       "name": "Union Bank of India",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Threads and Tensions",
-        "covered_date": "2026-01-16"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-14",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4319,15 +4319,15 @@
       "symbol": "UNITDSPR",
       "name": "United Spirits Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Weights and Measures",
-        "covered_date": "2026-01-23"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-12",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4337,51 +4337,51 @@
       "symbol": "UNOMINDA",
       "name": "UNO Minda Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-13",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "UPL",
       "name": "UPL Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-27",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: The Shape of Change",
-        "covered_date": "2026-02-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "VBL",
       "name": "Varun Beverages Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-29",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4391,51 +4391,51 @@
       "symbol": "VEDL",
       "name": "Vedanta Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Capital at Work - The Chatter by Zerodha",
-        "covered_date": "2026-02-03"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "VMM",
       "name": "Vishal Mega Mart Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-21",
-        "covered": true,
-        "covered_in_edition": "Points &amp; Figures: Pixels to perspective",
-        "covered_date": "2026-03-24"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       }
     },
     {
       "symbol": "VOLTAS",
       "name": "Voltas Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-23",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4445,15 +4445,15 @@
       "symbol": "WAAREEENER",
       "name": "Waaree Energies Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
-        "covered": true,
-        "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-        "covered_date": "2026-01-30"
+        "eligible": false,
+        "eligible_since": null,
+        "covered": false,
+        "covered_in_edition": null,
+        "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-19",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4463,15 +4463,15 @@
       "symbol": "WIPRO",
       "name": "Wipro Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-07",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4481,15 +4481,15 @@
       "symbol": "YESBANK",
       "name": "Yes Bank Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-01-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-06",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
@@ -4499,15 +4499,15 @@
       "symbol": "ZYDUSLIFE",
       "name": "Zydus Lifesciences Limited",
       "chatter": {
-        "eligible": true,
-        "eligible_since": "2026-02-01",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
       },
       "pnf": {
-        "eligible": true,
-        "eligible_since": "2026-01-30",
+        "eligible": false,
+        "eligible_since": null,
         "covered": false,
         "covered_in_edition": null,
         "covered_date": null
