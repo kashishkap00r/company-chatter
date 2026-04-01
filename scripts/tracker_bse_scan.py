@@ -23,7 +23,7 @@ BSE_HEADERS = {
 }
 
 PRESENTATION_RE = re.compile(
-    r"investor\s*presentation|presentation|analyst\s*/?\s*investor\s*meet",
+    r"investor\s*presentation|presentation",
     re.IGNORECASE,
 )
 TRANSCRIPT_RE = re.compile(r"transcript|earnings\s*call", re.IGNORECASE)
