@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-01T08:38:54+00:00",
+  "last_updated": "2026-04-02T04:47:21+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -15,7 +15,7 @@
         "chatter_eligible": 209,
         "chatter_covered": 85,
         "pnf_eligible": 223,
-        "pnf_covered": 68
+        "pnf_covered": 71
       },
       "companies": [
         {
@@ -49,9 +49,9 @@
           "pnf": {
             "eligible": true,
             "eligible_since": "2026-03-09",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "Points &amp; Figures: No shortcuts here",
+            "covered_date": "2026-04-01"
           }
         },
         {
@@ -463,9 +463,9 @@
           "pnf": {
             "eligible": true,
             "eligible_since": "2026-01-08",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "Points &amp; Figures: No shortcuts here",
+            "covered_date": "2026-04-01"
           }
         },
         {
@@ -4387,9 +4387,9 @@
           "pnf": {
             "eligible": true,
             "eligible_since": "2026-01-29",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "Points &amp; Figures: No shortcuts here",
+            "covered_date": "2026-04-01"
           }
         },
         {
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 0,
+        "chatter_eligible": 1,
         "chatter_covered": 0,
         "pnf_eligible": 1,
         "pnf_covered": 0
@@ -8015,8 +8015,8 @@
           "symbol": "POWERGRID",
           "name": "Power Grid Corporation of India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
