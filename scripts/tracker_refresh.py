@@ -237,7 +237,13 @@ def main() -> None:
 
         quarter_eligibility[qname] = (bse_results, screener_results)
 
-    # Step 4: P&F scrape (shared across quarters)
+    # Step 4a: Chatter scrape (shared across quarters)
+    print("\n--- Chatter Scrape ---")
+    from tracker_chatter_scrape import scrape_chatter_editions
+    chatter_editions = scrape_chatter_editions()
+    _write_json(DATA_DIR / "tracker_chatter_editions.json", chatter_editions)
+
+    # Step 4b: P&F scrape (shared across quarters)
     print("\n--- P&F Scrape ---")
     from tracker_pnf_scrape import scrape_pnf_editions
     pnf_editions = scrape_pnf_editions()

@@ -159,62 +159,50 @@ def detect_chatter_coverage_multi(
 ) -> dict[str, dict[str, dict]]:
     """Detect Chatter coverage with per-edition quarter attribution.
 
+    Uses tracker_chatter_editions.json (produced by tracker_chatter_scrape.py)
+    instead of editions.json/quotes.json/companies.json. Same pattern as the
+    P&F detector: extract company names from H3 headings and resolve symbols.
+
     Args:
         eligible_by_quarter: { quarter_name: set of eligible symbols }
         from_date: earliest date to consider editions from
 
     Returns: { quarter_name: { symbol: { edition_title, edition_date } } }
     """
-    editions_raw = json.loads((DATA_DIR / "editions.json").read_text())
-    quotes_raw = json.loads((DATA_DIR / "quotes.json").read_text())
-    companies_raw = json.loads((DATA_DIR / "companies.json").read_text())
+    chatter_path = DATA_DIR / "tracker_chatter_editions.json"
+    if not chatter_path.exists():
+        return {qname: {} for qname in eligible_by_quarter}
 
-    # Filter editions: date >= from_date (no upper bound)
-    editions = {}
-    for ed in editions_raw:
-        date = ed.get("date", "")
-        if date and date >= from_date:
-            editions[ed["id"]] = {"title": ed["title"], "date": date}
-
-    # Build company_id -> symbol mapping
+    chatter_editions = json.loads(chatter_path.read_text())
     auto_acrs = _build_auto_acronyms(universe)
-    company_to_symbol: dict[str, str | None] = {}
-    for comp in companies_raw:
-        comp_id = comp["id"]
-        symbol = extract_symbol_from_zerodha_url(comp.get("url"))
-        if not symbol or symbol not in universe:
+    covered: dict[str, dict[str, dict]] = {qname: {} for qname in eligible_by_quarter}
+
+    for edition in chatter_editions:
+        date = edition.get("date", "")
+        if not date or date < from_date:
+            continue
+
+        title = edition.get("title", "")
+        # Resolve all companies in this edition
+        symbols: list[str] = []
+        for heading in edition.get("companies", []):
+            company_name = _extract_company_from_heading(heading)
             symbol = resolve_symbol(
-                comp.get("name", ""), universe, aliases, acronyms,
+                company_name, universe, aliases, acronyms,
                 _auto_acronym_cache=auto_acrs,
             )
-        company_to_symbol[comp_id] = symbol
+            if symbol and symbol in universe:
+                symbols.append(symbol)
 
-    # Group quotes by edition
-    edition_symbols: dict[str, list[str]] = {}
-    edition_quote_detail: dict[str, dict[str, str]] = {}  # edition_id -> {symbol: company_id}
-    for quote in quotes_raw:
-        edition_id = quote.get("edition_id", "")
-        company_id = quote.get("company_id", "")
-        if edition_id not in editions:
-            continue
-        symbol = company_to_symbol.get(company_id)
-        if not symbol or symbol not in universe:
-            continue
-        edition_symbols.setdefault(edition_id, []).append(symbol)
-        edition_quote_detail.setdefault(edition_id, {})[symbol] = company_id
-
-    # Attribute each edition to a quarter, then record coverage
-    covered: dict[str, dict[str, dict]] = {qname: {} for qname in eligible_by_quarter}
-    for edition_id, symbols in edition_symbols.items():
         quarter = _determine_edition_quarter(symbols, eligible_by_quarter)
         if not quarter:
             continue
-        ed_info = editions[edition_id]
+
         for sym in symbols:
             if sym in eligible_by_quarter[quarter] and sym not in covered[quarter]:
                 covered[quarter][sym] = {
-                    "edition_title": ed_info["title"],
-                    "edition_date": ed_info["date"],
+                    "edition_title": title,
+                    "edition_date": date,
                 }
 
     return covered

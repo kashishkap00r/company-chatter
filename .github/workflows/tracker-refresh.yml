@@ -33,6 +33,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore Chatter post cache
+        uses: actions/cache@v4
+        with:
+          path: data/tracker_chatter_cache.json
+          key: tracker-chatter-cache
+
       - name: Restore P&F post cache
         uses: actions/cache@v4
         with:
@@ -45,7 +51,7 @@ jobs:
       - name: Detect state changes
         id: changes
         run: |
-          if git diff --quiet -- data/tracker_state.json data/tracker_pnf_editions.json; then
+          if git diff --quiet -- data/tracker_state.json data/tracker_chatter_editions.json data/tracker_pnf_editions.json; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
@@ -56,7 +62,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/tracker_state.json data/tracker_pnf_editions.json
+          git add data/tracker_state.json data/tracker_chatter_editions.json data/tracker_pnf_editions.json
           git commit -m "chore: daily tracker state refresh"
           git pull --rebase origin main
           git push origin HEAD:main
