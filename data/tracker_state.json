@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-02T04:47:21+00:00",
+  "last_updated": "2026-04-02T10:20:16+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 85,
+        "chatter_covered": 0,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -240,9 +240,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -330,9 +330,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -348,9 +348,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -366,9 +366,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -384,9 +384,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -402,9 +402,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads in the data",
-            "covered_date": "2026-03-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -420,9 +420,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -492,9 +492,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -510,9 +510,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff",
-            "covered_date": "2026-02-27"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -582,9 +582,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -600,9 +600,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -618,9 +618,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -636,9 +636,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -672,9 +672,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -690,9 +690,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads in the data",
-            "covered_date": "2026-03-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -708,9 +708,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -726,9 +726,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads in the data",
-            "covered_date": "2026-03-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -798,9 +798,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -816,9 +816,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads in the data",
-            "covered_date": "2026-03-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -852,9 +852,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -924,9 +924,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Talking Points",
-            "covered_date": "2026-01-09"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -996,9 +996,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Talking Points",
-            "covered_date": "2026-01-09"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1032,9 +1032,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1086,9 +1086,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1122,9 +1122,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1158,9 +1158,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1194,9 +1194,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1248,9 +1248,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1320,9 +1320,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1428,9 +1428,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1500,9 +1500,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff",
-            "covered_date": "2026-02-27"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1590,9 +1590,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1680,9 +1680,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": false,
@@ -1716,9 +1716,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1734,9 +1734,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": false,
@@ -1752,9 +1752,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1788,9 +1788,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1806,9 +1806,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1824,9 +1824,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -1914,9 +1914,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2004,9 +2004,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff",
-            "covered_date": "2026-02-27"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2058,9 +2058,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2076,9 +2076,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2130,9 +2130,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": false,
@@ -2220,9 +2220,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2256,9 +2256,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2310,9 +2310,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff",
-            "covered_date": "2026-02-27"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2346,9 +2346,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2454,9 +2454,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2490,9 +2490,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2634,9 +2634,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2688,9 +2688,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2724,9 +2724,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2796,9 +2796,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2814,9 +2814,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2940,9 +2940,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2976,9 +2976,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3012,9 +3012,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3030,9 +3030,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3138,9 +3138,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3246,9 +3246,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3282,9 +3282,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads in the data",
-            "covered_date": "2026-03-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3318,9 +3318,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3336,9 +3336,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3444,9 +3444,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3480,9 +3480,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3624,9 +3624,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3642,9 +3642,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3678,9 +3678,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3696,9 +3696,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-03-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff",
-            "covered_date": "2026-02-27"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3732,9 +3732,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Talking Points",
-            "covered_date": "2026-01-09"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3858,9 +3858,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff",
-            "covered_date": "2026-02-27"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3930,9 +3930,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -3984,9 +3984,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4020,9 +4020,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Frameworks &amp; Forecasts",
-            "covered_date": "2026-02-06"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4074,9 +4074,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4092,9 +4092,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain",
-            "covered_date": "2026-03-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4146,9 +4146,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4164,9 +4164,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building",
-            "covered_date": "2026-02-13"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4182,9 +4182,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Bets and blueprints",
-            "covered_date": "2026-02-20"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4290,9 +4290,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4308,9 +4308,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions",
-            "covered_date": "2026-01-16"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4326,9 +4326,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures",
-            "covered_date": "2026-01-23"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4416,9 +4416,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4452,9 +4452,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Anchor &amp; Ambitions",
-            "covered_date": "2026-01-30"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
