@@ -92,11 +92,11 @@ def _is_chatter_post(title: str) -> bool:
 
 
 class CompanyHeadingExtractor(HTMLParser):
-    """Extract company names from H3 headings in Chatter articles.
+    """Extract company names from H2 headings in Chatter articles.
 
-    Chatter articles use H3 headings in pipe-delimited format:
-    'Company Name | Cap Size | Sector'
-    H2 headings are sector headers and are ignored.
+    Chatter articles use H2 headings in pipe-delimited format:
+    'Company Name | Cap Size | Sector'. The ``"|" in text`` guard skips
+    any non-company H2s (intros, section titles) that lack the delimiter.
     """
 
     def __init__(self) -> None:
@@ -115,7 +115,7 @@ class CompanyHeadingExtractor(HTMLParser):
             return
         if self._ignored_depth > 0:
             return
-        if self._in_article and tag == "h3":
+        if self._in_article and tag == "h2":
             self._in_heading = True
             self._heading_text = []
 
@@ -123,7 +123,7 @@ class CompanyHeadingExtractor(HTMLParser):
         if tag in {"script", "style"} and self._ignored_depth > 0:
             self._ignored_depth -= 1
             return
-        if tag == "h3" and self._in_heading:
+        if tag == "h2" and self._in_heading:
             text = " ".join(" ".join(self._heading_text).split()).strip()
             if text and len(text) < 150 and "|" in text:
                 self.companies.append(text)

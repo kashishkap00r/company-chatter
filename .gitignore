@@ -9,3 +9,4 @@ __pycache__/
 .DS_Store
 data/chatter_post_cache.json
 data/tracker_pnf_cache.json
+data/tracker_chatter_cache.json
