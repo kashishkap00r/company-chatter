@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-10T09:25:29+00:00",
+  "last_updated": "2026-04-11T04:38:07+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 102,
+        "chatter_covered": 113,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -1104,9 +1104,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -2436,9 +2436,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -2886,9 +2886,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-03-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -2994,9 +2994,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -3084,9 +3084,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -3174,9 +3174,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -3408,9 +3408,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -3462,9 +3462,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -3588,9 +3588,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -3660,9 +3660,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
@@ -4038,9 +4038,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
+            "covered_date": "2026-04-10"
           },
           "pnf": {
             "eligible": true,
