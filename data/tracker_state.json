@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-21T05:05:51+00:00",
+  "last_updated": "2026-04-22T05:03:46+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4533,7 +4533,7 @@
         "total_companies": 250,
         "chatter_eligible": 7,
         "chatter_covered": 0,
-        "pnf_eligible": 9,
+        "pnf_eligible": 12,
         "pnf_covered": 0
       },
       "companies": [
@@ -4548,8 +4548,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7842,8 +7842,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8508,8 +8508,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
