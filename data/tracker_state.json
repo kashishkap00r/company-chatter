@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-24T05:25:22+00:00",
+  "last_updated": "2026-04-25T04:53:56+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 116,
+        "chatter_covered": 117,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -1681,8 +1681,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions - The Chatter by Zerodha",
-            "covered_date": "2026-01-16"
+            "covered_in_edition": "The Chatter: HDFC, Groww, Yes Bank, Havells &amp; More",
+            "covered_date": "2026-04-24"
           },
           "pnf": {
             "eligible": false,
@@ -3319,8 +3319,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain - The Chatter by Zerodha",
-            "covered_date": "2026-03-20"
+            "covered_in_edition": "The Chatter: HDFC, Groww, Yes Bank, Havells &amp; More",
+            "covered_date": "2026-04-24"
           },
           "pnf": {
             "eligible": true,
@@ -3948,9 +3948,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: HDFC, Groww, Yes Bank, Havells &amp; More",
+            "covered_date": "2026-04-24"
           },
           "pnf": {
             "eligible": true,
@@ -3985,8 +3985,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Threads and Tensions - The Chatter by Zerodha",
-            "covered_date": "2026-01-16"
+            "covered_in_edition": "The Chatter: HDFC, Groww, Yes Bank, Havells &amp; More",
+            "covered_date": "2026-04-24"
           },
           "pnf": {
             "eligible": true,
@@ -4093,8 +4093,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain - The Chatter by Zerodha",
-            "covered_date": "2026-03-20"
+            "covered_in_edition": "The Chatter: HDFC, Groww, Yes Bank, Havells &amp; More",
+            "covered_date": "2026-04-24"
           },
           "pnf": {
             "eligible": true,
@@ -4489,8 +4489,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Swiggy, Hyundai, Shree Cement &amp; More",
-            "covered_date": "2026-03-27"
+            "covered_in_edition": "The Chatter: HDFC, Groww, Yes Bank, Havells &amp; More",
+            "covered_date": "2026-04-24"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 11,
+        "chatter_eligible": 18,
         "chatter_covered": 0,
-        "pnf_eligible": 17,
+        "pnf_eligible": 24,
         "pnf_covered": 0
       },
       "companies": [
@@ -5585,8 +5585,8 @@
           "symbol": "CRISIL",
           "name": "CRISIL Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6179,8 +6179,8 @@
           "symbol": "HAVELLS",
           "name": "Havells India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6197,8 +6197,8 @@
           "symbol": "HCLTECH",
           "name": "HCL Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6366,8 +6366,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6431,8 +6431,8 @@
           "symbol": "ICICIBANK",
           "name": "ICICI Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6618,8 +6618,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7140,8 +7140,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7176,8 +7176,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7266,8 +7266,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8112,8 +8112,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8249,15 +8249,15 @@
           "symbol": "SHRIRAMFIN",
           "name": "Shriram Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8501,8 +8501,8 @@
           "symbol": "TATAELXSI",
           "name": "Tata Elxsi Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -9005,8 +9005,8 @@
           "symbol": "YESBANK",
           "name": "Yes Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
