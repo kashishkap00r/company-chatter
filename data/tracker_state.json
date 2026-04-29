@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-28T05:49:07+00:00",
+  "last_updated": "2026-04-29T05:45:19+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 23,
+        "chatter_eligible": 30,
         "chatter_covered": 0,
-        "pnf_eligible": 35,
+        "pnf_eligible": 38,
         "pnf_covered": 0
       },
       "companies": [
@@ -4685,8 +4685,8 @@
           "symbol": "ADANIGREEN",
           "name": "Adani Green Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4998,8 +4998,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5646,8 +5646,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6359,8 +6359,8 @@
           "symbol": "HINDZINC",
           "name": "Hindustan Zinc Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6611,8 +6611,8 @@
           "symbol": "INDUSINDBK",
           "name": "IndusInd Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7338,8 +7338,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7835,8 +7835,8 @@
           "symbol": "PERSISTENT",
           "name": "Persistent Systems Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8177,8 +8177,8 @@
           "symbol": "SBILIFE",
           "name": "SBI Life Insurance Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8465,8 +8465,8 @@
           "symbol": "TATACOMM",
           "name": "Tata Communications Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8609,8 +8609,8 @@
           "symbol": "TECHM",
           "name": "Tech Mahindra Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
