@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-04-30T05:48:42+00:00",
+  "last_updated": "2026-05-01T06:00:06+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 34,
+        "chatter_eligible": 39,
         "chatter_covered": 0,
-        "pnf_eligible": 47,
+        "pnf_eligible": 56,
         "pnf_covered": 0
       },
       "companies": [
@@ -4649,8 +4649,8 @@
           "symbol": "ADANIENSOL",
           "name": "Adani Energy Solutions Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4674,8 +4674,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4710,8 +4710,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5052,8 +5052,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5448,8 +5448,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6521,8 +6521,8 @@
           "symbol": "IDFCFIRSTB",
           "name": "IDFC First Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6672,8 +6672,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7133,8 +7133,8 @@
           "symbol": "LODHA",
           "name": "Lodha Developers Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7259,8 +7259,8 @@
           "symbol": "M&MFIN",
           "name": "Mahindra & Mahindra Financial Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7374,8 +7374,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7536,8 +7536,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7907,8 +7907,8 @@
           "symbol": "PHOENIXLTD",
           "name": "The Phoenix Mills Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8250,7 +8250,7 @@
           "name": "Shriram Finance Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-04-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8328,8 +8328,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8454,8 +8454,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
