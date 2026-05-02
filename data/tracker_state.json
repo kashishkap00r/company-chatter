@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-01T06:00:06+00:00",
+  "last_updated": "2026-05-02T05:28:52+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 117,
+        "chatter_covered": 118,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -1842,9 +1842,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, Infosys, VBL, Hind Zinc &amp; More",
+            "covered_date": "2026-05-02"
           },
           "pnf": {
             "eligible": true,
@@ -3589,8 +3589,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
-            "covered_date": "2026-04-10"
+            "covered_in_edition": "The Chatter: Reliance, Infosys, VBL, Hind Zinc &amp; More",
+            "covered_date": "2026-05-02"
           },
           "pnf": {
             "eligible": true,
@@ -4381,8 +4381,8 @@
             "eligible": true,
             "eligible_since": "2026-02-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Swiggy, Hyundai, Shree Cement &amp; More",
-            "covered_date": "2026-03-27"
+            "covered_in_edition": "The Chatter: Reliance, Infosys, VBL, Hind Zinc &amp; More",
+            "covered_date": "2026-05-02"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 39,
+        "chatter_eligible": 41,
         "chatter_covered": 0,
         "pnf_eligible": 56,
         "pnf_covered": 0
@@ -5639,8 +5639,8 @@
           "symbol": "DALBHARAT",
           "name": "Dalmia Bharat Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8807,8 +8807,8 @@
           "symbol": "ULTRACEMCO",
           "name": "UltraTech Cement Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
