@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-02T05:28:52+00:00",
+  "last_updated": "2026-05-03T05:47:55+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 41,
+        "chatter_eligible": 43,
         "chatter_covered": 0,
-        "pnf_eligible": 56,
+        "pnf_eligible": 60,
         "pnf_covered": 0
       },
       "companies": [
@@ -4836,8 +4836,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5736,8 +5736,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6834,8 +6834,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7014,8 +7014,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8159,8 +8159,8 @@
           "symbol": "SBICARD",
           "name": "SBI Cards and Payment Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8789,8 +8789,8 @@
           "symbol": "UCOBANK",
           "name": "UCO Bank",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
