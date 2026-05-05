@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-04T05:53:24+00:00",
+  "last_updated": "2026-05-05T05:34:26+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 43,
+        "chatter_eligible": 52,
         "chatter_covered": 0,
-        "pnf_eligible": 60,
+        "pnf_eligible": 67,
         "pnf_covered": 0
       },
       "companies": [
@@ -4620,8 +4620,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4638,8 +4638,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4800,8 +4800,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5063,8 +5063,8 @@
           "symbol": "BAJAJHFL",
           "name": "Bajaj Housing Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5099,8 +5099,8 @@
           "symbol": "BAJFINANCE",
           "name": "Bajaj Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6096,8 +6096,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6701,8 +6701,8 @@
           "symbol": "IPCALAB",
           "name": "IPCA Laboratories Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6888,8 +6888,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6996,8 +6996,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7331,8 +7331,8 @@
           "symbol": "MARUTI",
           "name": "Maruti Suzuki India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7457,8 +7457,8 @@
           "symbol": "MPHASIS",
           "name": "MphasiS Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7529,8 +7529,8 @@
           "symbol": "NATIONALUM",
           "name": "National Aluminium Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8250,7 +8250,7 @@
           "name": "Shriram Finance Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-24",
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8393,8 +8393,8 @@
           "symbol": "SUPREMEIND",
           "name": "Supreme Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8580,8 +8580,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8897,8 +8897,8 @@
           "symbol": "VBL",
           "name": "Varun Beverages Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8915,8 +8915,8 @@
           "symbol": "VEDL",
           "name": "Vedanta Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-05",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
