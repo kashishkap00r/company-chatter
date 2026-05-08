@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-07T05:50:14+00:00",
+  "last_updated": "2026-05-08T05:22:15+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 69,
+        "chatter_eligible": 73,
         "chatter_covered": 0,
-        "pnf_eligible": 75,
+        "pnf_eligible": 83,
         "pnf_covered": 0
       },
       "companies": [
@@ -4667,8 +4667,8 @@
           "symbol": "ADANIENT",
           "name": "Adani Enterprises Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5045,8 +5045,8 @@
           "symbol": "BAJAJFINSV",
           "name": "Bajaj Finserv Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5304,8 +5304,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5322,8 +5322,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5376,8 +5376,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5628,8 +5628,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5826,8 +5826,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6341,8 +6341,8 @@
           "symbol": "HINDUNILVR",
           "name": "Hindustan Unilever Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7230,8 +7230,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7439,8 +7439,8 @@
           "symbol": "MOTILALOFS",
           "name": "Motilal Oswal Financial Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7932,8 +7932,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8634,8 +8634,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-07",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
