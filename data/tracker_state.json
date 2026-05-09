@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-08T05:22:15+00:00",
+  "last_updated": "2026-05-09T05:39:53+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 118,
+        "chatter_covered": 122,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -204,9 +204,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -511,8 +511,8 @@
             "eligible": true,
             "eligible_since": "2026-02-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Patience &amp; payoff - The Chatter by Zerodha",
-            "covered_date": "2026-02-27"
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -709,8 +709,8 @@
             "eligible": true,
             "eligible_since": "2026-02-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building - The Chatter by Zerodha",
-            "covered_date": "2026-02-13"
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -870,9 +870,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": false,
@@ -1536,9 +1536,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -2598,9 +2598,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -2635,8 +2635,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reading the terrain - The Chatter by Zerodha",
-            "covered_date": "2026-03-20"
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -2725,8 +2725,8 @@
             "eligible": true,
             "eligible_since": "2026-02-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building - The Chatter by Zerodha",
-            "covered_date": "2026-02-13"
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -3445,8 +3445,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Tailwinds building - The Chatter by Zerodha",
-            "covered_date": "2026-02-13"
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -3481,8 +3481,8 @@
             "eligible": true,
             "eligible_since": "2026-01-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Weights and Measures - The Chatter by Zerodha",
-            "covered_date": "2026-01-23"
+            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
+            "covered_date": "2026-05-08"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 73,
+        "chatter_eligible": 81,
         "chatter_covered": 0,
-        "pnf_eligible": 83,
+        "pnf_eligible": 91,
         "pnf_covered": 0
       },
       "companies": [
@@ -4613,8 +4613,8 @@
           "symbol": "ABCAPITAL",
           "name": "Aditya Birla Capital Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4703,8 +4703,8 @@
           "symbol": "ADANIPORTS",
           "name": "Adani Ports and Special Economic Zone Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5124,8 +5124,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5142,8 +5142,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5160,8 +5160,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5574,8 +5574,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6612,7 +6612,7 @@
           "name": "IndusInd Bank Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-28",
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6629,8 +6629,8 @@
           "symbol": "INDUSTOWER",
           "name": "Indus Towers Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6925,7 +6925,7 @@
           },
           "pnf": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6978,8 +6978,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7007,8 +7007,8 @@
           "symbol": "KOTAKBANK",
           "name": "Kotak Mahindra Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7241,8 +7241,8 @@
           "symbol": "M&M",
           "name": "Mahindra & Mahindra Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7997,8 +7997,8 @@
           "symbol": "POLYCAB",
           "name": "Polycab India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8202,8 +8202,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8490,8 +8490,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8573,8 +8573,8 @@
           "symbol": "TATATECH",
           "name": "Tata Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8670,8 +8670,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-08",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8969,8 +8969,8 @@
           "symbol": "WAAREEENER",
           "name": "Waaree Energies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
