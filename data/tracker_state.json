@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-10T05:55:53+00:00",
+  "last_updated": "2026-05-11T06:18:27+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 82,
+        "chatter_eligible": 85,
         "chatter_covered": 0,
         "pnf_eligible": 91,
         "pnf_covered": 0
@@ -4631,8 +4631,8 @@
           "symbol": "ACC",
           "name": "ACC Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4793,8 +4793,8 @@
           "symbol": "AMBUJACEM",
           "name": "Ambuja Cements Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5009,8 +5009,8 @@
           "symbol": "AXISBANK",
           "name": "Axis Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
