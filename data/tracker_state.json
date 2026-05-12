@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-11T06:18:27+00:00",
+  "last_updated": "2026-05-12T05:57:08+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 85,
+        "chatter_eligible": 96,
         "chatter_covered": 0,
-        "pnf_eligible": 91,
+        "pnf_eligible": 97,
         "pnf_covered": 0
       },
       "companies": [
@@ -5225,8 +5225,8 @@
           "symbol": "BHARATFORG",
           "name": "Bharat Forge Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5369,8 +5369,8 @@
           "symbol": "BRITANNIA",
           "name": "Britannia Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5412,8 +5412,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5441,8 +5441,8 @@
           "symbol": "CHOLAFIN",
           "name": "Cholamandalam Investment and Finance Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5819,8 +5819,8 @@
           "symbol": "ESCORTS",
           "name": "Escorts Kubota Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5855,8 +5855,8 @@
           "symbol": "EXIDEIND",
           "name": "Exide Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6269,8 +6269,8 @@
           "symbol": "HEROMOTOCO",
           "name": "Hero MotoCorp Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6564,8 +6564,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6906,8 +6906,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6971,8 +6971,8 @@
           "symbol": "KALYANKJIL",
           "name": "Kalyan Jewellers India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7115,8 +7115,8 @@
           "symbol": "LLOYDSME",
           "name": "Lloyds Metals And Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7332,7 +7332,7 @@
           "name": "Maruti Suzuki India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-04",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7608,8 +7608,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7853,8 +7853,8 @@
           "symbol": "PETRONET",
           "name": "Petronet LNG Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7986,8 +7986,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8231,8 +8231,8 @@
           "symbol": "SHREECEM",
           "name": "SHREE CEMENT LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8250,7 +8250,7 @@
           "name": "Shriram Finance Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8627,8 +8627,8 @@
           "symbol": "THERMAX",
           "name": "Thermax Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-12",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8886,8 +8886,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-11",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
