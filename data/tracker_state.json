@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-12T05:57:08+00:00",
+  "last_updated": "2026-05-13T06:07:23+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 96,
+        "chatter_eligible": 108,
         "chatter_covered": 0,
-        "pnf_eligible": 97,
+        "pnf_eligible": 101,
         "pnf_covered": 0
       },
       "companies": [
@@ -5027,8 +5027,8 @@
           "symbol": "BAJAJ-AUTO",
           "name": "Bajaj Auto Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5315,8 +5315,8 @@
           "symbol": "BLUESTARCO",
           "name": "Blue Star Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5423,8 +5423,8 @@
           "symbol": "CGPOWER",
           "name": "CG Power and Industrial Solutions Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5621,8 +5621,8 @@
           "symbol": "DABUR",
           "name": "Dabur India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5754,8 +5754,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-12",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6917,8 +6917,8 @@
           "symbol": "JSWINFRA",
           "name": "JSW Infrastructure Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6989,8 +6989,8 @@
           "symbol": "KEI",
           "name": "KEI Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7151,8 +7151,8 @@
           "symbol": "LT",
           "name": "Larsen & Toubro Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7313,8 +7313,8 @@
           "symbol": "MARICO",
           "name": "Marico Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7410,8 +7410,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-12",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7817,8 +7817,8 @@
           "symbol": "PAYTM",
           "name": "One 97 Communications Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7961,8 +7961,8 @@
           "symbol": "PNB",
           "name": "Punjab National Bank",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7979,8 +7979,8 @@
           "symbol": "POLICYBZR",
           "name": "PB Fintech Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8483,8 +8483,8 @@
           "symbol": "TATACONSUM",
           "name": "TATA CONSUMER PRODUCTS LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8544,8 +8544,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-12",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8628,7 +8628,7 @@
           "name": "Thermax Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-12",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8724,8 +8724,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-12",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
