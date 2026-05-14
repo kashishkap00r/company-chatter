@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-13T06:07:23+00:00",
+  "last_updated": "2026-05-14T06:05:40+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 108,
+        "chatter_eligible": 112,
         "chatter_covered": 0,
-        "pnf_eligible": 101,
+        "pnf_eligible": 105,
         "pnf_covered": 0
       },
       "companies": [
@@ -5387,8 +5387,8 @@
           "symbol": "BSE",
           "name": "BSE Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5405,8 +5405,8 @@
           "symbol": "CANBK",
           "name": "Canara Bank",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5466,8 +5466,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-13",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5718,8 +5718,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-13",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6053,8 +6053,8 @@
           "symbol": "GODREJCP",
           "name": "Godrej Consumer Products Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6330,8 +6330,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-13",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7025,8 +7025,8 @@
           "symbol": "KPITTECH",
           "name": "KPIT Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7068,8 +7068,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-13",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7116,7 +7116,7 @@
           "name": "Lloyds Metals And Energy Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-11",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
