@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-14T06:05:40+00:00",
+  "last_updated": "2026-05-15T06:13:46+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 112,
+        "chatter_eligible": 121,
         "chatter_covered": 0,
-        "pnf_eligible": 105,
+        "pnf_eligible": 113,
         "pnf_covered": 0
       },
       "companies": [
@@ -5117,8 +5117,8 @@
           "symbol": "BALKRISIND",
           "name": "Balkrishna Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5135,8 +5135,8 @@
           "symbol": "BANKBARODA",
           "name": "Bank of Baroda",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5207,8 +5207,8 @@
           "symbol": "BERGEPAINT",
           "name": "Berger Paints (I) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5297,8 +5297,8 @@
           "symbol": "BIOCON",
           "name": "Biocon Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5790,8 +5790,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6402,8 +6402,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6557,8 +6557,8 @@
           "symbol": "INDHOTEL",
           "name": "The Indian Hotels Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6665,8 +6665,8 @@
           "symbol": "IOB",
           "name": "Indian Overseas Bank",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7050,8 +7050,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7223,8 +7223,8 @@
           "symbol": "LUPIN",
           "name": "Lupin Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7392,8 +7392,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7500,8 +7500,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8429,8 +8429,8 @@
           "symbol": "SWIGGY",
           "name": "Swiggy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8663,8 +8663,8 @@
           "symbol": "TITAN",
           "name": "Titan Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8688,8 +8688,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8790,7 +8790,7 @@
           "name": "UCO Bank",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8940,8 +8940,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8958,8 +8958,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
