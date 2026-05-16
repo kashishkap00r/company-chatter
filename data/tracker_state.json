@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-15T06:13:46+00:00",
+  "last_updated": "2026-05-16T05:45:13+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 122,
+        "chatter_covered": 127,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -690,9 +690,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
+            "covered_date": "2026-05-15"
           },
           "pnf": {
             "eligible": true,
@@ -1176,9 +1176,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
+            "covered_date": "2026-05-15"
           },
           "pnf": {
             "eligible": true,
@@ -2040,9 +2040,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
+            "covered_date": "2026-05-15"
           },
           "pnf": {
             "eligible": true,
@@ -2418,9 +2418,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
+            "covered_date": "2026-05-15"
           },
           "pnf": {
             "eligible": true,
@@ -3966,9 +3966,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-01-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
+            "covered_date": "2026-05-15"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 121,
+        "chatter_eligible": 132,
         "chatter_covered": 0,
-        "pnf_eligible": 113,
+        "pnf_eligible": 120,
         "pnf_covered": 0
       },
       "companies": [
@@ -4872,8 +4872,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5153,8 +5153,8 @@
           "symbol": "BANKINDIA",
           "name": "Bank of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5459,8 +5459,8 @@
           "symbol": "CIPLA",
           "name": "Cipla Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5567,8 +5567,8 @@
           "symbol": "COROMANDEL",
           "name": "Coromandel International Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5693,8 +5693,8 @@
           "symbol": "DIXON",
           "name": "Dixon Technologies (India) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6078,8 +6078,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6413,8 +6413,8 @@
           "symbol": "HYUNDAI",
           "name": "Hyundai Motor India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7709,8 +7709,8 @@
           "symbol": "OBEROIRLTY",
           "name": "Oberoi Realty Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7925,8 +7925,8 @@
           "symbol": "PIDILITIND",
           "name": "Pidilite Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8058,8 +8058,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8148,8 +8148,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8195,8 +8195,8 @@
           "symbol": "SBIN",
           "name": "State Bank of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8310,8 +8310,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8340,7 +8340,7 @@
           "name": "SRF Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-06",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8537,8 +8537,8 @@
           "symbol": "TATAPOWER",
           "name": "Tata Power Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8562,8 +8562,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8717,8 +8717,8 @@
           "symbol": "TORNTPOWER",
           "name": "Torrent Power Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8850,8 +8850,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8879,8 +8879,8 @@
           "symbol": "UPL",
           "name": "UPL Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-15",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
