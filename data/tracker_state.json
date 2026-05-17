@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-16T05:45:13+00:00",
+  "last_updated": "2026-05-17T06:05:42+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4533,7 +4533,7 @@
         "total_companies": 250,
         "chatter_eligible": 132,
         "chatter_covered": 0,
-        "pnf_eligible": 120,
+        "pnf_eligible": 121,
         "pnf_covered": 0
       },
       "companies": [
@@ -8232,7 +8232,7 @@
           "name": "SHREE CEMENT LIMITED",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-11",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8868,8 +8868,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-16",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
