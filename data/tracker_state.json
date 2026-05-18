@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-17T06:05:42+00:00",
+  "last_updated": "2026-05-18T06:34:44+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 132,
+        "chatter_eligible": 133,
         "chatter_covered": 0,
-        "pnf_eligible": 121,
+        "pnf_eligible": 122,
         "pnf_covered": 0
       },
       "companies": [
@@ -8022,8 +8022,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-18",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8645,8 +8645,8 @@
           "symbol": "TIINDIA",
           "name": "Tube Investments of India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
