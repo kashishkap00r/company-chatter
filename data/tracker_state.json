@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-20T06:28:17+00:00",
+  "last_updated": "2026-05-21T06:29:50+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 141,
+        "chatter_eligible": 151,
         "chatter_covered": 0,
-        "pnf_eligible": 129,
+        "pnf_eligible": 134,
         "pnf_covered": 0
       },
       "companies": [
@@ -4854,8 +4854,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-20",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4926,8 +4926,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-20",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5189,8 +5189,8 @@
           "symbol": "BEL",
           "name": "Bharat Electronics Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-20",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5243,8 +5243,8 @@
           "symbol": "BHARTIARTL",
           "name": "Bharti Airtel Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5261,8 +5261,8 @@
           "symbol": "BHARTIHEXA",
           "name": "Bharti Hexacom Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6114,8 +6114,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-20",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6960,8 +6960,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-20",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7061,8 +7061,8 @@
           "symbol": "LICHSGFIN",
           "name": "LIC Housing Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7428,8 +7428,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-20",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7493,8 +7493,8 @@
           "symbol": "MUTHOOTFIN",
           "name": "Muthoot Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8051,8 +8051,8 @@
           "symbol": "PREMIERENE",
           "name": "Premier Energies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8141,8 +8141,8 @@
           "symbol": "SAIL",
           "name": "Steel Authority of India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8555,8 +8555,8 @@
           "symbol": "TATASTEEL",
           "name": "Tata Steel Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8681,8 +8681,8 @@
           "symbol": "TMPV",
           "name": "Tata Motors Passenger Vehicles Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8951,8 +8951,8 @@
           "symbol": "VOLTAS",
           "name": "Voltas Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
