@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-21T06:29:50+00:00",
+  "last_updated": "2026-05-22T06:29:52+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 151,
+        "chatter_eligible": 156,
         "chatter_covered": 0,
-        "pnf_eligible": 134,
+        "pnf_eligible": 138,
         "pnf_covered": 0
       },
       "companies": [
@@ -4980,8 +4980,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5657,8 +5657,8 @@
           "symbol": "DEEPAKNTR",
           "name": "Deepak Nitrite Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6161,8 +6161,8 @@
           "symbol": "HAL",
           "name": "Hindustan Aeronautics Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6773,8 +6773,8 @@
           "symbol": "IRFC",
           "name": "Indian Railway Finance Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7086,8 +7086,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7332,7 +7332,7 @@
           "name": "Maruti Suzuki India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-05-04",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7698,8 +7698,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8076,8 +8076,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8285,8 +8285,8 @@
           "symbol": "SJVN",
           "name": "SJVN Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8843,8 +8843,8 @@
           "symbol": "UNITDSPR",
           "name": "United Spirits Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
