@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-22T06:29:52+00:00",
+  "last_updated": "2026-05-23T05:56:58+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 127,
+        "chatter_covered": 129,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -817,8 +817,8 @@
             "eligible": true,
             "eligible_since": "2026-02-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: TCS, ICICI Pru, HDB Financials &amp; More",
-            "covered_date": "2026-04-17"
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -2562,9 +2562,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -2778,9 +2778,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 156,
+        "chatter_eligible": 159,
         "chatter_covered": 0,
-        "pnf_eligible": 138,
+        "pnf_eligible": 145,
         "pnf_covered": 0
       },
       "companies": [
@@ -4668,7 +4668,7 @@
           "name": "Adani Enterprises Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-07",
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5190,7 +5190,7 @@
           "name": "Bharat Electronics Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-20",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5538,8 +5538,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5772,8 +5772,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5783,8 +5783,8 @@
           "symbol": "ENDURANCE",
           "name": "Endurance Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5934,8 +5934,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5952,8 +5952,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6935,8 +6935,8 @@
           "symbol": "JSWSTEEL",
           "name": "JSW Steel Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7188,14 +7188,14 @@
           "name": "LTIMindtree Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7554,8 +7554,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8706,8 +8706,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8861,8 +8861,8 @@
           "symbol": "UNOMINDA",
           "name": "UNO Minda Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
