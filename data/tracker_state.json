@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-23T05:56:58+00:00",
+  "last_updated": "2026-05-24T06:21:23+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4533,7 +4533,7 @@
         "total_companies": 250,
         "chatter_eligible": 159,
         "chatter_covered": 0,
-        "pnf_eligible": 145,
+        "pnf_eligible": 146,
         "pnf_covered": 0
       },
       "companies": [
@@ -5514,7 +5514,7 @@
           "name": "Coforge Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6870,8 +6870,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
