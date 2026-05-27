@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-26T06:26:33+00:00",
+  "last_updated": "2026-05-27T06:49:51+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 165,
+        "chatter_eligible": 175,
         "chatter_covered": 0,
-        "pnf_eligible": 148,
+        "pnf_eligible": 153,
         "pnf_covered": 0
       },
       "companies": [
@@ -4566,8 +4566,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4746,8 +4746,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-26",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4920,7 +4920,7 @@
           "name": "Astral Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-25",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5351,8 +5351,8 @@
           "symbol": "BPCL",
           "name": "Bharat Petroleum Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5747,8 +5747,8 @@
           "symbol": "DRREDDY",
           "name": "Dr. Reddy's Laboratories Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5765,8 +5765,8 @@
           "symbol": "EICHERMOT",
           "name": "Eicher Motors Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-26",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5916,8 +5916,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-26",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6143,8 +6143,8 @@
           "symbol": "GVT&D",
           "name": "GE Vernova T&D India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6305,8 +6305,8 @@
           "symbol": "HINDALCO",
           "name": "Hindalco Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6414,7 +6414,7 @@
           "name": "Hyundai Motor India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-15",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6684,7 +6684,7 @@
           "name": "Indian Oil Corporation Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-25",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6863,8 +6863,8 @@
           "symbol": "JKCEMENT",
           "name": "JK Cement Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7062,7 +7062,7 @@
           "name": "LIC Housing Finance Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-21",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7295,8 +7295,8 @@
           "symbol": "MANKIND",
           "name": "Mankind Pharma Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7356,8 +7356,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-26",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7644,8 +7644,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-26",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7691,8 +7691,8 @@
           "symbol": "NYKAA",
           "name": "FSN E-Commerce Ventures Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7871,8 +7871,8 @@
           "symbol": "PFC",
           "name": "Power Finance Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7943,8 +7943,8 @@
           "symbol": "PIIND",
           "name": "PI Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
