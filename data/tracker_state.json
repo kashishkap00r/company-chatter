@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-27T06:49:51+00:00",
+  "last_updated": "2026-05-28T06:31:30+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 209,
-        "chatter_covered": 129,
+        "chatter_covered": 127,
         "pnf_eligible": 223,
         "pnf_covered": 71
       },
@@ -817,8 +817,8 @@
             "eligible": true,
             "eligible_since": "2026-02-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
-            "covered_date": "2026-05-22"
+            "covered_in_edition": "The Chatter: TCS, ICICI Pru, HDB Financials &amp; More",
+            "covered_date": "2026-04-17"
           },
           "pnf": {
             "eligible": true,
@@ -2562,9 +2562,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
-            "covered_date": "2026-05-22"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -2778,9 +2778,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-02-01",
-            "covered": true,
-            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
-            "covered_date": "2026-05-22"
+            "covered": false,
+            "covered_in_edition": null,
+            "covered_date": null
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 175,
-        "chatter_covered": 0,
-        "pnf_eligible": 153,
+        "chatter_eligible": 183,
+        "chatter_covered": 9,
+        "pnf_eligible": 156,
         "pnf_covered": 0
       },
       "companies": [
@@ -4973,8 +4973,8 @@
           "symbol": "AUROPHARMA",
           "name": "Aurobindo Pharma Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5191,9 +5191,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": false,
@@ -5335,9 +5335,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-04-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -5353,9 +5353,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -5610,8 +5610,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5766,7 +5766,7 @@
           "name": "Eicher Motors Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-26",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5945,8 +5945,8 @@
           "symbol": "GAIL",
           "name": "GAIL (India) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6024,8 +6024,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6109,9 +6109,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -6307,9 +6307,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -6505,9 +6505,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": false,
@@ -6953,8 +6953,8 @@
           "symbol": "JUBLFOOD",
           "name": "Jubilant Foodworks Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7079,11 +7079,11 @@
           "symbol": "LICI",
           "name": "Life Insurance Corporation Of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "eligible": true,
+            "eligible_since": "2026-05-01",
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -7297,9 +7297,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -7421,8 +7421,8 @@
           "symbol": "MOTHERSON",
           "name": "Samvardhana Motherson International Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7626,8 +7626,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7655,8 +7655,8 @@
           "symbol": "NTPC",
           "name": "NTPC Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8069,8 +8069,8 @@
           "symbol": "PRESTIGE",
           "name": "Prestige Estates Projects Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8557,9 +8557,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
+            "covered_date": "2026-05-22"
           },
           "pnf": {
             "eligible": true,
@@ -8699,8 +8699,8 @@
           "symbol": "TORNTPHARM",
           "name": "Torrent Pharmaceuticals Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-05-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8844,7 +8844,7 @@
           "name": "United Spirits Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-21",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
