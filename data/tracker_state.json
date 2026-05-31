@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-05-30T06:05:17+00:00",
+  "last_updated": "2026-05-31T06:42:17+00:00",
   "quarters": [
     {
       "name": "Q3 FY26",
@@ -4794,7 +4794,7 @@
           "name": "Ambuja Cements Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
