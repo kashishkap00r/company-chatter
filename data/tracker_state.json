@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-01T07:22:35+00:00",
+  "last_updated": "2026-06-02T07:01:47+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -12,9 +12,9 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 196,
+        "chatter_eligible": 198,
         "chatter_covered": 60,
-        "pnf_eligible": 163,
+        "pnf_eligible": 165,
         "pnf_covered": 3
       },
       "companies": [
@@ -256,8 +256,8 @@
           "symbol": "ALKEM",
           "name": "Alkem Laboratories Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -1613,8 +1613,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -1625,7 +1625,7 @@
           "name": "GE Vernova T&D India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3514,8 +3514,8 @@
           "symbol": "POWERINDIA",
           "name": "Hitachi Energy India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4493,8 +4493,8 @@
             "covered_date": "2026-04-24"
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
