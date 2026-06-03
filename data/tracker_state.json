@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-02T07:01:47+00:00",
+  "last_updated": "2026-06-03T07:13:33+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -12,7 +12,7 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 198,
+        "chatter_eligible": 203,
         "chatter_covered": 60,
         "pnf_eligible": 165,
         "pnf_covered": 3
@@ -203,7 +203,7 @@
           "name": "Adani Power Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-06-01",
             "covered": true,
             "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
             "covered_date": "2026-05-08"
@@ -1030,8 +1030,8 @@
           "symbol": "CONCOR",
           "name": "Container Corporation of India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -1805,7 +1805,7 @@
           "name": "Hindustan Petroleum Corporation Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-19",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -2669,7 +2669,7 @@
           "name": "LTIMindtree Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3100,8 +3100,8 @@
           "symbol": "NLCINDIA",
           "name": "NLC India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3118,8 +3118,8 @@
           "symbol": "NMDC",
           "name": "NMDC Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3604,8 +3604,8 @@
           "symbol": "RVNL",
           "name": "Rail Vikas Nigam Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3892,8 +3892,8 @@
           "symbol": "SUZLON",
           "name": "Suzlon Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
