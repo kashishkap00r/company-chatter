@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-08T07:08:01+00:00",
+  "last_updated": "2026-06-09T06:29:16+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -12,7 +12,7 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 212,
+        "chatter_eligible": 213,
         "chatter_covered": 68,
         "pnf_eligible": 166,
         "pnf_covered": 3
@@ -1444,8 +1444,8 @@
           "symbol": "GICRE",
           "name": "General Insurance Corporation of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -2201,7 +2201,7 @@
           "name": "IRB Infrastructure Developers Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-04-01",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3191,7 +3191,7 @@
           "name": "Oberoi Realty Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-15",
+            "eligible_since": "2026-05-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
