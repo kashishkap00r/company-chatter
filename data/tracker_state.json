@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-09T06:29:16+00:00",
+  "last_updated": "2026-06-10T06:51:58+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -3281,7 +3281,7 @@
           "name": "Patanjali Foods Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-06-05",
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
