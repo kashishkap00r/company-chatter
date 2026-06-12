@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-11T07:11:46+00:00",
+  "last_updated": "2026-06-12T07:04:00+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -3101,7 +3101,7 @@
           "name": "NLC India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-06-01",
+            "eligible_since": "2026-06-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
