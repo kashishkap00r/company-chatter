@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-12T07:04:00+00:00",
+  "last_updated": "2026-06-13T06:35:17+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -14,7 +14,7 @@
         "total_companies": 250,
         "chatter_eligible": 213,
         "chatter_covered": 68,
-        "pnf_eligible": 167,
+        "pnf_eligible": 168,
         "pnf_covered": 3
       },
       "companies": [
@@ -383,7 +383,7 @@
           "name": "Asian Paints Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-06-01",
             "covered": true,
             "covered_in_edition": "The Chatter: Asian Paints, NMDC, IndiGo, Glenmark &amp; More",
             "covered_date": "2026-06-05"
@@ -3899,8 +3899,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-12",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4075,8 +4075,8 @@
             "eligible": true,
             "eligible_since": "2026-04-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: TCS, ICICI Pru, HDB Financials &amp; More",
-            "covered_date": "2026-04-17"
+            "covered_in_edition": "The Chatter: Asian Paints, NMDC, IndiGo, Glenmark &amp; More",
+            "covered_date": "2026-06-12"
           },
           "pnf": {
             "eligible": false,
