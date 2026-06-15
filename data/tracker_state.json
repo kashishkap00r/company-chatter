@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-14T07:01:47+00:00",
+  "last_updated": "2026-06-15T07:43:42+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -2813,7 +2813,7 @@
           "name": "Maruti Suzuki India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-04",
+            "eligible_since": "2026-04-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
