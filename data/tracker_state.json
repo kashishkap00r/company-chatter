@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-16T07:48:29+00:00",
+  "last_updated": "2026-06-17T07:34:07+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -12,7 +12,7 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 214,
+        "chatter_eligible": 215,
         "chatter_covered": 68,
         "pnf_eligible": 168,
         "pnf_covered": 3
@@ -3370,8 +3370,8 @@
           "symbol": "PGHH",
           "name": "Procter & Gamble Hygiene and Health Care Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
