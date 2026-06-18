@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-17T07:34:07+00:00",
+  "last_updated": "2026-06-18T07:13:14+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -3173,7 +3173,7 @@
           "name": "FSN E-Commerce Ventures Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-06-01",
             "covered": true,
             "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
             "covered_date": "2026-04-10"
@@ -4163,7 +4163,7 @@
           "name": "Tata Motors Passenger Vehicles Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-06-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
