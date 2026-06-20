@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-06-19T07:33:35+00:00",
+  "last_updated": "2026-06-20T06:51:54+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -1607,7 +1607,7 @@
           "name": "Gujarat Gas Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-05-01",
+            "eligible_since": "2026-06-01",
             "covered": true,
             "covered_in_edition": "The Chatter: Havells, Ambuja, Cipla &amp; More",
             "covered_date": "2026-04-03"
