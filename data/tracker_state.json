@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-14T05:19:48+00:00",
+  "last_updated": "2026-07-15T05:19:40+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 2,
+        "chatter_eligible": 3,
         "chatter_covered": 0,
-        "pnf_eligible": 8,
+        "pnf_eligible": 10,
         "pnf_covered": 0
       },
       "companies": [
@@ -7212,8 +7212,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8508,8 +8508,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-14",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8591,8 +8591,8 @@
           "symbol": "TCS",
           "name": "Tata Consultancy Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
