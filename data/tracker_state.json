@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-19T05:41:16+00:00",
+  "last_updated": "2026-07-20T06:00:03+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 11,
+        "chatter_eligible": 12,
         "chatter_covered": 0,
         "pnf_eligible": 26,
         "pnf_covered": 0
@@ -8105,8 +8105,8 @@
           "symbol": "RELIANCE",
           "name": "Reliance Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
