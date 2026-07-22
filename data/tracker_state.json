@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-21T05:41:11+00:00",
+  "last_updated": "2026-07-22T05:40:26+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 16,
+        "chatter_eligible": 21,
         "chatter_covered": 0,
-        "pnf_eligible": 28,
+        "pnf_eligible": 32,
         "pnf_covered": 0
       },
       "companies": [
@@ -4541,8 +4541,8 @@
           "symbol": "360ONE",
           "name": "360 ONE WAM LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5592,8 +5592,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6179,8 +6179,8 @@
           "symbol": "HAVELLS",
           "name": "Havells India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6564,8 +6564,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6863,8 +6863,8 @@
           "symbol": "JKCEMENT",
           "name": "JK Cement Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6924,8 +6924,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7266,8 +7266,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-21",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8573,8 +8573,8 @@
           "symbol": "TATATECH",
           "name": "Tata Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8825,8 +8825,8 @@
           "symbol": "UNIONBANK",
           "name": "Union Bank of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
