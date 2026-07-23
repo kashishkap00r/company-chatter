@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-22T05:40:26+00:00",
+  "last_updated": "2026-07-23T05:45:08+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 80,
+        "chatter_covered": 85,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -492,9 +492,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-04-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
+            "covered_date": "2026-07-22"
           },
           "pnf": {
             "eligible": true,
@@ -3192,9 +3192,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
+            "covered_date": "2026-07-22"
           },
           "pnf": {
             "eligible": false,
@@ -3300,9 +3300,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
+            "covered_date": "2026-07-22"
           },
           "pnf": {
             "eligible": false,
@@ -3589,8 +3589,8 @@
             "eligible": true,
             "eligible_since": "2026-04-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reliance, Infosys, VBL, Hind Zinc &amp; More",
-            "covered_date": "2026-05-02"
+            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
+            "covered_date": "2026-07-22"
           },
           "pnf": {
             "eligible": true,
@@ -4020,9 +4020,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
+            "covered_date": "2026-07-22"
           },
           "pnf": {
             "eligible": true,
@@ -4290,9 +4290,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
+            "covered_date": "2026-07-22"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 21,
+        "chatter_eligible": 26,
         "chatter_covered": 0,
-        "pnf_eligible": 32,
+        "pnf_eligible": 43,
         "pnf_covered": 0
       },
       "companies": [
@@ -4728,8 +4728,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5358,8 +5358,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5754,8 +5754,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5891,8 +5891,8 @@
           "symbol": "FEDERALBNK",
           "name": "The Federal Bank  Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6251,8 +6251,8 @@
           "symbol": "HDFCLIFE",
           "name": "HDFC Life Insurance Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6330,8 +6330,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6467,8 +6467,8 @@
           "symbol": "ICICIPRULI",
           "name": "ICICI Prudential Life Insurance Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6618,8 +6618,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6845,8 +6845,8 @@
           "symbol": "JIOFIN",
           "name": "Jio Financial Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6906,8 +6906,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7518,8 +7518,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8220,8 +8220,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8346,8 +8346,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8472,8 +8472,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8609,8 +8609,8 @@
           "symbol": "TECHM",
           "name": "Tech Mahindra Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8796,8 +8796,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-22",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
