@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-23T05:45:08+00:00",
+  "last_updated": "2026-07-24T05:40:48+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 26,
+        "chatter_eligible": 29,
         "chatter_covered": 0,
-        "pnf_eligible": 43,
+        "pnf_eligible": 49,
         "pnf_covered": 0
       },
       "companies": [
@@ -5466,8 +5466,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6180,7 +6180,7 @@
           "name": "Havells India Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-21",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6600,8 +6600,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7446,8 +7446,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7464,8 +7464,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-24",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7511,8 +7511,8 @@
           "symbol": "NAM-INDIA",
           "name": "Nippon Life India Asset Management Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8328,8 +8328,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8339,8 +8339,8 @@
           "symbol": "SRF",
           "name": "SRF Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8807,8 +8807,8 @@
           "symbol": "ULTRACEMCO",
           "name": "UltraTech Cement Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8940,8 +8940,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-23",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
