@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-27T06:10:57+00:00",
+  "last_updated": "2026-07-28T05:34:21+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 88,
+        "chatter_covered": 91,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -438,9 +438,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-04-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: IDFC, Tata Consumer, Bank of India, Lal PathLabs &amp; More",
+            "covered_date": "2026-07-27"
           },
           "pnf": {
             "eligible": true,
@@ -636,9 +636,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: IDFC, Tata Consumer, Bank of India, Lal PathLabs &amp; More",
+            "covered_date": "2026-07-27"
           },
           "pnf": {
             "eligible": true,
@@ -2004,9 +2004,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-04-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: IDFC, Tata Consumer, Bank of India, Lal PathLabs &amp; More",
+            "covered_date": "2026-07-27"
           },
           "pnf": {
             "eligible": false,
@@ -3967,8 +3967,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
-            "covered_date": "2026-05-15"
+            "covered_in_edition": "The Chatter: IDFC, Tata Consumer, Bank of India, Lal PathLabs &amp; More",
+            "covered_date": "2026-07-27"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 36,
+        "chatter_eligible": 44,
         "chatter_covered": 0,
-        "pnf_eligible": 64,
+        "pnf_eligible": 70,
         "pnf_covered": 0
       },
       "companies": [
@@ -4685,8 +4685,8 @@
           "symbol": "ADANIGREEN",
           "name": "Adani Green Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5027,8 +5027,8 @@
           "symbol": "BAJAJ-AUTO",
           "name": "Bajaj Auto Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5412,8 +5412,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5459,8 +5459,8 @@
           "symbol": "CIPLA",
           "name": "Cipla Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5484,8 +5484,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6042,8 +6042,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6348,8 +6348,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-28",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6402,8 +6402,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6611,8 +6611,8 @@
           "symbol": "INDUSINDBK",
           "name": "IndusInd Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6899,8 +6899,8 @@
           "symbol": "JSWENERGY",
           "name": "JSW Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7259,8 +7259,8 @@
           "symbol": "M&MFIN",
           "name": "Mahindra & Mahindra Financial Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7709,8 +7709,8 @@
           "symbol": "OBEROIRLTY",
           "name": "Oberoi Realty Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7817,8 +7817,8 @@
           "symbol": "PAYTM",
           "name": "One 97 Communications Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8250,7 +8250,7 @@
           "name": "Shriram Finance Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-24",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8544,8 +8544,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-27",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
