@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-29T05:41:20+00:00",
+  "last_updated": "2026-07-30T05:29:45+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 91,
+        "chatter_covered": 93,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -673,8 +673,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
-            "covered_date": "2026-05-22"
+            "covered_in_edition": "The Chatter: BEL, HUL, L&amp;T, Tata Capital &amp; More",
+            "covered_date": "2026-07-29"
           },
           "pnf": {
             "eligible": false,
@@ -1824,9 +1824,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: BEL, HUL, L&amp;T, Tata Capital &amp; More",
+            "covered_date": "2026-07-29"
           },
           "pnf": {
             "eligible": false,
@@ -2635,8 +2635,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
-            "covered_date": "2026-05-08"
+            "covered_in_edition": "The Chatter: BEL, HUL, L&amp;T, Tata Capital &amp; More",
+            "covered_date": "2026-07-29"
           },
           "pnf": {
             "eligible": false,
@@ -3894,9 +3894,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-06-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: BEL, HUL, L&amp;T, Tata Capital &amp; More",
+            "covered_date": "2026-07-29"
           },
           "pnf": {
             "eligible": true,
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 57,
+        "chatter_eligible": 62,
         "chatter_covered": 0,
-        "pnf_eligible": 76,
+        "pnf_eligible": 87,
         "pnf_covered": 0
       },
       "companies": [
@@ -4674,8 +4674,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4721,8 +4721,8 @@
           "symbol": "ADANIPOWER",
           "name": "Adani Power Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5070,8 +5070,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5124,8 +5124,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5405,8 +5405,8 @@
           "symbol": "CANBK",
           "name": "Canara Bank",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5628,8 +5628,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5772,8 +5772,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5837,8 +5837,8 @@
           "symbol": "ETERNAL",
           "name": "ETERNAL LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6294,8 +6294,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6323,8 +6323,8 @@
           "symbol": "HINDPETRO",
           "name": "Hindustan Petroleum Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6384,8 +6384,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6593,8 +6593,8 @@
           "symbol": "INDIGO",
           "name": "InterGlobe Aviation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7032,8 +7032,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7710,7 +7710,7 @@
           "name": "Oberoi Realty Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-27",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8076,8 +8076,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8454,8 +8454,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-29",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8976,8 +8976,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-30",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
