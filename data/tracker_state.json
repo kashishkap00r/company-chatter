@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-07-31T05:57:06+00:00",
+  "last_updated": "2026-08-01T05:47:07+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 70,
+        "chatter_eligible": 78,
         "chatter_covered": 0,
-        "pnf_eligible": 96,
+        "pnf_eligible": 101,
         "pnf_covered": 0
       },
       "companies": [
@@ -4620,8 +4620,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-31",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4811,8 +4811,8 @@
           "symbol": "APARINDS",
           "name": "Apar Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5052,8 +5052,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-31",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5351,8 +5351,8 @@
           "symbol": "BPCL",
           "name": "Bharat Petroleum Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5567,8 +5567,8 @@
           "symbol": "COROMANDEL",
           "name": "Coromandel International Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5952,8 +5952,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-31",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6006,8 +6006,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-31",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6395,8 +6395,8 @@
           "symbol": "HUDCO",
           "name": "Housing & Urban Development Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6521,8 +6521,8 @@
           "symbol": "IDFCFIRSTB",
           "name": "IDFC First Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6827,8 +6827,8 @@
           "symbol": "JINDALSTEL",
           "name": "JINDAL STEEL LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7338,8 +7338,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-31",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7439,8 +7439,8 @@
           "symbol": "MOTILALOFS",
           "name": "Motilal Oswal Financial Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8537,8 +8537,8 @@
           "symbol": "TATAPOWER",
           "name": "Tata Power Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
