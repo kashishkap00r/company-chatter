@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-02T05:46:14+00:00",
+  "last_updated": "2026-08-03T06:04:36+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,9 +4531,9 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 79,
+        "chatter_eligible": 80,
         "chatter_covered": 0,
-        "pnf_eligible": 104,
+        "pnf_eligible": 106,
         "pnf_covered": 0
       },
       "companies": [
@@ -7536,8 +7536,8 @@
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-03",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7655,8 +7655,8 @@
           "symbol": "NTPC",
           "name": "NTPC Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7836,14 +7836,14 @@
           "name": "Persistent Systems Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-01",
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
           },
           "pnf": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-02",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
