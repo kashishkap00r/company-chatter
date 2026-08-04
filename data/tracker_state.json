@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-03T06:04:36+00:00",
+  "last_updated": "2026-08-04T05:33:46+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 93,
+        "chatter_covered": 96,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -528,9 +528,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Indian Oil, Muthoot, Maruti Suzuki &amp; More",
+            "covered_date": "2026-08-03"
           },
           "pnf": {
             "eligible": true,
@@ -1159,8 +1159,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: ONGC, Divi&#x27;s, LG, Pinelabs &amp; More",
-            "covered_date": "2026-05-29"
+            "covered_in_edition": "The Chatter: Indian Oil, Muthoot, Maruti Suzuki &amp; More",
+            "covered_date": "2026-08-03"
           },
           "pnf": {
             "eligible": false,
@@ -2166,9 +2166,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Indian Oil, Muthoot, Maruti Suzuki &amp; More",
+            "covered_date": "2026-08-03"
           },
           "pnf": {
             "eligible": true,
@@ -2814,9 +2814,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-04-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Indian Oil, Muthoot, Maruti Suzuki &amp; More",
+            "covered_date": "2026-08-03"
           },
           "pnf": {
             "eligible": true,
@@ -2977,8 +2977,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
-            "covered_date": "2026-05-15"
+            "covered_in_edition": "The Chatter: Indian Oil, Muthoot, Maruti Suzuki &amp; More",
+            "covered_date": "2026-08-03"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 80,
+        "chatter_eligible": 88,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -4631,8 +4631,8 @@
           "symbol": "ACC",
           "name": "ACC Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4793,8 +4793,8 @@
           "symbol": "AMBUJACEM",
           "name": "Ambuja Cements Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4901,8 +4901,8 @@
           "symbol": "ASIANPAINT",
           "name": "Asian Paints Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5621,8 +5621,8 @@
           "symbol": "DABUR",
           "name": "Dabur India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6629,8 +6629,8 @@
           "symbol": "INDUSTOWER",
           "name": "Indus Towers Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7151,8 +7151,8 @@
           "symbol": "LT",
           "name": "Larsen & Toubro Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7907,8 +7907,8 @@
           "symbol": "PHOENIXLTD",
           "name": "The Phoenix Mills Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8393,8 +8393,8 @@
           "symbol": "SUPREMEIND",
           "name": "Supreme Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8844,7 +8844,7 @@
           "name": "United Spirits Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-30",
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
