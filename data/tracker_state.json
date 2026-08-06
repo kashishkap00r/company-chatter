@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-04T05:33:46+00:00",
+  "last_updated": "2026-08-06T05:36:39+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 96,
+        "chatter_covered": 98,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -1194,9 +1194,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Marico, DLF, BSE, Nykaa &amp; More",
+            "covered_date": "2026-08-05"
           },
           "pnf": {
             "eligible": true,
@@ -2797,8 +2797,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
-            "covered_date": "2026-05-08"
+            "covered_in_edition": "The Chatter: Marico, DLF, BSE, Nykaa &amp; More",
+            "covered_date": "2026-08-05"
           },
           "pnf": {
             "eligible": false,
@@ -3175,8 +3175,8 @@
             "eligible": true,
             "eligible_since": "2026-06-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reliance, PayTM, Nykaa &amp; More",
-            "covered_date": "2026-04-10"
+            "covered_in_edition": "The Chatter: Marico, DLF, BSE, Nykaa &amp; More",
+            "covered_date": "2026-08-05"
           },
           "pnf": {
             "eligible": true,
@@ -4344,9 +4344,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Marico, DLF, BSE, Nykaa &amp; More",
+            "covered_date": "2026-08-05"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 88,
+        "chatter_eligible": 111,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -4667,8 +4667,8 @@
           "symbol": "ADANIENT",
           "name": "Adani Enterprises Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4829,8 +4829,8 @@
           "symbol": "APLAPOLLO",
           "name": "APL Apollo Tubes Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4991,8 +4991,8 @@
           "symbol": "AWL",
           "name": "AWL Agri Business Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5009,8 +5009,8 @@
           "symbol": "AXISBANK",
           "name": "Axis Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5045,8 +5045,8 @@
           "symbol": "BAJAJFINSV",
           "name": "Bajaj Finserv Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5063,8 +5063,8 @@
           "symbol": "BAJAJHFL",
           "name": "Bajaj Housing Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5099,8 +5099,8 @@
           "symbol": "BAJFINANCE",
           "name": "Bajaj Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5117,8 +5117,8 @@
           "symbol": "BALKRISIND",
           "name": "Balkrishna Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5441,8 +5441,8 @@
           "symbol": "CHOLAFIN",
           "name": "Cholamandalam Investment and Finance Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5693,8 +5693,8 @@
           "symbol": "DIXON",
           "name": "Dixon Technologies (India) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5729,8 +5729,8 @@
           "symbol": "DMART",
           "name": "Avenue Supermarts Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5765,8 +5765,8 @@
           "symbol": "EICHERMOT",
           "name": "Eicher Motors Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6341,8 +6341,8 @@
           "symbol": "HINDUNILVR",
           "name": "Hindustan Unilever Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6431,8 +6431,8 @@
           "symbol": "ICICIBANK",
           "name": "ICICI Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7008,7 +7008,7 @@
           "name": "Kotak Mahindra Bank Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-24",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7025,8 +7025,8 @@
           "symbol": "KPITTECH",
           "name": "KPIT Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7241,8 +7241,8 @@
           "symbol": "M&M",
           "name": "Mahindra & Mahindra Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7295,8 +7295,8 @@
           "symbol": "MANKIND",
           "name": "Mankind Pharma Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7385,8 +7385,8 @@
           "symbol": "MEDANTA",
           "name": "Global Health Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8069,8 +8069,8 @@
           "symbol": "PRESTIGE",
           "name": "Prestige Estates Projects Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8411,8 +8411,8 @@
           "symbol": "SUZLON",
           "name": "Suzlon Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8429,8 +8429,8 @@
           "symbol": "SWIGGY",
           "name": "Swiggy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8699,8 +8699,8 @@
           "symbol": "TORNTPHARM",
           "name": "Torrent Pharmaceuticals Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8790,7 +8790,7 @@
           "name": "UCO Bank",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-30",
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8897,8 +8897,8 @@
           "symbol": "VBL",
           "name": "Varun Beverages Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
