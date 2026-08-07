@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-06T05:36:39+00:00",
+  "last_updated": "2026-08-07T04:42:44+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 111,
+        "chatter_eligible": 120,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -4613,8 +4613,8 @@
           "symbol": "ABCAPITAL",
           "name": "Aditya Birla Capital Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5207,8 +5207,8 @@
           "symbol": "BERGEPAINT",
           "name": "Berger Paints (I) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5675,8 +5675,8 @@
           "symbol": "DIVISLAB",
           "name": "Divi's Laboratories Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5819,8 +5819,8 @@
           "symbol": "ESCORTS",
           "name": "Escorts Kubota Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5855,8 +5855,8 @@
           "symbol": "EXIDEIND",
           "name": "Exide Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5981,8 +5981,8 @@
           "symbol": "GLAXO",
           "name": "GlaxoSmithKline Pharmaceuticals Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8231,8 +8231,8 @@
           "symbol": "SHREECEM",
           "name": "SHREE CEMENT LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8375,8 +8375,8 @@
           "symbol": "SUNPHARMA",
           "name": "Sun Pharmaceutical Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8969,8 +8969,8 @@
           "symbol": "WAAREEENER",
           "name": "Waaree Energies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
