@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-07T04:42:44+00:00",
+  "last_updated": "2026-08-08T03:51:19+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 98,
+        "chatter_covered": 99,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -871,8 +871,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Meesho, Marico, L&amp;T, Bajaj &amp; More",
-            "covered_date": "2026-05-08"
+            "covered_in_edition": "The Chatter: Marico, DLF, BSE, Nykaa &amp; More",
+            "covered_date": "2026-08-05"
           },
           "pnf": {
             "eligible": false,
@@ -1177,8 +1177,8 @@
             "eligible": true,
             "eligible_since": "2026-05-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
-            "covered_date": "2026-05-15"
+            "covered_in_edition": "The Chatter: Dixon, Motherson, Biocon, Glenmark &amp; More",
+            "covered_date": "2026-08-07"
           },
           "pnf": {
             "eligible": false,
@@ -2904,9 +2904,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Dixon, Motherson, Biocon, Glenmark &amp; More",
+            "covered_date": "2026-08-07"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 120,
+        "chatter_eligible": 126,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -5711,8 +5711,8 @@
           "symbol": "DLF",
           "name": "DLF Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6683,8 +6683,8 @@
           "symbol": "IOC",
           "name": "Indian Oil Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6773,8 +6773,8 @@
           "symbol": "IRFC",
           "name": "Indian Railway Finance Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7061,8 +7061,8 @@
           "symbol": "LICHSGFIN",
           "name": "LIC Housing Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7565,8 +7565,8 @@
           "symbol": "NESTLEIND",
           "name": "Nestle India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7691,8 +7691,8 @@
           "symbol": "NYKAA",
           "name": "FSN E-Commerce Ventures Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null

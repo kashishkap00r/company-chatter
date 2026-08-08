@@ -319,6 +319,16 @@
     "url": "https://thechatter.zerodha.com/p/the-chatter-decoding-capex-capacity"
   },
   {
+    "title": "The Chatter: Dixon, Motherson, Biocon, Glenmark &amp; More",
+    "date": "2026-08-07",
+    "companies": [
+      "Dixon Technologies (India) Limited | Mid Cap | Engineering & Capital Goods",
+      "Samvardhana Motherson International Limited | Large Cap | Auto Ancillary",
+      "Glenmark Pharmaceuticals | Mid Cap | Healthcare"
+    ],
+    "url": "https://thechatter.zerodha.com/p/the-chatter-dixon-motherson-biocon"
+  },
+  {
     "title": "The Chatter: Doubling Down - The Chatter by Zerodha",
     "date": "2025-10-12",
     "companies": [
@@ -549,6 +559,7 @@
     "companies": [
       "Marico Ltd. | Large Cap | FMCG",
       "DLF | Large Cap | Real Estate",
+      "BSE Ltd | Mid Cap | Exchanges",
       "Nykaa | Mid Cap | Retail",
       "Inox India | Small Cap | Engineering & Capital Goods",
       "UNO Minda | Mid Cap | Auto Ancillary"
