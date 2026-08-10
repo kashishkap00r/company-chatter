@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-09T04:01:08+00:00",
+  "last_updated": "2026-08-10T04:15:13+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 127,
+        "chatter_eligible": 129,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -6719,8 +6719,8 @@
           "symbol": "IRB",
           "name": "IRB Infrastructure Developers Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8627,8 +8627,8 @@
           "symbol": "THERMAX",
           "name": "Thermax Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
