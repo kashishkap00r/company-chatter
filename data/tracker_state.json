@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-10T04:15:13+00:00",
+  "last_updated": "2026-08-11T04:03:12+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 99,
+        "chatter_covered": 101,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -3516,9 +3516,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-06-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SBI, Delhivery, Titan &amp; More",
+            "covered_date": "2026-08-10"
           },
           "pnf": {
             "eligible": true,
@@ -3678,9 +3678,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SBI, Delhivery, Titan &amp; More",
+            "covered_date": "2026-08-10"
           },
           "pnf": {
             "eligible": true,
@@ -4147,8 +4147,8 @@
             "eligible": true,
             "eligible_since": "2026-06-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Titan, Dixon, JSW Steel, Cipla &amp; More",
-            "covered_date": "2026-05-15"
+            "covered_in_edition": "The Chatter: SBI, Delhivery, Titan &amp; More",
+            "covered_date": "2026-08-10"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 129,
+        "chatter_eligible": 135,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -5243,8 +5243,8 @@
           "symbol": "BHARTIARTL",
           "name": "Bharti Airtel Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5261,8 +5261,8 @@
           "symbol": "BHARTIHEXA",
           "name": "Bharti Hexacom Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5387,8 +5387,8 @@
           "symbol": "BSE",
           "name": "BSE Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6881,8 +6881,8 @@
           "symbol": "JSL",
           "name": "Jindal Stainless Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6989,8 +6989,8 @@
           "symbol": "KEI",
           "name": "KEI Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8340,7 +8340,7 @@
           "name": "SRF Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-23",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8861,8 +8861,8 @@
           "symbol": "UNOMINDA",
           "name": "UNO Minda Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
