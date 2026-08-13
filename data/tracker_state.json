@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-12T04:27:07+00:00",
+  "last_updated": "2026-08-13T04:31:10+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 101,
+        "chatter_covered": 102,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -817,8 +817,8 @@
             "eligible": true,
             "eligible_since": "2026-04-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Tata Steel, LIC, Vodafone, BPCL &amp; More",
-            "covered_date": "2026-05-22"
+            "covered_in_edition": "The Chatter: Bosch, Amara, Zydus &amp; More",
+            "covered_date": "2026-08-12"
           },
           "pnf": {
             "eligible": true,
@@ -4506,9 +4506,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Bosch, Amara, Zydus &amp; More",
+            "covered_date": "2026-08-12"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 145,
+        "chatter_eligible": 152,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -5369,8 +5369,8 @@
           "symbol": "BRITANNIA",
           "name": "Britannia Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5423,8 +5423,8 @@
           "symbol": "CGPOWER",
           "name": "CG Power and Industrial Solutions Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6089,8 +6089,8 @@
           "symbol": "GODREJPROP",
           "name": "Godrej Properties Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7079,8 +7079,8 @@
           "symbol": "LICI",
           "name": "Life Insurance Corporation Of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7223,8 +7223,8 @@
           "symbol": "LUPIN",
           "name": "Lupin Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7745,8 +7745,8 @@
           "symbol": "OIL",
           "name": "Oil India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7925,8 +7925,8 @@
           "symbol": "PIDILITIND",
           "name": "Pidilite Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
