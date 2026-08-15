@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-14T04:27:28+00:00",
+  "last_updated": "2026-08-15T03:10:10+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 217,
-        "chatter_covered": 102,
+        "chatter_covered": 104,
         "pnf_eligible": 168,
         "pnf_covered": 3
       },
@@ -2220,9 +2220,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: RBI&#x27;s Governor, Canara Bank, IRCTC, &amp; More",
+            "covered_date": "2026-08-14"
           },
           "pnf": {
             "eligible": false,
@@ -3786,9 +3786,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-05-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: RBI&#x27;s Governor, Canara Bank, IRCTC, &amp; More",
+            "covered_date": "2026-08-14"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 159,
+        "chatter_eligible": 164,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -4739,8 +4739,8 @@
           "symbol": "AIAENG",
           "name": "AIA Engineering Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6143,8 +6143,8 @@
           "symbol": "GVT&D",
           "name": "GE Vernova T&D India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7547,8 +7547,8 @@
           "symbol": "NAUKRI",
           "name": "Info Edge (India) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8015,8 +8015,8 @@
           "symbol": "POWERGRID",
           "name": "Power Grid Corporation of India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8033,8 +8033,8 @@
           "symbol": "POWERINDIA",
           "name": "Hitachi Energy India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
