@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-16T03:19:54+00:00",
+  "last_updated": "2026-08-17T03:19:10+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -7008,7 +7008,7 @@
           "name": "Kotak Mahindra Bank Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-01",
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
