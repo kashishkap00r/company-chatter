@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-17T03:19:10+00:00",
+  "last_updated": "2026-08-18T03:15:26+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 165,
+        "chatter_eligible": 169,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -5945,8 +5945,8 @@
           "symbol": "GAIL",
           "name": "GAIL (India) Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6107,8 +6107,8 @@
           "symbol": "GRASIM",
           "name": "Grasim Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6701,8 +6701,8 @@
           "symbol": "IPCALAB",
           "name": "IPCA Laboratories Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8879,8 +8879,8 @@
           "symbol": "UPL",
           "name": "UPL Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
