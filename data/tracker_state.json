@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-08-23T03:23:36+00:00",
+  "last_updated": "2026-08-24T03:23:47+00:00",
   "quarters": [
     {
       "name": "Q4 FY26",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 187,
+        "chatter_eligible": 193,
         "chatter_covered": 0,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -4757,8 +4757,8 @@
           "symbol": "AJANTPHARM",
           "name": "Ajanta Pharma Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5603,8 +5603,8 @@
           "symbol": "CUMMINSIND",
           "name": "Cummins India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6017,8 +6017,8 @@
           "symbol": "GMRAIRPORT",
           "name": "GMR AIRPORTS LIMITED",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7115,8 +7115,8 @@
           "symbol": "LLOYDSME",
           "name": "Lloyds Metals And Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7152,7 +7152,7 @@
           "name": "Larsen & Toubro Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-08-01",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8465,8 +8465,8 @@
           "symbol": "TATACOMM",
           "name": "Tata Communications Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8771,8 +8771,8 @@
           "symbol": "UBL",
           "name": "United Breweries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8844,7 +8844,7 @@
           "name": "United Spirits Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-08-01",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
