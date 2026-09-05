@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-09-04T07:24:03+00:00",
+  "last_updated": "2026-09-05T07:05:46+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -12,8 +12,8 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 197,
-        "chatter_covered": 60,
+        "chatter_eligible": 198,
+        "chatter_covered": 61,
         "pnf_eligible": 106,
         "pnf_covered": 0
       },
@@ -1894,8 +1894,8 @@
           "symbol": "HYUNDAI",
           "name": "Hyundai Motor India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -2059,8 +2059,8 @@
             "eligible": true,
             "eligible_since": "2026-07-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: TCS, Indian Bank, Amagi, CMR Green &amp; More",
-            "covered_date": "2026-07-10"
+            "covered_in_edition": "The Chatter: SEBI Chairman, Maruti Suzuki, Lumino, Indian Bank &amp; More",
+            "covered_date": "2026-09-04"
           },
           "pnf": {
             "eligible": true,
@@ -2741,7 +2741,7 @@
           "name": "Mahindra & Mahindra Financial Services Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-27",
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4254,9 +4254,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-08-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI Chairman, Maruti Suzuki, Lumino, Indian Bank &amp; More",
+            "covered_date": "2026-09-04"
           },
           "pnf": {
             "eligible": false,
