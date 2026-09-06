@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-09-05T07:05:46+00:00",
+  "last_updated": "2026-09-06T07:20:09+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -12,7 +12,7 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 198,
+        "chatter_eligible": 201,
         "chatter_covered": 61,
         "pnf_eligible": 106,
         "pnf_covered": 0
@@ -184,8 +184,8 @@
           "symbol": "ADANIPORTS",
           "name": "Adani Ports and Special Economic Zone Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -2398,8 +2398,8 @@
           "symbol": "JSWINFRA",
           "name": "JSW Infrastructure Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -3928,8 +3928,8 @@
           "symbol": "SYNGENE",
           "name": "Syngene International Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-07-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
