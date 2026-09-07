@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-09-06T07:20:09+00:00",
+  "last_updated": "2026-09-07T07:28:34+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -12,8 +12,8 @@
       "is_primary": true,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 201,
-        "chatter_covered": 61,
+        "chatter_eligible": 204,
+        "chatter_covered": 63,
         "pnf_eligible": 106,
         "pnf_covered": 0
       },
@@ -401,7 +401,7 @@
           "name": "Astral Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-07-01",
+            "eligible_since": "2026-08-01",
             "covered": true,
             "covered_in_edition": "The Chatter: Bajaj, Mahindra, Persistent, Indian Hotels &amp; More",
             "covered_date": "2026-07-03"
@@ -1480,11 +1480,11 @@
           "symbol": "GLENMARK",
           "name": "Glenmark Pharmaceuticals Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "eligible": true,
+            "eligible_since": "2026-08-01",
+            "covered": true,
+            "covered_in_edition": "The Chatter: Dixon, Motherson, Biocon, Glenmark &amp; More",
+            "covered_date": "2026-08-07"
           },
           "pnf": {
             "eligible": true,
@@ -2974,11 +2974,11 @@
           "symbol": "MUTHOOTFIN",
           "name": "Muthoot Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "eligible": true,
+            "eligible_since": "2026-08-01",
+            "covered": true,
+            "covered_in_edition": "The Chatter: Indian Oil, Muthoot, Maruti Suzuki &amp; More",
+            "covered_date": "2026-08-03"
           },
           "pnf": {
             "eligible": true,
@@ -3010,8 +3010,8 @@
           "symbol": "NATIONALUM",
           "name": "National Aluminium Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-08-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
