@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-09-10T07:27:30+00:00",
+  "last_updated": "2026-09-11T07:27:47+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -1409,7 +1409,7 @@
           "name": "Fortis Healthcare Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-09-01",
+            "eligible_since": "2026-08-01",
             "covered": true,
             "covered_in_edition": "The Chatter: HUL, Fortis, Shiprocket &amp; More",
             "covered_date": "2026-09-09"
