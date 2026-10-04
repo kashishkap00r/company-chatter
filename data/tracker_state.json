@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-03T08:08:46+00:00",
+  "last_updated": "2026-10-04T08:32:06+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -3679,8 +3679,8 @@
             "eligible": true,
             "eligible_since": "2026-08-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: SBI, Delhivery, Titan &amp; More",
-            "covered_date": "2026-08-10"
+            "covered_in_edition": "The Chatter: IRDAI Chairman, Bajaj Auto, SBI &amp; More",
+            "covered_date": "2026-10-03"
           },
           "pnf": {
             "eligible": true,
