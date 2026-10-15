@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-14T07:35:07+00:00",
+  "last_updated": "2026-10-15T07:25:28+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -889,8 +889,8 @@
             "eligible": true,
             "eligible_since": "2026-07-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: RBI&#x27;s Governor, Canara Bank, IRCTC, &amp; More",
-            "covered_date": "2026-08-14"
+            "covered_in_edition": "The Chatter: HCLTech, RBL Bank, Canara Bank Zetwerk, IKEA India &amp; More",
+            "covered_date": "2026-10-14"
           },
           "pnf": {
             "eligible": true,
@@ -1681,8 +1681,8 @@
             "eligible": true,
             "eligible_since": "2026-07-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: LTM, HCL, L&amp;T Finance, ICICI Prudential &amp; More",
-            "covered_date": "2026-07-15"
+            "covered_in_edition": "The Chatter: HCLTech, RBL Bank, Canara Bank Zetwerk, IKEA India &amp; More",
+            "covered_date": "2026-10-14"
           },
           "pnf": {
             "eligible": false,
