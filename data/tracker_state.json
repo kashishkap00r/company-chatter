@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-21T07:34:29+00:00",
+  "last_updated": "2026-10-22T07:35:05+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 213,
-        "chatter_covered": 73,
+        "chatter_covered": 76,
         "pnf_eligible": 168,
         "pnf_covered": 0
       },
@@ -1195,8 +1195,8 @@
             "eligible": true,
             "eligible_since": "2026-08-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Marico, DLF, BSE, Nykaa &amp; More",
-            "covered_date": "2026-08-05"
+            "covered_in_edition": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+            "covered_date": "2026-10-21"
           },
           "pnf": {
             "eligible": true,
@@ -1842,9 +1842,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+            "covered_date": "2026-10-21"
           },
           "pnf": {
             "eligible": true,
@@ -2688,9 +2688,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+            "covered_date": "2026-10-21"
           },
           "pnf": {
             "eligible": true,
@@ -4291,8 +4291,8 @@
             "eligible": true,
             "eligible_since": "2026-07-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
-            "covered_date": "2026-07-22"
+            "covered_in_edition": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+            "covered_date": "2026-10-21"
           },
           "pnf": {
             "eligible": true,
@@ -4308,9 +4308,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+            "covered_date": "2026-10-21"
           },
           "pnf": {
             "eligible": true,
@@ -4489,8 +4489,8 @@
             "eligible": true,
             "eligible_since": "2026-07-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: YES Bank, Colgate, Allcargo, &amp; More",
-            "covered_date": "2026-08-19"
+            "covered_in_edition": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+            "covered_date": "2026-10-21"
           },
           "pnf": {
             "eligible": false,

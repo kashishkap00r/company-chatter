@@ -366,6 +366,19 @@
     "url": "https://thechatter.zerodha.com/p/the-chatter-dixon-motherson-biocon"
   },
   {
+    "title": "The Chatter: DLF, UltraTech Cement, Yes Bank &amp; More",
+    "date": "2026-10-21",
+    "companies": [
+      "DLF Limited | Large Cap | Real Estate",
+      "UltraTech Cement Limited | Large Cap | Building Materials",
+      "L&T Technology Services Limited | Small Cap | Software Services",
+      "Union Bank of India | Large Cap | Financial Services",
+      "Yes Bank | Mid Cap | Financial Services",
+      "Hindustan Zinc Ltd. | Large Cap | Metals"
+    ],
+    "url": "https://thechatter.zerodha.com/p/the-chatter-dlf-ultratech-cement"
+  },
+  {
     "title": "The Chatter: Doubling Down - The Chatter by Zerodha",
     "date": "2025-10-12",
     "companies": [
@@ -1076,6 +1089,10 @@
     "title": "The Chatter: SEBI, RBI, DIPAM, Jio, Wipro &amp; More",
     "date": "2026-10-16",
     "companies": [
+      "SEBI SAMVAAD | India Open Finance Summit 2026 Sahamati Annual Conference",
+      "Reserve Bank of India | Post-Monetary Policy Press Conference",
+      "SEBI | CAS Overhaul & New Closing Auction Rules",
+      "DIPAM Secretary | IDBI Bank Sale to Fairfax",
       "Jio Financial Services Limited | Large Cap | Financial Services",
       "Wipro Limited | Large Cap | Software Services",
       "Bajaj Consumer Care Limited | Small Cap | FMCG",
