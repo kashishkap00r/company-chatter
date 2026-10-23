@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-22T07:35:05+00:00",
+  "last_updated": "2026-10-23T07:28:22+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 4,
+        "chatter_eligible": 6,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -5405,8 +5405,8 @@
           "symbol": "CANBK",
           "name": "Canara Bank",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7061,8 +7061,8 @@
           "symbol": "LICHSGFIN",
           "name": "LIC Housing Finance Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
