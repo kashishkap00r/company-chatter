@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-23T07:28:22+00:00",
+  "last_updated": "2026-10-24T07:17:21+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 213,
-        "chatter_covered": 76,
+        "chatter_covered": 81,
         "pnf_eligible": 168,
         "pnf_covered": 0
       },
@@ -493,8 +493,8 @@
             "eligible": true,
             "eligible_since": "2026-07-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: Reliance, Axis Bank, Tata Power, UltraTech Cement &amp; More",
-            "covered_date": "2026-07-22"
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": true,
@@ -1320,9 +1320,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": false,
@@ -1716,9 +1716,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": false,
@@ -1914,9 +1914,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": true,
@@ -2040,9 +2040,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": true,
@@ -2473,8 +2473,8 @@
             "eligible": true,
             "eligible_since": "2026-08-01",
             "covered": true,
-            "covered_in_edition": "The Chatter: RBI Governor, RBI Deputy Governor, KEI Industries, Cochin Shipyard &amp; More",
-            "covered_date": "2026-09-11"
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": true,
@@ -3912,9 +3912,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-08-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: Eternal, Swiggy, IHCL, ICICI, HDFC, KEI &amp; More",
+            "covered_date": "2026-10-23"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 6,
+        "chatter_eligible": 7,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -6233,8 +6233,8 @@
           "symbol": "HDFCBANK",
           "name": "HDFC Bank Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
