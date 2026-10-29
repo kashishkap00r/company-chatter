@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-28T08:24:44+00:00",
+  "last_updated": "2026-10-29T08:28:11+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 213,
-        "chatter_covered": 81,
+        "chatter_covered": 84,
         "pnf_eligible": 168,
         "pnf_covered": 0
       },
@@ -942,9 +942,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI, L&amp;T, Cipla, SBI Life Insurance &amp; More",
+            "covered_date": "2026-10-28"
           },
           "pnf": {
             "eligible": true,
@@ -2112,9 +2112,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-08-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI, L&amp;T, Cipla, SBI Life Insurance &amp; More",
+            "covered_date": "2026-10-28"
           },
           "pnf": {
             "eligible": false,
@@ -3660,9 +3660,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-07-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI, L&amp;T, Cipla, SBI Life Insurance &amp; More",
+            "covered_date": "2026-10-28"
           },
           "pnf": {
             "eligible": false,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 18,
+        "chatter_eligible": 19,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -6647,8 +6647,8 @@
           "symbol": "INFY",
           "name": "Infosys Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
