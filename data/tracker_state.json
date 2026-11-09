@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-08T09:00:43+00:00",
+  "last_updated": "2026-11-09T09:44:36+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 69,
+        "chatter_eligible": 72,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -5225,8 +5225,8 @@
           "symbol": "BHARATFORG",
           "name": "Bharat Forge Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6287,8 +6287,8 @@
           "symbol": "HEXT",
           "name": "Hexaware Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7313,8 +7313,8 @@
           "symbol": "MARICO",
           "name": "Marico Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
