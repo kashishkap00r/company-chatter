@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-09T09:44:36+00:00",
+  "last_updated": "2026-11-10T09:44:48+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 72,
+        "chatter_eligible": 82,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -5909,8 +5909,8 @@
           "symbol": "FLUOROCHEM",
           "name": "Gujarat Fluorochemicals Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5999,8 +5999,8 @@
           "symbol": "GLENMARK",
           "name": "Glenmark Pharmaceuticals Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6323,8 +6323,8 @@
           "symbol": "HINDPETRO",
           "name": "Hindustan Petroleum Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6395,8 +6395,8 @@
           "symbol": "HUDCO",
           "name": "Housing & Urban Development Corporation Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7385,8 +7385,8 @@
           "symbol": "MEDANTA",
           "name": "Global Health Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7457,8 +7457,8 @@
           "symbol": "MPHASIS",
           "name": "MphasiS Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7529,8 +7529,8 @@
           "symbol": "NATIONALUM",
           "name": "National Aluminium Company Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7853,8 +7853,8 @@
           "symbol": "PETRONET",
           "name": "Petronet LNG Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8303,8 +8303,8 @@
           "symbol": "SOLARINDS",
           "name": "Solar Industries India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8411,8 +8411,8 @@
           "symbol": "SUZLON",
           "name": "Suzlon Energy Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
