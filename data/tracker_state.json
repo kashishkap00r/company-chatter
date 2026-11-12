@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-11T09:20:33+00:00",
+  "last_updated": "2026-11-12T09:48:56+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -13,7 +13,7 @@
       "summary": {
         "total_companies": 250,
         "chatter_eligible": 213,
-        "chatter_covered": 87,
+        "chatter_covered": 90,
         "pnf_eligible": 168,
         "pnf_covered": 0
       },
@@ -726,9 +726,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-08-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI, RBI, ONGC, Tata Steel &amp; More",
+            "covered_date": "2026-11-11"
           },
           "pnf": {
             "eligible": false,
@@ -1788,9 +1788,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-08-01",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI, RBI, ONGC, Tata Steel &amp; More",
+            "covered_date": "2026-11-11"
           },
           "pnf": {
             "eligible": true,
@@ -4038,9 +4038,9 @@
           "chatter": {
             "eligible": true,
             "eligible_since": "2026-08-06",
-            "covered": false,
-            "covered_in_edition": null,
-            "covered_date": null
+            "covered": true,
+            "covered_in_edition": "The Chatter: SEBI, RBI, ONGC, Tata Steel &amp; More",
+            "covered_date": "2026-11-11"
           },
           "pnf": {
             "eligible": true,
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 88,
+        "chatter_eligible": 93,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -4793,8 +4793,8 @@
           "symbol": "AMBUJACEM",
           "name": "Ambuja Cements Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4847,8 +4847,8 @@
           "symbol": "APOLLOHOSP",
           "name": "Apollo Hospitals Enterprise Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4937,8 +4937,8 @@
           "symbol": "ATGL",
           "name": "Adani Total Gas Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7331,8 +7331,8 @@
           "symbol": "MARUTI",
           "name": "Maruti Suzuki India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8393,8 +8393,8 @@
           "symbol": "SUPREMEIND",
           "name": "Supreme Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
