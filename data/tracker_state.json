@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-13T09:32:50+00:00",
+  "last_updated": "2026-11-14T09:00:06+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 94,
+        "chatter_eligible": 101,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -4973,8 +4973,8 @@
           "symbol": "AUROPHARMA",
           "name": "Aurobindo Pharma Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5045,8 +5045,8 @@
           "symbol": "BAJAJFINSV",
           "name": "Bajaj Finserv Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -5963,8 +5963,8 @@
           "symbol": "GICRE",
           "name": "General Insurance Corporation of India",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6413,8 +6413,8 @@
           "symbol": "HYUNDAI",
           "name": "Hyundai Motor India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6629,8 +6629,8 @@
           "symbol": "INDUSTOWER",
           "name": "Indus Towers Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8861,8 +8861,8 @@
           "symbol": "UNOMINDA",
           "name": "UNO Minda Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8879,8 +8879,8 @@
           "symbol": "UPL",
           "name": "UPL Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
