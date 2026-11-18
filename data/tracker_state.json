@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-17T10:38:32+00:00",
+  "last_updated": "2026-11-18T10:08:21+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 117,
+        "chatter_eligible": 121,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -5783,8 +5783,8 @@
           "symbol": "ENDURANCE",
           "name": "Endurance Technologies Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -6360,7 +6360,7 @@
           "name": "Hindustan Zinc Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-10-01",
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7925,8 +7925,8 @@
           "symbol": "PIDILITIND",
           "name": "Pidilite Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8159,8 +8159,8 @@
           "symbol": "SBICARD",
           "name": "SBI Cards and Payment Services Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-10-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -8645,8 +8645,8 @@
           "symbol": "TIINDIA",
           "name": "Tube Investments of India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
