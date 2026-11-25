@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-24T12:29:36+00:00",
+  "last_updated": "2026-11-25T11:15:02+00:00",
   "quarters": [
     {
       "name": "Q1 FY27",
@@ -4531,7 +4531,7 @@
       "is_primary": false,
       "summary": {
         "total_companies": 250,
-        "chatter_eligible": 145,
+        "chatter_eligible": 147,
         "chatter_covered": 0,
         "pnf_eligible": 0,
         "pnf_covered": 0
@@ -4577,8 +4577,8 @@
           "symbol": "ABB",
           "name": "ABB India Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -4830,7 +4830,7 @@
           "name": "APL Apollo Tubes Limited",
           "chatter": {
             "eligible": true,
-            "eligible_since": "2026-10-01",
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
@@ -7943,8 +7943,8 @@
           "symbol": "PIIND",
           "name": "PI Industries Limited",
           "chatter": {
-            "eligible": false,
-            "eligible_since": null,
+            "eligible": true,
+            "eligible_since": "2026-11-01",
             "covered": false,
             "covered_in_edition": null,
             "covered_date": null
